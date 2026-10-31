@@ -1,0 +1,65 @@
+{
+  "schema": "codec_complete_evaluation_v1",
+  "source": {
+    "old_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_fullpool_codec_20261031_v1",
+    "old_manifest_sha256": "01505377362bf47c89ae23aeaa5de6ca0c5663fe9119e35f6c01c03524351376",
+    "decoder_checkpoint_sha256": "dcdcd0be5f999b09086bbc31c91aea62898600c123a962791845314898d6eef3",
+    "full_retrain_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_fullcodec_retrain_20261031_v1",
+    "full_retrain_manifest_sha256": "479e75989ca7c5cde716dfc9d842a5f703a735837ac1a11b8faad15de638034b"
+  },
+  "evaluation": {
+    "frames_per_model": 9027,
+    "frames_per_clip": 177,
+    "snapshot_frames": [
+      0,
+      44,
+      88,
+      132,
+      176
+    ],
+    "max_seconds": 7200,
+    "replay_mae_max": 1e-05,
+    "replay_psnr_min": 60,
+    "continue_on_replay_threshold_failure": true
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "peak_limit_gib": 12
+  },
+  "queue": {
+    "training_pid": 479060,
+    "training_start_ticks": 40929788,
+    "training_wait_seconds": 8500,
+    "evaluation_process_seconds": 8500,
+    "compare_seconds": 1800,
+    "total_seconds": 20000,
+    "minimum_gpu_free_gib": 16,
+    "minimum_disk_free_gib": 100,
+    "owned_helper_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/postfit_queue.py",
+    "owned_helper_sha256": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2"
+  },
+  "training_updates": 0,
+  "automatic_LDM_replacement": false,
+  "inference": {
+    "profile": "decoder_float64_default_me_independent_replay_v1",
+    "diagnostic_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_replay_probe_20261031_v7",
+    "diagnostic_manifest_sha256": "d45b63505b25bf3121dfad420200fbb42af3fd175eb20bab76654661d7b23261",
+    "diagnostic_probe_sha256": "6f28cfbafa5ce75eec293cf08383edca6d16ce0bcc0c02d0fa758ad1cebf3dc4",
+    "precision_helper_sha256": "2b6d4513afed3bc1d5f6d31d4a076a341c49a23ba500a49f257b65319609d7e8",
+    "diagnostic_result_sha256": "15eae21a080a4cddec7e19ff660cd007f16e586fd4302c3a77104fc1f8242789",
+    "decoder_precision": "float64",
+    "selected_modules": [
+      "ae.decoder",
+      "ae.feature_heads",
+      "ae.gaussian_multiplier"
+    ],
+    "encoder_state_dtype": "float32",
+    "renderer_gs_dtype": "float32",
+    "minkowski_deterministic": false,
+    "sparse_tensor_operation_mode": "SEPARATE_COORDINATE_MANAGER",
+    "scope": "independent_fresh_encode_and_disk_rebuild_managers",
+    "pruning_capture_hooks": false,
+    "diagnostic_pruning_capture_hooks": true,
+    "cold_manager_replay_required": true
+  }
+}

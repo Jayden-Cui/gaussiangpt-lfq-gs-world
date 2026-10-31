@@ -1,0 +1,131 @@
+{
+  "schema": "neoverse-continuous-state-ae-v1",
+  "run": "gaussiangpt_neoverse_state_motion_20261030_v1",
+  "scope": "Continuous state E/D only; state LFQ removed including parameters and losses",
+  "hypothesis": "Adapt GaussianGPT encoder and decoder with continuous Nx64 sparse state features on all177 native NeoVerse states",
+  "data_split": "User-requested single clip TRAIN reconstruction; this source was historically DEV and previously admitted to training; no held-out claim",
+  "teacher": "Offline whole-video NeoVerse WorldMirror, all177 timestamps, 112896 native GS per frame; no point/frame deletion",
+  "normalization": "First TRAIN frame robust 1%-99% span determines scale=2**floor(log2(0.9/span)); apply this one power-of-two scale to all GS means/scales and camera positions, no recentering, no point deletion. Avoid float32 cancellation in thin GS.",
+  "grid_candidates": [
+    0.008
+  ],
+  "calibration_frames": [
+    0,
+    22,
+    44,
+    66,
+    88,
+    110,
+    132,
+    154,
+    176
+  ],
+  "max_input_voxels": 80000,
+  "max_decoder_candidates": 600000,
+  "max_decoded_gaussians": 2400000,
+  "input_gate": "Fixed previous architecture grid0.008, all-point set statistics and4 output GS; measure representative error, do not silently choose a different resolution",
+  "set_fallback": "Deterministic alpha-weighted mean/std of 14 attributes plus log(count), 29->128->368 residual embedding; all GS enter moments; not a lossless set representation. Learned residual multi-GS features with K=4 offsets and divided initial opacity.",
+  "train": {
+    "seed": 20261029,
+    "max_steps": 3000,
+    "minimum_coverage_steps": 177,
+    "max_seconds": 21600,
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.0,
+    "grad_clip": 1.0,
+    "checkpoint_every": 100,
+    "loss": {
+      "real_l1": 1.0,
+      "real_vgg19": 0.1,
+      "teacher_l1": 0.5,
+      "pseudo_view_l1": 0.25,
+      "workspace_roi_l1": 0.25,
+      "occupancy_bce": 1.0
+    },
+    "occupancy": "Official target_keep during first 80% updates; decoder.eval() for last 20% with occupancy targets used only by BCE. All evaluations always decoder.eval(), target_key=None.",
+    "prune_threshold": [
+      -1.0,
+      -3.0
+    ],
+    "trainable": "E/D/input embedding/GS heads and set adapter/multiplier; no state quantizer parameters",
+    "batch": "One complete frame, seeded shuffled cycling over all177 frames; GPU0; no point/frame truncation"
+  },
+  "evaluation": {
+    "frames": "All177 TRAIN frames",
+    "rgb_size": [
+      448,
+      252
+    ],
+    "workspace_roi_xyxy": [
+      67,
+      38,
+      380,
+      227
+    ],
+    "roi_label": "Fixed boxes inspected on existing native448 contact sheet; broad activity regions include background, not semantic masks",
+    "region_boxes": {
+      "buildingblock_tower_17_176": {
+        "object": [
+          140,
+          25,
+          320,
+          235
+        ],
+        "hand_activity": [
+          [
+            0,
+            35,
+            180,
+            252
+          ],
+          [
+            265,
+            25,
+            448,
+            252
+          ]
+        ]
+      }
+    },
+    "pass": "All177 frames/coverage, full and regionPSNR within1dB of NeoVerse, teacherPSNR>=25, continuous-state replayPSNR>=60 andMAE<=1e-5, frozen decoder input gradient finite nonzero",
+    "outputs": [
+      "real/teacher full and region metrics",
+      "continuous sparse state packets with Nx64float32 features and coordinates",
+      "continuous feature replay",
+      "frozen decoder input gradients",
+      "videos"
+    ]
+  },
+  "time_limits_seconds": {
+    "probe": 600,
+    "preflight": 600,
+    "calibration": 3600,
+    "preparation": 21600,
+    "training": 24000,
+    "evaluation": 10800,
+    "pipeline": 64800
+  },
+  "stop": [
+    "Native-schema or similarity render PSNR<40dB",
+    "Nonfinite GS/loss/gradient",
+    "Any full-frame occupancy budget exceeded",
+    "OOM",
+    "Time budget exceeded",
+    "Source hash mismatch"
+  ],
+  "retry_policy": "No scientific retries or automatic reduced-resolution/subsampled substitute. Engineering fixes before training are recorded; runtime failure yields FAILED.json and stops.",
+  "limitations": [
+    "Single source TRAIN reconstruction, historically DEV now training-used",
+    "Offline whole-clip noncausal teacher with input RGB",
+    "No physical point identity or future prediction claim",
+    "Source differs from old four MoVieS clips, not a controlled teacher comparison",
+    "Lossy set moments and4-output-GS extension, quality gates may fail"
+  ],
+  "initialization": "Official PhotoShape encoder/decoder plus fresh set adapter and4-output multiplier; LFQ module replaced by Identity and never called",
+  "state_quantization": "None. No LFQ, no state IDs, no bit loss, no quantization auxiliary loss, no STE.",
+  "engineering_revision": "Initial arbitrary centered similarity failed strict pixel parity; three-frame diagnosis found dyadic scale0.5 gives pixel-exact rendering. Keep original PSNR/MAE gates unchanged and validate all177 frames."
+}

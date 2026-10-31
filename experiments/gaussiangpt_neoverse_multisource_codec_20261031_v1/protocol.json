@@ -1,0 +1,206 @@
+{
+  "schema": "gs_multisource_codec_v1",
+  "run": "gaussiangpt_neoverse_multisource_codec_20261031_v1",
+  "seed": 20261031,
+  "source": {
+    "codec_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state",
+    "checkpoint_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/codec_final.pt",
+    "checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "original_protocol_sha256": "24add801f064c181658b43da98e1b9a42779c2b876105231ded2ef044b1205da",
+    "original_completed_steps": 3000,
+    "train_done_sha256": "e86f7541360455a1930bc0d5a217e0038453d51fc2355f9e8fe789e48a5da0d2",
+    "vgg_weights": {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/torch_cache/checkpoints/vgg19-dcbb9e9d.pth",
+      "bytes": 574673361,
+      "sha256": "dcbb9e9dad569fff7a846263a77324fc34978fea2bfb039c012d710e1776ae44"
+    }
+  },
+  "data": {
+    "train_clips": [
+      "buildingblock_tower_17_176",
+      "buildingblock_tower_10_176"
+    ],
+    "eval_only_clips": [
+      "buildingblock_tower_14_0"
+    ],
+    "evaluation_clips": [
+      "buildingblock_tower_17_176",
+      "buildingblock_tower_10_176",
+      "buildingblock_tower_14_0"
+    ],
+    "roots": {
+      "buildingblock_tower_17_176": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state",
+      "buildingblock_tower_10_176": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1",
+      "buildingblock_tower_14_0": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1"
+    },
+    "frames_per_clip": 177,
+    "teacher_points_per_frame": 112896,
+    "height": 252,
+    "width": 448,
+    "frame_stride": 1,
+    "fps": 29.97,
+    "source_group_disjoint": true,
+    "official_independent_test_split": false,
+    "historical_roles": "tower17 historicallyDEV and admittedTRAIN; tower10 originallyTRAIN; tower14 historicalTEST already evaluated and exposed, gradient-excluded here; not pristine holdout",
+    "all_raw_cache_rows_retained": true,
+    "normalization": "Use each exact prepared clip first-frame dyadic scale and cached camera transform; no new global statistics or renormalization"
+  },
+  "dependency": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1",
+    "pid": 437557,
+    "start_ticks": "38609998",
+    "manifest_sha256": "f9d8db6b8f6c77636dc78cc11c7cbdd5da91d710e5a0675620fb4dd6facd0418",
+    "input_binding_sha256": "af208495ed3df26487a59913cdd306f45038ee2f2bb47bee552f5228702c6b79",
+    "require_done_complete": true
+  },
+  "arms": {
+    "decoder_only": {
+      "trainable_prefixes": [
+        "ae.decoder.",
+        "ae.feature_heads.",
+        "ae.gaussian_multiplier."
+      ],
+      "encoder_frozen": true
+    },
+    "full_codec": {
+      "trainable_prefixes": [
+        "*"
+      ],
+      "encoder_frozen": false
+    }
+  },
+  "model": {
+    "latent_width": 64,
+    "grid": 0.008,
+    "stride": 4,
+    "gaussians_per_voxel": 4,
+    "state_quantization": false,
+    "max_input_voxels": 80000,
+    "max_decoder_candidates": 600000,
+    "max_decoded_gaussians": 2400000
+  },
+  "train": {
+    "steps": 300,
+    "batch_size": 2,
+    "one_frame_per_train_clip_each_step": true,
+    "seed": 20261031,
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.0,
+    "grad_clip": 1.0,
+    "save_steps": [
+      150,
+      300
+    ],
+    "force_target_steps": 240,
+    "no_force_steps": 60,
+    "max_seconds": 1800,
+    "optimizer": "Fresh AdamW for both arms; source weights identical, old optimizer not restored",
+    "loss": {
+      "real_l1": 1.0,
+      "real_vgg19": 0.1,
+      "teacher_l1": 0.5,
+      "pseudo_view_l1": 0.25,
+      "workspace_roi_l1": 0.25,
+      "occupancy_bce": 1.0
+    }
+  },
+  "preflight": {
+    "max_seconds": 900,
+    "updates_per_arm": 2,
+    "force_target_sequence": [
+      true,
+      false
+    ],
+    "frames_per_clip": [
+      0,
+      44
+    ],
+    "discard_parameters": true,
+    "required_initial_render_mae_tolerance": 1e-05,
+    "required_initial_render_psnr_tolerance": 0.02
+  },
+  "evaluation": {
+    "max_seconds": 1800,
+    "baseline_once": true,
+    "frames_per_clip": 177,
+    "clips": 3,
+    "records_per_model": 531,
+    "snapshot_frames": [
+      0,
+      44,
+      88,
+      132,
+      176
+    ],
+    "save_reencoded_states": true,
+    "saved_state_replay_psnr_min": 60.0,
+    "saved_state_replay_mae_max": 1e-05,
+    "views": [
+      0,
+      1
+    ],
+    "workspace_roi_xyxy": [
+      67,
+      38,
+      380,
+      227
+    ],
+    "roi_label": "Fixed central workspace crop; not semantic hand or object masks",
+    "target_forcing": false,
+    "checkpoint_selection": "Only actual additional step300; no best-pick, no automatic replacement of current LDM codec"
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "peak_limit_gib": 48,
+    "minimum_free_gib": 55,
+    "gpu_assignment": {
+      "decoder_only": 0,
+      "full_codec": 1
+    }
+  },
+  "scientific_tests": {
+    "primary": "Per-clip paired full/ROI real MAE versus the shared frozen-source baseline for each TRAIN clip; also teacher and pseudo-view quality. Compare full_codec vs decoder_only on exact same531 frames.",
+    "intervals": "Per-clip moving-block16,2000 bootstrap draws,seed20261031; descriptive only, three source groups are not a population sample.",
+    "transfer": "Report exposed eval-only tower14 unchanged gradient exclusion; do not select a checkpoint by these metrics or claim pristine held-out generalization.",
+    "visual": "Inspect fixed frames0/44/88/132/176 and nearby teacher view; higher meanPSNR does not establish object geometry or learned actions."
+  },
+  "automatic_retry": false,
+  "goal_complete": false,
+  "limitations": [
+    "This stage trains only the continuous state codec, not the QFormer or actionLFQ",
+    "Current v8 runs and old source caches remain immutable",
+    "Full codec updates change latent features; all evaluation states must be freshly encoded and bound to the exact new checkpoint",
+    "No global success or production codec selection from a low-impact engineering check",
+    "Multi-source codec improvement is necessary evidence for later LDM training, not proof of learned motionZ",
+    "All teacher states derive from offline whole-video NeoVerse; this stage does not establish causal perception."
+  ],
+  "queue": {
+    "wait_seconds": 15000,
+    "wait_interval_seconds": 60,
+    "source_admission_seconds": 300,
+    "preflight_process_seconds": 930,
+    "baseline_process_seconds": 1830,
+    "train_process_seconds": 1830,
+    "eval_process_seconds": 1830,
+    "comparison_seconds": 300,
+    "outer_seconds": 22400,
+    "runtime": "/data/CJH/envs/gaussiangpt/bin/python",
+    "gpu_workers": {
+      "0": "decoder_only",
+      "1": "full_codec"
+    },
+    "job_order": [
+      "wait_for_exact_tower10_terminal",
+      "bind_all_sources_cpu",
+      "discarded_two_arm_preflight_gpu0",
+      "shared_baseline_gpu0",
+      "two_train_parallel",
+      "two_evaluations_parallel",
+      "compare_cpu"
+    ]
+  }
+}

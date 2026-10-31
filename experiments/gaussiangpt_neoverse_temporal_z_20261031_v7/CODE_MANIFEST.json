@@ -1,0 +1,21 @@
+{
+  "runner.py": "f039edcb98d82f4f2de3545b0b8b8aa17b8bb71313aa43d7775413ab96c609ac",
+  "temporal_step.py": "6a1de737b3e87d88c6678352236258c031f9e8d66f17d79a04e2b944560562ef",
+  "test_temporal_step.py": "1f6fca29b7479adc99610c3d1d9ab3712cf72ce6334a050c11663666399302db",
+  "pipeline.py": "5ca41ceb7e32c6f90f9e4dd4c1268b417aff00851b3af4b2e68c5e18d610052d",
+  "compare.py": "95938a445296067cffd82251631a9583c966cf7fa248be8a25c41e842650c203",
+  "test_selection.py": "7fe1cf095e9e4b8b83e989aa7b0942cec30a094b6424cd9bb0f67e22c064c2a5",
+  "protocol.json": "47995c1c652048627cc8dd7697b399f7d9b7a507918b53d0e35aa484f136b022",
+  "README.md": "add288f182e7cd6a3e5fa5c8c92cc5d7fbe64bd83d6521f2e31bb74eec8b7d6b",
+  "BENCHMARK_ACCEPTED.json": "fc75cfccaab051704fa905ec98738cd913447774dd25b1146fef23ac7b15c6d5",
+  "../gaussiangpt_neoverse_native_z_20261031_v6/CODE_MANIFEST.json": "5eb6842dfbf9e65239cb72c83bec907b1abe21d2c2a1beca05dfce7562b94d2c",
+  "../gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/postfit_queue.py": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2",
+  "../gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/future_information_probe.py": "5dcef0be17120f1c2c3b4bf2d0d0cacdeaa05411555c2af5e1c8b64a6d9d0b6d",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/diagnostics/attempt1/SUMMARY.json": "b8d228e83cf11e3b68b387ddac00721455f063b27a83ecca551b61f65e2c2fd5",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/benchmark.py": "11766c739edfa9c40d80f86106b0aeaf1b564f16b6486c5c61eb631c4dfa518f",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/staged_step.py": "b11908c3d4d34e578b674fe969d56faaa5347843cafe9800e724fe7da40108c0",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/test_staged_step.py": "55ed5fb5f36e0814e23f2062f6a882e41abc755ab69fdaf90dae1731863e886d",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/null_key_bias.py": "7ef41a420de732a11f6938303f18bfc69cc7655c85b2ad870a1105a1585f83fb",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/test_null_key_bias.py": "7dc7610bdb29aa3d975d285d08190759022d4d85f38c2f3b8556015ab0ab784e",
+  "../gaussiangpt_neoverse_step_acceleration_20261031_v2/README.md": "45a6499462a023c6909bd7fee23fe50d1a4652ab4ba3dbacd7fdac9b95dace61"
+}

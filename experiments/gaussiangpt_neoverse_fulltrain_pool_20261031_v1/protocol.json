@@ -1,0 +1,67 @@
+{
+  "schema": "gs_fulltrain_pool_v1",
+  "run": "gaussiangpt_neoverse_fulltrain_pool_20261031_v1",
+  "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_fulltrain_pool_20261031_v1",
+  "purpose": "Prepare all predeclared TRAIN clips at full adjacent-frame native GS fidelity; no training",
+  "input_pool_sha256": "438d3113a246c214222db14805088773356c8ac251da2946ab27b75ef111f96c",
+  "data": {
+    "clips": 50,
+    "source_groups": 19,
+    "original_train_clips": 49,
+    "authorized_added_clip": "buildingblock_tower_17_176",
+    "fresh_exports": 48,
+    "reuse_clips": ["buildingblock_tower_10_176", "buildingblock_tower_17_176"],
+    "frames_per_clip": 177,
+    "clip_frame_total": 8850,
+    "global_unique_physical_frame_count": null,
+    "frame_stride": 1,
+    "fps": 29.97,
+    "native_hw": [252, 448],
+    "gs_points_per_frame": 112896,
+    "all_input_points_aggregated": true,
+    "teacher_dtype": "bfloat16",
+    "teacher_use_motion": false,
+    "normalization": "fixed_first_frame_scale_0.5_center_zero_unchanged_helper",
+    "official_independent_holdout": false,
+    "source_selection": "audited_authoritative_membership_without_quality_selection"
+  },
+  "queue": {
+    "wait_seconds": 7200,
+    "wait_interval_seconds": 60,
+    "reuse_seconds": 600,
+    "binding_seconds": 300,
+    "teacher_seconds": 1200,
+    "prepare_seconds": 1230,
+    "export_seconds": 9000,
+    "final_seconds": 1800,
+    "outer_seconds": 18600
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "minimum_free_gib": 55,
+    "initial_disk_free_gib": 500,
+    "per_clip_disk_free_gib": 64
+  },
+  "dependency": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_spatial_action_20261031_v9",
+    "pid": 441516,
+    "start_ticks": "39022821",
+    "manifest_sha256": "b40b3353bdcc322c0f40497b1eb17ebeec293e07261a0668d23c04ed31fbdc40",
+    "done_sha256": "20b8c61e73b3d04b0e46460d7f5808bdf95a80d5182d577cad5613f91b1153c9",
+    "summary_sha256": "961a28478dc10e6a651d60ab29ea15fed89f0ee1ee9a7b56ef32580a8ffe09f7"
+  },
+  "process_helper": {
+    "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/postfit_queue.py",
+    "sha256": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2"
+  },
+  "environment": {
+    "gs_python": "/data/CJH/envs/gaussiangpt/bin/python",
+    "neoverse_python": "/data/CJH/AGS-V6Direct/outputs/neoverse_gs_preview_20261028_v1/runtime/bin/python",
+    "gs_warm_spec_sha256": "5813f7633c71422690253c97ae01036751f261478e289039755caa730f0f752f",
+    "package_mutation": false,
+    "cpu_admission_cuda_visible_devices": ""
+  },
+  "automatic_retry": false,
+  "training_executed": false,
+  "goal_complete": false
+}

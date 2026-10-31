@@ -1,0 +1,76 @@
+{
+  "schema": "gs_fulltrain_pool_cpu_document_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "3d889cabcd5e9ef58f91466c888020b60d81fd9e36d24e5c91abca39b62182b0",
+  "protocol_sha256": "893a917ac050cdd02e5783572b01a4f40814a8b88580a6fb9fee487a689dc48a",
+  "input_pool_sha256": "438d3113a246c214222db14805088773356c8ac251da2946ab27b75ef111f96c",
+  "process_helper_sha256": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2",
+  "gpu_executed": false,
+  "training_performed": false,
+  "goal_complete": false,
+  "actual_tests_executed": 61,
+  "elapsed_seconds": 109.05109330001869,
+  "finished_at": "2026-10-31T00:06:15.779183+00:00",
+  "checks": [
+    {
+      "suite": "test_bindings",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_bindings",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 17,
+      "stdout": "",
+      "stderr": "test_actual_hash_mismatch_does_not_write_binding (test_bindings.BindingContracts.test_actual_hash_mismatch_does_not_write_binding) ... ok\ntest_changed_checkpoint_removed_dependency_and_role_fail (test_bindings.BindingContracts.test_changed_checkpoint_removed_dependency_and_role_fail) ... ok\ntest_declaration_preserves_pinned_dependency_closure (test_bindings.BindingContracts.test_declaration_preserves_pinned_dependency_closure) ... ok\ntest_duplicate_or_forged_static_dependency_fails (test_bindings.BindingContracts.test_duplicate_or_forged_static_dependency_fails) ... ok\ntest_existing_output_blocks_before_reading_sources (test_bindings.BindingContracts.test_existing_output_blocks_before_reading_sources) ... ok\ntest_manifest_rejects_tampering_and_unbound_python_source (test_bindings.BindingContracts.test_manifest_rejects_tampering_and_unbound_python_source) ... ok\ntest_missing_source_does_not_write_binding (test_bindings.BindingContracts.test_missing_source_does_not_write_binding) ... ok\ntest_reuse_reference_keeps_limitations_and_never_hashes_old_data (test_bindings.BindingContracts.test_reuse_reference_keeps_limitations_and_never_hashes_old_data) ... ok\ntest_unsafe_clip_path_rejected (test_bindings.BindingContracts.test_unsafe_clip_path_rejected) ... ok\ntest_fps_and_source_hash_mismatch_rejected (test_bindings.PoolContracts.test_fps_and_source_hash_mismatch_rejected) ... ok\ntest_full_native_dimensions_and_points_enforced (test_bindings.PoolContracts.test_full_native_dimensions_and_points_enforced) ... ok\ntest_historical_dev_role_cannot_be_erased (test_bindings.PoolContracts.test_historical_dev_role_cannot_be_erased) ... ok\ntest_pts_gap_duplicate_nan_and_evidence_mismatch_rejected (test_bindings.PoolContracts.test_pts_gap_duplicate_nan_and_evidence_mismatch_rejected) ... ok\ntest_real_audited_pool_has_exact_membership (test_bindings.PoolContracts.test_real_audited_pool_has_exact_membership) ... ok\ntest_reuse_cannot_be_promoted_to_new_export (test_bindings.PoolContracts.test_reuse_cannot_be_promoted_to_new_export) ... ok\ntest_sparse_or_reordered_frames_rejected (test_bindings.PoolContracts.test_sparse_or_reordered_frames_rejected) ... ok\ntest_unapproved_dev_and_excluded_group_rejected (test_bindings.PoolContracts.test_unapproved_dev_and_excluded_group_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 1.542s\n\nOK\n"
+    },
+    {
+      "suite": "test_prepare_clip",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_prepare_clip",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 13,
+      "stdout": "",
+      "stderr": "test_failure_is_persisted_and_second_attempt_does_not_call_helper (test_prepare_clip.AttemptTests.test_failure_is_persisted_and_second_attempt_does_not_call_helper) ... ok\ntest_actual_cache_hash_mismatch_rejected (test_prepare_clip.OutputAdmissionTests.test_actual_cache_hash_mismatch_rejected) ... ok\ntest_changed_teacher_after_helper_rejected (test_prepare_clip.OutputAdmissionTests.test_changed_teacher_after_helper_rejected) ... ok\ntest_complete_fixture_reports_actual_coverage_and_precise_replay_scope (test_prepare_clip.OutputAdmissionTests.test_complete_fixture_reports_actual_coverage_and_precise_replay_scope) ... ok\ntest_missing_frame_rejected_even_with_complete_summary (test_prepare_clip.OutputAdmissionTests.test_missing_frame_rejected_even_with_complete_summary) ... ok\ntest_other_clip_mapping_and_future_normalization_rejected (test_prepare_clip.OutputAdmissionTests.test_other_clip_mapping_and_future_normalization_rejected) ... ok\ntest_same_frame_count_but_reduced_points_rejected (test_prepare_clip.OutputAdmissionTests.test_same_frame_count_but_reduced_points_rejected) ... ok\ntest_adapter_only_changes_three_helper_constants (test_prepare_clip.RecipeTests.test_adapter_only_changes_three_helper_constants) ... ok\ntest_all_48_commands_preserve_full_export (test_prepare_clip.RecipeTests.test_all_48_commands_preserve_full_export) ... ok\ntest_no_overwrite_or_retry_even_without_completed_output (test_prepare_clip.RecipeTests.test_no_overwrite_or_retry_even_without_completed_output) ... ok\ntest_pinned_empty_static_initializer_is_distinct_from_empty_data (test_prepare_clip.RecipeTests.test_pinned_empty_static_initializer_is_distinct_from_empty_data) ... ok\ntest_reuse_and_eval_clips_cannot_get_export_command (test_prepare_clip.RecipeTests.test_reuse_and_eval_clips_cannot_get_export_command) ... ok\ntest_teacher_sparse_export_and_pts_disagreement_rejected (test_prepare_clip.RecipeTests.test_teacher_sparse_export_and_pts_disagreement_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 41.245s\n\nOK\n"
+    },
+    {
+      "suite": "test_admission",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_admission",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 12,
+      "stdout": "",
+      "stderr": "test_hash_checks_actual_file_and_detects_mid_admission_change (test_admission.FileAndMappingTests.test_hash_checks_actual_file_and_detects_mid_admission_change) ... ok\ntest_missing_file_rejected (test_admission.FileAndMappingTests.test_missing_file_rejected) ... ok\ntest_source_indices_pts_and_source_identity_are_independent_checks (test_admission.FileAndMappingTests.test_source_indices_pts_and_source_identity_are_independent_checks) ... ok\ntest_complete_preparation_receipt_is_independently_reverified (test_admission.FreshReceiptTests.test_complete_preparation_receipt_is_independently_reverified) ... ok\ntest_failed_marker_dominates_successful_receipt (test_admission.FreshReceiptTests.test_failed_marker_dominates_successful_receipt) ... ok\ntest_missing_frame_rejected_despite_complete_receipt (test_admission.FreshReceiptTests.test_missing_frame_rejected_despite_complete_receipt) ... ok\ntest_tampered_data_rejected_despite_complete_receipt (test_admission.FreshReceiptTests.test_tampered_data_rejected_despite_complete_receipt) ... ok\ntest_wrong_role_or_invented_coverage_not_admitted (test_admission.FreshReceiptTests.test_wrong_role_or_invented_coverage_not_admitted) ... ok\ntest_duplicate_reuse_clips_rejected (test_admission.ReuseReceiptTests.test_duplicate_reuse_clips_rejected) ... ok\ntest_reference_only_record_cannot_count_as_admission (test_admission.ReuseReceiptTests.test_reference_only_record_cannot_count_as_admission) ... ok\ntest_complete_cache_shape_and_identity (test_admission.TensorContractTests.test_complete_cache_shape_and_identity) ... ok\ntest_native_arrays_count_finiteness_and_frame_checked (test_admission.TensorContractTests.test_native_arrays_count_finiteness_and_frame_checked) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 60.825s\n\nOK\n"
+    },
+    {
+      "suite": "test_pipeline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_pipeline",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 19,
+      "stdout": "",
+      "stderr": "test_bound_helper_stops_only_its_owned_groups (test_pipeline.QueueTests.test_bound_helper_stops_only_its_owned_groups) ... ok\ntest_complete_receipt_rejects_duplicate_clip_wrong_hash_and_global_unique_claim (test_pipeline.QueueTests.test_complete_receipt_rejects_duplicate_clip_wrong_hash_and_global_unique_claim) ... ok\ntest_dependency_terminal_requires_exact_done_no_failed_marker (test_pipeline.QueueTests.test_dependency_terminal_requires_exact_done_no_failed_marker) ... ok\ntest_disk_reserve_refuses_without_reducing_requested_data (test_pipeline.QueueTests.test_disk_reserve_refuses_without_reducing_requested_data) ... ok\ntest_exact_process_identity_and_script_position (test_pipeline.QueueTests.test_exact_process_identity_and_script_position) ... ok\ntest_existing_clip_attempt_refused_without_launch (test_pipeline.QueueTests.test_existing_clip_attempt_refused_without_launch) ... ok\ntest_export_deadline_prevents_any_new_child (test_pipeline.QueueTests.test_export_deadline_prevents_any_new_child) ... ok\ntest_failed_or_timedout_job_stops_siblings_and_never_retries (test_pipeline.QueueTests.test_failed_or_timedout_job_stops_siblings_and_never_retries) ... ok\ntest_fixed_budgets_runtime_and_dependency_cannot_be_swapped (test_pipeline.QueueTests.test_fixed_budgets_runtime_and_dependency_cannot_be_swapped) ... ok\ntest_full_teacher_recipe_does_not_sample_or_reduce_resolution (test_pipeline.QueueTests.test_full_teacher_recipe_does_not_sample_or_reduce_resolution) ... ok\ntest_gpu_admission_is_single_query_and_rejects_small_or_missing_gpu (test_pipeline.QueueTests.test_gpu_admission_is_single_query_and_rejects_small_or_missing_gpu) ... ok\ntest_invalid_pool_sampling_or_role_is_not_scheduled (test_pipeline.QueueTests.test_invalid_pool_sampling_or_role_is_not_scheduled) ... ok\ntest_job_environment_cpu_and_gpu_are_isolated_and_deadline_bounded (test_pipeline.QueueTests.test_job_environment_cpu_and_gpu_are_isolated_and_deadline_bounded) ... ok\ntest_local_verify_uses_pinned_sibling_and_ignores_generated_md (test_pipeline.QueueTests.test_local_verify_uses_pinned_sibling_and_ignores_generated_md) ... ok\ntest_manifest_requires_documented_execution_and_every_queue_source (test_pipeline.QueueTests.test_manifest_requires_documented_execution_and_every_queue_source) ... ok\ntest_no_retry_training_or_success_relabel (test_pipeline.QueueTests.test_no_retry_training_or_success_relabel) ... ok\ntest_parallel_failure_cancels_other_lane_before_next_clip (test_pipeline.QueueTests.test_parallel_failure_cancels_other_lane_before_next_clip) ... ok\ntest_pool_assignments_cover_all_48_once_and_preserve_declared_membership (test_pipeline.QueueTests.test_pool_assignments_cover_all_48_once_and_preserve_declared_membership) ... ok\ntest_receipt_creation_never_overwrites_a_prior_attempt (test_pipeline.QueueTests.test_receipt_creation_never_overwrites_a_prior_attempt) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.476s\n\nOK\n"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# v7：float32/float64 解码精度诊断
+
+本目录只诊断，不训练、不改checkpoint、剪枝阈值、输入或图像尺度。固定decoder_only step4426、checkpoint SHA `dcdcd0be5f999b09086bbc31c91aea62898600c123a962791845314898d6eef3`、buildingblock_tower_15_176的frame113/114、112896源GS、448×252、连续float32[N,64]状态。原重放阈值仍为MAE≤1e-5且PSNR≥60。
+
+v6已完成真实GPU诊断；True＋SHARE仍在frame114的[0,5,-5,38]附近出现跨-3阈值及4个GS差异，因此该组合未解决fresh重放问题。v7检验解码数值精度，不再启用SHARE或确定性排序。两个条件明确命名decoder_precision=float32/float64，不用deterministic=True代称。
+
+## 真实接口与精度边界
+
+已核原StateCodec.encode_state输出原z.F；AE.decode直接调用decoder，然后由feature_heads预测GS，K=4 ResidualMultiplier使用offsets与Linear残差；_world执行grid坐标变换和opacity修正。原renderer的prediction_gs组合GS并交给float32相机/内参渲染。独立precision.py在这些原接口外适配，不修改原源码。
+
+两条件分别从相同float32 checkpoint新建eval模型并按同一seed初始化。仅ae.decoder、ae.feature_heads、ae.gaussian_multiplier的浮点参数/buffers转目标精度；encoder、embeddings、set_encoder和其他state逐字节保持。float64参数转回原dtype必须与加载时逐字节一致，整数buffers保持。记录转换前checkpoint身份、原模型digest、转换后模式digest、dtype统计和精确验证结果；条件内结束时全部model state必须仍与转换后快照逐字节一致，不以castback近似代替模式内原精度检查。
+
+encoder输入/参数/输出及保存packet仍float32[N,64]。每次ae.decode前，float64条件仅将当前原sparse的F.double()，用同一个coordinate_map_key对象和coordinate_manager对象构造SparseTensor；不传新coordinates、不排序或重建坐标，核验key/manager identity及原F未变。float32基线返回原sparse。原AE的初始COORDS显式转float32；当前K=4 multiplier的double offsets会将其提升到double，随后原feature_heads/_world按该路径执行。记录实际world GS dtypes。完成原_world后，所有浮点GS属性转float32供原renderer，整数BATCH保持；记录渲染packet dtypes，不改原renderer。
+
+ME固定deterministic=False，稀疏张量operation mode要求原SEPARATE_COORDINATE_MANAGER；不调用manager setter/clear，不使用SHARE，不用autocast。保留原deterministic flag并在结束恢复。Python层不强制卷积回float32，但真实CUDA backend的double支持和资源消耗仍须本轮GPU证据确认；若不支持就如实失败，不能回退或称已修复。
+
+## 两帧、五路、三次
+
+每条件每帧fresh encode一次，保存未经排序的float32 CPU packet，直接decode产生reference。五路各三次：same_gs_render、same_sparse_decode、cpu_rebuild、disk_rebuild、historical_disk_rebuild。same_gs_render不新decode，复用reference pruning；其他每次decode都通过同一precision适配层。状态重建仍使用原_sparse及原target_key=None解码，无目标强制。
+
+历史包只读路径为 `<fullpool_root>/evaluations/decoder_only/states/buildingblock_tower_15_176/{113,114}.pt`，验证SHA/metadata/checkpoint/clip/frame/arm/source/4426 updates/cache SHA。没有重放前2238帧。不同精度各自fresh encode可能出现原encoder的数值差异，cross_decoder_precision会记录latent精确与规范排序比较；不能在latent不一致时把全部跨条件画质差异只归因于decoder精度。
+
+原all_lanes及replay_thresholds_passed定义保留，仍包括五路；额外fresh_same_state四路与historical_state_comparison分别汇总并写明输入身份。旧历史packet来自旧False encoder，其features与本次fresh可不同；仅historical失败不能等同当前fresh同包disk replay失败。正式全量eval使用fresh encode→同包disk replay，没有historical lane。
+
+## 剪枝与原始证据
+
+继续绑定原minkowski_decoder.py SHA `47c2ef0e8c7bd882688528d2ab1d2f2ac781b6ea3c5a6f77ec35db3cf1006456`。真实剪枝是原始logit严格大于各层实际prune_thresh，无sigmoid、不加epsilon；阈值与旧模型完全相同。float64条件在double logits上比较原阈值；阈值统计按该logit dtype执行。target_key=None时原decode返回out_cls=[]，保持这一事实，用不替换输出的hooks捕获真实classifier与pruning输入/mask/输出。
+
+hook时detach().clone()获得独立存储；完整CPU *_pruning.pt和*.raw.json SHA回执先于摘要/完整性/非有限/mask一致性校验保存。decode出错时尽可能保存已捕获阶段。额外GPU拷贝和保留会影响开销/调度，不宣称观测无扰动；设备损坏导致CPU传输失败时不能保证raw保存。
+
+记录每层实际shape、阈值、logit dtype、kept数、最小绝对margin、最近10行，以及classifier/pruning输入逐行是否相同。重复候选全部保留并报告multiplicity；两侧均唯一的精确(batch,x,y,z)才做逐点阈值翻转，重复组仅比较保留全部重数和精确字节的logit多重集合/kept计数，缺失坐标单列。mask选中输入与实际输出以多重集合核对。统计不是物理GS身份，不能静默去重。
+
+GS字段继续按枚举.value规范化，BATCH等原字段/shape约束不放宽；首次检查前保存GS_SCHEMA.json。规范GS属性对应只有精确锚相同且无重复锚才有效。reference质量报告真实主视角、主视角teacher及nearby teacher的MAE/PSNR/ROI；nearby无真实采集图，明确null。
+
+## 输出、资源与验证
+
+每条件目录decoder_precisions/float32或float64。记录字段统一decoder_precision；PRECISION_CONVERSION保存精确转换证据，PRECISION_RESULT/PRECISION_FAILED保存独立结果。根RESULT包含decoder_precision_results及cross_decoder_precision，旧阈值判定依旧使用原CUDA float32图像指标；CPU float64图像统计只是补充。有限越界继续记录，执行/绑定/非有限/资源失败则FAILED，不自动重试；repair_validated=false。
+
+只暴露一张GPU，CPU6线程、interop1，torch allocator10GiB留余量，总torch及进程阶段观测保护12GiB。初始化最多1200秒、两个精度条件合计诊断最多1200秒（含第二次加载/转换）、外部2460秒。不减点数/分辨率、不增预算。阶段采样不保证捕捉全部瞬时原生分配峰值。
+
+八源probe.py、precision.py、test_probe.py、test_precision.py、validate.py、protocol.json和两份说明共同冻结。validate.py运行test_*.py；新增CPU测试用真实torch Linear/BatchNorm/整数buffer验证dtype、castback、encoder不变、renderer float32及模式内修改检出，SparseTensor仅用CPU壳验证map key/manager identity，不冒充ME/CUDA证明。其余统计测试继续保留。CPU证明须零skip、gpu_executed=false并绑定精确manifest，任何修改重封存并新见证。
+
+启动目录不得已有STARTED/records/RESULT/FAILED，旧v1–v6只读。一次GPU执行命令见EXECUTION.md。两帧通过不能代替全9027帧验收。

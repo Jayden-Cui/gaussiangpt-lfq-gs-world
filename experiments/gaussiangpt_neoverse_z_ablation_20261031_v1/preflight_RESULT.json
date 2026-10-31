@@ -1,0 +1,593 @@
+{
+  "status": "passed",
+  "formal_training": false,
+  "formal_updates_per_arm": 0,
+  "discarded_updates_per_arm": 2,
+  "batch_size": 4,
+  "frames_per_window": 10,
+  "source_frames": 177,
+  "frame_gap": 1,
+  "checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "native_replay_sha256": "5f3a3842a8b824a902ae8b50c919ea14a1c2c273658a89406de46d416dcbe527",
+  "state_manifest_sha256": "6982106649970254057d463e1213c36c1257ed1e2e202c77af830587559d0e54",
+  "teacher_assets_sha256": "de1c59b6f3d4658af9a17a3ded8fed39fda9c2f199f69f99255dcdad653f42a6",
+  "initial_model_sha256": "1b9263f936233bb2af1c9dc1e698b68f9ebbacb2033727781c9c6df8aa59a007",
+  "common_preflight_checkpoint_sha256": "6085c5cd60062c3006f2f08ef81d54ee79734d9d35d1c7daa1f42051e40ae3a1",
+  "initial_codec_digest": "34d5a679d0871e93450fc0a2430e4592216059e71fc13f090c8639c0bec5deed",
+  "calibration": {
+    "s_ref": 0.5622117519378662,
+    "entries": 24192,
+    "sum_squares": 7646.657674905532,
+    "rule": "global RMS of common-initialization soft LFQ codes; fixed"
+  },
+  "adapter": {
+    "normalization": "initial_reference_four_slots",
+    "replacements": [
+      "blocks.0.temporal.norm1",
+      "blocks.0.temporal.norm2",
+      "blocks.0.condition_norm",
+      "blocks.1.temporal.norm1",
+      "blocks.1.temporal.norm2",
+      "blocks.1.condition_norm",
+      "blocks.2.temporal.norm1",
+      "blocks.2.temporal.norm2",
+      "blocks.2.condition_norm",
+      "blocks.3.temporal.norm1",
+      "blocks.3.temporal.norm2",
+      "blocks.3.condition_norm"
+    ],
+    "action_mode": "lfq16",
+    "lfq_source_sha256": "9fb68bdcb3763ac580c2a0f931640a70a14a0fed65e0b29a8800ee015b4452eb",
+    "extra_trainable_parameters": 0
+  },
+  "training_plan_candidate_sha256": "d80f965a9fbd7c4906327691e0a671488b68d5c8d32f62a8842107163c58c984",
+  "preflight_batches": [
+    [
+      116,
+      77,
+      61,
+      94
+    ],
+    [
+      82,
+      161,
+      62,
+      37
+    ]
+  ],
+  "optimizer": {
+    "motion_lr": 0.0003,
+    "native_lr": 1e-05,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.0,
+    "grad_clip": 1.0
+  },
+  "arms": {
+    "continuous16": {
+      "discarded_updates": 2,
+      "formal_updates": 0,
+      "initial_model_sha256": "1b9263f936233bb2af1c9dc1e698b68f9ebbacb2033727781c9c6df8aa59a007",
+      "initial_codec_digest": "34d5a679d0871e93450fc0a2430e4592216059e71fc13f090c8639c0bec5deed",
+      "updates": [
+        {
+          "full_l1": 0.04318473997991532,
+          "roi_l1": 0.052384151006117464,
+          "motion_l1": 0.0980976992752403,
+          "delta_full_l1": 0.04206305007553763,
+          "delta_roi_l1": 0.05277270592179977,
+          "action_mode": "continuous16",
+          "batch_size": 4,
+          "starts": [
+            116,
+            77,
+            61,
+            94
+          ],
+          "teacher_weights": [
+            0.0,
+            0.25
+          ],
+          "teacher_view0_l1": 0.044753555208444595,
+          "teacher_view1_l1": 0.04408692941069603,
+          "auxiliary": 0.04371030628681183,
+          "reconstruction_latent_grad_per_sample_h": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reconstruction_query_grad_per_h": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reconstruction_project_in_grad": 0.0,
+          "reconstruction_project_out_grad": 0.0,
+          "gradient_norms": {
+            "residual_head": 0.05850739701083412,
+            "motion_encoder": 0.012225586929085219,
+            "motion_decoder": 0.0,
+            "native_trainable": 1.7821396988203093,
+            "native_out": 0.29390306919394066,
+            "native_heads": 1.7525769515363103,
+            "native_multiplier": 0.13459911208257772
+          },
+          "preclip_grad_norm": 1.7846040632564226,
+          "gs_count_min": 52812,
+          "gs_count_max": 53576,
+          "initial_rgb_grad_norm_per_sample": [
+            0.0006305911811068654,
+            0.0007242501014843583,
+            0.0007107732235454023,
+            0.0005592609522864223
+          ],
+          "action_codes_shape": [
+            4,
+            9,
+            16
+          ],
+          "indices_shape": null
+        },
+        {
+          "full_l1": 0.02987897298298776,
+          "roi_l1": 0.03340243892744184,
+          "motion_l1": 0.07332348339259624,
+          "delta_full_l1": 0.02675740090328165,
+          "delta_roi_l1": 0.030336342363928754,
+          "action_mode": "continuous16",
+          "batch_size": 4,
+          "starts": [
+            82,
+            161,
+            62,
+            37
+          ],
+          "teacher_weights": [
+            0.0,
+            0.25
+          ],
+          "teacher_view0_l1": 0.03160464018583298,
+          "teacher_view1_l1": 0.03412465378642082,
+          "auxiliary": 0.04065020754933357,
+          "reconstruction_latent_grad_per_sample_h": [
+            [
+              7.040798095658829e-07,
+              6.891616521897959e-07,
+              7.68064978728944e-07,
+              6.221802095751627e-07,
+              8.976271601568442e-07,
+              7.296829380720737e-07,
+              5.994639877826557e-07,
+              5.670777341038047e-07,
+              7.029202606645413e-07
+            ],
+            [
+              2.1584610294667073e-06,
+              2.232087808806682e-06,
+              2.412290996289812e-06,
+              2.6581924430502113e-06,
+              2.4370860955968965e-06,
+              2.7219705316383624e-06,
+              1.93752794075408e-06,
+              2.0764975943166064e-06,
+              1.687081976342597e-06
+            ],
+            [
+              6.085935524424713e-07,
+              4.764766003972909e-07,
+              5.574667056862381e-07,
+              6.069307687539549e-07,
+              5.264361107037985e-07,
+              8.27995734198339e-07,
+              5.831413432133559e-07,
+              6.885181846882915e-07,
+              6.490882356047223e-07
+            ],
+            [
+              3.5517530250217533e-06,
+              5.355675057217013e-06,
+              6.148625288915355e-06,
+              6.652161573583726e-06,
+              7.2706202445260715e-06,
+              6.289195425779326e-06,
+              5.435148068499984e-06,
+              5.558781140280189e-06,
+              4.722155608760659e-06
+            ]
+          ],
+          "reconstruction_query_grad_per_h": [
+            1.2900044339403394e-06,
+            3.279485326856957e-06,
+            8.58430030348245e-06,
+            3.2518087209609803e-06,
+            1.0886231393669732e-05,
+            4.273591912351549e-06,
+            1.1981467650912236e-05,
+            3.910608938895166e-06,
+            3.208952875866089e-06
+          ],
+          "reconstruction_project_in_grad": 0.00013241717671919054,
+          "reconstruction_project_out_grad": 6.251417331208812e-05,
+          "gradient_norms": {
+            "residual_head": 0.05888766324342501,
+            "motion_encoder": 0.01923285190827554,
+            "motion_decoder": 0.0008845086087797615,
+            "native_trainable": 1.6704194987246384,
+            "native_out": 0.267991763938394,
+            "native_heads": 1.6442840027828305,
+            "native_multiplier": 0.12170387986063771
+          },
+          "preclip_grad_norm": 1.6750706399356836,
+          "gs_count_min": 52096,
+          "gs_count_max": 53272,
+          "initial_rgb_grad_norm_per_sample": [
+            0.000756133405957371,
+            0.0006273243925534189,
+            0.0007408480742014945,
+            0.0007123284158296883
+          ],
+          "action_codes_shape": [
+            4,
+            9,
+            16
+          ],
+          "indices_shape": null
+        }
+      ],
+      "null_key_bias": {
+        "policy": "qformer_softmax_key_bias_fixed_v1",
+        "parameter_names": [
+          "posteriors.0.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.0.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.0.final_attn_token_to_image.k_proj.bias",
+          "posteriors.1.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.1.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.1.final_attn_token_to_image.k_proj.bias",
+          "posteriors.2.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.2.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.2.final_attn_token_to_image.k_proj.bias",
+          "posteriors.3.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.3.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.3.final_attn_token_to_image.k_proj.bias",
+          "posteriors.4.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.4.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.4.final_attn_token_to_image.k_proj.bias",
+          "posteriors.5.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.5.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.5.final_attn_token_to_image.k_proj.bias",
+          "posteriors.6.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.6.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.6.final_attn_token_to_image.k_proj.bias",
+          "posteriors.7.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.7.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.7.final_attn_token_to_image.k_proj.bias",
+          "posteriors.8.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.8.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.8.final_attn_token_to_image.k_proj.bias"
+        ],
+        "count": 27,
+        "scalar_count": 864,
+        "values_sha256": "489cc1ad22a10103af0e864df484d783790a4eb5ca29845b8a7a1994be87f5cd",
+        "optimizer_state_sha256": "705a823c6ab85aadd9edb55e2f985a97fe588de0c634045a7469ab4e6634f8e6",
+        "in_optimizer_count": 27,
+        "unchanged": true
+      },
+      "frozen_codec_parameters_buffers_unchanged": true
+    },
+    "lfq16": {
+      "discarded_updates": 2,
+      "formal_updates": 0,
+      "initial_model_sha256": "1b9263f936233bb2af1c9dc1e698b68f9ebbacb2033727781c9c6df8aa59a007",
+      "initial_codec_digest": "34d5a679d0871e93450fc0a2430e4592216059e71fc13f090c8639c0bec5deed",
+      "updates": [
+        {
+          "full_l1": 0.043184739607386294,
+          "roi_l1": 0.05238415044732392,
+          "motion_l1": 0.09809769815765321,
+          "delta_full_l1": 0.04206304821289248,
+          "delta_roi_l1": 0.052772703231312335,
+          "action_mode": "lfq16",
+          "batch_size": 4,
+          "starts": [
+            116,
+            77,
+            61,
+            94
+          ],
+          "teacher_weights": [
+            0.0,
+            0.25
+          ],
+          "teacher_view0_l1": 0.0447535514831543,
+          "teacher_view1_l1": 0.04408692941069603,
+          "auxiliary": 0.04371030628681183,
+          "reconstruction_latent_grad_per_sample_h": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reconstruction_query_grad_per_h": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reconstruction_project_in_grad": 0.0,
+          "reconstruction_project_out_grad": 0.0,
+          "gradient_norms": {
+            "residual_head": 0.05871189006308467,
+            "motion_encoder": 0.012225586929085219,
+            "motion_decoder": 0.0,
+            "native_trainable": 1.782139453684659,
+            "native_out": 0.2939029314622848,
+            "native_heads": 1.752576730758136,
+            "native_multiplier": 0.13459904183334528
+          },
+          "preclip_grad_norm": 1.7846105343498355,
+          "gs_count_min": 52812,
+          "gs_count_max": 53576,
+          "initial_rgb_grad_norm_per_sample": [
+            0.0006305899587459862,
+            0.0007242501014843583,
+            0.0007107732235454023,
+            0.0005592609522864223
+          ],
+          "action_codes_shape": [
+            4,
+            9,
+            16
+          ],
+          "indices_shape": [
+            4,
+            9
+          ]
+        },
+        {
+          "full_l1": 0.02987864732276648,
+          "roi_l1": 0.03340342806186527,
+          "motion_l1": 0.07332353233359754,
+          "delta_full_l1": 0.026756558366792485,
+          "delta_roi_l1": 0.03033646152147816,
+          "action_mode": "lfq16",
+          "batch_size": 4,
+          "starts": [
+            82,
+            161,
+            62,
+            37
+          ],
+          "teacher_weights": [
+            0.0,
+            0.25
+          ],
+          "teacher_view0_l1": 0.03160597011446953,
+          "teacher_view1_l1": 0.03412630781531334,
+          "auxiliary": 0.040650203824043274,
+          "reconstruction_latent_grad_per_sample_h": [
+            [
+              8.332455649906478e-07,
+              8.111752549666562e-07,
+              6.65636775920575e-07,
+              6.192359478518483e-07,
+              8.340650197169452e-07,
+              7.736741167718719e-07,
+              5.680824415321695e-07,
+              6.170968163132784e-07,
+              5.709084689442534e-07
+            ],
+            [
+              2.0461279746086802e-06,
+              2.7634257548925234e-06,
+              2.684556420717854e-06,
+              2.97530186799122e-06,
+              2.5800866296776803e-06,
+              2.9378377348621143e-06,
+              2.231445478173555e-06,
+              2.2385727334039984e-06,
+              1.509225739937392e-06
+            ],
+            [
+              5.865466050636314e-07,
+              5.395429525378859e-07,
+              5.801377369607508e-07,
+              6.240562697712448e-07,
+              5.639581104333047e-07,
+              7.40758139272657e-07,
+              5.359917167879757e-07,
+              6.292061698331963e-07,
+              6.14084342487331e-07
+            ],
+            [
+              4.072209776495583e-06,
+              6.990449037402868e-06,
+              7.178914984251605e-06,
+              7.69290818425361e-06,
+              7.331053438974777e-06,
+              8.674617674842011e-06,
+              5.49631977264653e-06,
+              5.460792181111174e-06,
+              4.818624802283011e-06
+            ]
+          ],
+          "reconstruction_query_grad_per_h": [
+            1.2782243175024632e-06,
+            5.40793689651764e-06,
+            9.406101526110433e-06,
+            8.32317800814053e-06,
+            9.145242984232027e-06,
+            4.5723490984528325e-06,
+            1.1072130291722715e-05,
+            4.052943950227927e-06,
+            2.5110296064667637e-06
+          ],
+          "reconstruction_project_in_grad": 0.00015901245170816484,
+          "reconstruction_project_out_grad": 7.813020581591946e-05,
+          "gradient_norms": {
+            "residual_head": 0.058944748781699134,
+            "motion_encoder": 0.019239790094913313,
+            "motion_decoder": 0.0009833358199440364,
+            "native_trainable": 1.6705448022552167,
+            "native_out": 0.26798855065833926,
+            "native_heads": 1.6444152489285386,
+            "native_multiplier": 0.12165756100323638
+          },
+          "preclip_grad_norm": 1.6751993621234629,
+          "gs_count_min": 52100,
+          "gs_count_max": 53268,
+          "initial_rgb_grad_norm_per_sample": [
+            0.0007568766595795751,
+            0.0006255846819840372,
+            0.0007403205963782966,
+            0.0007131187012419105
+          ],
+          "action_codes_shape": [
+            4,
+            9,
+            16
+          ],
+          "indices_shape": [
+            4,
+            9
+          ]
+        }
+      ],
+      "null_key_bias": {
+        "policy": "qformer_softmax_key_bias_fixed_v1",
+        "parameter_names": [
+          "posteriors.0.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.0.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.0.final_attn_token_to_image.k_proj.bias",
+          "posteriors.1.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.1.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.1.final_attn_token_to_image.k_proj.bias",
+          "posteriors.2.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.2.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.2.final_attn_token_to_image.k_proj.bias",
+          "posteriors.3.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.3.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.3.final_attn_token_to_image.k_proj.bias",
+          "posteriors.4.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.4.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.4.final_attn_token_to_image.k_proj.bias",
+          "posteriors.5.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.5.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.5.final_attn_token_to_image.k_proj.bias",
+          "posteriors.6.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.6.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.6.final_attn_token_to_image.k_proj.bias",
+          "posteriors.7.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.7.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.7.final_attn_token_to_image.k_proj.bias",
+          "posteriors.8.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.8.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "posteriors.8.final_attn_token_to_image.k_proj.bias"
+        ],
+        "count": 27,
+        "scalar_count": 864,
+        "values_sha256": "489cc1ad22a10103af0e864df484d783790a4eb5ca29845b8a7a1994be87f5cd",
+        "optimizer_state_sha256": "705a823c6ab85aadd9edb55e2f985a97fe588de0c634045a7469ab4e6634f8e6",
+        "in_optimizer_count": 27,
+        "unchanged": true
+      },
+      "frozen_codec_parameters_buffers_unchanged": true
+    }
+  },
+  "peak_allocated_gib": 6.843250274658203,
+  "peak_reserved_gib": 7.220703125,
+  "elapsed_seconds": 63.89329643698875
+}

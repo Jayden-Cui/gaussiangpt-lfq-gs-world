@@ -1,0 +1,6 @@
+{
+  "grid": 0.008,
+  "mode": "set_statistics",
+  "gaussians_per_voxel": 4,
+  "reason": "Preserve prior spatial architecture with all-point moments; report representative error independently"
+}

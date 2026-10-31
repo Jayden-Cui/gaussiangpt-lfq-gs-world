@@ -1,0 +1,18 @@
+{
+  "BASELINE_NOTES.md": "7a8b59cb369f6beaa72759014dcc55d15cd15ff75ceace88218c1b076b886a8e",
+  "DATA_ADAPTER.md": "73b420723931162d33ed55504121b71b05860b8acd2a7af0a5cf030b206e440b",
+  "EXECUTION.md": "70ca90ca9942dafe9c6f0682a03647093078019d78fc9edfd3fa5a2283a7add1",
+  "WORKER_NOTES.md": "0b6f0f3f8691303b76c97265ad3f5a16257b9895d6818b1802bc032ea50d8689",
+  "baseline_adapter.py": "dc2827dabf8058cae79dd10c32ad68049130eded2a02568fc4089e0753cf1ea0",
+  "compare.py": "adf0af533d8c25765d4ab588f4c0c48755cc85a8be63969ca6d6faa9642eb82f",
+  "pipeline.py": "fa38181872954ee135025175ea47830b14736dff0a36d51721c2da3e095a7680",
+  "pool_index.py": "8577a94ad505c863503aae5c1424f3a8b330cae90b67b25f7c8edfde35196f99",
+  "protocol.json": "37c2c88814c82a79de32e77d4add8e8b1ffa34ed443f7cae49a9a4805aaf911a",
+  "test_baseline_adapter.py": "abd4c9c9794804242d6b4d71548a04cc527e6b910d21fec5e47e7e3f9531bb8c",
+  "test_compare.py": "df23eb826d3a9851b027ead4a27753934cd5cba4046e0b9cf3eb0571d003a07e",
+  "test_pipeline.py": "f7ad648da1e2239d4ce08bc13fd95c172445aa1ae6c0a0eb87f9ced54eeb5eb1",
+  "test_pool_index.py": "f5f70a6b072c87d0c6076991bbecfe68322ce306c723643ee2a13b5314d875d6",
+  "test_worker.py": "64701f8b5aec011cb2144ffe3794d2e7d4b91c534ab63f20828111a9b82837b7",
+  "validate.py": "42aba37624b89a9e5e4ef57b140a24f8ef487b26c34a92201349000977d36e4a",
+  "worker.py": "ad072ccd4624df5a0df82177a336335a1fb2ffff2e15a03d412ac0c49e9aa4ef"
+}

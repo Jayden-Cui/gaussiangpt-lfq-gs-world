@@ -1,0 +1,171 @@
+{
+  "schema": "gs_temporal_four_arm_continuation_v7",
+  "seed": 20261031,
+  "objective": "Distinguish longer optimization from explicitly learning image changes, with matched constant-code controls. Successful screening is not transferable action or AR success.",
+  "source_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6",
+  "acceleration_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_step_acceleration_20261031_v2",
+  "source_manifest_sha256": "5eb6842dfbf9e65239cb72c83bec907b1abe21d2c2a1beca05dfce7562b94d2c",
+  "source_protocol_sha256": "73744951bf9590f42a37a460e51829264a269b6442ac0ef8e50d402da5c959f1",
+  "acceleration_source_sha256": {
+    "staged_step.py": "b11908c3d4d34e578b674fe969d56faaa5347843cafe9800e724fe7da40108c0",
+    "null_key_bias.py": "7ef41a420de732a11f6938303f18bfc69cc7655c85b2ad870a1105a1585f83fb"
+  },
+  "process_helper_sha256": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2",
+  "source_checkpoints": {
+    "partial": {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6/partial/step_0100.pt",
+      "sha256": "a016d06fbcdaab456d592c8342e0668afbd13a8aade5a82a9f432fe964a968d3"
+    },
+    "constant": {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6/constant/step_0100.pt",
+      "sha256": "30c709b4ac5e6d8cda0eaf311355e7b3eb4e96108ebd665a00b5401878f7a9fb"
+    }
+  },
+  "arms": {
+    "z_rgb": {
+      "source_arm": "partial",
+      "delta_weight": 0.0
+    },
+    "constant_rgb": {
+      "source_arm": "constant",
+      "delta_weight": 0.0
+    },
+    "z_delta": {
+      "source_arm": "partial",
+      "delta_weight": 1.0
+    },
+    "constant_delta": {
+      "source_arm": "constant",
+      "delta_weight": 1.0
+    }
+  },
+  "train": {
+    "initial_steps": 100,
+    "total_steps": 400,
+    "additional_steps": 300,
+    "max_seconds": 1800,
+    "save_steps": [
+      200,
+      300,
+      400
+    ]
+  },
+  "data_invariants": {
+    "source_frames": 177,
+    "complete_windows": 168,
+    "B": 4,
+    "T": 10,
+    "frame_gap": 1,
+    "resolution_hw": [
+      252,
+      448
+    ],
+    "latent_width": 64,
+    "lfq_bits": 16,
+    "all_initial_latent_points_retained": true,
+    "native_encoder_frozen": true,
+    "native_scope": "decoder.out, feature_heads, gaussian_multiplier; same learning rates as v6"
+  },
+  "loss": {
+    "original": "Unchanged v6 native RGB full/ROI/motion-weighted L1 plus original LFQ auxiliary",
+    "delta": "mean_B mean_h=1..9 [mean(abs((pred_h-pred_0)-(real_h-real_0))) + ROImean(abs((pred_h-pred_0)-(real_h-real_0)))]",
+    "delta_weight": 1.0,
+    "initial_gradient": "Both predicted endpoints receive the full difference gradient; no stopped initial gradient",
+    "future_access": "Future real RGB only enters losses; posterior codes have normal future-state access, decoder receives initial state and quantized codes only"
+  },
+  "preflight": {
+    "max_seconds": 600,
+    "starts": [
+      0,
+      42,
+      84,
+      126
+    ],
+    "arms": [
+      "z_delta",
+      "constant_delta"
+    ],
+    "updates_per_arm": 1
+  },
+  "evaluation": {
+    "max_seconds": 2400,
+    "windows": 168,
+    "future_exposures": 1512,
+    "physical_future_frames": 176,
+    "controls": [
+      "correct",
+      "shuffle42",
+      "shuffle84",
+      "shuffle126",
+      "adapted_held",
+      "held_initial",
+      "frozen_target",
+      "blinded"
+    ],
+    "delta_controls": [
+      "correct",
+      "shuffle42",
+      "shuffle84",
+      "shuffle126",
+      "adapted_held",
+      "blinded"
+    ],
+    "frozen_reference_delta": "Not computed; null, never zero",
+    "selection": "Largest common saved step among200/300/400; never quality selected",
+    "bootstrap": {
+      "block_length": 16,
+      "replicates": 2000,
+      "seed": 20261031,
+      "unit": "physical target frame after overlap reduction",
+      "scope": "descriptive single TRAIN clip"
+    },
+    "blinded": "Original verified blind_window helper repeats initial coordinates/features with original time positions; same decoder and initial condition; separate predictedh0; distribution-shift diagnostic, not semantic proof."
+  },
+  "queue": {
+    "gpu_workers": {
+      "0": [
+        "z_rgb",
+        "constant_delta"
+      ],
+      "1": [
+        "constant_rgb",
+        "z_delta"
+      ]
+    },
+    "train_process_seconds": 1950,
+    "eval_process_seconds": 2500,
+    "outer_seconds": 9600
+  },
+  "scientific_tests": {
+    "z_screen": "For each loss mode, original14CI rules vs3shuffles/matchedconstant/frozenheld plus nonworse fullMAE at everyh; no goal completion from pass alone.",
+    "longer_training": "Comparez_rgb at common selectedstep against matchedconstant_rgb, and report changes fromsource100. Common-step source controls remain bound.",
+    "delta_hypothesis": "z_delta vsz_rgb: physical-frame deltaROI anddelta_motion descriptive95percent lower bounds positive; full/ROI MAE means nonworse;h0fullMAE mean nonworse. Also require z_delta vsconstant_delta action-contribution controls.",
+    "failure_interpretation": "Loss reduction, code entropy or tiny PSNR gain alone is not learned action. Do not automatically widen thresholds or resubmit."
+  },
+  "stop": [
+    "Source/manifest mismatch",
+    "Nonfinite loss/gradient/image",
+    "Missing frame/support",
+    "GPU guard or OOM",
+    "Bounded process timeout",
+    "Failed benchmark or preflight"
+  ],
+  "retry": "No automatic retry or runtime retuning; preserve all failures",
+  "goal_complete": false,
+  "limitations": [
+    "Single TRAIN clip, no heldout or action-transfer proof",
+    "Periodically conditioned posterior decoding, notAR",
+    "Whole-window decoder conditioning remains; strictprefix causal change is not silently mixed into loss comparison",
+    "Original native hard pruning remains",
+    "Longer finite budget can fail without proving architecture impossible"
+  ],
+  "numerical_stability": {
+    "policy": "freeze_exact_27_softmax_key_projection_biases_preserve_values_and_optimizer_state",
+    "reason": "Their exact derivatives vanish because the bias adds a constant per query before masked softmax; no value-vector or other path uses key projection bias. Original and staged GPU repeats fail only relative gradients of these nearzero tensors.",
+    "training_scope": "All four new arms apply this policy after restoring source checkpoint and optimizer; dimensions and forward parameter values unchanged. Constant arms already freeze these parameters and must retain absent optimizer membership.",
+    "not_a_pass_for_prior_attempt": true,
+    "tolerances_unchanged": true,
+    "implementation_policy": "qformer_softmax_key_bias_fixed_v1"
+  },
+  "future_information_probe_sha256": "5dcef0be17120f1c2c3b4bf2d0d0cacdeaa05411555c2af5e1c8b64a6d9d0b6d"
+}

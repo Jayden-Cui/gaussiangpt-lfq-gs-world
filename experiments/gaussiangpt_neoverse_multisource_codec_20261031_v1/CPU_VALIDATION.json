@@ -1,0 +1,53 @@
+{
+  "schema": "gs_multisource_codec_cpu_document_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "b4958856fb50af2c55f4c2fce9eaa2a16c14ca9ec5f87436565a499052efe48a",
+  "protocol_sha256": "855e2904f52193498428f9a4ad0f602f3dacf14e54ca33c04b4a456a8639141b",
+  "checks": [
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_multisource_codec_20261031_v1\\test_sources.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.571s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_multisource_codec_20261031_v1\\test_worker.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_b2_gradient_and_loss_are_arithmetic_mean (__main__.WorkerTests.test_b2_gradient_and_loss_are_arithmetic_mean) ... ok\ntest_balanced_sampling_is_same_for_arms_and_covers354 (__main__.WorkerTests.test_balanced_sampling_is_same_for_arms_and_covers354) ... ok\ntest_deadline_failure_does_not_depend_on_step_schedule (__main__.WorkerTests.test_deadline_failure_does_not_depend_on_step_schedule) ... ok\ntest_decoder_arm_freezes_parameters_buffers_and_training_modes (__main__.WorkerTests.test_decoder_arm_freezes_parameters_buffers_and_training_modes) ... ok\ntest_eval_reencodes_and_renders_actual_saved_packet (__main__.WorkerTests.test_eval_reencodes_and_renders_actual_saved_packet) ... ok\ntest_forcing_is_exact_240_60_independent_of_wallclock (__main__.WorkerTests.test_forcing_is_exact_240_60_independent_of_wallclock) ... ok\ntest_frozen_buffer_drift_is_detected (__main__.WorkerTests.test_frozen_buffer_drift_is_detected) ... ok\ntest_full_codec_updates_encoder_embeddings_adapter_and_decoder (__main__.WorkerTests.test_full_codec_updates_encoder_embeddings_adapter_and_decoder) ... ok\ntest_invalid_pair_is_rejected_before_loading (__main__.WorkerTests.test_invalid_pair_is_rejected_before_loading) ... ok\ntest_new_optimizer_has_exact_hyperparameters_and_empty_state (__main__.WorkerTests.test_new_optimizer_has_exact_hyperparameters_and_empty_state) ... ok\ntest_parameterized_quantizer_is_rejected (__main__.WorkerTests.test_parameterized_quantizer_is_rejected) ... ok\ntest_prefix_does_not_admit_lookalike_encoder_parameters (__main__.WorkerTests.test_prefix_does_not_admit_lookalike_encoder_parameters) ... ok\ntest_preflight_missing_failed_partial_or_stale_cannot_train (__main__.WorkerTests.test_preflight_missing_failed_partial_or_stale_cannot_train) ... ok\ntest_preflight_never_overwrites_prior_attempt (__main__.WorkerTests.test_preflight_never_overwrites_prior_attempt) ... ok\ntest_protocol_has_exact_fixed_contract_and_detects_drift (__main__.WorkerTests.test_protocol_has_exact_fixed_contract_and_detects_drift) ... ok\ntest_replay_checks_both_mae_and_psnr_thresholds (__main__.WorkerTests.test_replay_checks_both_mae_and_psnr_thresholds) ... ok\ntest_state_packet_is_independent_compact_cpu_copy (__main__.WorkerTests.test_state_packet_is_independent_compact_cpu_copy) ... ok\ntest_state_packet_rejects_stale_or_invalid_feature_schema (__main__.WorkerTests.test_state_packet_rejects_stale_or_invalid_feature_schema) ... ok\ntest_training_failure_cannot_create_done_or_eligible_checkpoint (__main__.WorkerTests.test_training_failure_cannot_create_done_or_eligible_checkpoint) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 2.574s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_multisource_codec_20261031_v1\\test_compare.py"
+      ],
+      "exit_code": 0,
+      "stdout": "incomplete_or_invalid\n",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 137.262s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_multisource_codec_20261031_v1\\test_pipeline.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_child_exception_requests_stop_and_persists_error (__main__.PipelineTests.test_child_exception_requests_stop_and_persists_error) ... ok\ntest_dependency_worker_match_requires_actual_output_or_root (__main__.PipelineTests.test_dependency_worker_match_requires_actual_output_or_root) ... ok\ntest_exact_dependency_identity_rejects_pid_reuse_and_argv_drift (__main__.PipelineTests.test_exact_dependency_identity_rejects_pid_reuse_and_argv_drift) ... ok\ntest_exit_still_waits_for_dependency_workers (__main__.PipelineTests.test_exit_still_waits_for_dependency_workers) ... ok\ntest_failed_or_timed_out_child_stops_without_retry (__main__.PipelineTests.test_failed_or_timed_out_child_stops_without_retry) ... ok\ntest_fixed_commands_and_each_arm_gpu_assignment (__main__.PipelineTests.test_fixed_commands_and_each_arm_gpu_assignment) ... ok\ntest_fixed_queue_limits_and_no_retry_contract (__main__.PipelineTests.test_fixed_queue_limits_and_no_retry_contract) ... ok\ntest_live_unreadable_or_racing_pid_is_not_exit (__main__.PipelineTests.test_live_unreadable_or_racing_pid_is_not_exit) ... ok\ntest_local_verify_does_not_access_remote_data_and_proof_is_exact (__main__.PipelineTests.test_local_verify_does_not_access_remote_data_and_proof_is_exact) ... ok\ntest_main_failure_has_consistent_failed_status_and_no_done (__main__.PipelineTests.test_main_failure_has_consistent_failed_status_and_no_done) ... ok\ntest_manifest_mutation_is_rejected_before_remote_access (__main__.PipelineTests.test_manifest_mutation_is_rejected_before_remote_access) ... ok\ntest_missing_or_failed_terminal_rejected_after_exit_without_retry (__main__.PipelineTests.test_missing_or_failed_terminal_rejected_after_exit_without_retry) ... ok\ntest_parallel_first_failure_immediately_stops_sibling_and_keeps_outcomes (__main__.PipelineTests.test_parallel_first_failure_immediately_stops_sibling_and_keeps_outcomes) ... ok\ntest_preflight_requires_both_discarded_updates_and_same_initial_source (__main__.PipelineTests.test_preflight_requires_both_discarded_updates_and_same_initial_source) ... ok\ntest_two_gpu_admission_is_one_mocked_query_with55gib_each (__main__.PipelineTests.test_two_gpu_admission_is_one_mocked_query_with55gib_each) ... ok\ntest_wait_timeout_never_stops_or_restarts_dependency (__main__.PipelineTests.test_wait_timeout_never_stops_or_restarts_dependency) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.861s\n\nOK\n"
+    }
+  ],
+  "gpu_executed": false,
+  "training_performed": false,
+  "goal_complete": false,
+  "checked_at": "2026-10-30T22:50:35.343649+00:00",
+  "elapsed_seconds": 147.3473582000006
+}
