@@ -1,0 +1,28 @@
+{
+  "status": "running",
+  "source": {
+    "code_manifest_sha256": "e3ff97dc6f498a10e6b0244da7b0d741ecc04af2e0de206f9036c13e266e240e",
+    "protocol_sha256": "f39a808551dc30020e0356e97a021b0610e9bcab60e895e6a7bbc96b9c3cc3dd",
+    "preflight_sha256": "2afbcec95f1d5a332e9690f1b90bed74f41926ec2952b64fba58c47526cd9a14",
+    "common_init_sha256": "6085c5cd60062c3006f2f08ef81d54ee79734d9d35d1c7daa1f42051e40ae3a1",
+    "baseline_codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "native_replay_sha256": "5f3a3842a8b824a902ae8b50c919ea14a1c2c273658a89406de46d416dcbe527",
+    "state_manifest_sha256": "6982106649970254057d463e1213c36c1257ed1e2e202c77af830587559d0e54",
+    "teacher_assets_sha256": "de1c59b6f3d4658af9a17a3ded8fed39fda9c2f199f69f99255dcdad653f42a6",
+    "common_model_sha256": "1b9263f936233bb2af1c9dc1e698b68f9ebbacb2033727781c9c6df8aa59a007"
+  },
+  "pid": 516558,
+  "children": [
+    {
+      "mode": "continuous16",
+      "gpu": "0",
+      "pid": 516614
+    },
+    {
+      "mode": "lfq16",
+      "gpu": "1",
+      "pid": 516615
+    }
+  ],
+  "smoke_sha256": "de96b6b0994b6185ca8ab272f752bc07072cd333ce6fe3434d9d56df5d191bf3"
+}
