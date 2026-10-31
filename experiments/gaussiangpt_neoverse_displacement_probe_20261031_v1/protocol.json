@@ -1,0 +1,32 @@
+{
+  "schema": "gs_displacement_probe_v1",
+  "source_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_spatial_action_20261031_v9",
+  "source_arm": "spatial_z",
+  "selected_step": 600,
+  "starts": [35, 123],
+  "branches": ["xyz_only", "bounded_features"],
+  "optimization": {"steps": 100, "optimizer": "Adam", "betas": [0.9, 0.999], "eps": 1e-8, "weight_decay": 0.0, "xyz_lr": 0.003, "feature_lr": 0.03, "checkpoints": [0, 25, 50, 75, 100]},
+  "resources": {"cpu_threads": 6, "peak_limit_gib": 16, "minimum_free_gib": 20, "preflight_seconds": 180, "window_seconds": 1800, "replay_seconds": 300},
+  "resource_adapter": "Independent frozen-source loader preserves the original checkpoint configuration, model and data guards; replaces historical 55GiB free/60-percent allocator admission with this new task's 20GiB free/16GiB allocator cap. No source edit or fabricated memory reading. PyTorch allocated/reserved peaks are not NVML whole-process peaks.",
+  "scope": {"source_frames": 177, "bound_source_files": 354, "frames_per_window": 10, "frame_gap": 1, "resolution_hw": [252, 448], "all_initial_rows": true, "h0_frozen": true, "native_pruning_unchanged": true, "model_updates": 0},
+  "baseline_tolerances": {"mae": 0.0001, "psnr": 0.02},
+  "replay_tolerances": {"max_abs": 0.000001, "mae": 0.0000001},
+  "delta_weight": 1.0,
+  "data_hash": "4f88e989cc3b268f365dbe4b2f7647cf216aa792f2c55c9944f7c2a7494e5d1e",
+  "source_hashes": {
+    "CODE_MANIFEST.json": "b40b3353bdcc322c0f40497b1eb17ebeec293e07261a0668d23c04ed31fbdc40",
+    "protocol.json": "e49fd19aa1937420a38931f7e8d93782789fe08db01962d7afeab39cdb6565bd",
+    "worker.py": "c7eceb6fadf43e16774419f04d9c63a1a5a0fb4d7c09657ed82316fcf77b0a2d",
+    "SUMMARY.json": "961a28478dc10e6a651d60ab29ea15fed89f0ee1ee9a7b56ef32580a8ffe09f7",
+    "arms/spatial_z/step_0600.pt": "a1b6d5cab3c25af49902fa7724aa7de2d44ddcd9b2e6a19d1a6fc06c262c2860",
+    "evaluations/spatial_z/EVALUATION.json": "bf9fb69d0416d537090a71b3ae76f3ca1a6dd6cbd709224cde0b39b0c9c194ba",
+    "evaluations/spatial_z/targets.jsonl": "20beeb88f1d33eedb1ae72970776b4530aa3adccb51c5b3ab5946913e8598986",
+    "evaluations/spatial_z/actions.pt": "f5ae04c54626c1ac59b8c9ea63ba35da0667cc0c61dcc9b6db2788c08e864157",
+    "evaluations/spatial_z/initial_reconstruction.json": "99c5d6516dba396bff836ae5e4b5a84d53f16185fff222c7ad5de9bd5608c72b"
+  },
+  "render_source": {"path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/common.py", "sha256": "38a83d114718f42ed81989b5f770db323e18949a444da418a22184df847b66ff"},
+  "numeric_gate": {"future_motion_reduction_fraction": 0.1, "h9_motion_reduction_fraction": 0.1, "future_full_roi_nonworse": true, "visual_acceptance_separate": true},
+  "scope_statement": "Two known TRAIN failures; target-fitting diagnostic. Different variable units/counts and learning rates; no impossibility, 3D correctness, action learning or transfer claim.",
+  "automatic_retry": false,
+  "goal_complete": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "gs_local_condition_v8",
+  "seed": 20261031,
+  "source_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_temporal_z_20261031_v7",
+  "source_manifest_sha256": "f144aaebb3ee8980aab1aa4e24cf4e3c395ef87fdd6f1f22ae5743a0385f18c1",
+  "comparison_source_relative": "../gaussiangpt_neoverse_native_z_20261031_v6/code/compare_arms.py",
+  "arms": {
+    "base_z": {"source_arm": "z_delta", "local_skip_enabled": false},
+    "local_z": {"source_arm": "z_delta", "local_skip_enabled": true},
+    "base_constant": {"source_arm": "constant_delta", "local_skip_enabled": false},
+    "local_constant": {"source_arm": "constant_delta", "local_skip_enabled": true}
+  },
+  "train": {"source_step": 400, "total_steps": 600, "additional_steps": 200, "save_steps": [500, 600], "max_seconds": 1800},
+  "evaluation": {"max_seconds": 2400, "windows": 168, "future_exposures": 1512, "physical_future_frames": 176},
+  "preflight": {"max_seconds": 600, "starts": [0, 42, 84, 126], "parity_starts": [35, 123], "updates_per_arm": 1},
+  "resources": {"cpu_threads": 6, "peak_limit_gib": 48},
+  "baseline_tolerances": {"mae": 0.0001, "psnr": 0.02},
+  "delta_weight": 1.0,
+  "hypothesis": "A short per-point initial-context path to every future residual predictor improves action-conditioned spatial feature learning. Frozen continuous-code optimization was weak, while bounded per-point feature fitting substantially reduced RGB error on two TRAIN failures. This does not prove a temporal receptive-field disconnection, LFQ insufficiency, or geometry recovery.",
+  "change": "After the original full decoder backbone, add zero-initialized P(C0) to future slots4..12 only; P:64->64 bias-free, C0 is original input slot3 at each initial coordinate. Initial slot3 and padding slots0..2 receive no new skip. Old full-window normalization remains unchanged.",
+  "invariants": {"B": 4, "T": 10, "frame_gap": 1, "source_frames": 177, "all_initial_latent_rows": true, "resolution_hw": [252, 448], "latent_width": 64, "lfq_bits": 16, "state_quantization": false, "original_native_pruning": true, "native_encoder_frozen": true, "native_trainable": "decoder.out, feature_heads, gaussian_multiplier", "output_units_and_residual_bound": "Exact source TRAIN output_std and residual_scale3 retained"},
+  "optimizer": "Restore full source400 model/codec/optimizer/RNG before wrapping. Keep every original optimizer member/order/state. Enabled P gets one new group with original motion_lr and inherited AdamW defaults; disabled P is frozen and absent from optimizer. Preserve original27 fixed null-key biases.",
+  "sampling": "make_plan(original_seed,600); all four arms use exactly batches[400:600], every step B4 complete adjacent-frame H9 windows. No change to original400 history.",
+  "selection": "Require actual step600 for all arms. No best-checkpoint selection; incomplete/failed arms stop the comparison, saved partial checkpoints remain evidence.",
+  "scientific_tests": {"per_architecture_action_screen": "14 positive physical-frame CI requirements: vs3shuffles and matchedconstant full/ROI/motion, plus vs current adapted_held full/ROI; also all compared per-h full MAE nonworse. This new declared gate uses current codec held, not the old frozen-held reference.", "skip_effect": "local_z vs base_z motion CI positive; full/ROI/h0 mean MAE nonworse; local matched action screen passed. Also report local_constant vs base_constant. No automatic success from this screen.", "bootstrap": "Reduce overlapping observations by physical frame, then176 equal weights; moving block16,2000 draws,seed20261031; descriptive single TRAIN clip", "visual": "Inspect complete-resolution known-failure frames44 from start35/h9 and132 from start123/h9; ghosted or missing blocks are not rescued by an average PSNR gain."},
+  "queue": {"gpu_workers": {"0": ["base_z", "local_constant"], "1": ["base_constant", "local_z"]}, "train_process_seconds": 1900, "eval_process_seconds": 2500, "comparison_seconds": 180, "outer_seconds": 9300},
+  "automatic_retry": false,
+  "goal_complete": false,
+  "limitations": ["Single TRAIN clip continuation; not AR or transferable action proof", "New-clip codec distortion remains a separate unresolved problem", "Whole-window decoder normalization is unchanged; no strict-prefix-causality claim", "Per-point oracle success is target fitting and showed geometric artifacts; not a learned-Z result"]
+}

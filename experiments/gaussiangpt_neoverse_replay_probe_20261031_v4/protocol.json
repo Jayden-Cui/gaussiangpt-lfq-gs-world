@@ -1,0 +1,47 @@
+{
+  "schema": "gs_replay_diagnostic_v1",
+  "source": {
+    "fullpool_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_fullpool_codec_20261031_v1",
+    "fullpool_manifest_sha256": "01505377362bf47c89ae23aeaa5de6ca0c5663fe9119e35f6c01c03524351376",
+    "checkpoint_sha256": "dcdcd0be5f999b09086bbc31c91aea62898600c123a962791845314898d6eef3"
+  },
+  "cases": [
+    {
+      "clip": "buildingblock_tower_15_176",
+      "frame": 113
+    },
+    {
+      "clip": "buildingblock_tower_15_176",
+      "frame": 114
+    }
+  ],
+  "repeats": 3,
+  "historical_saved_state": true,
+  "data": {
+    "height": 252,
+    "width": 448,
+    "source_gaussians": 112896,
+    "latent_width": 64
+  },
+  "thresholds": {
+    "mae_max": 1e-05,
+    "psnr_min": 60
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "peak_limit_gib": 12,
+    "max_seconds": 1200,
+    "outer_seconds": 2460
+  },
+  "state_quantization": false,
+  "formal_updates": 0,
+  "deterministic_modes": [
+    false,
+    true
+  ],
+  "minkowski_sources": {
+    "utils/determinism.py": "88a56732142026e5c9c6b1b4b285ef1b013bdf50fb637bed985e99fec2bd7799",
+    "MinkowskiConvolution.py": "23e73d1c5425e6508753f9d17b07afe7bf2a16bfacc27fed7c3e80d423120179"
+  },
+  "capture_pruning_logits": true
+}

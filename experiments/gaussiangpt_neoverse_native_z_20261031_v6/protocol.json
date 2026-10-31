@@ -1,0 +1,61 @@
+{
+  "schema": "native-gs-z-bounded-comparison-v6",
+  "seed": 20261031,
+  "objective": "Test whether sample-dependent LFQ Z improves GS-native motion reconstruction beyond initial+h-only conditioning and decoder adaptation alone. This is a first bounded screen, not final goal completion.",
+  "hypothesis": "Pretrained initial-state latent anchoring avoids random full-candidate generation; modest decoder adaptation may permit real Z-driven motion while constant-ID control separates adaptation from information in Z.",
+  "arms": ["frozen", "partial", "constant"],
+  "arm_definitions": {
+    "frozen": "Posterior LFQ; all original GaussianGPT weights frozen",
+    "partial": "Posterior LFQ; only decoder.out, feature_heads and gaussian_multiplier trainable",
+    "constant": "Same partial decoder as partial; one fixed valid LFQ ID0 for all samples/horizons, no future posterior or entropy objective"
+  },
+  "data": {
+    "clip": "buildingblock_tower_17_176", "frames": 177, "window_starts": 168,
+    "frames_per_window": 10, "frame_gap": 1, "resolution_hw": [252,448],
+    "sampling": "One common seeded plan: shuffle all168 complete starts without replacement each cycle; B4, first42 steps cover every complete window and every real frame. This deliberate single-clip coverage adaptation is not the official multi-segment epoch sampler.",
+    "state_source": "Existing hash-bound continuous latent cache; native state encoder remains frozen in every arm, so cached features are valid.",
+    "loss_targets": "All10 real RGB frames, no temporal subsampling or tail replication; all source GS contributed to the existing lossy state preprocessing. No new point truncation.",
+    "split": "Single admitted TRAIN clip; no held-out, semantic-transfer, or AR generalization claim"
+  },
+  "model": {
+    "blocks": 4, "width": 64, "horizon": 9, "independent_qformers": 9,
+    "queries_per_horizon": 1, "lfq_bits": 16, "vocabulary": 65536,
+    "inv_temperature": 1.0, "residual_scale": 3.0,
+    "output": "F_h=F_initial+fixed_TRAIN_frame0_channel_std*3*tanh(zero_initialized_head(hidden_h)); all initial latent coordinates preserved in order",
+    "conditioning": "Same causal encoder initial4 contexts plus9 quantized codes, decode13 slots then remove3 padding outputs. No unquantized future, future geometry, or target-derived weights enter decoder.",
+    "support": "Native initial support only, no radius6 candidate expansion and no motion occupancy threshold. Original AE predicted pruning/guards remain. New geometry can only arise through native generative decoder and learned coordinate offsets; this is a disclosed model limitation, not truncated radius6 output.",
+    "native_mode": "codec.eval at all times; fixed BN statistics and no target-forced pruning",
+    "scale_evidence": "Before training, common-coordinate normalized feature differences at starts0,84,167 have h9 abs delta q90=1.126..1.289 and q99=2.200..2.391; scale3 avoids the proposed0.25 bottleneck. Not a future-target normalization.",
+    "adaptation": "Four sparse space/time blocks per side, not dense official20-block/down-up reproduction; LFQ soft entropy temperature1 rather than100, sign forward unchanged; all three arms share settings"
+  },
+  "train": {
+    "steps": 150, "batch_size": 4, "max_seconds": 1800,
+    "motion_lr": 0.0003, "native_lr": 0.00001,
+    "optimizer": "AdamW", "betas": [0.9,0.95], "weight_decay": 0.0,
+    "grad_clip": 1.0, "aux_multiplier": 0.1,
+    "loss": "Mean over B of full10 native RGB L1 + full10 fixed hand_activity ROI L1 + future9 normalized motion-weighted L1; plus0.1 times LFQ per-h mean auxiliary that already contains0.1 entropy weight. No LPIPS/GAN/feature/BCE objective in this first comparison.",
+    "motion_mask": "clamp(mean_channel(abs(real_t+h-real_t))/0.1,0,1), detached and used only by loss; h0 excluded, zero-weight frame contributes0. Camera/lighting changes may enter; not a semantic motion mask.",
+    "gradient": "B4 posteriors jointly encoded; all40 images backpropagated before one optimizer step; LFQ auxiliary added once. Zero residual head gives zero upstream RGB gradients in first update, required nonzero from second update in preflight.",
+    "checkpoints": [50,100,150], "ema": "none; explicit short-run adaptation",
+    "resume": "Full optimizer/RNG/plan saved; no automatic resume or runtime retuning"
+  },
+  "evaluation": {
+    "max_seconds": 2400, "windows": 168, "horizons": 9, "real_future_exposures": 1512,
+    "controls": ["correct", "shuffle42", "shuffle84", "shuffle126", "adapted_held", "held_initial", "frozen_target"],
+    "shuffle": "Whole9-ID bundles from(start+offset)%168 at fixed offsets42,84,126, preservingh; same current initial condition and current decoder",
+    "references": "Frozen held-initial and frozen-target metrics restricted to complete windows from immutable v4 targets.jsonl; current preflight checks rendering parity; report reference file hash",
+    "report": "Exposure means, frame-uniform means, everyh, native full/ROI PSNR/MAE and motion-weighted MAE; conditional entropy and code counts are diagnostics",
+    "comparison": "Only equal completed-step arms with all168 windows visited support strong A/B/C comparison. For partial Z screen compare correct against all3 same-model shuffles and trainedconstant; compare full/ROI against frozen held-initial. Frame/block bootstrap is descriptive within one clip, not independent generalization.",
+    "artifacts": "Per-target JSONL, summary JSON/Markdown, checkpoint-bound IDs[168,9] with start/h semantics; visualization follows evaluated viable models"
+  },
+  "resources": {
+    "server": "172.19.58.134", "gpu_workers": {"0": ["frozen","constant"],"1": ["partial"]},
+    "cpu_threads": 6, "allocator_fraction": 0.6, "minimum_free_gib": 55,
+    "peak_limit_gib": 48, "max_decoder_candidates": 600000, "max_decoded_gaussians": 2400000,
+    "shared_processes_retained": true, "preflight_timeout_seconds": 900,
+    "per_arm_process_timeout_seconds": 4500, "pipeline_timeout_seconds": 9600
+  },
+  "stop": ["Code/source hash mismatch","Missing/replicated frame or changed support","Nonfinite loss/gradient/image","OOM or original support budget exceeded","Training/evaluation/process timeout","Failed preflight"],
+  "retry": "No automatic scientific or engineering retry; preserve failure and choose next hypothesis using evidence",
+  "limitations": ["Offline whole-video NeoVerse teacher","Lossy upstream voxel aggregation","Initial-latent-support model cannot arbitrarily introduce distant support","Original AE hard occupancy decisions are not made differentiable by unfreezing downstream heads","No generic action semantics or AR rollout claim","150steps is screening budget, not proof that unsuccessful architecture cannot learn"]
+}

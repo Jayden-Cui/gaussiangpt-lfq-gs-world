@@ -1,0 +1,35 @@
+{
+  "schema": "gs_capacity_probe_cpu_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "b61ad32d0988d2e820eab1e56c718ba0689f5268a536ffc39259fd37af914b3c",
+  "protocol_sha256": "b4f33fcd74aa06f6ca6b39026323378d724a2d65dde82153d3388fe349e3545d",
+  "checks": [
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_capacity_probe_20261031_v1\\test_probe.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.825s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_capacity_probe_20261031_v1\\pipeline.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "Parent identity/worker matching CPU fixtures passed; no proc/GPU access\n",
+      "stderr": ""
+    }
+  ],
+  "checked_at": "2026-10-30T21:14:04.725433+00:00",
+  "elapsed_seconds": 4.751201599981869,
+  "gpu_executed": false,
+  "training_state_read": false,
+  "gpu_budget_verified": false,
+  "goal_complete": false
+}

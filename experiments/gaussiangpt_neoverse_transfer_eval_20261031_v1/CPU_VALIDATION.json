@@ -1,0 +1,56 @@
+{
+  "schema": "gs_transfer_eval_cpu_witness_v1",
+  "status": "passed",
+  "gpu_executed": false,
+  "training_state_read": false,
+  "gpu_budget_verified": false,
+  "optimizer_updates": 0,
+  "checked_at": "2026-10-30T20:45:41.236792+00:00",
+  "elapsed_seconds": 7.267642599996179,
+  "checks": [
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_transfer_eval_20261031_v1\\test_transfer_data.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_delta_uses_own_h0 (__main__.TransferContracts.test_delta_uses_own_h0) ... ok\ntest_frame_metadata_and_full_point_rejections (__main__.TransferContracts.test_frame_metadata_and_full_point_rejections) ... ok\ntest_metric_math_and_static_weight_null (__main__.TransferContracts.test_metric_math_and_static_weight_null) ... ok\ntest_missing_terminal_and_changed_input_fail (__main__.TransferContracts.test_missing_terminal_and_changed_input_fail) ... ok\ntest_model_allow_list_preserves_geometry_and_excludes_targets (__main__.TransferContracts.test_model_allow_list_preserves_geometry_and_excludes_targets) ... ok\ntest_no_future_normalization_or_frame_resampling (__main__.TransferContracts.test_no_future_normalization_or_frame_resampling) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.189s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_transfer_eval_20261031_v1\\test_evaluate_transfer.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_complete_physical_coverage_and_bundles (__main__.TransferEvaluation.test_complete_physical_coverage_and_bundles) ... ok\ntest_motion_null_mask_is_target_dependent (__main__.TransferEvaluation.test_motion_null_mask_is_target_dependent) ... ok\ntest_physical_frame_means_and_nulls (__main__.TransferEvaluation.test_physical_frame_means_and_nulls) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.334s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_transfer_eval_20261031_v1\\test_compare_transfer.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_complete_series_dispatches_only_176_frame_means (__main__.ComparisonTests.test_complete_series_dispatches_only_176_frame_means) ... ok\ntest_missing_motion_frame_has_no_bootstrap (__main__.ComparisonTests.test_missing_motion_frame_has_no_bootstrap) ... ok\ntest_physical_frame_weighting_and_null_counts (__main__.ComparisonTests.test_physical_frame_weighting_and_null_counts) ... ok\ntest_row_masks_ids_and_complete_coverage (__main__.ComparisonTests.test_row_masks_ids_and_complete_coverage) ... ok\ntest_same_step_source_and_frozen_state_rejections (__main__.ComparisonTests.test_same_step_source_and_frozen_state_rejections) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.427s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_transfer_eval_20261031_v1\\pipeline.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "CPU pipeline identity and source-specific worker matching passed; no proc/GPU/process launch\n",
+      "stderr": ""
+    }
+  ],
+  "goal_complete": false,
+  "code_manifest_sha256": "e57f787c51b7cbf9fba65b953918832ed800a2fbd939c587848f48f85205aaa0",
+  "protocol_sha256": "dbd4aee5ff09ec41a79d3f50f49ce0b300460e19acea22a9f368f73d6730eac2"
+}

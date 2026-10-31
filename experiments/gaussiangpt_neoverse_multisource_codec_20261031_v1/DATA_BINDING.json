@@ -1,0 +1,3205 @@
+{
+  "schema": "gs_multisource_codec_data_binding_v1",
+  "frames_per_clip": 177,
+  "source_points_per_frame": 112896,
+  "height": 252,
+  "width": 448,
+  "train_clips": [
+    "buildingblock_tower_17_176",
+    "buildingblock_tower_10_176"
+  ],
+  "eval_only_clips": [
+    "buildingblock_tower_14_0"
+  ],
+  "historical_roles": {
+    "buildingblock_tower_17_176": "DEV; user-authorized TRAIN for this run",
+    "buildingblock_tower_10_176": "TRAIN",
+    "buildingblock_tower_14_0": "TEST; previously exposed"
+  },
+  "official_independent_holdout": false,
+  "historical_latents_reused": false,
+  "initial_codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "state_quantization": "Identity; continuous float32 Nx64",
+  "files": [
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_movies_state_codec_20261029_v1/torch_cache/checkpoints/vgg19-dcbb9e9d.pth",
+      "bytes": 574673361,
+      "sha256": "dcbb9e9dad569fff7a846263a77324fc34978fea2bfb039c012d710e1776ae44"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/CODE_MANIFEST.json",
+      "bytes": 1267,
+      "sha256": "b4958856fb50af2c55f4c2fce9eaa2a16c14ca9ec5f87436565a499052efe48a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/EXECUTION.md",
+      "bytes": 6541,
+      "sha256": "dce8dad43c48a3198606677796da597b06191010537151f1efa29921a754ca6f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/compare.py",
+      "bytes": 33750,
+      "sha256": "0d0750f6655c41fd68d471c6af8fe77ee8407572e457c32545b9e153a9e32047"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/pipeline.py",
+      "bytes": 27800,
+      "sha256": "9398ea213d9b5c8e37951631a82b2b71fc511f3dcac33d101f40d5e7104d2057"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/protocol.json",
+      "bytes": 7372,
+      "sha256": "855e2904f52193498428f9a4ad0f602f3dacf14e54ca33c04b4a456a8639141b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/sources.py",
+      "bytes": 26686,
+      "sha256": "7e8eaa327d1c05e7d00fa07121832c1f66d617c6e76a016eb711f1453606b249"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/test_compare.py",
+      "bytes": 16768,
+      "sha256": "0c060a6ec41205d2132dd6f79643b8a5650d4572beaa176808e147a678669955"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/test_pipeline.py",
+      "bytes": 14587,
+      "sha256": "7d7b80faa5dc5d99cf630d0643c855021a577a4db8e2d5f7feaa80c6519c51df"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/test_sources.py",
+      "bytes": 12021,
+      "sha256": "404d14f9a1f26555ef9873680a39d1076482e72c3d558878e359e86f00c4e03d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/test_worker.py",
+      "bytes": 16360,
+      "sha256": "b6ab3c94ac79f7eb8569f81767767a714372d01d6607cb38df71df7b096261e6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/validate.py",
+      "bytes": 2152,
+      "sha256": "5e9675fd215878539a80b0704d30912ac7a732efe71aa36dfee41a3e84313073"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1/worker.py",
+      "bytes": 38140,
+      "sha256": "f210f2f0961d87ed0f4e9d448b54b34118da00e9c958ae32ac1fb70a6335e3f7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/postfit_queue.py",
+      "bytes": 12130,
+      "sha256": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/000.pt",
+      "bytes": 6032973,
+      "sha256": "84311a87a03bc3b3beab3b82dcf945e0150d57ae1dcde913a640b6c1134a8111"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/001.pt",
+      "bytes": 6003597,
+      "sha256": "d91be68f918df04c06c3fbe92ed0fcd0211f0a35406800165c3d68a4d809b03f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/002.pt",
+      "bytes": 6020173,
+      "sha256": "abd602d67e10df05cce91337d3957d7ba9188a6e0818252d3e2ccd5258ec173c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/003.pt",
+      "bytes": 6042573,
+      "sha256": "454f9fb53b2dd9bdc49a65eac90b8b15fb7be5115fa43c9997968692422e5b62"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/004.pt",
+      "bytes": 6026125,
+      "sha256": "3af2a32ff9fc5d7a9c4917024315e781893594e2c399f7d716b62f4313420812"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/005.pt",
+      "bytes": 6034765,
+      "sha256": "5b1bd0f1ec445c5918a461d739499ff84e5294e59d02c6bbb5a7ee5373ef8bdd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/006.pt",
+      "bytes": 6022797,
+      "sha256": "59a9be19b02f194b4b4a838ddec391f3c28068b50c12e5ddcbe65f5c1c7311ec"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/007.pt",
+      "bytes": 6037581,
+      "sha256": "14e602995626b1ae5bfd126fa530a451f98da97c8e7f2cd8302a359ee62688e9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/008.pt",
+      "bytes": 6034765,
+      "sha256": "f7a85372510d56e075098135cd988125c7def91cd26f199db485b6f032262bbf"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/009.pt",
+      "bytes": 6033357,
+      "sha256": "f085df42e82645e66700edb274e3d8f25d5f626ed017dae769c678065fe5bbc9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/010.pt",
+      "bytes": 6048397,
+      "sha256": "4109a24db7a622070090c8dce9c035de1a9860d0f7e7b410b3bcd30d469da870"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/011.pt",
+      "bytes": 6050509,
+      "sha256": "a04acbb36a9855c33a82bc3346aa2a6d7233b9f2c30d0cc6162a6b756cadf353"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/012.pt",
+      "bytes": 6038925,
+      "sha256": "7867e93313f0304f350ac3aea5145cc8fc205cdf77aa4a273811717863cf1040"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/013.pt",
+      "bytes": 6024205,
+      "sha256": "3bdb459e89348c4b8e29716dae26f139e1723b8218b31d6efc3f5e188bb5aacd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/014.pt",
+      "bytes": 6002189,
+      "sha256": "5c9e00d633866321cce6237772d898afc8161e721356d70e41675f0d52cde4b7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/015.pt",
+      "bytes": 5949965,
+      "sha256": "8d6e9d215302eeb6455bd822d868d9fcd6e744c508a7788517d4ee09bda2513f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/016.pt",
+      "bytes": 5902797,
+      "sha256": "5dc96366c0adb1737806b76344bf122703f28e479ac642db8cb6ccfc8ebf421c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/017.pt",
+      "bytes": 5897165,
+      "sha256": "f833f6a548efb4092d623a49640f753646c9bdf39ce73f889bac8de700925cd6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/018.pt",
+      "bytes": 5913485,
+      "sha256": "9ff50c01001a3037a35fea2db6be1983ec2cc97d687a2986d8fccff7842577b6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/019.pt",
+      "bytes": 5869005,
+      "sha256": "ba24f5b3329ff5dd791fba5dc7d0f9993ac34e70b644469cc4ccd10319c0cc5e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/020.pt",
+      "bytes": 5885197,
+      "sha256": "beea135cfb26e27de7405e712caed92f479a67835bbe04b4fa5d0f8596058213"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/021.pt",
+      "bytes": 5866381,
+      "sha256": "9e91a63d207452f2cfdab95637241b36cd06a6fa9cf8396b55ce9b2c118a0922"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/022.pt",
+      "bytes": 5882381,
+      "sha256": "6edc0b732ada7feb684de39721a15c4e553d8045e975333b2f0fbae72e9b8ba5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/023.pt",
+      "bytes": 5876557,
+      "sha256": "a0c48afb44f7ce07c7794fc674efb2b440dc3baebe0777d428e10cdd0ac97b68"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/024.pt",
+      "bytes": 5883597,
+      "sha256": "56628e3eda857eb60857891e52c125fa0004b928449c9b64947e5df626310f31"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/025.pt",
+      "bytes": 5904205,
+      "sha256": "8bedefcc5dd635ae4e7ae93d0c91208540789fe6dfe2f43c610bd9f26b37f926"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/026.pt",
+      "bytes": 5903565,
+      "sha256": "c6c9c82e4020c5f92f16f0176dddc6c9d3ae75ea36a248d9eece3d9ee6eaa2fb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/027.pt",
+      "bytes": 5892557,
+      "sha256": "f77c2f6e7eec31d9dadb42cb6a1025b469d75778781bf2a9910f48f9b1c9f1b6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/028.pt",
+      "bytes": 5885325,
+      "sha256": "aa61b7892cad383660692be997497d74f7e114996de517253c9c60d23d7b5452"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/029.pt",
+      "bytes": 5914765,
+      "sha256": "2e03bbccbfda4ae0671f561c5b69df57503c1a7f5a6b0ab8ee269ae16752c3a8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/030.pt",
+      "bytes": 5907981,
+      "sha256": "c0dc123e66db38d3a95f81b63bf1911aa546be14b4cfe47c1dbde02fae397fae"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/031.pt",
+      "bytes": 5907597,
+      "sha256": "136433aac54fe646975cc6e3af34b40248cdbeadfce79073a02c1b542020b248"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/032.pt",
+      "bytes": 5904397,
+      "sha256": "ede696bed698e287bebd3574a1fd3e708a5bc7e4f8b0fee9a187048d54264341"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/033.pt",
+      "bytes": 5937805,
+      "sha256": "c2af5ec59624b54b129022f9999bf61ba4e04b5ae8b8d805d788ca599339e05c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/034.pt",
+      "bytes": 5923597,
+      "sha256": "32d933786869e4ae9514adee1735002bb28e602f43a4b53f0d76d41440b3d159"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/035.pt",
+      "bytes": 5924557,
+      "sha256": "71a313e68552b0531c21463115194f10d53448b5f93a89a8deb7bca73426f77e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/036.pt",
+      "bytes": 5922381,
+      "sha256": "02b8c69639fc1136f7885b64053d5478261fb40f9e1e8feb89cf19caa93ef26d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/037.pt",
+      "bytes": 5948685,
+      "sha256": "ce2d3f0f314d6d66caf6f1434ac05d89216d6cce2e4c90c9d00a1f5bc7e3ff82"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/038.pt",
+      "bytes": 5945165,
+      "sha256": "948099113a4f2d079f492ed9d5d82514fb8b285597f4645d4c8a2a94d50140f5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/039.pt",
+      "bytes": 5965197,
+      "sha256": "81e6900b6a8f731415be77316f2b8cf4c3c82d865bf315ef592d6184e788f56e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/040.pt",
+      "bytes": 5982157,
+      "sha256": "c1fcd6fcd13420ce4f773c5c8d6be925d10db3d9841ada8b28ee73b17812e381"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/041.pt",
+      "bytes": 5982797,
+      "sha256": "917358f34b052dfdf6a0a4a7fcb288c09a1b3a16cff2bb2d6f689f0f12d43c4e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/042.pt",
+      "bytes": 6003981,
+      "sha256": "cf6423a579960638b81ff2430bda31db5eda7c1d863685e28acbabdd4c1f7b81"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/043.pt",
+      "bytes": 6027597,
+      "sha256": "9b8d12792e057e943b0e64bf25b4088e2ad27a08c8639a1d8842972687483404"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/044.pt",
+      "bytes": 6002765,
+      "sha256": "f84a5be8e2fa2a7b5976d444a0c87cfe9debd8fcf84068194e8990022e626152"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/045.pt",
+      "bytes": 6026125,
+      "sha256": "0869d3497465cb581968c0bbe5db1f104c15a12d2032ca9fc71fe63fcf6a72d1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/046.pt",
+      "bytes": 6032525,
+      "sha256": "b2c31178330a69d78ec1dcba9921d1a9179e8cdc5a25ea74197f6cf8893d6445"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/047.pt",
+      "bytes": 6008205,
+      "sha256": "b4f3a1c778459dd98a36c7b2097317cecd86592b45111c59c4651da1d6097736"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/048.pt",
+      "bytes": 6018509,
+      "sha256": "7ce6badc200a1f454488b5e98f8f1417cb1636e330bcaceea5c274d44a3d42e4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/049.pt",
+      "bytes": 6026381,
+      "sha256": "94cf3e868af01a8d83792ac632e3b8064626a399910e907eb546eee2244752c9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/050.pt",
+      "bytes": 5991821,
+      "sha256": "a44e11276c8d2f8f792895bfecfb64889d014bdd9d2360ac086d765fa682d73d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/051.pt",
+      "bytes": 6003085,
+      "sha256": "b334f541bc6eaf7d8f118feb8341d97ebf960dbc4eb58d3a522409ef091a204c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/052.pt",
+      "bytes": 5987405,
+      "sha256": "01eb20f5c883b72c061588c6a4225c77c99963247e29fd1f4fb22b4e981cedf9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/053.pt",
+      "bytes": 6008397,
+      "sha256": "36e4f51b4bf70beaee6791b85c912b68ec0219c2b8c440f2e9cb32b928871f24"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/054.pt",
+      "bytes": 6015565,
+      "sha256": "4297b5a0bbf772af3e4a73d3120dd3df2de7653b67ab601d6140a109da04b6e8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/055.pt",
+      "bytes": 5998221,
+      "sha256": "bbd3626c9505cf183843ea68922a7b595c735a61959fe42a03252986e0c17879"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/056.pt",
+      "bytes": 5999565,
+      "sha256": "d5d1a6c5d7f099d1ae786fbe2791717c834166a945b8d91f08f20356fcc9ee40"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/057.pt",
+      "bytes": 6021965,
+      "sha256": "7182a5276cb8483da341a7c3b82b1506a185d57cb49f9552028f20b1e627bb34"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/058.pt",
+      "bytes": 6033421,
+      "sha256": "13bad1058bcd444a1ef42e8cb1bed3503beab7020896c0805ec93ad2cb30f628"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/059.pt",
+      "bytes": 6032973,
+      "sha256": "cd0ca11684084e34d562a3d15cc58f153446d0807fc8cc3aa1f2b13ce5e1ccfa"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/060.pt",
+      "bytes": 6034509,
+      "sha256": "1867a8fe8624fbd002b39305a927e28740662bd4c04641cae12bbb784f7131f7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/061.pt",
+      "bytes": 6033357,
+      "sha256": "3bb4005f33e41a62b2bb90c684f1825af104b70b0b9aac0cc28b180ed6d59b20"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/062.pt",
+      "bytes": 6018765,
+      "sha256": "9c3b928d873eb30d5591d869119783d1b0c10d760dad238321d247f569cd2067"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/063.pt",
+      "bytes": 6021389,
+      "sha256": "25eaa4a3a2c1abe80ea7110302b1d9a64279eec35862168fa8802f657a740a75"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/064.pt",
+      "bytes": 6016205,
+      "sha256": "2c99b6f0b43b4c4621a86eaa789c1b5e52af945db96f4a4c829515551ca92d58"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/065.pt",
+      "bytes": 6023373,
+      "sha256": "c268581a58bc0624592563444c269201b1c48eb88b9bcfee5304586f2032f81e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/066.pt",
+      "bytes": 6030221,
+      "sha256": "4c47362912e9be97922f1fc50d7ff21ef0e8c4ac0c2d60e0d15117f35acbb171"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/067.pt",
+      "bytes": 6040589,
+      "sha256": "c3d8fc5b10bbfd0d88d6c53f08be4966988ebc386272054cd3ea7d96c8cfbb69"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/068.pt",
+      "bytes": 6033165,
+      "sha256": "4d2f691916d6b71dc716def1b35977d4908d3f4ab973cde6296cc682d8ff3621"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/069.pt",
+      "bytes": 6039181,
+      "sha256": "5f4c597c4b5742f079365f857bcb7357e9a58beff984abe1b076c8d3175bb54f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/070.pt",
+      "bytes": 6037965,
+      "sha256": "be5e947e54d3d9f1226289a3f09ea02c925f1840032917aab93e1b1b1d9e8ab6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/071.pt",
+      "bytes": 6038285,
+      "sha256": "d58f2be33bfda13aeb262483e4d9fc2f13adf9c3706cf53c26485222f996c0ef"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/072.pt",
+      "bytes": 6052365,
+      "sha256": "5762406cc45b0ec1780784952b29266719e5e4f08507afe98fa3b577680f93df"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/073.pt",
+      "bytes": 6033421,
+      "sha256": "02dcf21854181fd98f584a0f8c2efa0d3fabb33bebe4d3e4fa1d2f626a8e6574"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/074.pt",
+      "bytes": 6043789,
+      "sha256": "631c2f2c4fc0f54e40997a585f3233587a59ebfd2a1131786beec78759a0888a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/075.pt",
+      "bytes": 6035725,
+      "sha256": "c783c1fe1d85789642ed95542fbaaa20414680ab26705573232a2202b6bcb8a7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/076.pt",
+      "bytes": 6047757,
+      "sha256": "018232ca94bcf3f2d75633e372331525895f53a28c40503c56ca5063363a6a62"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/077.pt",
+      "bytes": 6051085,
+      "sha256": "f7278dae965a0417fd38d381ccdc789a93927f76f270d4eefd4c48e4f98c42a7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/078.pt",
+      "bytes": 6022925,
+      "sha256": "3afd7cd30c030bc22dfd243f92dfb826e044d0a14fea8342eb15eb127b7e4ad6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/079.pt",
+      "bytes": 6048397,
+      "sha256": "94dfe72ef5c96303fdc70e7ed7d76eae6fcc38ee62b3abd388c141b721b562fc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/080.pt",
+      "bytes": 6049357,
+      "sha256": "4096109e1cb7d97545e16b3092d1474a206d698285415bb14d6cda650631f1a0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/081.pt",
+      "bytes": 6035597,
+      "sha256": "1e40f52e3a0425eaa9ab02db00b15e3b539775e02e2921cc245cdbafa28faa9f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/082.pt",
+      "bytes": 6051725,
+      "sha256": "404c989ee37d534246c861092fa947a2ac19ecf9f2b2a260445d433d9c692920"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/083.pt",
+      "bytes": 6054605,
+      "sha256": "232e061d5a6cbff4a4255c990ac0caa575b52cc1a6f4eabc4a179f3e690a1305"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/084.pt",
+      "bytes": 6044557,
+      "sha256": "d6343e07b7ab74c1624468834ba5e224b47290d86228b73e158aa9bd49d1f58e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/085.pt",
+      "bytes": 6035725,
+      "sha256": "2f7cf289a6712d45bbb751977df10b752b6a8b98fc61221194868bef13513936"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/086.pt",
+      "bytes": 6042573,
+      "sha256": "50a06e1513e209bb49d44fbb636874be8bae6ae3f2d8285468c69d56ec22f018"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/087.pt",
+      "bytes": 6046221,
+      "sha256": "5a024af09bcb4c4fb9d1f9a5ff68a804fed53fece76c7ff0de3fa2a672dcae4f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/088.pt",
+      "bytes": 6044557,
+      "sha256": "3fd50fae1f12b0c15780671f0e32abe00fd8a928091640ee6d296be9cdf31b5e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/089.pt",
+      "bytes": 6042573,
+      "sha256": "3e7e613233dd774590fbc76790b92cab1d1a31da01cd708e2cfded1cdae522a7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/090.pt",
+      "bytes": 6049997,
+      "sha256": "8177147e5df0f2c14235ca9056054fd19b3f883e18178bda79a8557f4670d05f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/091.pt",
+      "bytes": 6040205,
+      "sha256": "86d9b28375c365e219411ead3b6c48caeeeb706c83b3a9cd1b8d70542bfe4323"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/092.pt",
+      "bytes": 6046221,
+      "sha256": "495f6f129afe98a9a161e116bc72e6c2617c55a3782c81658dcdb77bb9244039"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/093.pt",
+      "bytes": 6027021,
+      "sha256": "d538b0e9f5d158c05dd03c400cfe1085dfec17a6931d0293f43f38c7a2c7f69f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/094.pt",
+      "bytes": 6028557,
+      "sha256": "c482645b8d1f7eb8fd6307387c9479e40a21c450e45e21a394dabf4a8a739ce4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/095.pt",
+      "bytes": 6049997,
+      "sha256": "b4b81ff597b4f0dd5f86a76ec1d55081a8b7557b4b4f3385ba4ff201f98cd18e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/096.pt",
+      "bytes": 6045197,
+      "sha256": "0d2950c1ec91c5a54280b16ef84f795b07fedc0fee8d9cdf65fca795fb37a21e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/097.pt",
+      "bytes": 6065997,
+      "sha256": "86d92e78a07c8355e25a8db79a82e6f8f7b936e0853e3548060e5c782c267b44"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/098.pt",
+      "bytes": 6030157,
+      "sha256": "1026c39cbe2414cb5da036c6289380388c72553115b23bf8d18af47ad70bb2bd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/099.pt",
+      "bytes": 5972365,
+      "sha256": "856bad3c1c9d6456062948a3cac5da92cdf1edfaf2a2f31b0e51d88856a4aa40"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/100.pt",
+      "bytes": 5939981,
+      "sha256": "e3f37aa872b2da819e3b629e5d9c80876f666589c88125378dba938e8616acfc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/101.pt",
+      "bytes": 5968781,
+      "sha256": "07e919532d0c6a43430b8a14dd7177d857c761067522af631e388ebefc45124a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/102.pt",
+      "bytes": 5947597,
+      "sha256": "cd111fc857db4d6dcc5762f8512d7f675aea9d8bbcd8366267689748e6a89153"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/103.pt",
+      "bytes": 6026573,
+      "sha256": "1ec9e783c4e4a190ca31630bf836c934657f2ecd5f09a7647c8b563f6957831d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/104.pt",
+      "bytes": 6072589,
+      "sha256": "3971679a020d0706c8229dd007bb87fb0a77c77257863acc981385191b838623"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/105.pt",
+      "bytes": 6076109,
+      "sha256": "8a30bfa5c67b4517705b989315bb350eb2e7fefe08728d68de83e00689d1fbbd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/106.pt",
+      "bytes": 6093005,
+      "sha256": "42509a76a98f77178a0eb1dcfb1cbbd28fc26ef6b29ab718ebef9fd6d82e78d2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/107.pt",
+      "bytes": 6085197,
+      "sha256": "b6824e537518d6b3249bf5f660e233e4346e2c6700d39cacd4a9ee89ef3a6c08"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/108.pt",
+      "bytes": 6085005,
+      "sha256": "cca5c14f4b7ac15b6c06448f5d82a8fe4f23d2fcf1b7eedaeee2083091ba941b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/109.pt",
+      "bytes": 6085709,
+      "sha256": "e2afbaf0ab1dff3aeebfa6f19a53fcfe64286f096e046eeeea8f11d37a7d72b6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/110.pt",
+      "bytes": 6080973,
+      "sha256": "c8d68c0a1c43963dcda95300be390f9dee0de7e3ea53b7fb619e2f345ace1f2a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/111.pt",
+      "bytes": 6098957,
+      "sha256": "8c6ae8c8dc018525f49cccbe97e88ef10711b1b055890333ac7dc179e117e9b4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/112.pt",
+      "bytes": 6102605,
+      "sha256": "ff0fea454ed21c30d0cc13df7db9e9b6709bab0e2a607c7a108a8c492aaa1496"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/113.pt",
+      "bytes": 6097165,
+      "sha256": "da5412075b5678325cc53d5ddc86e3991e717901079dd304d3cbcfaac3930edd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/114.pt",
+      "bytes": 6132365,
+      "sha256": "d57a38f3b29309ce77e9d7a11a465c0408f5258b610a4961947e498481c83a6d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/115.pt",
+      "bytes": 6114189,
+      "sha256": "05b4548e43011d257c9a8cac068de22f401e5575fc6c6504de147906a3ba5c76"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/116.pt",
+      "bytes": 6087565,
+      "sha256": "263fda3c7d613ecda6d78f48d40b91ada35b88ac559131f53e50829cce57ecb8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/117.pt",
+      "bytes": 6134285,
+      "sha256": "223c6d5d9228f0b34716459a3dad6dbf837ac06e06e1da6b6a3e24737930dc94"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/118.pt",
+      "bytes": 6099405,
+      "sha256": "988056a8c38ac9bd5652dd7a0619f8028566b5f0ff3415d8e0bbd7ec97e8c587"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/119.pt",
+      "bytes": 6075405,
+      "sha256": "76f3d7bcb8e196f24241ee24b9944226c35f877bfd5e8466d15551dab8229c87"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/120.pt",
+      "bytes": 6061773,
+      "sha256": "fe80c0e4ffcdbbb79fee7ca8f2ab074d9d18afb62a6c010178cfb873fec1fea3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/121.pt",
+      "bytes": 6031565,
+      "sha256": "7dc9dc5bf7b6f8327a937006e5ba273a3131037398c805c631c857213b763df3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/122.pt",
+      "bytes": 5976781,
+      "sha256": "93a63c96deb8389c21b64cd5fad2a912c11d5d13c49cbe26c2f0b9e93e59305f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/123.pt",
+      "bytes": 5959565,
+      "sha256": "1b63af9c5f68864e8e7b28b9ff00a590a38f3e9bccf41e1f17d51ecd6904b1a8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/124.pt",
+      "bytes": 5979021,
+      "sha256": "a153fce763b9fe724ed173c68824da96b5010fe04193e58e1463d0d69607b276"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/125.pt",
+      "bytes": 5950221,
+      "sha256": "5d009ade92b760b19bf30e0abe6363a32d506468d7b428dbcdcb8cde5b886bee"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/126.pt",
+      "bytes": 5964685,
+      "sha256": "8013c82c9226d4fb00c26d038758667d732a8347f28bb21883c72158fe3413dd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/127.pt",
+      "bytes": 5980109,
+      "sha256": "2f7e1d2e838824695b1d07d8785f4f3e0f7a73188f2075da7ad93d6f46e37584"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/128.pt",
+      "bytes": 5973709,
+      "sha256": "19b6f7b29d110d8fe234ad74ca068ec220c67f919d952a876feb535d7d8fc38b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/129.pt",
+      "bytes": 5968525,
+      "sha256": "a5b2b44f7e5adfbc033c88409b3724054a7000e446328723c5b05236e845ed57"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/130.pt",
+      "bytes": 5950157,
+      "sha256": "7a793d80d705a0081dfb6298271d1f27f149b6162219bb17ffb80e0806ca4639"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/131.pt",
+      "bytes": 5924621,
+      "sha256": "e06ee9e05f29dd0c2aea280aff1ef598eabb817c631fe9402608759bf92c2c81"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/132.pt",
+      "bytes": 5923981,
+      "sha256": "23f02eff8d6c494a193642ef08f448dc23b6863788239e05bcd4d4120309888c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/133.pt",
+      "bytes": 5942925,
+      "sha256": "905855725e6ac82d5e055ef93bddcc8bc79127641e051646321312408f5d7cbb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/134.pt",
+      "bytes": 5930125,
+      "sha256": "9c8a144cfdf59699bd0cd21cef14ee98a79e8229c6d0dc9611d8eaaedfbd6dc2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/135.pt",
+      "bytes": 5901197,
+      "sha256": "78d87923df9b34da3851dbce7492c2775bb35543204555e385fc705b99b4eee5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/136.pt",
+      "bytes": 5911821,
+      "sha256": "910e0a5ae3a66ff51ffda3b5319912b2c46fafca2be196f2574845a9419a254d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/137.pt",
+      "bytes": 5902989,
+      "sha256": "84073a902702b33a0b2e3ecaddeebed7bb6449ce1d64d30ac62281077de036cb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/138.pt",
+      "bytes": 5906189,
+      "sha256": "67c47aa15685987caed537a85a49a218cc95b967ad1888a0d06dd0e9833fa3fe"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/139.pt",
+      "bytes": 5905421,
+      "sha256": "6e1e010d420999076e1d66601c1393cda0d7b6131736b3de425d56d040443999"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/140.pt",
+      "bytes": 5897357,
+      "sha256": "34a4f704c63a3c0cdacad4b4fd82a732341b3bcb3da0681ad2aa6459467ded84"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/141.pt",
+      "bytes": 5896909,
+      "sha256": "e73011df3aa72ec934eec8bc8c6c08a403b6c302692cf02cd6f5234da0ad214c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/142.pt",
+      "bytes": 5894797,
+      "sha256": "4fed628990a210f04af09e57125b6a88d3d9d2b341e5f722b52602813a072d74"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/143.pt",
+      "bytes": 5884557,
+      "sha256": "894de259b9d3d62d74b9e8c0a98626846673d6fb5d9807668eb96b650804372a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/144.pt",
+      "bytes": 5887309,
+      "sha256": "26f6df25d8ea2eace77a3ca4a9aab73b225871ae2613c67db97d998f7b929fd2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/145.pt",
+      "bytes": 5884557,
+      "sha256": "ef28d478bb413c5b71d889d0af7d86dd071b2ef454c1b681ca299eca8daecbd6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/146.pt",
+      "bytes": 5901197,
+      "sha256": "f6a7d9b18934609acbcc11cf818b8c2aec0231881ef82c59b36bc04682a55fbc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/147.pt",
+      "bytes": 5897997,
+      "sha256": "68481d9afd266836ac679facf69b81df1f4de43309342442bcfbc1a2a9dac8b4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/148.pt",
+      "bytes": 5890765,
+      "sha256": "7ac3f8f7f46c62484cca918df898e89a0fb4cee8aeba3f71805e597f8a82361d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/149.pt",
+      "bytes": 5882957,
+      "sha256": "1425988f4daff5218a342c82748bc498448c3fa98714ade16e2916e71bfa0e53"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/150.pt",
+      "bytes": 5883981,
+      "sha256": "758e7ec44ce4f072694454243be8517d5111d245b7df810e2ed076593c5e6b04"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/151.pt",
+      "bytes": 5887181,
+      "sha256": "1fb9a5d6a9c736343dd02a4d88a1eae9647c86aad325b2ae7bb07edc1d05e985"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/152.pt",
+      "bytes": 5913485,
+      "sha256": "b86c70ff20e4fd8f7e6717a6382847ad39e348c2358b08cbf8430e099c20d124"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/153.pt",
+      "bytes": 5910605,
+      "sha256": "d578c93aaaa5c281e42a155aacdc0cec3b4ee9bf915e2d542fa2c27a3939059d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/154.pt",
+      "bytes": 5884109,
+      "sha256": "89da1b321ac9f14d2e0c9dba77fd00b5d8447b87b093d948d922b6a7970e56a1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/155.pt",
+      "bytes": 5901005,
+      "sha256": "394468956e858eced063681ea02d42d331f48961f4b4032564c37c7e29c86de8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/156.pt",
+      "bytes": 5886797,
+      "sha256": "f3277264752eee0a5271a0fdb4e1246d31d8e9d790997e09f3eb6d6a6dc01509"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/157.pt",
+      "bytes": 5876557,
+      "sha256": "6c2b526337235e3f1fdce85c4ac3a0473156f7f394dfd04446b449f14aa39820"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/158.pt",
+      "bytes": 5896397,
+      "sha256": "19f12b0aab41039cfe9a125990ce40e5d01fe484bd53a4c01492baad155897c0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/159.pt",
+      "bytes": 5889165,
+      "sha256": "bacc6b9a289c786a9cd2b970a71c8838f5ae4d350feb685e2bf76cf3094e67df"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/160.pt",
+      "bytes": 5906381,
+      "sha256": "d00948f35321d682b9a2c0069947c1bbae3766aff3837285edf25b1458e9ded2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/161.pt",
+      "bytes": 5899021,
+      "sha256": "a7caba46be3055ae10d520d490d2492c7789a882b65bbcb258055779cad27410"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/162.pt",
+      "bytes": 5903885,
+      "sha256": "52955b1f8a30a7bcefa40c10bad4c77d0b83c200c92bbf33030d80e6f6de920f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/163.pt",
+      "bytes": 5899021,
+      "sha256": "c13119a2de8fbd48a2e3817cdd43a7208b5a4b4155d137c17824e8959a2d2fb8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/164.pt",
+      "bytes": 5879821,
+      "sha256": "a8e938ccbfc2877a375a9f3759a30c2ae00d50e3fefdc0bf16a7b3506dc4e57a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/165.pt",
+      "bytes": 5893005,
+      "sha256": "084bbaf7976a8fd9492b65534ca1edef91f3d1ce4c8b645480661adb7efe5c85"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/166.pt",
+      "bytes": 5885005,
+      "sha256": "b6efd870b4c8c0ec9a8ae901237229adae503227d40ee9880f2ffbd55399adb8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/167.pt",
+      "bytes": 5902797,
+      "sha256": "84394b6887eea42ab621966835b6401b92ee7fcb1b0b75bb261778edeb4e4bcb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/168.pt",
+      "bytes": 5905165,
+      "sha256": "3a5dbe709315293aa3f22365843ce0d2035263cf14a90721f179c89997f62f4e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/169.pt",
+      "bytes": 5885581,
+      "sha256": "7e717db6da4589da444a54e69274163d6f2129d31f447b6259699b9212e6afa3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/170.pt",
+      "bytes": 5882573,
+      "sha256": "4e9d3e9fbaab7d44ad3dc821d99d43c58ea58b5498286ad0eee7c2567034638e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/171.pt",
+      "bytes": 5871181,
+      "sha256": "d9b99dd3fd287b09ed24250cda1d0ba84d067f3389ae7a1bbc3c02ed33177b2f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/172.pt",
+      "bytes": 5870157,
+      "sha256": "86121d9c28b256997b40011ea4511dcf2a238f5fd097db2174f25b4c7184f18a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/173.pt",
+      "bytes": 5872397,
+      "sha256": "b3e4efa9852ec2ce412d4a8af43d659e38f6ae878a3ce948837b1c411949fa56"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/174.pt",
+      "bytes": 5911181,
+      "sha256": "abbc15831102b6fe802e78545645b0f70dd3351c20013f1f2081d056f01d7c1f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/175.pt",
+      "bytes": 5893005,
+      "sha256": "ab89541f8e4422bd687c429eb3d25592dc3be3439855428175b924ff008829e1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/cache/buildingblock_tower_17_176/176.pt",
+      "bytes": 5881485,
+      "sha256": "2b333e4b81c11d32bea2d43354f17a2f83f4bd52d5032b357ef4d9cde5b00af9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/codec.py",
+      "bytes": 9007,
+      "sha256": "e5eb7b948a70e9abea5fc0428ba7c37a35a71a17b5a49ed5da0578df3a719a2a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/common.py",
+      "bytes": 7410,
+      "sha256": "38a83d114718f42ed81989b5f770db323e18949a444da418a22184df847b66ff"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/diagnose_similarity.py",
+      "bytes": 2739,
+      "sha256": "e58b0c8fed0d352ce1f96fcda0d4ec7e8bb50ea528b8573639ba0179e60af09e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/evaluate.py",
+      "bytes": 6862,
+      "sha256": "53dd8a4049dc0fd969f763f4f857d1dc65e658e2c3749a8594e79379969eb78c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/perceptual.py",
+      "bytes": 1914,
+      "sha256": "daa79f707611f0c653c3de79ab84c8baaac358d23a1dce0a128d38e070398698"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/prepare_neoverse.py",
+      "bytes": 7000,
+      "sha256": "a70111901512ce361c2cddf70d9fc132b70bd6ccb6794d0e9e1dc180366bbe76"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/train.py",
+      "bytes": 6409,
+      "sha256": "e810e3d6eaa390fee6c6b2a37b0ad49b55da73e9175d5d09d35ccd82061f435c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/witness_state.py",
+      "bytes": 2398,
+      "sha256": "be9c8aa0851bc1cf8173748dd18e7aaab6e0aaa4636a687a6127f2c0b90b578b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/codec_final.pt",
+      "bytes": 1272983633,
+      "sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/mappings/buildingblock_tower_17_176.json",
+      "bytes": 7420,
+      "sha256": "3fc2db2a3cb8642dbae28cb247bdd030b0d5038502ec0c2d89e48d01bb0ac983"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/normalization.json",
+      "bytes": 428,
+      "sha256": "8bb690a5f7c16d822a4b99908692b1741cce0c48bb1f6f5ab7bf3afaab630ee3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/prepare/buildingblock_tower_17_176.json",
+      "bytes": 197841,
+      "sha256": "7b63c8c50eb9a3e7f3e2f4b55576894f272c6c0f72de3502b6b7636c56dd702a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/prepare_done.json",
+      "bytes": 258,
+      "sha256": "a3119d29e7476326ff547a54a3f26fdc881e3880d2c9372591c462a4dea57a58"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/protocol.json",
+      "bytes": 5222,
+      "sha256": "24add801f064c181658b43da98e1b9a42779c2b876105231ded2ef044b1205da"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/selection.json",
+      "bytes": 193,
+      "sha256": "6b52157b31c7c12baf645c6f6b8c8c61c0179d13eeeefc5184a16c6432463119"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/train_done.json",
+      "bytes": 301,
+      "sha256": "e86f7541360455a1930bc0d5a217e0038453d51fc2355f9e8fe789e48a5da0d2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/CODE_MANIFEST.json",
+      "bytes": 1012,
+      "sha256": "f9d8db6b8f6c77636dc78cc11c7cbdd5da91d710e5a0675620fb4dd6facd0418"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/SUMMARY.json",
+      "bytes": 2955,
+      "sha256": "85ddbe1c465364c2bff82926e0682df8a19cca964435c0c51b9793e31fcfce53"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/000.pt",
+      "bytes": 5745530,
+      "sha256": "17a314e90a204c85c61a8b074bc24bd71f39dcd4d8178ea3b52c82d27177912f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/001.pt",
+      "bytes": 5774330,
+      "sha256": "076b214ff6eeb44256ee2615dc45cc2808fba523554720c4e76302d2924da990"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/002.pt",
+      "bytes": 5756794,
+      "sha256": "4e145641500acc3a7d9726e90e065cf403d0b05379cd5bb980f0045caaa03c87"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/003.pt",
+      "bytes": 5800506,
+      "sha256": "c1d41ac9147c506d6773c6e471ff45a45b240e8639bddb673cf4e0907dc88f9b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/004.pt",
+      "bytes": 5769594,
+      "sha256": "63da5de0b5119110b9a0a8bab30f7e03636abbd5fb4837d0efb601cfdc2c7415"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/005.pt",
+      "bytes": 5803706,
+      "sha256": "8c4e6c44cc5cebc78333bd65a3a6847643f84ddbe3810ff2a282a1657694e1d3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/006.pt",
+      "bytes": 5815482,
+      "sha256": "850a9573a31058564bd0845a5a93684747df3fe448345ba4e4a51fadd8a2a31a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/007.pt",
+      "bytes": 5835130,
+      "sha256": "e6643863364953cef82e518988ccbe27dc45bd23e4d6140486291acfb84caf66"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/008.pt",
+      "bytes": 5835066,
+      "sha256": "874a5cf60b2f09a29bd5cdb56a44d75bfb641cb74ae3460a9861bbc917006d57"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/009.pt",
+      "bytes": 5840314,
+      "sha256": "badef5e76782a35ba2712292e367740a0e8c11210dd65213c269034cf8dc63ca"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/010.pt",
+      "bytes": 5847674,
+      "sha256": "0c254bc997cc4c7aeb7f2b3a3397bbfad42d4711aa10b3a45f3d79f5b81dc484"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/011.pt",
+      "bytes": 5854330,
+      "sha256": "e399279a09a82ef778631d73bac827896a56ad67fd011ef4181fbcafd0f678a9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/012.pt",
+      "bytes": 5839290,
+      "sha256": "2f6fd296032e7a06d4fcbe3c1197a5bbb9e5c1d1ac34776d0e5329f319994eaa"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/013.pt",
+      "bytes": 5842682,
+      "sha256": "26b75c8311c550834ea21c0faf7b35ce30eca686606dca180823b4d9bf97ee14"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/014.pt",
+      "bytes": 5827898,
+      "sha256": "f531a3548f7578bd18de29af3e8f7fd08a374bc080fb593c8a68614611175141"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/015.pt",
+      "bytes": 5835514,
+      "sha256": "bf83c64933e7590b9b7da8677edb9adbcda067dbaa5012ad5c435b2b26401513"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/016.pt",
+      "bytes": 5844730,
+      "sha256": "4b0b3ad4966c552c5877e21993b0aa967b83f2f3ebfc1e0a8f51e530e497d0f1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/017.pt",
+      "bytes": 5849914,
+      "sha256": "fc07811602e647b6aff49e0988fe541d1232a92b11a9e8be9211718c1b1ef9cd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/018.pt",
+      "bytes": 5845306,
+      "sha256": "38d7610a550db4b605b94619e53e28381c4ae7d78c24538400492293251286f5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/019.pt",
+      "bytes": 5849082,
+      "sha256": "f1dada6cc6394d30a2018237b43459d4f6d314e9b27f049a80483d4cb9ecf678"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/020.pt",
+      "bytes": 5875898,
+      "sha256": "410b51a9b7c3a77944b6d51e1f9b1989291c06a6c95afb209a778db63e5efd26"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/021.pt",
+      "bytes": 5825082,
+      "sha256": "f4ff673ca84d319cad3dec6f07c9266fec96eef3d2542c4816a21171a2612eb7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/022.pt",
+      "bytes": 5861498,
+      "sha256": "e888e9054fd3a5ad278831eba14548928b4d9ee189bfa758780dfe9e40fab2c2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/023.pt",
+      "bytes": 5794874,
+      "sha256": "9155fb854e0c66ffe9af2ad8bedb6c51a3e6baf9cd622a92860dec4d5439627b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/024.pt",
+      "bytes": 5775482,
+      "sha256": "56be6362b181aa483eed1258a7fd85c07add8960992dc25a7bf50fc8b64ebec1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/025.pt",
+      "bytes": 5802490,
+      "sha256": "a8cbd7a99c28ac01e2c5982abbf9e9fb01d59fc5afab92a702cbcc78659a05f1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/026.pt",
+      "bytes": 5776698,
+      "sha256": "3eb6be9698244c7aff94dbcbb52dd49027e5f97d324aaf67bc5df8a49b1ea0b5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/027.pt",
+      "bytes": 5748090,
+      "sha256": "44c8f6995129a2a1a9d404d65851ea166f59479ee9ee66f723ac7c8cd548ca62"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/028.pt",
+      "bytes": 5762106,
+      "sha256": "68b80bfd84c22b60d07f142a8c3a53e3dddb9f0247d8e5f006218648c933dcc5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/029.pt",
+      "bytes": 5754874,
+      "sha256": "2c2abb39dbe28ea980324c79f0dfbce99ce01527222f545ba77f3cb46f15559e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/030.pt",
+      "bytes": 5715898,
+      "sha256": "8229ecea518378466cb0a8f4341e2589d6f0d59228f334a2d76d98c43b538aa5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/031.pt",
+      "bytes": 5696506,
+      "sha256": "9a19e99ca8452f039d20a7dc1b9cf7f7fc2486d0d2e38f87b21c69187c07e145"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/032.pt",
+      "bytes": 5694266,
+      "sha256": "f0175d741ae5bea95e7c5313643e01b6e282b951bf5e922513b2977418360b24"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/033.pt",
+      "bytes": 5663674,
+      "sha256": "fca9bcd9d3039d30d0a34e40c1f15877bb8a2c406f5b208261cecc438237d914"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/034.pt",
+      "bytes": 5647994,
+      "sha256": "cb737f99139c53ad4a2040ab53f8434910f3b879dbe508349d546c6a6a44b603"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/035.pt",
+      "bytes": 5665530,
+      "sha256": "cb2d5c74c6b2d9e69f28c26c6ad2e5ae043707208708dfaaa971ef0e9fba796a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/036.pt",
+      "bytes": 5659706,
+      "sha256": "fb955923eff982c4ee673fd92b2a10848775de537aa7de3cf02650a5831dcd1f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/037.pt",
+      "bytes": 5634682,
+      "sha256": "634052ef95331d449c643b8fd200b05f677242d5cedc3a217c5d91ad91229d22"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/038.pt",
+      "bytes": 5625914,
+      "sha256": "858cb524df65896fda65e0a7ef61335713f9ede9c6f2285c7d2ca5859fada016"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/039.pt",
+      "bytes": 5615290,
+      "sha256": "538e6c2de9da96c848fe649a76cb0d45c83d22a2ff76a2f066e7c68b7f91761f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/040.pt",
+      "bytes": 5618106,
+      "sha256": "3feb6206d0e5edfdc2cad6629cdff20a661e59882cb35ad7507657001753eca4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/041.pt",
+      "bytes": 5615098,
+      "sha256": "ceda7ef512f83ddb16fcae01f664efb9860d1bccbd53ae4024a7a6b4fd3791f4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/042.pt",
+      "bytes": 5614714,
+      "sha256": "6c95408e1d220ac04d63633c23bc094abe9f0199bad5add3b1b609f1e24a3927"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/043.pt",
+      "bytes": 5614906,
+      "sha256": "b6b7451aad61db5cce32707a33c106039f771d5896b1800b98a90a4e703d03eb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/044.pt",
+      "bytes": 5610490,
+      "sha256": "7f6218f60fbbd2676edc80f19aa9e8fd386afd29f82c0a46f20322919d9ffdd0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/045.pt",
+      "bytes": 5604474,
+      "sha256": "848993aa3182ff40f6759767bb62b4d5c8584f839c99791eddf840e399da2b07"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/046.pt",
+      "bytes": 5607290,
+      "sha256": "13e5c994bfa40108d319bbab0f7d9d48983b82b8a0a37ecc98dc180648f586e4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/047.pt",
+      "bytes": 5619066,
+      "sha256": "3a6689982cd3b6ce995177c5602b8b273a3aa9ea7b95509d9da8f576f3627180"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/048.pt",
+      "bytes": 5616314,
+      "sha256": "329e9b6b9f893b42dd8fe6004840fe5272037938008c4b5bb586c58d87d09480"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/049.pt",
+      "bytes": 5617530,
+      "sha256": "c6c72c93bba7a95a292a16fbd6d4f1cb49df712a9eaf612bb704d533eaa3b166"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/050.pt",
+      "bytes": 5610682,
+      "sha256": "52de67f7379be40600c24d49a7d55d8ee1c761ed0839a9f258860bb1c830f197"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/051.pt",
+      "bytes": 5609466,
+      "sha256": "35f4e35f2933ec9de5d5ef23c8e48c043003e0d7c9eb6c87b975a57492cb21a8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/052.pt",
+      "bytes": 5609594,
+      "sha256": "0e0de4be52bdf4bb7532827f29b50d0b34455651618b1b21b6992a5419d780d3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/053.pt",
+      "bytes": 5611898,
+      "sha256": "df17130296f4c4ee4b56301a572c109b3be1fe43c47ec4359e07fa06e6c4898f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/054.pt",
+      "bytes": 5608890,
+      "sha256": "1706c762737215b74a35761530a9a97d5cd685e204c7f1305505946ef6d38f15"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/055.pt",
+      "bytes": 5614714,
+      "sha256": "55f8dddb5240739a850a81cede06ac62082b1cc1a0e3bd1852f09cebd724df94"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/056.pt",
+      "bytes": 5607290,
+      "sha256": "c4e1c967721e2e74901c6f3df5a6f25396674ba3369f6d323328d0b313e925b0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/057.pt",
+      "bytes": 5602874,
+      "sha256": "18f67a2e11a88ca3cb57dcee18d70a3ad6c0ab8578a92065a9c2af280cce1417"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/058.pt",
+      "bytes": 5595514,
+      "sha256": "b36e8fb1c6a51d6e372855d6b2398abe5e2addb8aaabfc9261b55bba8e0b9b67"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/059.pt",
+      "bytes": 5615290,
+      "sha256": "9b0d5d285859a35e9ebc6948459f5e705c32dfc48a65a9c978a4e3cdfb5cbd53"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/060.pt",
+      "bytes": 5616314,
+      "sha256": "a50e32cdc898aa13c367120e3b8c5d4ddb6970490d5017a23cbc9c2376e79b1e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/061.pt",
+      "bytes": 5610682,
+      "sha256": "020e3a2b3250d3596440ac6612334c4da07d0ba4b054c3a1b9aa8f2cf0755729"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/062.pt",
+      "bytes": 5606906,
+      "sha256": "bd7e15dd73b5d60cf0d5b2020301af2b3d6ac4789d7600f918f3c4896726d366"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/063.pt",
+      "bytes": 5666490,
+      "sha256": "b909ef13983ae03d844942cc32c1d9866b8148c7eb40f07dd4ef23735ab13301"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/064.pt",
+      "bytes": 5652730,
+      "sha256": "9364e0e182d55781f06398000e65275dc943c7d5de9f5fad05623338729689a3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/065.pt",
+      "bytes": 5670266,
+      "sha256": "8abaa28b066582f8e30908958a02ba37cfde17f200c5edcb71acf306e92712f2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/066.pt",
+      "bytes": 5716474,
+      "sha256": "c0d0269443931e374c36af3adb192987417f17f01bff9ebe5d8290efb0cbca66"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/067.pt",
+      "bytes": 5739898,
+      "sha256": "b685838168a91cd9889132788206082e0b4c84463d00bca086f331ea640c586b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/068.pt",
+      "bytes": 5756794,
+      "sha256": "2124f844e8c2b8af940fdcb91cb2e69dd53e905785eb5d24376b6d08310c17db"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/069.pt",
+      "bytes": 5821882,
+      "sha256": "722b95ab7ca5ab513a314cc7a6dca2847452a8264bbb002d33ad1ef913b21ef3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/070.pt",
+      "bytes": 5791482,
+      "sha256": "c59eb187e9604367e4085f86c834638eda8b8c9f1b425a765580c0c4fdf5fab9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/071.pt",
+      "bytes": 5794682,
+      "sha256": "7f7b2c9dcd46eaaca800335a2956796401356dd2067a97035fe7e20516bd8c1c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/072.pt",
+      "bytes": 5837498,
+      "sha256": "d06951db9015fd600eec4f5d328335b50b2d05e8c7fb446a0934eeb7692aaa8a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/073.pt",
+      "bytes": 5855866,
+      "sha256": "5c9c16462eb9b15300484e0371ff0ffc8e26d9d806c1e47e18d87681339098ea"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/074.pt",
+      "bytes": 5817274,
+      "sha256": "b72c98989dade859e04b9e6f4fb9d5976ff1e9de1807582b60eeba660a2021df"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/075.pt",
+      "bytes": 5819706,
+      "sha256": "89b87b6d0a3f2bae68a9f764bd6d7f6b3b99fb68a2240e92db4bd4058018ba56"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/076.pt",
+      "bytes": 5841082,
+      "sha256": "3a24adf3e11264bdbb64382121d383c65212424eee21c77730e227e9dc55e3cd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/077.pt",
+      "bytes": 5818106,
+      "sha256": "91a006d7e36625f2138903a9cfbeca7f75212054d59200924df0d08ec7979c73"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/078.pt",
+      "bytes": 5803706,
+      "sha256": "94cc64c2a72e7530dd27f37d8bfcdc22af424b774852bf64633a4303e8a85b35"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/079.pt",
+      "bytes": 5772474,
+      "sha256": "a04813f5cf33c8d5ed5daa68d9074e107f44a3f383d586efbb8a2e1ab931b16b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/080.pt",
+      "bytes": 5792890,
+      "sha256": "6c401aca64ec4827759f21257ffaf9f575498e61d11af8e1af1e4953cd46cceb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/081.pt",
+      "bytes": 5781882,
+      "sha256": "20b7fa0395ed460de7b6c1b421ca01a763a470ab87660b55518b5a2393e0f3bc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/082.pt",
+      "bytes": 5799674,
+      "sha256": "01bd99b6fc0e9b3dcf626a0260232d6cf895b67b11f9eae199ef945568525b0d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/083.pt",
+      "bytes": 5819898,
+      "sha256": "8a122831939e48c762f1519569de9e61226877b042e833dafd792b71da02b36a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/084.pt",
+      "bytes": 5828730,
+      "sha256": "7074af1ebed35ab9db14e78659378c0f091dc180306b7c7ffce6cc2550964b7f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/085.pt",
+      "bytes": 5791674,
+      "sha256": "9572f9028213e714176e2b4354ef04838a34c340797bbe248ecfaf65c359eec5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/086.pt",
+      "bytes": 5799930,
+      "sha256": "486c56183b69064331a33ce9cfc795b5bb1288617f477a8cacbe927094f6ba0a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/087.pt",
+      "bytes": 5799930,
+      "sha256": "ac3ec5877c8800569b70be40ba155329d2569cbd974c8ce8770176b88bdf98ff"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/088.pt",
+      "bytes": 5788666,
+      "sha256": "ae7004ce5470ee63809d73d766bd1f8e6205975c721065655d260c369a2a77f9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/089.pt",
+      "bytes": 5759994,
+      "sha256": "14ac9f9424d3a22d8e27c61be497f760d488ad67860d4ec02e3b844858a60e9f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/090.pt",
+      "bytes": 5720506,
+      "sha256": "8b77e6a5707fec12b2c1f9af8b3a8d08f998a9188d64dbfea647b91080e31a8d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/091.pt",
+      "bytes": 5719930,
+      "sha256": "7cdb148e69fea8461976e8a6572a20fb9c5f8d9d9ddc30cec98b10afff07e689"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/092.pt",
+      "bytes": 5715514,
+      "sha256": "4d9b1e373d51210c05ef7f613b7751a3784b0ed06b5068d6bedf238cc04651b0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/093.pt",
+      "bytes": 5718074,
+      "sha256": "95bdedcd0fc24edd745ca04c63f80f2f9eb56c1b1723750dd3520d5adae82f52"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/094.pt",
+      "bytes": 5697082,
+      "sha256": "41a6d7550ef8efdbd145b6a6a57c334d913d3cd137f627141b67594ffa43f45b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/095.pt",
+      "bytes": 5686394,
+      "sha256": "2835229218b5a6460157491f3c7edd3e8200387e1ba2be70db80958eb516e936"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/096.pt",
+      "bytes": 5703674,
+      "sha256": "2cc70ac3e71522ba425795d2ce4969f1b5b19fc87c281c4c62afcaa03c053057"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/097.pt",
+      "bytes": 5674682,
+      "sha256": "83330e39ffd2f949df990c938ee7646c40ee26c92c805ed3c2eaa87fdeb437e8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/098.pt",
+      "bytes": 5658106,
+      "sha256": "0a28795a14e686d1947d9ab6cf1df75844d0b47d43f5e3b598a2374c6d454e65"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/099.pt",
+      "bytes": 5637114,
+      "sha256": "87010c5932755fc8d84a4a1aea3b25b8c08775965714da69f69afbf87f838cbd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/100.pt",
+      "bytes": 5609466,
+      "sha256": "30adb8683deeb8192affcdb65fe5c0cbd8c5d87cc4d7e40357d38fe2c28f104e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/101.pt",
+      "bytes": 5591674,
+      "sha256": "735c24cf7756ccec68ba67c74b5575ef0678cb02d778158d5236b3a33ab05477"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/102.pt",
+      "bytes": 5599674,
+      "sha256": "afaa9a5243cf9ec1b84bf7048699b00fbc3eb218abfb2ae8fbe9e89164d3f989"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/103.pt",
+      "bytes": 5567098,
+      "sha256": "52883db6e68917f2e7d19de551a135475cd0dcf48363a6851b39254c9088b5fe"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/104.pt",
+      "bytes": 5567482,
+      "sha256": "bcbd528265c5f37bdd85009b7dc12dea35f19daa5d46a2ef51348b02eca7585f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/105.pt",
+      "bytes": 5560890,
+      "sha256": "c7abc5c516f9a60f248d81c2e75660eb7646a9b5c50061f7cd32fd2297a196a6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/106.pt",
+      "bytes": 5561274,
+      "sha256": "4db1ec378a7f303988dc0549e4b94023888521b689d8d20e68950099cbfc9017"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/107.pt",
+      "bytes": 5581498,
+      "sha256": "c4ad68e9dbfaaa3fdfe6a21cb1da4a379133f493e92f0798905f8ebb5d15384a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/108.pt",
+      "bytes": 5657594,
+      "sha256": "c9fd658d6e86431c4f01a9158d6631fd40c14c8dabf2c38b22aa04e5a206b439"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/109.pt",
+      "bytes": 5716730,
+      "sha256": "705d08cabad97013ebc25d44e8027bf46dbe0e0c7ef49de7331effc8817c3788"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/110.pt",
+      "bytes": 5763706,
+      "sha256": "add817db05f82ccd64ddc15d49fe1279a08470421b64c0ff4827b0340604e16c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/111.pt",
+      "bytes": 5795706,
+      "sha256": "cd361dba444c9fad71da6a7d8cb69220442df629dc41542f3673de4c0d93eb19"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/112.pt",
+      "bytes": 5735290,
+      "sha256": "a7493dd0681aa7c6c67bf861f80ca25925bc3987a7b0764b2d4b1d045020f0fe"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/113.pt",
+      "bytes": 5778490,
+      "sha256": "12b2f619cd2e40dc2aecabaf69c66f4d6783fa489f4484366fb8ab1190ac6722"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/114.pt",
+      "bytes": 5754490,
+      "sha256": "6b71b5fc742cced5d9de7d1184982a07389721f6cd4ef4091883f7fcd9a429b5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/115.pt",
+      "bytes": 5779194,
+      "sha256": "4bd295e86a4b20d9fb6a582078dfa9aeec5bbcce0e35fa50968ed62d4ae41814"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/116.pt",
+      "bytes": 5777530,
+      "sha256": "24fd9dd654a1f62c5dfa2aeb86da7e0293918a0dc392888d1eff73544c19e419"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/117.pt",
+      "bytes": 5776506,
+      "sha256": "fbe40232373614dbe4b5e2aebd1bc23416e1771299eb893805e4d4b11af2cc49"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/118.pt",
+      "bytes": 5774330,
+      "sha256": "18c8655fa6ef1690ae42d17ff9a99b8b1467c9e27caf7edf700ba8e15440ea65"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/119.pt",
+      "bytes": 5775482,
+      "sha256": "7e2ed7009530c8623d869974ee5bbf00054187d584f8c285e762c2dc1462898f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/120.pt",
+      "bytes": 5781114,
+      "sha256": "3249c7f769fcd94be892670cc5d1d5810fbc6486a59621f6062457a4f293b980"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/121.pt",
+      "bytes": 5774714,
+      "sha256": "e3bfc10f235226e0e56dc1b102c90a17ee7fc84d15c68389eb8fbd1fe15e0345"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/122.pt",
+      "bytes": 5780730,
+      "sha256": "c46c1c761b2b60cbf4c8d322d64c085d8750f1821857af808a9bcb5562204e32"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/123.pt",
+      "bytes": 5786682,
+      "sha256": "398fc90a1e37e5405c485d332c8bf24436f44212c8ca2d903396650a3e1261ee"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/124.pt",
+      "bytes": 5775482,
+      "sha256": "945346eb007622b8128874d350cb542b140d3b07b74a9b45315f477f3502f640"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/125.pt",
+      "bytes": 5791482,
+      "sha256": "e4781c04bb0c39861c1a0a065232353742e6475d4238c2d38f0a148f5574bcf7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/126.pt",
+      "bytes": 5782394,
+      "sha256": "ed7829b80452e27ebdca3687b073eee9514d064985c675c9a831ff5563526ee2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/127.pt",
+      "bytes": 5780730,
+      "sha256": "3534131bed6c1fe18d403b5d34331fea0640944356bf15a78998b98c53b92fd2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/128.pt",
+      "bytes": 5777274,
+      "sha256": "6f96023b27a57e3431ee5ed17e8f44077b16683103793e4f89c7ff9227dab29c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/129.pt",
+      "bytes": 5783930,
+      "sha256": "48e6116f60a089d3a31b39f379210c16ab98453bfa55aa08743068d1f7893088"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/130.pt",
+      "bytes": 5777082,
+      "sha256": "9e5fbec2c9ff9fee783c09d0465e714a032c549013e4c39f0b9d3dc7f60aff39"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/131.pt",
+      "bytes": 5773114,
+      "sha256": "f8607056f7b8e3b00c29ca621713b559e614d3152e4a8d22065e8c0db6f19b21"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/132.pt",
+      "bytes": 5779898,
+      "sha256": "f2418b7595ebd7d4f61b50718134e9bec90253cb5a1053972282c9ac2e33c6a5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/133.pt",
+      "bytes": 5779066,
+      "sha256": "feef8fab8cd60199e91335de5e2f7115f083743716bcb3410061902c99d1f2e6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/134.pt",
+      "bytes": 5774330,
+      "sha256": "60759ff35a88635204dbc92b6a1de546fcf2676c9a5b155555960017499f1d21"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/135.pt",
+      "bytes": 5772474,
+      "sha256": "ed1fbc418b1c10d372891e050757e1fd413a0eb4ad11816b7326f2e3c0d30978"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/136.pt",
+      "bytes": 5780474,
+      "sha256": "c2da2bfeacf33ef0cde6df72e3c26c0cf96ed75ac71ae4324d2aec9c62a37c6b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/137.pt",
+      "bytes": 5773498,
+      "sha256": "e25c4b23ef47d3912e6abbe973dd4c5b232af1ca7a08c383fd8276a228c1b344"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/138.pt",
+      "bytes": 5782266,
+      "sha256": "3ee806a35c5355944bf000656f868747a7c2cc4a5c196150e0af5b5c5acf9caf"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/139.pt",
+      "bytes": 5787130,
+      "sha256": "361d967eb08a179868cca97927babd50a1bc1bd5cde520406d06a10651ba923d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/140.pt",
+      "bytes": 5773690,
+      "sha256": "7c6aef92b6ecc1dcae5dc546078cef2dccfdbd697105c52d72b92556f10bd90c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/141.pt",
+      "bytes": 5780282,
+      "sha256": "2b1f49e0272b63fd049340e0a6dee9f187bbbf16649f4bd0cf3d0304bdf71014"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/142.pt",
+      "bytes": 5780666,
+      "sha256": "c789914825f6d915230564db9c65520d1448c166e482b9a9770d7325a595e5e1"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/143.pt",
+      "bytes": 5774714,
+      "sha256": "6113ea0d9100c6700ba3d061d4976c6d36b32a0bba76e59471ad4e2cc013ea93"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/144.pt",
+      "bytes": 5766906,
+      "sha256": "40aba4c92561df49ec24d8a373f13b196f67727bf5e9e44892cd731361e3aaed"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/145.pt",
+      "bytes": 5779706,
+      "sha256": "5737acd7d75ac19a139cf670c02006aff714235128c8cb13355e1b1bfb91f1a4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/146.pt",
+      "bytes": 5777082,
+      "sha256": "473cf9d452b6202968d3850a13be8cafc5f009f6f97768d8a86b5c46a00db0c5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/147.pt",
+      "bytes": 5776698,
+      "sha256": "c9295abd612889bbb290e50442e655c65fb8d7af15de0ad9e506d34da8846f20"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/148.pt",
+      "bytes": 5775098,
+      "sha256": "936e6b836d3d6b0d32f55c074c00a8e3fe772e933112960b2ce056b2566c4d83"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/149.pt",
+      "bytes": 5773690,
+      "sha256": "888f9eb1a8ac0c1d6d03bb01bd8069f5191d99c8d4062f00ba4cb6e800ac235c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/150.pt",
+      "bytes": 5775482,
+      "sha256": "f60c290407eb91fe14c63d399f9974bc6a722eb8e2f36f3083fde85d90c90f3e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/151.pt",
+      "bytes": 5770682,
+      "sha256": "a6b4670d160a106005a0232e295f677f4bbc62dc3436b65f4bb81f325c3c6d33"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/152.pt",
+      "bytes": 5773882,
+      "sha256": "0eecf70e823a22cc02b2c4455a6862ad314850e274f6d9b80c59c6d2b47ecdec"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/153.pt",
+      "bytes": 5774074,
+      "sha256": "2d37ed167cd6b2ad431a43547dafe562256f911a3ea2bf5c6ca9dd9f742f3273"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/154.pt",
+      "bytes": 5774714,
+      "sha256": "b6484bb6cdd862654c18c19f1324903dec3ab267fab61870cef3b20830923d3a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/155.pt",
+      "bytes": 5775290,
+      "sha256": "b7b4f460b2a43b725fe40c68f4dc154fe57125ea50fcbe60f229539fe61e5ef7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/156.pt",
+      "bytes": 5771898,
+      "sha256": "215c9db8dbbd28f1bd3f085eaeb0d2ab0b3501ab53de164930143acfe88a20d5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/157.pt",
+      "bytes": 5774714,
+      "sha256": "862b67b7f5bafe3ae249db82c3b95a5fdba033fe40e2e23f6093d2ea8dccaafd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/158.pt",
+      "bytes": 5777274,
+      "sha256": "d5e685c479534d6fa0465fb51c5110a946149058431e5a4d356536decfb572bf"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/159.pt",
+      "bytes": 5775994,
+      "sha256": "0e7375b77f398dcb983688caf75e8fee8ea6e843e991e93f1955fa04c92d941e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/160.pt",
+      "bytes": 5775674,
+      "sha256": "b4fcb77066f6629575b6ff6af0c1d6ea00b1f0d112adafc608f835aeac2c6b63"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/161.pt",
+      "bytes": 5773114,
+      "sha256": "13f02df8abfe761d023493aec1ecb3799652db93f4cfa383a2fca73f33dc08c2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/162.pt",
+      "bytes": 5780282,
+      "sha256": "62ec328fb9f6dc6c7683428411c75c39fd70b13581ac8ffe13cb5d87c63bfb96"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/163.pt",
+      "bytes": 5776506,
+      "sha256": "c32fb4712f5980d725eef23b7ce48a1d60ae0076bd8f54a63067335b59bd795e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/164.pt",
+      "bytes": 5778874,
+      "sha256": "d2ca3211e6fe03434cd840b99fa50dd0b54487be333f7d9de1c929b39edd1376"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/165.pt",
+      "bytes": 5778874,
+      "sha256": "5329c0c6fe60716301620d6bbd32305b4005df4855acbe1996da9073786533ac"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/166.pt",
+      "bytes": 5779898,
+      "sha256": "0148a12e99577afd67f302d6f1c3e5afb49389f076c0f091f47f69c1e491bee0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/167.pt",
+      "bytes": 5772794,
+      "sha256": "aeb72a079dee85ace082513a7af1ef4797fdae852080cfb71d6fb5f5e0c6e801"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/168.pt",
+      "bytes": 5772666,
+      "sha256": "1f481c4a1b36f5fd1989702339e90bbd00690d707869c67f1cff80dac3763e64"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/169.pt",
+      "bytes": 5777530,
+      "sha256": "a7a769f22c1145b8f826edbd854f2791511e739a8735c85c29ff97220175838b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/170.pt",
+      "bytes": 5776890,
+      "sha256": "b63bc9033aae893ec54e9250e74798893021cde6acb2721af3ed717c4116b058"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/171.pt",
+      "bytes": 5773306,
+      "sha256": "47e42a9f31286101b138e9cd93753f5dec2dcce99e43c259b811790a4e2fb55a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/172.pt",
+      "bytes": 5773690,
+      "sha256": "fb8aa16dba516b0208e38c461cc59f16a0b3b58d7eebd4416d3625dae6821bc6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/173.pt",
+      "bytes": 5772666,
+      "sha256": "fc9b45e350d2b5b2b129c88cac18c4c524fc98728ba8bb9c8c95854c14ff10af"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/174.pt",
+      "bytes": 5774906,
+      "sha256": "aba056d23b252d73b8850c5692cde46b253a8ba638b97a5fa0a44596c0d5c176"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/175.pt",
+      "bytes": 5774266,
+      "sha256": "288b68b1fb61581928e2dbb95813d5288ebc79c2bb456e65141455e0879b8e06"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/cache/buildingblock_tower_10_176/176.pt",
+      "bytes": 5772282,
+      "sha256": "dc984c9e7015f15487c3cb4e47fff49da91fb63770e88394a6d8d3d41e152a8d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/input_binding.json",
+      "bytes": 28220,
+      "sha256": "af208495ed3df26487a59913cdd306f45038ee2f2bb47bee552f5228702c6b79"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/mappings/buildingblock_tower_10_176.json",
+      "bytes": 13250,
+      "sha256": "13adbfd0a88b2f9afb05322094ca211c25da29ccd0d49c991e3cfa39579597e5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/normalization.json",
+      "bytes": 495,
+      "sha256": "63c817dde12f41d749683a924de5213ce68a3b0e34b61dd2b624833c19720876"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/quality/buildingblock_tower_10_176.json",
+      "bytes": 321230,
+      "sha256": "ac3f2c86d1738f55b2442d53a93bf3725751743bcce7376237d47565849a3965"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/queue/DONE.json",
+      "bytes": 3050,
+      "sha256": "7a7ea76f7eee61452dd34600f67185a0b945cade88418698208d1dd294c26951"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/CODE_MANIFEST.json",
+      "bytes": 762,
+      "sha256": "8c9381593b2a7bce009e38d73c07f9de1b0ab1a411cfa7feb9ce6729d268ef57"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/SUMMARY.json",
+      "bytes": 2633,
+      "sha256": "70626a0fc9ba6ed811a52352b3637dfbb8a1bdc5c2534b32b40a6dbd262b4e88"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/000.pt",
+      "bytes": 6003514,
+      "sha256": "2ec446375931c3f1c3fd03ee4ea81be608287b36d8fd919d9b22f3f0b901ee23"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/001.pt",
+      "bytes": 6021306,
+      "sha256": "410f91890035ea7111772766403e15ae12b0ea8adffab6caf9adb8c56e45b0a9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/002.pt",
+      "bytes": 6004666,
+      "sha256": "bb3747f5d82109631b8001751ee0a5728b4d38b3dd618d7ae3a88be88718cf00"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/003.pt",
+      "bytes": 5998266,
+      "sha256": "7641135a445d00663c96b8b061406149b2089edbe515db7d096c1043a719cced"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/004.pt",
+      "bytes": 5976890,
+      "sha256": "a6875fa329fbd1f1d078cee26c6f54582495e927ca5a11741314b41071817e32"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/005.pt",
+      "bytes": 5938106,
+      "sha256": "9f31d6bfc00b1c57cabf93d8120d75d19434194fb6adccfff08aece59961cb91"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/006.pt",
+      "bytes": 5935290,
+      "sha256": "6e0ccb8a56352ec0efc8cd779f4ccaf5c8fd5b89fba69616df8b24f9afe1022f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/007.pt",
+      "bytes": 5877306,
+      "sha256": "88c149de79fe6c49b7b3cf7ac4a15771876644c0e6a5a73ba1d7024675cfd503"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/008.pt",
+      "bytes": 5867066,
+      "sha256": "baf276b2022e73d477fd73a9e31223639139e2868214163a1b15caad3dfc3e9e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/009.pt",
+      "bytes": 5866682,
+      "sha256": "6b5377009b28e6d99185185a174bf55a0923ed76850f73bb89239914c892a77d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/010.pt",
+      "bytes": 5809082,
+      "sha256": "437a1a4a05dd73c7c5637a7745a91d4de9bce865d75ce662666214651e44ada5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/011.pt",
+      "bytes": 5765498,
+      "sha256": "3ec162d3cfb182bb333c77290b6eb859d800756d971fe04e004b154d5251df90"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/012.pt",
+      "bytes": 5697082,
+      "sha256": "1f859eef24fb234191342d5692dd58464ba68453bcb1a49f213845ed22447cd7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/013.pt",
+      "bytes": 5674298,
+      "sha256": "2f0e44c848946b96ee101f9fd9770ced9641adf2243609b5d6f51cab09d0aa58"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/014.pt",
+      "bytes": 5650490,
+      "sha256": "33a911494ecc92c29c1aa0bbd74e3097866dd35b1c788cfb667d0589323891f6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/015.pt",
+      "bytes": 5654074,
+      "sha256": "cac925d9087d0be7ebe73606c06e3023f4a24d4ee072105980da8cfec69e2856"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/016.pt",
+      "bytes": 5651194,
+      "sha256": "1c173350a1c68200c92db6edd34de37cd14abf32e2426b7583a5cc2eaf69cb7f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/017.pt",
+      "bytes": 5670074,
+      "sha256": "8867e880df6ceebf9b4226a72fc29d688da45fb1e7ef325d88cb79dd42dce1cc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/018.pt",
+      "bytes": 5653882,
+      "sha256": "3984694869a64be88e70714ac98663ae0388709fe7d5fcb0ee65819c03bc9cd0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/019.pt",
+      "bytes": 5683898,
+      "sha256": "31bb1aa81171bb4b22fadd0acd84e1bf7746c8d387cc215b50462c59f702212c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/020.pt",
+      "bytes": 5688698,
+      "sha256": "c54643d96845ca8dd7e0935f929611501ad470e87b54a44202badf0d820c4b19"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/021.pt",
+      "bytes": 5697082,
+      "sha256": "e3b669bd09d80072bd56b26340ea0ff6527bd5bba8bfe89bfc556482cd337429"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/022.pt",
+      "bytes": 5712506,
+      "sha256": "70b2fb64bf210b8fc55013915604fbe853c76b1d904d171f4e7b2a91bae818f6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/023.pt",
+      "bytes": 5725114,
+      "sha256": "ba3715bb102c7e6f78a5c7ce78e77dfd5064331da152f8cc6fcfbf050474486e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/024.pt",
+      "bytes": 5714874,
+      "sha256": "bca758576a44f954187447ad61329122fbcbb47e08f0d1c083613e959150d9be"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/025.pt",
+      "bytes": 5729530,
+      "sha256": "5570ecb6c9d9733c65608672d437d7005b6a455178f04a3407ca2e40271441da"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/026.pt",
+      "bytes": 5737914,
+      "sha256": "7a8e6ba9c16ffbb15a16586d6fba4e57413d4dd1730b6bc61c5e0e40a770db7c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/027.pt",
+      "bytes": 5744698,
+      "sha256": "42ce9c94051909c56d647f49b3df6b91a3a2840d993bd906827fe45ccb7ee7b5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/028.pt",
+      "bytes": 5722298,
+      "sha256": "c9158f1645ef3b56135290e3dcbad894e7667af8cb8b47e42c0b278285fc3ce2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/029.pt",
+      "bytes": 5746874,
+      "sha256": "297a6a97cd0658cedfdf4db5f7b9a2691c8275e1975b5574acae427eb523ed3d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/030.pt",
+      "bytes": 5717306,
+      "sha256": "6cd3d75343a0c745982431953e5e877a9a4ae957d064f58eafb3c1b50cb2a6c4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/031.pt",
+      "bytes": 5701882,
+      "sha256": "25c062974de00c916d363bca3688733895fb443effd9dbea6d38a333d7e35d05"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/032.pt",
+      "bytes": 5720698,
+      "sha256": "79bfa07c93bb6042f9f371456ed792f5b8ada78cf1e90542a702ac64af2ee610"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/033.pt",
+      "bytes": 5784698,
+      "sha256": "7e347f72c045f30e07f9c0ccafe704bb2ac58fd00bcec9c10caccf73a82defb4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/034.pt",
+      "bytes": 5870906,
+      "sha256": "27dbf23cd0738376abb6bdca6a93757d15a2cc0d3b2236f4cb9b0ac474180496"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/035.pt",
+      "bytes": 5883514,
+      "sha256": "2f68a2d16b32b73afe50f43deab7cc742c9f81433f76d2a091a06a49b14e33a4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/036.pt",
+      "bytes": 5941690,
+      "sha256": "2d04e05a3003855b50f18b2b27f132a831e4e26272124424a99207849fcb6d32"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/037.pt",
+      "bytes": 5955514,
+      "sha256": "905532a14bbbe8fc952d5195d7021f307ad9808355887a21d4aadfe5d20d0767"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/038.pt",
+      "bytes": 5964794,
+      "sha256": "6775bef2c5d43adc4ef7461d90cb12faed258cc92b26a382411b782a35673f83"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/039.pt",
+      "bytes": 5982074,
+      "sha256": "19a9d175112fe8f77d76b210ed5d9446bfb3519bb8a8344897d4494785efab8f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/040.pt",
+      "bytes": 5974394,
+      "sha256": "f2442fabe43a150f4d1b9d823c6df13ae4e663c9ad6967405eeae118d32a2db7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/041.pt",
+      "bytes": 5953274,
+      "sha256": "e368d5159ef1b6bc8cbe89ae37227b11c239c0df04e881ff7cdb625a7bc9faf8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/042.pt",
+      "bytes": 5970106,
+      "sha256": "2c0eef553ee7f86a61c70ce3d7138ab311d97c9875f45790fbf235117dd6f2f9"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/043.pt",
+      "bytes": 5950330,
+      "sha256": "045d53d0d0e9d9fe5c9027225408cc6cf39e53c40240475eff07e8fa0d00ef60"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/044.pt",
+      "bytes": 5950074,
+      "sha256": "61fa0f2d9b38e5f7b5ff1dc0eaafd237c670109cb628111eda091312e60201fe"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/045.pt",
+      "bytes": 5937466,
+      "sha256": "64e34c27c523bbda67074eb8972aa734008fcff6c1e2c58e18115976ae6283e5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/046.pt",
+      "bytes": 5960506,
+      "sha256": "dd6bdd8746d625d6b3f5b1fda280d0590f0d7d72b2adb1dbb70cfedf2d4d222d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/047.pt",
+      "bytes": 5974074,
+      "sha256": "5a6b3b76a8530890e7d7087c863fdecea02dde418e7536c96d6a9742ff7881f8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/048.pt",
+      "bytes": 5939194,
+      "sha256": "1f37fbaafeff8c153051f524e2da48752fd26f530c091fbd29e16dbf84552a9f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/049.pt",
+      "bytes": 5957306,
+      "sha256": "9445a4d6865b36e6e756cfe796f763421aa269e913f5382b7b3cecbcec0cc208"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/050.pt",
+      "bytes": 5957114,
+      "sha256": "e637a4d2c85975e765a389d4d33e9013c3690927df195c02ccf970f7ec38385c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/051.pt",
+      "bytes": 5956666,
+      "sha256": "4701a38a779f3ac4bcaeec003a760fd5e6d9344daaed5f8584d11c1310f9d37a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/052.pt",
+      "bytes": 5990714,
+      "sha256": "829685ca3f1e9a4b9e76e7dac2b9288af9ce13e0e80f01e7a6a0612f821b60f2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/053.pt",
+      "bytes": 5986490,
+      "sha256": "0e8ad4a8b360418e6a9f06c4647da796cd8cea6877ad5c4d7d51ebdbefffee19"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/054.pt",
+      "bytes": 5980474,
+      "sha256": "9e254fc0d6658cd91b25d84139ea6d41041889dcb93b83e899bc7094cd4a39cb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/055.pt",
+      "bytes": 5973306,
+      "sha256": "d77b89cc1b94954884e7b11bb803649084fefd39f04f0fdb4785206e77cb2011"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/056.pt",
+      "bytes": 5993082,
+      "sha256": "6859fe251215f72aa07961ee191ae24660a8a23fb8c6f5a47fa4d2abcce13d85"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/057.pt",
+      "bytes": 5984314,
+      "sha256": "277f627e01aa565b23e0298c027a3a555a0679627acdc7dcdc05b93e7f12844f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/058.pt",
+      "bytes": 5983098,
+      "sha256": "1a79294cfb1fa85ffd2ea2d22b0175063abc96792616b3a898ef7c2e66c3612b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/059.pt",
+      "bytes": 5953274,
+      "sha256": "d4f8201d25a5bffad8195014ee8c370dc3f3a463280133fab93f35f38ad35a4b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/060.pt",
+      "bytes": 5949882,
+      "sha256": "4141477f26d09639efd4d9235329fec1ffa3bba0327c110589374f0029c14752"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/061.pt",
+      "bytes": 5958394,
+      "sha256": "82c7fe8f100b397acbf815811ae2396235041c6409a2e6b334ddac235a9c0e3b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/062.pt",
+      "bytes": 5940090,
+      "sha256": "ce6fade67183cf0b52371b330fbcf45b78a18e8c9ac73dde248fe290417eaa03"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/063.pt",
+      "bytes": 5938490,
+      "sha256": "76e8183247b3e7473fe21f3eee03b3608dd7d14995343cbd3cfe8af49a87e001"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/064.pt",
+      "bytes": 5955194,
+      "sha256": "1bebd5cca6b0609dbab975b4ea130651dc7eac8bd28fa037be6cb3ab487ea767"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/065.pt",
+      "bytes": 5947898,
+      "sha256": "124757fb2937f1e27527a78058831b9302eeb4e3840607f19e0def67047c4679"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/066.pt",
+      "bytes": 5946490,
+      "sha256": "4217238f36bc3a73c64193b63c3f9e97a4f0436c3336b4d08cbf1e68b1fb6242"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/067.pt",
+      "bytes": 5958074,
+      "sha256": "c3b150697c7f6dd851c77fcb0d66c081941be26dbe9e85eb0e0fa085382b7dab"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/068.pt",
+      "bytes": 5917882,
+      "sha256": "1223642d71a5afcbcdc2cf6804a218bbf99aef9c443a52b224ad699c3dc6a696"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/069.pt",
+      "bytes": 5896890,
+      "sha256": "c82f3b19e362f82706f71e33e777db0bbff469c398fc92f721f3ccd68c4a7434"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/070.pt",
+      "bytes": 5841466,
+      "sha256": "2ed092da060f3639132a76708e7f840807f9091f7bfc713631400ba6ea0d33b5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/071.pt",
+      "bytes": 5802490,
+      "sha256": "d1948cba75edf77a5a9defe88f692f54b7eddc1b6dd38edcf6e4a3ae217dc0c3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/072.pt",
+      "bytes": 5795706,
+      "sha256": "9c5898cfb95d919eba48220eee47c5bd8799c27d09ac3e741c83320f1a52f7f5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/073.pt",
+      "bytes": 5796282,
+      "sha256": "2fda0c2f34a6a55bf77c49aaeca01971a7e75178ae97d88002f2b7ada8d44801"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/074.pt",
+      "bytes": 5780090,
+      "sha256": "138e261a67b815fba3ed61ec0f196bec3cc074dca3e6716a64841f2c086f5a64"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/075.pt",
+      "bytes": 5787898,
+      "sha256": "6fa8076f697557bc8ee5a4af3ef087f04487abc04a938311fdb147cc800541f7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/076.pt",
+      "bytes": 5785274,
+      "sha256": "671dcf6ffbb288c64935797978cb427cfb95953b9df162a5a35bb0078aee045d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/077.pt",
+      "bytes": 5787898,
+      "sha256": "682e578151740e60413a7dda00f8704c0c993c336045ac2ed0dcd376e967ae24"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/078.pt",
+      "bytes": 5769594,
+      "sha256": "6c8d7dbeb337a919a84f1b9552a06a718797ab7c1280f80a0de66b6f34618375"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/079.pt",
+      "bytes": 5778682,
+      "sha256": "8337efa1cb8de4219c4e465288a37fd940e280995d939e85ebdae20a57922417"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/080.pt",
+      "bytes": 5770106,
+      "sha256": "6f9fa9c81fe2c037fe7d13df763984b64e5957cb8518d4c66c7035f651cd92f4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/081.pt",
+      "bytes": 5738106,
+      "sha256": "eb8b382e6130b799af857675726e554c70805972ab008a56d3f226681457a982"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/082.pt",
+      "bytes": 5757882,
+      "sha256": "c0b47e9116c7c9a566e9840b1b9f93803ad6c20cb39073a114946b5830025ff0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/083.pt",
+      "bytes": 5776890,
+      "sha256": "5601dac1ccc99d1cc72ceaa5b4dfb3234211165d0f078f06727f1279ec1bde9e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/084.pt",
+      "bytes": 5783482,
+      "sha256": "5bc3837ba2b8ff47d9c714ff5c48c15d55b35c8c7b697454752e79911613cf4c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/085.pt",
+      "bytes": 5793914,
+      "sha256": "ff909656c2bea1ab0f87df3b77403b5fc425aac9174e5d9cc423707b379421e3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/086.pt",
+      "bytes": 5784506,
+      "sha256": "1a120262237508b816d0dc193870e2c867bcd06f38b4cefd6da185335960644c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/087.pt",
+      "bytes": 5773882,
+      "sha256": "2defc5d44f8929b3fd0e4c45fb2c43075bf2774921aae86ffccd36b1bd0c004c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/088.pt",
+      "bytes": 5804090,
+      "sha256": "02e13e5bc0587f03f99773ab4642d94e3fa44dfa3c74e4f3a249d06bf0d9a049"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/089.pt",
+      "bytes": 5788090,
+      "sha256": "7d4431fe318630d8e244f6d9e8305bcf16af2af553838dfdf3ab1c1a97e33369"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/090.pt",
+      "bytes": 5820090,
+      "sha256": "54ccc4bd52ceeba52607b273bbd22607186bbc228238dfbb10fe06010aca1bfc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/091.pt",
+      "bytes": 5815482,
+      "sha256": "04f3992634d452f22df229918434e6dff10bd27ba29859b6ae9ee5e1f06c161c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/092.pt",
+      "bytes": 5818106,
+      "sha256": "71d4a40efabb333e5446e7880cc77cab4b4a3ae4b5d252a8188223c0a9b9d8db"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/093.pt",
+      "bytes": 5833914,
+      "sha256": "b5a0c689f1968e1df8100abbacac1c88fa2e80f241ef283055f8985e83932df0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/094.pt",
+      "bytes": 5839674,
+      "sha256": "8963cf0cb048744fff66e495d4418989eac8e1cf7fa4443984e54c8402d9fc2d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/095.pt",
+      "bytes": 5832698,
+      "sha256": "f7cea6fb955848c06ac5e1556234e9db37d08dd877174c370863997c5c16e839"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/096.pt",
+      "bytes": 5821114,
+      "sha256": "e5a8eb7a2889a40ab6c2a13f64619306b7c05568b6bcad5ec89e77266e071f79"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/097.pt",
+      "bytes": 5823674,
+      "sha256": "799af44ace8f1b506cc4dad3a738807dde676597c7c02af0770df2efec0c768d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/098.pt",
+      "bytes": 5843066,
+      "sha256": "ef296243f9e36fa5bd97d0b0c9c10b5491602014d52a6f992f6542644cce5869"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/099.pt",
+      "bytes": 5840506,
+      "sha256": "9a2743efd2743a340f1986e1d62d0dd3e052515160846e1a0cf265ce21668f38"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/100.pt",
+      "bytes": 5797114,
+      "sha256": "fb3ecb192977bcd347f43a678b4f0c6b07fadc0251cf7d7871f31db8274715d8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/101.pt",
+      "bytes": 5810682,
+      "sha256": "459791049173d0132c1a8fb77978a9b255bc8d03923756188e20ccab488e4326"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/102.pt",
+      "bytes": 5817594,
+      "sha256": "72b98c18d8ac6b9f18be9bb9ae50ef136f89ab2b61154e7e70e5bc0194fa2a03"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/103.pt",
+      "bytes": 5821690,
+      "sha256": "748dc1fe8d27598e3a3839e7e1c3b97591f1424dd316b8084fcaa5f2cd01988b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/104.pt",
+      "bytes": 5853306,
+      "sha256": "80e034c844685c8d1eed3c6e021f14061727fc3a4b74d0a69b5495dcd364d904"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/105.pt",
+      "bytes": 5895290,
+      "sha256": "6ad959b51da789f132cd51d98cba40970f8fc1b7994580dc4c65664e27ea921b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/106.pt",
+      "bytes": 5928506,
+      "sha256": "1b2e44f781a8dcd4a0f0819b39cd0a16a5ee7ef3f775717f712710a795284f37"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/107.pt",
+      "bytes": 5928890,
+      "sha256": "6caea5c255557d7b122aa7034de8bce2869a89c28252167de14379675045e566"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/108.pt",
+      "bytes": 5941306,
+      "sha256": "4266a4b88653bafb151f71e22ebb4dce568d847acbffae682113e988668c1c47"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/109.pt",
+      "bytes": 5925306,
+      "sha256": "2db3e1fd1c3b195412a496fd15ee5b9f19113b146b3ef0c05ca2d7db13e5f5d8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/110.pt",
+      "bytes": 5933114,
+      "sha256": "569c935e34190009179dd0811753e219694df4ed4435994a5ea8eb659543d8ab"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/111.pt",
+      "bytes": 5937274,
+      "sha256": "379b7bf4123910c165cf2d533d5e19c63de0b985e6b102be5a5a5e80f565ca10"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/112.pt",
+      "bytes": 5906298,
+      "sha256": "5b196cf122b94199772de61e8e209322c8e90ef7ca8d2afcefc607a6e3442413"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/113.pt",
+      "bytes": 5942394,
+      "sha256": "5ccfcda7cc1d797654d5956c0c009c8c5c6708a51fb584ea50c3d6abdcf14434"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/114.pt",
+      "bytes": 5935674,
+      "sha256": "fc144f00fa90af9eea986441eb4ec76f33c28c4e9c21941b86642b7ea30e7ef4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/115.pt",
+      "bytes": 5926906,
+      "sha256": "431575f9e6b0cf982b1f5ab2f7911e6f2d1d9262ba9b692d3592b32684f8ef47"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/116.pt",
+      "bytes": 5934906,
+      "sha256": "ba354ba3a5558f815a30f4cc49bbb158dd5dce4502f9e6a66c178621adc2ef9d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/117.pt",
+      "bytes": 5920314,
+      "sha256": "5c593e14848b9ea088a8e56c715c4fa540655164e3046142050fae8437a0469e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/118.pt",
+      "bytes": 5925498,
+      "sha256": "2e83c3a0804fd4e7ae850ca29ee521acbe3865776315e1e981c1056c987d63bd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/119.pt",
+      "bytes": 5913274,
+      "sha256": "f71c3f9588a78223d58994501c69d8e8c02efa255b756e6a264b3ec4e5f1a3dd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/120.pt",
+      "bytes": 5947898,
+      "sha256": "df7d63d578a6c8fdc16f6f79fc65d3b26fcd645b1813dd5ab7ae6ffac17dd672"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/121.pt",
+      "bytes": 5935866,
+      "sha256": "152210220d7f5f59bcd6409e6194bff2e79e492a279872ad3ee7f8c66fd878ce"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/122.pt",
+      "bytes": 5927290,
+      "sha256": "791a63a43d329777178ab6f3be1f488035dcf1b3d010db127868052825216b2c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/123.pt",
+      "bytes": 5926906,
+      "sha256": "e38009b9b1b79997479127b3585fc041fd5f36d9fb02524c19a4255d3c8b6565"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/124.pt",
+      "bytes": 5933306,
+      "sha256": "e7825fd981356002da5e413b05d4306d86394d3321f54c7cf23a05bec7e7ba07"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/125.pt",
+      "bytes": 5914106,
+      "sha256": "d14125359d1443c045f1eb92455fb693a6e11ff7108db872772a06c7d9403f53"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/126.pt",
+      "bytes": 5926714,
+      "sha256": "e958d2d62614a154de52f880e65484eb38a23d06bffa3cd0682ecce8a76d215d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/127.pt",
+      "bytes": 5862906,
+      "sha256": "dc4c2adacbd0f30eef83a2079c4706dcf263a9280ac8ca7c3a6fd13411c27db5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/128.pt",
+      "bytes": 5820282,
+      "sha256": "42cd3014a23d311e7e56e9a17ad22f1254b146519cb15c6b6a41e1e850ccd9d2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/129.pt",
+      "bytes": 5785466,
+      "sha256": "9a76e295bd2579c94aa991f5d610b8d9e65f477b9fcc7fbbcc55a9bf585f44eb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/130.pt",
+      "bytes": 5765114,
+      "sha256": "e855413ae8561df588e358cbcafe34ebb2dbc2f2830c4d561dd43129a24552ff"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/131.pt",
+      "bytes": 5754682,
+      "sha256": "9d2a0c8388d354c603382bcd96f3804c4f37d74d9eca13800c2a9e7e052eaa5f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/132.pt",
+      "bytes": 5775290,
+      "sha256": "63bc66a43271a0c4353c08344ef97c472a4a006c8d9a08c764906e8835e0e0ee"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/133.pt",
+      "bytes": 5773306,
+      "sha256": "d79a97c0fa9836fee5faa010677c8242e2c0ebad7143d102ac98cfc6d96dcc88"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/134.pt",
+      "bytes": 5744506,
+      "sha256": "9891142df31c6a6226bca38394cff09f7fef098a0d259a5d29b5a58bfa8ad736"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/135.pt",
+      "bytes": 5751674,
+      "sha256": "2b983db4e636bc058f2e19a933d98992d7da43e52d68610b741410582354873c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/136.pt",
+      "bytes": 5742906,
+      "sha256": "c235118f0a2128c45f7f63418ac3143692de319a3b0c6c3a696f94beed90db5b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/137.pt",
+      "bytes": 5709114,
+      "sha256": "76e0d4b86b2383e23c9d3da81c6d381cd4adfc328d44e7ff31d5da3568585d03"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/138.pt",
+      "bytes": 5694906,
+      "sha256": "3f0fb33aab3d570bb3823953c6040e363915090acf0c21f3bdb00fd26cfadf66"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/139.pt",
+      "bytes": 5687290,
+      "sha256": "97284bd48704c843b5d3680d925dc870b3e09eb4117a1d8cc79448a181fd298f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/140.pt",
+      "bytes": 5694714,
+      "sha256": "765eed6086f89cd43c9f4522ff38a8bf8dd55484cb698cddc4bd0b2843c4be7c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/141.pt",
+      "bytes": 5670074,
+      "sha256": "d1aa690071194d24ad0c3e85114ae0ff613a0fad27443b14db33d0d71d40844e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/142.pt",
+      "bytes": 5671674,
+      "sha256": "ac4fb1e02cb40dc1732d3bc4c4b08e0eebd480027735954413635b8ef4d42aa8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/143.pt",
+      "bytes": 5693306,
+      "sha256": "a90b4f51c74a16596802a0ee96ac08ec9550222ce39d6d4e6db1026a422730dc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/144.pt",
+      "bytes": 5645306,
+      "sha256": "28c301f0c71c72865ff5906e563b1bda74a01877ce2e61281c34fad64ffd4c99"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/145.pt",
+      "bytes": 5664890,
+      "sha256": "007f394c83be801fd3c221b9d913798116a0f6a59c2e5d9ec39d0cc2b9ca5dbb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/146.pt",
+      "bytes": 5650490,
+      "sha256": "5d36fda0b8db99c5f9236c5a3ae8a2a2b242ba8eacbeb87a6abe176d73384e71"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/147.pt",
+      "bytes": 5631482,
+      "sha256": "03616f7a2edd075b67d7844aa3e483daabf22d5fdfe9ff10c671c55c0e2c21e2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/148.pt",
+      "bytes": 5663994,
+      "sha256": "763639023de12ade3f9c8ed2c8a3214001ee21aa29166ce69fe8926031352fba"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/149.pt",
+      "bytes": 5633082,
+      "sha256": "fd8b13b59ae541424e98aa98e615d9a20d62d2a5fd7c037c940a137d16bc39e7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/150.pt",
+      "bytes": 5645690,
+      "sha256": "461824177c4886ee1343289bf62aba37f0c381eb2913b831c8f1bdb1352ab5aa"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/151.pt",
+      "bytes": 5660474,
+      "sha256": "3007d6e4617d272e17f24b62068a666b4313df07bc7586811a14f4bb84b364f8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/152.pt",
+      "bytes": 5665274,
+      "sha256": "ca2041660cc8ffa0458e9fe18220a71c76d8f8aeb876ad1a0bf53dffb2c4a402"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/153.pt",
+      "bytes": 5681914,
+      "sha256": "1be20b9b77f91891b3829c01bbcbac3de890bf5c9144c30da611b29bb11781ff"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/154.pt",
+      "bytes": 5689594,
+      "sha256": "542f0df3356619a3b855ecc7e1f2b7f3bb993077e358d3fdd8569f045f5e4fcf"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/155.pt",
+      "bytes": 5687290,
+      "sha256": "c9a02ffcc654715c77e33922b52dae49913ccabae1507cc14ad8dca9f1547724"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/156.pt",
+      "bytes": 5705594,
+      "sha256": "7ced1119495dffa4363420884ae8c11524757d419db8de5f3ea36b7dd79ef028"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/157.pt",
+      "bytes": 5685306,
+      "sha256": "8698a57ea8e771779692a64ca15c461e3a6caab83faa07432d1d42260b193c65"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/158.pt",
+      "bytes": 5683514,
+      "sha256": "5a77c7ed63e3e48bec01e8b818d09358fe6ff734c1a82c803c88913ef71008f5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/159.pt",
+      "bytes": 5714874,
+      "sha256": "13d9cff6606136db0b8585753043e4e55a05b23b373ee7aaa3d4d4bf62b9e057"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/160.pt",
+      "bytes": 5733306,
+      "sha256": "e45db9fac40c0f843602607539608b5663dfbc8868bff6e7d09779c0cebc4aa0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/161.pt",
+      "bytes": 5709306,
+      "sha256": "1add978097715a18aa1d47a23e4219511bf270e200044d3da368e5469163efbb"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/162.pt",
+      "bytes": 5743866,
+      "sha256": "543ccaa401ab1252521281e4b80d7876eb152a85180d191bfdbb84d6ffe443b0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/163.pt",
+      "bytes": 5771066,
+      "sha256": "fa01648f42272032827c06b783612270301e801cc03f9312f44a5953f5641a9f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/164.pt",
+      "bytes": 5806906,
+      "sha256": "9ba7a99a0435017fa4acac3c928eb8393f8e28a4cd21245c8b7579e499d3b029"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/165.pt",
+      "bytes": 5823674,
+      "sha256": "4e8b619e7baf6c7e58fcf444a3a3d428d706c074cba7e43ae038b240ecb7bdc5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/166.pt",
+      "bytes": 5821498,
+      "sha256": "8f70696934f38448008e204304526605417e198be237af5e8f4be0f3d9688944"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/167.pt",
+      "bytes": 5849914,
+      "sha256": "7a5e2b8c66cb0fb609a27bb8e208dc5a026e39663a7efad40d647a5bd183f405"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/168.pt",
+      "bytes": 5857914,
+      "sha256": "5001242c0c4d8ebeac374c548aa3d7879bff04daa0272ba707f4ef42b5e5776d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/169.pt",
+      "bytes": 5879098,
+      "sha256": "9eda1a7e84fab61142b3a3954a8a426884b19c74bba8d616464ac7abeca05ba3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/170.pt",
+      "bytes": 5868794,
+      "sha256": "2e49765d109d11af326b3b76cf2a0aa91ce5e70ec65b191644181c763e74d3dc"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/171.pt",
+      "bytes": 5866298,
+      "sha256": "31fd9913b7c8265312683ccd3fb9ebb32728d538f8e72c73ff514025797784c4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/172.pt",
+      "bytes": 5874298,
+      "sha256": "44ece80548b7d6cf035bf4be6e57bb206966de16203603a54c4a0d5adfc0c698"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/173.pt",
+      "bytes": 5869114,
+      "sha256": "4cb97657d39bd7400be77ad366b9de6c4c1dcdf7d8f5399f1376de921c9c081b"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/174.pt",
+      "bytes": 5867066,
+      "sha256": "f96199e4e2fd516e1cbd54ba8c404f4b01517256f95d0690a2ecd9bd9c0ea520"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/175.pt",
+      "bytes": 5870266,
+      "sha256": "18bc127d2ff8a4debc68252b33e4b42699ffec6490f1cc302a7118d1c773ca0d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/cache/buildingblock_tower_14_0/176.pt",
+      "bytes": 5887098,
+      "sha256": "fde84fb46c4c121ef2319fb2358a067e8904584afe763bfc6564e6276bc729a3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/input_binding.json",
+      "bytes": 27491,
+      "sha256": "a422de97bdfeb7b9dcae47a00478f43ddb63185b9b352b85e221cb914c7d1e8d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/mappings/buildingblock_tower_14_0.json",
+      "bytes": 13248,
+      "sha256": "3e6bda385aabffdf88e3fc58114fef09e3c7e29cf8acf57006981442ba6120f8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/normalization.json",
+      "bytes": 488,
+      "sha256": "f44b1e88518aace5d183f544de2814fd958cd6ddfd5e0ad359807f9b26ec2e3c"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/prepare_frozen_codec.py",
+      "bytes": 30110,
+      "sha256": "3f26fdc51885eb7e8b2185446e891dd5dbda30d5be83cd4900b7db401e1e6c85"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/quality/buildingblock_tower_14_0.json",
+      "bytes": 320899,
+      "sha256": "4255b687a81f5b45e29e8607dca7c93827a9878c274fb9bb42778ae15d8d18d6"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_vw1_h9_lfq_condentropy_20261030_v4/cache_manifest.json",
+      "bytes": 177912,
+      "sha256": "5014977c343158e23e082dde67b0033202f64b5b2effb0f12966578666c801a7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/checkpoints/vqvae_photoshape_official.ckpt",
+      "bytes": 1272199909,
+      "sha256": "5dab10ba82cec3737c152622f477fbc9ae970f7bbd86a644b21dbce6d1392f0e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/complete_chunks.py",
+      "bytes": 36006,
+      "sha256": "5e6541ee3402349499d74348b490092b2f9ed59283c802d7f2bb5fa95238f68a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/conf/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/conf/dataclasses.py",
+      "bytes": 2221,
+      "sha256": "e5b02929870e5bd8382366df1688652f1be6896728a3160fb3374040bfa4e38a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/conf/internal_representations.py",
+      "bytes": 7390,
+      "sha256": "53126175edc34f2544d62d4f959135c98f505e623963f2779acde8d600fba61d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/ase_dataset.py",
+      "bytes": 19564,
+      "sha256": "6891a0d931caa483c303018069e5d360063928b1bc7f4d59f45aa1c600218502"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/common.py",
+      "bytes": 49838,
+      "sha256": "119cabd836e0204a7177ed82476c82b3fdd02d972633d1e95dd6610529660993"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/photoshape.py",
+      "bytes": 15874,
+      "sha256": "17b830b01e934e9211bbdbdb5c4c777bbca64564dc42282bae150489411a1e48"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/photoshape_dataset.py",
+      "bytes": 13255,
+      "sha256": "4260309d5b8eb2e145fd8dd1b363e51319e56a69d036ba5e423c140874c51dfd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/sparsify.py",
+      "bytes": 1976,
+      "sha256": "af6252e14fbe537044862fe4d2513c915831d050ef35325ef9ae4bb00df37425"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/spp_dataset.py",
+      "bytes": 23927,
+      "sha256": "c3f12bce8366c1b688837b5551c82d59be61f1ed535d54583ed36111f80e39ea"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/vfront.py",
+      "bytes": 7856,
+      "sha256": "d4e8621924f766676cde940879f1c6d8c2714eaae7014b5169a6ba7b85a075ea"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/data/vfront_dataset.py",
+      "bytes": 41297,
+      "sha256": "275ae46db24e72569bd50c4ea34f41bb9e6ce836e1cc0e19ccdf33cb15ded2b3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/decode_scene.py",
+      "bytes": 21422,
+      "sha256": "6babc6cb817a5f917a6cbedb5fda3f791233d600c99f48d1ec92eec1587a1a6f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/generate_chunks.py",
+      "bytes": 25182,
+      "sha256": "0036775dc7de177f0d6b7a92dbe9219bab51807147b3f2648e7b22b4d2658143"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/generate_scene.py",
+      "bytes": 96451,
+      "sha256": "c368682dbd25cc86b88183bc04b91f751668261a07cdba7951117b5b9d7278d3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gaussian_gpt.py",
+      "bytes": 20470,
+      "sha256": "d3c09a1daed7982ad4672e3e35117747465286af1965c52c580b602d3990fcab"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gaussian_vqvae.py",
+      "bytes": 18375,
+      "sha256": "7587fd47d64d3b085d1285de309df14623d5758f383d2ce6aa7176d627343a53"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/__init__.py",
+      "bytes": 38,
+      "sha256": "ed377741b48803dd3738c595bb5139b739b1632cdd4e25994e49dd88aa32b4bd"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/engine.py",
+      "bytes": 12904,
+      "sha256": "bedbf46521ee04e7acf039897cfb32b2585e20a0de0561282abc96d010d6aa23"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/flash_attention.py",
+      "bytes": 6663,
+      "sha256": "9fcb5c0c1ef67884b9a78134c8fc30d201138ad15e9e986003ba9d1cfab067e2"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/gpt.py",
+      "bytes": 9112,
+      "sha256": "00f564ff829a41061d2b947d283e4fdf74fc6d4810c2cae6539b847a582b500f"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/nanochat_gpt.py",
+      "bytes": 46925,
+      "sha256": "b140d4893113cd2f05d42cfbff01c71b372e33d88a90fb3c9ee254800e8a9233"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/rope.py",
+      "bytes": 2207,
+      "sha256": "d7b87fca2ecb26dd831bfd703a11cd5415bcb92dc17b67c731eaec687acbeab5"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/gpt/rope_config.py",
+      "bytes": 1141,
+      "sha256": "1a125c724972cd447af62220067b53268c855dddde8ab2f0c2dd2a19a79ff363"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/configurable_vqvae.py",
+      "bytes": 16189,
+      "sha256": "fe4e706c7c20c968e52bcf682826454db4a53bcfa2e5c2b194d9a82d9a6e4707"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/minkowski_blocks.py",
+      "bytes": 3402,
+      "sha256": "e878c417aa466de5c6038b2e25a71c38ba9650fa11d477d614cfc45efa6224f8"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/minkowski_decoder.py",
+      "bytes": 4900,
+      "sha256": "47c2ef0e8c7bd882688528d2ab1d2f2ac781b6ea3c5a6f77ec35db3cf1006456"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/minkowski_encoder.py",
+      "bytes": 2360,
+      "sha256": "f2d8d6cec66da8f5841ce52086f56ce6e8728d15cee4594f66d15f9be0ea52c0"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/model/vqvae/cnn/minkowski_vq.py",
+      "bytes": 2638,
+      "sha256": "02f1a0aabece36a48a31a8c3c271b2642f2ff71456ce2546c55b2ad3fb482607"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/render_orbit_batch.py",
+      "bytes": 9466,
+      "sha256": "c71b30486e847f90b653c1deb9a9e036820659838ad4a3253b521d50f6d3ceab"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/render_topdown.py",
+      "bytes": 7664,
+      "sha256": "85a349b673fefefc1800c1dd2ecbd0e4069e23706270b29ce7ae71750c5997e4"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/scripts/convert_pt_to_ply.py",
+      "bytes": 1911,
+      "sha256": "475690b9f544f3fc65f4bdeab93e5f6f9cf70931598ae8c2e2f4629023aa7791"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/scripts/dataset_quick_stats.py",
+      "bytes": 18972,
+      "sha256": "9da5612973de34964db407890aa8dd34e6540e7b02be398f7a5a6712b46ffa22"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/scripts/dataset_split_from_quick_stats.py",
+      "bytes": 9646,
+      "sha256": "6df664903918612c6a4a8245f13b0ca8a38c51c7c0562c33e75f0df01a3a58ba"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/serialization/__init__.py",
+      "bytes": 144,
+      "sha256": "906a24375592c274419e7482c8b3fe50d702892fc3228ae100965d298edb3423"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/serialization/default.py",
+      "bytes": 1441,
+      "sha256": "68dab6b4acdcfa0facd1c847d647e6b2162c138dc0474c0453070b6f74873c78"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/serialization/hilbert.py",
+      "bytes": 6218,
+      "sha256": "560569f4507740d23fae98a7accac5cd55e07439f8f37dd0dc47ebb9f5657877"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/serialization/z_order.py",
+      "bytes": 2806,
+      "sha256": "e2db9763f0ae6020e1c3aa668e41cdbde5d109a54cf569bb0ce3620d8c8ba36e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/tokenize_dataset.py",
+      "bytes": 34690,
+      "sha256": "32750be27657c4c30edabab6f3ce8a2cfd07c480b4c584e53b7a4b80e47ea550"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/train_ae.py",
+      "bytes": 17649,
+      "sha256": "4cabd3a766e991061406a35d1297f29d3040a73a47a9c2ec5c343d0e2ae18c78"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/train_gpt.py",
+      "bytes": 22188,
+      "sha256": "64891def23a8e6ac4396229ea683a7fb3019164e5d7ee7b48e6ffd94d0813a63"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/augmentations.py",
+      "bytes": 6407,
+      "sha256": "1d1475f57e7f0e3562c269ef0c668ded123eb9f417f9de3113be361f65a166a7"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/config.py",
+      "bytes": 2743,
+      "sha256": "364739dfbe565d7e64b5d3f5a0b94ec6d16f90b33b84da090cbc1b0d11e72961"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/gaussian_vqvae_utils.py",
+      "bytes": 3704,
+      "sha256": "db8d7441a59f2c7d55a43a3308164c852454d63504ea91fe3dd3fc417d781495"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/inference.py",
+      "bytes": 1110,
+      "sha256": "e96fa5c96b17d08a61de0d5f2db87cc8a6f88656ca07a063f72d6913474e8213"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/loss_utils.py",
+      "bytes": 3238,
+      "sha256": "957f71e158c8bf1f20d5dbe7b730affbb3427d7fb7952562170671686d48962e"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/nanochat_optim.py",
+      "bytes": 26756,
+      "sha256": "6662fb52ed6984eed7b57ec3a7f6e1cb27daf6a2bc6f653ede1235cd75c76bf3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/optim.py",
+      "bytes": 13125,
+      "sha256": "fd466c29ae6d10031b09c5e9e21d08b3380baf4d959a29383b18feaefcd6e46d"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/pos_tokens.py",
+      "bytes": 4782,
+      "sha256": "4e5b7d280c1469d166bd5a5822dc073d01eae155dc81929bd20a765a73d77207"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/render.py",
+      "bytes": 19982,
+      "sha256": "9bca8f75e7bb606027581799be8c468fd0063c4135fd89b4494df63dbba7cc87"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/rerendering_loss.py",
+      "bytes": 16903,
+      "sha256": "afed3876a6a38e62803e5d7da4468157804d23e962f95934e1502bf6ce5ea6f3"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/sampling.py",
+      "bytes": 1882,
+      "sha256": "b79ecfce63d3fc0ff1a225add3d630ad64d729f8b93e753cb53590dccecedf25"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/transforms.py",
+      "bytes": 3569,
+      "sha256": "b3756aef7bd7c902cbc445682eff37e201db59a6fb8be8d1ffb732e5f1c64c9a"
+    },
+    {
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_state_vae_20261028_v1/vendor/GaussianGPT-00658a4ab3f48daed3bdf4ba50805bb2b7dc5e14/utils/vgg_loss.py",
+      "bytes": 2836,
+      "sha256": "f6f3c83cbdf5bd0aad3ae45187c7b2c7cb95042220ad20d44fe173827fab9333"
+    }
+  ]
+}

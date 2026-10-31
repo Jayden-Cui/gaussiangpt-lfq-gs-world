@@ -1,0 +1,206 @@
+{
+  "schema": "gaussiangpt-videoworld1-h9-lfq-conditional-entropy-v4",
+  "hypothesis": "Remove horizon-identity reward from shared LFQ diversity by conditioning entropy on horizon; retain the same independentQFormer H9 initial-only future reconstruction architecture and all other settings.",
+  "reference_commit": "3dc3e563e201cebab0e947177e79117c885ec3ba",
+  "source_run": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state",
+  "source_motion_cache": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/motion",
+  "source_checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "previous_run": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_vw1_h9_lfq_20261030_v3",
+  "seed": 20261029,
+  "frame_gap": 1,
+  "horizon": 9,
+  "arms": [
+    {
+      "name": "vw1_h9_lfq",
+      "gpu": 0,
+      "quantizer": "lfq",
+      "motion_tokens": 1,
+      "horizon": 9,
+      "candidate_chunk": 2048,
+      "vocabulary": 65536,
+      "entropy_grouping": "per_horizon"
+    }
+  ],
+  "data": {
+    "clip": "buildingblock_tower_17_176",
+    "frames": 177,
+    "source_fps": 29.97,
+    "resolution": [
+      448,
+      252
+    ],
+    "stride": 1,
+    "window_starts": 176,
+    "frames_per_window": 10,
+    "real_future_target_exposures_per_complete_pass": 1548,
+    "replicated_boundary_targets_per_complete_pass": 36,
+    "sampling": "Shuffle all starts0..175 without replacement per epoch. Each window uses consecutive S_t through S_t+9. At the end repeat frame176; use nominal increasing temporal positions and explicitly flag padding. All9 targets participate in training as in reference boundary padding; padded targets excluded from metrics."
+  },
+  "state_quantizer": "None. Entire GaussianGPT encoder/decoder frozen; continuous sparse coordinates[M,3] and features[M,64].",
+  "qformer": {
+    "independent_modules": 9,
+    "queries_per_horizon": 1,
+    "depth": 2,
+    "width": 64,
+    "heads": 4,
+    "mlp_width": 64,
+    "attention_downsample_rate": 2,
+    "attention_internal_width": 32,
+    "head_width": 8,
+    "prefix": "Module h reads causal encoded spatial keys only from the SAME window initial state through target h inclusive. No shared posterior weights; no per-query self-attention. Reference cross-attention/MLP equations and final queries+queries preserved.",
+    "position": "World-coordinate3D and relative PTS Fourier embeddings64, GS-specific additions; no absolute frame index."
+  },
+  "causal_temporal": {
+    "width": 64,
+    "encoder_input": 65,
+    "blocks": 2,
+    "kernel": 3,
+    "convolution_dilations": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "stride": 1,
+    "receptive_frames": 13,
+    "normalization": "Per-time per-coordinate LayerNorm64 only",
+    "alignment": "Integer world-coordinate union is indexing only; absent state features0 plus occupancy; unseen columns removed from prefix keys. No future-driven spatial pooling or truncation.",
+    "decoder": "For each initial-only candidate coordinate, concatenate initial spatial embedding at time0 and spatially broadcast quantized64 token at times1..9; causal temporalCNN jointly yields nine future64 features and occupancy logits. Initial interpolated feature residual at every horizon, initial occupancy prior +/-4. No true intermediate state."
+  },
+  "motion_quantizer": {
+    "kind": "LFQ",
+    "interface_width": 64,
+    "internal_bits": 16,
+    "vocabulary": 65536,
+    "joint_entropy_pool": "One shared LFQ with9 horizon groups, each4 windows. Average9 already-weighted auxiliary losses; no diversity reward acrossh.",
+    "entropy_loss_weight": 0.1,
+    "commitment_loss_weight": 0.0,
+    "diversity_gamma": 1.0,
+    "soft_clamp_input_value": 10.0,
+    "projection_has_bias": false,
+    "experimental_softplus_entropy_loss": true,
+    "entropy_loss_offset": 5.0,
+    "inv_temperature": 100.0,
+    "frac_per_sample_entropy": 1.0,
+    "seed": 20261046,
+    "entropy_formula": "0.1*mean_h softplus(mean_b H(p_bh)-H(mean_b p_bh)+5). Applies softplus inside horizon mean."
+  },
+  "condition": "Only initial integer coordinates, continuous64 features, nominal dt and nine LFQ IDs; decoder candidate geometry comes from initial coordinates only. No targets supplied to decoder/support selection during training or evaluation.",
+  "support": {
+    "radius": 6,
+    "max_candidates": 100000,
+    "max_predicted_tokens": 6000,
+    "rule": "Reuse verified initial-only Chebyshev dilation radius6 and 4-neighbor interpolation. Preflight checks all9 target supports at all176 starts, stop if any missing. No truncation.",
+    "preliminary_read_only_audit_max_required_radius": 4
+  },
+  "decoder_resource_limits": {
+    "max_decoder_candidates": 600000,
+    "max_decoded_gaussians": 2400000
+  },
+  "train": {
+    "max_steps": 750,
+    "warmup_steps": 75,
+    "max_seconds": 14400,
+    "batch_size": 4,
+    "total_window_exposures": 3000,
+    "total_future_target_exposures": 27000,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "save_every": 50,
+    "warmup_loss": {
+      "feature": 0.1,
+      "occupancy": 1.0
+    },
+    "render_loss": {
+      "feature": 0.1,
+      "occupancy": 0.2,
+      "future_rgb_l2": 100.0,
+      "future_codec_l2": 25.0,
+      "future_pseudoview_l2": 25.0
+    },
+    "objective": "Mean over batch4 and ALL9 future horizons, plus mean of9 conditional LFQ entropy losses once. Main render term is squared error to future real RGB; frozen-codec and pseudoview L2 are GS adapters. Feature MSE divided by each target feature mean square (clamped1); occupancy calibrated weightedBCE. Initial state is supplied unchanged, so no learned loss on x_t. This implements paper future-reconstruction semantics, not exact published GAN/L1 optimizer recipe.",
+    "target_support_forcing": false,
+    "gradient_staging": "Encode B4 jointly. For each sequence use quantized leaf as gradient buffer; backprop9 future losses, sum exact code gradients, then vector-Jacobian product through original LFQ/encoder plus mean conditional auxiliary loss. One optimizer step after all36 targets. Verify direct-vs-staged gradients. No temporal gradient truncation.",
+    "checkpoint": "Atomic latest every50 and final; optimizer/sampler/RNG and source hashes; exception snapshot marked resumable only after completed step; no automatic resume."
+  },
+  "evaluation": {
+    "windows": 176,
+    "real_future_target_exposures": 1548,
+    "controls": [
+      "hold window initial state at each target camera",
+      "frozen target codec",
+      "correct nine IDs",
+      "nine IDs from start+85 modulo176",
+      "reverse temporal ID order"
+    ],
+    "pass": {
+      "max_full_and_region_drop_vs_frozen_target_db": 1.0,
+      "min_full_gain_vs_held_initial_db": 0.2,
+      "min_hand_gain_vs_held_initial_db": 0.5,
+      "min_hand_drop_when_motion_shuffled_db": 0.25,
+      "min_distinct_motion_id_tuples": 16,
+      "min_conditional_code_entropy_gain_nats": 0.5
+    },
+    "artifacts": [
+      "per-window and per-horizon metrics for1548 real targets",
+      "initial-state+9ID replay packets",
+      "AR future-bundle IDs[1,176,9] and flattened[1,1584], with valid horizon mask",
+      "six-column176-target video at29.97fps, true initial reset once every9frames, not AR rollout",
+      "final-weight encoder and decoder causality report"
+    ],
+    "scope": "Oracle posterior TRAIN reconstruction. Every target frame represented; repeated targets across overlapping windows counted explicitly. Padding excluded from scientific metrics. Report h1..h9 separately."
+  },
+  "resource": {
+    "allocator_fraction": 0.6,
+    "witness_peak_limit_gib": 48,
+    "min_free_gpu_gib": 55,
+    "cpu_threads": 6,
+    "shared_viewers_retained": true
+  },
+  "time_limits_seconds": {
+    "preflight": 1800,
+    "training": 15000,
+    "trained_causality": 900,
+    "evaluation": 9000,
+    "pipeline": 28800
+  },
+  "stop": [
+    "Source/code hash mismatch",
+    "Nonfinite loss or gradient",
+    "OOM",
+    "Empty or overbudget support",
+    "Any target outside initial-only candidates",
+    "Failed causal or exact-gradient check",
+    "Phase timeout"
+  ],
+  "retries": "No automatic retries, no scientific retuning, no point/frame/resolution reduction",
+  "limitations": [
+    "Offline NeoVerse teacher uses whole video; conditional GS causality does not imply online video causality.",
+    "Posterior sees true future up to each horizon. No AR model trained in this run.",
+    "Single admitted TRAIN clip, not generalization evidence.",
+    "Frozen state codec fidelity gate already failed; engineering completion cannot establish full-model fidelity.",
+    "H9 IDs are future-horizon bundles tied to a common initial state; no claim of nine independent physical adjacent actions or semantic disentanglement.",
+    "64wide world-coordinate temporalConv1d, sparse support and residual are GS adapters; not identical pixelConv3d architecture.",
+    "Decoder uses strict causal per-time normalization; official VideoWorld decoder permits future quantized-token coupling through global normalization. This stricter GS decoder is intentional.",
+    "Future9 squared-error reconstruction follows paper objective semantics; released VideoWorld code also uses full10-frame L1 and sampled perceptual/GAN terms, not reproduced here.",
+    "Architecture, horizon, decoder and objectives change together; previous runs are contextual references, not isolated ablation.",
+    "B4 bounds empirical hard entropy inside each batch/horizon by ln4; removing horizon reward alone does not guarantee recovery or useful motion tokens. One fixed-budget single-variable comparison only."
+  ],
+  "comparison": {
+    "reference_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_vw1_h9_lfq_20261030_v3",
+    "initial_parameter_sha256": "1ca02e66780e7acd70be0759b9050255344fb2cb626ba7efa2b86195eabab089",
+    "only_scientific_change": "LFQ auxiliary entropy grouping: mean_h softplus(E_b H(p_bh)-H(E_b p_bh)+5)*0.1; previous softplus pools b and h before marginal entropy. Same quantizer, forward codes, inverse, seed, sampler, optimizer, loss weights and750 updates.",
+    "reference_valid_conditional_code_entropy_nats": 0.159565521,
+    "reference_global_code_entropy_nats": 2.356677417,
+    "reference_horizon_information_nats": 2.197111896,
+    "reference_horizon_information_fraction": 0.932292,
+    "max_repair_runs": 1,
+    "initialize": "Same initial seed and exact initial state_dict hash, NOT collapsed final checkpoint."
+  }
+}

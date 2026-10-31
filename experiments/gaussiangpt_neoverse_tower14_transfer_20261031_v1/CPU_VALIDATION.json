@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "gpu_executed": false,
+  "cpu_only": true,
+  "goal_complete": false,
+  "tests_run": 5,
+  "checks": [
+    "in_memory_contracts",
+    "AST",
+    "prepare_help",
+    "local_manifest"
+  ],
+  "code_manifest_sha256": "8c9381593b2a7bce009e38d73c07f9de1b0ab1a411cfa7feb9ce6729d268ef57",
+  "input_binding_sha256": "a422de97bdfeb7b9dcae47a00478f43ddb63185b9b352b85e221cb914c7d1e8d"
+}

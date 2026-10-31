@@ -1,0 +1,23 @@
+{
+  "schema": "native_codec_independent_replay_v1",
+  "user_selected_action_codec": "baseline",
+  "selection_scope": "buildingblock_tower_17_176 for matched continuous-Z versus LFQ comparison",
+  "selection_basis": "User selected baseline after seeing that it reconstructs the target clip better; no future action result used.",
+  "other_codec_acceptance_record_preserved": true,
+  "codec_checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "input_frame_count": 177,
+  "source_frame_range_inclusive": [0, 176],
+  "views_per_frame": 2,
+  "image_resolution_hw": [252, 448],
+  "replay_mae_max": 0.00001,
+  "replay_psnr_min_db": 60,
+  "producer": "decode actual full saved continuous state, save all native GS/SH/cameras and full precision renderer reference",
+  "replayer": "separate process reads saved native packets, reference renders and bound renderer; no encoder, decoder or MinkowskiEngine",
+  "data_reduction": false,
+  "training_updates": 0,
+  "minimum_free_gpu_gib": 16,
+  "maximum_allocator_gib_producer": 10,
+  "maximum_allocator_gib_replay": 6,
+  "stage_timeout_seconds": 3700,
+  "on_failure": "stop, retain evidence, do not retry or reduce inputs"
+}

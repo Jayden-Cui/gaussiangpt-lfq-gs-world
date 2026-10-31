@@ -1,0 +1,36 @@
+{
+  "schema": "videoworld-gsldm-upstream-v1",
+  "repository": "https://github.com/ByteDance-Seed/VideoWorld",
+  "commit": "3dc3e563e201cebab0e947177e79117c885ec3ba",
+  "source_checkout": "E:\\video world\\VideoWorld-src",
+  "extraction": "Exact git-show bytes from pinned commit; Windows checkout differs only by CRLF line endings",
+  "license": "Apache-2.0; original copyright and license headers retained",
+  "files": {
+    "qformer.py": {
+      "sha256": "220f24100c6449e5bd30e340b9ab0aeb0ba059c487eaf54f262d0aae19e678da",
+      "bytes": 12965,
+      "repository_path": "VideoWorld/LDM/ldm/models/autoencoders/qformer.py",
+      "git_blob_sha1": "c4fb6eeeb16829351ce85e1c6e0aed7b047860a1",
+      "url": "https://raw.githubusercontent.com/ByteDance-Seed/VideoWorld/3dc3e563e201cebab0e947177e79117c885ec3ba/VideoWorld/LDM/ldm/models/autoencoders/qformer.py"
+    },
+    "finite_scalar_quantization.py": {
+      "sha256": "a5da889b1607c33688146b627975c86cc278a4cbf4e301e989bbfb09b1fc6e21",
+      "bytes": 6097,
+      "repository_path": "VideoWorld/LDM/ldm/models/quantizers/finite_scalar_quantization.py",
+      "git_blob_sha1": "ec989d80cf886aaef302f914f202acccabff41ac",
+      "url": "https://raw.githubusercontent.com/ByteDance-Seed/VideoWorld/3dc3e563e201cebab0e947177e79117c885ec3ba/VideoWorld/LDM/ldm/models/quantizers/finite_scalar_quantization.py"
+    },
+    "calvin_ldm.py": {
+      "sha256": "300dd9168bb14dffec9b054b2536e216b2b32c792c3ede767a7055b996b2e355",
+      "bytes": 7315,
+      "repository_path": "VideoWorld/LDM/configs/calvin_ldm.py",
+      "git_blob_sha1": "361d5a1d98f5664cfafe3580117d673471090b80",
+      "url": "https://raw.githubusercontent.com/ByteDance-Seed/VideoWorld/3dc3e563e201cebab0e947177e79117c885ec3ba/VideoWorld/LDM/configs/calvin_ldm.py"
+    }
+  },
+  "runtime_transformation": {
+    "qformer": "none",
+    "calvin_ldm": "not executed; configuration reference only",
+    "finite_scalar_quantization": "AST remove only from ldm.registry import MODELS and @MODELS.register_module() on FSQ; all mathematical code and trainable modules unchanged"
+  }
+}

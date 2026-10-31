@@ -1,0 +1,13 @@
+{
+  "EXECUTION.md": "d01c3e7bc64f8537d82ff62d86974db3a04a6b57efe6fdaedc6c8195ca77bcc4",
+  "contract.py": "4f4d96628f996b60b46e43f9da8829656515123d17dce34091afe512d9bfb417",
+  "loss_step.py": "9cf62cdeb182f53ce872f8dd78bbc64216720ad6d878f62a5cac25ed0c08b53a",
+  "pipeline.py": "f5326168c4749ab1a9b66ae582d17934b506951a702fa6fda0d568c3fef45531",
+  "protocol.json": "3f795e0cdd9112c5332551d9015a464ef07ead397b1605fc92f96fa9238f4017",
+  "summary.py": "8e97fc7ee4ce5259a24df9eee5d035b82157b94fe9a9f38e545520e0672c81bf",
+  "teacher_assets.py": "3ff98446a8d8642b0d3960c64661ee41c3662f4ab6a3f13e835764bcbfb89c4d",
+  "test_loss_step.py": "7f06b993580f47fe9afbbd798c96f05365660b15cb9ac501e48a1dce984dfbdf",
+  "test_teacher_assets.py": "dc0ba4270b48a10dce346cc20dbc4b278ddb5ef052463423d5089329d4a6170c",
+  "validate.py": "80f262d3154cf2fac7ee5edd8596099a81538c4b9ff9133ec22affdc5bbfac12",
+  "worker.py": "c1a7db8b9b1715961d8d15d5030d07d611ea0f260c5e895362ea1a43bdd0bab9"
+}

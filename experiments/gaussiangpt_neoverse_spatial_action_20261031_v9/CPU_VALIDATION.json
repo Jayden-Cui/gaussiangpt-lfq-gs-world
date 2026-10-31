@@ -1,0 +1,69 @@
+{
+  "schema": "gs_spatial_action_cpu_document_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "b40b3353bdcc322c0f40497b1eb17ebeec293e07261a0668d23c04ed31fbdc40",
+  "protocol_sha256": "e49fd19aa1937420a38931f7e8d93782789fe08db01962d7afeab39cdb6565bd",
+  "gpu_executed": false,
+  "training_performed": false,
+  "goal_complete": false,
+  "finished_at": "2026-10-30T23:22:00.651588+00:00",
+  "elapsed_seconds": 15.628766000008909,
+  "checks": [
+    {
+      "name": "test_spatial_action",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_spatial_action",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_attach_names_parameters_modes_replay_and_double_wrap_rejection (test_spatial_action.SpatialActionTests.test_attach_names_parameters_modes_replay_and_double_wrap_rejection) ... ok\ntest_branch_row_permutation_equivariance_not_inherited_from_toy_base (test_spatial_action.SpatialActionTests.test_branch_row_permutation_equivariance_not_inherited_from_toy_base) ... ok\ntest_disabled_skips_even_poisoned_branch_and_optimizer_cannot_update_it (test_spatial_action.SpatialActionTests.test_disabled_skips_even_poisoned_branch_and_optimizer_cannot_update_it) ... ok\ntest_fixed_seed_initialization_independent_of_external_rng (test_spatial_action.SpatialActionTests.test_fixed_seed_initialization_independent_of_external_rng) ... ok\ntest_future_branch_reads_own_action_and_slot3_only_despite_mixing_base (test_spatial_action.SpatialActionTests.test_future_branch_reads_own_action_and_slot3_only_despite_mixing_base) ... E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_spatial_action_20261031_v9\\test_spatial_action.py:125: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\torch\\csrc\\autograd\\generated\\python_variable_methods.cpp:837.)\n  self.assertGreater(float((changed[10] - original[10]).norm()), .01)\nok\ntest_gradient_report_distinguishes_missing_nonfinite_and_finite (test_spatial_action.SpatialActionTests.test_gradient_report_distinguishes_missing_nonfinite_and_finite) ... ok\ntest_implicit_condition_matches_explicit_original_input (test_spatial_action.SpatialActionTests.test_implicit_condition_matches_explicit_original_input) ... ok\ntest_mask_and_first_four_slots_are_unchanged (test_spatial_action.SpatialActionTests.test_mask_and_first_four_slots_are_unchanged) ... ok\ntest_same_action_and_initial_different_coordinates_changes_branch (test_spatial_action.SpatialActionTests.test_same_action_and_initial_different_coordinates_changes_branch) ... ok\ntest_same_action_different_initial_features_changes_only_branch (test_spatial_action.SpatialActionTests.test_same_action_different_initial_features_changes_only_branch) ... ok\ntest_same_spatial_condition_different_action_changes_branch (test_spatial_action.SpatialActionTests.test_same_spatial_condition_different_action_changes_branch) ... ok\ntest_shape_rejection_and_input_preservation (test_spatial_action.SpatialActionTests.test_shape_rejection_and_input_preservation) ... ok\ntest_two_updates_reach_all_new_groups_and_initial_and_every_z (test_spatial_action.SpatialActionTests.test_two_updates_reach_all_new_groups_and_initial_and_every_z) ... ok\ntest_zero_initial_output_exact_and_cpu_rng_unchanged_without_cuda_calls (test_spatial_action.SpatialActionTests.test_zero_initial_output_exact_and_cpu_rng_unchanged_without_cuda_calls) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 2.058s\n\nOK\n"
+    },
+    {
+      "name": "test_worker",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_worker",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_any_preflight_artifact_forbids_in_place_relaunch (test_worker.SpatialWorkerTests.test_any_preflight_artifact_forbids_in_place_relaunch) ... ok\ntest_append_preserves_old_optimizer_members_moments_order_and_rng (test_worker.SpatialWorkerTests.test_append_preserves_old_optimizer_members_moments_order_and_rng) ... ok\ntest_disconnected_nonfinite_or_unchanged_second_step_is_rejected (test_worker.SpatialWorkerTests.test_disconnected_nonfinite_or_unchanged_second_step_is_rejected) ... ok\ntest_fixed_known_failure_screens_and_preserved_original_gradient_gate (test_worker.SpatialWorkerTests.test_fixed_known_failure_screens_and_preserved_original_gradient_gate) ... ok\ntest_incomplete_preflight_or_missing_second_update_never_authorizes_training (test_worker.SpatialWorkerTests.test_incomplete_preflight_or_missing_second_update_never_authorizes_training) ... ok\ntest_null_bias_guard_rebind_retains_all27_values_and_old_optimizer (test_worker.SpatialWorkerTests.test_null_bias_guard_rebind_retains_all27_values_and_old_optimizer) ... ok\ntest_only_two_spatial_arms_and_exact_continuation (test_worker.SpatialWorkerTests.test_only_two_spatial_arms_and_exact_continuation) ... ok\ntest_two_discarded_toy_b4_steps_expose_all_new_groups (test_worker.SpatialWorkerTests.test_two_discarded_toy_b4_steps_expose_all_new_groups) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 2.189s\n\nOK\n"
+    },
+    {
+      "name": "test_compare",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_compare",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"engineering_status\": \"incomplete_or_invalid\", \"comparison_eligible\": false, \"scientific_status\": \"inconclusive\", \"goal_complete\": false}\n",
+      "stderr": "test_actual_continuation_log_not_just_done_label (test_compare.CompareTests.test_actual_continuation_log_not_just_done_label) ... ok\ntest_control_definition_drift_and_missing_new_controls_rejected (test_compare.CompareTests.test_control_definition_drift_and_missing_new_controls_rejected) ... ok\ntest_current_held_gate_and_separate_constant_reference (test_compare.CompareTests.test_current_held_gate_and_separate_constant_reference) ... ok\ntest_horizon_regression_overrides_positive_pooled_interval (test_compare.CompareTests.test_horizon_regression_overrides_positive_pooled_interval) ... ok\ntest_missing_artifacts_write_refusal_exit_two (test_compare.CompareTests.test_missing_artifacts_write_refusal_exit_two) ... ok\ntest_original_physical_frame_bootstrap (test_compare.CompareTests.test_original_physical_frame_bootstrap) ... ok\ntest_protocol_and_reference_identity_cannot_drift (test_compare.CompareTests.test_protocol_and_reference_identity_cannot_drift) ... ok\ntest_reference_file_bytes_are_checked_before_import (test_compare.CompareTests.test_reference_file_bytes_are_checked_before_import) ... ok\ntest_source400_drift_and_fake_reference_are_rejected (test_compare.CompareTests.test_source400_drift_and_fake_reference_are_rejected) ... ok\ntest_unfinished600_and_plan_offset_rejected (test_compare.CompareTests.test_unfinished600_and_plan_offset_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 1.624s\n\nOK\n"
+    },
+    {
+      "name": "test_pipeline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_pipeline",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_compare_generated_summary_md_remains_output_not_source (test_pipeline.QueueTests.test_compare_generated_summary_md_remains_output_not_source) ... ok\ntest_cpu_verify_only_local_hashes_and_exact_proof (test_pipeline.QueueTests.test_cpu_verify_only_local_hashes_and_exact_proof) ... ok\ntest_dependency_exact_identity_and_pid_reuse (test_pipeline.QueueTests.test_dependency_exact_identity_and_pid_reuse) ... ok\ntest_dependency_missing_terminal_and_wait_timeout_never_restart_or_kill_parent (test_pipeline.QueueTests.test_dependency_missing_terminal_and_wait_timeout_never_restart_or_kill_parent) ... ok\ntest_first_parallel_failure_stops_owned_sibling_and_preserves_results (test_pipeline.QueueTests.test_first_parallel_failure_stops_owned_sibling_and_preserves_results) ... ok\ntest_fixed_commands_only_two_new_arms_and_budgets (test_pipeline.QueueTests.test_fixed_commands_only_two_new_arms_and_budgets) ... ok\ntest_gpu_admission_one_mock_query_and_engineering_not_scientific_gate (test_pipeline.QueueTests.test_gpu_admission_one_mock_query_and_engineering_not_scientific_gate) ... ok\ntest_partial600_or_incomplete200_trace_cannot_enter_evaluation (test_pipeline.QueueTests.test_partial600_or_incomplete200_trace_cannot_enter_evaluation) ... ok\ntest_resource_dependency_allows_unique_failed_but_not_missing_or_conflicting (test_pipeline.QueueTests.test_resource_dependency_allows_unique_failed_but_not_missing_or_conflicting) ... ok\ntest_same_root_workers_keep_dependency_waiting (test_pipeline.QueueTests.test_same_root_workers_keep_dependency_waiting) ... ok\ntest_timeout_does_not_retry_or_launch_next_stage (test_pipeline.QueueTests.test_timeout_does_not_retry_or_launch_next_stage) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 1.435s\n\nOK\n"
+    }
+  ]
+}

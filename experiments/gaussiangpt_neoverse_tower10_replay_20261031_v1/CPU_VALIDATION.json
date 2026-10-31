@@ -1,0 +1,34 @@
+{
+  "schema": "gs_tower10_cpu_document_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "f9d8db6b8f6c77636dc78cc11c7cbdd5da91d710e5a0675620fb4dd6facd0418",
+  "protocol_sha256": "bbbbcc0a3aabd91dd173421c3b2b0ed8c589054f7e9f736848cd47e9ca08972b",
+  "input_binding_sha256": "af208495ed3df26487a59913cdd306f45038ee2f2bb47bee552f5228702c6b79",
+  "checks": [
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_tower10_replay_20261031_v1\\test_prepare.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.519s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_tower10_replay_20261031_v1\\test_pipeline.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_commands_match_original_export_cli_and_prepare_wrapper (__main__.QueueContracts.test_commands_match_original_export_cli_and_prepare_wrapper) ... ok\ntest_complete_summary_preserves_train_identity_and_never_scientific_success (__main__.QueueContracts.test_complete_summary_preserves_train_identity_and_never_scientific_success) ... ok\ntest_cpu_verify_opens_no_remote_paths_and_validation_binds_exact_manifest (__main__.QueueContracts.test_cpu_verify_opens_no_remote_paths_and_validation_binds_exact_manifest) ... ok\ntest_exact_parent_identity_and_reused_pid_fail_closed (__main__.QueueContracts.test_exact_parent_identity_and_reused_pid_fail_closed) ... ok\ntest_existing_teacher_prevents_any_new_child (__main__.QueueContracts.test_existing_teacher_prevents_any_new_child) ... ok\ntest_first_child_failure_or_timeout_stops_without_second_child_or_retry (__main__.QueueContracts.test_first_child_failure_or_timeout_stops_without_second_child_or_retry) ... ok\ntest_gpu_admission_mock_needs60gib_and_never_polls (__main__.QueueContracts.test_gpu_admission_mock_needs60gib_and_never_polls) ... ok\ntest_main_failure_writes_failed_status_and_no_done (__main__.QueueContracts.test_main_failure_writes_failed_status_and_no_done) ... ok\ntest_missing_terminal_after_exit_is_not_success_or_another_wait (__main__.QueueContracts.test_missing_terminal_after_exit_is_not_success_or_another_wait) ... ok\ntest_mutated_manifest_file_is_rejected (__main__.QueueContracts.test_mutated_manifest_file_is_rejected) ... ok\ntest_observe_rejects_replacement_parent_and_preserves_workers (__main__.QueueContracts.test_observe_rejects_replacement_parent_and_preserves_workers) ... ok\ntest_protocol_and_binding_parameters_are_fixed (__main__.QueueContracts.test_protocol_and_binding_parameters_are_fixed) ... ok\ntest_same_root_workers_only (__main__.QueueContracts.test_same_root_workers_only) ... ok\ntest_terminals_missing_conflicting_invalid_fail_and_v8_failure_is_allowed (__main__.QueueContracts.test_terminals_missing_conflicting_invalid_fail_and_v8_failure_is_allowed) ... ok\ntest_two_sequential_tasks_use_fixed_budget_and_gpu_environment (__main__.QueueContracts.test_two_sequential_tasks_use_fixed_budget_and_gpu_environment) ... ok\ntest_unreadable_live_pid_and_identity_race_not_assumed_exited (__main__.QueueContracts.test_unreadable_live_pid_and_identity_race_not_assumed_exited) ... ok\ntest_wait_includes_workers_after_parent_exit (__main__.QueueContracts.test_wait_includes_workers_after_parent_exit) ... ok\ntest_wait_timeout_is10800_and_uses60_second_interval (__main__.QueueContracts.test_wait_timeout_is10800_and_uses60_second_interval) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.562s\n\nOK\n"
+    }
+  ],
+  "gpu_executed": false,
+  "training_performed": false,
+  "goal_complete": false,
+  "checked_at": "2026-10-30T22:13:53.919025+00:00",
+  "elapsed_seconds": 1.8584368999872822
+}

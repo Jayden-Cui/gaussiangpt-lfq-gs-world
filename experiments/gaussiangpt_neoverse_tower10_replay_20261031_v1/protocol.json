@@ -1,0 +1,43 @@
+{
+  "schema": "gs_tower10_full_preparation_v1",
+  "run": "gaussiangpt_neoverse_tower10_replay_20261031_v1",
+  "clip": "buildingblock_tower_10_176",
+  "source_group": "buildingblock_tower_10",
+  "source_role": "TRAIN",
+  "official_independent_test_split": false,
+  "frames": 177,
+  "height": 252,
+  "width": 448,
+  "stride": 1,
+  "fps": 29.97,
+  "source_video_sha256": "a8d76842e1d7de31cb8bedfe437264a28b3203c9f3bfbaebf2a6f0864a051dab",
+  "prepare_helper_relative": "../gaussiangpt_neoverse_tower14_transfer_20261031_v1/prepare_frozen_codec.py",
+  "prepare_helper_sha256": "3f26fdc51885eb7e8b2185446e891dd5dbda30d5be83cd4900b7db401e1e6c85",
+  "codec_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state",
+  "parent": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_local_condition_20261031_v8",
+    "pid": 436766,
+    "start_ticks": "38503415",
+    "manifest_sha256": "169764ae89e7bbc589b27b749beb2de7e1105fd9036d122d20eaeae2be8ad7cd"
+  },
+  "wait_seconds": 10800,
+  "wait_interval_seconds": 60,
+  "teacher_process_seconds": 1200,
+  "preparation_seconds": 1200,
+  "preparation_process_seconds": 1230,
+  "outer_seconds": 13400,
+  "gpu": 0,
+  "minimum_free_gib": 60,
+  "cpu_threads": 6,
+  "automatic_retry": false,
+  "training_performed": false,
+  "scientific_transfer_passed": null,
+  "goal_complete": false,
+  "limits": [
+    "Data preparation for subsequent multi-source GS training only; no state or LDM updates",
+    "Exact177 adjacent original frames; all112896 teacher GS per frame; no interpolation or point deletion",
+    "Frozen existing64dim state codec; quantify quality even if poor",
+    "Current v8 experiment remains immutable; wait for terminal and child exit without signalling its processes",
+    "A changed encoder in a later experiment requires full state regeneration and LDM compatibility validation"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "protocol.json": "73744951bf9590f42a37a460e51829264a269b6442ac0ef8e50d402da5c959f1",
+  "ENVIRONMENT.md": "c4f74e6d73fd48db7e41dcfbec9166f63c177f3ff063687669c17278fc31fa8f",
+  "code/aligned_ldm.py": "171f776ce6212da04ec38319c0fcdc4d0a643386736c0f0b100bd9029d4ee454",
+  "code/anchored_ldm.py": "2fdc8fb4582c4b667c47b0c5c3d3efeac43409d3864dd0f4103c43c486c6f23f",
+  "code/compare_arms.py": "14fa085be07f8ab3f6ef79ec671362f062d6b2726f3968b02f8c4d95ff91c1b8",
+  "code/gs_bridge.py": "84cb0b52f1e727190b9471baef3b979f53d08aa5be453ea99568ac88b77af359",
+  "code/model_core.py": "5c6d898cc137c21af5c46482e3cc0f503f20ba70542966bc5b4de08153b22ce6",
+  "code/multiscale64.py": "c884059fa2673024d0070879f147322d273061a7c68e9fa66eabd5d5e636a385",
+  "code/native_experiment.py": "375b4e3c7b7e8ed0f7e0a8d3a0e69ba0e39bc41459980ebb81ef05cd8837c331",
+  "code/pipeline.py": "fe498f5fa7872f903b144c0bd02ad4f99eb770c4df53d607ae84c6fee230ebab",
+  "code/sampling.py": "ef16a5b030b73a31576782b3d95c5b9f22a8ce650103400ccb4adf8834ab3e72",
+  "code/sequence_data.py": "d61890e66d7575b2296e14c8c71abcb946d32519649992a1183bd7fd3ea314a5",
+  "code/spatial64.py": "c3a650ca24a41fecfb195ea0f1bf4971c036709a9eeeddb6cfe97cdaa404845f",
+  "code/test_anchored_ldm.py": "4f5a8284df576b3a5ed4eb7e130062a10798718d31f98129e5f68f4ec3aebcc8",
+  "code/upstream.py": "3b3fed071cd115a3bc26265677401859d93b44f987a5c31b176da7fd4b5d9bcf",
+  "code/validate.py": "7b6f42b2b3818d2efa1eda3852a66ed2797969e722383c74667e2ac781b7ea38",
+  "code/vendor/calvin_ldm.py": "300dd9168bb14dffec9b054b2536e216b2b32c792c3ede767a7055b996b2e355",
+  "code/vendor/finite_scalar_quantization.py": "a5da889b1607c33688146b627975c86cc278a4cbf4e301e989bbfb09b1fc6e21",
+  "code/vendor/qformer.py": "220f24100c6449e5bd30e340b9ab0aeb0ba059c487eaf54f262d0aae19e678da",
+  "code/vendor/provenance.json": "21f962642d991549f93b24305c4dc74e7e108eb8d79d2785ed9fd1db62f5776b"
+}

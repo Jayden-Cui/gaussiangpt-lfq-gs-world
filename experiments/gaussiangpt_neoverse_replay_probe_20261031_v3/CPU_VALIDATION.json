@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "gpu_executed": false,
+  "code_manifest_sha256": "543d2c8a78b7c6125236088b7d9deae9667ded42f82c3e38ca46c6cbabefc21f",
+  "protocol_sha256": "fa60e11c1fb56ded3579576359d924e07e8edb47187c733982cc68063ce99887",
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 0.4201265999581665,
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "log_sha256": "24b65fe4fba7186b971a97f29c99deb00bfb2703069039f461d39b4d9cf4ca27"
+}

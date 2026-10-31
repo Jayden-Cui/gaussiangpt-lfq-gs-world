@@ -1,0 +1,129 @@
+{
+  "schema": "gs_spatial_action_v9",
+  "seed": 20261031,
+  "source_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_temporal_z_20261031_v7",
+  "source_manifest_sha256": "f144aaebb3ee8980aab1aa4e24cf4e3c395ef87fdd6f1f22ae5743a0385f18c1",
+  "comparison_source_relative": "../gaussiangpt_neoverse_native_z_20261031_v6/code/compare_arms.py",
+  "arms": {
+    "spatial_z": {
+      "source_arm": "z_delta",
+      "spatial_action_enabled": true
+    },
+    "spatial_constant": {
+      "source_arm": "constant_delta",
+      "spatial_action_enabled": true
+    }
+  },
+  "train": {
+    "source_step": 400,
+    "total_steps": 600,
+    "additional_steps": 200,
+    "save_steps": [
+      500,
+      600
+    ],
+    "max_seconds": 1800
+  },
+  "evaluation": {
+    "max_seconds": 2400,
+    "windows": 168,
+    "future_exposures": 1512,
+    "physical_future_frames": 176
+  },
+  "preflight": {
+    "max_seconds": 600,
+    "starts": [
+      0,
+      42,
+      84,
+      126
+    ],
+    "parity_starts": [
+      35,
+      123
+    ],
+    "updates_per_arm": 2
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "peak_limit_gib": 48
+  },
+  "baseline_tolerances": {
+    "mae": 0.0001,
+    "psnr": 0.02
+  },
+  "delta_weight": 1.0,
+  "hypothesis": "A direct interaction of action z_h with each initial GS context and coordinate improves spatial allocation of latent changes. v8 static initial skips did not improve large motions; free continuous Z failed on two frozen v7 windows while bounded per-point F target fitting was much better. This is evidence to test a decoder path, not proof of a capacity limit.",
+  "change": "After the unchanged original decoder backbone and before its old output_norm/features, add Wo(tanh(Wf(LN(initial_slot3_i))+Position3D(coords_i))*Wz(LN(z_h))) only to future slots4..12. All internal widths64, original position scale0.032 and6 frequencies, bias-free zero-init Wo. New layer norms are channel-only. New branch does not change original full-window normalization or claim strict prefix causality.",
+  "invariants": {
+    "B": 4,
+    "T": 10,
+    "frame_gap": 1,
+    "source_frames": 177,
+    "all_initial_latent_rows": true,
+    "resolution_hw": [
+      252,
+      448
+    ],
+    "latent_width": 64,
+    "lfq_bits": 16,
+    "state_quantization": false,
+    "original_native_pruning": true,
+    "native_encoder_frozen": true,
+    "native_trainable": "decoder.out, feature_heads, gaussian_multiplier",
+    "output_units_and_residual_bound": "Exact source TRAIN output_std and residual_scale3 retained"
+  },
+  "optimizer": "Restore the same v7 source400 model/codec/optimizer/RNG as v8 base references. Keep every old optimizer member/order/state; append exactly all new enabled spatial-action parameters as one group with original motion_lr and inherited AdamW defaults. Initialization preserves external CPU/CUDA RNG. Preserve original27 fixed null-key biases.",
+  "sampling": "make_plan(original_seed,600); both new arms use exactly batches[400:600], B4 complete adjacent-frame H9 windows. Reuse already completed v8 base_z/base_constant600 with exactly the same source400 and continuation plan; do not retrain or silently relabel references.",
+  "selection": "Require actual step600 for both new arms and both immutable v8 references. No best-checkpoint selection; no reference substitution or budget change.",
+  "scientific_tests": {
+    "per_architecture_action_screen": "14 positive physical-frame CI requirements: vs3shuffles and matchedconstant full/ROI/motion, plus vs current adapted_held full/ROI; also all compared per-h full MAE nonworse. This new declared gate uses current codec held, not the old frozen-held reference.",
+    "bootstrap": "Reduce overlapping observations by physical frame, then176 equal weights; moving block16,2000 draws,seed20261031; descriptive single TRAIN clip",
+    "visual": "Inspect complete-resolution known-failure frames44 from start35/h9 and132 from start123/h9; ghosted or missing blocks are not rescued by an average PSNR gain.",
+    "spatial_action_effect": "spatial_z vs base_z motion CI positive; full/ROI/h0 mean MAE nonworse; spatial matched action screen passed. Also report spatial_constant vs base_constant. No automatic success from this screen.",
+    "interpretation": "Image-screen or software pass cannot establish reliable action Z. Inspect predeclared frame44/start35/h9 and132/start123/h9 for actual block movement; maintain correct-vs-shuffled and matched-constant controls. Results remain single-source posterior reconstructions."
+  },
+  "queue": {
+    "gpu_workers": {
+      "0": "spatial_z",
+      "1": "spatial_constant"
+    },
+    "wait_seconds": 7200,
+    "wait_interval_seconds": 60,
+    "preflight_process_seconds": 630,
+    "train_process_seconds": 1900,
+    "eval_process_seconds": 2500,
+    "comparison_seconds": 300,
+    "outer_seconds": 12600,
+    "minimum_free_gib": 55
+  },
+  "automatic_retry": false,
+  "goal_complete": false,
+  "limitations": [
+    "Single TRAIN clip continuation on fixed old codec; not AR or transferable action proof",
+    "New multisource codec changes are deliberately absent from this isolated action-path test; any later integration requires fresh caches and new validation",
+    "Whole-window decoder normalization is unchanged; no strict-prefix-causality claim",
+    "Oracle target fitting is diagnostic and showed artifacts, not learned-Z success",
+    "Reused baseline is one prior execution, not a new independent seed or repeated-run uncertainty estimate"
+  ],
+  "reference_baselines": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_local_condition_20261031_v8",
+    "code_manifest_sha256": "169764ae89e7bbc589b27b749beb2de7e1105fd9036d122d20eaeae2be8ad7cd",
+    "protocol_sha256": "38765c9f6d7538035746ed521aa3c41bc34ea80fd4f5f2a93dfed1897b8d0934",
+    "summary_sha256": "7c7ea3826ff477101308d93182d1cb764010eb531d995f06f49d17c1ff5c5123",
+    "arms": {
+      "spatial_z": "base_z",
+      "spatial_constant": "base_constant"
+    },
+    "step": 600,
+    "same_source400_and_optimizer_rng_plan_required": true,
+    "reuse_reason": "Avoid repeating an already completed identical baseline continuation; reference run source identity and artifacts must be checked."
+  },
+  "dependency": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_20261031_v1",
+    "pid": 439814,
+    "start_ticks": "38835617",
+    "manifest_sha256": "b4958856fb50af2c55f4c2fce9eaa2a16c14ca9ec5f87436565a499052efe48a",
+    "terminal_policy": "Wait for exact parent and same-root workers to exit; require a unique valid DONE or FAILED receipt. A failed independent codec experiment does not invalidate the old fixed codec used here; do not signal parent/shared processes."
+  }
+}

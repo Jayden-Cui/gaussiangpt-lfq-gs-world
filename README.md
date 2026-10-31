@@ -1,3 +1,30 @@
-# GaussianGPT + Q-Former + LFQ
+# GaussianGPT 空间状态与动作码实验
 
-包含正式配对实验源码、上游依赖源码、44/132帧对照及慢放视频。实验在134服务器运行，原始代码引用绝对路径、预训练权重、状态缓存、GPU扩展及环境，仓库本身不包含这些大文件，不能直接离线复现。关键帧为后验重建结果，不代表AR预测成功。详细实验协议见 experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/EXECUTION.md。
+本仓库整理 GS World 实验的代码，供分析 GaussianGPT 空间状态、Q-Former 动作表示与 LFQ 量化的接入方式。`experiments/` 同时保留当前正式对照和历史版本；阅读时应优先从下列入口开始，避免把历史失败尝试当成最终实现。
+
+## 当前主线：从 GS 状态到动作码
+
+1. **空间状态与 GaussianGPT 编解码**：[codec.py](experiments/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/codec.py) 将每一时刻 GS 编码为带整数坐标的连续 `[M_t, 64]` 状态，并从状态解码 GS；状态量化使用 `Identity`。GS 渲染和属性转换见同目录 `common.py`。
+2. **Q-Former 与初态锚定解码**：[model_adapter.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/model_adapter.py) 接入9个按时间前缀读取状态的动作查询；骨干与初态锚定解码见 [anchored_ldm.py](experiments/gaussiangpt_neoverse_native_z_20261031_v6/code/anchored_ldm.py)、`aligned_ldm.py` 与 `multiscale64.py`。
+3. **LFQ 与连续码对照**：[action_bottleneck.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/action_bottleneck.py) 实现共同的 `64→16→64` 投影。每个完整窗口的动作码形状为 `[B, 9, 16]`；LFQ 分支每个动作码有16个二值符号，ID形状为 `[B, 9]`，理论码本大小为65536。连续分支保留浮点码。两臂共享初始权重、尺度和辅助损失。
+4. **因果归一化**：[initial_norm.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/initial_norm.py) 限制归一化与条件统计使用初态槽位；模型输出坐标锚定窗口初态。
+5. **训练和评测**：[train.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/train.py)、[paired_step.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/paired_step.py)、[evaluate.py](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/evaluate.py) 和 [protocol.json](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/protocol.json) 分别给出训练流程、损失、动作码控制实验和固定配置。`coordinator.py` 串联两臂及后续评测。
+
+实验以 NeoVerse 导出的搭积木 GS 为数据源，177帧，使用相邻帧构成10帧窗口，共168个重叠窗口；batch size 为4。Q-Former 的第 `h` 个查询读取该窗口的 `S_0…S_h`，并非从文本或已预测历史中自回归地产生未来动作码。
+
+## 结果和关键帧
+
+正式对照两臂各800步。按176个不同未来帧等权汇总，连续 Z／LFQ 的全图 MAE 分别为0.030408／0.032773；关键帧中的黄条和绿梁动作仍有明显错误，因此结果尚不支持动作重建成功或 AR 预测成功。
+
+- [实验汇总与执行记录](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/EXECUTION.md)
+- [44帧与132帧关键帧](keyframes/)
+- [两段窗口对照视频](videos/)：5 fps慢放，源视频约29.97 fps。
+- [完整结果表](experiments/gaussiangpt_neoverse_z_paired_formal_20261031_v1/SUMMARY.md)
+
+## 仓库范围与复现限制
+
+`experiments/gaussiangpt_neoverse_*` 收录本工程相关的各阶段源代码、测试和配置，包括数据准备、编解码、重放诊断、旧版动作模型、正式配对训练与评测。`experiments/gaussiangpt_state_vae_20261028_v1/vendor/` 保留实验使用的 GaussianGPT 上游源码及其许可证。
+
+**仓库不含训练权重、原始视频、NeoVerse 输出、状态缓存、教师资产或GPU运行环境。** 实验代码中的 `/data/CJH/AGS-V6Direct/outputs` 是原134服务器目录，并硬校验原环境及文件哈希；这些代码可供分析，但直接下载仓库并不能独立复现运行。完整复现需要按代码与协议准备相同数据、权重、依赖版本及GPU扩展，并重新配置路径或在相同目录结构部署。
+
+本次结果来自同一个已用于训练的片段和一个随机种子，是有真实未来状态输入的后验重建对照，不是未见场景泛化结果。历史目录中的失败或中断实验保留原有名称和记录，不应与当前正式结果混用。

@@ -1,0 +1,45 @@
+{
+  "schema": "gs_displacement_probe_cpu_document_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "b797006a4df21c093f46afba65ec45efab7ede755b8caf483599c3ae15d7d4ec",
+  "protocol_sha256": "186eee7b06d1b00a7f7f506d1d72a6605c5bfd377e757a719f03ec33f634d596",
+  "actual_tests_executed": 30,
+  "gpu_executed": false,
+  "model_updates": 0,
+  "oracle_updates": 0,
+  "goal_complete": false,
+  "elapsed_seconds": 20.324694899987662,
+  "finished_at": "2026-10-31T00:25:48.125158+00:00",
+  "checks": [
+    {
+      "name": "test_worker",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_worker",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 16,
+      "stdout": "",
+      "stderr": "test_feature_units_preserve_zero_channels_and_h0 (test_worker.DisplacementProbeTests.test_feature_units_preserve_zero_channels_and_h0) ... ok\ntest_frozen_parameters_and_buffers_are_not_accidentally_trainable (test_worker.DisplacementProbeTests.test_frozen_parameters_and_buffers_are_not_accidentally_trainable) ... ok\ntest_h0_outputs_do_not_reference_oracle_variable (test_worker.DisplacementProbeTests.test_h0_outputs_do_not_reference_oracle_variable) ... ok\ntest_import_is_cpu_only (test_worker.DisplacementProbeTests.test_import_is_cpu_only) ... ok\ntest_independent_disk_packet_preserves_all_attributes_and_sh (test_worker.DisplacementProbeTests.test_independent_disk_packet_preserves_all_attributes_and_sh) ... ok\ntest_output_paths_cannot_escape_and_writes_never_replace (test_worker.DisplacementProbeTests.test_output_paths_cannot_escape_and_writes_never_replace) ... ok\ntest_packet_rejects_missing_sh_nonfinite_and_wrong_mapping (test_worker.DisplacementProbeTests.test_packet_rejects_missing_sh_nonfinite_and_wrong_mapping) ... ok\ntest_parity_needs_all_ten_frames (test_worker.DisplacementProbeTests.test_parity_needs_all_ten_frames) ... ok\ntest_replay_uses_both_saved_cameras_and_sh (test_worker.DisplacementProbeTests.test_replay_uses_both_saved_cameras_and_sh) ... ok\ntest_reserved_peak_alone_blocks_even_when_allocated_is_low (test_worker.DisplacementProbeTests.test_reserved_peak_alone_blocks_even_when_allocated_is_low) ... ok\ntest_scope_protocol_rejects_smaller_or_reinterpreted_probe (test_worker.DisplacementProbeTests.test_scope_protocol_rejects_smaller_or_reinterpreted_probe) ... ok\ntest_shared_memory_admission_is_real_and_does_not_initialize_cuda_in_test (test_worker.DisplacementProbeTests.test_shared_memory_admission_is_real_and_does_not_initialize_cuda_in_test) ... ok\ntest_ten_frame_loss_matches_direct_v9_reduction_and_gradient (test_worker.DisplacementProbeTests.test_ten_frame_loss_matches_direct_v9_reduction_and_gradient) ... ok\ntest_xyz_gradient_reaches_positions_without_touching_attributes (test_worker.DisplacementProbeTests.test_xyz_gradient_reaches_positions_without_touching_attributes) ... ok\ntest_xyz_rejects_dropped_rows (test_worker.DisplacementProbeTests.test_xyz_rejects_dropped_rows) ... ok\ntest_zero_motion_weight_does_not_make_nan (test_worker.DisplacementProbeTests.test_zero_motion_weight_does_not_make_nan) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.187s\n\nOK\n"
+    },
+    {
+      "name": "test_pipeline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_pipeline",
+        "-v"
+      ],
+      "exit_code": 0,
+      "actual_tests": 14,
+      "stdout": "",
+      "stderr": "test_complete_end_to_end_cpu_receipts_and_scientific_failure_is_result (test_pipeline.EvidenceTests.test_complete_end_to_end_cpu_receipts_and_scientific_failure_is_result) ... ok\ntest_frozen_h0_is_checked_separately (test_pipeline.EvidenceTests.test_frozen_h0_is_checked_separately) ... ok\ntest_numeric_gate_cannot_disagree_with_observations (test_pipeline.EvidenceTests.test_numeric_gate_cannot_disagree_with_observations) ... ok\ntest_preflight_cannot_omit_gradient_or_source_frame (test_pipeline.EvidenceTests.test_preflight_cannot_omit_gradient_or_source_frame) ... ok\ntest_replay_rejects_duplicates_and_hidden_runtime_dependency (test_pipeline.EvidenceTests.test_replay_rejects_duplicates_and_hidden_runtime_dependency) ... ok\ntest_source_file_change_after_all_workers_rejected (test_pipeline.EvidenceTests.test_source_file_change_after_all_workers_rejected) ... ok\ntest_true_complete_artifact_hashes_required (test_pipeline.EvidenceTests.test_true_complete_artifact_hashes_required) ... ok\ntest_commands_fixed_windows_and_separate_replay_process (test_pipeline.SchedulingTests.test_commands_fixed_windows_and_separate_replay_process) ... ok\ntest_duplicate_or_missing_gpu_rejected (test_pipeline.SchedulingTests.test_duplicate_or_missing_gpu_rejected) ... ok\ntest_existing_attempt_not_resumed (test_pipeline.SchedulingTests.test_existing_attempt_not_resumed) ... ok\ntest_expired_overall_budget_never_spawns_worker (test_pipeline.SchedulingTests.test_expired_overall_budget_never_spawns_worker) ... ok\ntest_failure_stops_only_owned_helper_no_second_attempt (test_pipeline.SchedulingTests.test_failure_stops_only_owned_helper_no_second_attempt) ... ok\ntest_real_memory_query_once_and_no_retry_when_low (test_pipeline.SchedulingTests.test_real_memory_query_once_and_no_retry_when_low) ... ok\ntest_reserved_peak_has_its_own_guard (test_pipeline.SchedulingTests.test_reserved_peak_has_its_own_guard) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 13.269s\n\nOK\n"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "gs_capacity_probe_protocol_v1",
+  "source_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_temporal_z_20261031_v7",
+  "source_arm": "z_delta",
+  "selected_step": 400,
+  "starts": [35, 123],
+  "branches": ["continuous_z", "bounded_features", "unbounded_features"],
+  "optimization": {"steps": 100, "lr": 0.03, "optimizer": "Adam", "checkpoints": [0, 25, 50, 75, 100]},
+  "resources": {"cpu_threads": 6, "max_seconds": 1500, "peak_limit_gib": 48},
+  "baseline_tolerances": {"mae": 0.0001, "psnr": 0.02},
+  "purpose": "Local target-fitting diagnostic on two known TRAIN failures; distinguish continuous action-to-space decoder capacity, bounded feature capacity and residual bound. Never counted as learned action, prediction, generalization or goal completion.",
+  "scope": {"frames_per_window": 10, "frame_gap": 1, "all_initial_latent_rows": true, "resolution_hw": [252, 448], "native_pruning_unchanged": true, "all_source_frames_verified": 177},
+  "loss": "Unchanged v6 full/ROI over all10 and motion-weighted L1 over9 futures; no delta loss, no future latent supervision. Each branch sees exactly the same complete target RGB window.",
+  "future_access": "Real RGB is used by the oracle optimizer and is explicitly not prediction. The unchanged posterior baseline retains its normal future-state encoder access. No additional direct true-future coordinates/features initialize or supervise oracle variables; they enter only the separately labeled teacher-state reference.",
+  "initialization": "All three branches begin at the same exact selected posterior prediction, with baseline render parity. Each branch gets a fresh Adam optimizer. Endpoints use step100, never best-step selection.",
+  "decision": "Report changes at h0 and each real future h separately. Continuous Z is a 64D relaxation and not legal LFQ; success cannot distinguish Qformer from LFQ. Bounded feature success proves a same-support construction exists for this case. Unbounded-only success motivates the residual parameterization. Finite-budget failure is not an impossibility proof.",
+  "queue": {"parent_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_transfer_eval_20261031_v1", "parent_pid": 431960, "parent_start_ticks": "38083128", "wait_seconds": 6000, "wait_interval_seconds": 60, "process_seconds": 1550, "outer_seconds": 7800, "gpu_workers": {"0": 35, "1": 123}},
+  "stop": ["Source or input hash mismatch", "Baseline render parity failure", "Frozen model/codec tensor hash changed", "Nonfinite image/loss/gradient", "Native point or GPU memory guard", "Timeout"],
+  "automatic_retry": false,
+  "trained_model_updates": 0,
+  "goal_complete": false
+}

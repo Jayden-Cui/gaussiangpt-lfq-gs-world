@@ -1,0 +1,23 @@
+{
+  "../gaussiangpt_neoverse_local_condition_20261031_v8/CODE_MANIFEST.json": "169764ae89e7bbc589b27b749beb2de7e1105fd9036d122d20eaeae2be8ad7cd",
+  "../gaussiangpt_neoverse_local_condition_20261031_v8/compare.py": "eea336f5ea955aa955dc7d7d37ac3a43b2dbbf8821d568e9a545083894b938fe",
+  "../gaussiangpt_neoverse_local_condition_20261031_v8/protocol.json": "38765c9f6d7538035746ed521aa3c41bc34ea80fd4f5f2a93dfed1897b8d0934",
+  "../gaussiangpt_neoverse_local_condition_20261031_v8/worker.py": "e78f99f064dba35a38813e027ef92c77dbd077c1b4b5116f9fc60227a4d1adc9",
+  "../gaussiangpt_neoverse_native_z_20261031_v6/analysis_code/postfit_queue.py": "ae6606ce7666b77c8b797c523a08467438c9bc41bd2e15526bcf2b44fba666f2",
+  "../gaussiangpt_neoverse_native_z_20261031_v6/code/compare_arms.py": "14fa085be07f8ab3f6ef79ec671362f062d6b2726f3968b02f8c4d95ff91c1b8",
+  "../gaussiangpt_neoverse_temporal_z_20261031_v7/CODE_MANIFEST.json": "f144aaebb3ee8980aab1aa4e24cf4e3c395ef87fdd6f1f22ae5743a0385f18c1",
+  "../gaussiangpt_neoverse_temporal_z_20261031_v7/postfit_code/render_six_panel.py": "a3430beacb0ffb3eeff8bb5ce8988428ac418b4fc8c3fab5345e3cb49d5689db",
+  "../gaussiangpt_neoverse_temporal_z_20261031_v7/runner.py": "f039edcb98d82f4f2de3545b0b8b8aa17b8bb71313aa43d7775413ab96c609ac",
+  "../gaussiangpt_neoverse_temporal_z_20261031_v7/temporal_step.py": "6a1de737b3e87d88c6678352236258c031f9e8d66f17d79a04e2b944560562ef",
+  "EXECUTION.md": "edcd09e5e97970a2e6db5f4f6065c42ed5d4936727b81c2e925b31ac309ccd45",
+  "compare.py": "83abcd454007fe5f1e07631351c14d1d05514f5a0cd529ff23203ab6e5c2c4af",
+  "pipeline.py": "b0596fa0d78a9d85cbb04eec4f438fd636422530b8070ac5562d08d60756aef7",
+  "protocol.json": "e49fd19aa1937420a38931f7e8d93782789fe08db01962d7afeab39cdb6565bd",
+  "spatial_action.py": "16d7e315eea1ab4f818359c079017b1dc9f7319133d98dca0a847e0a3d82539f",
+  "test_compare.py": "edeed98e0803a7c2c79b412648f80a6d8d3d438957539cf1332606cc64aaa62c",
+  "test_pipeline.py": "4ab037aab1b532765ded72d64689b2e71e229cc250b1abaafcf76a9d4a5f5e8e",
+  "test_spatial_action.py": "301ed625d034a2c19a85958f5a29c015f26a0778d1db715492fadc89493f18e5",
+  "test_worker.py": "4819066773649283bddeaed058e7f53120add90852344ee83cb3f93e09fe98cf",
+  "validate.py": "20454f06a0f470729cd899041b7f7d65da2e5e0bfb8c62e927445b560e30b771",
+  "worker.py": "c7eceb6fadf43e16774419f04d9c63a1a5a0fb4d7c09657ed82316fcf77b0a2d"
+}

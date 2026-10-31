@@ -1,0 +1,168 @@
+{
+  "schema": "neoverse-native64-motion-v1",
+  "source_run": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state",
+  "source_checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "hypothesis": "Native64 QFormer with LFQ-only motion IDs directly interfaces with frozen GaussianGPT64-dimensional continuous sparse state. Test adjacent-state reconstruction and whether correct motion IDs improve over holding the initial state.",
+  "scope": "Oracle posterior motion reconstruction, not autoregressive future prediction; all endpoints are single instants",
+  "data": "All177 NeoVerse states of buildingblock_tower_17_176 and176 adjacent pairs t->t+1",
+  "frame_gap": 1,
+  "nominal_delta_seconds": 0.033366700033366704,
+  "seed": 20261029,
+  "arms": [
+    {
+      "name": "lfq64_k4",
+      "quantizer": "lfq",
+      "motion_tokens": 4,
+      "gpu": 0,
+      "vocabulary": 65536,
+      "scalar_dimensions": 16
+    }
+  ],
+  "qformer": {
+    "reference": "Pinned VideoWorld CALVIN 3dc3e563e201cebab0e947177e79117c885ec3ba",
+    "depth": 2,
+    "width": 64,
+    "heads": 4,
+    "mlp_width": 256,
+    "endpoint_input": "Aligned union of continuous source/target encoder features, difference, occupancy flags anddt",
+    "spatial_position": "3D coordinates in fixed normalized clip world; added Fourier features",
+    "attention_internal_width": 64,
+    "head_width": 16,
+    "implementation": "Pinned VideoWorld1 cross-attention QFormer equations/modules, native64 external and attention widths, 4heads x16, FFN64->256->64, added endpoint key-validity mask. No query self-attention. GaussianGPT architecture and weights unchanged.",
+    "attention_downsample_rate": 1
+  },
+  "motion_quantizer": {
+    "interface_width": 64,
+    "lfq": {
+      "implementation": "installed vector-quantize-pytorch 1.31.1 LFQ",
+      "vocabulary": 65536,
+      "internal_width": 16,
+      "entropy_loss_weight": 0.1,
+      "commitment_loss_weight": 0.0,
+      "diversity_gamma": 1.0,
+      "soft_clamp_input_value": 10.0,
+      "projection_has_bias": false,
+      "experimental_softplus_entropy_loss": true,
+      "entropy_loss_offset": 5.0,
+      "inv_temperature": 100.0,
+      "frac_per_sample_entropy": 1.0,
+      "num_codebooks": 1
+    },
+    "fairness": "User selected LFQ only. Old512-FSQ results are contextual references: width, quantizer and batch/update schedule change together, so no single-factor causal attribution is permitted."
+  },
+  "state_quantizer": "None: continuous frozen encoder features are used directly",
+  "condition": "Decoder reads initial integer sparse coordinates and continuous Nx64 features, four LFQ motion IDs and dt only; no future coordinates/features at decode",
+  "support": {
+    "rule": "Chebyshev dilation of initial coarse latent coordinates only",
+    "radius": 6,
+    "max_candidates": 100000,
+    "max_predicted_tokens": 6000,
+    "future_coverage": "100% of all176 adjacent TRAIN endpoint supports must be covered; otherwise stop without truncation",
+    "calibration_evidence": "Every one of176 adjacent TRAIN pairs must have100% target support covered by the fixed initial-only radius6 domain"
+  },
+  "train": {
+    "max_steps": 750,
+    "warmup_steps": 75,
+    "max_seconds": 14400,
+    "lr": 0.0001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "save_every": 50,
+    "batch": "Four complete variable-length adjacent pairs per optimizer update; joint QFormer and quantizer batch, each GaussianGPT render evaluated separately and losses averaged over four. No gradient accumulation.",
+    "frozen": "Entire new continuous state E/D including adapters and GS heads; LFQ removed; parameter hashes checked",
+    "target_support": "Target support may force coarse-state keep during warmup and first 80% of total training only; final 20% and ALL evaluation use predicted support alone. GaussianGPT decoder is always eval, target_key=None.",
+    "warmup_loss": {
+      "feature": 0.1,
+      "occupancy": 1.0
+    },
+    "render_loss": {
+      "feature": 0.1,
+      "occupancy": 0.2,
+      "real_l1": 1.0,
+      "vgg19": 0.1,
+      "frozen_target_l1": 0.25,
+      "workspace_roi_l1": 0.5,
+      "pseudo_view_l1": 0.25,
+      "teacher_l1": 0.25
+    },
+    "checkpoint_recovery": "Atomic every50 updates, first update, final and caught exceptions/SIGTERM. Includes optimizer, sampler cursor, RNG and phase. No automatic resume.",
+    "occupancy_loss": "Weighted BCE(raw_logit + log(positive_weight), label, pos_weight=positive_weight), positive_weight clipped to [1,50]; inference keeps raw_logit>0 using no target statistics.",
+    "batch_size": 4,
+    "total_pair_exposures": 3000,
+    "exposure_comparison": "Matches old batch1 x 3000 pair exposures; optimizer updates differ, so the old512 run is context rather than a controlled width-only ablation."
+  },
+  "evaluation": {
+    "pairs": 176,
+    "arms": "One user-selected LFQ native64 arm. Report all gates, including failures.",
+    "controls": [
+      "Initial state held fixed, rendered at target camera",
+      "Frozen GaussianGPT encoding of target instant",
+      "Correct posterior motion IDs",
+      "Motion IDs circularly shifted by 85 start frames within the same clip"
+    ],
+    "pass": {
+      "max_full_and_region_drop_vs_frozen_target_db": 1.0,
+      "min_full_gain_vs_held_initial_db": 0.2,
+      "min_hand_gain_vs_held_initial_db": 0.5,
+      "min_hand_drop_when_motion_shuffled_db": 0.25,
+      "min_distinct_motion_id_tuples": 16,
+      "all_pairs": true,
+      "packet_roundtrip": true
+    },
+    "regions": "NeoVerse state protocol fixed workspace/object/hand-activity boxes",
+    "artifacts": [
+      "motion features before/after quantization Bx4x64 (diagnostics only; not AR Z)",
+      "AR action Z: integer IDs Bx4; all177 frames yield176 transitions and704 IDs per sequence",
+      "replay packets containing initial continuous state andmotionIDs",
+      "predicted future continuous features andcoordinates",
+      "per-pair metrics",
+      "five-column videos",
+      "occupancy precision/recall",
+      "code usage andshuffle control"
+    ]
+  },
+  "time_limits_seconds": {
+    "preflight": 1800,
+    "training": 15000,
+    "evaluation": 9000,
+    "arm_pipeline": 25200,
+    "pipeline": 28800
+  },
+  "stop": [
+    "Source hash mismatch",
+    "Nonfinite loss or gradient",
+    "OOM",
+    "Any occupancy budget exceeded or empty predicted support",
+    "Target support outside initial-only candidate domain",
+    "Phase timeout"
+  ],
+  "retries": "No automatic retry, no point/frame truncation, no scientific parameter retuning",
+  "limitations": [
+    "Oracle posterior sees true target endpoint",
+    "NeoVerse is an offline whole-video noncausal teacher",
+    "Single historically DEV source already admitted to training; reconstruction only",
+    "No AR/rollout/generalization claim",
+    "State codec quality reported separately; motion may run diagnostically if state fidelity gate fails but API succeeds",
+    "State features are continuous and larger than prior LFQ packets; no discrete-state compression claim",
+    "The frozen state codec already failed its fidelity gate (31.267 vs teacher35.637 dB full-frame); this is a diagnostic motion experiment, not evidence of a usable full world model.",
+    "Native64 reduces interface conversion and model capacity simultaneously. Quality improvement is not assumed."
+  ],
+  "decoder_resource_limits": {
+    "max_decoder_candidates": 600000,
+    "max_decoded_gaussians": 2400000,
+    "rationale": "Output sparse convolution preserves coordinates after pruning; 600000 candidate voxels times existing multiplier 4 gives a consistent GS bound. No point truncation or pruning-threshold change."
+  },
+  "source_motion_cache": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/motion",
+  "resource": {
+    "allocator_fraction": 0.6,
+    "witness_peak_limit_gib": 48,
+    "min_free_gpu_gib": 55,
+    "cpu_threads": 6,
+    "shared_viewers_retained": true
+  }
+}

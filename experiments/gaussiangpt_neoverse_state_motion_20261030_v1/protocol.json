@@ -1,0 +1,59 @@
+{
+  "schema": "neoverse-state-and-motion-pipeline-v1",
+  "run": "gaussiangpt_neoverse_state_motion_20261030_v1",
+  "source": "/data/CJH/AGS-V6Direct/outputs/neoverse_tower177_fps30_20261029_v1/native448",
+  "source_clip": "buildingblock_tower_17_176",
+  "frames": 177,
+  "points_per_frame": 112896,
+  "resolution_hw": [
+    252,
+    448
+  ],
+  "fps": 29.97,
+  "stages": [
+    "audit_and_prepare_all177",
+    "continuous_state_witness",
+    "state_train3000",
+    "state_eval177",
+    "bind_frozen_state",
+    "motion_prepare176",
+    "motion_witness",
+    "k1_and_k4_train3000_then_eval176"
+  ],
+  "resources": {
+    "gpu_state": 0,
+    "gpu_k1": 0,
+    "gpu_k4": 1,
+    "threads_per_process": 6,
+    "cuda_allocator_fraction": 0.6,
+    "max_peak_allocated_gib": 48,
+    "minimum_free_before_launch_gib": 55,
+    "existing_viewer_services": "Keep running; deliberate bounded sharing, not exclusive GPUs"
+  },
+  "budgets_seconds": {
+    "prepare": 1800,
+    "witness": 900,
+    "state_train": 24000,
+    "state_eval": 3600,
+    "motion_prepare": 3600,
+    "motion_witness": 900,
+    "motion_train_eval_per_arm": 25200,
+    "pipeline": 64800
+  },
+  "scientific_gates": "Use state and motion protocols; state fidelity failure is reported, motion proceeds only as diagnostic bottleneck test if full API and coverage pass",
+  "stop": [
+    "Any binding mismatch",
+    "Native schema/similarity PSNR<60 or MAE>1e-5",
+    "Nonfinite/zero gradient",
+    "OOM/resource ceiling",
+    "Missing frames or target coverage",
+    "Phase timeout"
+  ],
+  "retries": 0,
+  "old_runs_read_only": true,
+  "frame_gap": 1,
+  "pairs": 176,
+  "user_choice": "Adjacent t->t+1 and remove stateLFQ; motionFSQ retained as explained",
+  "state_lfq": false,
+  "motion_fsq": true
+}

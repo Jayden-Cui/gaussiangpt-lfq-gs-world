@@ -1,0 +1,54 @@
+{
+  "schema": "gs_local_condition_cpu_witness_v1",
+  "status": "passed",
+  "code_manifest_sha256": "169764ae89e7bbc589b27b749beb2de7e1105fd9036d122d20eaeae2be8ad7cd",
+  "protocol_sha256": "38765c9f6d7538035746ed521aa3c41bc34ea80fd4f5f2a93dfed1897b8d0934",
+  "checks": [
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_local_condition_20261031_v8\\test_local_skip.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.127s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_local_condition_20261031_v8\\test_worker.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_fixed_protocol_and_rejections (__main__.WorkerContracts.test_fixed_protocol_and_rejections) ... ok\ntest_full_gradient_coverage_and_finite (__main__.WorkerContracts.test_full_gradient_coverage_and_finite) ... ok\ntest_manifest_allows_only_bounded_relative_paths (__main__.WorkerContracts.test_manifest_allows_only_bounded_relative_paths) ... ok\ntest_null_guard_rebinding_preserves_original_state (__main__.WorkerContracts.test_null_guard_rebinding_preserves_original_state) ... ok\ntest_snapshot_known_failure_mapping_overrides_only_two (__main__.WorkerContracts.test_snapshot_known_failure_mapping_overrides_only_two) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 6.798s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_local_condition_20261031_v8\\test_compare.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 16.307s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\MoViesGS\\experiments\\gaussiangpt_neoverse_local_condition_20261031_v8\\test_pipeline.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.191s\n\nOK\n"
+    }
+  ],
+  "checked_at": "2026-10-30T21:51:58.995164+00:00",
+  "elapsed_seconds": 29.69355440000072,
+  "gpu_executed": false,
+  "gpu_budget_verified": false,
+  "training_state_read": false,
+  "goal_complete": false
+}

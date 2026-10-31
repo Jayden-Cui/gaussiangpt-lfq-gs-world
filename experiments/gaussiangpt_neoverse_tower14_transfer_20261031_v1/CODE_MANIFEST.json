@@ -1,0 +1,10 @@
+{
+  "EXECUTION.md": "dc362295d120513e2ad7639b3b456e1646eda7d71931e697134e8c18eb58c98f",
+  "input_binding.json": "a422de97bdfeb7b9dcae47a00478f43ddb63185b9b352b85e221cb914c7d1e8d",
+  "INPUT_BINDING_NOTE.md": "5f0bc78243e75af119d8606eb93a5902469ba61826cc01a51f54ab2715dcbbb7",
+  "PREPARATION_PROTOCOL.json": "afbc2ccc5458dd0d8f581089864c9e9400762d17686e6c02fa38752429389cc0",
+  "prepare_frozen_codec.py": "3f26fdc51885eb7e8b2185446e891dd5dbda30d5be83cd4900b7db401e1e6c85",
+  "queue_prepare.py": "4f1c3724da2e6363c9c6966154e87ddb8c227ab5de121454b6ac792faaec22a7",
+  "README_preparation.md": "7b1b1b7d5be8eeae9d5274386977f93a2d385259aafacd570c175e66fc3a78fd",
+  "test_queue_prepare.py": "4b42287f60be1fc3da97c0c77d07ace1b141490cdf7851529602a648c7cf593f"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "code_manifest_sha256": "bb85eb514441fa3c45c51502a61067cd7f8a79decf4706200588fba752688767",
+  "protocol_sha256": "3f795e0cdd9112c5332551d9015a464ef07ead397b1605fc92f96fa9238f4017",
+  "gpu_executed": false,
+  "actual_tests_executed": 11,
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "test_loss_step",
+    "test_teacher_assets",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_bad_weights_rejected (test_loss_step.LossTests.test_bad_weights_rejected) ... ok\ntest_dual_view_staged_gradients_match_full_graph (test_loss_step.LossTests.test_dual_view_staged_gradients_match_full_graph) ... ok\ntest_empty_or_malformed_mask_rejected (test_loss_step.LossTests.test_empty_or_malformed_mask_rejected) ... ok\ntest_invalid_pixels_do_not_change_value (test_loss_step.LossTests.test_invalid_pixels_do_not_change_value) ... ok\ntest_main_teacher_and_reduced_window_forbidden (test_loss_step.LossTests.test_main_teacher_and_reduced_window_forbidden) ... ok\ntest_mask_uses_only_valid_nearby_pixels (test_loss_step.LossTests.test_mask_uses_only_valid_nearby_pixels) ... ok\ntest_teacher_target_cannot_receive_gradients (test_loss_step.LossTests.test_teacher_target_cannot_receive_gradients) ... ok\ntest_zero_weights_exact_original_dispatch (test_loss_step.LossTests.test_zero_weights_exact_original_dispatch) ... ok\ntest_alpha_threshold_is_inclusive (test_teacher_assets.TeacherMaskTests.test_alpha_threshold_is_inclusive) ... ok\ntest_holes_borders_and_detachment (test_teacher_assets.TeacherMaskTests.test_holes_borders_and_detachment) ... ok\ntest_nan_rejected (test_teacher_assets.TeacherMaskTests.test_nan_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.890s\n\nOK\n",
+  "elapsed_seconds": 4.468866800016258,
+  "finished_at": "2026-10-31T00:57:24.608332+00:00",
+  "goal_complete": false
+}
