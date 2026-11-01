@@ -1,0 +1,23 @@
+{
+  "status": "reviewed",
+  "scope": "两训练视频、固定帧0/44/88/132/176；单状态codec视觉审查，不是动作视频或未见源泛化",
+  "visuals_sha256": {
+    "buildingblock_tower_17_176_real_view.png": "d5272a3f585189833c529c56811c85ddb8a809e1c3128049f54148fb688906ca",
+    "buildingblock_tower_17_176_nearby_view.png": "2278ba56e0e8f43c4e57334d568921c6dc3b98f337842fe99710a0e05f63c9db",
+    "buildingblock_tower_10_176_real_view.png": "25d09fddfc3abee5ebb05c9bc4b562632662e5b69b4274f6242253f1798ec1e9",
+    "buildingblock_tower_10_176_nearby_view.png": "4eb62e2439af5cde3e2de8f82e726a8a682e9780eca3af50dffedab38b86c7ea"
+  },
+  "per_clip": {
+    "buildingblock_tower_17_176": {
+      "real_view": "五个固定帧中三个 codec 都保留黄柱、绿梁及主要搭建结构；微调版本仍有手部和边缘模糊，第一视频整体 MAE 小幅升高。",
+      "nearby_view": "三个 codec 保留主要布局，但 teacher 附近视角本身存在黑边或缺失，不能当作实测真值。"
+    },
+    "buildingblock_tower_10_176": {
+      "real_view": "原 codec 将红柱错误渲染为黄色且丢失部分几何；两个微调版本在五个固定帧中恢复红柱、黄梁与绿顶的主要结构，仍有细节模糊。",
+      "nearby_view": "微调版本的主要颜色和结构比原 codec 更接近 teacher 附近视角；teacher 视角存在黑边，不能据此单独证明三维几何准确。"
+    }
+  },
+  "production_codec_selected": null,
+  "stage_b_codec_changed": false,
+  "limitations": "附近视角来自teacher；未经动作码解码、训练分布和独立原生重放验收。"
+}

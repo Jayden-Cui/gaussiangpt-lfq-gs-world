@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_sha256": "dbae7b1b919e1ccbaf87317ed09f89a9755807c595bcf7a0ab2e15c8697d9ab2",
+  "coordinate_permutation_and_partial_overlap_checked": true,
+  "duplicate_world_coordinates_rejected": true,
+  "encoder_prefix_selection_checked": true,
+  "scope": "Synthetic CPU tests; no production codec selected"
+}

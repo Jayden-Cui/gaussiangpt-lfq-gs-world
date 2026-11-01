@@ -1,0 +1,665 @@
+{
+  "status": "complete",
+  "train_sources": {
+    "buildingblock_tower_17_176": {
+      "decoder_only": {
+        "frames": 177,
+        "coordinate_set_mismatch_frames": 0,
+        "raw_order_changed_frames": 177,
+        "feature_mean_abs_frame_mean": 7.94194770638827e-07,
+        "feature_max_abs_over_frames": 1.52587890625e-05
+      },
+      "full_codec": {
+        "frames": 177,
+        "coordinate_set_mismatch_frames": 0,
+        "raw_order_changed_frames": 177,
+        "feature_mean_abs_frame_mean": 1.557980188988722,
+        "feature_max_abs_over_frames": 20.767812728881836
+      },
+      "codec_real_mae": {
+        "baseline": 0.016598779060956786,
+        "decoder_only": 0.01717856807876273,
+        "full_codec": 0.018197895543344614
+      }
+    },
+    "buildingblock_tower_10_176": {
+      "decoder_only": {
+        "frames": 177,
+        "coordinate_set_mismatch_frames": 0,
+        "raw_order_changed_frames": 177,
+        "feature_mean_abs_frame_mean": 7.871061587043146e-07,
+        "feature_max_abs_over_frames": 1.52587890625e-05
+      },
+      "full_codec": {
+        "frames": 177,
+        "coordinate_set_mismatch_frames": 0,
+        "raw_order_changed_frames": 177,
+        "feature_mean_abs_frame_mean": 1.873215793374476,
+        "feature_max_abs_over_frames": 35.19066619873047
+      },
+      "codec_real_mae": {
+        "baseline": 0.07961140131041156,
+        "decoder_only": 0.024532703061898548,
+        "full_codec": 0.025468649637311866
+      }
+    }
+  },
+  "models": {
+    "baseline": {
+      "checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+      "encoder_sha256": "c2ddb2b1dd5a43ee4a86286ea09ef141f61661963fa1d5979edf3d4f5917737b",
+      "encoder_tensor_count": 155
+    },
+    "decoder_only": {
+      "checkpoint_sha256": "153724acd62bdb8c611e24680ed39e0b4fc38b366b466b640d40eef6190052af",
+      "encoder_sha256": "c2ddb2b1dd5a43ee4a86286ea09ef141f61661963fa1d5979edf3d4f5917737b",
+      "encoder_tensor_count": 155,
+      "changed_encoder_tensors": []
+    },
+    "full_codec": {
+      "checkpoint_sha256": "12a4b81b5fd01f9a8905ef6b24db93b95b39e31c6783f6f00e82fea6c4612f58",
+      "encoder_sha256": "cd6e16b7b809fcab8967573d1794f5cfa69ecd7513483ab71884b0013ce7b0b4",
+      "encoder_tensor_count": 155,
+      "changed_encoder_tensors": [
+        "ae.embeddings.coord_offset.0.bias",
+        "ae.embeddings.coord_offset.0.weight",
+        "ae.embeddings.coord_offset.1.block1.fc.bias",
+        "ae.embeddings.coord_offset.1.block1.fc.weight",
+        "ae.embeddings.coord_offset.1.block1.norm.bias",
+        "ae.embeddings.coord_offset.1.block1.norm.weight",
+        "ae.embeddings.coord_offset.1.block2.fc.bias",
+        "ae.embeddings.coord_offset.1.block2.fc.weight",
+        "ae.embeddings.coord_offset.1.block2.norm.bias",
+        "ae.embeddings.coord_offset.1.block2.norm.weight",
+        "ae.embeddings.opacities.0.bias",
+        "ae.embeddings.opacities.0.weight",
+        "ae.embeddings.opacities.1.block1.fc.bias",
+        "ae.embeddings.opacities.1.block1.fc.weight",
+        "ae.embeddings.opacities.1.block1.norm.bias",
+        "ae.embeddings.opacities.1.block1.norm.weight",
+        "ae.embeddings.opacities.1.block2.fc.bias",
+        "ae.embeddings.opacities.1.block2.fc.weight",
+        "ae.embeddings.opacities.1.block2.norm.bias",
+        "ae.embeddings.opacities.1.block2.norm.weight",
+        "ae.embeddings.quats.0.bias",
+        "ae.embeddings.quats.0.weight",
+        "ae.embeddings.quats.1.block1.fc.bias",
+        "ae.embeddings.quats.1.block1.fc.weight",
+        "ae.embeddings.quats.1.block1.norm.bias",
+        "ae.embeddings.quats.1.block1.norm.weight",
+        "ae.embeddings.quats.1.block2.fc.bias",
+        "ae.embeddings.quats.1.block2.fc.weight",
+        "ae.embeddings.quats.1.block2.norm.bias",
+        "ae.embeddings.quats.1.block2.norm.weight",
+        "ae.embeddings.scales.0.bias",
+        "ae.embeddings.scales.0.weight",
+        "ae.embeddings.scales.1.block1.fc.bias",
+        "ae.embeddings.scales.1.block1.fc.weight",
+        "ae.embeddings.scales.1.block1.norm.bias",
+        "ae.embeddings.scales.1.block1.norm.weight",
+        "ae.embeddings.scales.1.block2.fc.bias",
+        "ae.embeddings.scales.1.block2.fc.weight",
+        "ae.embeddings.scales.1.block2.norm.bias",
+        "ae.embeddings.scales.1.block2.norm.weight",
+        "ae.embeddings.sh.0.bias",
+        "ae.embeddings.sh.1.block1.fc.bias",
+        "ae.embeddings.sh.1.block1.fc.weight",
+        "ae.embeddings.sh.1.block1.norm.bias",
+        "ae.embeddings.sh.1.block1.norm.weight",
+        "ae.embeddings.sh.1.block2.fc.bias",
+        "ae.embeddings.sh.1.block2.fc.weight",
+        "ae.embeddings.sh.1.block2.norm.bias",
+        "ae.embeddings.sh.1.block2.norm.weight",
+        "ae.embeddings.sh0.0.bias",
+        "ae.embeddings.sh0.0.weight",
+        "ae.embeddings.sh0.1.block1.fc.bias",
+        "ae.embeddings.sh0.1.block1.fc.weight",
+        "ae.embeddings.sh0.1.block1.norm.bias",
+        "ae.embeddings.sh0.1.block1.norm.weight",
+        "ae.embeddings.sh0.1.block2.fc.bias",
+        "ae.embeddings.sh0.1.block2.fc.weight",
+        "ae.embeddings.sh0.1.block2.norm.bias",
+        "ae.embeddings.sh0.1.block2.norm.weight",
+        "ae.encoder.out.kernel",
+        "ae.encoder.stage_final.0.net.0.kernel",
+        "ae.encoder.stage_final.0.net.1.bn.bias",
+        "ae.encoder.stage_final.0.net.1.bn.num_batches_tracked",
+        "ae.encoder.stage_final.0.net.1.bn.running_mean",
+        "ae.encoder.stage_final.0.net.1.bn.running_var",
+        "ae.encoder.stage_final.0.net.1.bn.weight",
+        "ae.encoder.stage_final.0.net.3.kernel",
+        "ae.encoder.stage_final.0.net.4.bn.bias",
+        "ae.encoder.stage_final.0.net.4.bn.num_batches_tracked",
+        "ae.encoder.stage_final.0.net.4.bn.running_mean",
+        "ae.encoder.stage_final.0.net.4.bn.running_var",
+        "ae.encoder.stage_final.0.net.4.bn.weight",
+        "ae.encoder.stages.0.0.downsample.0.kernel",
+        "ae.encoder.stages.0.0.downsample.1.bn.bias",
+        "ae.encoder.stages.0.0.downsample.1.bn.num_batches_tracked",
+        "ae.encoder.stages.0.0.downsample.1.bn.running_mean",
+        "ae.encoder.stages.0.0.downsample.1.bn.running_var",
+        "ae.encoder.stages.0.0.downsample.1.bn.weight",
+        "ae.encoder.stages.0.0.net.0.kernel",
+        "ae.encoder.stages.0.0.net.1.bn.bias",
+        "ae.encoder.stages.0.0.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.0.0.net.1.bn.running_mean",
+        "ae.encoder.stages.0.0.net.1.bn.running_var",
+        "ae.encoder.stages.0.0.net.1.bn.weight",
+        "ae.encoder.stages.0.0.net.3.kernel",
+        "ae.encoder.stages.0.0.net.4.bn.bias",
+        "ae.encoder.stages.0.0.net.4.bn.num_batches_tracked",
+        "ae.encoder.stages.0.0.net.4.bn.running_mean",
+        "ae.encoder.stages.0.0.net.4.bn.running_var",
+        "ae.encoder.stages.0.0.net.4.bn.weight",
+        "ae.encoder.stages.0.1.net.0.kernel",
+        "ae.encoder.stages.0.1.net.1.bn.bias",
+        "ae.encoder.stages.0.1.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.0.1.net.1.bn.running_mean",
+        "ae.encoder.stages.0.1.net.1.bn.running_var",
+        "ae.encoder.stages.0.1.net.1.bn.weight",
+        "ae.encoder.stages.0.1.net.3.kernel",
+        "ae.encoder.stages.0.1.net.4.bn.bias",
+        "ae.encoder.stages.0.1.net.4.bn.num_batches_tracked",
+        "ae.encoder.stages.0.1.net.4.bn.running_mean",
+        "ae.encoder.stages.0.1.net.4.bn.running_var",
+        "ae.encoder.stages.0.1.net.4.bn.weight",
+        "ae.encoder.stages.0.3.net.0.kernel",
+        "ae.encoder.stages.0.3.net.1.bn.bias",
+        "ae.encoder.stages.0.3.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.0.3.net.1.bn.running_mean",
+        "ae.encoder.stages.0.3.net.1.bn.running_var",
+        "ae.encoder.stages.0.3.net.1.bn.weight",
+        "ae.encoder.stages.1.0.downsample.0.kernel",
+        "ae.encoder.stages.1.0.downsample.1.bn.bias",
+        "ae.encoder.stages.1.0.downsample.1.bn.num_batches_tracked",
+        "ae.encoder.stages.1.0.downsample.1.bn.running_mean",
+        "ae.encoder.stages.1.0.downsample.1.bn.running_var",
+        "ae.encoder.stages.1.0.downsample.1.bn.weight",
+        "ae.encoder.stages.1.0.net.0.kernel",
+        "ae.encoder.stages.1.0.net.1.bn.bias",
+        "ae.encoder.stages.1.0.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.1.0.net.1.bn.running_mean",
+        "ae.encoder.stages.1.0.net.1.bn.running_var",
+        "ae.encoder.stages.1.0.net.1.bn.weight",
+        "ae.encoder.stages.1.0.net.3.kernel",
+        "ae.encoder.stages.1.0.net.4.bn.bias",
+        "ae.encoder.stages.1.0.net.4.bn.num_batches_tracked",
+        "ae.encoder.stages.1.0.net.4.bn.running_mean",
+        "ae.encoder.stages.1.0.net.4.bn.running_var",
+        "ae.encoder.stages.1.0.net.4.bn.weight",
+        "ae.encoder.stages.1.1.net.0.kernel",
+        "ae.encoder.stages.1.1.net.1.bn.bias",
+        "ae.encoder.stages.1.1.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.1.1.net.1.bn.running_mean",
+        "ae.encoder.stages.1.1.net.1.bn.running_var",
+        "ae.encoder.stages.1.1.net.1.bn.weight",
+        "ae.encoder.stages.1.1.net.3.kernel",
+        "ae.encoder.stages.1.1.net.4.bn.bias",
+        "ae.encoder.stages.1.1.net.4.bn.num_batches_tracked",
+        "ae.encoder.stages.1.1.net.4.bn.running_mean",
+        "ae.encoder.stages.1.1.net.4.bn.running_var",
+        "ae.encoder.stages.1.1.net.4.bn.weight",
+        "ae.encoder.stages.1.3.net.0.kernel",
+        "ae.encoder.stages.1.3.net.1.bn.bias",
+        "ae.encoder.stages.1.3.net.1.bn.num_batches_tracked",
+        "ae.encoder.stages.1.3.net.1.bn.running_mean",
+        "ae.encoder.stages.1.3.net.1.bn.running_var",
+        "ae.encoder.stages.1.3.net.1.bn.weight",
+        "ae.encoder.stem.net.0.kernel",
+        "ae.encoder.stem.net.1.bn.bias",
+        "ae.encoder.stem.net.1.bn.num_batches_tracked",
+        "ae.encoder.stem.net.1.bn.running_mean",
+        "ae.encoder.stem.net.1.bn.running_var",
+        "ae.encoder.stem.net.1.bn.weight",
+        "set_encoder.0.bias",
+        "set_encoder.0.weight",
+        "set_encoder.2.bias",
+        "set_encoder.2.weight"
+      ]
+    }
+  },
+  "visuals": [
+    {
+      "clip": "buildingblock_tower_17_176",
+      "kind": "real_view",
+      "file": "buildingblock_tower_17_176_real_view.png",
+      "sha256": "d5272a3f585189833c529c56811c85ddb8a809e1c3128049f54148fb688906ca",
+      "inputs": [
+        {
+          "frame": 0,
+          "column": "reference",
+          "sha256": "d0d86d48b0da239c4b946f9a42d9ff6303d08428e6caf11872e7de670dbfdb41"
+        },
+        {
+          "frame": 0,
+          "column": "baseline",
+          "sha256": "7cd699b170e8ba70b3461d9d38ec93364555a46292373bbc5634bfb9c2c77846"
+        },
+        {
+          "frame": 0,
+          "column": "decoder_only",
+          "sha256": "6e1b0c013b9e1730b25116de5c0e1a0c5414ef2b34cccc100a731858b012dfda"
+        },
+        {
+          "frame": 0,
+          "column": "full_codec",
+          "sha256": "f4f385b20603457e33dc26ed6f145050fbaa36a61d31a758be9b95a9b5cc6b26"
+        },
+        {
+          "frame": 44,
+          "column": "reference",
+          "sha256": "dcad471ddbb9a5d91d260e0539c53176106cff7d0e559199146073eadbcf210c"
+        },
+        {
+          "frame": 44,
+          "column": "baseline",
+          "sha256": "eb5fb022eb329bd54eff22991bb86306f05376aa6459168e4089e67495ccf774"
+        },
+        {
+          "frame": 44,
+          "column": "decoder_only",
+          "sha256": "4593bfe70e106ffac34edd07608e4eed4e3629cb5ee7f0c642783c3325d9cc25"
+        },
+        {
+          "frame": 44,
+          "column": "full_codec",
+          "sha256": "43f6762d909cb3b352f9be9f8d45ad323f7de5d42b5d0213a70efcf68b768831"
+        },
+        {
+          "frame": 88,
+          "column": "reference",
+          "sha256": "2659e59f4363edefcc43d2bcb7417cef6e1ec0e5265e07ba7c296c572ca463a2"
+        },
+        {
+          "frame": 88,
+          "column": "baseline",
+          "sha256": "89c6ae4229fc89e9a3cf7c8820779fd23369730bda08ac7bf44a0f69391c5101"
+        },
+        {
+          "frame": 88,
+          "column": "decoder_only",
+          "sha256": "861e26bfaa513a70ae37433daf9a7773fb4a71ad31708a7cb1e888d8a415a110"
+        },
+        {
+          "frame": 88,
+          "column": "full_codec",
+          "sha256": "b6987362684d4cde124a04a94207855f95e2d5c00b95d0890e2d838e039bd9e3"
+        },
+        {
+          "frame": 132,
+          "column": "reference",
+          "sha256": "882f6f91cd7c3099426d6e7e2bccc35f426494de92ef4c59af8a74527b35540d"
+        },
+        {
+          "frame": 132,
+          "column": "baseline",
+          "sha256": "cac5dd29875a16082b3b652ae684e40d2050c432eebf163ac438fbb70c86a88f"
+        },
+        {
+          "frame": 132,
+          "column": "decoder_only",
+          "sha256": "a99ac78f2c9f86caf3a7abb209e59e9b8064da1c0986fa1b1fdfd34b27430c26"
+        },
+        {
+          "frame": 132,
+          "column": "full_codec",
+          "sha256": "e7d5c0d3ceb4512d4314cf2f828ba166c3fda31c3e46493791d569c45b1f83a1"
+        },
+        {
+          "frame": 176,
+          "column": "reference",
+          "sha256": "e1cfeaed7ad49dbbaa4001e6c29999b7adfe172a16fdccdf4503f28b09fc092c"
+        },
+        {
+          "frame": 176,
+          "column": "baseline",
+          "sha256": "9d478b15c1c43d021ae922360ce768cf80f4fae6fa6fa82e5b5b5fd8ccf3cd1b"
+        },
+        {
+          "frame": 176,
+          "column": "decoder_only",
+          "sha256": "5950a2d3e72be3bdcf51e6fced6b634147a9f2b49ce9397cab4812b004b935bc"
+        },
+        {
+          "frame": 176,
+          "column": "full_codec",
+          "sha256": "6c19c7d83d66d3b743400e678250aa6dc5ccf9bce747305ef413fff04a767fa6"
+        }
+      ]
+    },
+    {
+      "clip": "buildingblock_tower_17_176",
+      "kind": "nearby_view",
+      "file": "buildingblock_tower_17_176_nearby_view.png",
+      "sha256": "2278ba56e0e8f43c4e57334d568921c6dc3b98f337842fe99710a0e05f63c9db",
+      "inputs": [
+        {
+          "frame": 0,
+          "column": "reference",
+          "sha256": "c9014e01362ef6f4a78b580e9760a58a8f632c102b74eaf2cd11d1d2ff76227e"
+        },
+        {
+          "frame": 0,
+          "column": "baseline",
+          "sha256": "7b82e1f55b2ba8d7f2a178e2fe1f1d07cb16fa57fad3d3c3d2c88dac3c298065"
+        },
+        {
+          "frame": 0,
+          "column": "decoder_only",
+          "sha256": "7d50c3c51b833de4824822bef83a1f8e016d0c6bb2d79417b34edc61d2ee0875"
+        },
+        {
+          "frame": 0,
+          "column": "full_codec",
+          "sha256": "585e7c84c59ff19735dc28f65efb965f5c9736544d5f952ad78e64196e5eca95"
+        },
+        {
+          "frame": 44,
+          "column": "reference",
+          "sha256": "ff5752836455686cc4b9a4962430434c611b3ca33d681ee731eeddb1f544655e"
+        },
+        {
+          "frame": 44,
+          "column": "baseline",
+          "sha256": "032f32c5ba20aca75525258e65171c6786c1813927a031ba0f8157d544c85471"
+        },
+        {
+          "frame": 44,
+          "column": "decoder_only",
+          "sha256": "0ac068f83d7013b2c5849ba2e387a41ffe510c9814d455610c19d37632fce8ba"
+        },
+        {
+          "frame": 44,
+          "column": "full_codec",
+          "sha256": "9e9373478f51606c424e1b49502533aeff853be422193ecd05c56baed32a9648"
+        },
+        {
+          "frame": 88,
+          "column": "reference",
+          "sha256": "745b5b773e8f1a71d53d73df870b34684d95d54473c1c343af2cdd83d00a60b2"
+        },
+        {
+          "frame": 88,
+          "column": "baseline",
+          "sha256": "d5bb399ecceeaafef584253de988917a10ba990ac2af0b473393b8530f20cf04"
+        },
+        {
+          "frame": 88,
+          "column": "decoder_only",
+          "sha256": "9d8fba21504a446ed8f2cfc4c9ba4b23135c7c39aff7f3f0fb1ded030ebf20ca"
+        },
+        {
+          "frame": 88,
+          "column": "full_codec",
+          "sha256": "535f0386a3244a063c3fca672df9342998cb8a09512f146ebff4c67c92c934ca"
+        },
+        {
+          "frame": 132,
+          "column": "reference",
+          "sha256": "f8d1b4ec9870bfbe9a833f40f8d3e421bb95e8de6048f09487b8453872f35c30"
+        },
+        {
+          "frame": 132,
+          "column": "baseline",
+          "sha256": "5bc6bec0af42bbf996765aec50926840453cc1769e0a2867ca710fbe4687ffba"
+        },
+        {
+          "frame": 132,
+          "column": "decoder_only",
+          "sha256": "0eb9948600f27f651da20a8f88376fa38f6cf5b7d7eb71186bddd96eb8033163"
+        },
+        {
+          "frame": 132,
+          "column": "full_codec",
+          "sha256": "b116c0090cd7c1f2236cd26423abe25177902c754902a62a779ed16dd75db5f5"
+        },
+        {
+          "frame": 176,
+          "column": "reference",
+          "sha256": "7c71b38cea83f3653d904668fe5ac5ac1aecf0e558bf2340c41ae2d754b1bd93"
+        },
+        {
+          "frame": 176,
+          "column": "baseline",
+          "sha256": "ecdd4a9f7dc80cffd6ab66b429ca845261b2cd8ac360c584063db6a5879eff45"
+        },
+        {
+          "frame": 176,
+          "column": "decoder_only",
+          "sha256": "ac90ad3acb77a6ba9714bb71b2471b38577ec7b4c4b993940a06b7d785523120"
+        },
+        {
+          "frame": 176,
+          "column": "full_codec",
+          "sha256": "6eeec664804bbc01f07f43ecb1f84a4e460e9df519814c83aa9a5f7cbd28a702"
+        }
+      ]
+    },
+    {
+      "clip": "buildingblock_tower_10_176",
+      "kind": "real_view",
+      "file": "buildingblock_tower_10_176_real_view.png",
+      "sha256": "25d09fddfc3abee5ebb05c9bc4b562632662e5b69b4274f6242253f1798ec1e9",
+      "inputs": [
+        {
+          "frame": 0,
+          "column": "reference",
+          "sha256": "19f9f2621583bf8072ef6ca7d343c427cbfa14333f8791e84718a32736335826"
+        },
+        {
+          "frame": 0,
+          "column": "baseline",
+          "sha256": "34fbc12f26a67da1eee4d6fb371f7d7cc381d433f62e5e9e1a096226b2ca1959"
+        },
+        {
+          "frame": 0,
+          "column": "decoder_only",
+          "sha256": "97ad3964c72d127e5a784e3bd52c59cc9a53679718c1a1952adda69d7faa89b9"
+        },
+        {
+          "frame": 0,
+          "column": "full_codec",
+          "sha256": "7816cbf59c598d52106d03815e10378963755be49a1fb832867c0bae38335f73"
+        },
+        {
+          "frame": 44,
+          "column": "reference",
+          "sha256": "6254003f8af42bfac09baedc614a6ec35db8b40a0d12abe43de6407bc0058fa5"
+        },
+        {
+          "frame": 44,
+          "column": "baseline",
+          "sha256": "7c134e51311a3530f30c818e46e6956a8745530ac57458b8eae0997dee7e390e"
+        },
+        {
+          "frame": 44,
+          "column": "decoder_only",
+          "sha256": "dc2ea186028d3b3ed2bd8d1b18aacbce2e2f27b2793ea33964f4758f09e37db6"
+        },
+        {
+          "frame": 44,
+          "column": "full_codec",
+          "sha256": "5bacbd69fb7eb962eab4ca96f10f876f97d6390fc88a3e97497bf2ce7595e270"
+        },
+        {
+          "frame": 88,
+          "column": "reference",
+          "sha256": "2f29a59a2e683bab0ed179b05e89f572805c58f57d505d2986e2c750bfc9d6d8"
+        },
+        {
+          "frame": 88,
+          "column": "baseline",
+          "sha256": "351714f72e36188ea234c45ea6f6cd366c66dd3da13b36e1ac6dd8314e6ac485"
+        },
+        {
+          "frame": 88,
+          "column": "decoder_only",
+          "sha256": "ed4fe80b7234af3918263c19ac75e54ba88c99a789309c1d1feeaaebda094b78"
+        },
+        {
+          "frame": 88,
+          "column": "full_codec",
+          "sha256": "05880586035300594f8f6309cbea589af7d02ba613320d46b83a4b04557a6447"
+        },
+        {
+          "frame": 132,
+          "column": "reference",
+          "sha256": "dabbde4809973c5ec5110f063137fdeef1f076f16afe02d32f97104ddbe75d0d"
+        },
+        {
+          "frame": 132,
+          "column": "baseline",
+          "sha256": "9f90d277718db18338abdbd2458c758ef394d71bf6fc3764e9e71b082efb9a3d"
+        },
+        {
+          "frame": 132,
+          "column": "decoder_only",
+          "sha256": "a3d4e5df4729a137de7768219b877409214d3f090a6e5e7bd3711cff07320c4e"
+        },
+        {
+          "frame": 132,
+          "column": "full_codec",
+          "sha256": "103b1132b1d0e8997ad3d2d5da62497d4df11db86d44e1e85fab31014c541901"
+        },
+        {
+          "frame": 176,
+          "column": "reference",
+          "sha256": "1d49adfa1e118905c97b614d2f6cd98f4a8335917b2c9d6babd87f4e88ad37ca"
+        },
+        {
+          "frame": 176,
+          "column": "baseline",
+          "sha256": "5ac3e5b799a5fdce684060aa46ed84f88e64930c52c39d603dd2c0d203009cea"
+        },
+        {
+          "frame": 176,
+          "column": "decoder_only",
+          "sha256": "009940ab3adf329b80af6d9fa31125b9e077198e007b36d2eb040f7e5058a133"
+        },
+        {
+          "frame": 176,
+          "column": "full_codec",
+          "sha256": "15ed528314fa677db86c45b6c44d4474989c679fefa19bd0a192293c7d3bd48d"
+        }
+      ]
+    },
+    {
+      "clip": "buildingblock_tower_10_176",
+      "kind": "nearby_view",
+      "file": "buildingblock_tower_10_176_nearby_view.png",
+      "sha256": "4eb62e2439af5cde3e2de8f82e726a8a682e9780eca3af50dffedab38b86c7ea",
+      "inputs": [
+        {
+          "frame": 0,
+          "column": "reference",
+          "sha256": "84183d534943b4f4d44300c7c696160a52110073a699965b635dc07669ee5a05"
+        },
+        {
+          "frame": 0,
+          "column": "baseline",
+          "sha256": "05cff434a058290f8e065535c6b301c76a58a919874bdc27285b38d88b2cba82"
+        },
+        {
+          "frame": 0,
+          "column": "decoder_only",
+          "sha256": "d7b7d1d0be88e2db9005069638108851cfa4882b16f7b25b89234479b733fc66"
+        },
+        {
+          "frame": 0,
+          "column": "full_codec",
+          "sha256": "4c35ffd53d2c33744f0730f29c1c5da48c63cbbeab7407d811af4b4540f90f6d"
+        },
+        {
+          "frame": 44,
+          "column": "reference",
+          "sha256": "2669f4060b9c6c239bd12bec970c966e6eb1b65791ca344f965015649ec3a22a"
+        },
+        {
+          "frame": 44,
+          "column": "baseline",
+          "sha256": "bc78b085ed37e9ae8b878a0d37ae7c44401d108ffe6237d3e80389834f8c6925"
+        },
+        {
+          "frame": 44,
+          "column": "decoder_only",
+          "sha256": "d03946c7a1c72d0e06543a2f818dcab0681e78d2a958ec323531d5ad8eba7890"
+        },
+        {
+          "frame": 44,
+          "column": "full_codec",
+          "sha256": "1aa487196aa430156f497057502e54ded0b528e6557dbd64b5e9773272f4ca5b"
+        },
+        {
+          "frame": 88,
+          "column": "reference",
+          "sha256": "e9f39ce473bbd3094b01fb7ad5c5708dbae322772debb137ce56990c432465a6"
+        },
+        {
+          "frame": 88,
+          "column": "baseline",
+          "sha256": "943a0257d65289d96f78b513d9965f343a5676a5dbaf54668e91dd8f7e45568c"
+        },
+        {
+          "frame": 88,
+          "column": "decoder_only",
+          "sha256": "732b6ca99c3733cb24a25c86100d64450de5992e073c0955d1455ea59a0ca56b"
+        },
+        {
+          "frame": 88,
+          "column": "full_codec",
+          "sha256": "78cf18262bea9a365f538e1a7ed97c7cc36ec49b1040f212139b7e56df1fd6e5"
+        },
+        {
+          "frame": 132,
+          "column": "reference",
+          "sha256": "2d7021fe87e3936428823f3fb46e6cc8afe1b54001e7edd92136d88aa0ae5fd2"
+        },
+        {
+          "frame": 132,
+          "column": "baseline",
+          "sha256": "7ed06eaf4655b091732a9d3279cd2ef90c7dcd4c2c02aa67ace4de44fbbf3841"
+        },
+        {
+          "frame": 132,
+          "column": "decoder_only",
+          "sha256": "618866c7cd5f02ad4bc353d0ef7fc59482fb6173da990a0c1f0aa1c26e3d8b27"
+        },
+        {
+          "frame": 132,
+          "column": "full_codec",
+          "sha256": "d7e401aa0e1f59b7161fa29d016d76a5671fcf40d07fe2d6234b2f41e81d28af"
+        },
+        {
+          "frame": 176,
+          "column": "reference",
+          "sha256": "c153dd732dcaa23997592523bc6358fa4c2f752f2278b7f38f6784eefa86af78"
+        },
+        {
+          "frame": 176,
+          "column": "baseline",
+          "sha256": "e485c07b47524c2e164716c95c16e28e2daeb1aea53a82c68f74c90a84655c49"
+        },
+        {
+          "frame": 176,
+          "column": "decoder_only",
+          "sha256": "21146b3cfc4b0e8d2c1ebb697a84b3de319cd92838d7522c84e2706fcd08e434"
+        },
+        {
+          "frame": 176,
+          "column": "full_codec",
+          "sha256": "361020a8fb0b7247fc4836c038c76fc9c6568fbf37628a6f28327d0d9e1e0235"
+        }
+      ]
+    }
+  ],
+  "evaluation_source_records_selected": false,
+  "state_rows_per_train_source_per_arm": 177,
+  "checkpoint_tensor_comparison": "exact",
+  "feature_comparison": "coordinate-aligned; raw sparse row order is not correspondence",
+  "historic_summary_sha256": "affdd286d2954183e8a0d36a57883894f0165757380ce7c85774513634bd741c",
+  "protocol_sha256": "855e2904f52193498428f9a4ad0f602f3dacf14e54ca33c04b4a456a8639141b",
+  "data_binding_sha256": "695959d1dce88089293ce795d8a962ecb284654fe530b0e8f286c61e73d02715",
+  "source_code_sha256": "dbae7b1b919e1ccbaf87317ed09f89a9755807c595bcf7a0ab2e15c8697d9ab2",
+  "model_training_performed": false,
+  "scope": "Existing codec reconstruction on two TRAIN videos only; no action or pristine-test claim"
+}
