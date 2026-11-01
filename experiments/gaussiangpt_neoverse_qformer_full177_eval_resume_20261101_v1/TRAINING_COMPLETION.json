@@ -1,0 +1,81 @@
+{
+  "parent_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1",
+  "parent_protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "parent_code_manifest_sha256": "ff6d0731dfc80edb59c36962b9ce521dbec311ea9798d08d6f5dc70fc0692bba",
+  "training": {
+    "posterior": {
+      "train_done_sha256": "83a1510a7e95dd5d76cba0ea8a748d31d4c3705d11e7faa9394841c87e925e02",
+      "train_done": {
+        "status": "complete",
+        "steps": 2000,
+        "source": {
+          "protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+          "code_sha256": "ff6d0731dfc80edb59c36962b9ce521dbec311ea9798d08d6f5dc70fc0692bba",
+          "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+          "warm_decoder_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+          "warm_posterior_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+          "initial_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+          "initial_posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+          "frozen_component_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+          "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+          "schedule_sha256": "cd2767cb379c67f879a087787fd58f224354a986217dd1aa7858289c4afa75d2",
+          "mode": "posterior",
+          "training_frames": 177,
+          "training_windows": 168,
+          "code_shape": [
+            4,
+            9,
+            16
+          ],
+          "quantized": false
+        },
+        "decoder_digest": "f1a31053dcc8f36fadb3b3e60b94df4b372421aee9f7f0360aa9103e22c9ae5c",
+        "posterior_digest": "a1c6edeeef1c21b932a13d143bcaec5cbc20baa326ac11dc8c297a8292921e89",
+        "checkpoint_sha256": "29cb23b83e548a2d9986b337483b3173840a1fba277e3dd4c37d136a219fe275",
+        "codec_and_state_encoder_frozen": true,
+        "checkpoint_replay": "passed",
+        "elapsed_seconds": 4740.29511916003,
+        "peak_reserved_gib": 21.814453125
+      },
+      "checkpoint_bytes": 9722307,
+      "checkpoint_sha256": "29cb23b83e548a2d9986b337483b3173840a1fba277e3dd4c37d136a219fe275"
+    },
+    "initial_only": {
+      "train_done_sha256": "bdb3459a70d6e5cf76fbd098637d90040245e5394e2102fe19f8493b29d21f02",
+      "train_done": {
+        "status": "complete",
+        "steps": 2000,
+        "source": {
+          "protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+          "code_sha256": "ff6d0731dfc80edb59c36962b9ce521dbec311ea9798d08d6f5dc70fc0692bba",
+          "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+          "warm_decoder_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+          "warm_posterior_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+          "initial_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+          "initial_posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+          "frozen_component_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+          "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+          "schedule_sha256": "cd2767cb379c67f879a087787fd58f224354a986217dd1aa7858289c4afa75d2",
+          "mode": "initial_only",
+          "training_frames": 177,
+          "training_windows": 168,
+          "code_shape": [
+            4,
+            9,
+            16
+          ],
+          "quantized": false
+        },
+        "decoder_digest": "8bc9cef4c8496953a7f84ca2d092bf31696fc7a19061b881ec9566ecaf9ade00",
+        "posterior_digest": "28ab69758d52b33d784696b241201b80dc87eac41fedb2cc4618cb5a83a2c719",
+        "checkpoint_sha256": "28fb8d3698a1eb3319cf1d3a14d1c96d8ca39d9e14a7f18031eef142b2e287ce",
+        "codec_and_state_encoder_frozen": true,
+        "checkpoint_replay": "passed",
+        "elapsed_seconds": 4789.2889809909975,
+        "peak_reserved_gib": 22.78125
+      },
+      "checkpoint_bytes": 9722307,
+      "checkpoint_sha256": "28fb8d3698a1eb3319cf1d3a14d1c96d8ca39d9e14a7f18031eef142b2e287ce"
+    }
+  }
+}

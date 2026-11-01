@@ -1,0 +1,23 @@
+{
+  "schema": "full177_evaluation_only_resume_v1",
+  "parent_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1",
+  "parent_protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "parent_code_manifest_sha256": "ff6d0731dfc80edb59c36962b9ce521dbec311ea9798d08d6f5dc70fc0692bba",
+  "training": {
+    "posterior": {
+      "train_done_sha256": "83a1510a7e95dd5d76cba0ea8a748d31d4c3705d11e7faa9394841c87e925e02",
+      "checkpoint_sha256": "29cb23b83e548a2d9986b337483b3173840a1fba277e3dd4c37d136a219fe275",
+      "checkpoint_bytes": 9722307
+    },
+    "initial_only": {
+      "train_done_sha256": "bdb3459a70d6e5cf76fbd098637d90040245e5394e2102fe19f8493b29d21f02",
+      "checkpoint_sha256": "28fb8d3698a1eb3319cf1d3a14d1c96d8ca39d9e14a7f18031eef142b2e287ce",
+      "checkpoint_bytes": 9722307
+    }
+  },
+  "additional_training_updates": 0,
+  "fix": "Load frozen evaluator, native replay, and summary by verified absolute file path with a unique module name",
+  "resources": "Unchanged parent evaluation limits and GPU assignments",
+  "failure_policy": "Stop failing branch once; no automatic retry or retraining",
+  "environment_mode": "Unchanged read-only warm reuse"
+}

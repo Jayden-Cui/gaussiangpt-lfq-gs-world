@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "mode": "posterior",
+      "ordinary_import_origin": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1/evaluate.py",
+      "explicit_import_origin": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1/evaluate.py",
+      "decoder_digest": "f1a31053dcc8f36fadb3b3e60b94df4b372421aee9f7f0360aa9103e22c9ae5c",
+      "posterior_digest": "a1c6edeeef1c21b932a13d143bcaec5cbc20baa326ac11dc8c297a8292921e89",
+      "restored_checkpoint": true
+    },
+    {
+      "mode": "initial_only",
+      "ordinary_import_origin": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1/evaluate.py",
+      "explicit_import_origin": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1/evaluate.py",
+      "decoder_digest": "8bc9cef4c8496953a7f84ca2d092bf31696fc7a19061b881ec9566ecaf9ade00",
+      "posterior_digest": "28ab69758d52b33d784696b241201b80dc87eac41fedb2cc4618cb5a83a2c719",
+      "restored_checkpoint": true
+    }
+  ],
+  "code_manifest_sha256": "123847011352503736db69403dc68721014416468752bf81a4e868b4be8766bb",
+  "scope": "CPU checkpoint integrity and actual import-collision regression; no GPU rendering"
+}

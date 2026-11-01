@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-01T16:39:56.553484+08:00",
+  "files": {
+    "STARTED.json": {
+      "pid": 649715,
+      "phase": "evaluation_resume",
+      "training_parent": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1",
+      "resume_code_sha256": "123847011352503736db69403dc68721014416468752bf81a4e868b4be8766bb"
+    },
+    "STATUS.json": {
+      "status": "running",
+      "phase": "evaluation_resume",
+      "steps_per_arm": 2000
+    },
+    "posterior/STATUS.json": {
+      "status": "running",
+      "phase": "evaluation",
+      "completed_updates": 2000
+    },
+    "posterior/EVAL_STATUS.json": {
+      "status": "running",
+      "completed_windows": 1,
+      "total_windows": 168,
+      "elapsed_seconds": 25.36553133802954
+    },
+    "initial_only/STATUS.json": {
+      "status": "running",
+      "phase": "evaluation",
+      "completed_updates": 2000
+    },
+    "initial_only/EVAL_STATUS.json": {
+      "status": "running",
+      "completed_windows": 9,
+      "total_windows": 168,
+      "elapsed_seconds": 33.230391026998404
+    },
+    "posterior/evaluation_binding": {
+      "parent_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1",
+      "checkpoint_sha256": "29cb23b83e548a2d9986b337483b3173840a1fba277e3dd4c37d136a219fe275",
+      "decoder_digest": "f1a31053dcc8f36fadb3b3e60b94df4b372421aee9f7f0360aa9103e22c9ae5c",
+      "posterior_digest": "a1c6edeeef1c21b932a13d143bcaec5cbc20baa326ac11dc8c297a8292921e89",
+      "train_done_sha256": "83a1510a7e95dd5d76cba0ea8a748d31d4c3705d11e7faa9394841c87e925e02",
+      "resume_code_sha256": "123847011352503736db69403dc68721014416468752bf81a4e868b4be8766bb",
+      "evaluator_sha256": "abc16c4a14c664ba59984d0b254082d43c53ef3c9c300df67bf3af81bb7f1c71",
+      "evaluator_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1/evaluate.py"
+    },
+    "initial_only/evaluation_binding": {
+      "parent_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1",
+      "checkpoint_sha256": "28fb8d3698a1eb3319cf1d3a14d1c96d8ca39d9e14a7f18031eef142b2e287ce",
+      "decoder_digest": "8bc9cef4c8496953a7f84ca2d092bf31696fc7a19061b881ec9566ecaf9ade00",
+      "posterior_digest": "28ab69758d52b33d784696b241201b80dc87eac41fedb2cc4618cb5a83a2c719",
+      "train_done_sha256": "bdb3459a70d6e5cf76fbd098637d90040245e5394e2102fe19f8493b29d21f02",
+      "resume_code_sha256": "123847011352503736db69403dc68721014416468752bf81a4e868b4be8766bb",
+      "evaluator_sha256": "abc16c4a14c664ba59984d0b254082d43c53ef3c9c300df67bf3af81bb7f1c71",
+      "evaluator_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_qformer_full177_20261101_v1/evaluate.py"
+    }
+  },
+  "processes": {
+    "posterior": {
+      "pid": 649719,
+      "mode": "posterior",
+      "phase": "worker",
+      "alive": true,
+      "matches_run": true
+    },
+    "initial_only": {
+      "pid": 649720,
+      "mode": "initial_only",
+      "phase": "worker",
+      "alive": true,
+      "matches_run": true
+    }
+  }
+}
