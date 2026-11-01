@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "interpreter": "/data/CJH/envs/gaussiangpt/bin/python",
+  "verified": "Bound old and new code, baseline audit, CPU dependencies and inotify event registration",
+  "code_manifest_sha256": "42b8fb2f827583710f2d4d5f54d11d7b46f838764d0f1583a8a03493bf08e598",
+  "protocol_sha256": "c45cb5db5db06e6b4c07175cd421e9ae3caf245943261bf7dd0415012bcc65e3",
+  "gpu_used": false,
+  "training_signalled": false
+}

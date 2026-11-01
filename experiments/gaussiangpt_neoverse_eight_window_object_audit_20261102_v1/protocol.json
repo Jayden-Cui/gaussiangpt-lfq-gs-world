@@ -1,0 +1,16 @@
+{
+  "schema": "stage_b_eight_window_cpu_watch_v1",
+  "run_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1",
+  "sweeps": [
+    5,
+    10,
+    20
+  ],
+  "max_wait_seconds": 86400,
+  "per_sweep_timeout_seconds": 300,
+  "baseline_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "gpu_used": false,
+  "training_signalled": false,
+  "manual_dynamic_review_required": true,
+  "scope": "Eight fixed windows; existing HSV/ROI proxies only"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "started",
+  "pid": 777074,
+  "started_utc": "2026-11-01T23:37:03+00:00",
+  "watch_started_sha256": "ba2b45db746c495c5d1dcf0188e4bcec95e88d08dc74dbe91b670175ace8b949",
+  "protocol_sha256": "c45cb5db5db06e6b4c07175cd421e9ae3caf245943261bf7dd0415012bcc65e3",
+  "code_sha256": "42b8fb2f827583710f2d4d5f54d11d7b46f838764d0f1583a8a03493bf08e598",
+  "baseline_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "gpu_used": false,
+  "training_signalled": false,
+  "manual_dynamic_review_required": true
+}

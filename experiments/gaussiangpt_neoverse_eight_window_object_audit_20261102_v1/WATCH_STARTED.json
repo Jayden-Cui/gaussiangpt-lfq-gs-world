@@ -1,0 +1,8 @@
+{
+  "pid": 777074,
+  "method": "inotify close-write/move",
+  "run_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1",
+  "max_wait_seconds": 86400,
+  "gpu_used": false,
+  "training_signalled": false
+}

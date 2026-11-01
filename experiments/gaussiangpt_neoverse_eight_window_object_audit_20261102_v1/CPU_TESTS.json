@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "code_sha256": "42b8fb2f827583710f2d4d5f54d11d7b46f838764d0f1583a8a03493bf08e598",
+  "baseline_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "stage_a_audit_sha256": "c893e22356d8e096504e751d4dcbe413522393e81125d3e3403781fd156c3b41",
+  "full_evaluation_pair_coverage": 1512,
+  "diagnostic_window_pairs": 72,
+  "object_rows_per_evaluation": 144,
+  "original_anchor_proxies_reproduced_per_evaluation": 18,
+  "target_pixel_hashes_equal_across_real_evaluations": 72,
+  "self_reference_rejected": true,
+  "single_pixel_target_tamper_rejected": true,
+  "maximum_png_vs_float_mae_disagreement": 4.4235201850956196e-05,
+  "scope": "Real baseline and stage-A CPU analyses; Linux event-watcher runtime requires server preflight"
+}

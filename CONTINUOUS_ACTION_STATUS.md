@@ -58,4 +58,6 @@
 
 [两窗口 Q-Former 最终结果与逐帧视频](experiments/gaussiangpt_neoverse_qformer_final_review_20261102_v1/RESULTS.md)已完成：1194 次更新后，运动区域 MAE 为 0.031014，自由码教师为 0.031369；运动／静止各 18／18 帧更接近对应参考，原始状态扰动的前缀因果检查和 36 包／72 视角独立重放通过。黄条早期仍有模糊、位置偏差，颜色尺度敏感；这只验证两个已训练窗口，尚不能替代全 168 窗口教师及正式 C／跨视频验证。
 
+[八窗口物体代理补充检查](experiments/gaussiangpt_neoverse_eight_window_object_audit_20261102_v1/RESULTS.md)对历史 posterior 与阶段 A 使用相同的 72 张源画面。阶段 A 的窗口 112、123 在拾取／移动绿梁时分别只有 5／9、0／9 帧检出绿色代理，真实未来 GS 的 codec 参考均为 9／9；固定颜色掩码只是辅助证据。CPU 程序已等待阶段 B 的三轮完整评估和独立重放，再对相同窗口生成报告；教师仍需动态和视觉审查。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。
