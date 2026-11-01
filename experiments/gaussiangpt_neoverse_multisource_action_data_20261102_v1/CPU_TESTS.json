@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "code_sha256": "c24da8dcf779cc77cebdf5eb28c0613a20f18d3b46b1d22ef193b44e240c1af4",
+  "sources": {
+    "buildingblock_tower_17_176": 177,
+    "buildingblock_tower_10_176": 177,
+    "buildingblock_tower_14_0": 177
+  },
+  "verified_state_files": 531,
+  "verified_original_cache_files": 531,
+  "full_file_sha256_checked": true,
+  "sampled_windows_per_source": 3,
+  "window_frames": 10,
+  "frame_stride": 1,
+  "continuous_features": "float32 [N,64]",
+  "camera_shape": [
+    2,
+    4,
+    4
+  ],
+  "image_shape": [
+    252,
+    448,
+    3
+  ],
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "source_level_train_eval_separation": true,
+  "eval_source_training_read_rejected": true,
+  "eval_source_historically_exposed": true,
+  "elapsed_seconds": 14.913858292042278,
+  "scope": "Data integrity and loader only; no cross-video action training or evaluation"
+}
