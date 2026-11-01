@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "source": "actual cached TRAIN states at four windows; synthetic perturbed teacher codes",
+  "windows": [
+    0,
+    35,
+    123,
+    167
+  ],
+  "effective_batch_size": 4,
+  "phase": "distill",
+  "teacher_scale": 0.025407856330275536,
+  "gradients": {
+    "encoder_input": 0.21564124524593353,
+    "encoder_backbone": 0.07015153765678406,
+    "queries": 0.0021698223426938057,
+    "projection": 0.9453921318054199
+  },
+  "code_only_optimizer_update": "passed",
+  "static_input_uses_s0_and_original_times": true,
+  "static_code_ignores_future_features": true,
+  "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "source_model_code_sha256": "83590f1bf8b6b2c229154613def8dcd9e5a343234c5510483b77ff29ee145e3d",
+  "training_core_sha256": "be151002b59aa12e2f62587caf919053e6cff6427144b0cdccde939111994396",
+  "witness_script_sha256": "fd33feacc2b18d1944f9175abe1b842b20037cc8b4b36acbd9f75eda71c40f5f",
+  "elapsed_seconds": 22.017761799972504,
+  "rows": [
+    {
+      "start": 0,
+      "horizon": 1,
+      "code_loss": 0.09840676188468933,
+      "loss": 0.09840676188468933
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "code_loss": 0.09839469939470291,
+      "loss": 0.09839469939470291
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "code_loss": 0.09839614480733871,
+      "loss": 0.09839614480733871
+    },
+    {
+      "start": 167,
+      "horizon": 9,
+      "code_loss": 0.09839100390672684,
+      "loss": 0.09839100390672684
+    }
+  ],
+  "scope": "CPU distillation plumbing only; perturbed baseline is not a validated teacher, no RGB/GPU or quality claim"
+}
