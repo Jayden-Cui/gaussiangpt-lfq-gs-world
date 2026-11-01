@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "e70b5e57fc18b08a2b4bc5d67a8e9b2ba585fddaa83694a32b2df8bcb0119bc8",
+  "test_output": "PASS: code-shape, finite-value and fixed-teacher-normalization checks",
+  "real_intermediate_sources_verified": true,
+  "scope": "CPU analytic code metric test; real checkpoint replay not yet run"
+}

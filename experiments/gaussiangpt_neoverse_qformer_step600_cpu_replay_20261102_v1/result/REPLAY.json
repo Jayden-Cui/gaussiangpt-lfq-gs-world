@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "start": 35,
+      "teacher_code_scale": 0.022749673575162888,
+      "motion": {
+        "mse": 2.4223350436614055e-08,
+        "rms": 0.00015563852502964437,
+        "max_abs_error": 0.0006736777722835541,
+        "normalized_mse": 1.0647779618011555e-06
+      },
+      "static": {
+        "mse": 8.221755365411809e-08,
+        "rms": 0.0002867360308300704,
+        "max_abs_error": 0.0015642940998077393,
+        "normalized_mse": 3.6140102110948646e-06
+      },
+      "q_motion_static_code_rms": 0.21885067224502563,
+      "teacher_motion_static_code_rms": 0.21882224082946777
+    },
+    {
+      "start": 123,
+      "teacher_code_scale": 0.022749673575162888,
+      "motion": {
+        "mse": 1.867400527544305e-07,
+        "rms": 0.0004321342858020216,
+        "max_abs_error": 0.0023009441792964935,
+        "normalized_mse": 8.208471626858227e-06
+      },
+      "static": {
+        "mse": 7.559967230008624e-08,
+        "rms": 0.00027495395625010133,
+        "max_abs_error": 0.0009619295597076416,
+        "normalized_mse": 3.323110149722197e-06
+      },
+      "q_motion_static_code_rms": 0.2427293062210083,
+      "teacher_motion_static_code_rms": 0.24286514520645142
+    }
+  ],
+  "cached_prefix_causality": [
+    {
+      "start": 35,
+      "horizon": 3,
+      "max_abs_error": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "max_abs_error": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "max_abs_error": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "max_abs_error": 0.0
+    }
+  ],
+  "max_code_difference_from_gpu_record": 1.7881393432617188e-07,
+  "q_codes_sha256": "0ccd7ac6e3380d069a9120dc3a277de75e2e3a0c63fc41d75446ae498e92894d",
+  "q_checkpoint_sha256": "bbe9dc84a2d0fcbeecbd34f5e7d8a77d0cf8bfa4d1d3d7c9c65b4ad89e4fd5db",
+  "teacher_checkpoint_sha256": "461c8391d09a27ba5f2b4f4f52878c8a9d8b287072e2fa6a52a9ac4877043744",
+  "producer_pid": 774894,
+  "gpu_used": false,
+  "training_updates": 0,
+  "training_signalled": false,
+  "elapsed_seconds": 0.5090131979668513,
+  "scope": "Independent CPU reload and cached-prefix test on two TRAIN windows; not a renderer replay, raw-future causal proof, final Q result, full-video or cross-video validation."
+}

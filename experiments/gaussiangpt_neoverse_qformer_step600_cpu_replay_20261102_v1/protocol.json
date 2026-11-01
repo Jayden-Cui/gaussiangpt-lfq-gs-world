@@ -1,0 +1,31 @@
+{
+  "schema": "two_future_qformer_step600_independent_cpu_replay_v1",
+  "step": 600,
+  "windows": [
+    35,
+    123
+  ],
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "q_checkpoint_sha256": "bbe9dc84a2d0fcbeecbd34f5e7d8a77d0cf8bfa4d1d3d7c9c65b4ad89e4fd5db",
+  "q_evaluation_sha256": "2e92b857980fb33dc271c6e7d1943d7342309bca5fe7ed281c7380ab655747d1",
+  "q_protocol_sha256": "7137c57b3f3cace964290309270d257f0c56f49a821c47f77258a8eae3f222c3",
+  "q_code_sha256": "3223dfd37e0ffecdc20b0df4e6b170b15526fa2a0dc18469b79eda7b7eca7231",
+  "posterior_digest": "048d1ce3fd60e99fb3dd2e234abb446012291dbba2e690bd8df033c1cfad90a8",
+  "teacher_checkpoint_sha256": "461c8391d09a27ba5f2b4f4f52878c8a9d8b287072e2fa6a52a9ac4877043744",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "decoder_digest": "a9ccb52c0c222489aac9c653b4f55a468feda4256628a9ce8e3ab13a5877a3dd",
+  "code_rms_reproduction_tolerance": 5e-05,
+  "cached_prefix_causality_tolerance": 2e-05,
+  "gpu_used": false,
+  "scope": "Independent CPU reload and cached-prefix test on two TRAIN windows; not a renderer replay, raw-future causal proof, final Q result, full-video or cross-video validation."
+}
