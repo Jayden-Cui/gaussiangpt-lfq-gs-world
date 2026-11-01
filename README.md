@@ -2,6 +2,8 @@
 
 本仓库整理 GS World 实验的代码，供分析 GaussianGPT 空间状态、Q-Former 动作表示与 LFQ 量化的接入方式。`experiments/` 同时保留当前正式对照和历史版本；阅读时应优先从下列入口开始，避免把历史失败尝试当成最终实现。
 
+**当前任务（2026-11-02）是连续动作码，不使用 LFQ、FSQ 或 AR。** 阶段 A 训练、已完成的占据诊断、多视频候选范围检查以及阶段 B／C 的准备状态见 [连续动作码进展](CONTINUOUS_ACTION_STATUS.md)。下文的 LFQ 内容是历史对照。
+
 ## 当前主线：从 GS 状态到动作码
 
 1. **空间状态与 GaussianGPT 编解码**：[codec.py](experiments/gaussiangpt_neoverse_state_motion_20261030_v1/state/code/codec.py) 将每一时刻 GS 编码为带整数坐标的连续 `[M_t, 64]` 状态，并从状态解码 GS；状态量化使用 `Identity`。GS 渲染和属性转换见同目录 `common.py`。
