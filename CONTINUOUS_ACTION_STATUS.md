@@ -54,4 +54,6 @@
 
 该双未来诊断的[第 900 步中期评估](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/result/step_00900/EVALUATION.json)中，Q 与教师相对原视频的运动区域 MAE 分别为 0.031060 和 0.031369，静止参考加权 MAE 分别为 0.007091 和 0.007583；两分支各 18／18 帧更接近对应参考。训练和最终视觉、因果及独立重放检查仍在进行，不能从两窗口中期数据推断全片段或跨视频表现。
 
+[颜色代理敏感性检查](experiments/gaussiangpt_neoverse_object_proxy_sensitivity_20261102_v1/RESULTS.md)发现，两窗口黄色条运动分支的部分源帧存在离散同色像素；h3 的原目标边界框对角线是最大连通区域的 1.53 倍，可能低估归一化中心误差。后续教师评审应保留原指标并核查遮挡与掩码碎片，不能把最大连通区域当作真实分割或仅依据数值阈值验收。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。

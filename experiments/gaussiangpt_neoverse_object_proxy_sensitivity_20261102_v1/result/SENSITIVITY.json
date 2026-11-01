@@ -1,0 +1,1922 @@
+{
+  "status": "complete",
+  "source_evaluation_sha256": "169fadccc475cee0e9796d6615aac90c36e275aff829eb95e3ded222b19f3010",
+  "visual_manifest_sha256": "04b4b0c6b24984900d4b9fbd1e6def156528195cd0d1e8e82c59c232472401ba",
+  "original_proxy_sha256": "4fa6b5804fb56396ba0b399c0d85e36ce3cf768fe9ab54f5f755be66c0d7081c",
+  "original_core_sha256": "e9e2948dfb395b1f62568ec68a59f997772264056df58684f3fc38c0379b338d",
+  "original_config_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "analysis_code_sha256": "139ee537f19e47451dbc9d80d06fcf64e3ee16111f2ae1c7a065fc443dedbbd0",
+  "source_rows": 36,
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "branch": "motion",
+      "frame_sha256": "4289788821f53829b2254b4f70664b94944a6be8d18244d8ada8b1cdec5d1926",
+      "target": {
+        "pixels": 1538,
+        "largest_pixels": 931,
+        "largest_fraction": 0.6053315994798439,
+        "all_bbox": [
+          244,
+          116,
+          310,
+          160
+        ],
+        "largest_bbox": [
+          244,
+          116,
+          290,
+          146
+        ],
+        "all_diagonal": 80.7093550959243,
+        "largest_diagonal": 56.302753041036986,
+        "diagonal_inflation": 1.433488608223087
+      },
+      "prediction": {
+        "pixels": 1257,
+        "largest_pixels": 1257,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          243,
+          117,
+          312,
+          158
+        ],
+        "largest_bbox": [
+          243,
+          117,
+          312,
+          158
+        ],
+        "all_diagonal": 81.6333265278342,
+        "largest_diagonal": 81.6333265278342,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 2.13079939643179,
+      "original_center_over_all_bbox": 0.026400897317285,
+      "same_center_over_largest_target_bbox": 0.03784538555119551,
+      "largest_components_center_over_target_bbox": 0.19313454293413276,
+      "target_is_fragmented": true,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 1,
+      "branch": "static",
+      "frame_sha256": "4289788821f53829b2254b4f70664b94944a6be8d18244d8ada8b1cdec5d1926",
+      "target": {
+        "pixels": 1215,
+        "largest_pixels": 1215,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1232,
+        "largest_pixels": 1232,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          123,
+          319,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          123,
+          319,
+          157
+        ],
+        "all_diagonal": 81.85963596303125,
+        "largest_diagonal": 81.85963596303125,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.6911417640026987,
+      "original_center_over_all_bbox": 0.008307736483036385,
+      "same_center_over_largest_target_bbox": 0.008307736483036385,
+      "largest_components_center_over_target_bbox": 0.008307736483036385,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "branch": "motion",
+      "frame_sha256": "dbf079b9f04075883a9c0032650b5a386c15cf16f28255dbf80eba3763d6099b",
+      "target": {
+        "pixels": 1336,
+        "largest_pixels": 965,
+        "largest_fraction": 0.7223053892215568,
+        "all_bbox": [
+          241,
+          105,
+          304,
+          163
+        ],
+        "largest_bbox": [
+          241,
+          105,
+          287,
+          141
+        ],
+        "all_diagonal": 87.04596486914255,
+        "largest_diagonal": 59.81638571495272,
+        "diagonal_inflation": 1.45521939897788
+      },
+      "prediction": {
+        "pixels": 634,
+        "largest_pixels": 634,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          113,
+          285,
+          138
+        ],
+        "largest_bbox": [
+          245,
+          113,
+          285,
+          138
+        ],
+        "all_diagonal": 48.54894437575342,
+        "largest_diagonal": 48.54894437575342,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 7.562630870823405,
+      "original_center_over_all_bbox": 0.08688088967929089,
+      "same_center_over_largest_target_bbox": 0.12643075606176118,
+      "largest_components_center_over_target_bbox": 0.05530507067051832,
+      "target_is_fragmented": true,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "branch": "static",
+      "frame_sha256": "dbf079b9f04075883a9c0032650b5a386c15cf16f28255dbf80eba3763d6099b",
+      "target": {
+        "pixels": 1230,
+        "largest_pixels": 1230,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1269,
+        "largest_pixels": 1269,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          317,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          317,
+          157
+        ],
+        "all_diagonal": 80.49844718999243,
+        "largest_diagonal": 80.49844718999243,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.18797271154636108,
+      "original_center_over_all_bbox": 0.0022594897817850308,
+      "same_center_over_largest_target_bbox": 0.0022594897817850308,
+      "largest_components_center_over_target_bbox": 0.0022594897817850308,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "branch": "motion",
+      "frame_sha256": "8ae6102d4cd3618536796fd83d1b83650e78343a7f9849a06b544d4e53f1253b",
+      "target": {
+        "pixels": 1073,
+        "largest_pixels": 1052,
+        "largest_fraction": 0.9804287045666356,
+        "all_bbox": [
+          239,
+          90,
+          338,
+          164
+        ],
+        "largest_bbox": [
+          239,
+          90,
+          301,
+          141
+        ],
+        "all_diagonal": 125.0,
+        "largest_diagonal": 81.68843247363729,
+        "diagonal_inflation": 1.5302044146867468
+      },
+      "prediction": {
+        "pixels": 471,
+        "largest_pixels": 460,
+        "largest_fraction": 0.9766454352441614,
+        "all_bbox": [
+          238,
+          89,
+          283,
+          123
+        ],
+        "largest_bbox": [
+          238,
+          89,
+          283,
+          116
+        ],
+        "all_diagonal": 57.8013840664737,
+        "largest_diagonal": 53.85164807134504,
+        "diagonal_inflation": 1.073344756132549
+      },
+      "original_center_distance_px": 13.507508274291908,
+      "original_center_over_all_bbox": 0.10806006619433527,
+      "same_center_over_largest_target_bbox": 0.16535399034191392,
+      "largest_components_center_over_target_bbox": 0.15909310301049928,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "branch": "static",
+      "frame_sha256": "8ae6102d4cd3618536796fd83d1b83650e78343a7f9849a06b544d4e53f1253b",
+      "target": {
+        "pixels": 1217,
+        "largest_pixels": 1217,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1240,
+        "largest_pixels": 1240,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          318,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          318,
+          157
+        ],
+        "all_diagonal": 81.39410298049853,
+        "largest_diagonal": 81.39410298049853,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.12911811510112933,
+      "original_center_over_all_bbox": 0.0015520394386734743,
+      "same_center_over_largest_target_bbox": 0.0015520394386734743,
+      "largest_components_center_over_target_bbox": 0.0015520394386734743,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "branch": "motion",
+      "frame_sha256": "9a4b47d7911305b5d7439351e35b887698a66800a7ea18a33700b8325ae7a525",
+      "target": {
+        "pixels": 1124,
+        "largest_pixels": 1122,
+        "largest_fraction": 0.998220640569395,
+        "all_bbox": [
+          239,
+          73,
+          339,
+          134
+        ],
+        "largest_bbox": [
+          239,
+          73,
+          295,
+          134
+        ],
+        "all_diagonal": 118.51160280748886,
+        "largest_diagonal": 84.21995013059554,
+        "diagonal_inflation": 1.4071678102838938
+      },
+      "prediction": {
+        "pixels": 960,
+        "largest_pixels": 960,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          240,
+          79,
+          285,
+          128
+        ],
+        "largest_bbox": [
+          240,
+          79,
+          285,
+          128
+        ],
+        "all_diagonal": 67.94115100585212,
+        "largest_diagonal": 67.94115100585212,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.2210459759449699,
+      "original_center_over_all_bbox": 0.010303176625907644,
+      "same_center_over_largest_target_bbox": 0.014498298491646657,
+      "largest_components_center_over_target_bbox": 0.01321706082818838,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "branch": "static",
+      "frame_sha256": "9a4b47d7911305b5d7439351e35b887698a66800a7ea18a33700b8325ae7a525",
+      "target": {
+        "pixels": 1227,
+        "largest_pixels": 1227,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1281,
+        "largest_pixels": 1281,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          318,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          318,
+          157
+        ],
+        "all_diagonal": 81.39410298049853,
+        "largest_diagonal": 81.39410298049853,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.17194617541888552,
+      "original_center_over_all_bbox": 0.0020668458904481305,
+      "same_center_over_largest_target_bbox": 0.0020668458904481305,
+      "largest_components_center_over_target_bbox": 0.0020668458904481305,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "branch": "motion",
+      "frame_sha256": "dad7872e18e5d6346a52f6166f7466d88d370d660d91266bb12f2df74ed26567",
+      "target": {
+        "pixels": 1229,
+        "largest_pixels": 1225,
+        "largest_fraction": 0.9967453213995118,
+        "all_bbox": [
+          241,
+          54,
+          331,
+          127
+        ],
+        "largest_bbox": [
+          241,
+          54,
+          287,
+          127
+        ],
+        "all_diagonal": 117.29023829799307,
+        "largest_diagonal": 87.66413177577246,
+        "diagonal_inflation": 1.337950150444635
+      },
+      "prediction": {
+        "pixels": 1365,
+        "largest_pixels": 1365,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          239,
+          57,
+          284,
+          129
+        ],
+        "largest_bbox": [
+          239,
+          57,
+          284,
+          129
+        ],
+        "all_diagonal": 86.28441342444185,
+        "largest_diagonal": 86.28441342444185,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.6946398380565881,
+      "original_center_over_all_bbox": 0.014448259826628597,
+      "same_center_over_largest_target_bbox": 0.019331051408700905,
+      "largest_components_center_over_target_bbox": 0.020315201827011672,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "branch": "static",
+      "frame_sha256": "dad7872e18e5d6346a52f6166f7466d88d370d660d91266bb12f2df74ed26567",
+      "target": {
+        "pixels": 1213,
+        "largest_pixels": 1213,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          319,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          319,
+          157
+        ],
+        "all_diagonal": 82.29216244576394,
+        "largest_diagonal": 82.29216244576394,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1291,
+        "largest_pixels": 1291,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          121,
+          322,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          121,
+          322,
+          157
+        ],
+        "all_diagonal": 86.33075929238663,
+        "largest_diagonal": 86.33075929238663,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.0829801856315107,
+      "original_center_over_all_bbox": 0.01316018626130122,
+      "same_center_over_largest_target_bbox": 0.01316018626130122,
+      "largest_components_center_over_target_bbox": 0.01316018626130122,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "branch": "motion",
+      "frame_sha256": "4dc04f765ed39a526c21661caeae75fe631bbb2db4545d6ecdb6da26e897568a",
+      "target": {
+        "pixels": 1299,
+        "largest_pixels": 1299,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          241,
+          45,
+          280,
+          123
+        ],
+        "largest_bbox": [
+          241,
+          45,
+          280,
+          123
+        ],
+        "all_diagonal": 88.54942122905152,
+        "largest_diagonal": 88.54942122905152,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1417,
+        "largest_pixels": 1417,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          241,
+          44,
+          281,
+          125
+        ],
+        "largest_bbox": [
+          241,
+          44,
+          281,
+          125
+        ],
+        "all_diagonal": 91.67878707749138,
+        "largest_diagonal": 91.67878707749138,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.295568348306182,
+      "original_center_over_all_bbox": 0.0033378913628541165,
+      "same_center_over_largest_target_bbox": 0.0033378913628541165,
+      "largest_components_center_over_target_bbox": 0.0033378913628541165,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "branch": "static",
+      "frame_sha256": "4dc04f765ed39a526c21661caeae75fe631bbb2db4545d6ecdb6da26e897568a",
+      "target": {
+        "pixels": 1227,
+        "largest_pixels": 1227,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          246,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1217,
+        "largest_pixels": 1217,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          122,
+          321,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          122,
+          321,
+          157
+        ],
+        "all_diagonal": 85.0,
+        "largest_diagonal": 85.0,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.49719134602332243,
+      "original_center_over_all_bbox": 0.005976392832182827,
+      "same_center_over_largest_target_bbox": 0.005976392832182827,
+      "largest_components_center_over_target_bbox": 0.005976392832182827,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "branch": "motion",
+      "frame_sha256": "573ea9fc482cb4b2229b12e131ed380e3b42e1f51ef6414a9354f416b9832090",
+      "target": {
+        "pixels": 1426,
+        "largest_pixels": 1426,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          237,
+          43,
+          274,
+          125
+        ],
+        "largest_bbox": [
+          237,
+          43,
+          274,
+          125
+        ],
+        "all_diagonal": 91.28526715741155,
+        "largest_diagonal": 91.28526715741155,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1434,
+        "largest_pixels": 1434,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          237,
+          43,
+          275,
+          124
+        ],
+        "largest_bbox": [
+          237,
+          43,
+          275,
+          124
+        ],
+        "all_diagonal": 90.80198235721508,
+        "largest_diagonal": 90.80198235721508,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 2.611273338902224,
+      "original_center_over_all_bbox": 0.02860563834905983,
+      "same_center_over_largest_target_bbox": 0.02860563834905983,
+      "largest_components_center_over_target_bbox": 0.02860563834905983,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "branch": "static",
+      "frame_sha256": "573ea9fc482cb4b2229b12e131ed380e3b42e1f51ef6414a9354f416b9832090",
+      "target": {
+        "pixels": 1229,
+        "largest_pixels": 1229,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1221,
+        "largest_pixels": 1221,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          122,
+          320,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          122,
+          320,
+          157
+        ],
+        "all_diagonal": 84.09518416651456,
+        "largest_diagonal": 84.09518416651456,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.26949019370871874,
+      "original_center_over_all_bbox": 0.0032393549785333523,
+      "same_center_over_largest_target_bbox": 0.0032393549785333523,
+      "largest_components_center_over_target_bbox": 0.0032393549785333523,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "branch": "motion",
+      "frame_sha256": "aa2dbfedaf41a34416f496f396ce7bd2bd80f7074e2383ca247b8eef7a32b8cb",
+      "target": {
+        "pixels": 1464,
+        "largest_pixels": 1464,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          233,
+          41,
+          265,
+          125
+        ],
+        "largest_bbox": [
+          233,
+          41,
+          265,
+          125
+        ],
+        "all_diagonal": 91.18113840043894,
+        "largest_diagonal": 91.18113840043894,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1740,
+        "largest_pixels": 1740,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          232,
+          41,
+          264,
+          126
+        ],
+        "largest_bbox": [
+          232,
+          41,
+          264,
+          126
+        ],
+        "all_diagonal": 92.11405973031478,
+        "largest_diagonal": 92.11405973031478,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.8648638688057991,
+      "original_center_over_all_bbox": 0.009485118128352253,
+      "same_center_over_largest_target_bbox": 0.009485118128352253,
+      "largest_components_center_over_target_bbox": 0.009485118128352253,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "branch": "static",
+      "frame_sha256": "aa2dbfedaf41a34416f496f396ce7bd2bd80f7074e2383ca247b8eef7a32b8cb",
+      "target": {
+        "pixels": 1221,
+        "largest_pixels": 1221,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1222,
+        "largest_pixels": 1222,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          244,
+          122,
+          315,
+          156
+        ],
+        "largest_bbox": [
+          244,
+          122,
+          315,
+          156
+        ],
+        "all_diagonal": 80.05623023850174,
+        "largest_diagonal": 80.05623023850174,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.067711317482907,
+      "original_center_over_all_bbox": 0.01283421828574225,
+      "same_center_over_largest_target_bbox": 0.01283421828574225,
+      "largest_components_center_over_target_bbox": 0.01283421828574225,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "branch": "motion",
+      "frame_sha256": "01fba0eb6ec8cd41fa391e0a8a1e2a69577abcdd79913b68e74e4061adbf4f44",
+      "target": {
+        "pixels": 1513,
+        "largest_pixels": 1513,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          230,
+          40,
+          258,
+          124
+        ],
+        "largest_bbox": [
+          230,
+          40,
+          258,
+          124
+        ],
+        "all_diagonal": 89.81091247727082,
+        "largest_diagonal": 89.81091247727082,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1665,
+        "largest_pixels": 1651,
+        "largest_fraction": 0.9915915915915916,
+        "all_bbox": [
+          217,
+          39,
+          257,
+          127
+        ],
+        "largest_bbox": [
+          227,
+          39,
+          257,
+          127
+        ],
+        "all_diagonal": 97.98979538707079,
+        "largest_diagonal": 94.2443632266673,
+        "diagonal_inflation": 1.0397417100839796
+      },
+      "original_center_distance_px": 1.2011342360423218,
+      "original_center_over_all_bbox": 0.013374034434248764,
+      "same_center_over_largest_target_bbox": 0.013374034434248764,
+      "largest_components_center_over_target_bbox": 0.010297524903951227,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "branch": "static",
+      "frame_sha256": "01fba0eb6ec8cd41fa391e0a8a1e2a69577abcdd79913b68e74e4061adbf4f44",
+      "target": {
+        "pixels": 1208,
+        "largest_pixels": 1208,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "largest_bbox": [
+          245,
+          122,
+          319,
+          157
+        ],
+        "all_diagonal": 83.19254774317228,
+        "largest_diagonal": 83.19254774317228,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1163,
+        "largest_pixels": 1163,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          244,
+          122,
+          315,
+          156
+        ],
+        "largest_bbox": [
+          244,
+          122,
+          315,
+          156
+        ],
+        "all_diagonal": 80.05623023850174,
+        "largest_diagonal": 80.05623023850174,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.8800603605781354,
+      "original_center_over_all_bbox": 0.022598903526577407,
+      "same_center_over_largest_target_bbox": 0.022598903526577407,
+      "largest_components_center_over_target_bbox": 0.022598903526577407,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "branch": "motion",
+      "frame_sha256": "47b2fb33b37f3a4f39d63094a675285bc613f134353f4e73ab0239ea718cb4f0",
+      "target": {
+        "pixels": 1061,
+        "largest_pixels": 1061,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          260,
+          32,
+          318,
+          62
+        ],
+        "largest_bbox": [
+          260,
+          32,
+          318,
+          62
+        ],
+        "all_diagonal": 66.64833081180653,
+        "largest_diagonal": 66.64833081180653,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 776,
+        "largest_pixels": 776,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          257,
+          34,
+          308,
+          61
+        ],
+        "largest_bbox": [
+          257,
+          34,
+          308,
+          61
+        ],
+        "all_diagonal": 59.0592922409336,
+        "largest_diagonal": 59.0592922409336,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 2.68695494990973,
+      "original_center_over_all_bbox": 0.04031541251193263,
+      "same_center_over_largest_target_bbox": 0.04031541251193263,
+      "largest_components_center_over_target_bbox": 0.04031541251193263,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "branch": "static",
+      "frame_sha256": "47b2fb33b37f3a4f39d63094a675285bc613f134353f4e73ab0239ea718cb4f0",
+      "target": {
+        "pixels": 940,
+        "largest_pixels": 940,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          44,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          272,
+          44,
+          327,
+          72
+        ],
+        "all_diagonal": 63.06346010171025,
+        "largest_diagonal": 63.06346010171025,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 947,
+        "largest_pixels": 947,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          271,
+          44,
+          322,
+          73
+        ],
+        "largest_bbox": [
+          271,
+          44,
+          322,
+          73
+        ],
+        "all_diagonal": 60.03332407921454,
+        "largest_diagonal": 60.03332407921454,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.950150607807671,
+      "original_center_over_all_bbox": 0.015066579066154086,
+      "same_center_over_largest_target_bbox": 0.015066579066154086,
+      "largest_components_center_over_target_bbox": 0.015066579066154086,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "branch": "motion",
+      "frame_sha256": "9a8b901d484ee5231f7aa6c3b0af808abd64b5d5306c58fe0d806f5094e862a6",
+      "target": {
+        "pixels": 1130,
+        "largest_pixels": 1130,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          246,
+          20,
+          306,
+          53
+        ],
+        "largest_bbox": [
+          246,
+          20,
+          306,
+          53
+        ],
+        "all_diagonal": 69.83552104767315,
+        "largest_diagonal": 69.83552104767315,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1380,
+        "largest_pixels": 1380,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          240,
+          21,
+          305,
+          55
+        ],
+        "largest_bbox": [
+          240,
+          21,
+          305,
+          55
+        ],
+        "all_diagonal": 74.70609078247904,
+        "largest_diagonal": 74.70609078247904,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 2.9182862752028838,
+      "original_center_over_all_bbox": 0.041787993150516026,
+      "same_center_over_largest_target_bbox": 0.041787993150516026,
+      "largest_components_center_over_target_bbox": 0.041787993150516026,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "branch": "static",
+      "frame_sha256": "9a8b901d484ee5231f7aa6c3b0af808abd64b5d5306c58fe0d806f5094e862a6",
+      "target": {
+        "pixels": 931,
+        "largest_pixels": 931,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          44,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          272,
+          44,
+          327,
+          72
+        ],
+        "all_diagonal": 63.06346010171025,
+        "largest_diagonal": 63.06346010171025,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 955,
+        "largest_pixels": 955,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          270,
+          45,
+          327,
+          71
+        ],
+        "largest_bbox": [
+          270,
+          45,
+          327,
+          71
+        ],
+        "all_diagonal": 63.97655820689325,
+        "largest_diagonal": 63.97655820689325,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.6836201366601881,
+      "original_center_over_all_bbox": 0.010840193918278972,
+      "same_center_over_largest_target_bbox": 0.010840193918278972,
+      "largest_components_center_over_target_bbox": 0.010840193918278972,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "branch": "motion",
+      "frame_sha256": "4db811b7a594fe3b82950ce3675db3a2e00e8e48f6cea8e9db52cc2d9048226a",
+      "target": {
+        "pixels": 1234,
+        "largest_pixels": 1234,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          231,
+          16,
+          294,
+          49
+        ],
+        "largest_bbox": [
+          231,
+          16,
+          294,
+          49
+        ],
+        "all_diagonal": 72.47068372797375,
+        "largest_diagonal": 72.47068372797375,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1263,
+        "largest_pixels": 1263,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          219,
+          20,
+          291,
+          49
+        ],
+        "largest_bbox": [
+          219,
+          20,
+          291,
+          49
+        ],
+        "all_diagonal": 78.92401408950256,
+        "largest_diagonal": 78.92401408950256,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 5.191177650495935,
+      "original_center_over_all_bbox": 0.07163141540076481,
+      "same_center_over_largest_target_bbox": 0.07163141540076481,
+      "largest_components_center_over_target_bbox": 0.07163141540076481,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "branch": "static",
+      "frame_sha256": "4db811b7a594fe3b82950ce3675db3a2e00e8e48f6cea8e9db52cc2d9048226a",
+      "target": {
+        "pixels": 934,
+        "largest_pixels": 934,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          44,
+          328,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          44,
+          328,
+          72
+        ],
+        "all_diagonal": 63.06346010171025,
+        "largest_diagonal": 63.06346010171025,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 849,
+        "largest_pixels": 849,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          45,
+          329,
+          66
+        ],
+        "largest_bbox": [
+          272,
+          45,
+          329,
+          66
+        ],
+        "all_diagonal": 62.03224967708329,
+        "largest_diagonal": 62.03224967708329,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.934235590909031,
+      "original_center_over_all_bbox": 0.030671256981292333,
+      "same_center_over_largest_target_bbox": 0.030671256981292333,
+      "largest_components_center_over_target_bbox": 0.030671256981292333,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "branch": "motion",
+      "frame_sha256": "3cf6f0d6f74a906ead4959ec1a9d57f6a887ecf8a46c9483a2f4a9e5554e1cfd",
+      "target": {
+        "pixels": 1313,
+        "largest_pixels": 1313,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          217,
+          14,
+          280,
+          48
+        ],
+        "largest_bbox": [
+          217,
+          14,
+          280,
+          48
+        ],
+        "all_diagonal": 72.94518489934754,
+        "largest_diagonal": 72.94518489934754,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1298,
+        "largest_pixels": 1298,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          217,
+          12,
+          277,
+          46
+        ],
+        "largest_bbox": [
+          217,
+          12,
+          277,
+          46
+        ],
+        "all_diagonal": 70.32780389006896,
+        "largest_diagonal": 70.32780389006896,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.8432170221250086,
+      "original_center_over_all_bbox": 0.025268522174127703,
+      "same_center_over_largest_target_bbox": 0.025268522174127703,
+      "largest_components_center_over_target_bbox": 0.025268522174127703,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "branch": "static",
+      "frame_sha256": "3cf6f0d6f74a906ead4959ec1a9d57f6a887ecf8a46c9483a2f4a9e5554e1cfd",
+      "target": {
+        "pixels": 934,
+        "largest_pixels": 934,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          44,
+          328,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          44,
+          328,
+          72
+        ],
+        "all_diagonal": 63.06346010171025,
+        "largest_diagonal": 63.06346010171025,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 781,
+        "largest_pixels": 781,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          270,
+          44,
+          325,
+          67
+        ],
+        "largest_bbox": [
+          270,
+          44,
+          325,
+          67
+        ],
+        "all_diagonal": 60.92618484691127,
+        "largest_diagonal": 60.92618484691127,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 5.173013910199141,
+      "original_center_over_all_bbox": 0.0820287041316157,
+      "same_center_over_largest_target_bbox": 0.0820287041316157,
+      "largest_components_center_over_target_bbox": 0.0820287041316157,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "branch": "motion",
+      "frame_sha256": "649a528ad0f00d109a0e458c74b81348afd7ea53fbc6ae529a60bdd23b6fce66",
+      "target": {
+        "pixels": 1398,
+        "largest_pixels": 1398,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          204,
+          14,
+          271,
+          49
+        ],
+        "largest_bbox": [
+          204,
+          14,
+          271,
+          49
+        ],
+        "all_diagonal": 76.94153624668537,
+        "largest_diagonal": 76.94153624668537,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1396,
+        "largest_pixels": 1396,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          201,
+          16,
+          268,
+          48
+        ],
+        "largest_bbox": [
+          201,
+          16,
+          268,
+          48
+        ],
+        "all_diagonal": 75.58438992278762,
+        "largest_diagonal": 75.58438992278762,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.6607852699135939,
+      "original_center_over_all_bbox": 0.021585028723482762,
+      "same_center_over_largest_target_bbox": 0.021585028723482762,
+      "largest_components_center_over_target_bbox": 0.021585028723482762,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "branch": "static",
+      "frame_sha256": "649a528ad0f00d109a0e458c74b81348afd7ea53fbc6ae529a60bdd23b6fce66",
+      "target": {
+        "pixels": 921,
+        "largest_pixels": 921,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 948,
+        "largest_pixels": 948,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          45,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          272,
+          45,
+          327,
+          72
+        ],
+        "all_diagonal": 62.609903369994115,
+        "largest_diagonal": 62.609903369994115,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.23955138580026425,
+      "original_center_over_all_bbox": 0.0038814428966621557,
+      "same_center_over_largest_target_bbox": 0.0038814428966621557,
+      "largest_components_center_over_target_bbox": 0.0038814428966621557,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "branch": "motion",
+      "frame_sha256": "677111cbc5d882487631462eb04aba615c0fd32e884d406daca2c26e92362a2e",
+      "target": {
+        "pixels": 1451,
+        "largest_pixels": 1451,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          194,
+          18,
+          262,
+          52
+        ],
+        "largest_bbox": [
+          194,
+          18,
+          262,
+          52
+        ],
+        "all_diagonal": 77.3692445355388,
+        "largest_diagonal": 77.3692445355388,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1366,
+        "largest_pixels": 1366,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          194,
+          19,
+          258,
+          52
+        ],
+        "largest_bbox": [
+          194,
+          19,
+          258,
+          52
+        ],
+        "all_diagonal": 73.35529974037323,
+        "largest_diagonal": 73.35529974037323,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 1.5334323805288734,
+      "original_center_over_all_bbox": 0.019819663352464382,
+      "same_center_over_largest_target_bbox": 0.019819663352464382,
+      "largest_components_center_over_target_bbox": 0.019819663352464382,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "branch": "static",
+      "frame_sha256": "677111cbc5d882487631462eb04aba615c0fd32e884d406daca2c26e92362a2e",
+      "target": {
+        "pixels": 923,
+        "largest_pixels": 923,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 946,
+        "largest_pixels": 946,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.5009735817970185,
+      "original_center_over_all_bbox": 0.008117257781604909,
+      "same_center_over_largest_target_bbox": 0.008117257781604909,
+      "largest_components_center_over_target_bbox": 0.008117257781604909,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "branch": "motion",
+      "frame_sha256": "aedff5e80a9838901b7bfe8e28282198200080904f713faa4328b671e50b3d08",
+      "target": {
+        "pixels": 1445,
+        "largest_pixels": 1445,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          186,
+          23,
+          254,
+          56
+        ],
+        "largest_bbox": [
+          186,
+          23,
+          254,
+          56
+        ],
+        "all_diagonal": 76.92203845452875,
+        "largest_diagonal": 76.92203845452875,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1473,
+        "largest_pixels": 1473,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          184,
+          23,
+          247,
+          57
+        ],
+        "largest_bbox": [
+          184,
+          23,
+          247,
+          57
+        ],
+        "all_diagonal": 72.94518489934754,
+        "largest_diagonal": 72.94518489934754,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 3.2979076807572585,
+      "original_center_over_all_bbox": 0.04287337864436295,
+      "same_center_over_largest_target_bbox": 0.04287337864436295,
+      "largest_components_center_over_target_bbox": 0.04287337864436295,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "branch": "static",
+      "frame_sha256": "aedff5e80a9838901b7bfe8e28282198200080904f713faa4328b671e50b3d08",
+      "target": {
+        "pixels": 914,
+        "largest_pixels": 914,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          326,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          326,
+          72
+        ],
+        "all_diagonal": 60.8276253029822,
+        "largest_diagonal": 60.8276253029822,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 915,
+        "largest_pixels": 915,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          326,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          326,
+          72
+        ],
+        "all_diagonal": 60.8276253029822,
+        "largest_diagonal": 60.8276253029822,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.025300544503811435,
+      "original_center_over_all_bbox": 0.0004159383894700723,
+      "same_center_over_largest_target_bbox": 0.0004159383894700723,
+      "largest_components_center_over_target_bbox": 0.0004159383894700723,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "branch": "motion",
+      "frame_sha256": "c03d156d11420f5ed8f8c6313bccde9eae1a14546a35865b28cdef6f8285e623",
+      "target": {
+        "pixels": 1438,
+        "largest_pixels": 1438,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          179,
+          28,
+          246,
+          60
+        ],
+        "largest_bbox": [
+          179,
+          28,
+          246,
+          60
+        ],
+        "all_diagonal": 75.58438992278762,
+        "largest_diagonal": 75.58438992278762,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1532,
+        "largest_pixels": 1532,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          175,
+          24,
+          236,
+          56
+        ],
+        "largest_bbox": [
+          175,
+          24,
+          236,
+          56
+        ],
+        "all_diagonal": 70.2353187506115,
+        "largest_diagonal": 70.2353187506115,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 7.2482301158614435,
+      "original_center_over_all_bbox": 0.09589586055091258,
+      "same_center_over_largest_target_bbox": 0.09589586055091258,
+      "largest_components_center_over_target_bbox": 0.09589586055091258,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "branch": "static",
+      "frame_sha256": "c03d156d11420f5ed8f8c6313bccde9eae1a14546a35865b28cdef6f8285e623",
+      "target": {
+        "pixels": 928,
+        "largest_pixels": 928,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          327,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 956,
+        "largest_pixels": 956,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          273,
+          45,
+          329,
+          72
+        ],
+        "largest_bbox": [
+          273,
+          45,
+          329,
+          72
+        ],
+        "all_diagonal": 63.50590523722971,
+        "largest_diagonal": 63.50590523722971,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.6524180041191763,
+      "original_center_over_all_bbox": 0.01057110656773368,
+      "same_center_over_largest_target_bbox": 0.01057110656773368,
+      "largest_components_center_over_target_bbox": 0.01057110656773368,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "branch": "motion",
+      "frame_sha256": "cf74d7621670076c5e4d0d5188c9936c578ebded400bcb7ff243eb2f7ed85ada",
+      "target": {
+        "pixels": 1507,
+        "largest_pixels": 1507,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          174,
+          33,
+          245,
+          63
+        ],
+        "largest_bbox": [
+          174,
+          33,
+          245,
+          63
+        ],
+        "all_diagonal": 78.39005038906404,
+        "largest_diagonal": 78.39005038906404,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 1347,
+        "largest_pixels": 1347,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          172,
+          33,
+          233,
+          62
+        ],
+        "largest_bbox": [
+          172,
+          33,
+          233,
+          62
+        ],
+        "all_diagonal": 68.87670143089025,
+        "largest_diagonal": 68.87670143089025,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 6.615432917118194,
+      "original_center_over_all_bbox": 0.08439123185001923,
+      "same_center_over_largest_target_bbox": 0.08439123185001923,
+      "largest_components_center_over_target_bbox": 0.08439123185001923,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "branch": "static",
+      "frame_sha256": "cf74d7621670076c5e4d0d5188c9936c578ebded400bcb7ff243eb2f7ed85ada",
+      "target": {
+        "pixels": 920,
+        "largest_pixels": 920,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          45,
+          326,
+          72
+        ],
+        "largest_bbox": [
+          272,
+          45,
+          326,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "prediction": {
+        "pixels": 919,
+        "largest_pixels": 919,
+        "largest_fraction": 1.0,
+        "all_bbox": [
+          272,
+          45,
+          326,
+          72
+        ],
+        "largest_bbox": [
+          272,
+          45,
+          326,
+          72
+        ],
+        "all_diagonal": 61.71709649683789,
+        "largest_diagonal": 61.71709649683789,
+        "diagonal_inflation": 1.0
+      },
+      "original_center_distance_px": 0.09882641798654887,
+      "original_center_over_all_bbox": 0.001601281064665968,
+      "same_center_over_largest_target_bbox": 0.001601281064665968,
+      "largest_components_center_over_target_bbox": 0.001601281064665968,
+      "target_is_fragmented": false,
+      "prediction_is_fragmented": false,
+      "interpretation": "Largest connected component is a sensitivity reference, not ground-truth object segmentation"
+    }
+  ],
+  "scope": "Two training windows, two branches, 18 lossless PNGs; auxiliary proxy sensitivity only",
+  "warning": "Do not substitute connected components for tracked object labels or the pre-registered gate"
+}

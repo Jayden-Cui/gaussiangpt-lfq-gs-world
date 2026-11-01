@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "check_output": "PASS: detached outlier, fragmented target, empty target",
+  "code_manifest_sha256": "91bbc4af559eda5148190117c805bd3f790c7be8a7616ec4be108f341361bd57",
+  "analysis_script_sha256": "139ee537f19e47451dbc9d80d06fcf64e3ee16111f2ae1c7a065fc443dedbbd0",
+  "test_script_sha256": "27560720392845babe3cd382a608a2acfa505731d60c12dcd7f276c2d97128cc",
+  "scope": "Synthetic masks check outlier, fragmentation and empty mask; source report is a separate analysis"
+}
