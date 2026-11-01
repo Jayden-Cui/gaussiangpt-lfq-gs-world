@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "sources": {
+    "full_model.py": "cc239c19835d497897bd5b24070729f97afb05f986f859d597c5ed10776750cf",
+    "test_full.py": "4d2c2d9efcd90db3ec9c2016a0247ad94579501e824d965f6d7817d2830eaf26",
+    "data.py": "bc5db0f51e5ebedfe771af1ef4e2205eb04c95bd3a948aef4613854a9c58ba2f",
+    "protocol.json": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+    "io_utils.py": "c800dcf4a0c1babc14c08c422c425b4d49c5091134f0946db175140bbacdfc41"
+  },
+  "initial_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "initial_posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+  "schedule_sha256": "cd2767cb379c67f879a087787fd58f224354a986217dd1aa7858289c4afa75d2",
+  "elapsed_seconds": 1.8818611389724538
+}

@@ -1,0 +1,1030 @@
+{
+  "status": "complete",
+  "frames": 177,
+  "windows": 168,
+  "frame_gap": 1,
+  "maximum_required_radius": 4,
+  "radius4_failed_windows": 0,
+  "rows": [
+    {
+      "start": 0,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 1,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 2,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 3,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 4,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 5,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 6,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 7,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 8,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 9,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 10,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 11,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 12,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 13,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 14,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 15,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 16,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 17,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 18,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 19,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 20,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 21,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 22,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 23,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 24,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 25,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 26,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 27,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 28,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 29,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 30,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 31,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 32,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 33,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 34,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 35,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 36,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 37,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 38,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 39,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 40,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 41,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 42,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 43,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 44,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 45,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 46,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 47,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 48,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 49,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 50,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 51,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 52,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 53,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 54,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 55,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 56,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 57,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 58,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 59,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 60,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 61,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 62,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 63,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 64,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 65,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 66,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 67,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 68,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 69,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 70,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 71,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 72,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 73,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 74,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 75,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 76,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 77,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 78,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 79,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 80,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 81,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 82,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 83,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 84,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 85,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 86,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 87,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 88,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 89,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 90,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 91,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 92,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 93,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 94,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 95,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 96,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 97,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 98,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 99,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 100,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 101,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 102,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 103,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 104,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 105,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 106,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 107,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 108,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 109,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 110,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 111,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 112,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 113,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 114,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 115,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 116,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 117,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 118,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 119,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 120,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 121,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 122,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 123,
+      "required_radius": 4,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 124,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 125,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 126,
+      "required_radius": 3,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 127,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 128,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 129,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 130,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 131,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 132,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 133,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 134,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 135,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 136,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 137,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 138,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 139,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 140,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 141,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 142,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 143,
+      "required_radius": 2,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 144,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 145,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 146,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 147,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 148,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 149,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 150,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 151,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 152,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 153,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 154,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 155,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 156,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 157,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 158,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 159,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 160,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 161,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 162,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 163,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 164,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 165,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 166,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    },
+    {
+      "start": 167,
+      "required_radius": 1,
+      "r4_missing_occurrences": 0
+    }
+  ],
+  "coordinate_counts": [
+    786,
+    768,
+    778,
+    798,
+    801,
+    791,
+    793,
+    797,
+    795,
+    790,
+    807,
+    806,
+    814,
+    823,
+    837,
+    815,
+    826,
+    831,
+    840,
+    838,
+    826,
+    825,
+    837,
+    827,
+    841,
+    832,
+    814,
+    813,
+    822,
+    844,
+    821,
+    814,
+    820,
+    825,
+    828,
+    834,
+    823,
+    840,
+    853,
+    849,
+    868,
+    873,
+    891,
+    893,
+    863,
+    886,
+    897,
+    875,
+    886,
+    886,
+    852,
+    847,
+    851,
+    834,
+    853,
+    836,
+    843,
+    850,
+    844,
+    842,
+    844,
+    843,
+    835,
+    848,
+    855,
+    853,
+    852,
+    855,
+    844,
+    857,
+    860,
+    865,
+    875,
+    864,
+    866,
+    860,
+    866,
+    855,
+    848,
+    868,
+    867,
+    867,
+    873,
+    864,
+    868,
+    861,
+    866,
+    866,
+    872,
+    861,
+    867,
+    870,
+    875,
+    858,
+    855,
+    859,
+    855,
+    868,
+    856,
+    859,
+    870,
+    880,
+    848,
+    857,
+    864,
+    860,
+    848,
+    843,
+    844,
+    843,
+    827,
+    847,
+    836,
+    833,
+    847,
+    851,
+    844,
+    842,
+    831,
+    847,
+    852,
+    876,
+    876,
+    875,
+    909,
+    933,
+    960,
+    974,
+    994,
+    984,
+    955,
+    931,
+    933,
+    946,
+    934,
+    913,
+    905,
+    922,
+    918,
+    916,
+    916,
+    909,
+    908,
+    898,
+    879,
+    889,
+    896,
+    885,
+    899,
+    922,
+    926,
+    914,
+    910,
+    908,
+    897,
+    901,
+    908,
+    923,
+    906,
+    925,
+    918,
+    916,
+    907,
+    904,
+    907,
+    890,
+    887,
+    903,
+    907,
+    903,
+    907,
+    895,
+    882,
+    895,
+    907,
+    893,
+    890
+  ],
+  "checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917"
+}

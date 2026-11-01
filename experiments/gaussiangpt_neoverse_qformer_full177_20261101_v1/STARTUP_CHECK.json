@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-11-01T06:51:32Z",
+  "files": {
+    "STARTED.json": {
+      "pid": 634332,
+      "modes": [
+        "posterior",
+        "initial_only"
+      ],
+      "protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+      "code_sha256": "ff6d0731dfc80edb59c36962b9ce521dbec311ea9798d08d6f5dc70fc0692bba"
+    },
+    "STATUS.json": {
+      "status": "running",
+      "phase": "preparing_complete_windows"
+    },
+    "PREPARE_STATUS.json": {
+      "status": "running",
+      "completed_windows": 49,
+      "total_windows": 168,
+      "elapsed_seconds": 69.76433801202802
+    },
+    "prepare_PROCESS.json": {
+      "pid": 634334,
+      "mode": "prepare",
+      "phase": "prepare.py"
+    }
+  },
+  "processes": {
+    "prepare_PROCESS.json": {
+      "pid": 634334,
+      "alive": true,
+      "this_run": true
+    }
+  }
+}

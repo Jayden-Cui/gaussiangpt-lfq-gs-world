@@ -22,6 +22,8 @@
 
 [Q-Former连续码接入测试](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/README.md) 已完成1200步。冻结空间解码器和原codec后，Q-Former的18帧平均运动MAE为0.029765，自由码参考0.029776，重建保持门槛全部通过；30个GS包／60次视角重放通过。仅初态控制误差增加9.31%，未达到预设10%，后续状态依赖检查未全部通过。逐帧画面基本保持，但仍有手部、边缘和多余占据问题；结果范围为两个已知TRAIN窗口，未运行LFQ/FSQ/AR。见[结果与视觉审查](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/EXECUTION.md)、[指标汇总](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/SUMMARY.md)。
 
+已提交的[全177帧训练](experiments/gaussiangpt_neoverse_qformer_full177_20261101_v1/README.md) 按最新路线先覆盖全部168个相邻T10窗口，两组均训练所有动作阶段：真实前缀posterior与受训initial_only基线。两组从相同权重开始，各2000步、有效B4，联合训练Q-Former及运动decoder，原codec和状态时空encoder冻结；连续码保持 [B,9,16]，不执行LFQ/FSQ。全部候选覆盖检查及新增采样／冻结边界／帧等权统计检查已通过。后台先生成完整缓存，再在GPU0／1并行训练；每组评估1512项窗口预测，主要指标按176个物理未来帧等权汇总。本轮没有未见动作划分，最终结果待验收。
+
 ## 结果和关键帧
 
 正式对照两臂各800步。按176个不同未来帧等权汇总，连续 Z／LFQ 的全图 MAE 分别为0.030408／0.032773；关键帧中的黄条和绿梁动作仍有明显错误，因此结果尚不支持动作重建成功或 AR 预测成功。

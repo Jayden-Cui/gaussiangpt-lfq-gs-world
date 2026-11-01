@@ -1,0 +1,8 @@
+test_full_sampler_no_lost_tail_and_all_render_horizons (test_full.FullTests) ... ok
+test_joint_update_freezes_state_encoder_and_unused_free_codes (test_full.FullTests) ... ok
+test_physical_frame_equal_aggregation_is_not_context_weighted (test_full.FullTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.881s
+
+OK
