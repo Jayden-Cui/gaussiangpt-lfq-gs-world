@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "f2e69c696330e184483b4bd945fc19b9c51d7e9ec1821fc82c635082d1003200",
+  "test_output": "PASS: paired comparison columns and rejection of malformed input frames\nPASS: reject truncated or non-hexadecimal SHA-256 bindings",
+  "source_identity": "verified_live_coordinator",
+  "scope": "synthetic crop check and source binding only; no result review"
+}

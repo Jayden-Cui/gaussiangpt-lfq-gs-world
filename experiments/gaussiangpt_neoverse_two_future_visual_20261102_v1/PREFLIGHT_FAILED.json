@@ -1,0 +1,8 @@
+{
+  "status": "failed_before_launch",
+  "phase": "source_hash_check",
+  "reason": "The expected source CODE.sha256 digest was copied incompletely into the visual protocol; its 55 characters did not match the actual 64-character digest.",
+  "training_signalled": false,
+  "gpu_used": false,
+  "resolution": "Use a new v2 directory and derive exact hashes from the source LAUNCHED.json rather than copying digest text manually."
+}

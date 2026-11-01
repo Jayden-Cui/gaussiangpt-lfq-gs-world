@@ -1,0 +1,16 @@
+{
+  "schema": "two_future_visual_review_assets_v1",
+  "source_directory": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_two_future_shared_decoder_20261102_v1",
+  "launch_sha256": "55a06afa415f0e7af347cf8599e159ace2c7b1f16bce4496e07512855c94e897",
+  "source_code_sha256": "3db58f078e15080bf1429379f4c5bea252c9d282765997adb5359bd",
+  "source_protocol_sha256": "d19e31666d9475b30b7b78d82aea4282aa0f7d0ec5f88c3cf9be356459f7fcb5",
+  "windows": [35, 123],
+  "horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "video_columns": ["source video", "moving-code output", "static-code output"],
+  "motion_sheet_columns": ["source video", "moving-code output"],
+  "static_sheet_columns": ["same-camera static codec reference", "static-code output"],
+  "video_fps": 5,
+  "maximum_wait_seconds": 2100,
+  "gpu_used": false,
+  "limits": "Two previously trained windows; comparison assets only, not an independent rendering, action-success decision, 3D pose test or cross-video result."
+}
