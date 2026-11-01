@@ -1,0 +1,214 @@
+{
+  "arms": {
+    "posterior": {
+      "blocks": [
+        {
+          "steps": [
+            1,
+            100
+          ],
+          "loss": 0.7171958523988724,
+          "latent_loss": 0.7171958523988724,
+          "occupancy_loss": 0.12034635939635337,
+          "feature_loss": 0.5968494915217161,
+          "code_rms": 0.11876266771927475,
+          "clip_fraction": 0.13,
+          "gradient_norm": 0.7804860006272792
+        },
+        {
+          "steps": [
+            401,
+            500
+          ],
+          "loss": 0.6400316678732634,
+          "latent_loss": 0.6400316678732634,
+          "occupancy_loss": 0.07796447555534541,
+          "feature_loss": 0.5620671896636487,
+          "code_rms": 0.13793028423562645,
+          "clip_fraction": 0,
+          "gradient_norm": 0.26620658099651334
+        },
+        {
+          "steps": [
+            501,
+            600
+          ],
+          "loss": 0.20663085773587228,
+          "latent_loss": 0.6411286973953247,
+          "occupancy_loss": 0.07552173517644406,
+          "feature_loss": 0.5656069608777762,
+          "code_rms": 0.14014226691797377,
+          "rgb_loss": 0.14251798586919903,
+          "clip_fraction": 0,
+          "gradient_norm": 0.14154677271842955
+        },
+        {
+          "steps": [
+            901,
+            1000
+          ],
+          "loss": 0.2099611746892333,
+          "latent_loss": 0.6595961043983698,
+          "occupancy_loss": 0.0786288068909198,
+          "feature_loss": 0.5809672954678535,
+          "code_rms": 0.15285006541758775,
+          "rgb_loss": 0.1440015626884997,
+          "clip_fraction": 0,
+          "gradient_norm": 0.2010397979617119
+        },
+        {
+          "steps": [
+            1401,
+            1500
+          ],
+          "loss": 0.23163522558286787,
+          "latent_loss": 0.6635155238956213,
+          "occupancy_loss": 0.07674616476520896,
+          "feature_loss": 0.5867693564295768,
+          "code_rms": 0.15789876129478217,
+          "rgb_loss": 0.16528367081657053,
+          "clip_fraction": 0.02,
+          "gradient_norm": 0.3559499427676201
+        },
+        {
+          "steps": [
+            1901,
+            2000
+          ],
+          "loss": 0.2408481272123754,
+          "latent_loss": 0.6746161532402039,
+          "occupancy_loss": 0.0786331030074507,
+          "feature_loss": 0.5959830495715142,
+          "code_rms": 0.15751934457570316,
+          "rgb_loss": 0.17338650969788433,
+          "clip_fraction": 0.04,
+          "gradient_norm": 0.4576109754294157
+        }
+      ],
+      "checkpoint_sha256": "29cb23b83e548a2d9986b337483b3173840a1fba277e3dd4c37d136a219fe275",
+      "decoder_digest": "f1a31053dcc8f36fadb3b3e60b94df4b372421aee9f7f0360aa9103e22c9ae5c",
+      "posterior_digest": "a1c6edeeef1c21b932a13d143bcaec5cbc20baa326ac11dc8c297a8292921e89",
+      "final_lr": 0.00003,
+      "last_query_gradient_norms": [
+        0.0000577275495743379,
+        0.00018115116108674556,
+        0.00009182869689539075,
+        0.000019526469259290025,
+        0.00003866804763674736,
+        0.000043854754039784893,
+        0.000014118414583208505,
+        0.00004663802610593848,
+        0.0003042736498173326
+      ]
+    },
+    "initial_only": {
+      "blocks": [
+        {
+          "steps": [
+            1,
+            100
+          ],
+          "loss": 0.7198752507567405,
+          "latent_loss": 0.7198752507567405,
+          "occupancy_loss": 0.12223875761963426,
+          "feature_loss": 0.5976364928483963,
+          "code_rms": 0.12460413347929716,
+          "clip_fraction": 0.14,
+          "gradient_norm": 0.8481008240580559
+        },
+        {
+          "steps": [
+            401,
+            500
+          ],
+          "loss": 0.6424979657679796,
+          "latent_loss": 0.6424979657679796,
+          "occupancy_loss": 0.07944482918828726,
+          "feature_loss": 0.5630531350523234,
+          "code_rms": 0.14124716905876994,
+          "clip_fraction": 0,
+          "gradient_norm": 0.2980570487678051
+        },
+        {
+          "steps": [
+            501,
+            600
+          ],
+          "loss": 0.20788881393149494,
+          "latent_loss": 0.6432652337104082,
+          "occupancy_loss": 0.07698869478888809,
+          "feature_loss": 0.5662765385210514,
+          "code_rms": 0.14725278049707413,
+          "rgb_loss": 0.14356228887103498,
+          "clip_fraction": 0,
+          "gradient_norm": 0.13464725676923991
+        },
+        {
+          "steps": [
+            901,
+            1000
+          ],
+          "loss": 0.2133990534581244,
+          "latent_loss": 0.6598937910795212,
+          "occupancy_loss": 0.07915142782963812,
+          "feature_loss": 0.5807423604279757,
+          "code_rms": 0.15647118605673313,
+          "rgb_loss": 0.14740967280231415,
+          "clip_fraction": 0,
+          "gradient_norm": 0.18174028005450965
+        },
+        {
+          "steps": [
+            1401,
+            1500
+          ],
+          "loss": 0.2346107546053827,
+          "latent_loss": 0.6674194145202637,
+          "occupancy_loss": 0.07820655634626746,
+          "feature_loss": 0.5892128562182188,
+          "code_rms": 0.1559762715920806,
+          "rgb_loss": 0.16786881145089866,
+          "clip_fraction": 0.05,
+          "gradient_norm": 0.4348690050840378
+        },
+        {
+          "steps": [
+            1901,
+            2000
+          ],
+          "loss": 0.24394099768251182,
+          "latent_loss": 0.677418881058693,
+          "occupancy_loss": 0.07960388960316778,
+          "feature_loss": 0.5978149908035993,
+          "code_rms": 0.1535744569823146,
+          "rgb_loss": 0.17619910784065723,
+          "clip_fraction": 0.03,
+          "gradient_norm": 0.4775329500436783
+        }
+      ],
+      "checkpoint_sha256": "28fb8d3698a1eb3319cf1d3a14d1c96d8ca39d9e14a7f18031eef142b2e287ce",
+      "decoder_digest": "8bc9cef4c8496953a7f84ca2d092bf31696fc7a19061b881ec9566ecaf9ade00",
+      "posterior_digest": "28ab69758d52b33d784696b241201b80dc87eac41fedb2cc4618cb5a83a2c719",
+      "final_lr": 0.00003,
+      "last_query_gradient_norms": [
+        0.00002833326107065659,
+        0.00018603872740641236,
+        0.00010224177094642073,
+        0.00008423713006777689,
+        0.00001579740273882635,
+        0.00005789862188976258,
+        0.00007914828165667132,
+        0.00005278690514387563,
+        0.00016729543858673424
+      ]
+    }
+  },
+  "gpu": "0, 11319, 81920, 0\n1, 10527, 81920, 0",
+  "available_host_gib": 232.54074096679688,
+  "disk_free_gib": 2308.0234375,
+  "environment_warm_reuse": [
+    "### env: vw1-alignment-v5-cpu@5813f763",
+    "spec_sha256: 5813f7633c71422690253c97ae01036751f261478e289039755caa730f0f752f",
+    "validated: Fresh /root/v5_cpu_doc_witness executed ENVIRONMENT.md invocation exactly once; exit0, 35 tests passed in1.977s."
+  ]
+}

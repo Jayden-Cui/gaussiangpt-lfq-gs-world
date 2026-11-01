@@ -1,0 +1,14 @@
+{
+  "screen": "gg_full177_fit_budget_20261101",
+  "submitted_at": "2026-11-01T17:12:51.932768+08:00",
+  "exit_code": 0,
+  "parent_step": 2000,
+  "additional_steps_per_arm": 7560,
+  "final_step": 9560,
+  "checkpoints": [
+    3890,
+    5780,
+    9560
+  ],
+  "code_sha256": "dcd21003d963e2942d7bf94f8c931735ef9e6619413569ada3acb1dd91cd76d3"
+}

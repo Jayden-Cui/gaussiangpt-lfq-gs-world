@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-11-01T17:13:55.330396+08:00",
+  "files": {
+    "STARTED.json": {
+      "pid": 657326,
+      "parent_step": 2000,
+      "final_step": 9560,
+      "modes": [
+        "posterior",
+        "initial_only"
+      ],
+      "code_sha256": "dcd21003d963e2942d7bf94f8c931735ef9e6619413569ada3acb1dd91cd76d3",
+      "schedule_sha256": "850768b55a64e1ac08f317ece4929cd36bfa20e19dc47602bcef54ea7feb7cbe"
+    },
+    "STATUS.json": {
+      "status": "running",
+      "phase": "paired_continuation",
+      "parent_step": 2000,
+      "final_step": 9560
+    },
+    "posterior/STATUS.json": {
+      "status": "running",
+      "phase": "render",
+      "global_step": 2001,
+      "additional_updates": 1,
+      "total_additional_updates": 7560,
+      "sweep": 1,
+      "mean_loss": 0.21642080694437027,
+      "training_seconds": 19.40887958102394
+    },
+    "initial_only/STATUS.json": {
+      "status": "running",
+      "phase": "render",
+      "global_step": 2001,
+      "additional_updates": 1,
+      "total_additional_updates": 7560,
+      "sweep": 1,
+      "mean_loss": 0.21994004026055336,
+      "training_seconds": 19.963696196035016
+    },
+    "posterior/preflight": {
+      "status": "passed",
+      "discarded_updates": 1,
+      "effective_batch_size": 4,
+      "windows": [
+        0,
+        35,
+        123,
+        167
+      ],
+      "horizon": 9,
+      "rgb_to_qformer_and_motion_decoder": true,
+      "restored_parent_models_and_adam": true
+    },
+    "posterior/latest_update": {
+      "step": 2019,
+      "additional_step": 19,
+      "sweep": 1,
+      "lr": 0.00003,
+      "training_seconds": 61.43121777498163
+    },
+    "initial_only/preflight": {
+      "status": "passed",
+      "discarded_updates": 1,
+      "effective_batch_size": 4,
+      "windows": [
+        0,
+        35,
+        123,
+        167
+      ],
+      "horizon": 9,
+      "rgb_to_qformer_and_motion_decoder": true,
+      "restored_parent_models_and_adam": true
+    },
+    "initial_only/latest_update": {
+      "step": 2020,
+      "additional_step": 20,
+      "sweep": 1,
+      "lr": 0.00003,
+      "training_seconds": 61.13022486999398
+    }
+  },
+  "processes": {
+    "posterior": {
+      "pid": 657330,
+      "mode": "posterior",
+      "phase": "worker",
+      "step": null,
+      "alive": true,
+      "matches_run": true
+    },
+    "initial_only": {
+      "pid": 657331,
+      "mode": "initial_only",
+      "phase": "worker",
+      "step": null,
+      "alive": true,
+      "matches_run": true
+    }
+  }
+}
