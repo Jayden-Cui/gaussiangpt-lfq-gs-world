@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "builder_sha256": "613002cf348d9c4de4bb5fbbb555dbca7c85988944f58ac69212c75b7851cc57",
+  "test_sha256": "729da988a7ed8bf83e02220bc24dda2108d3294250a962142f6e4062098aad40",
+  "validator_sha256": "6d86e55da2d0b0baccca94e92351a198963a0a3fdcf8ee9ba14b3a73a3b17346",
+  "valid_receipt_finalized": true,
+  "failed_replay_does_not_create_final_receipt": true,
+  "failed_pending_receipt_preserved": true,
+  "scope": "Synthetic CPU provenance test only; no real teacher selected"
+}
