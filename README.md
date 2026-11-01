@@ -14,7 +14,9 @@
 
 ## 新增诊断：自由未来特征
 
-[两端关键帧的有界／无界残差诊断](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/README.md) 绕过动作编码和运动解码，在完整初态坐标上直接优化未来特征，固定同一份原始 codec，检查第 44／132 帧的姿态是否能恢复。每端点两种参数化，各 600 步；保留真实未来状态直接解码参考，并记录残差饱和、稀疏剪枝和物体颜色区域的位置／方向。源码、协议和 CPU 检查已收录；实验已经在 134 启动，最终结果与视觉验收尚未纳入本次提交。这是能力诊断，不能当作动作码或 AR 成功结果。
+[两端关键帧的有界／无界残差诊断](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/README.md) 绕过动作编码和运动解码，在完整初态坐标上直接优化未来特征，固定同一份原始 codec。四组各 600 步已完成，独立 GS 重放通过；黄条仍破碎，绿梁没有恢复，未通过物体恢复验收。见[完整指标](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/SUMMARY.md)、[人工视觉审查](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/EXECUTION.md)、[第 44 帧对照](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/s035/comparison_v0.png)及[第 132 帧对照](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/s123/comparison_v0.png)。
+
+后续[真实未来坐标＋自由特征对照](experiments/gaussiangpt_neoverse_future_support_20261101_v1/README.md) 已在 134 启动：把优化支撑替换为真实未来坐标，特征只从初态按空间位置复制／最近邻填充。保持同样四组、600 步预算和完全冻结的 codec，并与上一轮同模式比较。未来坐标属于已知参考信息，并非模型预测；本次提交包含源码与 CPU 检查，后续结果待验收。两轮均是端点拟合诊断，不能当作动作码或 AR 成功结果。
 
 ## 结果和关键帧
 

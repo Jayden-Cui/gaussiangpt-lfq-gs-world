@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "command": "python -B -m unittest -v test_support.py",
+  "sources": {
+    "support.py": "b20779d38910bbacb6e8085a638072fac7207b03b234e29bdd37a0c63ac80873",
+    "test_support.py": "610c77c15d4f8ac98e9d18756b8a6c13d59fea21fdb8ad37fc00aa0c2c2e444f"
+  },
+  "previous_core_checks": "unchanged core.py; prior receipt and source SHA bound in protocol.json"
+}

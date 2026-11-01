@@ -1,0 +1,137 @@
+{
+  "schema": "frozen_native_oracle_future_support_diagnostic_v1",
+  "clip": "buildingblock_tower_17_176",
+  "purpose": "Isolate initial versus actual-future sparse support with initial-only feature transfer",
+  "starts": [
+    35,
+    123
+  ],
+  "horizon": 9,
+  "source_sequence_frames": 177,
+  "source_frame_gap": 1,
+  "modes": [
+    "bounded",
+    "unbounded"
+  ],
+  "steps_per_case": 600,
+  "learning_rate": 0.1,
+  "final_learning_rate": 0.01,
+  "schedule": "cosine over the fixed 600 updates",
+  "optimizer": "Adam",
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.0,
+  "gradient_clipping": null,
+  "seed": 20261101,
+  "residual_initialization": "zero residual around spatially transferred initial features; exact overlap then deterministic nearest initial cell",
+  "bounded_equation": "F0 + a*tanh(R/a), a=3*std; equals original F0+a*tanh(U), U=R/a",
+  "unbounded_equation": "F0 + R",
+  "parameter_units": "feature units; equal initial Jacobian on nonzero-std channels",
+  "std_source_frame": 0,
+  "std_unbiased": false,
+  "support": "Complete actual future coordinates; oracle support diagnostic, not a predicted occupancy set",
+  "native_codec": "original baseline, all parameters and buffers frozen, eval, native hard pruning",
+  "codec_checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "decoder_precision": "float64",
+  "feature_dtype": "float32",
+  "resolution_hw": [
+    252,
+    448
+  ],
+  "loss": "real-view full MAE + hand ROI MAE + (10/9)*motion weighted MAE; no auxiliary, teacher, or temporal term",
+  "hand_roi_xyxy": [
+    [
+      0,
+      35,
+      180,
+      252
+    ],
+    [
+      265,
+      25,
+      448,
+      252
+    ]
+  ],
+  "motion_weight": "clip(mean_RGB(abs(real_target-real_initial))/0.1,0,1)",
+  "secondary_view": "evaluation against existing native-GS teacher only; no training supervision",
+  "references": [
+    "held_initial",
+    "projected_initial_features",
+    "decoded_actual_target_state"
+  ],
+  "snapshots": [
+    0,
+    100,
+    300,
+    600
+  ],
+  "progress_every": 25,
+  "checkpoint_selection": "fixed final step 600, no best-frame selection",
+  "object_proxies": {
+    "35": {
+      "name": "moving_yellow_bar",
+      "roi_xyxy": [
+        205,
+        20,
+        440,
+        230
+      ],
+      "hue_uint8": [
+        28,
+        52
+      ],
+      "saturation_min": 90,
+      "value_min": 35
+    },
+    "123": {
+      "name": "green_crossbar",
+      "roi_xyxy": [
+        135,
+        0,
+        440,
+        210
+      ],
+      "hue_uint8": [
+        65,
+        120
+      ],
+      "saturation_min": 80,
+      "value_min": 35
+    }
+  },
+  "minimum_free_gpu_gib": 24,
+  "allocator_limit_gib": 20,
+  "minimum_disk_free_gib": 20,
+  "worker_max_seconds": 5400,
+  "replay_max_seconds": 600,
+  "max_total_seconds": 6300,
+  "replay_mae_max": 1e-05,
+  "replay_psnr_min": 60,
+  "gpu_assignment": {
+    "35": 0,
+    "123": 1
+  },
+  "failure_policy": "stop failing worker, preserve error and all records; no retries, truncation, or automatic architecture changes",
+  "engineering_acceptance": "four 600-step fits; initial-only coordinate transfer verified; finite nonzero feature gradient; all codec tensors unchanged; 10 native packets / 20 views replay",
+  "scientific_acceptance": "visual confirmation of yellow-bar vertical pose at frame44 and crossbar spanning pillars at frame132; RGB and fixed color proxies are supporting diagnostics only",
+  "limitations": "Oracle future coordinates, two known TRAIN endpoints, larger support may change parameter count and feature initialization; no action code, temporal consistency, AR or generalization claim; optimization failure is not proof of impossibility",
+  "formal_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1",
+  "dependencies": {
+    "codec_binding.py": "c50ce5d570eca22eec83b379842389749f824a92c90e33186310e1d3f154ce3b",
+    "teacher_binding.py": "a4b239d41a37ddd6a6cfebf90bfd1d943c845f323c41bf3cc4f4e361ed75353a",
+    "runtime_bridge.py": "aa6b805cadbf9e53f051251ffad3a2c62287a6c8038170d9d2bb9b0e9a7f367e"
+  },
+  "feature_initialization": "Only F0 is transferred to C_future; no F_future values enter the optimization initialization",
+  "previous_run": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_free_feature_20261101_v1",
+    "protocol_sha256": "1e9e3957b4db683633c03ee6a15e24eb207bc485805349640a7d8a7bb7049357",
+    "code_manifest_sha256": "e37dc2056e015769ddccc242d5cd9ec30433ee4aec2ce8e0f402e4b8e1da1ec8",
+    "summary_sha256": "2077eca01e1d933619e0dd54426e7aede63066abc235cc0be1aaee4c4ce068cd",
+    "core_sha256": "e9e2948dfb395b1f62568ec68a59f997772264056df58684f3fc38c0379b338d",
+    "cpu_core_receipt_sha256": "250412bf45a54cd2123f20be115567a68b19092b3e7f6ff5f9121f03d172c82a"
+  }
+}

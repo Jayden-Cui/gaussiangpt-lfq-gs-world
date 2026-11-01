@@ -1,0 +1,8 @@
+test_exact_cells_new_cells_and_destination_order (test_support.InitialFeatureTransfer) ... ok
+test_identity_transfer_and_duplicate_rejection (test_support.InitialFeatureTransfer) ... ok
+test_tie_break_is_source_order_invariant_and_inputs_are_immutable (test_support.InitialFeatureTransfer) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.036s
+
+OK
