@@ -1,0 +1,503 @@
+{
+  "status": "complete",
+  "step": 180,
+  "summary": {
+    "overall": {
+      "motion_code_to_motion_reference": 0.026301913066870637,
+      "motion_code_to_static_reference": 0.16124332572023073,
+      "static_code_to_static_reference": 0.1381686052514447,
+      "static_code_to_motion_reference": 0.05755219608545303,
+      "reference_motion_vs_static": 0.16481001923481622,
+      "prediction_motion_vs_static": 0.05064318008306953,
+      "static_prediction_closer_to_static_than_motion": false
+    },
+    "per_window": {
+      "35": {
+        "motion_code_to_motion_reference": 0.027226104504532285,
+        "motion_code_to_static_reference": 0.17184879216882917,
+        "static_code_to_static_reference": 0.14889036367336908,
+        "static_code_to_motion_reference": 0.0559727835158507,
+        "reference_motion_vs_static": 0.17454867396089765,
+        "prediction_motion_vs_static": 0.04786448097891278,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "123": {
+        "motion_code_to_motion_reference": 0.02537772162920899,
+        "motion_code_to_static_reference": 0.1506378592716323,
+        "static_code_to_static_reference": 0.12744684682952034,
+        "static_code_to_motion_reference": 0.059131608655055366,
+        "reference_motion_vs_static": 0.15507136450873482,
+        "prediction_motion_vs_static": 0.053421879187226295,
+        "static_prediction_closer_to_static_than_motion": false
+      }
+    },
+    "h9": {
+      "motion_code_to_motion_reference": 0.022648983635008335,
+      "motion_code_to_static_reference": 0.2066395878791809,
+      "static_code_to_static_reference": 0.14786773175001144,
+      "static_code_to_motion_reference": 0.11590247973799706,
+      "reference_motion_vs_static": 0.2074418142437935,
+      "prediction_motion_vs_static": 0.11340508237481117,
+      "static_prediction_closer_to_static_than_motion": false
+    },
+    "frames_static_closer_than_moving": 0,
+    "static_full_rgb_mae": 0.06562083193825351,
+    "static_support_iou": 0.5962039143709901
+  },
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.033920254558324814,
+        "motion_code_to_static_reference": 0.07245651632547379,
+        "static_code_to_static_reference": 0.07012711465358734,
+        "static_code_to_motion_reference": 0.035519275814294815,
+        "reference_motion_vs_static": 0.07897061109542847,
+        "prediction_motion_vs_static": 0.025942880660295486,
+        "dynamic_weight_sum": 17789.716796875
+      },
+      "static_full_rgb_mae": 0.022257838398218155,
+      "static_support": {
+        "predicted_nodes": 924,
+        "target_nodes": 834,
+        "true_positive": 802,
+        "false_positive": 122,
+        "false_negative": 32,
+        "iou": 0.8389121338912134,
+        "precision": 0.8679653679653679,
+        "recall": 0.9616306954436451
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03459881246089935,
+        "motion_code_to_static_reference": 0.11913081258535385,
+        "static_code_to_static_reference": 0.11973155289888382,
+        "static_code_to_motion_reference": 0.033254846930503845,
+        "reference_motion_vs_static": 0.1254195272922516,
+        "prediction_motion_vs_static": 0.01969972811639309,
+        "dynamic_weight_sum": 23940.1953125
+      },
+      "static_full_rgb_mae": 0.03678005561232567,
+      "static_support": {
+        "predicted_nodes": 976,
+        "target_nodes": 834,
+        "true_positive": 782,
+        "false_positive": 194,
+        "false_negative": 52,
+        "iou": 0.7607003891050583,
+        "precision": 0.8012295081967213,
+        "recall": 0.9376498800959233
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.027902087196707726,
+        "motion_code_to_static_reference": 0.15993477404117584,
+        "static_code_to_static_reference": 0.14361630380153656,
+        "static_code_to_motion_reference": 0.039668191224336624,
+        "reference_motion_vs_static": 0.15767939388751984,
+        "prediction_motion_vs_static": 0.028735201805830002,
+        "dynamic_weight_sum": 29724.63671875
+      },
+      "static_full_rgb_mae": 0.04894208908081055,
+      "static_support": {
+        "predicted_nodes": 1026,
+        "target_nodes": 834,
+        "true_positive": 764,
+        "false_positive": 262,
+        "false_negative": 70,
+        "iou": 0.6970802919708029,
+        "precision": 0.7446393762183235,
+        "recall": 0.9160671462829736
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.028323570266366005,
+        "motion_code_to_static_reference": 0.1804327517747879,
+        "static_code_to_static_reference": 0.16531717777252197,
+        "static_code_to_motion_reference": 0.039508529007434845,
+        "reference_motion_vs_static": 0.1791839897632599,
+        "prediction_motion_vs_static": 0.02864542417228222,
+        "dynamic_weight_sum": 33224.9453125
+      },
+      "static_full_rgb_mae": 0.05771927163004875,
+      "static_support": {
+        "predicted_nodes": 1017,
+        "target_nodes": 834,
+        "true_positive": 752,
+        "false_positive": 265,
+        "false_negative": 82,
+        "iou": 0.6842584167424932,
+        "precision": 0.7394296951819076,
+        "recall": 0.9016786570743405
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.024602320045232773,
+        "motion_code_to_static_reference": 0.19346721470355988,
+        "static_code_to_static_reference": 0.1803499013185501,
+        "static_code_to_motion_reference": 0.040556520223617554,
+        "reference_motion_vs_static": 0.1927713304758072,
+        "prediction_motion_vs_static": 0.03452274575829506,
+        "dynamic_weight_sum": 35881.3828125
+      },
+      "static_full_rgb_mae": 0.06874528527259827,
+      "static_support": {
+        "predicted_nodes": 1040,
+        "target_nodes": 834,
+        "true_positive": 739,
+        "false_positive": 301,
+        "false_negative": 95,
+        "iou": 0.6511013215859031,
+        "precision": 0.7105769230769231,
+        "recall": 0.8860911270983214
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.026579514145851135,
+        "motion_code_to_static_reference": 0.19933977723121643,
+        "static_code_to_static_reference": 0.18036676943302155,
+        "static_code_to_motion_reference": 0.049410004168748856,
+        "reference_motion_vs_static": 0.20196504890918732,
+        "prediction_motion_vs_static": 0.03954567015171051,
+        "dynamic_weight_sum": 39166.90625
+      },
+      "static_full_rgb_mae": 0.07183890789747238,
+      "static_support": {
+        "predicted_nodes": 1029,
+        "target_nodes": 834,
+        "true_positive": 721,
+        "false_positive": 308,
+        "false_negative": 113,
+        "iou": 0.6313485113835376,
+        "precision": 0.7006802721088435,
+        "recall": 0.8645083932853717
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.021287737414240837,
+        "motion_code_to_static_reference": 0.2016793042421341,
+        "static_code_to_static_reference": 0.17073996365070343,
+        "static_code_to_motion_reference": 0.06558869034051895,
+        "reference_motion_vs_static": 0.20380449295043945,
+        "prediction_motion_vs_static": 0.0614805668592453,
+        "dynamic_weight_sum": 43584.3359375
+      },
+      "static_full_rgb_mae": 0.07633505761623383,
+      "static_support": {
+        "predicted_nodes": 1189,
+        "target_nodes": 834,
+        "true_positive": 748,
+        "false_positive": 441,
+        "false_negative": 86,
+        "iou": 0.5866666666666667,
+        "precision": 0.6291000841042893,
+        "recall": 0.8968824940047961
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.023998737335205078,
+        "motion_code_to_static_reference": 0.20655228197574615,
+        "static_code_to_static_reference": 0.15916134417057037,
+        "static_code_to_motion_reference": 0.08632183820009232,
+        "reference_motion_vs_static": 0.21314261853694916,
+        "prediction_motion_vs_static": 0.08113386482000351,
+        "dynamic_weight_sum": 46427.4296875
+      },
+      "static_full_rgb_mae": 0.08393146842718124,
+      "static_support": {
+        "predicted_nodes": 1566,
+        "target_nodes": 834,
+        "true_positive": 783,
+        "false_positive": 783,
+        "false_negative": 51,
+        "iou": 0.4842300556586271,
+        "precision": 0.5,
+        "recall": 0.9388489208633094
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.023821907117962837,
+        "motion_code_to_static_reference": 0.21364569664001465,
+        "static_code_to_static_reference": 0.15060314536094666,
+        "static_code_to_motion_reference": 0.11392715573310852,
+        "reference_motion_vs_static": 0.21800105273723602,
+        "prediction_motion_vs_static": 0.11107424646615982,
+        "dynamic_weight_sum": 48127.41015625
+      },
+      "static_full_rgb_mae": 0.08842023462057114,
+      "static_support": {
+        "predicted_nodes": 1949,
+        "target_nodes": 834,
+        "true_positive": 793,
+        "false_positive": 1156,
+        "false_negative": 41,
+        "iou": 0.39849246231155777,
+        "precision": 0.4068753206772704,
+        "recall": 0.9508393285371702
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03450166434049606,
+        "motion_code_to_static_reference": 0.07910344749689102,
+        "static_code_to_static_reference": 0.06886867433786392,
+        "static_code_to_motion_reference": 0.04600883275270462,
+        "reference_motion_vs_static": 0.09135404229164124,
+        "prediction_motion_vs_static": 0.04253590852022171,
+        "dynamic_weight_sum": 26501.63671875
+      },
+      "static_full_rgb_mae": 0.029012396931648254,
+      "static_support": {
+        "predicted_nodes": 1008,
+        "target_nodes": 875,
+        "true_positive": 830,
+        "false_positive": 178,
+        "false_negative": 45,
+        "iou": 0.7882241215574549,
+        "precision": 0.8234126984126984,
+        "recall": 0.9485714285714286
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03007652796804905,
+        "motion_code_to_static_reference": 0.10408790409564972,
+        "static_code_to_static_reference": 0.09991560876369476,
+        "static_code_to_motion_reference": 0.03364298865199089,
+        "reference_motion_vs_static": 0.11258500814437866,
+        "prediction_motion_vs_static": 0.023495791479945183,
+        "dynamic_weight_sum": 36933.4375
+      },
+      "static_full_rgb_mae": 0.04463307559490204,
+      "static_support": {
+        "predicted_nodes": 1100,
+        "target_nodes": 875,
+        "true_positive": 816,
+        "false_positive": 284,
+        "false_negative": 59,
+        "iou": 0.7040552200172563,
+        "precision": 0.7418181818181818,
+        "recall": 0.9325714285714286
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02929033897817135,
+        "motion_code_to_static_reference": 0.12745729088783264,
+        "static_code_to_static_reference": 0.11871927231550217,
+        "static_code_to_motion_reference": 0.044083453714847565,
+        "reference_motion_vs_static": 0.1378830522298813,
+        "prediction_motion_vs_static": 0.03050520271062851,
+        "dynamic_weight_sum": 42734.06640625
+      },
+      "static_full_rgb_mae": 0.05628152936697006,
+      "static_support": {
+        "predicted_nodes": 1222,
+        "target_nodes": 875,
+        "true_positive": 796,
+        "false_positive": 426,
+        "false_negative": 79,
+        "iou": 0.611837048424289,
+        "precision": 0.6513911620294599,
+        "recall": 0.9097142857142857
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.023365363478660583,
+        "motion_code_to_static_reference": 0.1414431780576706,
+        "static_code_to_static_reference": 0.13374854624271393,
+        "static_code_to_motion_reference": 0.048247482627630234,
+        "reference_motion_vs_static": 0.14742912352085114,
+        "prediction_motion_vs_static": 0.04099429026246071,
+        "dynamic_weight_sum": 44862.94921875
+      },
+      "static_full_rgb_mae": 0.0648411214351654,
+      "static_support": {
+        "predicted_nodes": 1227,
+        "target_nodes": 875,
+        "true_positive": 770,
+        "false_positive": 457,
+        "false_negative": 105,
+        "iou": 0.5780780780780781,
+        "precision": 0.6275468622656887,
+        "recall": 0.88
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02390134148299694,
+        "motion_code_to_static_reference": 0.15756921470165253,
+        "static_code_to_static_reference": 0.1389618068933487,
+        "static_code_to_motion_reference": 0.039824798703193665,
+        "reference_motion_vs_static": 0.1580451875925064,
+        "prediction_motion_vs_static": 0.03384818881750107,
+        "dynamic_weight_sum": 47714.28125
+      },
+      "static_full_rgb_mae": 0.07019483298063278,
+      "static_support": {
+        "predicted_nodes": 1362,
+        "target_nodes": 875,
+        "true_positive": 763,
+        "false_positive": 599,
+        "false_negative": 112,
+        "iou": 0.5176390773405699,
+        "precision": 0.5602055800293686,
+        "recall": 0.872
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.022346043959259987,
+        "motion_code_to_static_reference": 0.17021939158439636,
+        "static_code_to_static_reference": 0.14959436655044556,
+        "static_code_to_motion_reference": 0.05135371908545494,
+        "reference_motion_vs_static": 0.17310035228729248,
+        "prediction_motion_vs_static": 0.04662290960550308,
+        "dynamic_weight_sum": 49719.56640625
+      },
+      "static_full_rgb_mae": 0.07829061895608902,
+      "static_support": {
+        "predicted_nodes": 1119,
+        "target_nodes": 875,
+        "true_positive": 706,
+        "false_positive": 413,
+        "false_negative": 169,
+        "iou": 0.5481366459627329,
+        "precision": 0.6309204647006256,
+        "recall": 0.8068571428571428
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02190753072500229,
+        "motion_code_to_static_reference": 0.183427095413208,
+        "static_code_to_static_reference": 0.1499308943748474,
+        "static_code_to_motion_reference": 0.06023583561182022,
+        "reference_motion_vs_static": 0.1831878125667572,
+        "prediction_motion_vs_static": 0.05813653767108917,
+        "dynamic_weight_sum": 51863.94140625
+      },
+      "static_full_rgb_mae": 0.08410116285085678,
+      "static_support": {
+        "predicted_nodes": 1507,
+        "target_nodes": 875,
+        "true_positive": 754,
+        "false_positive": 753,
+        "false_negative": 121,
+        "iou": 0.4631449631449631,
+        "precision": 0.5003317850033179,
+        "recall": 0.8617142857142858
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.021534623578190804,
+        "motion_code_to_static_reference": 0.19279973208904266,
+        "static_code_to_static_reference": 0.1421501338481903,
+        "static_code_to_motion_reference": 0.09090956300497055,
+        "reference_motion_vs_static": 0.19517512619495392,
+        "prediction_motion_vs_static": 0.0889221653342247,
+        "dynamic_weight_sum": 53581.375
+      },
+      "static_full_rgb_mae": 0.08728626370429993,
+      "static_support": {
+        "predicted_nodes": 1657,
+        "target_nodes": 875,
+        "true_positive": 775,
+        "false_positive": 882,
+        "false_negative": 100,
+        "iou": 0.4410927717700626,
+        "precision": 0.4677127338563669,
+        "recall": 0.8857142857142857
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.021476060152053833,
+        "motion_code_to_static_reference": 0.19963347911834717,
+        "static_code_to_static_reference": 0.14513231813907623,
+        "static_code_to_motion_reference": 0.11787780374288559,
+        "reference_motion_vs_static": 0.19688257575035095,
+        "prediction_motion_vs_static": 0.11573591828346252,
+        "dynamic_weight_sum": 55182.7578125
+      },
+      "static_full_rgb_mae": 0.11156376451253891,
+      "static_support": {
+        "predicted_nodes": 2322,
+        "target_nodes": 875,
+        "true_positive": 823,
+        "false_positive": 1499,
+        "false_negative": 52,
+        "iou": 0.34667228306655434,
+        "precision": 0.3544358311800172,
+        "recall": 0.9405714285714286
+      }
+    }
+  ],
+  "step0_reproduction_max_abs_error": null,
+  "future_states_used_only_for_offline_evaluation": true,
+  "visual_review": "pending",
+  "independent_native_gs_replay": "not performed"
+}

@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "steps": 540,
+  "summaries": {
+    "0": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.026301913066870637,
+        "motion_code_to_static_reference": 0.16124332572023073,
+        "static_code_to_static_reference": 0.15976514667272568,
+        "static_code_to_motion_reference": 0.02900920570310619,
+        "reference_motion_vs_static": 0.16481001923481622,
+        "prediction_motion_vs_static": 0.01363348164078262,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.027226104504532285,
+          "motion_code_to_static_reference": 0.17184879216882917,
+          "static_code_to_static_reference": 0.17195195456345877,
+          "static_code_to_motion_reference": 0.028849128012855847,
+          "reference_motion_vs_static": 0.17454867396089765,
+          "prediction_motion_vs_static": 0.010656126567886936,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.02537772162920899,
+          "motion_code_to_static_reference": 0.1506378592716323,
+          "static_code_to_static_reference": 0.14757833878199259,
+          "static_code_to_motion_reference": 0.029169283393356536,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.016610836713678308,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.022648983635008335,
+        "motion_code_to_static_reference": 0.2066395878791809,
+        "static_code_to_static_reference": 0.20377737283706665,
+        "static_code_to_motion_reference": 0.024412373080849648,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.01694283541291952,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "frames_static_closer_than_moving": 0,
+      "static_full_rgb_mae": 0.06978973911868201,
+      "static_support_iou": 0.6066996387392556
+    },
+    "180": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.026301913066870637,
+        "motion_code_to_static_reference": 0.16124332572023073,
+        "static_code_to_static_reference": 0.1381686052514447,
+        "static_code_to_motion_reference": 0.05755219608545303,
+        "reference_motion_vs_static": 0.16481001923481622,
+        "prediction_motion_vs_static": 0.05064318008306953,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.027226104504532285,
+          "motion_code_to_static_reference": 0.17184879216882917,
+          "static_code_to_static_reference": 0.14889036367336908,
+          "static_code_to_motion_reference": 0.0559727835158507,
+          "reference_motion_vs_static": 0.17454867396089765,
+          "prediction_motion_vs_static": 0.04786448097891278,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.02537772162920899,
+          "motion_code_to_static_reference": 0.1506378592716323,
+          "static_code_to_static_reference": 0.12744684682952034,
+          "static_code_to_motion_reference": 0.059131608655055366,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.053421879187226295,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.022648983635008335,
+        "motion_code_to_static_reference": 0.2066395878791809,
+        "static_code_to_static_reference": 0.14786773175001144,
+        "static_code_to_motion_reference": 0.11590247973799706,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.11340508237481117,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "frames_static_closer_than_moving": 0,
+      "static_full_rgb_mae": 0.06562083193825351,
+      "static_support_iou": 0.5962039143709901
+    },
+    "360": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.026301912859910064,
+        "motion_code_to_static_reference": 0.16124332240886158,
+        "static_code_to_static_reference": 0.13670382152001062,
+        "static_code_to_motion_reference": 0.07353427592251036,
+        "reference_motion_vs_static": 0.16481001675128937,
+        "prediction_motion_vs_static": 0.06733487360179424,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.02722610409061114,
+          "motion_code_to_static_reference": 0.17184878554609087,
+          "static_code_to_static_reference": 0.14486151933670044,
+          "static_code_to_motion_reference": 0.06385461654927996,
+          "reference_motion_vs_static": 0.17454866899384391,
+          "prediction_motion_vs_static": 0.05718311791618665,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.02537772162920899,
+          "motion_code_to_static_reference": 0.1506378592716323,
+          "static_code_to_static_reference": 0.12854612370332083,
+          "static_code_to_motion_reference": 0.08321393529574077,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.07748662928740184,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.022648983635008335,
+        "motion_code_to_static_reference": 0.2066395878791809,
+        "static_code_to_static_reference": 0.13224472105503082,
+        "static_code_to_motion_reference": 0.16103093326091766,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.1579892933368683,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "frames_static_closer_than_moving": 2,
+      "static_full_rgb_mae": 0.06447464724381764,
+      "static_support_iou": 0.6254574830080544
+    },
+    "540": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.026301913066870637,
+        "motion_code_to_static_reference": 0.16124332572023073,
+        "static_code_to_static_reference": 0.1316976240939564,
+        "static_code_to_motion_reference": 0.07769355715976821,
+        "reference_motion_vs_static": 0.16481001923481622,
+        "prediction_motion_vs_static": 0.0718841010497676,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.027226104504532285,
+          "motion_code_to_static_reference": 0.17184879216882917,
+          "static_code_to_static_reference": 0.1418227015270127,
+          "static_code_to_motion_reference": 0.067568881644143,
+          "reference_motion_vs_static": 0.17454867396089765,
+          "prediction_motion_vs_static": 0.061281313084893756,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.02537772162920899,
+          "motion_code_to_static_reference": 0.1506378592716323,
+          "static_code_to_static_reference": 0.12157254666090012,
+          "static_code_to_motion_reference": 0.08781823267539342,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.08248688901464145,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.022648983635008335,
+        "motion_code_to_static_reference": 0.2066395878791809,
+        "static_code_to_static_reference": 0.1209348514676094,
+        "static_code_to_motion_reference": 0.168514683842659,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.165907084941864,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "frames_static_closer_than_moving": 3,
+      "static_full_rgb_mae": 0.06210194848891762,
+      "static_support_iou": 0.6321798960157833
+    }
+  },
+  "checkpoints": {
+    "180": "e4db25a130135a6967f69b89df28c16ca4e523e7d2aac98a94ac60457f5f078d",
+    "360": "aebb990067fd64996a9b1bb3ccc84ee8cf3fc57f05506bbe7a65a897fd1f8e23",
+    "540": "f5221b70ae0557c96500397d83f1ee631f01d5e1f6297456eab1bd51463b019c"
+  },
+  "training_future_state_or_image_used": false,
+  "main_training_signalled": false,
+  "elapsed_seconds": 274.2442382420413,
+  "peak_allocated_gib": 8.02508020401001,
+  "visual_review": "pending",
+  "limitations": "Two known training windows, one source video, one static-code initialization and limited budget. Optimizing codes uses target S0 and is not posterior training or AR. Failure does not prove impossibility. No independent GS cold replay or cross-video generalization."
+}

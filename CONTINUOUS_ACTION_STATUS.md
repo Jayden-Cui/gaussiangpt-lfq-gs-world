@@ -42,6 +42,6 @@
 
 阶段 B 第 10 轮[两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/sweep_10/VISUAL_REVIEW.md)的运动 MAE 为 0.082714，较第 5 轮稍有改善，但仍高于起点 0.029776；黄条细弱且位置偏移，绿梁多帧消失。两个窗口的动态验收仍未通过，完整评估和第 20 轮尚未完成。
 
-为区分旧 decoder 是否能表达静止、以及旧 Q 是否能产生静止码，已启动[两窗口固定 decoder 静止自由码诊断 v3](experiments/gaussiangpt_neoverse_static_code_probe_20261102_v3/EXECUTION.md)，从旧 Q 重复初态码出发，只优化 540 次连续码，监督仅使用初态与同相机静止渲染。v1 在 GPU 申请前因 JSON 记录格式失败；v2 的 GPU 梯度预检通过，但第 0 步评估读取配置错误，在正式训练前退出。两次失败与修复均已保留；v3 已通过 GPU 预检和零步复现，正式优化与动态验收尚未完成。
+为区分旧 decoder 是否能表达静止、以及旧 Q 是否能产生静止码，完成了[两窗口固定 decoder 静止自由码诊断 v3](experiments/gaussiangpt_neoverse_static_code_probe_20261102_v3/RESULTS.md)：只优化 540 次连续码，静止参考误差从 0.159765 降至 0.131698，但 15／18 帧仍更接近运动参考；逐帧画面中物体消失且出现黑色残影，没有得到可用静止码。这是单初始化、有限预算的两窗口结果，不能证明数学上不存在静止码。v1 在 GPU 申请前因 JSON 记录格式失败；v2 的 GPU 预检通过，但第 0 步评估读取配置错误，均在正式训练前退出并已保留。
 
 阶段 C 新增[固定教师的源画面变化分组评估工具](experiments/gaussiangpt_neoverse_stage_c_motion_groups_20261102_v1/README.md)：逐条核对 1512 项教师指标，在四组中比较后验与教师的物理帧等权及 h1–h9 误差。本地与服务器测试使用合成 C／教师指标，尚未评估真实 C 模型；全画面变化分组不等于物体轨迹或动作成功。
