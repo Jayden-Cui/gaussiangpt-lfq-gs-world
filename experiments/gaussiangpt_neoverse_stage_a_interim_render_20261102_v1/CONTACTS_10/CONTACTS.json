@@ -1,0 +1,195 @@
+{
+  "status": "complete",
+  "sweep": 10,
+  "evaluation_sha256": "2503ea31964dfe6b9c00a4586b4a775bc1c4125dbab6b8d5f8c6e390ad09b593",
+  "collector_sha256": "c0a7419d8ff0a802e2cabb0cf469221dc3ead608c09b0a98c4b9aeae9ff00c80",
+  "rows": [
+    {
+      "start": 0,
+      "file": "s000_contact.png",
+      "sha256": "c540e3fa790d3d32d0ccbcd6908186ffa60c6127cd11629ab2683187bfd2596a",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "1328e0fc6d3ff09c69a16906dec2f4a5f07c91263ca0bf5568152b2a1b8d392e"
+        },
+        {
+          "horizon": 3,
+          "sha256": "d9583dd19201541919593f4503ee5b7604acf5ffd58db8182f7e391eea057f84"
+        },
+        {
+          "horizon": 6,
+          "sha256": "855f6e858b460ec2151d11c1e21f14019fd3989dd36bb9b37a78297a5d5095b5"
+        },
+        {
+          "horizon": 9,
+          "sha256": "a8914c3ec5972fc08a647de22c88e5644ef7487ff542004fd8c93a14b232a60d"
+        }
+      ]
+    },
+    {
+      "start": 35,
+      "file": "s035_contact.png",
+      "sha256": "2b6942672375241249ce3eca51b50783525db771951fb14e7f323f1c181c8dc3",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "27035bc3df8601667066e4a34c8adc2f99da524c198fd53c9f3ca45f54fa9b71"
+        },
+        {
+          "horizon": 3,
+          "sha256": "e12396176b023ca48c3ebcb358cedb92028169abc0148a7352d436371169f87d"
+        },
+        {
+          "horizon": 6,
+          "sha256": "8cff759893c544867c12f19d5f2c5e7cb4d1f50933c5af6b590f4f020594d1f6"
+        },
+        {
+          "horizon": 9,
+          "sha256": "3d034ddd2ec8d8f4628bac3da775971a3380833b21d39a3163c8be886ede81e7"
+        }
+      ]
+    },
+    {
+      "start": 56,
+      "file": "s056_contact.png",
+      "sha256": "35b6d33f04ffd5526b701b7d9ff6185a31efcc70c511a779f7bcb661ef74bc5f",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "0b3660cab39cad282efca5dee5413b0ec998b61f42c8050e2ffe0ff95f5ed851"
+        },
+        {
+          "horizon": 3,
+          "sha256": "bc14fa4797b1f5f1a8561f6038c7b13e3027e9b136ed19ef93dc563e6213c251"
+        },
+        {
+          "horizon": 6,
+          "sha256": "81747c898b2d6e8b3f36dd9278cb9f585dee6adcd390e55b2096593700d74523"
+        },
+        {
+          "horizon": 9,
+          "sha256": "1531e3f3c3ee74a8003e12948558ee5c106f44ff322650241ee81120cfc15420"
+        }
+      ]
+    },
+    {
+      "start": 84,
+      "file": "s084_contact.png",
+      "sha256": "b79755e48edf62f9d2d6787d5b692bf7a10a9819d4defeef6cc0fa3d8edce6ca",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "6d285b864ddcae80e43c03b0a117359fd353ce94758a4f87016f4f65cb370509"
+        },
+        {
+          "horizon": 3,
+          "sha256": "301e4b9ea6d6d268c3711234230b19de3701105c26d629685e4faf783402d21e"
+        },
+        {
+          "horizon": 6,
+          "sha256": "f4d0f9bc2f4f9b82e9aad13d660bfe5c32080f931c6a22a3b4467ee0ab674689"
+        },
+        {
+          "horizon": 9,
+          "sha256": "4fcb7ee84d4b894faee49d43b69158b29de1a0f36ddaab851777ebb05a369610"
+        }
+      ]
+    },
+    {
+      "start": 112,
+      "file": "s112_contact.png",
+      "sha256": "11a9d2ff1597c0e7b4aca9fd6caa047d0fbcea567197cb5294fa624d3e222f19",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "8b78700fa1a0cbd23538434796c41a121cabc6a79ba5656ca43befa01c015eec"
+        },
+        {
+          "horizon": 3,
+          "sha256": "c3b759304313edb749ae4f1b026754a96895a4acc73fc35374656f66863e7589"
+        },
+        {
+          "horizon": 6,
+          "sha256": "7b7b21e32716e1d96e21461bd2168dbe955f30b255e38512760ca7d9dcf0848b"
+        },
+        {
+          "horizon": 9,
+          "sha256": "23a5a0081299e8f91c92830e3d191183aa8c5d9cb7c37a3dd571b2bba8090c51"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_contact.png",
+      "sha256": "81d09d07d6e1385469e4e41d0db6235f8eb010eec90a514697566fd82b13c7d2",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "5143e4d5543c6605b4529702bd5553fa82c271043791f384040fcc4e07bc2e41"
+        },
+        {
+          "horizon": 3,
+          "sha256": "6e0857127cfed494b9a6b750286251dc8025806e5e9991fa923ca137fe6c3f9b"
+        },
+        {
+          "horizon": 6,
+          "sha256": "e0d60344b86aea8535731d0b69f56717ed0a8dfc693e8d3420cb3062ab0c5747"
+        },
+        {
+          "horizon": 9,
+          "sha256": "c96dc1834e9e9a1b8da4c4e2fccddeaf88c6fd31514f0440d251e06be53f1522"
+        }
+      ]
+    },
+    {
+      "start": 140,
+      "file": "s140_contact.png",
+      "sha256": "c190fe4cb222bb7a61b7f3763f115536e9866a177a4724b7f2808c5f0a0872f5",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "2334935f57d543636ea810572f3f1062194d77c0ffd4b69fde3a1a90a3da093e"
+        },
+        {
+          "horizon": 3,
+          "sha256": "96084dc3edb2da8f0a61d4b552cb6de8a21c9be3c71ce7add391dc3b88e302d4"
+        },
+        {
+          "horizon": 6,
+          "sha256": "cf8a68a2e7954c63dfa7a88d2a87a22ec5ea854dec0ac23a8210c9420d464866"
+        },
+        {
+          "horizon": 9,
+          "sha256": "35153e5e280b9ff9b1463a31e6bbc06e3e39aa415a2c0502e6760582be6c3391"
+        }
+      ]
+    },
+    {
+      "start": 167,
+      "file": "s167_contact.png",
+      "sha256": "cb34f86f1016eb36f52a26a975f362e1ebc7e127e3d736326adedefd2d2038f2",
+      "inputs": [
+        {
+          "horizon": 0,
+          "sha256": "c53f7b39e11bd85d99f58444d7ba62047da62973a372a84b3c56d5ec7c4d1c16"
+        },
+        {
+          "horizon": 3,
+          "sha256": "eaa1d9c9147e804526e1c562847d0d02a5efe43d3c534a05c473561b9c358f7b"
+        },
+        {
+          "horizon": 6,
+          "sha256": "ca8b5e7d5043fc4ab5d449fdeb7a2f68bd6b78c805bfe86ffc5f7ec93f280fb5"
+        },
+        {
+          "horizon": 9,
+          "sha256": "8a7e2e9596f7af7b83b00ce791b428b4d0beb08e3c7956ce7fd1038d4df60e60"
+        }
+      ]
+    }
+  ],
+  "layout": "Per cell: source left and optimized free-code output right; h0, h3, h6, h9",
+  "visual_verdict": "not yet reviewed",
+  "not_final_stage_a_result": true
+}
