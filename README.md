@@ -24,7 +24,7 @@
 
 [全177帧训练](experiments/gaussiangpt_neoverse_qformer_full177_20261101_v1/README.md) 的posterior与受训initial_only均完成2000步、全部168窗口评估及每组104包/208视角原生GS重放。历史同名评估模块的导入错误已通过[独立恢复入口](experiments/gaussiangpt_neoverse_qformer_full177_eval_resume_20261101_v1/README.md) 修复，未追加训练更新。按176个物理未来帧等权，运动MAE分别为0.075142和0.076111，真实前缀组仅降低1.27%；真实未来状态codec参考为0.029464。[指标及目视记录](experiments/gaussiangpt_neoverse_qformer_full177_eval_resume_20261101_v1/EXECUTION.md) 显示静态结构较好，但黄色长条和绿色横梁的关键运动仍有消失、拖影，动作质量未达到目标。代码、原始评估JSON、两组全部16段诊断视频、32张视角对照关键帧及4张序列对照图均已收录。本轮全部动作阶段参与训练，无未见动作划分；仍为连续码 [B,9,16]，无LFQ/FSQ/AR。
 
-已启动[全177帧固定预算续训](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/README.md)：两组从各自2000步模型与Adam状态继续，学习率保持0.00003，有效B4；追加20轮完整窗口/未来帧遍历，共7560步，累计9560步，每个组合增加20次直接RGB监督。累计3890、5780、9560步执行同一完整评估与后续独立GS重放。CPU恢复/覆盖检查及两组实际GPU反传均通过，17:13:55启动验收已到2019/2020步。模型、数据、损失和冻结边界沿用原实现，连续码不变，结果待完成。
+[全177帧固定预算续训](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/README.md) 已全部完成：两组均累计9560步，三个固定评估点及合计624份GS包/1248次视角重放通过，总耗时约5小时16分钟。最终运动MAE为0.062531（真实前缀）和0.063462（受训初态），较各自2000步改善16.78%/16.62%，真实前缀组相对优势仍仅1.47%。[完成指标与目视结论](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/EXECUTION.md) 显示黄条和绿梁的关键运动仍有严重丢失/拖影，动作质量未达目标。已收录三阶段原始评估JSON、最终两组16段视频、32张视角关键帧，以及[无顶部标记的源视频／9560步Q-Former重建对照](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/clean_comparisons)。本轮已结束，无新增训练或LFQ/FSQ/AR。
 
 ## 结果和关键帧
 
