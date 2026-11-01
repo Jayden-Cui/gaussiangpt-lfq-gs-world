@@ -20,7 +20,7 @@
 
 [学习未来支撑的解码器测试](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/README.md) 两臂各1200步已完成。仅从初态候选预测未来格点及64维特征，两个相邻10帧窗口的自由连续码形状为 [2,9,16]；codec冻结，推理不输入未来坐标或点数。18个未来状态平均运动MAE为0.029776，固定零码为0.039084（降低23.81%）；交换窗口码后为0.049276。黄条和绿梁主要运动过程能够重建，但仍有额外占据和手部伪影。详见[完整结果](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/SUMMARY.md)、[逐帧审查与视频](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/VISUAL_REVIEW.md)。本轮只支持两个已知窗口的decoder能力与条件依赖，尚未运行Q-Former/LFQ/AR。
 
-正在运行的[Q-Former连续码接入测试](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/README.md) 冻结上述free16空间解码器和原codec，只训练9个64维查询、后验模块及64→16投影。每个码独立读取S0…Sh前缀，输出 [B,9,16]；600步自由码蒸馏加600步重建监督，仍使用两个完整TRAIN窗口。CPU前缀因果／变长batch检查与真实RGB反传预检已通过，见[启动记录](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/EXECUTION.md)。评估将统一比较Q-Former码、自由码参考、仅初态、零码及换码；本轮未执行LFQ/FSQ/AR，最终效果待验收。
+[Q-Former连续码接入测试](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/README.md) 已完成1200步。冻结空间解码器和原codec后，Q-Former的18帧平均运动MAE为0.029765，自由码参考0.029776，重建保持门槛全部通过；30个GS包／60次视角重放通过。仅初态控制误差增加9.31%，未达到预设10%，后续状态依赖检查未全部通过。逐帧画面基本保持，但仍有手部、边缘和多余占据问题；结果范围为两个已知TRAIN窗口，未运行LFQ/FSQ/AR。见[结果与视觉审查](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/EXECUTION.md)、[指标汇总](experiments/gaussiangpt_neoverse_qformer_support_20261101_v1/SUMMARY.md)。
 
 ## 结果和关键帧
 

@@ -1,0 +1,555 @@
+{
+  "status": "passed",
+  "mode": "qformer_continuous",
+  "packets": 30,
+  "views": 60,
+  "rows": [
+    {
+      "name": "s035_h00_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h01_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h02_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h03_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h04_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h05_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h06_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h07_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h08_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_free_teacher",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_initial_only",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_zero_codes",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_swapped_window_codes",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s035_h09_actual_target",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h00_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h01_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h02_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h03_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h04_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h05_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h06_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h07_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h08_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_correct",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_free_teacher",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_initial_only",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_zero_codes",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_swapped_window_codes",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "s123_h09_actual_target",
+      "views": [
+        {
+          "view": 0,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        {
+          "view": 1,
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "producer_pid": 625575,
+  "replay_pid": 627877,
+  "encoder_or_codec_loaded": false,
+  "max_mae": 0.0,
+  "min_psnr": 120.0,
+  "elapsed_seconds": 1.683519315032754,
+  "packets_sha256": "c9afabf1e52e7186aa471bb0626ab6bd806442138a251f7c297be43e9d1a0c71"
+}

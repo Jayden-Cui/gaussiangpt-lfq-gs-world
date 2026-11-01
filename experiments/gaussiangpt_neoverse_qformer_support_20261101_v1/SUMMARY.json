@@ -1,0 +1,1307 @@
+{
+  "status": "complete",
+  "engineering_passed": true,
+  "metrics": {
+    "correct": {
+      "mae": 0.019617338561349444,
+      "psnr": 28.835185474819607,
+      "motion_mae": 0.02976495037890143,
+      "object_box_mae": 0.02283865213394165,
+      "teacher_view1_masked_mae": 0.025480033208926518
+    },
+    "free_teacher": {
+      "mae": 0.019628720875415537,
+      "psnr": 28.83767933315701,
+      "motion_mae": 0.02977625249574582,
+      "object_box_mae": 0.022750604380336072,
+      "teacher_view1_masked_mae": 0.0254991107309858
+    },
+    "initial_only": {
+      "mae": 0.021004525220228568,
+      "psnr": 28.024919721815323,
+      "motion_mae": 0.032537450496521264,
+      "object_box_mae": 0.024231920432713296,
+      "teacher_view1_masked_mae": 0.02699613467686706
+    },
+    "zero_codes": {
+      "mae": 0.1665102102690273,
+      "psnr": 13.651046991348267,
+      "motion_mae": 0.22001059643096393,
+      "object_box_mae": 0.16400717260936895,
+      "teacher_view1_masked_mae": 0.16577573203378254
+    },
+    "swapped_window_codes": {
+      "mae": 0.02976996751709117,
+      "psnr": 24.95528973473443,
+      "motion_mae": 0.04893083373705546,
+      "object_box_mae": 0.033388747523228325,
+      "teacher_view1_masked_mae": 0.035226555437677436
+    },
+    "actual_target": {
+      "mae": 0.02014107484784391,
+      "psnr": 29.500707202487522,
+      "motion_mae": 0.030037353229191568,
+      "object_box_mae": 0.02202013259132703,
+      "teacher_view1_masked_mae": 0.026756313008566696
+    }
+  },
+  "support": {
+    "correct": {
+      "iou": 0.8179541970816415,
+      "precision": 0.8180969961062545,
+      "recall": 0.9997586754030886,
+      "predicted_nodes": 1113.388888888889,
+      "target_nodes": 907.0
+    },
+    "free_teacher": {
+      "iou": 0.8178268728871012,
+      "precision": 0.8179688833940407,
+      "recall": 0.9997586754030886,
+      "predicted_nodes": 1113.611111111111,
+      "target_nodes": 907.0
+    },
+    "initial_only": {
+      "iou": 0.8072212332438677,
+      "precision": 0.8104036674644223,
+      "recall": 0.994959238640295,
+      "predicted_nodes": 1116.9444444444443,
+      "target_nodes": 907.0
+    },
+    "zero_codes": {
+      "iou": 0.5250681642082803,
+      "precision": 0.9048248234496481,
+      "recall": 0.5576085014750131,
+      "predicted_nodes": 559.1666666666666,
+      "target_nodes": 907.0
+    },
+    "swapped_window_codes": {
+      "iou": 0.7526000718062542,
+      "precision": 0.786975867964126,
+      "recall": 0.9443110313237588,
+      "predicted_nodes": 1093.4444444444443,
+      "target_nodes": 907.0
+    }
+  },
+  "code_metrics": {
+    "correct": {
+      "rmse": 0.0024760570377111435,
+      "normalized_rmse": 0.025889873504638672
+    },
+    "free_teacher": {
+      "rmse": 0.0,
+      "normalized_rmse": 0.0
+    },
+    "initial_only": {
+      "rmse": 0.04588897153735161,
+      "normalized_rmse": 0.4798191785812378
+    },
+    "zero_codes": {
+      "rmse": 0.09563805162906647,
+      "normalized_rmse": 1.0
+    },
+    "swapped_window_codes": {
+      "rmse": 0.12759628891944885,
+      "normalized_rmse": 1.334158182144165
+    }
+  },
+  "gate_values": {
+    "mae_ratio_to_free_teacher": 0.9994201194189709,
+    "motion_mae_ratio_to_free_teacher": 0.9996204318577026,
+    "support_iou_drop": -0.00012732419454031252,
+    "endpoint_color_iou_drop": 0.012339296655468956,
+    "initial_only_motion_error_ratio": 1.0931464720191535,
+    "swapped_motion_error_ratio": 1.6439077879914614
+  },
+  "numeric_gates": {
+    "mae_ratio_to_free_teacher_max": true,
+    "motion_mae_ratio_to_free_teacher_max": true,
+    "support_iou_drop_max": true,
+    "endpoint_color_iou_drop_max": true,
+    "initial_only_motion_error_ratio_min": false,
+    "swapped_motion_error_ratio_min": true
+  },
+  "reconstruction_retained_numeric": true,
+  "future_input_dependence_numeric": false,
+  "endpoints": [
+    {
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "correct": {
+          "metrics": {
+            "mae": 0.01920638233423233,
+            "roi_mae": 0.02023608796298504,
+            "motion_mae": 0.027135085314512253,
+            "psnr": 28.697568893432617,
+            "object_box_mae": 0.024480177089571953,
+            "teacher_view1_masked_mae": 0.02210053987801075
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1773,
+              "centroid_xy": [
+                243.21319796954316,
+                76.7326565143824
+              ],
+              "axis_degrees": 85.67016874218216,
+              "elongation": 10.797727398244197
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.8450308815272319,
+            "centroid_error_px": 1.4873814763153776,
+            "axis_error_degrees": 1.2874243904791598,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "free_teacher": {
+          "metrics": {
+            "mae": 0.019145026803016663,
+            "roi_mae": 0.02030128613114357,
+            "motion_mae": 0.027040202170610428,
+            "psnr": 28.851112365722656,
+            "object_box_mae": 0.024074217304587364,
+            "teacher_view1_masked_mae": 0.022067146375775337
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1750,
+              "centroid_xy": [
+                243.1982857142857,
+                76.06914285714285
+              ],
+              "axis_degrees": 84.874591425814,
+              "elongation": 10.56468516501329
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.8539772727272728,
+            "centroid_error_px": 1.024025695900326,
+            "axis_error_degrees": 2.0830017068473126,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "initial_only": {
+          "metrics": {
+            "mae": 0.02267136238515377,
+            "roi_mae": 0.02393779344856739,
+            "motion_mae": 0.03285934403538704,
+            "psnr": 26.274187088012695,
+            "object_box_mae": 0.030586080625653267,
+            "teacher_view1_masked_mae": 0.025231095030903816
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1819,
+              "centroid_xy": [
+                242.57284222100054,
+                78.1390874106652
+              ],
+              "axis_degrees": 85.42983212461807,
+              "elongation": 12.21488508932201
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.7827715355805244,
+            "centroid_error_px": 3.0214466876678334,
+            "axis_error_degrees": 1.5277610080432424,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "zero_codes": {
+          "metrics": {
+            "mae": 0.4416658878326416,
+            "roi_mae": 0.4279676377773285,
+            "motion_mae": 0.457027792930603,
+            "psnr": 5.87939977645874,
+            "object_box_mae": 0.4696711301803589,
+            "teacher_view1_masked_mae": 0.43836709856987
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": false,
+              "pixels": 0,
+              "centroid_xy": null,
+              "axis_degrees": null,
+              "elongation": null
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.0,
+            "centroid_error_px": null,
+            "axis_error_degrees": null,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "swapped_window_codes": {
+          "metrics": {
+            "mae": 0.047405876219272614,
+            "roi_mae": 0.05475372076034546,
+            "motion_mae": 0.0792573094367981,
+            "psnr": 20.67991065979004,
+            "object_box_mae": 0.0447380505502224,
+            "teacher_view1_masked_mae": 0.05101223289966583
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1994,
+              "centroid_xy": [
+                242.33149448345034,
+                79.88064192577733
+              ],
+              "axis_degrees": 83.04841856600599,
+              "elongation": 11.90730319740293
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.7040816326530612,
+            "centroid_error_px": 4.702102656854741,
+            "axis_error_degrees": 3.9091745666553237,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "actual_target": {
+          "metrics": {
+            "mae": 0.018429728224873543,
+            "roi_mae": 0.01890408806502819,
+            "motion_mae": 0.02561282366514206,
+            "psnr": 30.10379981994629,
+            "object_box_mae": 0.023713650181889534,
+            "teacher_view1_masked_mae": 0.021655797958374023
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1524,
+              "centroid_xy": [
+                244.95472440944883,
+                77.0485564304462
+              ],
+              "axis_degrees": 84.75333144242478,
+              "elongation": 12.99083643833871
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1513,
+              "centroid_xy": [
+                244.0528750826173,
+                75.50495703899537
+              ],
+              "axis_degrees": 86.95759313266132,
+              "elongation": 12.230680275387586
+            },
+            "iou": 0.8643339472068754,
+            "centroid_error_px": 1.7877447495640515,
+            "axis_error_degrees": 2.2042616902365353,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        }
+      },
+      "support": {
+        "correct": {
+          "predicted_nodes": 1050,
+          "target_nodes": 863,
+          "true_positive": 863,
+          "false_positive": 187,
+          "false_negative": 0,
+          "iou": 0.8219047619047619,
+          "precision": 0.8219047619047619,
+          "recall": 1.0
+        },
+        "free_teacher": {
+          "predicted_nodes": 1057,
+          "target_nodes": 863,
+          "true_positive": 863,
+          "false_positive": 194,
+          "false_negative": 0,
+          "iou": 0.8164616840113529,
+          "precision": 0.8164616840113529,
+          "recall": 1.0
+        },
+        "initial_only": {
+          "predicted_nodes": 1097,
+          "target_nodes": 863,
+          "true_positive": 862,
+          "false_positive": 235,
+          "false_negative": 1,
+          "iou": 0.785063752276867,
+          "precision": 0.7857793983591613,
+          "recall": 0.9988412514484357
+        },
+        "zero_codes": {
+          "predicted_nodes": 207,
+          "target_nodes": 863,
+          "true_positive": 196,
+          "false_positive": 11,
+          "false_negative": 667,
+          "iou": 0.2242562929061785,
+          "precision": 0.9468599033816425,
+          "recall": 0.22711471610660486
+        },
+        "swapped_window_codes": {
+          "predicted_nodes": 978,
+          "target_nodes": 863,
+          "true_positive": 788,
+          "false_positive": 190,
+          "false_negative": 75,
+          "iou": 0.748338081671415,
+          "precision": 0.8057259713701431,
+          "recall": 0.9130938586326767
+        }
+      },
+      "latent_replay": {
+        "correct": {
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        "swapped_window_codes": {
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "correct": {
+          "metrics": {
+            "mae": 0.021107308566570282,
+            "roi_mae": 0.020001212134957314,
+            "motion_mae": 0.027148408815264702,
+            "psnr": 28.72585678100586,
+            "object_box_mae": 0.027530593797564507,
+            "teacher_view1_masked_mae": 0.031468041241168976
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1671,
+              "centroid_xy": [
+                202.28964691801318,
+                46.41891083183722
+              ],
+              "axis_degrees": 179.86893076455252,
+              "elongation": 3.6974688615064246
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.8128921848260126,
+            "centroid_error_px": 1.679054199588622,
+            "axis_error_degrees": 2.4688567252939606,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "free_teacher": {
+          "metrics": {
+            "mae": 0.021384339779615402,
+            "roi_mae": 0.020036201924085617,
+            "motion_mae": 0.027339337393641472,
+            "psnr": 28.66492462158203,
+            "object_box_mae": 0.027836930006742477,
+            "teacher_view1_masked_mae": 0.03185157850384712
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1647,
+              "centroid_xy": [
+                202.2568306010929,
+                46.29265330904675
+              ],
+              "axis_degrees": 0.6719420877724076,
+              "elongation": 3.7869059840866934
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.8252314814814815,
+            "centroid_error_px": 1.760274809047139,
+            "axis_error_degrees": 1.6658454020740692,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "initial_only": {
+          "metrics": {
+            "mae": 0.021799826994538307,
+            "roi_mae": 0.020715201273560524,
+            "motion_mae": 0.029037518426775932,
+            "psnr": 28.44686508178711,
+            "object_box_mae": 0.02670762501657009,
+            "teacher_view1_masked_mae": 0.03318873792886734
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1438,
+              "centroid_xy": [
+                202.89290681502086,
+                48.33657858136301
+              ],
+              "axis_degrees": 178.03748398227265,
+              "elongation": 4.181393067144056
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.841776110068793,
+            "centroid_error_px": 1.5969801730238335,
+            "axis_error_degrees": 4.30030350757383,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "zero_codes": {
+          "metrics": {
+            "mae": 0.4299870729446411,
+            "roi_mae": 0.42443180084228516,
+            "motion_mae": 0.44673046469688416,
+            "psnr": 6.120796203613281,
+            "object_box_mae": 0.43941619992256165,
+            "teacher_view1_masked_mae": 0.4275500178337097
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": false,
+              "pixels": 0,
+              "centroid_xy": null,
+              "axis_degrees": null,
+              "elongation": null
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.0,
+            "centroid_error_px": null,
+            "axis_error_degrees": null,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "swapped_window_codes": {
+          "metrics": {
+            "mae": 0.04924483969807625,
+            "roi_mae": 0.047673098742961884,
+            "motion_mae": 0.0706605389714241,
+            "psnr": 20.993120193481445,
+            "object_box_mae": 0.059461332857608795,
+            "teacher_view1_masked_mae": 0.058506082743406296
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1524,
+              "centroid_xy": [
+                198.63320209973753,
+                39.51115485564304
+              ],
+              "axis_degrees": 176.9406873061169,
+              "elongation": 3.7766338932896737
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.46779661016949153,
+            "centroid_error_px": 9.167539472636976,
+            "axis_error_degrees": 5.397100183729577,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        },
+        "actual_target": {
+          "metrics": {
+            "mae": 0.019660798832774162,
+            "roi_mae": 0.01837245002388954,
+            "motion_mae": 0.023991134017705917,
+            "psnr": 29.833602905273438,
+            "object_box_mae": 0.023909935727715492,
+            "teacher_view1_masked_mae": 0.031029580160975456
+          },
+          "object_proxy": {
+            "prediction": {
+              "valid": true,
+              "pixels": 1612,
+              "centroid_xy": [
+                203.15384615384616,
+                47.25682382133995
+              ],
+              "axis_degrees": 0.5879314351161895,
+              "elongation": 4.561142596274326
+            },
+            "target": {
+              "valid": true,
+              "pixels": 1507,
+              "centroid_xy": [
+                203.8440610484406,
+                47.05374917053749
+              ],
+              "axis_degrees": 2.3377874898464768,
+              "elongation": 4.8483788041952325
+            },
+            "iou": 0.9041514041514042,
+            "centroid_error_px": 0.7194691894157552,
+            "axis_error_degrees": 1.7498560547302873,
+            "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+          }
+        }
+      },
+      "support": {
+        "correct": {
+          "predicted_nodes": 1220,
+          "target_nodes": 933,
+          "true_positive": 932,
+          "false_positive": 288,
+          "false_negative": 1,
+          "iou": 0.7633087633087633,
+          "precision": 0.7639344262295082,
+          "recall": 0.9989281886387996
+        },
+        "free_teacher": {
+          "predicted_nodes": 1222,
+          "target_nodes": 933,
+          "true_positive": 932,
+          "false_positive": 290,
+          "false_negative": 1,
+          "iou": 0.7620605069501226,
+          "precision": 0.762684124386252,
+          "recall": 0.9989281886387996
+        },
+        "initial_only": {
+          "predicted_nodes": 1157,
+          "target_nodes": 933,
+          "true_positive": 921,
+          "false_positive": 236,
+          "false_negative": 12,
+          "iou": 0.787852865697177,
+          "precision": 0.7960242005185826,
+          "recall": 0.9871382636655949
+        },
+        "zero_codes": {
+          "predicted_nodes": 295,
+          "target_nodes": 933,
+          "true_positive": 260,
+          "false_positive": 35,
+          "false_negative": 673,
+          "iou": 0.26859504132231404,
+          "precision": 0.8813559322033898,
+          "recall": 0.27867095391211144
+        },
+        "swapped_window_codes": {
+          "predicted_nodes": 1284,
+          "target_nodes": 933,
+          "true_positive": 865,
+          "false_positive": 419,
+          "false_negative": 68,
+          "iou": 0.639792899408284,
+          "precision": 0.6736760124610592,
+          "recall": 0.9271168274383709
+        }
+      },
+      "latent_replay": {
+        "correct": {
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        },
+        "swapped_window_codes": {
+          "mae": 0.0,
+          "psnr": 120.0,
+          "passed": true
+        }
+      }
+    }
+  ],
+  "train": {
+    "status": "complete",
+    "steps": 1200,
+    "source": {
+      "protocol_sha256": "fb90a13c879cea231af711fe78bce50182c4923c691479b517f91e2c44fb1031",
+      "code_sha256": "75c52256e652e1c3df260bd1c055f6b605d6b76f8a3b87510bb3484d595b8587",
+      "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+      "teacher_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+      "teacher_tensor_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+      "posterior_initial_digest": "9040f02a8cb303c9f8b68a2c761633ebf19a1074dab99c3b5d214b9f8da5221c",
+      "posterior_prefix_policy": "For code h, prepare S0..Sh separately using only prefix coordinate union; cache frozen 64-wide keys; no per-window embeddings or indices enter posterior",
+      "decoder_frozen": true,
+      "quantized": false,
+      "code_shape": [
+        2,
+        9,
+        16
+      ],
+      "states": {
+        "35": [
+          "b7b9ad624dca8a2a62298d861a48401066d3c2c1d1b84bce333d16edde906080",
+          "d24bb2d5b05c002ad1125904e966cd73e68c20fbb28d3d8a65e5402a971dd4ec",
+          "62f6a616bba943cc2a0e6086c2d5a948d12e5bfb319c1a9b612fd9c1c14f4c60",
+          "5c473ed53a7740ae9e76f463215c5094b7c165562f03418dff68d622e8c9311a",
+          "78dcc2148b36e4555fa7b2c259cb504cbf87853b3cedcb73424649e8c15da3cf",
+          "0b51387e44293c357fcf444206987d91e2aa3d494316c79cd228c259072c70e7",
+          "7ccb96779196635a8f4a16f5d45a4042cf47d5fff6dac34a8e56dd66824a027e",
+          "079cee02d1425af1ea274ad69efaf35808fc601d487be5f17c3ba93ad70206e0",
+          "951facd0ec3264487df7e287376dfdd945d0c1f278a743361592ec3ba4b4964b",
+          "da1af276cd1ca72a657f8b71f32c633e6adba79619b2fdf39aac5f6152c6ece0"
+        ],
+        "123": [
+          "89acc9092e32fdbff2d7930262603dacb200ed392ddc3a51fbd331d02b619bcb",
+          "b0630398799e31fc60c74de457885900a1a512c04a5c1102f07592c393fe37f4",
+          "cf544ea9c37338174f456f785baa29a7fba4adcbed1b286145cd40459a556e7c",
+          "63e73b3af8c897138f84f43ab2c78ccaf6e196fb75538e27e72e6a82cac11b54",
+          "b0bc618144e9beaf24d1f8c18bfae1acc5b17e47f902f9b3a958779ed1a1f43f",
+          "d658044bb71f0663ad509a9ee42276e2b6c158acfb0e49f5a729486c20e6bb18",
+          "e0fbb40e10435cf1e9d9c38d3166dd6ad1edab14b90a56052747e60ad3fe4eea",
+          "1f6a5653d81cedf56d4d3a96c20cbcad7e881c48652ba9c459ac31bd565f0284",
+          "db8559c4f819809e27b78900e8f378cefb51405c24c89e0180bcd8e3c656cda7",
+          "688859b0379d047d37a78bdaa478f718de91a0e32ae46446e125b567267aeed1"
+        ]
+      }
+    },
+    "final_posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+    "checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+    "teacher_frozen": true,
+    "codec_frozen": true,
+    "posterior_checkpoint_replay": "passed",
+    "elapsed_seconds": 755.3997677969746,
+    "peak_reserved_gib": 8.1484375
+  },
+  "replay": {
+    "status": "passed",
+    "mode": "qformer_continuous",
+    "packets": 30,
+    "views": 60,
+    "rows": [
+      {
+        "name": "s035_h00_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h01_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h02_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h03_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h04_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h05_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h06_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h07_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h08_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_free_teacher",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_initial_only",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_zero_codes",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_swapped_window_codes",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s035_h09_actual_target",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h00_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h01_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h02_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h03_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h04_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h05_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h06_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h07_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h08_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_correct",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_free_teacher",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_initial_only",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_zero_codes",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_swapped_window_codes",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "s123_h09_actual_target",
+        "views": [
+          {
+            "view": 0,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          },
+          {
+            "view": 1,
+            "mae": 0.0,
+            "psnr": 120.0,
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "producer_pid": 625575,
+    "replay_pid": 627877,
+    "encoder_or_codec_loaded": false,
+    "max_mae": 0.0,
+    "min_psnr": 120.0,
+    "elapsed_seconds": 1.683519315032754,
+    "packets_sha256": "c9afabf1e52e7186aa471bb0626ab6bd806442138a251f7c297be43e9d1a0c71"
+  },
+  "protocol_sha256": "fb90a13c879cea231af711fe78bce50182c4923c691479b517f91e2c44fb1031",
+  "code_sha256": "75c52256e652e1c3df260bd1c055f6b605d6b76f8a3b87510bb3484d595b8587",
+  "action_success": "pending visual review",
+  "next_stage": "No automatic LFQ or full-dataset training"
+}

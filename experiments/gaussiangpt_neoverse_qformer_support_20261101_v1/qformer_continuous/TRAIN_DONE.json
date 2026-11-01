@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "steps": 1200,
+  "source": {
+    "protocol_sha256": "fb90a13c879cea231af711fe78bce50182c4923c691479b517f91e2c44fb1031",
+    "code_sha256": "75c52256e652e1c3df260bd1c055f6b605d6b76f8a3b87510bb3484d595b8587",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "teacher_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+    "teacher_tensor_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+    "posterior_initial_digest": "9040f02a8cb303c9f8b68a2c761633ebf19a1074dab99c3b5d214b9f8da5221c",
+    "posterior_prefix_policy": "For code h, prepare S0..Sh separately using only prefix coordinate union; cache frozen 64-wide keys; no per-window embeddings or indices enter posterior",
+    "decoder_frozen": true,
+    "quantized": false,
+    "code_shape": [
+      2,
+      9,
+      16
+    ],
+    "states": {
+      "35": [
+        "b7b9ad624dca8a2a62298d861a48401066d3c2c1d1b84bce333d16edde906080",
+        "d24bb2d5b05c002ad1125904e966cd73e68c20fbb28d3d8a65e5402a971dd4ec",
+        "62f6a616bba943cc2a0e6086c2d5a948d12e5bfb319c1a9b612fd9c1c14f4c60",
+        "5c473ed53a7740ae9e76f463215c5094b7c165562f03418dff68d622e8c9311a",
+        "78dcc2148b36e4555fa7b2c259cb504cbf87853b3cedcb73424649e8c15da3cf",
+        "0b51387e44293c357fcf444206987d91e2aa3d494316c79cd228c259072c70e7",
+        "7ccb96779196635a8f4a16f5d45a4042cf47d5fff6dac34a8e56dd66824a027e",
+        "079cee02d1425af1ea274ad69efaf35808fc601d487be5f17c3ba93ad70206e0",
+        "951facd0ec3264487df7e287376dfdd945d0c1f278a743361592ec3ba4b4964b",
+        "da1af276cd1ca72a657f8b71f32c633e6adba79619b2fdf39aac5f6152c6ece0"
+      ],
+      "123": [
+        "89acc9092e32fdbff2d7930262603dacb200ed392ddc3a51fbd331d02b619bcb",
+        "b0630398799e31fc60c74de457885900a1a512c04a5c1102f07592c393fe37f4",
+        "cf544ea9c37338174f456f785baa29a7fba4adcbed1b286145cd40459a556e7c",
+        "63e73b3af8c897138f84f43ab2c78ccaf6e196fb75538e27e72e6a82cac11b54",
+        "b0bc618144e9beaf24d1f8c18bfae1acc5b17e47f902f9b3a958779ed1a1f43f",
+        "d658044bb71f0663ad509a9ee42276e2b6c158acfb0e49f5a729486c20e6bb18",
+        "e0fbb40e10435cf1e9d9c38d3166dd6ad1edab14b90a56052747e60ad3fe4eea",
+        "1f6a5653d81cedf56d4d3a96c20cbcad7e881c48652ba9c459ac31bd565f0284",
+        "db8559c4f819809e27b78900e8f378cefb51405c24c89e0180bcd8e3c656cda7",
+        "688859b0379d047d37a78bdaa478f718de91a0e32ae46446e125b567267aeed1"
+      ]
+    }
+  },
+  "final_posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+  "checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+  "teacher_frozen": true,
+  "codec_frozen": true,
+  "posterior_checkpoint_replay": "passed",
+  "elapsed_seconds": 755.3997677969746,
+  "peak_reserved_gib": 8.1484375
+}
