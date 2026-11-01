@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "code_sha256": "4f5c5fd31334726e7a031a5bba7e8b751a7c95ede2fab28225a77c03ccf7a8c2",
+  "sampler": {
+    "status": "passed",
+    "distill_sweeps": 2,
+    "joint_sweeps": 2,
+    "distill_updates": 84,
+    "joint_updates": 756,
+    "total_updates": 840,
+    "windows": 168,
+    "future_pairs": 1512,
+    "sha256": "33c4b3297d79c64e55e4c4f675e05f5c0cfc37c52a610f8f1c29eb2fe6e935af"
+  },
+  "deterministic_common_sampler": true,
+  "missing_window_horizon_rejected": true,
+  "teacher_checkpoint_tensor_and_code_pair_verified": true,
+  "quantized_unreviewed_and_tampered_teachers_rejected": true,
+  "scope": "Synthetic teacher for provenance tests only; no formal teacher or GPU training"
+}
