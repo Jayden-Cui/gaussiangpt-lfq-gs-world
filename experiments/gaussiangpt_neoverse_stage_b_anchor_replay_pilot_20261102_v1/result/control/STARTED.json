@@ -1,0 +1,20 @@
+{
+  "status": "running",
+  "arm": "control",
+  "initial_decoder_digest": "a7bdb892ebc5e9ce4901a47576af547067902c09cc75dd37c2a3b36506e1a872",
+  "initial_codes_match_checkpoint": true,
+  "initial_adam_matches_checkpoint": true,
+  "sampler": {
+    "status": "passed",
+    "updates": 189,
+    "main_pairs": 756,
+    "windows": 168,
+    "per_horizon": 84,
+    "anchor_examples": 189,
+    "anchor_pair_counts": [
+      10,
+      11
+    ],
+    "sha256": "d4ed56c98f66062a9b69992113476ce8b6ce0920375697f7c9624db7a4a189c5"
+  }
+}

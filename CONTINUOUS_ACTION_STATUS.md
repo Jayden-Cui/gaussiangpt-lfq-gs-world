@@ -36,6 +36,6 @@
 
 [全部 168 窗口的 h9 交叉诊断](experiments/gaussiangpt_neoverse_stage_b_cross_h9_20261102_v1/EXECUTION.md)已完成：同用第 5 轮码时，起点／第 5 轮 decoder 的运动 MAE 为 0.196871／0.084201；第 5 轮 decoder 在 166 窗口误差更低，但两个例外正是此前成功窗口 35 和 123。当前是全片段适配与锚点保留的权衡，不能直接冻结起点 decoder；这仍只是一条视频的 h9 离线诊断。
 
-已启动[关键窗口重放的两组匹配小试](experiments/gaussiangpt_neoverse_stage_b_anchor_replay_pilot_20261102_v1/EXECUTION.md)：从同一第 5 轮 decoder、码和 Adam 状态出发，每组 189 更新，实验组额外增加 0.1 权重的锚点监督；真实 GPU 预检通过、试验结果待完成。该小试不改变原 B 训练，也不是正式教师验收。
+已完成[关键窗口重放的两组匹配小试](experiments/gaussiangpt_neoverse_stage_b_anchor_replay_pilot_20261102_v1/RESULTS.md)：两锚点运动 MAE 从 0.083637 降至 0.071302，高变化组 h9 基本不变；但绿梁在重放组连续九帧未被颜色代理检出，逐帧画面也未恢复完整绿梁，因而不能选作教师。原 B 训练不受该小试改变。
 
-历史两窗口 Q-Former 的重复初态码对真实运动目标的 MAE 为 0.032537，接近真实未来码的 0.029765；旧评估未在未来帧相机下渲染静止 S0 参照。已排队[同相机静止控制诊断](experiments/gaussiangpt_neoverse_qformer_static_control_20261102_v1/EXECUTION.md)，等待重放小试释放 GPU 后运行，结果尚未产生。
+[历史两窗口 Q-Former 的同相机静止控制](experiments/gaussiangpt_neoverse_qformer_static_control_20261102_v1/RESULTS.md)已完成：重复 S0 码对静止参考的误差为 0.159765，对运动参考为 0.029009；18 帧均更接近运动参考，画面也显示物体继续运动。该旧 Q＋decoder 系统没有通过同初态静止控制，但不足以将原因单独归咎 Q 或 decoder。

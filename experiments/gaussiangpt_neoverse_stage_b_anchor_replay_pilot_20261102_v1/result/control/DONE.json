@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "updates": 189,
+  "checkpoint_sha256": "589f4c356551ec603de711fe373748396df64f5b9175b28ab1160b043464df52",
+  "evaluation_sha256": "fae2c0ddc7e69c1f2bd39697c39573ecbb0c99f76b44a9b14a1290200289ef15",
+  "decoder_digest": "f16e028503f5e6036eed128bda2c6125233397d1f30859cbf1367c96d458a9a9"
+}

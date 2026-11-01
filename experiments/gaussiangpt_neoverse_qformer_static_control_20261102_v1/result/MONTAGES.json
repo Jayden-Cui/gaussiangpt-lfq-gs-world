@@ -1,0 +1,98 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "start": 35,
+      "file": "s035_all_future.png",
+      "sha256": "1ccfb7b2caa137ce5e93074fd75db3a8f57b404f95d77a5b836b3b2665254f5d",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "555cf0c77c633a9d7f4298fb7dec2dd9332ed50f1453a4a56a5170548c3fbf33"
+        },
+        {
+          "horizon": 2,
+          "sha256": "533cf070118def8dc12a7794c23f8513dff146c855d5ce2b7c1f21b8478c5035"
+        },
+        {
+          "horizon": 3,
+          "sha256": "8a6399cca369991f90283a7f43a92f59079869b3abaa80f3966faaa5643290c6"
+        },
+        {
+          "horizon": 4,
+          "sha256": "7b17d659695dd8ce8332484484cf2cf8ba7601da8699c809119503ad2111ead9"
+        },
+        {
+          "horizon": 5,
+          "sha256": "61d70e554acbec2a680fd82ca35a05bc9f79772c1d5787ee52e6c16cbf805775"
+        },
+        {
+          "horizon": 6,
+          "sha256": "c1cbe73c3e695f23142e74dc6c063be4c8226e19a590ba641e7b7d1cf7ea00a4"
+        },
+        {
+          "horizon": 7,
+          "sha256": "7c4c8f01b03298112fe4111ab22e3e8f6499ffd0e48fd3613e49a58484b787af"
+        },
+        {
+          "horizon": 8,
+          "sha256": "735ba735b08a766dcfacc678710a1f401ee1f71f579c066112269e29e194e4bc"
+        },
+        {
+          "horizon": 9,
+          "sha256": "cba2358ab08212ba6e86c1f9a8f87480906693b5a9bbdc7321e6c31ffc95e4f7"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_all_future.png",
+      "sha256": "056f69b1756f70c0eb42d7eb86c03152acc922676461f9dbf83faca93dcaa2db",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "f033de718479d57e98bab4e066e6e9c80f0c83349aea33cc996464c4ecd03fb8"
+        },
+        {
+          "horizon": 2,
+          "sha256": "5745782226c36196ede208bf63c5db66c1750cc0e3d07dd698e95b86605e1cf6"
+        },
+        {
+          "horizon": 3,
+          "sha256": "19f6dc2c5c8c58c5bb8b71ae77fd081050a3ea53d8616ae3e6530529551f37db"
+        },
+        {
+          "horizon": 4,
+          "sha256": "4a530f2cca62fcd329d90ff23d2d7e424ddb04aab20d2c989a71a487c1f5997b"
+        },
+        {
+          "horizon": 5,
+          "sha256": "6caab3a84ec07380db2c140a0ef6cdb0c5d78c921ac9b958ac10036a073fa4ce"
+        },
+        {
+          "horizon": 6,
+          "sha256": "0d6099eeaa7601b2ca1fa4b89915ee6fd97a6a4136830928971715cf277c2625"
+        },
+        {
+          "horizon": 7,
+          "sha256": "f6aadd47adec6604eba8c7377129742157dbe44484c980ab5e1e7b7778f58baa"
+        },
+        {
+          "horizon": 8,
+          "sha256": "8644561eb440c0ad95ed574686d2d87d65f4cc1fcda116f35d4cd7d142c050ad"
+        },
+        {
+          "horizon": 9,
+          "sha256": "4d985da5cd971d885de2176488610f71d13c0a2e97081c0cbe8498cb770399eb"
+        }
+      ]
+    }
+  ],
+  "columns": [
+    "source",
+    "moving codec reference",
+    "moving Q code",
+    "static codec reference",
+    "static Q code"
+  ]
+}

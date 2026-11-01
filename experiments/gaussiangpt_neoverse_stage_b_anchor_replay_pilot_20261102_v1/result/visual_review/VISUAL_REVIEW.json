@@ -1,0 +1,11 @@
+{
+  "status": "reviewed",
+  "anchor_windows": [35, 123],
+  "anchor_horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "h9_reviewed_starts": [0, 35, 56, 84, 112, 123, 140, 167],
+  "columns": ["source", "sweep05", "control", "anchor replay"],
+  "yellow_bar": "Replay changes the hand and improves average weighted error, but the moving bar remains faint or absent across multiple frames.",
+  "green_crossbar": "The solid moving green beam is not reliably recovered by either continuation; the 9-frame color proxy detects neither.",
+  "verdict": "Exploratory numeric gate passes but the major-object preservation gate fails; no teacher selected.",
+  "limits": ["One training video", "Half-sweep matched pilot", "H9 panels cannot establish full temporal motion", "No independent native GS replay"]
+}

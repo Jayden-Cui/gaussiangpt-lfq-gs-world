@@ -1,0 +1,146 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "start": 35,
+      "file": "s035_all_future.png",
+      "sha256": "7c2bed4c9707be2c48b0c01d9b7c750246afade911ee27e8d70540a0104ddc26",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "240c16fa0a0e9d871573ffa8be62604f7079e7adefdcfd6d8a259705b7b8debf"
+        },
+        {
+          "horizon": 2,
+          "sha256": "acfde16dcde52776ead404c970109bd14591d14e8e1cee207d374cdf5d6478e2"
+        },
+        {
+          "horizon": 3,
+          "sha256": "01acb026255fc817eaf69ae0b37f93949408023d3e1216de4b78463bfaf5f213"
+        },
+        {
+          "horizon": 4,
+          "sha256": "5c99640d9305565796cd02db962ded1ba8157131b3e437e0215c0f8f16c369f8"
+        },
+        {
+          "horizon": 5,
+          "sha256": "d7df828e89a256040376d7ca5f5c201aa8e7da78271192f52d129db07351d4f4"
+        },
+        {
+          "horizon": 6,
+          "sha256": "7d94715b0c0a32b4209866221bdeea77574e64b06cedbe953e69ee32c3963b68"
+        },
+        {
+          "horizon": 7,
+          "sha256": "acdaf5ea6334774e2f5d34e09fd6cc67fc3172ab21fe7e82d0d7b798bacaf5a0"
+        },
+        {
+          "horizon": 8,
+          "sha256": "18a83603e11bc9e0e43a2fea9bc8f5532de4c2efdde169c92028a55acc2da1c9"
+        },
+        {
+          "horizon": 9,
+          "sha256": "a4a39f93423cc4fb8217b478884e7ca8761b86dae5d65de3c8a0afebb81c0a5b"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_all_future.png",
+      "sha256": "402596a3a9356757fa86fcd6dacafefd33bfa168c8473bda2a0fad72c8d9f716",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "839216f279efde54c6472b18672245554338d561bf694f15b4c7bdd98e5d72df"
+        },
+        {
+          "horizon": 2,
+          "sha256": "e71edcc3f444062394a2814394336a883736aa7de9a88585fbd508e42339a4b6"
+        },
+        {
+          "horizon": 3,
+          "sha256": "498514c6884f7af70493a2ce9658102ecaa985dbf59b621fa77b1d5926eb5a1e"
+        },
+        {
+          "horizon": 4,
+          "sha256": "39adf113285808fd7a28d8fe68ec07e5e730461c5e5b01d0049cff26d5ea0b31"
+        },
+        {
+          "horizon": 5,
+          "sha256": "7026292f73601e4c31bf8d6ffecebd2be4350d32f28061f00555af0d16b57ae2"
+        },
+        {
+          "horizon": 6,
+          "sha256": "5568941ff634f39e84c1dc1aa05c4531248e62f578de288ddb1499aecc37c54b"
+        },
+        {
+          "horizon": 7,
+          "sha256": "6e1b7b38d3c9c43ce001fe76ba646b7f663c9b750a1fb384e28c4a09ea790c75"
+        },
+        {
+          "horizon": 8,
+          "sha256": "c57bff53981cad52c6b0925d006467397faad454e8136811deff7decccc01f96"
+        },
+        {
+          "horizon": 9,
+          "sha256": "c86b31d2140e87602a809112588bd7d2e41d133718897b55ca15adca15a70a88"
+        }
+      ]
+    },
+    {
+      "starts": [
+        0,
+        35,
+        56,
+        84,
+        112,
+        123,
+        140,
+        167
+      ],
+      "file": "h09_eight_windows.png",
+      "sha256": "dda2f2ae7d0e2accda878562401ba9938144d190df9cf79f00f1b369fdaf1750",
+      "inputs": [
+        {
+          "start": 0,
+          "sha256": "dc6ed47ac6d4e5441a205ef1c435524204bccb91de03aa1a513a113e0844d1d8"
+        },
+        {
+          "start": 35,
+          "sha256": "a4a39f93423cc4fb8217b478884e7ca8761b86dae5d65de3c8a0afebb81c0a5b"
+        },
+        {
+          "start": 56,
+          "sha256": "e34c611ea6a03537a70d6eb6b2b723acb7053d3bdf7e4512f5e7682cbf4a7c5a"
+        },
+        {
+          "start": 84,
+          "sha256": "bd58f49b3213df001eb7dddee0a525e8645a77b5d6dc67ee500984adf7a9b83f"
+        },
+        {
+          "start": 112,
+          "sha256": "33756d331f9585ae197a62d6a93f6059e05f94ac1917997305cd1e2c8f88aff1"
+        },
+        {
+          "start": 123,
+          "sha256": "c86b31d2140e87602a809112588bd7d2e41d133718897b55ca15adca15a70a88"
+        },
+        {
+          "start": 140,
+          "sha256": "9f9aac76cd5c1b9d354b115603eed26ffd2b0acf67e1aeb7dee9783184e44e1f"
+        },
+        {
+          "start": 167,
+          "sha256": "729a0f01021f6ef0abb20f7e0f1d37382a546817810da8cc69d60e8a3eb8a569"
+        }
+      ]
+    }
+  ],
+  "columns": [
+    "source",
+    "sweep05",
+    "control",
+    "anchor_replay"
+  ],
+  "scope": "No new model inference; source panels from matched pilot"
+}

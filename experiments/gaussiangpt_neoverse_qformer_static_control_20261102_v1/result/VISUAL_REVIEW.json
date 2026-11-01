@@ -1,0 +1,12 @@
+{
+  "status": "reviewed",
+  "reviewed_starts": [35, 123],
+  "horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "same_camera": true,
+  "observations": {
+    "35": "The static S0 codec reference keeps the yellow bar near its original horizontal position, while the repeated-S0 Q output lifts and rotates it toward the moving trajectory.",
+    "123": "The static S0 codec reference keeps the green beam near its original hand-held position, while the repeated-S0 Q output moves it toward the pillars."
+  },
+  "verdict": "Historical two-window Q-Former plus fixed decoder fails this same-initial-state static control.",
+  "limits": ["View-0 rendering, not full 3D object tracking", "Repeated-S0 code was not trained on a static target", "Not a new C model, online prediction, cross-source validation or independent GS replay"]
+}

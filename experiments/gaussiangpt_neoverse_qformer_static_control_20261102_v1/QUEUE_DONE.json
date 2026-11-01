@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "result_sha256": "f83318ad09a3fd0ee6d052b7a36d371546f7996c86d09374ea72edcb23b9e2d2",
+  "pilot_signalled": false,
+  "main_training_signalled": false,
+  "visual_review": "pending"
+}
