@@ -1,0 +1,185 @@
+{
+  "status": "complete",
+  "variants": {
+    "C0": {
+      "status": "passed",
+      "variant": "C0",
+      "logical_batch_size": 4,
+      "windows": [
+        0,
+        35,
+        123,
+        167
+      ],
+      "horizon": 9,
+      "synthetic_code_offset": 0.05,
+      "distill_seconds": 0.9424771040212363,
+      "joint_seconds": 2.936718052951619,
+      "peak_allocated_gib": 6.476357936859131,
+      "peak_reserved_gib": 8.884765625,
+      "distill_gradients": {
+        "queries": 0.0022274074144661427,
+        "projection": 0.9706870317459106
+      },
+      "joint_gradients": {
+        "queries": 0.0023038536310195923,
+        "projection": 0.4857417047023773
+      },
+      "rgb_only_gradients": [
+        {
+          "query": 0.004059864208102226,
+          "projection": 1.068227767944336,
+          "encoder_input": null
+        },
+        {
+          "query": 0.0027503676246851683,
+          "projection": 0.498868852853775,
+          "encoder_input": null
+        },
+        {
+          "query": 0.00599674740806222,
+          "projection": 1.4050910472869873,
+          "encoder_input": null
+        },
+        {
+          "query": 0.0002953436051029712,
+          "projection": 0.07773525267839432,
+          "encoder_input": null
+        }
+      ],
+      "synthetic_updates_discarded": true,
+      "decoder_and_codec_frozen": true,
+      "model_initial_digest": "46b17eb7be2286040c9a9d2de0157abf1adaf390c9579b36a51f6d175e52ac98",
+      "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+      "posterior_initial_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+      "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+      "pilot_code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d",
+      "scope": "Engineering GPU preflight using a perturbed baseline code as synthetic target; no teacher or quality claim"
+    },
+    "C1": {
+      "status": "passed",
+      "variant": "C1",
+      "logical_batch_size": 4,
+      "windows": [
+        0,
+        35,
+        123,
+        167
+      ],
+      "horizon": 9,
+      "synthetic_code_offset": 0.05,
+      "distill_seconds": 4.8944600109243765,
+      "joint_seconds": 8.574336233083159,
+      "peak_allocated_gib": 6.383854866027832,
+      "peak_reserved_gib": 8.841796875,
+      "distill_gradients": {
+        "queries": 0.002169391606003046,
+        "projection": 0.9454041719436646,
+        "encoder_input": 0.21562471985816956,
+        "encoder_backbone": 0.070144884288311
+      },
+      "joint_gradients": {
+        "queries": 0.0029232099186629057,
+        "projection": 0.5266129374504089,
+        "encoder_input": 0.1749521642923355,
+        "encoder_backbone": 0.057615261524915695
+      },
+      "rgb_only_gradients": [
+        {
+          "query": 0.004701524507254362,
+          "projection": 1.178532361984253,
+          "encoder_input": 0.37254053354263306
+        },
+        {
+          "query": 0.003204834647476673,
+          "projection": 0.6934732794761658,
+          "encoder_input": 0.20381926000118256
+        },
+        {
+          "query": 0.007868373766541481,
+          "projection": 1.568147897720337,
+          "encoder_input": 0.4356496334075928
+        },
+        {
+          "query": 0.00026075675850734115,
+          "projection": 0.07675902545452118,
+          "encoder_input": 0.03171278163790703
+        }
+      ],
+      "synthetic_updates_discarded": true,
+      "decoder_and_codec_frozen": true,
+      "model_initial_digest": "c20a06583716b50f2f7012d104470fe2d8293b20a38ee14ec0b94773bd3f74e4",
+      "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+      "posterior_initial_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+      "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+      "pilot_code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d",
+      "scope": "Engineering GPU preflight using a perturbed baseline code as synthetic target; no teacher or quality claim"
+    },
+    "C2": {
+      "status": "passed",
+      "variant": "C2",
+      "logical_batch_size": 4,
+      "windows": [
+        0,
+        35,
+        123,
+        167
+      ],
+      "horizon": 9,
+      "synthetic_code_offset": 0.05,
+      "distill_seconds": 5.2088935220381245,
+      "joint_seconds": 9.717434777063318,
+      "peak_allocated_gib": 6.387253761291504,
+      "peak_reserved_gib": 8.58203125,
+      "distill_gradients": {
+        "queries": 0.005076127592474222,
+        "projection": 0.8988991975784302,
+        "encoder_input": 0.27137917280197144,
+        "encoder_backbone": 0.07799013704061508,
+        "time_projection": 0.0018979517044499516,
+        "delta_projection": 0.1787409484386444
+      },
+      "joint_gradients": {
+        "queries": 0.0024774286430329084,
+        "projection": 0.525958240032196,
+        "encoder_input": 0.17089059948921204,
+        "encoder_backbone": 0.05571310222148895,
+        "time_projection": 0.001965941395610571,
+        "delta_projection": 0.08817827701568604
+      },
+      "rgb_only_gradients": [
+        {
+          "query": 0.00589513685554266,
+          "projection": 1.2513608932495117,
+          "encoder_input": 0.4250931143760681
+        },
+        {
+          "query": 0.0027633467689156532,
+          "projection": 0.5167868137359619,
+          "encoder_input": 0.1993371993303299
+        },
+        {
+          "query": 0.006346890237182379,
+          "projection": 1.5608785152435303,
+          "encoder_input": 0.39668336510658264
+        },
+        {
+          "query": 0.0003520749742165208,
+          "projection": 0.06894746422767639,
+          "encoder_input": 0.026267297565937042
+        }
+      ],
+      "synthetic_updates_discarded": true,
+      "decoder_and_codec_frozen": true,
+      "model_initial_digest": "8658c18765798affce88371e6099c540e5bb52e47f70de89a71fc3a5a6362d94",
+      "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+      "posterior_initial_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+      "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+      "pilot_code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d",
+      "scope": "Engineering GPU preflight using a perturbed baseline code as synthetic target; no teacher or quality claim"
+    }
+  },
+  "formal_stage_c_training": "not started",
+  "validated_teacher": "not selected",
+  "b_training_modified": false
+}

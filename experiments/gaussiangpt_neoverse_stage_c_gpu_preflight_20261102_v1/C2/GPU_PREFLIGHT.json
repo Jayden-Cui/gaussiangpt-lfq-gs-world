@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "variant": "C2",
+  "logical_batch_size": 4,
+  "windows": [
+    0,
+    35,
+    123,
+    167
+  ],
+  "horizon": 9,
+  "synthetic_code_offset": 0.05,
+  "distill_seconds": 5.2088935220381245,
+  "joint_seconds": 9.717434777063318,
+  "peak_allocated_gib": 6.387253761291504,
+  "peak_reserved_gib": 8.58203125,
+  "distill_gradients": {
+    "queries": 0.005076127592474222,
+    "projection": 0.8988991975784302,
+    "encoder_input": 0.27137917280197144,
+    "encoder_backbone": 0.07799013704061508,
+    "time_projection": 0.0018979517044499516,
+    "delta_projection": 0.1787409484386444
+  },
+  "joint_gradients": {
+    "queries": 0.0024774286430329084,
+    "projection": 0.525958240032196,
+    "encoder_input": 0.17089059948921204,
+    "encoder_backbone": 0.05571310222148895,
+    "time_projection": 0.001965941395610571,
+    "delta_projection": 0.08817827701568604
+  },
+  "rgb_only_gradients": [
+    {
+      "query": 0.00589513685554266,
+      "projection": 1.2513608932495117,
+      "encoder_input": 0.4250931143760681
+    },
+    {
+      "query": 0.0027633467689156532,
+      "projection": 0.5167868137359619,
+      "encoder_input": 0.1993371993303299
+    },
+    {
+      "query": 0.006346890237182379,
+      "projection": 1.5608785152435303,
+      "encoder_input": 0.39668336510658264
+    },
+    {
+      "query": 0.0003520749742165208,
+      "projection": 0.06894746422767639,
+      "encoder_input": 0.026267297565937042
+    }
+  ],
+  "synthetic_updates_discarded": true,
+  "decoder_and_codec_frozen": true,
+  "model_initial_digest": "8658c18765798affce88371e6099c540e5bb52e47f70de89a71fc3a5a6362d94",
+  "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "posterior_initial_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "pilot_code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d",
+  "scope": "Engineering GPU preflight using a perturbed baseline code as synthetic target; no teacher or quality claim"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d",
+  "rejects_invalid_synthetic_code": true,
+  "requires_all_variant_gradients": true,
+  "scope": "CPU synthetic guards only; no model training or quality claim"
+}

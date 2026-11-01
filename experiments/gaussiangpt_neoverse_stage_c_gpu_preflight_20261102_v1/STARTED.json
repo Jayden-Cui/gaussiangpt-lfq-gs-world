@@ -1,0 +1,8 @@
+{
+  "pid": 754863,
+  "gpu": 1,
+  "b_completed_updates_at_start": 325,
+  "maximum_seconds_per_variant": 300,
+  "b_training_modified": false,
+  "code_sha256": "78aeffd1bac9a59ce13f56d680f75fabf2313ebbf694869192f6a218f07a9e2d"
+}
