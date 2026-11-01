@@ -4,11 +4,13 @@
 
 ## 正在执行：阶段 A
 
-[阶段 A](experiments/gaussiangpt_neoverse_action_stage_a_20261102_v1/README.md) 冻结原 GaussianGPT 状态 codec 和 9560 步运动 decoder，只优化 168 组自由连续码。两个分片各覆盖 84 个窗口、20 轮，计划各 3780 次 B4 更新，固定在第 5、10、20 轮评估。训练和最终动态验收尚未完成。
+[阶段 A](experiments/gaussiangpt_neoverse_action_stage_a_20261102_v1/README.md) 冻结原 GaussianGPT 状态 codec 和 9560 步运动 decoder，只优化 168 组自由连续码。两个分片各覆盖 84 个窗口、20 轮，计划各 3780 次 B4 更新，固定在第 5、10、20 轮评估。训练已完成，最终动态验收尚未完成。
 
-两分片均已保存第 10 轮检查点，即各至少完成 1890 次更新。[两个关键窗口的 CPU 中间检查](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/EXECUTION.md) 显示第 10 轮潜在特征误差与原 Q-Former 基本持平，占据 IoU 略低；[全部 168 个窗口的码均已变化](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/CODE_DRIFT.md)。这不包含图像渲染，不能据此判断动作是否恢复。
+两分片均已完成 20 轮，即各 3780 次更新。[两个关键窗口的 CPU 中间检查](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/EXECUTION.md) 显示第 10 轮潜在特征误差与原 Q-Former 基本持平，占据 IoU 略低；[全部 168 个窗口的码均已变化](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/CODE_DRIFT.md)。这不包含图像渲染，不能据此判断动作是否恢复。
 
-[第 20 轮早期 CPU 汇总](experiments/gaussiangpt_neoverse_stage_a_final_early_20261102_v1/EXECUTION.md) 已完成真实第 10 轮的对照测试并在等待两个训练分片自然结束；它不替代渲染和动态验收。
+[第 20 轮早期 CPU 汇总](experiments/gaussiangpt_neoverse_stage_a_final_early_20261102_v1/EXECUTION.md) 已计算最终码和潜在指标；它不替代渲染和动态验收。
+
+[第 5、10 轮完整渲染与重放](experiments/gaussiangpt_neoverse_stage_a_interim_render_20261102_v1/EXECUTION.md) 已完成。第 10 轮运动 MAE 为 0.061110，原 Q 为 0.062531，真实未来状态 codec 参考为 0.029464；关键末帧绿梁仍基本消失。第 20 轮还在评估。
 
 [前 10 轮训练曲线](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/TRAIN_PREFIX_ANALYSIS.md) 中，组合图像损失从第 1 轮的 0.132495 降至第 10 轮的 0.130169；潜在状态损失基本持平。该组合值不是单独的图像 MAE，也不是固定模型评估。
 

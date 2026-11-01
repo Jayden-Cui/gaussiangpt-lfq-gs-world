@@ -1,0 +1,733 @@
+{
+  "status": "complete",
+  "sweep": 20,
+  "code_shape": [
+    168,
+    9,
+    16
+  ],
+  "code_drift": {
+    "initial_rms": 0.152631476521492,
+    "updated_rms": 0.1594220995903015,
+    "delta_rms": 0.07537394762039185,
+    "delta_over_initial_rms": 0.49382964338799706,
+    "changed_windows": 168
+  },
+  "anchors": {
+    "35": {
+      "baseline_qformer": {
+        "mean_target_feature_normalized_mae": 0.7073892619874742,
+        "mean_support_iou": 0.594549598437751,
+        "h9": {
+          "start": 35,
+          "horizon": 9,
+          "frame": 44,
+          "condition": "baseline_qformer",
+          "target_feature_normalized_mae": 0.7529672980308533,
+          "support": {
+            "predicted_nodes": 1519,
+            "target_nodes": 863,
+            "true_positive": 843,
+            "false_positive": 676,
+            "false_negative": 20,
+            "iou": 0.5477582846003899,
+            "precision": 0.554970375246873,
+            "recall": 0.9768250289687138
+          }
+        }
+      },
+      "free_code": {
+        "mean_target_feature_normalized_mae": 0.7095329165458679,
+        "mean_support_iou": 0.5817143341548661,
+        "h9": {
+          "start": 35,
+          "horizon": 9,
+          "frame": 44,
+          "condition": "free_code",
+          "target_feature_normalized_mae": 0.758758008480072,
+          "support": {
+            "predicted_nodes": 1464,
+            "target_nodes": 863,
+            "true_positive": 834,
+            "false_positive": 630,
+            "false_negative": 29,
+            "iou": 0.5586068318821166,
+            "precision": 0.569672131147541,
+            "recall": 0.966396292004635
+          }
+        }
+      }
+    },
+    "123": {
+      "baseline_qformer": {
+        "mean_target_feature_normalized_mae": 0.7109074062771268,
+        "mean_support_iou": 0.535763038914125,
+        "h9": {
+          "start": 123,
+          "horizon": 9,
+          "frame": 132,
+          "condition": "baseline_qformer",
+          "target_feature_normalized_mae": 0.7603340148925781,
+          "support": {
+            "predicted_nodes": 1875,
+            "target_nodes": 933,
+            "true_positive": 889,
+            "false_positive": 986,
+            "false_negative": 44,
+            "iou": 0.4632621156852527,
+            "precision": 0.47413333333333335,
+            "recall": 0.9528403001071811
+          }
+        }
+      },
+      "free_code": {
+        "mean_target_feature_normalized_mae": 0.7109012206395467,
+        "mean_support_iou": 0.5276817986262068,
+        "h9": {
+          "start": 123,
+          "horizon": 9,
+          "frame": 132,
+          "condition": "free_code",
+          "target_feature_normalized_mae": 0.7638200521469116,
+          "support": {
+            "predicted_nodes": 2038,
+            "target_nodes": 933,
+            "true_positive": 916,
+            "false_positive": 1122,
+            "false_negative": 17,
+            "iou": 0.4457420924574209,
+            "precision": 0.4494602551521099,
+            "recall": 0.9817792068595927
+          }
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.5966292023658752,
+      "support": {
+        "predicted_nodes": 1153,
+        "target_nodes": 823,
+        "true_positive": 813,
+        "false_positive": 340,
+        "false_negative": 10,
+        "iou": 0.6990541702493551,
+        "precision": 0.7051170858629662,
+        "recall": 0.9878493317132442
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6498298048973083,
+      "support": {
+        "predicted_nodes": 1213,
+        "target_nodes": 840,
+        "true_positive": 826,
+        "false_positive": 387,
+        "false_negative": 14,
+        "iou": 0.6731866340668297,
+        "precision": 0.6809563066776587,
+        "recall": 0.9833333333333333
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6954796314239502,
+      "support": {
+        "predicted_nodes": 1371,
+        "target_nodes": 853,
+        "true_positive": 831,
+        "false_positive": 540,
+        "false_negative": 22,
+        "iou": 0.5965541995692749,
+        "precision": 0.6061269146608315,
+        "recall": 0.9742086752637749
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7038782835006714,
+      "support": {
+        "predicted_nodes": 1427,
+        "target_nodes": 849,
+        "true_positive": 837,
+        "false_positive": 590,
+        "false_negative": 12,
+        "iou": 0.5816539263377345,
+        "precision": 0.5865451997196917,
+        "recall": 0.9858657243816255
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7252968549728394,
+      "support": {
+        "predicted_nodes": 1447,
+        "target_nodes": 868,
+        "true_positive": 847,
+        "false_positive": 600,
+        "false_negative": 21,
+        "iou": 0.5769754768392371,
+        "precision": 0.585348997926745,
+        "recall": 0.9758064516129032
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7514914870262146,
+      "support": {
+        "predicted_nodes": 1484,
+        "target_nodes": 873,
+        "true_positive": 841,
+        "false_positive": 643,
+        "false_negative": 32,
+        "iou": 0.5547493403693932,
+        "precision": 0.566711590296496,
+        "recall": 0.9633447880870561
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7523621916770935,
+      "support": {
+        "predicted_nodes": 1505,
+        "target_nodes": 891,
+        "true_positive": 861,
+        "false_positive": 644,
+        "false_negative": 30,
+        "iou": 0.5609120521172638,
+        "precision": 0.5720930232558139,
+        "recall": 0.9663299663299664
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7385686039924622,
+      "support": {
+        "predicted_nodes": 1547,
+        "target_nodes": 893,
+        "true_positive": 876,
+        "false_positive": 671,
+        "false_negative": 17,
+        "iou": 0.5601023017902813,
+        "precision": 0.5662572721396251,
+        "recall": 0.9809630459126539
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7529672980308533,
+      "support": {
+        "predicted_nodes": 1519,
+        "target_nodes": 863,
+        "true_positive": 843,
+        "false_positive": 676,
+        "false_negative": 20,
+        "iou": 0.5477582846003899,
+        "precision": 0.554970375246873,
+        "recall": 0.9768250289687138
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.5957167744636536,
+      "support": {
+        "predicted_nodes": 1263,
+        "target_nodes": 823,
+        "true_positive": 820,
+        "false_positive": 443,
+        "false_negative": 3,
+        "iou": 0.6477093206951027,
+        "precision": 0.6492478226444972,
+        "recall": 0.9963547995139733
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.6454290747642517,
+      "support": {
+        "predicted_nodes": 1308,
+        "target_nodes": 840,
+        "true_positive": 830,
+        "false_positive": 478,
+        "false_negative": 10,
+        "iou": 0.629742033383915,
+        "precision": 0.6345565749235474,
+        "recall": 0.9880952380952381
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.6953731179237366,
+      "support": {
+        "predicted_nodes": 1368,
+        "target_nodes": 853,
+        "true_positive": 827,
+        "false_positive": 541,
+        "false_negative": 26,
+        "iou": 0.5932568149210904,
+        "precision": 0.60453216374269,
+        "recall": 0.9695193434935522
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7059075832366943,
+      "support": {
+        "predicted_nodes": 1432,
+        "target_nodes": 849,
+        "true_positive": 836,
+        "false_positive": 596,
+        "false_negative": 13,
+        "iou": 0.5785467128027681,
+        "precision": 0.5837988826815642,
+        "recall": 0.9846878680800942
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7337276339530945,
+      "support": {
+        "predicted_nodes": 1443,
+        "target_nodes": 868,
+        "true_positive": 845,
+        "false_positive": 598,
+        "false_negative": 23,
+        "iou": 0.5763983628922238,
+        "precision": 0.5855855855855856,
+        "recall": 0.9735023041474654
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7561675310134888,
+      "support": {
+        "predicted_nodes": 1506,
+        "target_nodes": 873,
+        "true_positive": 841,
+        "false_positive": 665,
+        "false_negative": 32,
+        "iou": 0.546814044213264,
+        "precision": 0.5584329349269588,
+        "recall": 0.9633447880870561
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7541309595108032,
+      "support": {
+        "predicted_nodes": 1555,
+        "target_nodes": 891,
+        "true_positive": 867,
+        "false_positive": 688,
+        "false_negative": 24,
+        "iou": 0.5490816972767575,
+        "precision": 0.557556270096463,
+        "recall": 0.9730639730639731
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7405855655670166,
+      "support": {
+        "predicted_nodes": 1555,
+        "target_nodes": 893,
+        "true_positive": 874,
+        "false_positive": 681,
+        "false_negative": 19,
+        "iou": 0.5552731893265566,
+        "precision": 0.5620578778135048,
+        "recall": 0.9787234042553191
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.758758008480072,
+      "support": {
+        "predicted_nodes": 1464,
+        "target_nodes": 863,
+        "true_positive": 834,
+        "false_positive": 630,
+        "false_negative": 29,
+        "iou": 0.5586068318821166,
+        "precision": 0.569672131147541,
+        "recall": 0.966396292004635
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6169313788414001,
+      "support": {
+        "predicted_nodes": 1238,
+        "target_nodes": 909,
+        "true_positive": 872,
+        "false_positive": 366,
+        "false_negative": 37,
+        "iou": 0.683921568627451,
+        "precision": 0.7043618739903069,
+        "recall": 0.9592959295929593
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6783379316329956,
+      "support": {
+        "predicted_nodes": 1474,
+        "target_nodes": 933,
+        "true_positive": 908,
+        "false_positive": 566,
+        "false_negative": 25,
+        "iou": 0.6057371581054036,
+        "precision": 0.6160108548168249,
+        "recall": 0.9732047159699893
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6908606290817261,
+      "support": {
+        "predicted_nodes": 1620,
+        "target_nodes": 960,
+        "true_positive": 930,
+        "false_positive": 690,
+        "false_negative": 30,
+        "iou": 0.5636363636363636,
+        "precision": 0.5740740740740741,
+        "recall": 0.96875
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.6997039318084717,
+      "support": {
+        "predicted_nodes": 1768,
+        "target_nodes": 974,
+        "true_positive": 950,
+        "false_positive": 818,
+        "false_negative": 24,
+        "iou": 0.5301339285714286,
+        "precision": 0.5373303167420814,
+        "recall": 0.9753593429158111
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7264387011528015,
+      "support": {
+        "predicted_nodes": 1798,
+        "target_nodes": 994,
+        "true_positive": 957,
+        "false_positive": 841,
+        "false_negative": 37,
+        "iou": 0.5215258855585831,
+        "precision": 0.532258064516129,
+        "recall": 0.9627766599597586
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7348350882530212,
+      "support": {
+        "predicted_nodes": 1884,
+        "target_nodes": 984,
+        "true_positive": 960,
+        "false_positive": 924,
+        "false_negative": 24,
+        "iou": 0.5031446540880503,
+        "precision": 0.5095541401273885,
+        "recall": 0.975609756097561
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7447937726974487,
+      "support": {
+        "predicted_nodes": 1903,
+        "target_nodes": 955,
+        "true_positive": 920,
+        "false_positive": 983,
+        "false_negative": 35,
+        "iou": 0.47471620227038186,
+        "precision": 0.4834471886495008,
+        "recall": 0.9633507853403142
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7459312081336975,
+      "support": {
+        "predicted_nodes": 1873,
+        "target_nodes": 931,
+        "true_positive": 904,
+        "false_positive": 969,
+        "false_negative": 27,
+        "iou": 0.47578947368421054,
+        "precision": 0.4826481580352376,
+        "recall": 0.9709989258861439
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "condition": "baseline_qformer",
+      "target_feature_normalized_mae": 0.7603340148925781,
+      "support": {
+        "predicted_nodes": 1875,
+        "target_nodes": 933,
+        "true_positive": 889,
+        "false_positive": 986,
+        "false_negative": 44,
+        "iou": 0.4632621156852527,
+        "precision": 0.47413333333333335,
+        "recall": 0.9528403001071811
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.6095925569534302,
+      "support": {
+        "predicted_nodes": 1298,
+        "target_nodes": 909,
+        "true_positive": 891,
+        "false_positive": 407,
+        "false_negative": 18,
+        "iou": 0.6770516717325228,
+        "precision": 0.6864406779661016,
+        "recall": 0.9801980198019802
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.6750946640968323,
+      "support": {
+        "predicted_nodes": 1485,
+        "target_nodes": 933,
+        "true_positive": 910,
+        "false_positive": 575,
+        "false_negative": 23,
+        "iou": 0.603448275862069,
+        "precision": 0.6127946127946128,
+        "recall": 0.9753483386923901
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.6905695796012878,
+      "support": {
+        "predicted_nodes": 1651,
+        "target_nodes": 960,
+        "true_positive": 932,
+        "false_positive": 719,
+        "false_negative": 28,
+        "iou": 0.5550923168552709,
+        "precision": 0.5645063597819503,
+        "recall": 0.9708333333333333
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.698689341545105,
+      "support": {
+        "predicted_nodes": 1789,
+        "target_nodes": 974,
+        "true_positive": 953,
+        "false_positive": 836,
+        "false_negative": 21,
+        "iou": 0.5265193370165746,
+        "precision": 0.5326998323085522,
+        "recall": 0.9784394250513347
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7228260636329651,
+      "support": {
+        "predicted_nodes": 1840,
+        "target_nodes": 994,
+        "true_positive": 960,
+        "false_positive": 880,
+        "false_negative": 34,
+        "iou": 0.512273212379936,
+        "precision": 0.5217391304347826,
+        "recall": 0.96579476861167
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7377924919128418,
+      "support": {
+        "predicted_nodes": 1949,
+        "target_nodes": 984,
+        "true_positive": 963,
+        "false_positive": 986,
+        "false_negative": 21,
+        "iou": 0.4888324873096447,
+        "precision": 0.49409953822473063,
+        "recall": 0.9786585365853658
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7501687407493591,
+      "support": {
+        "predicted_nodes": 1960,
+        "target_nodes": 955,
+        "true_positive": 933,
+        "false_positive": 1027,
+        "false_negative": 22,
+        "iou": 0.470736629667003,
+        "precision": 0.4760204081632653,
+        "recall": 0.9769633507853404
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7495574951171875,
+      "support": {
+        "predicted_nodes": 1930,
+        "target_nodes": 931,
+        "true_positive": 914,
+        "false_positive": 1016,
+        "false_negative": 17,
+        "iou": 0.4694401643554186,
+        "precision": 0.47357512953367875,
+        "recall": 0.9817400644468314
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "condition": "free_code",
+      "target_feature_normalized_mae": 0.7638200521469116,
+      "support": {
+        "predicted_nodes": 2038,
+        "target_nodes": 933,
+        "true_positive": 916,
+        "false_positive": 1122,
+        "false_negative": 17,
+        "iou": 0.4457420924574209,
+        "precision": 0.4494602551521099,
+        "recall": 0.9817792068595927
+      }
+    }
+  ],
+  "source": {
+    "stage_a_code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+    "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+    "baseline_codes_sha256": "fe4d6bdc9a6fbdb5359adeaebb0b01628282db5cb621731c6b6a4e8dd8e7ca4b",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "checkpoint_sha256": {
+      "0": "8f22f6972789e2a28df29cb330bb75fba5e1df109adc507ef58dc34e2605516d",
+      "1": "e0449e1257d4d4ef25b6489a5411eff200fd8107e501c084144cee124dfca2d4"
+    }
+  },
+  "elapsed_seconds": 20.31618971703574,
+  "scope": "CPU-only two-window latent diagnostics and code movement; no RGB render or action-success claim",
+  "analysis_code_sha256": "b2a7c0580dc4ea5d6f02c3c76dfebdca689490a998662bdd60f86bcfe6401f80"
+}
