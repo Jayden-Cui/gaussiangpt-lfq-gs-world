@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "code_sha256": "76868f00320eebbd05421a0599824f5bb5ab60833e7ada87ee3a1ca11b79ab68",
+  "original_loader_code_sha256": "c24da8dcf779cc77cebdf5eb28c0613a20f18d3b46b1d22ef193b44e240c1af4",
+  "upstream_code_manifest_sha256": "b4958856fb50af2c55f4c2fce9eaa2a16c14ca9ec5f87436565a499052efe48a",
+  "synthetic_checks": [
+    "valid pinned mappings",
+    "modified mapping bytes rejected",
+    "forged source identity rejected even with forged binding",
+    "missing mapping binding rejected"
+  ],
+  "scope": "Synthetic CPU metadata tests; real 134-server preflight not yet run"
+}

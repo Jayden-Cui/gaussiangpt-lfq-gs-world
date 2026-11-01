@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "code_sha256": "76868f00320eebbd05421a0599824f5bb5ab60833e7ada87ee3a1ca11b79ab68",
+  "unit_test_stdout": "PASS: pinned mapping change, forged source identity and missing binding rejected",
+  "identities": {
+    "status": "passed",
+    "rows": [
+      {
+        "clip": "buildingblock_tower_17_176",
+        "split": "TRAIN",
+        "source_group": "buildingblock_tower_17",
+        "source_video_sha256": "966d0fca220959e95608b383e808ecda897b4140c54fdeab93fb1a791cd24a90",
+        "mapping_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_state_motion_20261030_v1/state/mappings/buildingblock_tower_17_176.json",
+        "mapping_sha256": "3fc2db2a3cb8642dbae28cb247bdd030b0d5038502ec0c2d89e48d01bb0ac983",
+        "mapping_bytes": 7420
+      },
+      {
+        "clip": "buildingblock_tower_10_176",
+        "split": "TRAIN",
+        "source_group": "buildingblock_tower_10",
+        "source_video_sha256": "a8d76842e1d7de31cb8bedfe437264a28b3203c9f3bfbaebf2a6f0864a051dab",
+        "mapping_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower10_replay_20261031_v1/mappings/buildingblock_tower_10_176.json",
+        "mapping_sha256": "13adbfd0a88b2f9afb05322094ca211c25da29ccd0d49c991e3cfa39579597e5",
+        "mapping_bytes": 13250
+      },
+      {
+        "clip": "buildingblock_tower_14_0",
+        "split": "EVAL",
+        "source_group": "buildingblock_tower_14",
+        "source_video_sha256": "456d178c177d6790196f2e27f3bf5e1f5eebbb9fdaecc716794be90fbbab57f8",
+        "mapping_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_tower14_transfer_20261031_v1/mappings/buildingblock_tower_14_0.json",
+        "mapping_sha256": "3e6bda385aabffdf88e3fc58114fef09e3c7e29cf8acf57006981442ba6120f8",
+        "mapping_bytes": 13248
+      }
+    ],
+    "train_groups": [
+      "buildingblock_tower_10",
+      "buildingblock_tower_17"
+    ],
+    "eval_groups": [
+      "buildingblock_tower_14"
+    ],
+    "source_video_hashes_distinct": true,
+    "mapping_bytes_verified_against_data_binding": true,
+    "evaluation_source_previously_exposed": true,
+    "official_independent_holdout": false,
+    "scope": "Bound metadata identity only; different hashes do not prove different underlying footage"
+  },
+  "original_eval_training_rejection_preserved": true,
+  "guarded_window_factory_uses_guard": true,
+  "eval_train_window_factory_rejected": true,
+  "gpu_used": false,
+  "model_training_performed": false,
+  "native_video_rehashed": false,
+  "scope": "Three historically bound source metadata; no new action training or clean holdout claim"
+}

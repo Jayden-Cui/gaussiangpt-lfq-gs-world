@@ -1,0 +1,25 @@
+{
+  "schema": "multisource_identity_guard_v1",
+  "train_clips": [
+    "buildingblock_tower_17_176",
+    "buildingblock_tower_10_176"
+  ],
+  "eval_only_clips": [
+    "buildingblock_tower_14_0"
+  ],
+  "source_video_sha256": {
+    "buildingblock_tower_17_176": "966d0fca220959e95608b383e808ecda897b4140c54fdeab93fb1a791cd24a90",
+    "buildingblock_tower_10_176": "a8d76842e1d7de31cb8bedfe437264a28b3203c9f3bfbaebf2a6f0864a051dab",
+    "buildingblock_tower_14_0": "456d178c177d6790196f2e27f3bf5e1f5eebbb9fdaecc716794be90fbbab57f8"
+  },
+  "frames_per_clip": 177,
+  "frame_stride": 1,
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "mapping_must_match_pinned_data_binding": true,
+  "eval_clip_rejected_for_training": true,
+  "evaluation_source_previously_exposed": true,
+  "official_independent_holdout": false,
+  "gpu_used": false,
+  "training_performed": false,
+  "scope": "Metadata identity validation only; distinct hashes do not prove separate original footage"
+}

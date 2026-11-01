@@ -60,4 +60,6 @@
 
 [八窗口物体代理补充检查](experiments/gaussiangpt_neoverse_eight_window_object_audit_20261102_v1/RESULTS.md)对历史 posterior 与阶段 A 使用相同的 72 张源画面。阶段 A 的窗口 112、123 在拾取／移动绿梁时分别只有 5／9、0／9 帧检出绿色代理，真实未来 GS 的 codec 参考均为 9／9；固定颜色掩码只是辅助证据。CPU 程序已等待阶段 B 的三轮完整评估和独立重放，再对相同窗口生成报告；教师仍需动态和视觉审查。
 
+[跨源身份校验](experiments/gaussiangpt_neoverse_multisource_identity_guard_20261102_v1/RESULTS.md)已补上旧读取器未重新校验映射文件哈希的问题，并在 134 的三份真实映射上完成 CPU 预检。当前真实文件与既有绑定一致，未发现实际数据泄漏；评估视频此前已被观察，不能声称是全新独立测试集。新入口尚未用于正式跨源动作训练，也不改变正在进行的阶段 B。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。
