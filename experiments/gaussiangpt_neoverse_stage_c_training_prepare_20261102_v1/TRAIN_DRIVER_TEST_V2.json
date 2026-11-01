@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "driver_sha256": "8aa8d5e5d94e3742addb85783e6acf2e2b401400954450f44c7f2ab5248e6570",
+  "test_sha256": "0cbbe8dabaa5062b39f27a0900bd5ebadf38efde47d233c9502acacda2358418",
+  "core_manifest_sha256": "4f5c5fd31334726e7a031a5bba7e8b751a7c95ede2fab28225a77c03ccf7a8c2",
+  "real_bound_qformer_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+  "all_variants_share_qformer_initialization": true,
+  "c1_c2_encoder_initialization_identical": true,
+  "c2_seed_deterministic": true,
+  "invalid_variant_settings_rejected": true,
+  "scope": "CPU model-construction witness only; no reviewed teacher or GPU training"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "worker_sha256": "017536392bb5778f98fd1647d47afb856f15eddcf0ab23936bce92a08d2fa088",
+  "test_sha256": "8e26e6f44a3636161e0d3b678aef1eebd649930002b48c7fb166be483259d739",
+  "core_manifest_sha256": "4f5c5fd31334726e7a031a5bba7e8b751a7c95ede2fab28225a77c03ccf7a8c2",
+  "requires_replay_checked_teacher_validator": true,
+  "bound_distillation_and_joint_loss_core_loaded": true,
+  "sampler": {
+    "status": "passed",
+    "distill_sweeps": 1,
+    "joint_sweeps": 1,
+    "distill_updates": 42,
+    "joint_updates": 378,
+    "total_updates": 420,
+    "windows": 168,
+    "future_pairs": 1512,
+    "sha256": "d5a761e813ea09995194c49e21c3b4045727db6c570e5b5e2c4ab4a9491f36fb"
+  },
+  "scope": "CPU integration check only; no teacher training or GPU use"
+}
