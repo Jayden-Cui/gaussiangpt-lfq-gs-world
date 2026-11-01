@@ -1,0 +1,496 @@
+{
+  "status": "complete",
+  "radius": 4,
+  "max_candidates": 25000,
+  "training_performed": false,
+  "model_or_decoder_executed": false,
+  "ground_truth_used_only_for_offline_coverage": true,
+  "candidate_set_uses_initial_coordinates_only": true,
+  "exact_chebyshev_equivalence_verified": true,
+  "code_sha256": "b87877e13d4a07c1507f092cb28aa398f8687f6c7642fd8cc82cdc5d5aaf8543",
+  "loader_manifest_sha256": "c24da8dcf779cc77cebdf5eb28c0613a20f18d3b46b1d22ef193b44e240c1af4",
+  "protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "sources": {
+    "buildingblock_tower_17_176": {
+      "split": "TRAIN",
+      "frames": 177,
+      "windows": 168,
+      "window_horizon_pairs": 1512,
+      "target_nodes": 1312003,
+      "outside_nodes": 0,
+      "outside_fraction": 0.0,
+      "incomplete_windows": 0,
+      "max_chebyshev_distance": 4.0,
+      "sampled_candidate_counts": {
+        "0": 11563,
+        "35": 12588,
+        "123": 12027,
+        "167": 13210
+      },
+      "sampled_counts_above_budget": [],
+      "by_horizon": {
+        "1": {
+          "target_nodes": 145332,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "2": {
+          "target_nodes": 145467,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "3": {
+          "target_nodes": 145596,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "4": {
+          "target_nodes": 145693,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "5": {
+          "target_nodes": 145774,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "6": {
+          "target_nodes": 145878,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "7": {
+          "target_nodes": 145992,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "8": {
+          "target_nodes": 146088,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "9": {
+          "target_nodes": 146183,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        }
+      },
+      "incomplete_window_details": []
+    },
+    "buildingblock_tower_10_176": {
+      "split": "TRAIN",
+      "frames": 177,
+      "windows": 168,
+      "window_horizon_pairs": 1512,
+      "target_nodes": 1177056,
+      "outside_nodes": 226,
+      "outside_fraction": 0.0001920044585814099,
+      "incomplete_windows": 12,
+      "max_chebyshev_distance": 6.0,
+      "sampled_candidate_counts": {
+        "0": 10579,
+        "35": 11731,
+        "123": 11128,
+        "167": 11111
+      },
+      "sampled_counts_above_budget": [],
+      "by_horizon": {
+        "1": {
+          "target_nodes": 130884,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "2": {
+          "target_nodes": 130890,
+          "outside_nodes": 2,
+          "outside_fraction": 1.5280006112002444e-05
+        },
+        "3": {
+          "target_nodes": 130885,
+          "outside_nodes": 5,
+          "outside_fraction": 3.8201474576918666e-05
+        },
+        "4": {
+          "target_nodes": 130832,
+          "outside_nodes": 6,
+          "outside_fraction": 4.586033997798704e-05
+        },
+        "5": {
+          "target_nodes": 130789,
+          "outside_nodes": 10,
+          "outside_fraction": 7.645902942908042e-05
+        },
+        "6": {
+          "target_nodes": 130744,
+          "outside_nodes": 20,
+          "outside_fraction": 0.0001529706908156397
+        },
+        "7": {
+          "target_nodes": 130700,
+          "outside_nodes": 41,
+          "outside_fraction": 0.0003136954858454476
+        },
+        "8": {
+          "target_nodes": 130667,
+          "outside_nodes": 60,
+          "outside_fraction": 0.00045918250208545387
+        },
+        "9": {
+          "target_nodes": 130665,
+          "outside_nodes": 82,
+          "outside_fraction": 0.0006275590249875636
+        }
+      },
+      "incomplete_window_details": [
+        {
+          "start": 26,
+          "horizons": [
+            {
+              "horizon": 6,
+              "outside_nodes": 3,
+              "target_nodes": 818
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 4,
+              "target_nodes": 823
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 5,
+              "target_nodes": 809
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 6,
+              "target_nodes": 829
+            }
+          ]
+        },
+        {
+          "start": 27,
+          "horizons": [
+            {
+              "horizon": 5,
+              "outside_nodes": 2,
+              "target_nodes": 818
+            },
+            {
+              "horizon": 6,
+              "outside_nodes": 3,
+              "target_nodes": 823
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 4,
+              "target_nodes": 809
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 5,
+              "target_nodes": 829
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 8,
+              "target_nodes": 813
+            }
+          ]
+        },
+        {
+          "start": 28,
+          "horizons": [
+            {
+              "horizon": 2,
+              "outside_nodes": 2,
+              "target_nodes": 840
+            },
+            {
+              "horizon": 3,
+              "outside_nodes": 3,
+              "target_nodes": 828
+            },
+            {
+              "horizon": 4,
+              "outside_nodes": 4,
+              "target_nodes": 818
+            },
+            {
+              "horizon": 5,
+              "outside_nodes": 5,
+              "target_nodes": 823
+            },
+            {
+              "horizon": 6,
+              "outside_nodes": 5,
+              "target_nodes": 809
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 6,
+              "target_nodes": 829
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 7,
+              "target_nodes": 813
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 8,
+              "target_nodes": 805
+            }
+          ]
+        },
+        {
+          "start": 29,
+          "horizons": [
+            {
+              "horizon": 3,
+              "outside_nodes": 2,
+              "target_nodes": 818
+            },
+            {
+              "horizon": 4,
+              "outside_nodes": 1,
+              "target_nodes": 823
+            },
+            {
+              "horizon": 5,
+              "outside_nodes": 2,
+              "target_nodes": 809
+            },
+            {
+              "horizon": 6,
+              "outside_nodes": 2,
+              "target_nodes": 829
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 4,
+              "target_nodes": 813
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 5,
+              "target_nodes": 805
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 4,
+              "target_nodes": 791
+            }
+          ]
+        },
+        {
+          "start": 101,
+          "horizons": [
+            {
+              "horizon": 9,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            }
+          ]
+        },
+        {
+          "start": 102,
+          "horizons": [
+            {
+              "horizon": 8,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            }
+          ]
+        },
+        {
+          "start": 103,
+          "horizons": [
+            {
+              "horizon": 7,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            }
+          ]
+        },
+        {
+          "start": 104,
+          "horizons": [
+            {
+              "horizon": 6,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 5,
+              "target_nodes": 811
+            }
+          ]
+        },
+        {
+          "start": 105,
+          "horizons": [
+            {
+              "horizon": 5,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 5,
+              "target_nodes": 811
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 12,
+              "target_nodes": 777
+            }
+          ]
+        },
+        {
+          "start": 106,
+          "horizons": [
+            {
+              "horizon": 4,
+              "outside_nodes": 1,
+              "target_nodes": 851
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 5,
+              "target_nodes": 811
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 12,
+              "target_nodes": 777
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 14,
+              "target_nodes": 734
+            }
+          ]
+        },
+        {
+          "start": 107,
+          "horizons": [
+            {
+              "horizon": 6,
+              "outside_nodes": 1,
+              "target_nodes": 811
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 11,
+              "target_nodes": 777
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 14,
+              "target_nodes": 734
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 18,
+              "target_nodes": 743
+            }
+          ]
+        },
+        {
+          "start": 108,
+          "horizons": [
+            {
+              "horizon": 6,
+              "outside_nodes": 5,
+              "target_nodes": 777
+            },
+            {
+              "horizon": 7,
+              "outside_nodes": 6,
+              "target_nodes": 734
+            },
+            {
+              "horizon": 8,
+              "outside_nodes": 6,
+              "target_nodes": 743
+            },
+            {
+              "horizon": 9,
+              "outside_nodes": 6,
+              "target_nodes": 744
+            }
+          ]
+        }
+      ]
+    },
+    "buildingblock_tower_14_0": {
+      "split": "EVAL",
+      "frames": 177,
+      "windows": 168,
+      "window_horizon_pairs": 1512,
+      "target_nodes": 1242440,
+      "outside_nodes": 0,
+      "outside_fraction": 0.0,
+      "incomplete_windows": 0,
+      "max_chebyshev_distance": 3.0,
+      "sampled_candidate_counts": {
+        "0": 11922,
+        "35": 12020,
+        "123": 12477,
+        "167": 12579
+      },
+      "sampled_counts_above_budget": [],
+      "by_horizon": {
+        "1": {
+          "target_nodes": 137948,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "2": {
+          "target_nodes": 137991,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "3": {
+          "target_nodes": 138020,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "4": {
+          "target_nodes": 138025,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "5": {
+          "target_nodes": 138053,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "6": {
+          "target_nodes": 138081,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "7": {
+          "target_nodes": 138086,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "8": {
+          "target_nodes": 138111,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        },
+        "9": {
+          "target_nodes": 138125,
+          "outside_nodes": 0,
+          "outside_fraction": 0.0
+        }
+      },
+      "incomplete_window_details": []
+    }
+  },
+  "elapsed_seconds": 16.909825316048227,
+  "limitation": "Candidate counts are sampled at four starts per video, not exhaustively bounded. EVAL video was historically exposed and is not pristine."
+}

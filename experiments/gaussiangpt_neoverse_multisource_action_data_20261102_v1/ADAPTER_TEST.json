@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "adapter_sha256": "3c5fdccd5b1eb56f5a777a70c82073bbb147b738b13d65c65b2ad72413325f51",
+  "test_sha256": "aae7a596a8c0fb16a2c68e633cde78269f6dbc21386252a3a82981504f8ecb35",
+  "radius_audit_sha256": "bb08eb0f9f390ab933551e7ec222ebe98a4cd614104de7f821781db7e5e028b6",
+  "clip": "buildingblock_tower_10_176",
+  "start": 26,
+  "radius4_missing_target_rejected": true,
+  "radius6_full_target_coverage": true,
+  "candidate_nodes": 18967,
+  "future_feature_change_does_not_change_initial_condition": true,
+  "future_feature_change_reaches_supervision": true,
+  "eval_source_training_rejected": true,
+  "per_view_teacher_mask_not_invented": true,
+  "scope": "Real-data CPU conditioning test only; no GPU, new training or cross-source action result"
+}
