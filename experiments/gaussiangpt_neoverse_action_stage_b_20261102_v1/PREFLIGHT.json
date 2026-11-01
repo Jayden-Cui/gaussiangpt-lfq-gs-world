@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "discarded_updates": 1,
+  "logical_batch_size": 4,
+  "restored_decoder_codes_optimizer": true,
+  "codec_and_initial_encoder_frozen": true,
+  "rgb_to_free_code_and_decoder_verified": true,
+  "probe": {
+    "windows": [
+      {
+        "start": 0,
+        "horizon": 9,
+        "loss": 0.6985604763031006,
+        "rgb_loss": 0.5652504563331604,
+        "latent_loss": 1.3331003189086914,
+        "occupancy_loss": 0.605457067489624,
+        "feature_loss": 0.7276431918144226,
+        "predicted_nodes": 827,
+        "gs_count": 47704,
+        "rgb_to_code_and_decoder_gradients": [
+          0.11412699520587921,
+          0.6793648600578308
+        ]
+      },
+      {
+        "start": 35,
+        "horizon": 9,
+        "loss": 0.12545697391033173,
+        "rgb_loss": 0.06949098408222198,
+        "latent_loss": 0.5596598386764526,
+        "occupancy_loss": 0.026509340852499008,
+        "feature_loss": 0.5331504940986633,
+        "predicted_nodes": 1057,
+        "gs_count": 66808,
+        "rgb_to_code_and_decoder_gradients": [
+          0.01354713924229145,
+          0.06891623884439468
+        ]
+      },
+      {
+        "start": 123,
+        "horizon": 9,
+        "loss": 0.13298973441123962,
+        "rgb_loss": 0.07179758697748184,
+        "latent_loss": 0.6119215488433838,
+        "occupancy_loss": 0.04687947407364845,
+        "feature_loss": 0.5650420784950256,
+        "predicted_nodes": 1222,
+        "gs_count": 71920,
+        "rgb_to_code_and_decoder_gradients": [
+          0.014320368878543377,
+          0.05189593508839607
+        ]
+      },
+      {
+        "start": 167,
+        "horizon": 9,
+        "loss": 0.5371427536010742,
+        "rgb_loss": 0.42162400484085083,
+        "latent_loss": 1.1551872491836548,
+        "occupancy_loss": 0.46719005703926086,
+        "feature_loss": 0.6879971623420715,
+        "predicted_nodes": 918,
+        "gs_count": 52768,
+        "rgb_to_code_and_decoder_gradients": [
+          0.07284669578075409,
+          0.4016338884830475
+        ]
+      }
+    ],
+    "preclip_gradient_norm": 1.2191858291625977,
+    "clip_triggered": true
+  },
+  "source": {
+    "schema": "stage_b_shared_decoder_source_v1",
+    "stage_a_review": {
+      "review_sha256": "2e5df85ac80d618ed40a655cb8cf2c1e0ee69588e8b0b28818ef4ae20e58201c",
+      "evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438"
+    },
+    "config_sha256": "0bae521d3ca0ce2a4cda06b6c6f64207bd46e91bf974b68a6b74155eea3f00fb",
+    "training_core_sha256": "9f980425ea5019e5733adcf7a40fdd3cbbb93290258abbe8b77561a0299fc07d",
+    "worker_sha256": "160552898782196582cb21969475669b7d632b013c55a07afd29c48a4ffb3505",
+    "sampler": {
+      "status": "passed",
+      "windows": 168,
+      "horizons": 9,
+      "pairs": 1512,
+      "sweeps": 20,
+      "updates": 7560,
+      "visits_per_pair": 20,
+      "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+    },
+    "initial_codes": {
+      "receipt_sha256": "1ae1ed07428d121dff437760dc68b44ce4ce18c068342d672cee1f6f1f9d4ded",
+      "codes_sha256": "cdcd16ae3d307faa48f6078e72299541cd52becddea58d24977b1e28fd3be3a6"
+    },
+    "warm_decoder_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+    "warm_posterior_checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+    "warm_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+    "frozen_initial_context_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "anchors": [
+      35,
+      123
+    ],
+    "quantized": false
+  }
+}

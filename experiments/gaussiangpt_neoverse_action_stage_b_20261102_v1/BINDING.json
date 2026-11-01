@@ -1,0 +1,14 @@
+{
+  "config_sha256": "0bae521d3ca0ce2a4cda06b6c6f64207bd46e91bf974b68a6b74155eea3f00fb",
+  "config_snapshot_sha256": "0bae521d3ca0ce2a4cda06b6c6f64207bd46e91bf974b68a6b74155eea3f00fb",
+  "predeclared_protocol_sha256": "b2b1d304642dc64dfe7f898b5a4898dc624d8738681ce80ddedeb65412883519",
+  "coordinator_code_sha256": "87dc94ccc8a4a56792f50859a8457bc6865fb44e630b2b9bffc7282699364681",
+  "stage_b_code_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+  "worker_sha256": "160552898782196582cb21969475669b7d632b013c55a07afd29c48a4ffb3505",
+  "evaluator_sha256": "d7c0d9571f5376aa1f835a8384b8316d03ca4efbdcfc404eb31578245a3dbe6b",
+  "review": {
+    "review_sha256": "2e5df85ac80d618ed40a655cb8cf2c1e0ee69588e8b0b28818ef4ae20e58201c",
+    "evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438"
+  },
+  "quantized": false
+}
