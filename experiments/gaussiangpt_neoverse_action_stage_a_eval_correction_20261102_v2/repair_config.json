@@ -1,0 +1,18 @@
+{
+  "schema": "stage_a_repeated_initial_control_correction_v2",
+  "training_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_20261102_v1",
+  "training_code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+  "baseline_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/step_09560/posterior/evaluation",
+  "baseline_evaluation_sha256": "a589f7ea5502324308ecf62274b17a377dd760a7e5a242bc4738a19163d11c9f",
+  "baseline_codes_sha256": "fe4d6bdc9a6fbdb5359adeaebb0b01628282db5cb621731c6b6a4e8dd8e7ca4b",
+  "baseline_packets_sha256": "2617f67b0ce0e88893f2a8cc33bf1b466b90e5beee677a5524cf0d2ee27c04c7",
+  "baseline_replay_sha256": "5bcfdbad53251664d6bbf1949e064e10b6b5983830c8547c25c70beff4951e21",
+  "checkpoint_sha256": "dd66b0c02f84d1a152c60a9d974a7b92f3c12db4bc2f25b65416624cb2889c9a",
+  "decoder_tensor_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "sweeps": [5, 10, 20],
+  "diagnostic_starts": [0, 35, 56, 84, 112, 123, 140, 167],
+  "wait_max_seconds": 36000,
+  "target_reference_mae_tolerance": 0.00005,
+  "scope": "Correct numeric control and diagnostic panels by reusing independently computed repeated-initial results from the exact same decoder, codec, coordinates, initial condition, code and camera. Original experiment remains unchanged."
+}

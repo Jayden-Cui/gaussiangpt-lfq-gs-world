@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "code_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+  "sampler": {
+    "status": "passed",
+    "windows": 168,
+    "horizons": 9,
+    "pairs": 1512,
+    "sweeps": 20,
+    "updates": 7560,
+    "visits_per_pair": 20,
+    "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+  },
+  "exact_two_window_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "original_anchor_codes_preserved": true,
+  "remaining_codes_use_matching_posterior": true,
+  "anchors": [
+    35,
+    123
+  ],
+  "real_window": 35,
+  "real_latent_to_code_and_decoder_gradients": {
+    "free_code": 0.027646614238619804,
+    "decoder_features": 0.24724383652210236,
+    "occupancy": 0.0065645333379507065
+  },
+  "frozen_initial_context_unchanged": true,
+  "inactive_adam_code_unchanged": true,
+  "scope": "CPU preparation only; no native RGB gradient, no stage-B optimization or scientific result"
+}

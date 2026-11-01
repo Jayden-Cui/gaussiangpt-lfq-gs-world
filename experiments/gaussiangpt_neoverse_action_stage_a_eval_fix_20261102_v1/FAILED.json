@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "waiting_for_existing_shards",
+  "error": "KeyboardInterrupt()",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_eval_fix_20261102_v1/repair_supervisor.py\", line 77, in main\n    events=poller.poll(timeout)\nKeyboardInterrupt\n",
+  "old_coordinator_may_be_stopped": true,
+  "instruction": "Do not restart automatically; inspect existing shard outputs and exact PID identities."
+}

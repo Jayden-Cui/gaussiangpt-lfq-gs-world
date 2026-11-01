@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "window_predictions": 1512,
+  "unique_future_frames": 176,
+  "metrics": {
+    "unique_frame_equal": {
+      "predicted_support": {
+        "mae": 0.02934681921306589,
+        "roi_mae": 0.03173180538886727,
+        "motion_mae": 0.06253066556685277,
+        "psnr": 25.732455008228623,
+        "object_box_mae": 0.03248571662582869,
+        "teacher_view1_masked_mae": 0.03188880935948746
+      },
+      "oracle_target_support": {
+        "mae": 0.026469077638567637,
+        "roi_mae": 0.028903329872105765,
+        "motion_mae": 0.057931173431428645,
+        "psnr": 26.52000547995815,
+        "object_box_mae": 0.028186077906009813,
+        "teacher_view1_masked_mae": 0.02936053635628708
+      },
+      "actual_target": {
+        "mae": 0.01657073819925162,
+        "roi_mae": 0.016975806560367346,
+        "motion_mae": 0.029463891278563283,
+        "psnr": 31.27651216767051,
+        "object_box_mae": 0.01826083296592432,
+        "teacher_view1_masked_mae": 0.021120317597788842
+      }
+    },
+    "window_prediction_equal": {
+      "predicted_support": {
+        "mae": 0.02986266065534283,
+        "roi_mae": 0.03234225968835215,
+        "motion_mae": 0.06334492312892089,
+        "psnr": 25.55249894232977,
+        "object_box_mae": 0.0330698340398225,
+        "teacher_view1_masked_mae": 0.03228304951042725
+      },
+      "oracle_target_support": {
+        "mae": 0.026956236040436482,
+        "roi_mae": 0.029510245306131545,
+        "motion_mae": 0.05881134180164842,
+        "psnr": 26.307053260702304,
+        "object_box_mae": 0.028683219319973238,
+        "teacher_view1_masked_mae": 0.029722354507256084
+      },
+      "actual_target": {
+        "mae": 0.016539936640087967,
+        "roi_mae": 0.016952826898968803,
+        "motion_mae": 0.029307535810090563,
+        "psnr": 31.26162572890993,
+        "object_box_mae": 0.018272144708255177,
+        "teacher_view1_masked_mae": 0.02103343950313511
+      }
+    },
+    "unique_frames": 176,
+    "window_predictions": 1512
+  },
+  "reachability_counts": {
+    "target_feature_elements": 83968192,
+    "out_of_range_elements": 724855,
+    "target_cells": 1312003,
+    "cells_with_any_out_of_range": 195714,
+    "target_saturated_095": 15788,
+    "target_saturated_099": 92,
+    "candidate_feature_elements": 1201098240,
+    "candidate_saturated_095": 80216,
+    "candidate_saturated_099": 150,
+    "normalized_lower_bound_sum": 422512.6349658966
+  },
+  "reachability_ratios": {
+    "out_of_range_feature_fraction": 0.008632495028593685,
+    "cells_with_any_out_of_range_fraction": 0.14917191500324314,
+    "target_tanh_saturated_095_fraction": 0.0001880235792143768,
+    "target_tanh_saturated_099_fraction": 1.0956529825008022e-06,
+    "candidate_tanh_saturated_095_fraction": 6.678554453630704e-05,
+    "candidate_tanh_saturated_099_fraction": 1.248857046031472e-07,
+    "mean_normalized_unreachable_feature_error_lower_bound": 0.005031817702659319
+  },
+  "oracle_used_for_training": false,
+  "note": "Oracle selects predicted features at true support after decoder inference; no true target features are supplied to decoder. Feature bound is not an image-space impossibility proof.",
+  "anchor_h9": {
+    "35": {
+      "predicted_support": {
+        "motion_mae": 0.07887829095125198,
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 725,
+            "centroid_xy": [
+              237.12689655172414,
+              79.45931034482759
+            ],
+            "axis_degrees": 82.33704002787891,
+            "elongation": 22.24986325478919
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.3118405627198124,
+          "centroid_error_px": 7.975342542972004,
+          "axis_error_degrees": 4.620553104782402,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      },
+      "oracle_target_support": {
+        "motion_mae": 0.07664823532104492,
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1076,
+            "centroid_xy": [
+              241.03903345724908,
+              77.1096654275093
+            ],
+            "axis_degrees": 84.2264970827953,
+            "elongation": 18.13835845054841
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.6201501877346683,
+          "centroid_error_px": 3.414429726172319,
+          "axis_error_degrees": 2.731096049866011,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      },
+      "actual_target": {
+        "motion_mae": 0.02561282366514206,
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1524,
+            "centroid_xy": [
+              244.95472440944883,
+              77.0485564304462
+            ],
+            "axis_degrees": 84.75333144242478,
+            "elongation": 12.99083643833871
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.8643339472068754,
+          "centroid_error_px": 1.7877447495640515,
+          "axis_error_degrees": 2.2042616902365353,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    "123": {
+      "predicted_support": {
+        "motion_mae": 0.09286140650510788,
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      },
+      "oracle_target_support": {
+        "motion_mae": 0.07607178390026093,
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 65,
+            "centroid_xy": [
+              178.93846153846152,
+              44.01538461538462
+            ],
+            "axis_degrees": 110.16274626185972,
+            "elongation": 4.925537713695897
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.043132050431320505,
+          "centroid_error_px": 25.090248028297363,
+          "axis_error_degrees": 72.17504122798675,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      },
+      "actual_target": {
+        "motion_mae": 0.023991134017705917,
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1612,
+            "centroid_xy": [
+              203.15384615384616,
+              47.25682382133995
+            ],
+            "axis_degrees": 0.5879314351161895,
+            "elongation": 4.561142596274326
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.9041514041514042,
+          "centroid_error_px": 0.7194691894157552,
+          "axis_error_degrees": 1.7498560547302873,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    }
+  },
+  "source_sha256": "2439c556fb09e58fb8de5ac8c2b7fbfa5401f0c65bd26de4b424043d47ff30fd"
+}
