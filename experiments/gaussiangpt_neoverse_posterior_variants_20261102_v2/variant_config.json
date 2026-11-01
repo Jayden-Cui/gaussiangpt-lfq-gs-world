@@ -1,0 +1,22 @@
+{
+  "schema": "continuous_posterior_variants_preparation_v1",
+  "stage_a_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_20261102_v1",
+  "stage_a_code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+  "stage_context_sha256": "31788200ba5e915aff8380e5174c6cc02a21acd187ab1e3f814fb526c6f43f4d",
+  "initial_weights": "9560-step posterior and untrained/frozen temporal encoder, used for implementation witness only",
+  "variants": [
+    "C0",
+    "C1",
+    "C2-time",
+    "C2-time-and-change"
+  ],
+  "code_shape_per_window": [
+    9,
+    16
+  ],
+  "temporal_query_width": 64,
+  "quantized": false,
+  "teacher": "not yet selected; must be a verified matching decoder/free-code pair from stage A or B",
+  "scope": "CPU implementation preparation only; not stage C training or scientific acceptance",
+  "environment_spec_sha256": "5813f7633c71422690253c97ae01036751f261478e289039755caa730f0f752f"
+}

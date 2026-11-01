@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "source_checkpoint_sha256": "dd66b0c02f84d1a152c60a9d974a7b92f3c12db4bc2f25b65416624cb2889c9a",
+  "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "source_posterior_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+  "c0_matches_9560_posterior": true,
+  "c1_initial_output_matches_c0": true,
+  "world_alignment_and_disappearance_tokens": true,
+  "row_order_invariant": true,
+  "prefix_causality_horizons": [
+    1,
+    3,
+    7
+  ],
+  "horizon9_output_shape_verified": true,
+  "time_only_uses_only_present_cells": true,
+  "time_embedding_changes_positions": true,
+  "gradient_checkpointing_passed": true,
+  "trainable_encoder_copy_gradients": {
+    "C1": {
+      "encoder_input": 0.03633935749530792,
+      "encoder_backbone": 0.07394543290138245,
+      "query": 0.004122014623135328,
+      "projection": 0.39949488639831543
+    },
+    "C2_time": {
+      "encoder_input": 0.036357346922159195,
+      "encoder_backbone": 0.07396268099546432,
+      "query": 0.004121683072298765,
+      "projection": 0.3994475305080414,
+      "time_projection": 0.0005964388838037848
+    },
+    "C2": {
+      "encoder_input": 0.025829724967479706,
+      "encoder_backbone": 0.05195477232336998,
+      "query": 0.003998682834208012,
+      "projection": 0.40259358286857605,
+      "time_projection": 0.0004601879045367241,
+      "delta_projection": 0.004996526055037975
+    }
+  },
+  "decoder_parameters_unchanged": true,
+  "shape_checks": {
+    "C1": [
+      9,
+      16
+    ],
+    "C2_time": [
+      9,
+      16
+    ],
+    "C2": [
+      9,
+      16
+    ]
+  },
+  "scope": "Small synthetic states using actual frozen source modules; no teacher training or visual claim",
+  "code_sha256": "83590f1bf8b6b2c229154613def8dcd9e5a343234c5510483b77ff29ee145e3d"
+}

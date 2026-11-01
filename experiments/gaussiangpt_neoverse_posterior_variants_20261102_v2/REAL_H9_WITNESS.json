@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "source": "actual frozen TRAIN state cache, start=35",
+  "source_cache_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "source_model_code_sha256": "83590f1bf8b6b2c229154613def8dcd9e5a343234c5510483b77ff29ee145e3d",
+  "witness_script_sha256": "076e6651c9a325afe341adcefc5b98901ba8b104080800aa6ea934f72bd89f96",
+  "variants": {
+    "C1": {
+      "prefix_horizon": 9,
+      "source_frames": [
+        35,
+        44
+      ],
+      "input_nodes": [
+        834,
+        823,
+        840,
+        853,
+        849,
+        868,
+        873,
+        891,
+        893,
+        863
+      ],
+      "memory_tokens": 8587,
+      "max_copied_encoder_hidden_error": 0.0,
+      "gradients": {
+        "encoder_input": 0.16956202685832977,
+        "encoder_backbone": 0.05878355726599693,
+        "query": 0.0010160425445064902,
+        "projection": 0.6715899109840393
+      },
+      "changing_frame_43_does_not_change_h7": true,
+      "elapsed_seconds": 2.232362295035273,
+      "process_peak_rss_mib": 2713.328125
+    },
+    "C2": {
+      "prefix_horizon": 9,
+      "source_frames": [
+        35,
+        44
+      ],
+      "input_nodes": [
+        834,
+        823,
+        840,
+        853,
+        849,
+        868,
+        873,
+        891,
+        893,
+        863
+      ],
+      "memory_tokens": 10708,
+      "max_copied_encoder_hidden_error": 0.0,
+      "gradients": {
+        "encoder_input": 0.15959395468235016,
+        "encoder_backbone": 0.054337892681360245,
+        "query": 0.0008712935959920287,
+        "projection": 0.6690561771392822,
+        "time_projection": 0.0010309320641681552,
+        "delta_projection": 0.12681463360786438
+      },
+      "changing_frame_43_does_not_change_h7": true,
+      "elapsed_seconds": 2.119429608923383,
+      "process_peak_rss_mib": 2713.328125
+    }
+  },
+  "scope": "Real h9 CPU gradient and h7 future-perturbation witness; GPU memory and teacher training remain unverified"
+}
