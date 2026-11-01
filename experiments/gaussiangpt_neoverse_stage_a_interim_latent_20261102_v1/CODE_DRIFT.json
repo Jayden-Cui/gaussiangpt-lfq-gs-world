@@ -1,0 +1,419 @@
+{
+  "status": "complete",
+  "windows": 168,
+  "code_shape": [
+    168,
+    9,
+    16
+  ],
+  "baseline_to_sweep05": {
+    "base_rms": 0.152631476521492,
+    "updated_rms": 0.1547360122203827,
+    "delta_rms": 0.0324888676404953,
+    "delta_over_base_rms": 0.2128582411762265,
+    "per_window_delta_rms_median": 0.030483487993478775,
+    "per_window_delta_rms_p95": 0.04353991150856018,
+    "changed_windows": 168,
+    "by_horizon": [
+      {
+        "horizon": 1,
+        "base_rms": 0.16207587718963623,
+        "delta_rms": 0.034471139311790466
+      },
+      {
+        "horizon": 2,
+        "base_rms": 0.15184228122234344,
+        "delta_rms": 0.03198739513754845
+      },
+      {
+        "horizon": 3,
+        "base_rms": 0.16375793516635895,
+        "delta_rms": 0.034296344965696335
+      },
+      {
+        "horizon": 4,
+        "base_rms": 0.14995484054088593,
+        "delta_rms": 0.03132537379860878
+      },
+      {
+        "horizon": 5,
+        "base_rms": 0.1441502422094345,
+        "delta_rms": 0.033396027982234955
+      },
+      {
+        "horizon": 6,
+        "base_rms": 0.1416703164577484,
+        "delta_rms": 0.03164928779006004
+      },
+      {
+        "horizon": 7,
+        "base_rms": 0.1295733004808426,
+        "delta_rms": 0.03156270459294319
+      },
+      {
+        "horizon": 8,
+        "base_rms": 0.1505076140165329,
+        "delta_rms": 0.0330456867814064
+      },
+      {
+        "horizon": 9,
+        "base_rms": 0.17535102367401123,
+        "delta_rms": 0.030423251911997795
+      }
+    ]
+  },
+  "baseline_to_sweep10": {
+    "base_rms": 0.152631476521492,
+    "updated_rms": 0.15635406970977783,
+    "delta_rms": 0.05064915865659714,
+    "delta_over_base_rms": 0.3318395380225863,
+    "per_window_delta_rms_median": 0.048936087638139725,
+    "per_window_delta_rms_p95": 0.06614907085895538,
+    "changed_windows": 168,
+    "by_horizon": [
+      {
+        "horizon": 1,
+        "base_rms": 0.16207587718963623,
+        "delta_rms": 0.052305933088064194
+      },
+      {
+        "horizon": 2,
+        "base_rms": 0.15184228122234344,
+        "delta_rms": 0.050344981253147125
+      },
+      {
+        "horizon": 3,
+        "base_rms": 0.16375793516635895,
+        "delta_rms": 0.056099988520145416
+      },
+      {
+        "horizon": 4,
+        "base_rms": 0.14995484054088593,
+        "delta_rms": 0.048824794590473175
+      },
+      {
+        "horizon": 5,
+        "base_rms": 0.1441502422094345,
+        "delta_rms": 0.05342629551887512
+      },
+      {
+        "horizon": 6,
+        "base_rms": 0.1416703164577484,
+        "delta_rms": 0.048631452023983
+      },
+      {
+        "horizon": 7,
+        "base_rms": 0.1295733004808426,
+        "delta_rms": 0.048620909452438354
+      },
+      {
+        "horizon": 8,
+        "base_rms": 0.1505076140165329,
+        "delta_rms": 0.05075961723923683
+      },
+      {
+        "horizon": 9,
+        "base_rms": 0.17535102367401123,
+        "delta_rms": 0.0461142361164093
+      }
+    ]
+  },
+  "sweep05_to_sweep10": {
+    "base_rms": 0.1547360122203827,
+    "updated_rms": 0.15635406970977783,
+    "delta_rms": 0.022934826090931892,
+    "delta_over_base_rms": 0.14821905878165567,
+    "per_window_delta_rms_median": 0.02236349880695343,
+    "per_window_delta_rms_p95": 0.028305750340223312,
+    "changed_windows": 168,
+    "by_horizon": [
+      {
+        "horizon": 1,
+        "base_rms": 0.16468578577041626,
+        "delta_rms": 0.022329354658722878
+      },
+      {
+        "horizon": 2,
+        "base_rms": 0.15433363616466522,
+        "delta_rms": 0.022422241047024727
+      },
+      {
+        "horizon": 3,
+        "base_rms": 0.16482649743556976,
+        "delta_rms": 0.02569812349975109
+      },
+      {
+        "horizon": 4,
+        "base_rms": 0.15154731273651123,
+        "delta_rms": 0.021947268396615982
+      },
+      {
+        "horizon": 5,
+        "base_rms": 0.1458534449338913,
+        "delta_rms": 0.02401331253349781
+      },
+      {
+        "horizon": 6,
+        "base_rms": 0.14272774755954742,
+        "delta_rms": 0.02197566069662571
+      },
+      {
+        "horizon": 7,
+        "base_rms": 0.1320272535085678,
+        "delta_rms": 0.02246156521141529
+      },
+      {
+        "horizon": 8,
+        "base_rms": 0.15348093211650848,
+        "delta_rms": 0.023618025705218315
+      },
+      {
+        "horizon": 9,
+        "base_rms": 0.17827627062797546,
+        "delta_rms": 0.021649982780218124
+      }
+    ]
+  },
+  "anchors": {
+    "35": {
+      "baseline_to_sweep05": {
+        "base_rms": 0.14132490754127502,
+        "updated_rms": 0.141448512673378,
+        "delta_rms": 0.03204825147986412,
+        "delta_over_base_rms": 0.22677001554382184,
+        "per_window_delta_rms_median": 0.03204825147986412,
+        "per_window_delta_rms_p95": 0.03204825147986412,
+        "changed_windows": 1,
+        "by_horizon": [
+          {
+            "horizon": 1,
+            "base_rms": 0.12248347699642181,
+            "delta_rms": 0.032767072319984436
+          },
+          {
+            "horizon": 2,
+            "base_rms": 0.13378047943115234,
+            "delta_rms": 0.026572391390800476
+          },
+          {
+            "horizon": 3,
+            "base_rms": 0.15016618371009827,
+            "delta_rms": 0.03781985491514206
+          },
+          {
+            "horizon": 4,
+            "base_rms": 0.1449265033006668,
+            "delta_rms": 0.030733108520507812
+          },
+          {
+            "horizon": 5,
+            "base_rms": 0.136065274477005,
+            "delta_rms": 0.03318486735224724
+          },
+          {
+            "horizon": 6,
+            "base_rms": 0.1508701741695404,
+            "delta_rms": 0.030250705778598785
+          },
+          {
+            "horizon": 7,
+            "base_rms": 0.12670108675956726,
+            "delta_rms": 0.030127739533782005
+          },
+          {
+            "horizon": 8,
+            "base_rms": 0.134116530418396,
+            "delta_rms": 0.03533204272389412
+          },
+          {
+            "horizon": 9,
+            "base_rms": 0.16728897392749786,
+            "delta_rms": 0.03027871996164322
+          }
+        ]
+      },
+      "baseline_to_sweep10": {
+        "base_rms": 0.14132490754127502,
+        "updated_rms": 0.14220717549324036,
+        "delta_rms": 0.04667595401406288,
+        "delta_over_base_rms": 0.33027408137826525,
+        "per_window_delta_rms_median": 0.04667595401406288,
+        "per_window_delta_rms_p95": 0.04667595401406288,
+        "changed_windows": 1,
+        "by_horizon": [
+          {
+            "horizon": 1,
+            "base_rms": 0.12248347699642181,
+            "delta_rms": 0.04331039637327194
+          },
+          {
+            "horizon": 2,
+            "base_rms": 0.13378047943115234,
+            "delta_rms": 0.04593518748879433
+          },
+          {
+            "horizon": 3,
+            "base_rms": 0.15016618371009827,
+            "delta_rms": 0.05391552299261093
+          },
+          {
+            "horizon": 4,
+            "base_rms": 0.1449265033006668,
+            "delta_rms": 0.03413856029510498
+          },
+          {
+            "horizon": 5,
+            "base_rms": 0.136065274477005,
+            "delta_rms": 0.045789215713739395
+          },
+          {
+            "horizon": 6,
+            "base_rms": 0.1508701741695404,
+            "delta_rms": 0.04385038837790489
+          },
+          {
+            "horizon": 7,
+            "base_rms": 0.12670108675956726,
+            "delta_rms": 0.05010150372982025
+          },
+          {
+            "horizon": 8,
+            "base_rms": 0.134116530418396,
+            "delta_rms": 0.05601314455270767
+          },
+          {
+            "horizon": 9,
+            "base_rms": 0.16728897392749786,
+            "delta_rms": 0.043387800455093384
+          }
+        ]
+      }
+    },
+    "123": {
+      "baseline_to_sweep05": {
+        "base_rms": 0.16814100742340088,
+        "updated_rms": 0.17055223882198334,
+        "delta_rms": 0.027120165526866913,
+        "delta_over_base_rms": 0.16129417768132445,
+        "per_window_delta_rms_median": 0.027120165526866913,
+        "per_window_delta_rms_p95": 0.027120165526866913,
+        "changed_windows": 1,
+        "by_horizon": [
+          {
+            "horizon": 1,
+            "base_rms": 0.1928424835205078,
+            "delta_rms": 0.03279518336057663
+          },
+          {
+            "horizon": 2,
+            "base_rms": 0.13975971937179565,
+            "delta_rms": 0.023834234103560448
+          },
+          {
+            "horizon": 3,
+            "base_rms": 0.16390514373779297,
+            "delta_rms": 0.01853015087544918
+          },
+          {
+            "horizon": 4,
+            "base_rms": 0.18061621487140656,
+            "delta_rms": 0.027731288224458694
+          },
+          {
+            "horizon": 5,
+            "base_rms": 0.17124761641025543,
+            "delta_rms": 0.02044251374900341
+          },
+          {
+            "horizon": 6,
+            "base_rms": 0.14807169139385223,
+            "delta_rms": 0.027584005147218704
+          },
+          {
+            "horizon": 7,
+            "base_rms": 0.1567629724740982,
+            "delta_rms": 0.03417935222387314
+          },
+          {
+            "horizon": 8,
+            "base_rms": 0.165318563580513,
+            "delta_rms": 0.030177028849720955
+          },
+          {
+            "horizon": 9,
+            "base_rms": 0.1872929334640503,
+            "delta_rms": 0.024614837020635605
+          }
+        ]
+      },
+      "baseline_to_sweep10": {
+        "base_rms": 0.16814100742340088,
+        "updated_rms": 0.1711394190788269,
+        "delta_rms": 0.0446082167327404,
+        "delta_over_base_rms": 0.2653024233428739,
+        "per_window_delta_rms_median": 0.0446082167327404,
+        "per_window_delta_rms_p95": 0.0446082167327404,
+        "changed_windows": 1,
+        "by_horizon": [
+          {
+            "horizon": 1,
+            "base_rms": 0.1928424835205078,
+            "delta_rms": 0.04829210788011551
+          },
+          {
+            "horizon": 2,
+            "base_rms": 0.13975971937179565,
+            "delta_rms": 0.035503603518009186
+          },
+          {
+            "horizon": 3,
+            "base_rms": 0.16390514373779297,
+            "delta_rms": 0.03297944739460945
+          },
+          {
+            "horizon": 4,
+            "base_rms": 0.18061621487140656,
+            "delta_rms": 0.04430001601576805
+          },
+          {
+            "horizon": 5,
+            "base_rms": 0.17124761641025543,
+            "delta_rms": 0.030235236510634422
+          },
+          {
+            "horizon": 6,
+            "base_rms": 0.14807169139385223,
+            "delta_rms": 0.04312003403902054
+          },
+          {
+            "horizon": 7,
+            "base_rms": 0.1567629724740982,
+            "delta_rms": 0.06148875132203102
+          },
+          {
+            "horizon": 8,
+            "base_rms": 0.165318563580513,
+            "delta_rms": 0.05466148629784584
+          },
+          {
+            "horizon": 9,
+            "base_rms": 0.1872929334640503,
+            "delta_rms": 0.04152132198214531
+          }
+        ]
+      }
+    }
+  },
+  "source": {
+    "stage_a_code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+    "baseline_codes_sha256": "fe4d6bdc9a6fbdb5359adeaebb0b01628282db5cb621731c6b6a4e8dd8e7ca4b",
+    "checkpoint_sha256": {
+      "05_0": "dafa63648203c1edaf8c0b186cef48da75fcc80c71164847598dfa631a406a48",
+      "05_1": "dcd3a031433f3c667b5af5589cd6178f22707d4c857d75046bf34f5d899bf26c",
+      "10_0": "cc260b903e6144cf44baefe5d0be3ee1c592f62a5879f08eadc3b61b407bfafe",
+      "10_1": "fee9785726e0410cb3e8d182f018c01166e48ba0476d05af1f0ad09fc585fec0"
+    }
+  },
+  "script_sha256": "d531f044c21a2d81c4851b373782f25cdcbde9eb3b2bffbc19450c71e7b701e3",
+  "scope": "Same decoder and numerical code coordinates, TRAIN video only; code distance alone does not measure action quality or semantics"
+}

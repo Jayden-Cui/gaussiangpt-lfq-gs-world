@@ -6,7 +6,7 @@
 
 [阶段 A](experiments/gaussiangpt_neoverse_action_stage_a_20261102_v1/README.md) 冻结原 GaussianGPT 状态 codec 和 9560 步运动 decoder，只优化 168 组自由连续码。两个分片各覆盖 84 个窗口、20 轮，计划各 3780 次 B4 更新，固定在第 5、10、20 轮评估。训练和最终动态验收尚未完成。
 
-两分片均已保存第 10 轮检查点，即各至少完成 1890 次更新。[两个关键窗口的 CPU 中间检查](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/EXECUTION.md) 显示第 10 轮潜在特征误差与原 Q-Former 基本持平，占据 IoU 略低；这不包含图像渲染，不能据此判断动作是否恢复。
+两分片均已保存第 10 轮检查点，即各至少完成 1890 次更新。[两个关键窗口的 CPU 中间检查](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/EXECUTION.md) 显示第 10 轮潜在特征误差与原 Q-Former 基本持平，占据 IoU 略低；[全部 168 个窗口的码均已变化](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/CODE_DRIFT.md)。这不包含图像渲染，不能据此判断动作是否恢复。
 
 已完成的离线占据诊断覆盖 1512 个窗口预测：按 176 个物理未来帧等权，原预测支撑、使用真实目标格点选择预测特征、真实未来状态 codec 参考的运动 MAE 分别为 0.062531、0.057931、0.029464。真实目标格点只用于定位，不进入训练或实际预测。绿梁末帧的颜色区域代理 IoU 分别为 0、0.043132、0.904151；该代理不是物体追踪或动作成功率。[诊断记录与数据](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/EXECUTION.md)。
 
