@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "command": "python -B -m unittest -v test_core.py",
+  "sources": {
+    "core.py": "e9e2948dfb395b1f62568ec68a59f997772264056df58684f3fc38c0379b338d",
+    "test_core.py": "bf1559eef7b29a52475783b56c623c3f45079feefcbae1d5bb43693624a5f9a9"
+  }
+}

@@ -1,0 +1,8 @@
+test_color_proxy_detects_translation_and_rotation_and_empty_mask (test_core.DiagnosticContracts) ... ok
+test_coordinate_overlap_is_order_invariant (test_core.DiagnosticContracts) ... ok
+test_equal_start_gradient_but_different_reachable_ranges (test_core.DiagnosticContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.084s
+
+OK
