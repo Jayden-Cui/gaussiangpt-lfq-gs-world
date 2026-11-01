@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "f5c6d2cdf7c8385df8fe633b9a175f375793834503621120d98084abd73cbd2b",
+  "test_output": "PASS: inotify event parsing, bound evaluations and independent replay, manual review guard",
+  "scope": "Synthetic event, provenance and replay tests; no B outcome asserted"
+}

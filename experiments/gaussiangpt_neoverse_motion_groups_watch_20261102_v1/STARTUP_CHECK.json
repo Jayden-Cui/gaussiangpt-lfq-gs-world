@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "watcher_pid": 761383,
+  "screen": "gg_motion_group_watch_20261102",
+  "phase": "waiting_for_complete_B",
+  "method": "Linux inotify close-write/move event; no training-progress polling",
+  "source_sha_and_cpu_tests": "passed on server",
+  "real_inotify_smoke_test": "passed in an independent temporary directory",
+  "process_cmdline_verified": true,
+  "gpu_used": false,
+  "training_signalled": false,
+  "stage_b_completed": false,
+  "dynamic_visual_review": "pending",
+  "scope": "Startup snapshot only; not current progress or experiment result"
+}
