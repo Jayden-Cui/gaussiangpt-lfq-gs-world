@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "3216f6e6dc3bd5d6b6bfa3727ca9e7e847117ca5bd00702dc2266191bba596c0",
+  "test_output": "PASS: same-camera motion weighting, ideal/wrong controls, finite and 18-frame coverage",
+  "scope": "Analytical static/motion controls and frame coverage; not model inference"
+}

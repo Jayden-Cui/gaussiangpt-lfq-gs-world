@@ -1,0 +1,15 @@
+{
+  "status": "queue_startup_verified",
+  "server": "134",
+  "screen": "gg_qformer_static_control_20261102",
+  "waiter_pid_at_launch": 764915,
+  "wait_for_pilot_pid": 764436,
+  "wait_method": "pidfd process-exit event",
+  "pilot_signalled": false,
+  "main_training_signalled": false,
+  "physical_gpu_after_release": 1,
+  "maximum_wait_seconds": 2100,
+  "maximum_gpu_seconds": 300,
+  "source_hashes_cpu_tests_and_pidfd": "passed",
+  "result_at_launch": "pending; launch snapshot is not current status"
+}

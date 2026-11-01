@@ -1,0 +1,21 @@
+{
+  "schema": "two_window_same_camera_static_control_v1",
+  "question": "For the previously trained two-window Q-Former and fixed warm decoder, does a repeated-S0 posterior code decode closer to a static S0 reference than to the true moving-state reference?",
+  "windows": [35, 123],
+  "future_horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "historical_evaluation_sha256": "bfd4f34c621cb60b8ceb9c72ffa1be537e4f562d836165be39ddf280deac2136",
+  "historical_codes_sha256": "0b03cc64da469f09152fbabbcbf6e0d774ce7149467795947308dc457e8fec9a",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "warm_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "queued_after_pilot_pid": 764436,
+  "queued_pilot_started_sha256": "1df46ad3f6158cf9d5bb09ef9c290355c23b5fe77de69edef403c4aeca7765f2",
+  "maximum_wait_seconds": 2100,
+  "maximum_gpu_seconds": 300,
+  "cuda_visible_device": 1,
+  "allocator_limit_gib": 12,
+  "minimum_free_gpu_gib": 32,
+  "training_updates": 0,
+  "metric": "For each target camera, weight pixels by clip(mean_channel_abs(codec(Sh)-codec(S0))/0.1,0,1). Measure moving and repeated-S0 predictions against both codec references using weighted RGB MAE.",
+  "limits": "Historical Q-Former on its two TRAIN windows only, not a new C model; repeated-S0 codes are read from the original bound evaluation. True future is used in offline posterior and evaluation references. No optimization, online prediction, independent GS replay or cross-video claim."
+}

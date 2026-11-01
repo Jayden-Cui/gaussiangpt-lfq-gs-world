@@ -1,0 +1,8 @@
+{
+  "status": "waiting",
+  "pid": 764915,
+  "pilot_pid": 764436,
+  "method": "pidfd process-exit event",
+  "pilot_signalled": false,
+  "main_training_signalled": false
+}
