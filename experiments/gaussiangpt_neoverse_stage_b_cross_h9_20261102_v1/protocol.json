@@ -1,0 +1,20 @@
+{
+  "schema": "stage_b_cross_h9_all168_v1",
+  "hypothesis": "The sweep-5 decoder change seen in two anchors may also affect h9 throughout the current training video; compare decoder versions under the same fixed code, without assuming mixed versions are in distribution.",
+  "windows": 168,
+  "horizon": 9,
+  "conditions": ["warm_decoder_warm_codes", "warm_decoder_sweep05_codes", "sweep05_decoder_warm_codes", "sweep05_decoder_sweep05_codes"],
+  "matched_cross_decode_sha256": "b10e4a1c4b32e78376e431d204de2dd89f48ac3dbfb9ff39d637d62783d192a5",
+  "source_groups_sha256": "b283b40fbda8a11095a769b82692da7c8ce5aaa6733fcb90a0b35895d8a9db57",
+  "stage_a_corrected_evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438",
+  "stage_b_sweep05_checkpoint_sha256": "dbc6dd6196d5b1af4bdad9c2540e66f47400ce84b3fdff9e7f1409ef2f38eb5f",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "diagnostic_starts": [0, 35, 56, 84, 112, 123, 140, 167],
+  "updates": 0,
+  "cuda_visible_device": 1,
+  "minimum_free_gpu_gib": 32,
+  "allocator_limit_gib": 12,
+  "deadline_seconds": 900,
+  "scope": "All windows of one TRAIN video, only h9. Free codes used future supervision; mixed decoder/code pairs can be out-of-distribution. Not posterior inference, independent native replay, a final B evaluation, or cross-video generalization."
+}

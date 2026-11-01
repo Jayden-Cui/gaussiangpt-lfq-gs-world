@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "03f56b8f291a2bf59fc5380b9b46e5ea07a22497204fbff3a3d100d7406a8d58",
+  "test_output": "PASS: 672 unique h9 rows, factors, source groups and prior-anchor metrics",
+  "scope": "Synthetic coverage, factors, groups, and prior-anchor controls"
+}

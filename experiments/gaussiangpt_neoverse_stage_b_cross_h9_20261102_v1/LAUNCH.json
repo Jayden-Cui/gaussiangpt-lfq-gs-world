@@ -1,0 +1,14 @@
+{
+  "status": "startup_verified",
+  "server": "134",
+  "screen": "gg_stage_b_cross_h9_20261102",
+  "pid_at_launch": 763014,
+  "physical_gpu": 1,
+  "allocator_limit_gib": 12,
+  "deadline_seconds": 900,
+  "source_hashes_and_cpu_tests": "passed",
+  "process_and_started_file": "verified at launch",
+  "optimizer_updates": 0,
+  "training_signalled": false,
+  "result_at_launch": "pending; launch snapshot is not current status"
+}
