@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "worker_sha256": "387d635cc28ddad0b05e4992df31cd32640a1ea3e8a72b2841f78c6d682da29f",
+  "worker_test_sha256": "2af83954c4500f348c94692659221601a7de61bce1bb39c286289f2556648609",
+  "core_manifest_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+  "balanced_20_sweep_schedule": {
+    "status": "passed",
+    "windows": 168,
+    "horizons": 9,
+    "pairs": 1512,
+    "sweeps": 20,
+    "updates": 7560,
+    "visits_per_pair": 20,
+    "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+  },
+  "invalid_config_rejected": true,
+  "reviewed_branch_and_evaluation_hash_required": true,
+  "scope": "CPU launch-gate test using synthetic review only; no GPU job or teacher result"
+}
