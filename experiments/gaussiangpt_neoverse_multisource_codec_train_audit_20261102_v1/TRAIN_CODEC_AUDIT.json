@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "train_sources": {
+    "buildingblock_tower_17_176": {
+      "frames": 177,
+      "codec_real_mae_mean": 0.016598779060956786,
+      "codec_real_mae_median": 0.016283277422189713,
+      "codec_real_mae_p10": 0.013628865033388138,
+      "codec_real_mae_p90": 0.020196307078003885,
+      "codec_real_mae_min": 0.012444316409528255,
+      "codec_real_mae_max": 0.02236734889447689,
+      "codec_real_psnr_mean_db": 31.267100027052024,
+      "teacher_real_mae_mean": 0.008661688681649791,
+      "frames_codec_mae_over_005": 0,
+      "segments": {
+        "000_043": {
+          "frames": 44,
+          "codec_real_mae": 0.01890670055184852
+        },
+        "044_087": {
+          "frames": 44,
+          "codec_real_mae": 0.014196953058920124
+        },
+        "088_131": {
+          "frames": 44,
+          "codec_real_mae": 0.01700015226379037
+        },
+        "132_176": {
+          "frames": 45,
+          "codec_real_mae": 0.01629814300686121
+        }
+      }
+    },
+    "buildingblock_tower_10_176": {
+      "frames": 177,
+      "codec_real_mae_mean": 0.07961140131041156,
+      "codec_real_mae_median": 0.07476922869682312,
+      "codec_real_mae_p10": 0.06953083127737045,
+      "codec_real_mae_p90": 0.09432222545146943,
+      "codec_real_mae_min": 0.06804870814085007,
+      "codec_real_mae_max": 0.1017376258969307,
+      "codec_real_psnr_mean_db": 16.902409919911186,
+      "teacher_real_mae_mean": 0.0074036006557907765,
+      "frames_codec_mae_over_005": 177,
+      "segments": {
+        "000_043": {
+          "frames": 44,
+          "codec_real_mae": 0.08082921447401697
+        },
+        "044_087": {
+          "frames": 44,
+          "codec_real_mae": 0.08459532091563399
+        },
+        "088_131": {
+          "frames": 44,
+          "codec_real_mae": 0.08345815403894945
+        },
+        "132_176": {
+          "frames": 45,
+          "codec_real_mae": 0.06978621549076504
+        }
+      }
+    }
+  },
+  "source10_over_source17_codec_mae_ratio": 4.796220313436873,
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "historic_evaluation_sha256": "68a5b3da1c122c0339f3171e53698b8c54a55dbbc051bf4987bfd0d04b58b88a",
+  "historic_targets_sha256": "465d4a65070f7b5a00b379eb0f67105552f65f83c17e0063f4974a0e1e7ce16b",
+  "frame35_reference_sha256": "ec4d2e202e29fbef7ccea2c61c18b6356c039f99897f64880eedb5c7177ab2e1",
+  "source_code_sha256": "33a0f9cbb77381ca7a01e941e0203a08172930f8d08babc250ba76cabf5f24f1",
+  "eval_source_records_selected": false,
+  "model_training_performed": false,
+  "scope": "Existing codec reconstruction metrics for two TRAIN videos, 177 correlated frames each; no action-model or unseen-test claim"
+}

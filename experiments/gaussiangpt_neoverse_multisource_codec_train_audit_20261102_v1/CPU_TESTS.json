@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "33a0f9cbb77381ca7a01e941e0203a08172930f8d08babc250ba76cabf5f24f1",
+  "rejects_missing_duplicate_and_nontrain_frames": true,
+  "quantile_and_frame_means_checked": true,
+  "scope": "Synthetic CPU aggregation tests; no new model training"
+}
