@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "replay_sha256": "125462bd2a331cfb077ba47ea902e296ae694f23ad72e76400aa06b2be668816",
+  "packets": 36,
+  "views": 72,
+  "main_training_signalled": false,
+  "model_updates": 0
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "697735c297653e835b66534a7da2c76f7c84433c02fb6ef10e5325c63a65481b",
+  "test_output": "PASS: 36 named motion/static GS packets, 72 views and invalid protocol rejection\nPASS: packet producer does not shadow the native renderer common module",
+  "real_paired_sources_and_renderer_verified": true,
+  "scope": "CPU coverage, module binding and hashes only; no packet production or replay"
+}

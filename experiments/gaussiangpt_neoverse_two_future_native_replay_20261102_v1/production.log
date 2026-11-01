@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_two_future_native_replay_20261102_v1/produce.py", line 135, in <module>
+    run()
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_two_future_native_replay_20261102_v1/produce.py", line 79, in run
+    bridge=BoundNativeBridge(partial=False,device='cuda').eval()
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1/runtime_bridge.py", line 49, in __init__
+    common = _bound_module('common', root/'code/common.py', RENDERER_SHA)
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1/runtime_bridge.py", line 27, in _bound_module
+    require(Path(module.__file__).resolve() == path and sha(path) == digest, 'Conflicting module: '+name)
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1/codec_binding.py", line 26, in require
+    raise ValueError(message)
+ValueError: Conflicting module: common

@@ -1,0 +1,342 @@
+{
+  "status": "complete",
+  "source_evaluation_sha256": "169fadccc475cee0e9796d6615aac90c36e275aff829eb95e3ded222b19f3010",
+  "visual_manifest_sha256": "04b4b0c6b24984900d4b9fbd1e6def156528195cd0d1e8e82c59c232472401ba",
+  "proxy_code_sha256": "e9e2948dfb395b1f62568ec68a59f997772264056df58684f3fc38c0379b338d",
+  "proxy_config_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "summary": {
+    "35": {
+      "motion": {
+        "target_visible_frames": 9,
+        "prediction_visible_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 0.8888888888888888,
+        "median_axis_error_degrees": 1.6160994363824415,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7136725935009197,
+            "center_error_over_bbox_diagonal": 0.026400897317285,
+            "axis_error_degrees": 2.392660830382539
+          },
+          {
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.4485294117647059,
+            "center_error_over_bbox_diagonal": 0.08688088967929089,
+            "axis_error_degrees": 31.06215017015701
+          },
+          {
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.3773416592328278,
+            "center_error_over_bbox_diagonal": 0.10806006619433527,
+            "axis_error_degrees": 11.539441299926153
+          },
+          {
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7736170212765957,
+            "center_error_over_bbox_diagonal": 0.010303176625907644,
+            "axis_error_degrees": 3.678451106283539
+          },
+          {
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7926744989633725,
+            "center_error_over_bbox_diagonal": 0.014448259826628597,
+            "axis_error_degrees": 0.49179467377430797
+          },
+          {
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8718125430737422,
+            "center_error_over_bbox_diagonal": 0.0033378913628541165,
+            "axis_error_degrees": 1.0433252004624762
+          },
+          {
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8499353169469599,
+            "center_error_over_bbox_diagonal": 0.02860563834905983,
+            "axis_error_degrees": 0.6872978431843251
+          },
+          {
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8050704225352112,
+            "center_error_over_bbox_diagonal": 0.009485118128352253,
+            "axis_error_degrees": 1.6160994363824415
+          },
+          {
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8727165586328816,
+            "center_error_over_bbox_diagonal": 0.013374034434248764,
+            "axis_error_degrees": 1.4580420406640258
+          }
+        ]
+      },
+      "static": {
+        "target_visible_frames": 9,
+        "prediction_visible_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 1.0,
+        "median_axis_error_degrees": 0.37144939861320836,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.91171875,
+            "center_error_over_bbox_diagonal": 0.008307736483036385,
+            "axis_error_degrees": 1.3128051947047084
+          },
+          {
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9149425287356322,
+            "center_error_over_bbox_diagonal": 0.0022594897817850308,
+            "axis_error_degrees": 1.5181917113952181
+          },
+          {
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9255485893416928,
+            "center_error_over_bbox_diagonal": 0.0015520394386734743,
+            "axis_error_degrees": 0.6028860497276014
+          },
+          {
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9145038167938931,
+            "center_error_over_bbox_diagonal": 0.0020668458904481305,
+            "axis_error_degrees": 0.28617583470946784
+          },
+          {
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9114503816793893,
+            "center_error_over_bbox_diagonal": 0.01316018626130122,
+            "axis_error_degrees": 0.0541998559079957
+          },
+          {
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9153605015673981,
+            "center_error_over_bbox_diagonal": 0.005976392832182827,
+            "axis_error_degrees": 0.37144939861320836
+          },
+          {
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9261006289308176,
+            "center_error_over_bbox_diagonal": 0.0032393549785333523,
+            "axis_error_degrees": 0.2640912002203777
+          },
+          {
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8850308641975309,
+            "center_error_over_bbox_diagonal": 0.01283421828574225,
+            "axis_error_degrees": 0.0045726897777740305
+          },
+          {
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8787638668779715,
+            "center_error_over_bbox_diagonal": 0.022598903526577407,
+            "axis_error_degrees": 0.831483449830074
+          }
+        ]
+      }
+    },
+    "123": {
+      "motion": {
+        "target_visible_frames": 9,
+        "prediction_visible_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 1.0,
+        "median_axis_error_degrees": 3.033389363803053,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.67,
+            "center_error_over_bbox_diagonal": 0.04031541251193263,
+            "axis_error_degrees": 4.672387909352693
+          },
+          {
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7763623496107572,
+            "center_error_over_bbox_diagonal": 0.041787993150516026,
+            "axis_error_degrees": 3.400874773538959
+          },
+          {
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.6894451962110961,
+            "center_error_over_bbox_diagonal": 0.07163141540076481,
+            "axis_error_degrees": 3.033389363803053
+          },
+          {
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8309957924263675,
+            "center_error_over_bbox_diagonal": 0.025268522174127703,
+            "axis_error_degrees": 0.9984400355607761
+          },
+          {
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.835742444152431,
+            "center_error_over_bbox_diagonal": 0.021585028723482762,
+            "axis_error_degrees": 2.728874892619615
+          },
+          {
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8893360160965795,
+            "center_error_over_bbox_diagonal": 0.019819663352464382,
+            "axis_error_degrees": 2.5758790016970465
+          },
+          {
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7803538743136058,
+            "center_error_over_bbox_diagonal": 0.04287337864436295,
+            "axis_error_degrees": 0.14055883057105234
+          },
+          {
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.6327652556349642,
+            "center_error_over_bbox_diagonal": 0.09589586055091258,
+            "axis_error_degrees": 8.122594894582363
+          },
+          {
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.762816553428042,
+            "center_error_over_bbox_diagonal": 0.08439123185001923,
+            "axis_error_degrees": 4.7856129857775045
+          }
+        ]
+      },
+      "static": {
+        "target_visible_frames": 9,
+        "prediction_visible_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 1.0,
+        "median_axis_error_degrees": 0.6424011227094297,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9003021148036254,
+            "center_error_over_bbox_diagonal": 0.015066579066154086,
+            "axis_error_degrees": 4.94628533487915
+          },
+          {
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.89738430583501,
+            "center_error_over_bbox_diagonal": 0.010840193918278972,
+            "axis_error_degrees": 3.9715374044810687
+          },
+          {
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.8287179487179487,
+            "center_error_over_bbox_diagonal": 0.030671256981292333,
+            "axis_error_degrees": 6.472710806981922
+          },
+          {
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.7446592065106816,
+            "center_error_over_bbox_diagonal": 0.0820287041316157,
+            "axis_error_degrees": 9.271169850881478
+          },
+          {
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.948905109489051,
+            "center_error_over_bbox_diagonal": 0.0038814428966621557,
+            "axis_error_degrees": 0.08536516274259043
+          },
+          {
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9632352941176471,
+            "center_error_over_bbox_diagonal": 0.008117257781604909,
+            "axis_error_degrees": 0.5573200279457069
+          },
+          {
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9967248908296943,
+            "center_error_over_bbox_diagonal": 0.0004159383894700723,
+            "axis_error_degrees": 0.1447321221211837
+          },
+          {
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9645464025026069,
+            "center_error_over_bbox_diagonal": 0.01057110656773368,
+            "axis_error_degrees": 0.6424011227094297
+          },
+          {
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "iou": 0.9881081081081081,
+            "center_error_over_bbox_diagonal": 0.001601281064665968,
+            "axis_error_degrees": 0.21641922010613257
+          }
+        ]
+      }
+    }
+  },
+  "scope": "Fixed HSV and ROI image proxy on known training windows; not tracked 3D pose or action success"
+}

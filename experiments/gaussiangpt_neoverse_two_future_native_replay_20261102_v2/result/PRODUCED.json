@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "packets": 36,
+  "views": 72,
+  "packets_sha256": "554c71407266b075935624d49f36bff0e43b2103e04be6ff0b41525f13de0661",
+  "decoder_and_codec_frozen": true,
+  "reviewed_png_max_channel_difference": 1,
+  "elapsed_seconds": 17.921085865003988,
+  "peak_allocated_gib": 1.541771411895752
+}

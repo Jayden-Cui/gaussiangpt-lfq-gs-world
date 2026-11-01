@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "production",
+  "error": "RuntimeError('production failed with exit code 1')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_two_future_native_replay_20261102_v1/coordinator.py\", line 26, in main\n    raise RuntimeError(phase+' failed with exit code '+str(result.returncode))\nRuntimeError: production failed with exit code 1\n",
+  "main_training_signalled": false,
+  "no_automatic_retry": true
+}

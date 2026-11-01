@@ -1,0 +1,649 @@
+{
+  "status": "complete",
+  "step": 180,
+  "summary": {
+    "overall": {
+      "motion_code_to_motion_reference": 0.030127835563487478,
+      "motion_code_to_static_reference": 0.15892991796135902,
+      "static_code_to_static_reference": 0.00838211260917079,
+      "static_code_to_motion_reference": 0.16140497889783648,
+      "reference_motion_vs_static": 0.1648100291689237,
+      "prediction_motion_vs_static": 0.15603972205685246,
+      "static_prediction_closer_to_static_than_motion": true
+    },
+    "per_window": {
+      "35": {
+        "motion_code_to_motion_reference": 0.030970830470323563,
+        "motion_code_to_static_reference": 0.17125203212102255,
+        "static_code_to_static_reference": 0.008971819524756737,
+        "static_code_to_motion_reference": 0.17139172885153028,
+        "reference_motion_vs_static": 0.1745486938291126,
+        "prediction_motion_vs_static": 0.1682375723289119,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "123": {
+        "motion_code_to_motion_reference": 0.029284840656651392,
+        "motion_code_to_static_reference": 0.1466078038016955,
+        "static_code_to_static_reference": 0.007792405693584846,
+        "static_code_to_motion_reference": 0.15141822894414267,
+        "reference_motion_vs_static": 0.15507136450873482,
+        "prediction_motion_vs_static": 0.14384187178479302,
+        "static_prediction_closer_to_static_than_motion": true
+      }
+    },
+    "h9": {
+      "motion_code_to_motion_reference": 0.02336055599153042,
+      "motion_code_to_static_reference": 0.20314385741949081,
+      "static_code_to_static_reference": 0.003652335610240698,
+      "static_code_to_motion_reference": 0.2063354328274727,
+      "reference_motion_vs_static": 0.2074418142437935,
+      "prediction_motion_vs_static": 0.20202645659446716,
+      "static_prediction_closer_to_static_than_motion": true
+    },
+    "motion_source_motion_mae": 0.03411172154463,
+    "static_closer_frames": 18,
+    "static_full_rgb_mae": 0.004350372137398356,
+    "static_support_iou": 0.9798798251252013
+  },
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.0363665446639061,
+        "motion_code_to_static_reference": 0.06709978729486465,
+        "static_code_to_static_reference": 0.016672207042574883,
+        "static_code_to_motion_reference": 0.06917975842952728,
+        "reference_motion_vs_static": 0.07897061109542847,
+        "prediction_motion_vs_static": 0.05871398374438286,
+        "dynamic_weight_sum": 17789.716796875
+      },
+      "motion_source_metrics": {
+        "mae": 0.018960611894726753,
+        "roi_mae": 0.02074551023542881,
+        "motion_mae": 0.041073303669691086,
+        "psnr": 28.634061813354492,
+        "object_box_mae": 0.021806780248880386,
+        "teacher_view1_masked_mae": 0.020622216165065765
+      },
+      "static_support": {
+        "predicted_nodes": 852,
+        "target_nodes": 834,
+        "true_positive": 832,
+        "false_positive": 20,
+        "false_negative": 2,
+        "iou": 0.9742388758782201,
+        "precision": 0.9765258215962441,
+        "recall": 0.9976019184652278
+      },
+      "static_full_rgb_mae": 0.006582425907254219
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03603602945804596,
+        "motion_code_to_static_reference": 0.11895517259836197,
+        "static_code_to_static_reference": 0.020890554413199425,
+        "static_code_to_motion_reference": 0.11637957394123077,
+        "reference_motion_vs_static": 0.1254195272922516,
+        "prediction_motion_vs_static": 0.11029217392206192,
+        "dynamic_weight_sum": 23940.1953125
+      },
+      "motion_source_metrics": {
+        "mae": 0.020952077582478523,
+        "roi_mae": 0.022526651620864868,
+        "motion_mae": 0.043151725083589554,
+        "psnr": 26.7452449798584,
+        "object_box_mae": 0.025336595252156258,
+        "teacher_view1_masked_mae": 0.02287272922694683
+      },
+      "static_support": {
+        "predicted_nodes": 859,
+        "target_nodes": 834,
+        "true_positive": 828,
+        "false_positive": 31,
+        "false_negative": 6,
+        "iou": 0.9572254335260115,
+        "precision": 0.9639115250291036,
+        "recall": 0.9928057553956835
+      },
+      "static_full_rgb_mae": 0.009400018490850925
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03448912128806114,
+        "motion_code_to_static_reference": 0.1574074625968933,
+        "static_code_to_static_reference": 0.013783460482954979,
+        "static_code_to_motion_reference": 0.15303586423397064,
+        "reference_motion_vs_static": 0.15767961740493774,
+        "prediction_motion_vs_static": 0.15226317942142487,
+        "dynamic_weight_sum": 29724.591796875
+      },
+      "motion_source_metrics": {
+        "mae": 0.021306484937667847,
+        "roi_mae": 0.02300921641290188,
+        "motion_mae": 0.040242403745651245,
+        "psnr": 27.588668823242188,
+        "object_box_mae": 0.02454160898923874,
+        "teacher_view1_masked_mae": 0.024135705083608627
+      },
+      "static_support": {
+        "predicted_nodes": 873,
+        "target_nodes": 834,
+        "true_positive": 834,
+        "false_positive": 39,
+        "false_negative": 0,
+        "iou": 0.9553264604810997,
+        "precision": 0.9553264604810997,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.006017437670379877
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03553227707743645,
+        "motion_code_to_static_reference": 0.17533572018146515,
+        "static_code_to_static_reference": 0.006565389223396778,
+        "static_code_to_motion_reference": 0.18001191318035126,
+        "reference_motion_vs_static": 0.1791839897632599,
+        "prediction_motion_vs_static": 0.17593742907047272,
+        "dynamic_weight_sum": 33224.9453125
+      },
+      "motion_source_metrics": {
+        "mae": 0.021148789674043655,
+        "roi_mae": 0.02347610518336296,
+        "motion_mae": 0.038442447781562805,
+        "psnr": 27.298664093017578,
+        "object_box_mae": 0.023123309016227722,
+        "teacher_view1_masked_mae": 0.024255745112895966
+      },
+      "static_support": {
+        "predicted_nodes": 841,
+        "target_nodes": 834,
+        "true_positive": 834,
+        "false_positive": 7,
+        "false_negative": 0,
+        "iou": 0.9916765755053508,
+        "precision": 0.9916765755053508,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.003188223112374544
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.030691860243678093,
+        "motion_code_to_static_reference": 0.1993436962366104,
+        "static_code_to_static_reference": 0.006305468734353781,
+        "static_code_to_motion_reference": 0.1911781281232834,
+        "reference_motion_vs_static": 0.1927713304758072,
+        "prediction_motion_vs_static": 0.19777823984622955,
+        "dynamic_weight_sum": 35881.3828125
+      },
+      "motion_source_metrics": {
+        "mae": 0.021032385528087616,
+        "roi_mae": 0.022699279710650444,
+        "motion_mae": 0.032480206340551376,
+        "psnr": 26.595916748046875,
+        "object_box_mae": 0.02380528301000595,
+        "teacher_view1_masked_mae": 0.02361305244266987
+      },
+      "static_support": {
+        "predicted_nodes": 846,
+        "target_nodes": 834,
+        "true_positive": 833,
+        "false_positive": 13,
+        "false_negative": 1,
+        "iou": 0.9834710743801653,
+        "precision": 0.9846335697399528,
+        "recall": 0.9988009592326139
+      },
+      "static_full_rgb_mae": 0.0034922112245112658
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.030833302065730095,
+        "motion_code_to_static_reference": 0.20030149817466736,
+        "static_code_to_static_reference": 0.004085435997694731,
+        "static_code_to_motion_reference": 0.20095840096473694,
+        "reference_motion_vs_static": 0.20196500420570374,
+        "prediction_motion_vs_static": 0.19930247962474823,
+        "dynamic_weight_sum": 39166.91796875
+      },
+      "motion_source_metrics": {
+        "mae": 0.01982535794377327,
+        "roi_mae": 0.022161472588777542,
+        "motion_mae": 0.030604438856244087,
+        "psnr": 27.545156478881836,
+        "object_box_mae": 0.021399132907390594,
+        "teacher_view1_masked_mae": 0.021391339600086212
+      },
+      "static_support": {
+        "predicted_nodes": 840,
+        "target_nodes": 834,
+        "true_positive": 834,
+        "false_positive": 6,
+        "false_negative": 0,
+        "iou": 0.9928571428571429,
+        "precision": 0.9928571428571429,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.0024105592165142298
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02467949502170086,
+        "motion_code_to_static_reference": 0.2006901651620865,
+        "static_code_to_static_reference": 0.0019368522334843874,
+        "static_code_to_motion_reference": 0.20378033816814423,
+        "reference_motion_vs_static": 0.20380449295043945,
+        "prediction_motion_vs_static": 0.20069268345832825,
+        "dynamic_weight_sum": 43584.3359375
+      },
+      "motion_source_metrics": {
+        "mae": 0.01849374733865261,
+        "roi_mae": 0.020207196474075317,
+        "motion_mae": 0.027137208729982376,
+        "psnr": 29.04827117919922,
+        "object_box_mae": 0.021140698343515396,
+        "teacher_view1_masked_mae": 0.020706476643681526
+      },
+      "static_support": {
+        "predicted_nodes": 834,
+        "target_nodes": 834,
+        "true_positive": 834,
+        "false_positive": 0,
+        "false_negative": 0,
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.0014092799974605441
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.027362238615751266,
+        "motion_code_to_static_reference": 0.20885130763053894,
+        "static_code_to_static_reference": 0.004550832789391279,
+        "static_code_to_motion_reference": 0.21188974380493164,
+        "reference_motion_vs_static": 0.21314261853694916,
+        "prediction_motion_vs_static": 0.20778532326221466,
+        "dynamic_weight_sum": 46427.4296875
+      },
+      "motion_source_metrics": {
+        "mae": 0.0199029091745615,
+        "roi_mae": 0.021695999428629875,
+        "motion_mae": 0.028899263590574265,
+        "psnr": 27.59343719482422,
+        "object_box_mae": 0.025417624041438103,
+        "teacher_view1_masked_mae": 0.02194133773446083
+      },
+      "static_support": {
+        "predicted_nodes": 835,
+        "target_nodes": 834,
+        "true_positive": 833,
+        "false_positive": 2,
+        "false_negative": 1,
+        "iou": 0.9964114832535885,
+        "precision": 0.9976047904191617,
+        "recall": 0.9988009592326139
+      },
+      "static_full_rgb_mae": 0.00250055780634284
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.022746605798602104,
+        "motion_code_to_static_reference": 0.2132834792137146,
+        "static_code_to_static_reference": 0.005956174805760384,
+        "static_code_to_motion_reference": 0.21611183881759644,
+        "reference_motion_vs_static": 0.21800105273723602,
+        "prediction_motion_vs_static": 0.21137265861034393,
+        "dynamic_weight_sum": 48127.41015625
+      },
+      "motion_source_metrics": {
+        "mae": 0.020173385739326477,
+        "roi_mae": 0.02092977613210678,
+        "motion_mae": 0.029296956956386566,
+        "psnr": 27.965612411499023,
+        "object_box_mae": 0.02739722840487957,
+        "teacher_view1_masked_mae": 0.022820204496383667
+      },
+      "static_support": {
+        "predicted_nodes": 834,
+        "target_nodes": 834,
+        "true_positive": 833,
+        "false_positive": 1,
+        "false_negative": 1,
+        "iou": 0.9976047904191617,
+        "precision": 0.9988009592326139,
+        "recall": 0.9988009592326139
+      },
+      "static_full_rgb_mae": 0.0031604233663529158
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03843097388744354,
+        "motion_code_to_static_reference": 0.07362934201955795,
+        "static_code_to_static_reference": 0.016094159334897995,
+        "static_code_to_motion_reference": 0.08360083401203156,
+        "reference_motion_vs_static": 0.09135404229164124,
+        "prediction_motion_vs_static": 0.07076770067214966,
+        "dynamic_weight_sum": 26501.63671875
+      },
+      "motion_source_metrics": {
+        "mae": 0.022703219205141068,
+        "roi_mae": 0.023751521483063698,
+        "motion_mae": 0.04072005674242973,
+        "psnr": 27.37687873840332,
+        "object_box_mae": 0.022591624408960342,
+        "teacher_view1_masked_mae": 0.02966664731502533
+      },
+      "static_support": {
+        "predicted_nodes": 902,
+        "target_nodes": 875,
+        "true_positive": 871,
+        "false_positive": 31,
+        "false_negative": 4,
+        "iou": 0.9613686534216336,
+        "precision": 0.9656319290465631,
+        "recall": 0.9954285714285714
+      },
+      "static_full_rgb_mae": 0.008175469934940338
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.03483409434556961,
+        "motion_code_to_static_reference": 0.0973309651017189,
+        "static_code_to_static_reference": 0.013243424706161022,
+        "static_code_to_motion_reference": 0.10489414632320404,
+        "reference_motion_vs_static": 0.11258500814437866,
+        "prediction_motion_vs_static": 0.09030528366565704,
+        "dynamic_weight_sum": 36933.4375
+      },
+      "motion_source_metrics": {
+        "mae": 0.024968096986413002,
+        "roi_mae": 0.026342567056417465,
+        "motion_mae": 0.04529188573360443,
+        "psnr": 26.382333755493164,
+        "object_box_mae": 0.025218665599822998,
+        "teacher_view1_masked_mae": 0.0321493037045002
+      },
+      "static_support": {
+        "predicted_nodes": 897,
+        "target_nodes": 875,
+        "true_positive": 869,
+        "false_positive": 28,
+        "false_negative": 6,
+        "iou": 0.9623477297895903,
+        "precision": 0.9687848383500557,
+        "recall": 0.9931428571428571
+      },
+      "static_full_rgb_mae": 0.006917214021086693
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.037254005670547485,
+        "motion_code_to_static_reference": 0.12036360055208206,
+        "static_code_to_static_reference": 0.019198719412088394,
+        "static_code_to_motion_reference": 0.12744984030723572,
+        "reference_motion_vs_static": 0.1378830522298813,
+        "prediction_motion_vs_static": 0.11199141293764114,
+        "dynamic_weight_sum": 42734.06640625
+      },
+      "motion_source_metrics": {
+        "mae": 0.024639716371893883,
+        "roi_mae": 0.02390529215335846,
+        "motion_mae": 0.03883122280240059,
+        "psnr": 26.108352661132812,
+        "object_box_mae": 0.026259683072566986,
+        "teacher_view1_masked_mae": 0.03276712819933891
+      },
+      "static_support": {
+        "predicted_nodes": 945,
+        "target_nodes": 875,
+        "true_positive": 872,
+        "false_positive": 73,
+        "false_negative": 3,
+        "iou": 0.919831223628692,
+        "precision": 0.9227513227513228,
+        "recall": 0.9965714285714286
+      },
+      "static_full_rgb_mae": 0.011152858845889568
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.029948681592941284,
+        "motion_code_to_static_reference": 0.13947075605392456,
+        "static_code_to_static_reference": 0.009446083568036556,
+        "static_code_to_motion_reference": 0.14447021484375,
+        "reference_motion_vs_static": 0.14742912352085114,
+        "prediction_motion_vs_static": 0.13679106533527374,
+        "dynamic_weight_sum": 44862.94921875
+      },
+      "motion_source_metrics": {
+        "mae": 0.022092096507549286,
+        "roi_mae": 0.020619003102183342,
+        "motion_mae": 0.03210217133164406,
+        "psnr": 27.8729248046875,
+        "object_box_mae": 0.02411237172782421,
+        "teacher_view1_masked_mae": 0.032367005944252014
+      },
+      "static_support": {
+        "predicted_nodes": 902,
+        "target_nodes": 875,
+        "true_positive": 871,
+        "false_positive": 31,
+        "false_negative": 4,
+        "iou": 0.9613686534216336,
+        "precision": 0.9656319290465631,
+        "recall": 0.9954285714285714
+      },
+      "static_full_rgb_mae": 0.005485915578901768
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.027149101719260216,
+        "motion_code_to_static_reference": 0.15868598222732544,
+        "static_code_to_static_reference": 0.005694119725376368,
+        "static_code_to_motion_reference": 0.15480439364910126,
+        "reference_motion_vs_static": 0.1580451875925064,
+        "prediction_motion_vs_static": 0.1555241197347641,
+        "dynamic_weight_sum": 47714.28125
+      },
+      "motion_source_metrics": {
+        "mae": 0.023710401728749275,
+        "roi_mae": 0.022767115384340286,
+        "motion_mae": 0.03129458799958229,
+        "psnr": 26.994342803955078,
+        "object_box_mae": 0.029091672971844673,
+        "teacher_view1_masked_mae": 0.032379161566495895
+      },
+      "static_support": {
+        "predicted_nodes": 881,
+        "target_nodes": 875,
+        "true_positive": 873,
+        "false_positive": 8,
+        "false_negative": 2,
+        "iou": 0.9886749716874292,
+        "precision": 0.9909194097616345,
+        "recall": 0.9977142857142857
+      },
+      "static_full_rgb_mae": 0.0033752804156392813
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02560899592936039,
+        "motion_code_to_static_reference": 0.1671227067708969,
+        "static_code_to_static_reference": 0.002118716947734356,
+        "static_code_to_motion_reference": 0.17272122204303741,
+        "reference_motion_vs_static": 0.17310035228729248,
+        "prediction_motion_vs_static": 0.166744664311409,
+        "dynamic_weight_sum": 49719.56640625
+      },
+      "motion_source_metrics": {
+        "mae": 0.02114168368279934,
+        "roi_mae": 0.019198326393961906,
+        "motion_mae": 0.028506120666861534,
+        "psnr": 28.451005935668945,
+        "object_box_mae": 0.02617935836315155,
+        "teacher_view1_masked_mae": 0.032603029161691666
+      },
+      "static_support": {
+        "predicted_nodes": 877,
+        "target_nodes": 875,
+        "true_positive": 875,
+        "false_positive": 2,
+        "false_negative": 0,
+        "iou": 0.9977194982896237,
+        "precision": 0.9977194982896237,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.0016226968728005886
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.023617753759026527,
+        "motion_code_to_static_reference": 0.18106092512607574,
+        "static_code_to_static_reference": 0.0016075755702331662,
+        "static_code_to_motion_reference": 0.18320859968662262,
+        "reference_motion_vs_static": 0.1831878125667572,
+        "prediction_motion_vs_static": 0.1810896247625351,
+        "dynamic_weight_sum": 51863.94140625
+      },
+      "motion_source_metrics": {
+        "mae": 0.021647486835718155,
+        "roi_mae": 0.01922898180782795,
+        "motion_mae": 0.02925175614655018,
+        "psnr": 27.901212692260742,
+        "object_box_mae": 0.02906857430934906,
+        "teacher_view1_masked_mae": 0.03076324611902237
+      },
+      "static_support": {
+        "predicted_nodes": 875,
+        "target_nodes": 875,
+        "true_positive": 875,
+        "false_positive": 0,
+        "false_negative": 0,
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.0012337536318227649
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.02274545282125473,
+        "motion_code_to_static_reference": 0.18880172073841095,
+        "static_code_to_static_reference": 0.0013803555630147457,
+        "static_code_to_motion_reference": 0.1950557827949524,
+        "reference_motion_vs_static": 0.19517512619495392,
+        "prediction_motion_vs_static": 0.18868272006511688,
+        "dynamic_weight_sum": 53581.375
+      },
+      "motion_source_metrics": {
+        "mae": 0.021939454600214958,
+        "roi_mae": 0.019728388637304306,
+        "motion_mae": 0.02765319123864174,
+        "psnr": 27.789955139160156,
+        "object_box_mae": 0.03001873940229416,
+        "teacher_view1_masked_mae": 0.03218209370970726
+      },
+      "static_support": {
+        "predicted_nodes": 875,
+        "target_nodes": 875,
+        "true_positive": 875,
+        "false_positive": 0,
+        "false_negative": 0,
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "static_full_rgb_mae": 0.0010569955920800567
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "motion_code_to_motion_reference": 0.023974506184458733,
+        "motion_code_to_static_reference": 0.19300423562526703,
+        "static_code_to_static_reference": 0.0013484964147210121,
+        "static_code_to_motion_reference": 0.19655902683734894,
+        "reference_motion_vs_static": 0.19688257575035095,
+        "prediction_motion_vs_static": 0.1926802545785904,
+        "dynamic_weight_sum": 55182.7578125
+      },
+      "motion_source_metrics": {
+        "mae": 0.022325394675135612,
+        "roi_mae": 0.019742172211408615,
+        "motion_mae": 0.029032040387392044,
+        "psnr": 27.737180709838867,
+        "object_box_mae": 0.03166680037975311,
+        "teacher_view1_masked_mae": 0.033137790858745575
+      },
+      "static_support": {
+        "predicted_nodes": 873,
+        "target_nodes": 875,
+        "true_positive": 873,
+        "false_positive": 0,
+        "false_negative": 2,
+        "iou": 0.9977142857142857,
+        "precision": 1.0,
+        "recall": 0.9977142857142857
+      },
+      "static_full_rgb_mae": 0.00112537678796798
+    }
+  ],
+  "initial_motion_reproduction_max_abs": null,
+  "initial_static_reproduction_max_abs": null,
+  "same_decoder_initial_condition_and_camera": true,
+  "visual_review": "pending",
+  "independent_native_gs_replay": "not performed"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "866d75c4adb49ba8ecfb486ccfced645874b853aa02f75e5219f2d77c76a97be",
+  "test_output": "PASS: 36 named motion/static GS packets, 72 views and invalid protocol rejection",
+  "real_paired_sources_and_renderer_verified": true,
+  "scope": "CPU coverage and hashes only; packet generation and native replay not yet executed"
+}

@@ -1,0 +1,201 @@
+{
+  "status": "complete",
+  "updates": 360,
+  "summaries": {
+    "0": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.02622302704387241,
+        "motion_code_to_static_reference": 0.1612561730047067,
+        "static_code_to_static_reference": 0.1316976278192467,
+        "static_code_to_motion_reference": 0.07769355550408363,
+        "reference_motion_vs_static": 0.1648100291689237,
+        "prediction_motion_vs_static": 0.0719301091093156,
+        "static_prediction_closer_to_static_than_motion": false
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.027335004260142643,
+          "motion_code_to_static_reference": 0.1716529486907853,
+          "static_code_to_static_reference": 0.14182271973954308,
+          "static_code_to_motion_reference": 0.067568881644143,
+          "reference_motion_vs_static": 0.1745486938291126,
+          "prediction_motion_vs_static": 0.060968067290054426,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.025111049827602174,
+          "motion_code_to_static_reference": 0.1508593973186281,
+          "static_code_to_static_reference": 0.12157253589895037,
+          "static_code_to_motion_reference": 0.08781822936402427,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.08289215092857678,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.02286422997713089,
+        "motion_code_to_static_reference": 0.20636030286550522,
+        "static_code_to_static_reference": 0.1209348514676094,
+        "static_code_to_motion_reference": 0.168514683842659,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.16564662754535675,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "motion_source_motion_mae": 0.02977625249574582,
+      "static_closer_frames": 3,
+      "static_full_rgb_mae": 0.06210194890283876,
+      "static_support_iou": 0.6321798960157833
+    },
+    "90": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.034623306037651166,
+        "motion_code_to_static_reference": 0.1510324449174934,
+        "static_code_to_static_reference": 0.01864046360262566,
+        "static_code_to_motion_reference": 0.1544061977830198,
+        "reference_motion_vs_static": 0.1648100291689237,
+        "prediction_motion_vs_static": 0.1413943324651983,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.0328786296563016,
+          "motion_code_to_static_reference": 0.16331064535511863,
+          "static_code_to_static_reference": 0.017716792412102222,
+          "static_code_to_motion_reference": 0.16539391378561655,
+          "reference_motion_vs_static": 0.1745486938291126,
+          "prediction_motion_vs_static": 0.1544162647591697,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.03636798241900073,
+          "motion_code_to_static_reference": 0.13875424447986814,
+          "static_code_to_static_reference": 0.0195641347931491,
+          "static_code_to_motion_reference": 0.14341848178042305,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.12837240017122692,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.027666389010846615,
+        "motion_code_to_static_reference": 0.2014484703540802,
+        "static_code_to_static_reference": 0.004263379727490246,
+        "static_code_to_motion_reference": 0.20639877766370773,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.2004544660449028,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "motion_source_motion_mae": 0.03913137772017055,
+      "static_closer_frames": 18,
+      "static_full_rgb_mae": 0.008906741057419114,
+      "static_support_iou": 0.9442562037964785
+    },
+    "180": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.030127835563487478,
+        "motion_code_to_static_reference": 0.15892991796135902,
+        "static_code_to_static_reference": 0.00838211260917079,
+        "static_code_to_motion_reference": 0.16140497889783648,
+        "reference_motion_vs_static": 0.1648100291689237,
+        "prediction_motion_vs_static": 0.15603972205685246,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.030970830470323563,
+          "motion_code_to_static_reference": 0.17125203212102255,
+          "static_code_to_static_reference": 0.008971819524756737,
+          "static_code_to_motion_reference": 0.17139172885153028,
+          "reference_motion_vs_static": 0.1745486938291126,
+          "prediction_motion_vs_static": 0.1682375723289119,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.029284840656651392,
+          "motion_code_to_static_reference": 0.1466078038016955,
+          "static_code_to_static_reference": 0.007792405693584846,
+          "static_code_to_motion_reference": 0.15141822894414267,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.14384187178479302,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.02336055599153042,
+        "motion_code_to_static_reference": 0.20314385741949081,
+        "static_code_to_static_reference": 0.003652335610240698,
+        "static_code_to_motion_reference": 0.2063354328274727,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.20202645659446716,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "motion_source_motion_mae": 0.03411172154463,
+      "static_closer_frames": 18,
+      "static_full_rgb_mae": 0.004350372137398356,
+      "static_support_iou": 0.9798798251252013
+    },
+    "360": {
+      "overall": {
+        "motion_code_to_motion_reference": 0.02902969252318144,
+        "motion_code_to_static_reference": 0.15977863429321182,
+        "static_code_to_static_reference": 0.007582768590913879,
+        "static_code_to_motion_reference": 0.16316413548257616,
+        "reference_motion_vs_static": 0.1648100291689237,
+        "prediction_motion_vs_static": 0.15836949191159672,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "per_window": {
+        "35": {
+          "motion_code_to_motion_reference": 0.030104035097691748,
+          "motion_code_to_static_reference": 0.17129506998591953,
+          "static_code_to_static_reference": 0.007878373635725843,
+          "static_code_to_motion_reference": 0.17227212339639664,
+          "reference_motion_vs_static": 0.1745486938291126,
+          "prediction_motion_vs_static": 0.1693409432967504,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "123": {
+          "motion_code_to_motion_reference": 0.02795534994867113,
+          "motion_code_to_static_reference": 0.14826219860050413,
+          "static_code_to_static_reference": 0.007287163546101915,
+          "static_code_to_motion_reference": 0.15405614756875569,
+          "reference_motion_vs_static": 0.15507136450873482,
+          "prediction_motion_vs_static": 0.14739804052644306,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "h9": {
+        "motion_code_to_motion_reference": 0.022835922427475452,
+        "motion_code_to_static_reference": 0.20251695811748505,
+        "static_code_to_static_reference": 0.007284535560756922,
+        "static_code_to_motion_reference": 0.2075367197394371,
+        "reference_motion_vs_static": 0.2074418142437935,
+        "prediction_motion_vs_static": 0.20276030153036118,
+        "static_prediction_closer_to_static_than_motion": true
+      },
+      "motion_source_motion_mae": 0.031368663948443204,
+      "static_closer_frames": 18,
+      "static_full_rgb_mae": 0.0043953619509314494,
+      "static_support_iou": 0.9730718253678305
+    }
+  },
+  "exploratory_numerical_gate": {
+    "motion_no_more_than_110pct": true,
+    "static_closer_at_least_16_of_18": true,
+    "static_error_at_most_half_reference_difference": true,
+    "all_numeric_conditions": true,
+    "visual_review_required": true
+  },
+  "decoder_and_codes_jointly_trained": true,
+  "true_future_never_in_decoder_condition": true,
+  "main_training_signalled": false,
+  "elapsed_seconds": 375.6975596760167,
+  "peak_allocated_gib": 5.312953948974609,
+  "checkpoints": {
+    "90": "cc4ebfae241863162040ae5695c05e5b914680bd905dcad14d2d3dcb85772e8b",
+    "180": "050a2df11cb417baec37f8a9b719a2d1ce4bf419c0124271d4e262b139d80559",
+    "360": "461c8391d09a27ba5f2b4f4f52878c8a9d8b287072e2fa6a52a9ac4877043744"
+  },
+  "visual_review": "pending",
+  "limits": "Two known windows in one training video, one initialization and fixed short budget. Offline free-code capacity diagnostic, not a trained Q-Former, full-168 teacher, AR, cross-video generalization or proof of impossibility."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "reviewed",
+  "scope": "two_known_training_windows_only",
+  "reviewed_starts": [
+    35,
+    123
+  ],
+  "reviewed_horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "moving_coarse_action_visible": true,
+  "static_coarse_state_retained": true,
+  "suitable_for_limited_qformer_diagnostic": true,
+  "full_168_teacher_accepted": false,
+  "strict_proxy_gate_passed": false,
+  "yellow_motion_center_within_10pct": "8/9; h3 = 0.1081",
+  "notes": "Motion yellow rises and green moves toward pillar; static retains initial objects. Hand blur and small yellow motion displacement remain. HSV proxy is auxiliary, not tracked 3D pose.",
+  "evaluation_sha256": "169fadccc475cee0e9796d6615aac90c36e275aff829eb95e3ded222b19f3010",
+  "source_summary_sha256": "aea10d1b6c35209e364d19023b4eddcbc06d752847eee571da735327f19729c6",
+  "visual_manifest_sha256": "04b4b0c6b24984900d4b9fbd1e6def156528195cd0d1e8e82c59c232472401ba",
+  "object_proxy_sha256": "4fa6b5804fb56396ba0b399c0d85e36ce3cf768fe9ab54f5f755be66c0d7081c",
+  "independent_gs_replay": "separately completed; bind replay receipt before Q training"
+}

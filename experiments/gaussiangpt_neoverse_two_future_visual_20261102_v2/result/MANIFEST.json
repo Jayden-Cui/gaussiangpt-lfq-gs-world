@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "source_summary_sha256": "aea10d1b6c35209e364d19023b4eddcbc06d752847eee571da735327f19729c6",
+  "source_evaluation_sha256": "169fadccc475cee0e9796d6615aac90c36e275aff829eb95e3ded222b19f3010",
+  "source_code_sha256": "3db58f078e15080bf1429379f4c5bea252c9d9871e5b0d282765997adb5359bd",
+  "video_columns": [
+    "source video",
+    "moving-code output",
+    "static-code output"
+  ],
+  "motion_sheet_columns": [
+    "source video",
+    "moving-code output"
+  ],
+  "static_sheet_columns": [
+    "same-camera static codec reference",
+    "static-code output"
+  ],
+  "video_fps": 5,
+  "frames": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "source_sha256": "4289788821f53829b2254b4f70664b94944a6be8d18244d8ada8b1cdec5d1926",
+      "video_frame_sha256": "63826d7dc474d5e9ba18f8d6fe849ca7c77b2d80df363629e6e6b0b4c0dbbb7d"
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "source_sha256": "dbf079b9f04075883a9c0032650b5a386c15cf16f28255dbf80eba3763d6099b",
+      "video_frame_sha256": "284ba80a4f24c2915c9219995b8465f02773c451c06be1dadb3e59feee0d88e2"
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "source_sha256": "8ae6102d4cd3618536796fd83d1b83650e78343a7f9849a06b544d4e53f1253b",
+      "video_frame_sha256": "5899369824c5e1ad346ecd8710aea32024cc4d21730784d5b613d7b2bc2a8ef6"
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "source_sha256": "9a4b47d7911305b5d7439351e35b887698a66800a7ea18a33700b8325ae7a525",
+      "video_frame_sha256": "f6e074481df6ed0fe52ecf7ffa26366b1c427f7ea5d5f755de3396e0b2d94cb4"
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "source_sha256": "dad7872e18e5d6346a52f6166f7466d88d370d660d91266bb12f2df74ed26567",
+      "video_frame_sha256": "a2d3d87274f656e5d44cd5cbbb27576460d491490bd246712253d7ac5bc708e4"
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "source_sha256": "4dc04f765ed39a526c21661caeae75fe631bbb2db4545d6ecdb6da26e897568a",
+      "video_frame_sha256": "4d2369dec94a39d4348737c2d33c813fbedc1b4dc18ee908fb7a8ffe9d6a3ea9"
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "source_sha256": "573ea9fc482cb4b2229b12e131ed380e3b42e1f51ef6414a9354f416b9832090",
+      "video_frame_sha256": "aa9b621b6f2ebd37a70822a391576def1dde5c32e96f58cf828c2d9c179ce350"
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "source_sha256": "aa2dbfedaf41a34416f496f396ce7bd2bd80f7074e2383ca247b8eef7a32b8cb",
+      "video_frame_sha256": "b30700107c4e656e8316f0feb6e77c50b66fa0877d44a5b42d21435ec188fbfa"
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "source_sha256": "01fba0eb6ec8cd41fa391e0a8a1e2a69577abcdd79913b68e74e4061adbf4f44",
+      "video_frame_sha256": "39d43484cfef69757531eec21b60cb94f85d2f26cc3e703a7ef9f17621a42f41"
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "source_sha256": "47b2fb33b37f3a4f39d63094a675285bc613f134353f4e73ab0239ea718cb4f0",
+      "video_frame_sha256": "2d0ce911ff78eec11b5d1e510567a77b9f882073743e2120316912002002a6bf"
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "source_sha256": "9a8b901d484ee5231f7aa6c3b0af808abd64b5d5306c58fe0d806f5094e862a6",
+      "video_frame_sha256": "d7dd87f334ae3545f87e751977a724256c0823db7557d2bdf1da1fe78a6dc80a"
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "source_sha256": "4db811b7a594fe3b82950ce3675db3a2e00e8e48f6cea8e9db52cc2d9048226a",
+      "video_frame_sha256": "bd10302fdc123cbce5c65e4cccd5130fe77b8f4292378682f77719c9664560ec"
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "source_sha256": "3cf6f0d6f74a906ead4959ec1a9d57f6a887ecf8a46c9483a2f4a9e5554e1cfd",
+      "video_frame_sha256": "ff1b5819af362fcacdcd107c8a7cc67c7c359f381375bc0d4642260628fc4529"
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "source_sha256": "649a528ad0f00d109a0e458c74b81348afd7ea53fbc6ae529a60bdd23b6fce66",
+      "video_frame_sha256": "7bb7b3844728282e9dfd2759838c253d2062ae2b6ce13f24d1d85515c4dfe028"
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "source_sha256": "677111cbc5d882487631462eb04aba615c0fd32e884d406daca2c26e92362a2e",
+      "video_frame_sha256": "2e8c2d29133db0b48b93414d7e3820ed2347344c3d9004a7480fa8415f6ec31f"
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "source_sha256": "aedff5e80a9838901b7bfe8e28282198200080904f713faa4328b671e50b3d08",
+      "video_frame_sha256": "5b3940db7b33240b697d8e0845204a46125f9fe32911387cb6a216dbe1237d6c"
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "source_sha256": "c03d156d11420f5ed8f8c6313bccde9eae1a14546a35865b28cdef6f8285e623",
+      "video_frame_sha256": "cd25fd266ce080553097160ffd5d223894d31039579d69aae5733de01bf5965e"
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "source_sha256": "cf74d7621670076c5e4d0d5188c9936c578ebded400bcb7ff243eb2f7ed85ada",
+      "video_frame_sha256": "18c5dba0bcaff01c344eebad65a8192ddb50ef8ff947ccac7e20c9010430fc8c"
+    }
+  ],
+  "visual_review": "pending",
+  "scope": "Two previously trained windows; comparison assets only, not an independent rendering, action-success decision, 3D pose test or cross-video result."
+}

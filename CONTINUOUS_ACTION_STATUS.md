@@ -46,6 +46,6 @@
 
 阶段 C 新增[固定教师的源画面变化分组评估工具](experiments/gaussiangpt_neoverse_stage_c_motion_groups_20261102_v1/README.md)：逐条核对 1512 项教师指标，在四组中比较后验与教师的物理帧等权及 h1–h9 误差。本地与服务器测试使用合成 C／教师指标，尚未评估真实 C 模型；全画面变化分组不等于物体轨迹或动作成功。
 
-[两窗口同初态运动／静止共享 decoder 诊断](experiments/gaussiangpt_neoverse_two_future_shared_decoder_20261102_v1/EXECUTION.md)已通过真实 GPU 双分支梯度预检和零步复现，开始 360 次成对更新。运动和静止分支各有自由连续码，共用初态与 decoder；真实未来状态只用于离线运动目标、静止损失的配对区域权重及评估，不作为 decoder 条件。该小试不能替代全 168 窗口教师、正式 Q-Former 或跨视频验收。
+[两窗口同初态运动／静止共享 decoder 诊断](experiments/gaussiangpt_neoverse_two_future_shared_decoder_20261102_v1/RESULTS.md)已完成 360 次成对更新：运动分支误差从 0.029776 至 0.031369，静止分支误差从 0.131698 降至 0.007583，18／18 帧更接近静止参考；逐帧画面保留了两物体的运动／静止差异，但黄条运动中心代理只有 8／9 帧在 10% 范围，未满足预登记 95% 比例。运动和静止分支各有自由码，共用初态与 decoder；这不能替代全 168 窗口教师、正式 Q-Former 或跨视频验收。
 
-针对该小试的[三栏视频与逐帧审查素材生成器](experiments/gaussiangpt_neoverse_two_future_visual_20261102_v2/EXECUTION.md)已启动，只在训练成功结束并通过来源核验后运行；使用 CPU 和进程退出事件，不影响训练。v1 来源哈希抄写错误在启动前发现并已留档，v2 改为读取原启动记录的完整哈希。
+针对该小试的[三栏视频与逐帧审查素材](experiments/gaussiangpt_neoverse_two_future_visual_20261102_v2/result/MANIFEST.json)已生成并检查；使用 CPU 和进程退出事件，不影响训练。v1 来源哈希抄写错误在启动前发现并已留档，v2 改为读取原启动记录的完整哈希。[独立 GS 重放](experiments/gaussiangpt_neoverse_two_future_native_replay_20261102_v2/EXECUTION.md)的 36 份运动／静止 GS 包、72 视角全部通过；该一致性不证明动作语义正确。

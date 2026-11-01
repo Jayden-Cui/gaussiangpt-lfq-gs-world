@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "manifest_sha256": "04b4b0c6b24984900d4b9fbd1e6def156528195cd0d1e8e82c59c232472401ba",
+  "frames": 18,
+  "source_signalled": false,
+  "gpu_used": false,
+  "visual_review": "pending"
+}
