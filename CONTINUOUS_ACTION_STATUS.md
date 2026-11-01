@@ -45,3 +45,5 @@
 为区分旧 decoder 是否能表达静止、以及旧 Q 是否能产生静止码，完成了[两窗口固定 decoder 静止自由码诊断 v3](experiments/gaussiangpt_neoverse_static_code_probe_20261102_v3/RESULTS.md)：只优化 540 次连续码，静止参考误差从 0.159765 降至 0.131698，但 15／18 帧仍更接近运动参考；逐帧画面中物体消失且出现黑色残影，没有得到可用静止码。这是单初始化、有限预算的两窗口结果，不能证明数学上不存在静止码。v1 在 GPU 申请前因 JSON 记录格式失败；v2 的 GPU 预检通过，但第 0 步评估读取配置错误，均在正式训练前退出并已保留。
 
 阶段 C 新增[固定教师的源画面变化分组评估工具](experiments/gaussiangpt_neoverse_stage_c_motion_groups_20261102_v1/README.md)：逐条核对 1512 项教师指标，在四组中比较后验与教师的物理帧等权及 h1–h9 误差。本地与服务器测试使用合成 C／教师指标，尚未评估真实 C 模型；全画面变化分组不等于物体轨迹或动作成功。
+
+[两窗口同初态运动／静止共享 decoder 诊断](experiments/gaussiangpt_neoverse_two_future_shared_decoder_20261102_v1/EXECUTION.md)已通过真实 GPU 双分支梯度预检和零步复现，开始 360 次成对更新。运动和静止分支各有自由连续码，共用初态与 decoder；真实未来状态只用于离线运动目标、静止损失的配对区域权重及评估，不作为 decoder 条件。该小试不能替代全 168 窗口教师、正式 Q-Former 或跨视频验收。

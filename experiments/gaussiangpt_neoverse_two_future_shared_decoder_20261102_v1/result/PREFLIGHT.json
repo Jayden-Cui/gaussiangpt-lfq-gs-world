@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "discarded_paired_update": true,
+  "decoder_codes_optimizer_restored": true,
+  "codec_and_initial_encoder_frozen": true,
+  "motion_and_static_rgb_to_code_decoder_gradients": {
+    "motion": [
+      0.004008978605270386,
+      0.04839932173490524
+    ],
+    "static": [
+      0.0394044928252697,
+      0.1795693039894104
+    ]
+  },
+  "future_only_for_motion_target_and_static_loss_weight": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_sha256": "3db58f078e15080bf1429379f4c5bea252c9d9871e5b0d282765997adb5359bd",
+  "test_output": "PASS: 360 updates; 20 visits per same-S0 motion/static horizon pair; deterministic schedule",
+  "real_prior_code_shape": [
+    2,
+    9,
+    16
+  ],
+  "historical_motion_and_static_hashes_verified": true,
+  "scope": "CPU sampling and provenance only; GPU preflight and two-future fitting still pending"
+}
