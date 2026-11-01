@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "d9647d1a16461a491f0e320ee21283bcf851cd958ea90b0ca568d5d478524922",
+  "rejects_eval_missing_and_duplicate_frames": true,
+  "actual_historic_evaluated_status_and_hash_checked": true,
+  "scope": "Synthetic frame guards and real historic metadata; no GPU result"
+}

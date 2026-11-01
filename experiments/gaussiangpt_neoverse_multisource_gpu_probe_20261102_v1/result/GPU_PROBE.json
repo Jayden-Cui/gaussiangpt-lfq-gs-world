@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "clip": "buildingblock_tower_10_176",
+  "split": "TRAIN",
+  "start": 26,
+  "source_frames": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "horizon": 9,
+  "frame_stride": 1,
+  "candidate_radius": 6,
+  "candidate_nodes": 18967,
+  "posterior_code_shape": [
+    9,
+    16
+  ],
+  "predicted_nodes": 1565,
+  "predicted_gaussians": 92956,
+  "native_view_mask": "not available; second-view metric is full image",
+  "metrics": {
+    "metrics": {
+      "mae": 0.16021683812141418,
+      "roi_mae": 0.1604727953672409,
+      "motion_mae": 0.21558606624603271,
+      "psnr": 12.86790657043457,
+      "object_box_mae": 0.1920570284128189,
+      "teacher_view1_full_mae": 0.19597825407981873
+    },
+    "reference_view1_scope": "full image; no teacher valid-region mask is available",
+    "roi_scope": "fixed inherited image regions; not an object segmentation",
+    "comparison_note": "Full-view teacher MAE is not the original masked-teacher MAE"
+  },
+  "support": {
+    "predicted_nodes": 1565,
+    "target_nodes": 829,
+    "true_positive": 707,
+    "false_positive": 858,
+    "false_negative": 122,
+    "iou": 0.4190871369294606,
+    "precision": 0.4517571884984026,
+    "recall": 0.8528347406513872
+  },
+  "rgb_to_code_grad_norm": 0.20471593737602234,
+  "combined_to_code_grad_norm": 0.21064916253089905,
+  "latent_loss": 0.9584366083145142,
+  "occupancy_loss": 0.22325266897678375,
+  "feature_loss": 0.7351839542388916,
+  "motion_mae_from_loss": 0.21558606624603271,
+  "peak_allocated_gib": 7.344710826873779,
+  "peak_reserved_gib": 7.935546875,
+  "elapsed_seconds": 5.275468228966929,
+  "train_only_codec_scale": true,
+  "no_eval_source_read": true,
+  "no_optimizer_update": true,
+  "decoder_and_posterior_frozen": true,
+  "decoder_future_geometry_input": false,
+  "source_image_sha256": "9eaef611e05ba243abc8621754df96d356315c034edde7af98a9843ae543022e",
+  "source_loader_sha256": "c24da8dcf779cc77cebdf5eb28c0613a20f18d3b46b1d22ef193b44e240c1af4",
+  "adapter_sha256": "3c5fdccd5b1eb56f5a777a70c82073bbb147b738b13d65c65b2ad72413325f51",
+  "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "posterior_digest": "d9a5e532d272cee8297b03c9bd168a23244d779742bc4bb320dad4804b7972ad",
+  "scope": "Single TRAIN-source engineering probe with frozen 9560-step posterior; not stage-B/C training, generalization or teacher acceptance"
+}

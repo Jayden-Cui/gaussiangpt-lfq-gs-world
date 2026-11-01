@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "historic_metadata_validation_before_gpu",
+  "error": "RuntimeError('Historic multi-source codec evaluation changed')",
+  "reason": "The existing source records status evaluated, while the first validator expected complete; checkpoint and targets checksums matched.",
+  "training_modified": false,
+  "fix": "Check the actual evaluated status and verify the real source metadata in the CPU test."
+}

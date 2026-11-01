@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "phase": "gpu_initialization",
+  "error": "ModuleNotFoundError(\"No module named 'runtime_bridge'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_multisource_codec_reference_20261102_v1/reference.py\", line 115, in main\n    from runtime_bridge import BoundNativeBridge\nModuleNotFoundError: No module named 'runtime_bridge'\n",
+  "no_automatic_retry": true
+}

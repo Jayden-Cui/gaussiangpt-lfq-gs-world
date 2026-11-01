@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_sha256": "07154a01092ed6d2c47e773cb0c345f15640393afe8dc30d9ad137fff974c954",
+  "rejects_wrong_source_and_nonadjacent_window": true,
+  "checks_native_64_shape": true,
+  "source_prediction_pair_order": true,
+  "scope": "Synthetic CPU guards; no GPU, model training or action-quality claim"
+}

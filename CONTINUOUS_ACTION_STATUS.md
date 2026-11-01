@@ -20,6 +20,6 @@
 
 - [阶段 C 准备](experiments/gaussiangpt_neoverse_stage_c_training_prepare_20261102_v1/ENTRYPOINT_V2.md)：如果阶段 B 得到可靠教师，冻结同一个 decoder，对比冻结 memory、可训练后验时空编码器，以及显式时间／变化 memory；[C0/C1/C2 真实 GPU 梯度／显存预检](experiments/gaussiangpt_neoverse_stage_c_gpu_preflight_20261102_v1/EXECUTION.md) 已通过；预检使用合成目标并撤销更新，正式教师和训练尚未完成。
 - [同初态运动／静止评估](experiments/gaussiangpt_neoverse_stage_bc_evaluation_prepare_20261102_v1/DRIVER_V4_NOTES.md)：接口已准备，尚无真实模型验收结果。
-- [跨视频数据检查](experiments/gaussiangpt_neoverse_multisource_action_data_20261102_v1/CROSS_SOURCE_NOTES.md)：第二训练源的部分未来格点超出原半径 4；依据训练源选择半径 6 后三段候选节点数均低于 25,000，但 GPU 显存和跨视频效果尚未验证。第三段曾被观察，不是从未接触过的最终测试集。[两训练源均衡调度与按物理帧聚合](experiments/gaussiangpt_neoverse_multisource_sampling_20261102_v1/EXECUTION.md) 已通过 CPU 和真实数据检查，尚未启动跨视频动作训练。
+- [跨视频数据检查](experiments/gaussiangpt_neoverse_multisource_action_data_20261102_v1/CROSS_SOURCE_NOTES.md)：第二训练源的部分未来格点超出原半径 4；依据训练源选择半径 6 后三段候选节点数均低于 25,000，但 GPU 显存和跨视频效果尚未验证。第三段曾被观察，不是从未接触过的最终测试集。[两训练源均衡调度与按物理帧聚合](experiments/gaussiangpt_neoverse_multisource_sampling_20261102_v1/EXECUTION.md) 已通过 CPU 和真实数据检查，尚未启动跨视频动作训练。 [第二训练源 GPU 单窗口检查](experiments/gaussiangpt_neoverse_multisource_gpu_probe_20261102_v1/EXECUTION.md) 已通过半径 6 与码梯度预检；[同帧真实状态 codec 参考](experiments/gaussiangpt_neoverse_multisource_codec_reference_20261102_v2/EXECUTION.md) 显示原 codec 已出现颜色错置。此为单窗口诊断，不是总体跨视频性能。
 
 仓库不含原始视频、GS 缓存、训练权重与服务器环境；代码中的绝对路径和哈希依赖原 134 服务器。

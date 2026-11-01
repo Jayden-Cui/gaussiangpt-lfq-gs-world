@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "clip": "buildingblock_tower_10_176",
+  "split": "TRAIN",
+  "initial_frame": 26,
+  "target_frame": 35,
+  "same_source_and_camera": true,
+  "posterior_prediction": {
+    "metrics": {
+      "mae": 0.16021683812141418,
+      "roi_mae": 0.1604727953672409,
+      "motion_mae": 0.21558606624603271,
+      "psnr": 12.86790657043457,
+      "object_box_mae": 0.1920570284128189,
+      "teacher_view1_full_mae": 0.19597825407981873
+    },
+    "reference_view1_scope": "full image; no teacher valid-region mask is available",
+    "roi_scope": "fixed inherited image regions; not an object segmentation",
+    "comparison_note": "Full-view teacher MAE is not the original masked-teacher MAE"
+  },
+  "actual_target_codec": {
+    "metrics": {
+      "mae": 0.09493541717529297,
+      "roi_mae": 0.08351139724254608,
+      "motion_mae": 0.11555042117834091,
+      "psnr": 15.707359313964844,
+      "object_box_mae": 0.14082884788513184,
+      "teacher_view1_full_mae": 0.11612068116664886
+    },
+    "reference_view1_scope": "full image; no teacher valid-region mask is available",
+    "roi_scope": "fixed inherited image regions; not an object segmentation",
+    "comparison_note": "Full-view teacher MAE is not the original masked-teacher MAE"
+  },
+  "historic_codec_real_mae": 0.09493591636419296,
+  "historic_codec_real_psnr": 15.707345962524414,
+  "historic_full_mae_abs_difference": 4.991888999938965e-07,
+  "codec_target_gaussians": 52136,
+  "peak_allocated_gib": 1.1990246772766113,
+  "elapsed_seconds": 1.944256130955182,
+  "no_eval_source_read": true,
+  "no_optimizer_update": true,
+  "three_panel_sha256": "240b72508bc150a444d785b732776c2f0a555e055f3060a57b40503976102f5b",
+  "historic_targets_sha256": "465d4a65070f7b5a00b379eb0f67105552f65f83c17e0063f4974a0e1e7ce16b",
+  "prior_probe_sha256": "f4ab30e90d38da2042b7fd867b1ca64a1858294fe8783449a1236e049e699b48",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "scope": "One TRAIN-source frame; target codec uses true future GS and is an offline reference"
+}
