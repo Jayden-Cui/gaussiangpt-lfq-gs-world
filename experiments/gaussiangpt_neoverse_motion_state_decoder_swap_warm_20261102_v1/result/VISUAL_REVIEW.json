@@ -1,0 +1,15 @@
+{
+  "scope": "两个已知训练窗口各 h1-h9 的静态逐帧视觉审查；图像由源视频、原 codec 和 decoder-only codec 组成",
+  "reviewed_starts": [35, 123],
+  "future_frames_per_window": 9,
+  "start_35_observation": "两种 decoder 的未来帧均能辨认黄条，粗略表现为从桌面附近抬起并逐渐转向竖直；前期形状与位置有偏差，手部及边缘模糊。",
+  "start_123_observation": "两种 decoder 的未来帧均能辨认绿梁，粗略表现为向两根立柱上方移动；早期存在物体形状模糊及手部遮挡。",
+  "limits": [
+    "非自动物体跟踪、姿态测量或动作成功率",
+    "自由码使用真实未来优化，不是在线预测",
+    "仅两个先前成功窗口，不代表全片段或跨源泛化",
+    "decoder-only 输出未做独立原生 GS 冷重放"
+  ],
+  "reviewer": "人工式逐帧视觉核查，由执行代理完成",
+  "montages": ["s035_all_future.png", "s123_all_future.png"]
+}

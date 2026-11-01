@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "5fe35a9f0f1fff1c7bb4c51fc2bbcf49b561af631b8fff137dc85352dc70e615",
+  "paired_18_frame_aggregation": true,
+  "unlabelled_three_column_order": true,
+  "scope": "Synthetic CPU guards; no codec or model selection"
+}
