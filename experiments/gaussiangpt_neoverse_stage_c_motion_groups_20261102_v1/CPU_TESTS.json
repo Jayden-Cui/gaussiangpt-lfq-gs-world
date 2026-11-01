@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "7a3caae271a51fd2d00c4adf402c8267032423536d4148ffd0e2706185e0ac12",
+  "test_output": "PASS: all 1512 matching teacher rows, four groups, physical-frame and nine-horizon aggregation\nPASS: real CLI, no-overwrite, source, changed metric, duplicate, nonfinite and future-geometry guards\nScope: synthetic posterior/teacher values, not a trained C model or real performance",
+  "scope": "Synthetic C/teacher metrics with actual bound source group; no trained posterior evaluation"
+}

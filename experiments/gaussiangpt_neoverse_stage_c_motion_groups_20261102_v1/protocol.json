@@ -1,0 +1,14 @@
+{
+  "schema": "fixed_teacher_posterior_motion_group_report_v1",
+  "groups_sha256": "b283b40fbda8a11095a769b82692da7c8ce5aaa6733fcb90a0b35895d8a9db57",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "frame_cache_sha256": "174cfd680a6d415e3d367a67449c1accc03c2957f500c7d067427a5835bd2c75",
+  "groups": ["lowest", "lower_middle", "upper_middle", "highest"],
+  "starts": 168,
+  "horizons": 9,
+  "metric_controls": ["correct", "teacher_free", "initial_only", "swapped_window_codes", "actual_target"],
+  "metrics": ["mae", "motion_mae"],
+  "aggregation": "Within each 42-window group: window-prediction mean, physical-frame-equal mean, and each horizon mean over 42 windows",
+  "teacher_rule": "Every teacher_free metric dictionary in the C evaluation must match the hash-bound teacher's correct dictionary at the same start and horizon, with matching decoder, codec, cache and code hashes",
+  "limits": "Post-hoc source-image-change groups include hand, occlusion, illumination and object changes; these are not tracked 3D object motion, out-of-sample generalization, action success or an independent target. The groups were defined during stage B training."
+}
