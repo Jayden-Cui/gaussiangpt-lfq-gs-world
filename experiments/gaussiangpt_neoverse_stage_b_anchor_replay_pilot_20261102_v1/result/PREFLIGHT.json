@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "native_step_matched_zero_replay": true,
+  "max_decoder_parameter_difference": 1.1920928955078125e-07,
+  "max_code_difference": 2.1979212760925293e-07,
+  "replay_changed_decoder_update_max": 1.432374119758606e-05,
+  "replay_rgb_gradient": [
+    0.06492572277784348,
+    0.23477546870708466
+  ],
+  "discarded_updates": 3,
+  "arms_restore_checkpoint_and_adam_after_preflight": true,
+  "codec_and_initial_context_frozen": true,
+  "sampler": {
+    "status": "passed",
+    "updates": 189,
+    "main_pairs": 756,
+    "windows": 168,
+    "per_horizon": 84,
+    "anchor_examples": 189,
+    "anchor_pair_counts": [
+      10,
+      11
+    ],
+    "sha256": "d4ed56c98f66062a9b69992113476ce8b6ce0920375697f7c9624db7a4a189c5"
+  }
+}

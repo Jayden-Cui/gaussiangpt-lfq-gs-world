@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "638a2a8de166b480006f3f46d9fd955cf22e2425afd0e59b4a7a1eabf3f848f8",
+  "test_output": "PASS: balanced matched schedules, corrupted-sample rejection, isolated Adam state",
+  "scope": "Schedule/data coverage, rejects malformed inputs, Adam state isolation"
+}

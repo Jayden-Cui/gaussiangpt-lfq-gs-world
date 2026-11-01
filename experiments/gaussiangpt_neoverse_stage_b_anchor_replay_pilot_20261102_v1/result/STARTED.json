@@ -1,0 +1,18 @@
+{
+  "pid": 764436,
+  "protocol_sha256": "2ab1701729232832b497a6c241d48e610c168dfae16b5e15ea1578ea76500664",
+  "code_sha256": "638a2a8de166b480006f3f46d9fd955cf22e2425afd0e59b4a7a1eabf3f848f8",
+  "sampler": {
+    "status": "passed",
+    "updates": 189,
+    "main_pairs": 756,
+    "windows": 168,
+    "per_horizon": 84,
+    "anchor_examples": 189,
+    "anchor_pair_counts": [
+      10,
+      11
+    ],
+    "sha256": "d4ed56c98f66062a9b69992113476ce8b6ce0920375697f7c9624db7a4a189c5"
+  }
+}

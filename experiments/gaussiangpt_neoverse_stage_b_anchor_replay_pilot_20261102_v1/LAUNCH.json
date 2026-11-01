@@ -1,0 +1,16 @@
+{
+  "status": "startup_and_gpu_preflight_verified",
+  "server": "134",
+  "screen": "gg_stage_b_anchor_replay_20261102",
+  "pid_at_launch": 764436,
+  "physical_gpu": 1,
+  "allocator_limit_gib": 20,
+  "deadline_seconds": 1500,
+  "matched_arms": ["control", "anchor_replay"],
+  "updates_per_arm": 189,
+  "main_pairs_per_arm": 756,
+  "preflight_discarded_updates": 3,
+  "stage_b_snapshot_at_launch": {"completed_updates": 2850, "total_updates": 7560, "process_live": true},
+  "stage_b_training_signalled": false,
+  "formal_result_at_launch": "pending; launch snapshot is not current status"
+}
