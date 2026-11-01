@@ -39,3 +39,7 @@
 已完成[关键窗口重放的两组匹配小试](experiments/gaussiangpt_neoverse_stage_b_anchor_replay_pilot_20261102_v1/RESULTS.md)：两锚点运动 MAE 从 0.083637 降至 0.071302，高变化组 h9 基本不变；但绿梁在重放组连续九帧未被颜色代理检出，逐帧画面也未恢复完整绿梁，因而不能选作教师。原 B 训练不受该小试改变。
 
 [历史两窗口 Q-Former 的同相机静止控制](experiments/gaussiangpt_neoverse_qformer_static_control_20261102_v1/RESULTS.md)已完成：重复 S0 码对静止参考的误差为 0.159765，对运动参考为 0.029009；18 帧均更接近运动参考，画面也显示物体继续运动。该旧 Q＋decoder 系统没有通过同初态静止控制，但不足以将原因单独归咎 Q 或 decoder。
+
+阶段 B 第 10 轮[两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/sweep_10/VISUAL_REVIEW.md)的运动 MAE 为 0.082714，较第 5 轮稍有改善，但仍高于起点 0.029776；黄条细弱且位置偏移，绿梁多帧消失。两个窗口的动态验收仍未通过，完整评估和第 20 轮尚未完成。
+
+为区分旧 decoder 是否能表达静止、以及旧 Q 是否能产生静止码，已启动[两窗口固定 decoder 静止自由码诊断 v3](experiments/gaussiangpt_neoverse_static_code_probe_20261102_v3/EXECUTION.md)，从旧 Q 重复初态码出发，只优化 540 次连续码，监督仅使用初态与同相机静止渲染。v1 在 GPU 申请前因 JSON 记录格式失败；v2 的 GPU 梯度预检通过，但第 0 步评估读取配置错误，在正式训练前退出。两次失败与修复均已保留；v3 已通过 GPU 预检和零步复现，正式优化与动态验收尚未完成。

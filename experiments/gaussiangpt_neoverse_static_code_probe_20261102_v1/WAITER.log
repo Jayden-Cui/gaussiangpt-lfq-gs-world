@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v1/waiter.py", line 97, in <module>
+    main()
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v1/waiter.py", line 27, in main
+    sha = verify_self()
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v1/probe.py", line 37, in verify_self
+    witness = read(ROOT / 'CPU_TESTS.json')
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v1/probe.py", line 20, in read
+    return json.loads(Path(path).read_text(encoding='utf8'))
+  File "/data/CJH/envs/gaussiangpt/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/data/CJH/envs/gaussiangpt/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 6 column 2 (char 266)

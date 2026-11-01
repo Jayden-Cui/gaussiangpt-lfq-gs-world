@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "095ba57f018b25cccf42946b75e3bfb67ac1ab6f13935a3712728a9b6646242b",
+  "tests": "PASS: 540 updates; 30 visits for each of 18 window/horizon pairs; deterministic ordering\nPASS: evaluation uses the bound model node limit and rejects invalid limits",
+  "queue_identity_check": "watcher_completed"
+}

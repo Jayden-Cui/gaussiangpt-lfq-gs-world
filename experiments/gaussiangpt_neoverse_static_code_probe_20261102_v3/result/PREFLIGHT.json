@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "rgb_to_code_gradient_norm": 0.01832420565187931,
+  "separate_test_code_update_discarded": true,
+  "decoder_and_codec_frozen": true,
+  "true_future_used_for_preflight_update": false
+}

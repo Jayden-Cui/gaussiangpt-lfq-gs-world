@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v2/waiter.py", line 98, in <module>
+    main()
+  File "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v2/waiter.py", line 84, in main
+    raise RuntimeError('Static code probe did not complete')
+RuntimeError: Static code probe did not complete

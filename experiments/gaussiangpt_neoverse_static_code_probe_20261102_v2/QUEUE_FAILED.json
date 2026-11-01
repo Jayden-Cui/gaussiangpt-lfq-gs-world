@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "phase": "running_static_code_probe",
+  "error": "RuntimeError('Static code probe did not complete')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v2/waiter.py\", line 84, in main\n    raise RuntimeError('Static code probe did not complete')\nRuntimeError: Static code probe did not complete\n",
+  "preview_signalled": false,
+  "main_training_signalled": false,
+  "no_automatic_retry": true
+}

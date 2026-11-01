@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "evaluating_step_0",
+  "error": "KeyError('max_predicted_latent_nodes')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v2/probe.py\", line 256, in run\n    summaries = {'0': evaluate(0, bank, correct, initial, train, bundle, bridge, p, control, sha)}\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_static_code_probe_20261102_v2/probe.py\", line 124, in evaluate\n    prediction['logits'][h-1], p['max_predicted_latent_nodes'])\nKeyError: 'max_predicted_latent_nodes'\n",
+  "main_training_signalled": false,
+  "no_automatic_retry": true
+}
