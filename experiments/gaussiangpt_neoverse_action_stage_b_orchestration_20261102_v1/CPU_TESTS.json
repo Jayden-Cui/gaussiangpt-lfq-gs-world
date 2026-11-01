@@ -1,9 +1,10 @@
 {
   "status": "passed",
-  "code_sha256": "1884cb0e553b3becb209c339fabe820d670869154eb1887309edb5dfed5d9716",
+  "code_sha256": "6e13e8b6610d096aa36d86f49e1d9b6fccf418a7ca4b3af6cf387500dcfa123d",
   "fixed_budget_and_review_gates": true,
   "failure_stops_downstream": true,
   "evaluation_and_native_replay_gate": true,
   "gpu_training_started": false,
+  "review_contact_crop_and_order": true,
   "scope": "CPU mock tests; no real stage-B model, visual review or training"
 }

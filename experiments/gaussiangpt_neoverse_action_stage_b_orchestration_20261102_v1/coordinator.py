@@ -250,9 +250,14 @@ def coordinate(config_path, run_root):
         execute_plan(train, tracked_eval)
         phase = 'summarizing'
         results = [verify_result(train_folder, sweep, True) for sweep in (5, 10, 20)]
+        phase = 'preparing_visual_review_assets'
+        write(run_root / 'STATUS.json', {'status': 'running', 'phase': phase}, replace=True)
+        from review_assets_b import create
+        create(train_folder / 'sweep_20' / 'free_z' / 'evaluation', run_root / 'REVIEW_ASSETS')
         write(run_root / 'SUMMARY.json', {
             'status': 'complete', 'stage': 'B', 'training_sha256': sha(train_folder / 'TRAIN_DONE.json'),
             'results': results, 'primary_checkpoint': 20,
+            'visual_review_assets_sha256': sha(run_root / 'REVIEW_ASSETS' / 'CONTACTS.json'),
             'manual_dynamic_review_required': True, 'action_codec_complete': False,
             'scope': 'Free-code teacher fit on one training video; not trained posterior or cross-video generalization',
             'elapsed_seconds': time.monotonic() - began})

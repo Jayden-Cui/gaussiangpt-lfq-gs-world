@@ -5,8 +5,10 @@ import json
 import threading
 from pathlib import Path
 import tempfile
+from PIL import Image, ImageDraw
 
 import coordinator
+import review_assets_b
 
 
 def expect_error(function):
@@ -108,6 +110,33 @@ def main():
         save(evaluation / 'REPLAY.json', {'status': 'passed', 'packets': 104, 'views': 1})
         expect_error(lambda: coordinator.verify_result(training, 5, True))
 
+    with tempfile.TemporaryDirectory() as directory:
+        root = Path(directory)
+        evaluation = root / 'evaluation'
+        evaluation.mkdir()
+        (evaluation / 'EVALUATION.json').write_text(json.dumps({'status': 'complete',
+            'window_predictions': 1512, 'source': {'sweep': 20}, 'packets_sha256': 'abc'}), encoding='utf-8')
+        (evaluation / 'REPLAY.json').write_text(json.dumps({'status': 'passed', 'packets': 104,
+            'views': 208, 'packets_sha256': 'abc'}), encoding='utf-8')
+        for start in (0, 35, 56, 84, 112, 123, 140, 167):
+            folder = evaluation / 'snapshots' / f's{start:03d}'
+            folder.mkdir(parents=True)
+            for horizon in (0, 3, 6, 9):
+                panel = Image.new('RGB', (1792, 276), 'white')
+                draw = ImageDraw.Draw(panel)
+                draw.rectangle((0, 24, 447, 275), fill=(horizon, 10, 20))
+                draw.rectangle((448, 24, 895, 275), fill=(horizon, 30, 40))
+                panel.save(folder / f'frame_{horizon:02d}.png')
+        contacts = review_assets_b.create(evaluation, root / 'contacts')
+        assert contacts['visual_verdict'] == 'not yet reviewed' and len(contacts['rows']) == 8
+        with Image.open(root / 'contacts' / 's035_contact.png') as image:
+            assert image.size == (1792, 504)
+            assert image.getpixel((10, 10)) == (0, 10, 20)
+            assert image.getpixel((458, 10)) == (0, 30, 40)
+            assert image.getpixel((906, 10)) == (3, 10, 20)
+            assert image.getpixel((10, 262)) == (6, 10, 20)
+            assert image.getpixel((906, 262)) == (9, 10, 20)
+
     root = Path(__file__).resolve().parent
     for line in (root / 'CODE.sha256').read_text(encoding='utf-8').splitlines():
         digest, name = line.split('  ', 1)
@@ -116,6 +145,7 @@ def main():
     witness = {'status': 'passed', 'code_sha256': coordinator.sha(root / 'CODE.sha256'),
                'fixed_budget_and_review_gates': True, 'failure_stops_downstream': True,
                'evaluation_and_native_replay_gate': True, 'gpu_training_started': False,
+               'review_contact_crop_and_order': True,
                'scope': 'CPU mock tests; no real stage-B model, visual review or training'}
     with (root / 'CPU_TESTS.json').open('x', encoding='utf-8') as stream:
         json.dump(witness, stream, ensure_ascii=False, indent=2)
