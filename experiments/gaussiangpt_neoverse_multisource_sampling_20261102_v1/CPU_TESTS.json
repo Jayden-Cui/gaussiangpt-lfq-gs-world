@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "code_sha256": "c0e2ef97ab7c4282fa144907b777f4599a782c3f98999b02582ea2c0a62ca630",
+  "source_loader_code_sha256": "c24da8dcf779cc77cebdf5eb28c0613a20f18d3b46b1d22ef193b44e240c1af4",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "schedule_reports": {
+    "distill": {
+      "status": "passed",
+      "phase": "distill",
+      "sweeps": 2,
+      "train_sources": [
+        "buildingblock_tower_17_176",
+        "buildingblock_tower_10_176"
+      ],
+      "eval_sources_excluded": [
+        "buildingblock_tower_14_0"
+      ],
+      "batch_size": 4,
+      "per_source_per_batch": 2,
+      "updates": 168,
+      "examples_per_source_per_sweep": 168,
+      "frame_stride": 1,
+      "sha256": "b7a5019f822d6ec4d012a69fa12a0b0487ee567aaaf1e0ef2b807d082df630ff",
+      "scope": "Data-order validation only; no model or teacher has been trained"
+    },
+    "joint": {
+      "status": "passed",
+      "phase": "joint",
+      "sweeps": 2,
+      "train_sources": [
+        "buildingblock_tower_17_176",
+        "buildingblock_tower_10_176"
+      ],
+      "eval_sources_excluded": [
+        "buildingblock_tower_14_0"
+      ],
+      "batch_size": 4,
+      "per_source_per_batch": 2,
+      "updates": 1512,
+      "examples_per_source_per_sweep": 1512,
+      "frame_stride": 1,
+      "sha256": "ea12b8f14c8261b2683746c6083f395bc27e6d710272b97f8092a246829b7ac6",
+      "scope": "Data-order validation only; no model or teacher has been trained"
+    }
+  },
+  "real_source_windows": [
+    {
+      "clip": "buildingblock_tower_17_176",
+      "purpose": "train",
+      "start": 0,
+      "first_frame": 0,
+      "last_frame": 9
+    },
+    {
+      "clip": "buildingblock_tower_10_176",
+      "purpose": "train",
+      "start": 26,
+      "first_frame": 26,
+      "last_frame": 35
+    },
+    {
+      "clip": "buildingblock_tower_14_0",
+      "purpose": "eval",
+      "start": 167,
+      "first_frame": 167,
+      "last_frame": 176
+    }
+  ],
+  "eval_source_training_rejected": true,
+  "source_frame_macro_analytic_check": true,
+  "overlap_weighting_differs_from_naive_window_mean": true,
+  "eval_video_historically_exposed": true,
+  "gpu_training_performed": false,
+  "scope": "Sampling and real-data plumbing only; no cross-source action result or trained code bank"
+}
