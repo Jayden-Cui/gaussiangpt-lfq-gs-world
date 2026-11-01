@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "inventory_sha256": "c07913bd3d485a2df568d7ddac037c33104f614cebff52c558ed9f2df615b3b3",
+  "boundary_sha256": "e69b9d936a2bcba9c2557ea0446fab0c1b31108f0f552a0cfec8ec846494feb3",
+  "code_sha256": "f49a98e97a67356457e359ae385e619ed912581dd7771ec46383544f64f9260f",
+  "gpu_used": false,
+  "training_performed": false,
+  "clean_holdout_established": false,
+  "elapsed_seconds": 7.956761231995188
+}

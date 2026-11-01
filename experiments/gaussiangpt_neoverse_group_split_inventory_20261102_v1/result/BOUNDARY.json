@@ -1,0 +1,77 @@
+{
+  "status": "complete",
+  "inventory_sha256": "c07913bd3d485a2df568d7ddac037c33104f614cebff52c558ed9f2df615b3b3",
+  "code_sha256": "d25c4ec758c6c36290d035e543703b404d45bdbb54515bc0692d46b677e55494",
+  "rows": [
+    {
+      "source_group": "buildingblock_tower_10",
+      "first_clip": "buildingblock_tower_10_0",
+      "next_clip": "buildingblock_tower_10_176",
+      "first_sha256": "481848ae8aabf02bf4bfe07cdfcf84c89d50b32e1eb3d64b16025d3a122a9b39",
+      "next_sha256": "a8d76842e1d7de31cb8bedfe437264a28b3203c9f3bfbaebf2a6f0864a051dab",
+      "last_vs_next_first": {
+        "mae_8bit": 1.415701316550926,
+        "exact_channel_fraction": 0.35438729745370373,
+        "max_channel_error": 61
+      },
+      "penultimate_vs_next_first": {
+        "mae_8bit": 2.1239601417824074,
+        "exact_channel_fraction": 0.3055078125,
+        "max_channel_error": 197
+      },
+      "last_vs_next_second": {
+        "mae_8bit": 6.130126591435185,
+        "exact_channel_fraction": 0.2629763454861111,
+        "max_channel_error": 233
+      }
+    },
+    {
+      "source_group": "buildingblock_tower_14",
+      "first_clip": "buildingblock_tower_14_0",
+      "next_clip": "buildingblock_tower_14_176",
+      "first_sha256": "456d178c177d6790196f2e27f3bf5e1f5eebbb9fdaecc716794be90fbbab57f8",
+      "next_sha256": "e5acf4ac3b988a17c52c2b924a17c4dfe1976c12f5ecda67a30a12c4cc8b499c",
+      "last_vs_next_first": {
+        "mae_8bit": 1.3021415653935184,
+        "exact_channel_fraction": 0.42076605902777775,
+        "max_channel_error": 54
+      },
+      "penultimate_vs_next_first": {
+        "mae_8bit": 3.5180779803240743,
+        "exact_channel_fraction": 0.3071788194444444,
+        "max_channel_error": 217
+      },
+      "last_vs_next_second": {
+        "mae_8bit": 3.423079788773148,
+        "exact_channel_fraction": 0.3213190827546296,
+        "max_channel_error": 229
+      }
+    },
+    {
+      "source_group": "buildingblock_tower_17",
+      "first_clip": "buildingblock_tower_17_0",
+      "next_clip": "buildingblock_tower_17_176",
+      "first_sha256": "150676014d1b83d150c8990f487439e08f556d8cdadcd9e546fec57cb5f82540",
+      "next_sha256": "966d0fca220959e95608b383e808ecda897b4140c54fdeab93fb1a791cd24a90",
+      "last_vs_next_first": {
+        "mae_8bit": 1.0500448495370371,
+        "exact_channel_fraction": 0.490160228587963,
+        "max_channel_error": 52
+      },
+      "penultimate_vs_next_first": {
+        "mae_8bit": 1.2133933738425926,
+        "exact_channel_fraction": 0.4661801938657407,
+        "max_channel_error": 88
+      },
+      "last_vs_next_second": {
+        "mae_8bit": 1.2955103443287037,
+        "exact_channel_fraction": 0.45084165219907407,
+        "max_channel_error": 178
+      }
+    }
+  ],
+  "gpu_used": false,
+  "training_performed": false,
+  "scope": "Three previously exposed naming groups, decoded RGB boundary comparison",
+  "limitation": "Similar boundary images support grouping; lossy clips alone do not prove identical timestamps"
+}

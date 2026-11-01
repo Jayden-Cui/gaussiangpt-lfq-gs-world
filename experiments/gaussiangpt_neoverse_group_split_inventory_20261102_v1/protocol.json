@@ -1,0 +1,27 @@
+{
+  "schema": "tower_group_inventory_v1",
+  "dataset_root": "/data/CJH/AGS-V6Direct/outputs/buildingblock_vw2_h4_20261011_v1/datasets/Video-CraftBench/Paper_and_Block_clips",
+  "existing_assignments": {
+    "buildingblock_tower_17_176": "TRAIN",
+    "buildingblock_tower_10_176": "TRAIN",
+    "buildingblock_tower_14_0": "EVAL"
+  },
+  "expected_tower_clip_count": 60,
+  "expected_tower_group_count": 22,
+  "identity_guard_code_sha256": "76868f00320eebbd05421a0599824f5bb5ab60833e7ada87ee3a1ca11b79ab68",
+  "identity_guard_protocol_sha256": "87ccef68ef9e96f61e175bb905dc3fa13fabe520bcf0749183dbe7be5b7b9f85",
+  "identity_guard_real_check_sha256": "d6196235cc2f9b530d98cde14f2fbc97915f046af6a1cf5fbfe8b10a6b99cf78",
+  "max_seconds": 180,
+  "ffprobe_timeout_seconds": 10,
+  "boundary_groups": [
+    10,
+    14,
+    17
+  ],
+  "boundary_max_seconds": 90,
+  "ffmpeg_timeout_seconds": 45,
+  "gpu_used": false,
+  "training_performed": false,
+  "clean_holdout_established": false,
+  "new_clips_automatically_enrolled": false
+}

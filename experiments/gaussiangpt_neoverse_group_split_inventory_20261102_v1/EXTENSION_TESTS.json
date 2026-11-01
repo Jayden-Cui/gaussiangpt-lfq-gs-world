@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "extension_code_sha256": "c07433044c9a6c24cd8a332c65305f150ac8b4e69de06f5679434e430b93eff7",
+  "inventory_sha256": "c07913bd3d485a2df568d7ddac037c33104f614cebff52c558ed9f2df615b3b3",
+  "checks": [
+    "prior roles cannot change",
+    "same group cannot cross train/eval",
+    "same group may contain multiple clips on one side",
+    "byte-identical files cannot cross roles"
+  ],
+  "scope": "Synthetic split-extension checks; real assigned-file preflight remains separate"
+}

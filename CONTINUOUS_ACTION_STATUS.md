@@ -62,4 +62,6 @@
 
 [跨源身份校验](experiments/gaussiangpt_neoverse_multisource_identity_guard_20261102_v1/RESULTS.md)已补上旧读取器未重新校验映射文件哈希的问题，并在 134 的三份真实映射上完成 CPU 预检。当前真实文件与既有绑定一致，未发现实际数据泄漏；评估视频此前已被观察，不能声称是全新独立测试集。新入口尚未用于正式跨源动作训练，也不改变正在进行的阶段 B。
 
+[搭积木来源组盘点](experiments/gaussiangpt_neoverse_group_split_inventory_20261102_v1/RESULTS.md)确认目录中有 60 个各 177 帧的视频片段，按文件名分属 22 组；60 个原文件摘要均已重算，当前已登记的 3 段与旧绑定一致。其他 57 段没有自动进入多源状态接口。新增分组扩展检查保留既有训练／评估角色，拒绝同组片段跨两侧；尚未新增多视频动作训练或建立全新独立测试集。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。

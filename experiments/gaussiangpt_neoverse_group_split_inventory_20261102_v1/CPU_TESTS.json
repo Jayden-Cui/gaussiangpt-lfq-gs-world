@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "code_sha256": "f49a98e97a67356457e359ae385e619ed912581dd7771ec46383544f64f9260f",
+  "split_cases": [
+    "multiple clips in one train group allowed",
+    "same group across train/eval rejected",
+    "byte-identical video across train/eval rejected",
+    "duplicate clip rejected",
+    "malformed filename rejected"
+  ],
+  "cpu_only": true,
+  "gpu_used": false,
+  "scope": "Synthetic split-isolation tests; real server inventory not yet run"
+}

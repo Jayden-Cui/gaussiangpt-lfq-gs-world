@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "inventory_sha256": "c07913bd3d485a2df568d7ddac037c33104f614cebff52c558ed9f2df615b3b3",
+  "guard_code_sha256": "9c61cb3ab23150169551d1223af6267156fb71bb7578ea676bc33711f9e295d5",
+  "existing_assignments_preserved": true,
+  "proposed_assignments": {},
+  "verified_clips": [
+    {
+      "clip": "buildingblock_tower_10_176",
+      "role": "TRAIN",
+      "source_group": "buildingblock_tower_10",
+      "source_video_sha256": "a8d76842e1d7de31cb8bedfe437264a28b3203c9f3bfbaebf2a6f0864a051dab"
+    },
+    {
+      "clip": "buildingblock_tower_14_0",
+      "role": "EVAL",
+      "source_group": "buildingblock_tower_14",
+      "source_video_sha256": "456d178c177d6790196f2e27f3bf5e1f5eebbb9fdaecc716794be90fbbab57f8"
+    },
+    {
+      "clip": "buildingblock_tower_17_176",
+      "role": "TRAIN",
+      "source_group": "buildingblock_tower_17",
+      "source_video_sha256": "966d0fca220959e95608b383e808ecda897b4140c54fdeab93fb1a791cd24a90"
+    }
+  ],
+  "assigned_group_roles": {
+    "buildingblock_tower_17": "TRAIN",
+    "buildingblock_tower_10": "TRAIN",
+    "buildingblock_tower_14": "EVAL"
+  },
+  "gpu_used": false,
+  "training_performed": false,
+  "clean_holdout_established": false,
+  "scope": "Group- and exact-file-based split guard; original-footage duplication or previous exposure requires separate review"
+}
