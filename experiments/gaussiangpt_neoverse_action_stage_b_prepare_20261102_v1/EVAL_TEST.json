@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "driver_sha256": "9a4adccfe1e01a492422f3e80c5e6c1f1ac0bba9707a280681bfa09dc36eee93",
+  "evaluator_sha256": "26a09159d7fe6b6986ce28b0b1383aa52c177dbcd352c2037a57134ca83418ad",
+  "test_sha256": "01a1813c06d35e1796513bf1833a7aadc28eb26b54169beeb7ecbfc1973479c4",
+  "core_manifest_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+  "separate_control_decoding": true,
+  "historical_reference_explicitly_different_decoder": true,
+  "checkpoint_and_coverage_checked": true,
+  "warm_initial_only_extraction_and_anchor_proxies_passed": true,
+  "scope": "CPU logic tests only; no stage-B GPU evaluation or native replay"
+}
