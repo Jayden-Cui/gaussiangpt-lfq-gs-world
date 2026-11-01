@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "sampling": {
+    "status": "passed",
+    "full_windows": 168,
+    "future_pairs": 1512,
+    "shards": {
+      "0": {
+        "starts": 84,
+        "pairs": 756,
+        "updates": 3780,
+        "direct_rgb_visits_per_pair": 20,
+        "sha256": "abf9e6cf48a00a90a2f8e6e397ef605f7c9a4af67a9825981f3eefd03e84a689"
+      },
+      "1": {
+        "starts": 84,
+        "pairs": 756,
+        "updates": 3780,
+        "direct_rgb_visits_per_pair": 20,
+        "sha256": "08f3023659cffb3546229272fb6a4917e50639f7eac4cc37942dc4e49c900eaa"
+      }
+    }
+  },
+  "code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+  "decoder_tensor_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+  "baseline_codes_shape": [
+    168,
+    9,
+    16
+  ],
+  "frozen_decoder_to_code_gradient_norm": 57.68571472167969,
+  "inactive_adam_parameter_unchanged": true,
+  "oracle_uses_predicted_features_at_target_coordinates": true,
+  "shard_merge_and_control_mapping": true,
+  "native_renderer_module_name_unshadowed": true,
+  "last_code_does_not_change_earlier_outputs": true,
+  "scope": "CPU witnesses on bound weights; actual RGB-to-code gradients are checked on each GPU"
+}

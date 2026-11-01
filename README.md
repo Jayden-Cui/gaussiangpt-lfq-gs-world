@@ -26,6 +26,8 @@
 
 [全177帧固定预算续训](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/README.md) 已全部完成：两组均累计9560步，三个固定评估点及合计624份GS包/1248次视角重放通过，总耗时约5小时16分钟。最终运动MAE为0.062531（真实前缀）和0.063462（受训初态），较各自2000步改善16.78%/16.62%，真实前缀组相对优势仍仅1.47%。[完成指标与目视结论](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/EXECUTION.md) 显示黄条和绿梁的关键运动仍有严重丢失/拖影，动作质量未达目标。已收录三阶段原始评估JSON、最终两组16段视频、32张视角关键帧，以及[无顶部标记的源视频／9560步Q-Former重建对照](experiments/gaussiangpt_neoverse_full177_fit_budget_20261101_v1/clean_comparisons)。本轮已结束，无新增训练或LFQ/FSQ/AR。
 
+[连续动作码阶段A](experiments/gaussiangpt_neoverse_action_stage_a_20261102_v1/README.md) 已在134服务器提交：冻结9560步运动decoder和GaussianGPT codec，以Q-Former码初始化全部168窗口自由连续码，并执行真实占据替换与特征残差范围诊断。两个分片各训练3780步、20轮，每个窗口/未来步追加20次直接RGB监督；固定5、10、20轮做全量评估与GS冷重放。CPU见证及GPU0真实B4图像反传预检通过；2026-11-02 01:36:39启动验收时分片0已运行7步，GPU1诊断完成25/168窗口。阶段A结果尚未产生，动作编码器仍未完成。
+
 ## 结果和关键帧
 
 正式对照两臂各800步。按176个不同未来帧等权汇总，连续 Z／LFQ 的全图 MAE 分别为0.030408／0.032773；关键帧中的黄条和绿梁动作仍有明显错误，因此结果尚不支持动作重建成功或 AR 预测成功。

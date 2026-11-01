@@ -1,0 +1,14 @@
+{
+  "screen": "gg_action_stage_a_20261102",
+  "submitted_at": "2026-11-02T01:35:57.430434+08:00",
+  "exit_code": 0,
+  "stage": "A",
+  "code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+  "gpu_plan": {
+    "0": "optimize shard 0",
+    "1": "diagnostic then optimize shard 1"
+  },
+  "steps_per_shard": 3780,
+  "sweeps": 20,
+  "action_codec_complete": false
+}

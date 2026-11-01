@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-11-02T01:36:39.079333+08:00",
+  "files": {
+    "STARTED.json": {
+      "pid": 732389,
+      "stage": "A",
+      "code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+      "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+      "sweeps": 20
+    },
+    "STATUS.json": {
+      "status": "running",
+      "phase": "parallel_free_code_fit_and_diagnostics"
+    },
+    "shard_0/STATUS.json": {
+      "status": "running",
+      "phase": "optimizing_codes",
+      "completed_updates": 1,
+      "total_updates": 3780,
+      "sweep": 1,
+      "loss": 0.21941980719566345,
+      "elapsed_seconds": 24.62277232296765
+    },
+    "shard_0/PREFLIGHT.json": {
+      "status": "passed",
+      "windows": [
+        0,
+        35,
+        56,
+        83
+      ],
+      "horizon": 9,
+      "batch_size": 4,
+      "discarded_updates": 1,
+      "only_codes_trainable": true,
+      "decoder_and_codec_frozen": true,
+      "restored_initial_codes_and_optimizer": true
+    },
+    "diagnostics/STATUS.json": {
+      "status": "running",
+      "phase": "diagnosing",
+      "completed_windows": 25,
+      "total_windows": 168,
+      "elapsed_seconds": 34.163639378966764
+    },
+    "shard_0/latest": {
+      "step": 7,
+      "sweep": 1,
+      "elapsed_seconds": 37.76126499706879
+    }
+  },
+  "processes": {
+    "shard_0": {
+      "pid": 732393,
+      "phase": "optimize.py",
+      "gpu": 0,
+      "args": [
+        "--shard",
+        "0"
+      ],
+      "alive": true,
+      "matches_run": true
+    },
+    "diagnostics": {
+      "pid": 732394,
+      "phase": "diagnose.py",
+      "gpu": 1,
+      "args": [],
+      "alive": true,
+      "matches_run": true
+    }
+  }
+}
