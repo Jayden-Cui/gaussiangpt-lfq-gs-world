@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_sha256": "3223dfd37e0ffecdc20b0df4e6b170b15526fa2a0dc18469b79eda7b7eca7231",
+  "test_output": "PASS: 600 distill + 594 joint updates; every update covers four conditions and each horizon 66 times\nPASS: 36 final packets, invalid protocol rejection and native renderer module isolation",
+  "real_two_window_teacher_replay_and_review_verified": true,
+  "full_168_teacher_accepted": false,
+  "scope": "CPU schedule and real teacher provenance only; GPU preflight and Q training pending"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "discarded_updates": 2,
+  "posterior_and_optimizer_restored": true,
+  "decoder_and_codec_frozen": true,
+  "batch_size": 4,
+  "code_scale": 0.022749673575162888,
+  "rgb_only_gradients": [
+    {
+      "start": 35,
+      "branch": "motion",
+      "query_projection": [
+        0.00627460703253746,
+        1.7863942384719849
+      ]
+    },
+    {
+      "start": 35,
+      "branch": "static",
+      "query_projection": [
+        0.030668802559375763,
+        1.9445501565933228
+      ]
+    },
+    {
+      "start": 123,
+      "branch": "motion",
+      "query_projection": [
+        0.005233068484812975,
+        1.5658968687057495
+      ]
+    },
+    {
+      "start": 123,
+      "branch": "static",
+      "query_projection": [
+        0.04622717574238777,
+        6.774137496948242
+      ]
+    }
+  ]
+}

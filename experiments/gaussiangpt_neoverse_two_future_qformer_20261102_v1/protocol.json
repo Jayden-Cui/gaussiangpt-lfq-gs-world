@@ -1,0 +1,68 @@
+{
+  "schema": "two_future_fixed_decoder_qformer_pilot_v1",
+  "scope": "Two known training windows; exploratory Q-Former only, not full-168 teacher or cross-video generalization",
+  "windows": [
+    35,
+    123
+  ],
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "logical_batch": 4,
+  "conditions": [
+    "motion",
+    "static"
+  ],
+  "distill_updates": 600,
+  "joint_updates": 594,
+  "checkpoint_steps": [
+    0,
+    600,
+    900,
+    1194
+  ],
+  "learning_rate": 0.0003,
+  "final_learning_rate": 3e-05,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "eps": 1e-08,
+  "grad_clip": 1.0,
+  "posterior_input": "motion: cached causal real prefix; static: cached causal repeated-S0 prefix with same timestamps",
+  "posterior_initial_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+  "teacher_checkpoint_sha256": "461c8391d09a27ba5f2b4f4f52878c8a9d8b287072e2fa6a52a9ac4877043744",
+  "teacher_decoder_digest": "a9ccb52c0c222489aac9c653b4f55a468feda4256628a9ce8e3ab13a5877a3dd",
+  "paired_summary_sha256": "aea10d1b6c35209e364d19023b4eddcbc06d752847eee571da735327f19729c6",
+  "paired_evaluation_sha256": "169fadccc475cee0e9796d6615aac90c36e275aff829eb95e3ded222b19f3010",
+  "visual_review_sha256": "d75c0e97edb40edbd1ed2a281015a983752f2d11baa837da958b7d3f1f64868b",
+  "native_replay_sha256": "125462bd2a331cfb077ba47ea902e296ae694f23ad72e76400aa06b2be668816",
+  "native_packets_sha256": "554c71407266b075935624d49f36bff0e43b2103e04be6ff0b41525f13de0661",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "native_renderer_sha256": "38a83d114718f42ed81989b5f770db323e18949a444da418a22184df847b66ff",
+  "quantized": false,
+  "causal_prefix_test": "Perturb future raw state features and coordinates after horizons 3 and 7, recompute causal prefix memories and compare earlier Q outputs",
+  "joint_objective": "motion/static branch average of RGB full+ROI+10/9 dynamic-weighted MAE plus 0.1 state loss and 0.1 teacher-code MSE; static target S0 at matching camera, weighting from paired codec difference only for loss",
+  "predeclared_numerical_checks": "motion overall and h9 source motion MAE <=1.10 of paired free teacher; static weighted MAE <=1.10 of static free teacher; static and motion branch each closer to matching reference for at least 16 of 18 frames. Prefix causality, native GS replay and manual dynamic review separately required.",
+  "cuda_visible_device": 1,
+  "allocator_limit_gib": 20,
+  "minimum_free_gpu_gib": 32,
+  "maximum_train_seconds": 5400,
+  "maximum_replay_seconds": 600,
+  "limitations": "Free-code teacher is from two known windows and has yellow h3 color-proxy center error 10.81%; it is provisionally useful only for this diagnostic. No full-168 acceptance or generalization claim.",
+  "seed": 20261108,
+  "paired_source_code_sha256": "3db58f078e15080bf1429379f4c5bea252c9d9871e5b0d282765997adb5359bd",
+  "paired_protocol_sha256": "d19e31666d9475b30b7b78d82aea4282aa0f7d0ec5f88c3cf9be356459f7fcb5",
+  "posterior_initial_checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+  "native_replay_mae_max": 1e-05,
+  "native_replay_psnr_min": 60
+}
