@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "tests": 4,
+  "sources": {
+    "support_decoder.py": "b47b3fbff6275aebbfc9cfd88691b028e58a032838437e62df6814db5b844652",
+    "runtime.py": "c7d62d212d548fec98ec7a11f63f847e16db4b48b1d3a6ddee9a220a1ab8c83b",
+    "test_decoder.py": "42196c69c58d5c5021bd4970d18f246cdfc5e1e604464a9d16ee3dec4b78203e"
+  },
+  "common_initial_digest": "ac92cb7cc93534ea294180035cd8387868a09b23d70337eeed6613a0ab26d631",
+  "candidate_coverage": [
+    {
+      "start": 35,
+      "candidate_nodes": 12588,
+      "missing_by_horizon": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "start": 123,
+      "candidate_nodes": 12027,
+      "missing_by_horizon": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "ffmpeg": "/usr/bin/ffmpeg",
+  "command": "python -B -m unittest -v test_decoder.py",
+  "existing_environment_reused": true
+}

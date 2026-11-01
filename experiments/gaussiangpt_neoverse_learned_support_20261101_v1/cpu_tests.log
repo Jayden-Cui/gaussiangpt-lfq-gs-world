@@ -1,0 +1,9 @@
+test_actual_decoder_causal_codes_and_native_width (test_decoder.CandidateDecoderTests) ... ok
+test_candidates_depend_only_on_initial_coordinates_and_preserve_all (test_decoder.CandidateDecoderTests) ... ok
+test_missing_target_stops_and_prediction_has_no_target_count (test_decoder.CandidateDecoderTests) ... ok
+test_supervised_geometry_and_features_have_separate_gradients (test_decoder.CandidateDecoderTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.125s
+
+OK

@@ -1,0 +1,146 @@
+{
+  "clip": "buildingblock_tower_17_176",
+  "starts": [
+    35,
+    123
+  ],
+  "horizon": 9,
+  "source_sequence_frames": 177,
+  "source_frame_gap": 1,
+  "seed": 20261101,
+  "codec_checkpoint_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "resolution_hw": [
+    252,
+    448
+  ],
+  "hand_roi_xyxy": [
+    [
+      0,
+      35,
+      180,
+      252
+    ],
+    [
+      265,
+      25,
+      448,
+      252
+    ]
+  ],
+  "object_proxies": {
+    "35": {
+      "name": "moving_yellow_bar",
+      "roi_xyxy": [
+        205,
+        20,
+        440,
+        230
+      ],
+      "hue_uint8": [
+        28,
+        52
+      ],
+      "saturation_min": 90,
+      "value_min": 35
+    },
+    "123": {
+      "name": "green_crossbar",
+      "roi_xyxy": [
+        135,
+        0,
+        440,
+        210
+      ],
+      "hue_uint8": [
+        65,
+        120
+      ],
+      "saturation_min": 80,
+      "value_min": 35
+    }
+  },
+  "formal_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_paired_formal_20261031_v1",
+  "dependencies": {
+    "codec_binding.py": "c50ce5d570eca22eec83b379842389749f824a92c90e33186310e1d3f154ce3b",
+    "teacher_binding.py": "a4b239d41a37ddd6a6cfebf90bfd1d943c845f323c41bf3cc4f4e361ed75353a",
+    "runtime_bridge.py": "aa6b805cadbf9e53f051251ffad3a2c62287a6c8038170d9d2bb9b0e9a7f367e",
+    "model_adapter.py": "112bf3cc14ee7517f8052e06467c0a8674e00a6e65b108fbbb1017c6da163662",
+    "initial_norm.py": "21e1cc366aebe48ae78fc5f1460c3ed765095157d655854d1c57f9a9b8e90b80",
+    "action_bottleneck.py": "4111735d1575b5fd0e71046b8d38e2f4191797e898cb417911bd6a4da44dfb20"
+  },
+  "schema": "learned_future_support_free_code_capacity_v1",
+  "modes": [
+    "free16",
+    "fixed16"
+  ],
+  "window_frames": 10,
+  "batch_size": 2,
+  "latent_steps": 600,
+  "render_steps": 600,
+  "total_steps": 1200,
+  "lr": 0.001,
+  "final_lr": 0.0001,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.0,
+  "grad_clip": 1.0,
+  "candidate_radius": 4,
+  "max_candidates": 25000,
+  "max_predicted_latent_nodes": 25000,
+  "occupancy_threshold": 0.0,
+  "initial_occupancy_logits": [
+    -2.0,
+    2.0
+  ],
+  "latent_loss": "0.5*positive BCE + 0.5*negative BCE + mean positive-cell abs(feature-target)/std(frame0)",
+  "render_loss": "full MAE + hand ROI MAE + (10/9)*motion MAE + 0.1*latent loss",
+  "render_horizon_schedule": "cycle 1..9; both windows at each update",
+  "feature_parameterization": "nearest F0 + 3*std(frame0)*tanh(head)",
+  "code_shape": [
+    2,
+    9,
+    16
+  ],
+  "hidden_width": 64,
+  "code_initial_std": 0.1,
+  "quantization": false,
+  "posterior_encoder_used": false,
+  "initial_encoder_frozen": true,
+  "native_codec_frozen": true,
+  "minimum_free_gpu_gib": 32,
+  "allocator_limit_gib": 24,
+  "minimum_disk_free_gib": 30,
+  "worker_max_seconds": 10800,
+  "evaluation_max_seconds": 1800,
+  "replay_max_seconds": 600,
+  "common_checkpoint": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_z_ablation_20261031_v1/preflight_v1/common_init_preflight.pt",
+  "common_checkpoint_sha256": "6085c5cd60062c3006f2f08ef81d54ee79734d9d35d1c7daa1f42051e40ae3a1",
+  "s_ref": 0.5622117519378662,
+  "checkpoints": [
+    600,
+    1200
+  ],
+  "eval_controls": [
+    "correct",
+    "swapped_window_codes"
+  ],
+  "gpu_assignment": {
+    "free16": 0,
+    "fixed16": 1
+  },
+  "replay_mae_max": 1e-05,
+  "replay_psnr_min": 60,
+  "progress_every": 25,
+  "failure_policy": "stop failing branch; preserve logs; no retries, no target-support fallback, no truncation",
+  "scope": "two known TRAIN T10 windows; learned per-window continuous action codes jointly fitted with decoder; no posterior inference, AR or generalization claim; future states only supervise loss and evaluate",
+  "candidate_selection_note": "radius3 missed one TRAIN intermediate node; fixed radius4 selected before optimization and generated from S0 only",
+  "engineering_acceptance": "two full 1200-update arms; 18 future states per arm fully evaluated; predicted support only; immutable codec; saved latent and native replay; no target support or target counts used in inference",
+  "scientific_acceptance": "recover key object poses and support; report full-window support IoU/precision/recall, RGB, controls and visual review separately; fitting success is not action semantics",
+  "previous_future_support": {
+    "root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_future_support_20261101_v1",
+    "summary_sha256": "735c12efffa70945015ebd991e88b93663ee6b409b9e32267123fd266ebb3554"
+  }
+}

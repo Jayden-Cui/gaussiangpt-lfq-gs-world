@@ -16,7 +16,9 @@
 
 [两端关键帧的有界／无界残差诊断](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/README.md) 绕过动作编码和运动解码，在完整初态坐标上直接优化未来特征，固定同一份原始 codec。四组各 600 步已完成，独立 GS 重放通过；黄条仍破碎，绿梁没有恢复，未通过物体恢复验收。见[完整指标](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/SUMMARY.md)、[人工视觉审查](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/EXECUTION.md)、[第 44 帧对照](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/s035/comparison_v0.png)及[第 132 帧对照](experiments/gaussiangpt_neoverse_free_feature_20261101_v1/s123/comparison_v0.png)。
 
-后续[真实未来坐标＋自由特征对照](experiments/gaussiangpt_neoverse_future_support_20261101_v1/README.md) 已在 134 启动：把优化支撑替换为真实未来坐标，特征只从初态按空间位置复制／最近邻填充。保持同样四组、600 步预算和完全冻结的 codec，并与上一轮同模式比较。未来坐标属于已知参考信息，并非模型预测；本次提交包含源码与 CPU 检查，后续结果待验收。两轮均是端点拟合诊断，不能当作动作码或 AR 成功结果。
+[真实未来坐标＋自由特征对照](experiments/gaussiangpt_neoverse_future_support_20261101_v1/README.md) 的四组各600步已完成。换成真实未来坐标、仅从初态映射特征后，黄条竖直姿态与绿梁水平布局基本恢复，同模式运动误差下降36.5%–41.3%；仍有边缘和相邻视角缺陷。见[结果表](experiments/gaussiangpt_neoverse_future_support_20261101_v1/SUMMARY.md)、[审查记录](experiments/gaussiangpt_neoverse_future_support_20261101_v1/EXECUTION.md)、[44帧](experiments/gaussiangpt_neoverse_future_support_20261101_v1/s035/comparison_v0.png)和[132帧](experiments/gaussiangpt_neoverse_future_support_20261101_v1/s123/comparison_v0.png)。未来坐标是直接提供的参考信息，支撑数量和初始化同时变化；不能据此宣称模型已经预测未来几何。
+
+正在运行的[学习未来支撑的解码器测试](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/README.md) 从初态半径4邻域生成候选格点，新增占据头预测未来支撑，输出仍为64维特征。两个完整10帧窗口使用自由连续码 `[2,9,16]`，与固定零码分别训练；每臂600步状态监督加600步混合渲染监督，codec全冻结。推理不输入未来坐标或目标点数，目标只用于训练损失。此轮先验证 decoder 能力，未运行 Q-Former/LFQ，也未验证 AR；结果待验收。
 
 ## 结果和关键帧
 
