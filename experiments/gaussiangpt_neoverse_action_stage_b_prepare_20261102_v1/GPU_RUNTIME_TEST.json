@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "runtime_sha256": "61d5ac6097193027915873c912516779db231dbe9b9d00b9a73a5a8dc40847a9",
+  "test_sha256": "11009158d9e30c74031e662ae56c8cb3b0492aa11d9311a0569ad4db1e535c0f",
+  "repeat_setup_does_not_reset_interop_threads": true,
+  "insufficient_memory_and_multiple_gpus_rejected": true,
+  "scope": "Mock GPU CPU test; no real GPU allocation or formal preflight"
+}

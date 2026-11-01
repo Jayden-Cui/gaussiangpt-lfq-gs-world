@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "driver_sha256": "aa8229fb9d5e080725985413369733b96da7be63bae0dcfbf6750878c45329f4",
+  "test_sha256": "d94ba8fc8d0c5a7e5c92978429527b817fbcb184641757bbc5e5d6575ba4edc9",
+  "core_manifest_sha256": "c1e8532eacd9ac292b9052c0c5c5e6427f303dcc8c8c73db26596ecfc1e0a1dd",
+  "same_camera_static_and_motion_metrics": true,
+  "distinct_motion_and_static_code_effects": true,
+  "independent_native_replay_import_isolation": true,
+  "source_manifest_tampering_rejected": true,
+  "scope": "Synthetic CPU renderer logic; no real posterior or GPU evaluation"
+}
