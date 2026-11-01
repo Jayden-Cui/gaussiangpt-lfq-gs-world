@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "worker_sha256": "160552898782196582cb21969475669b7d632b013c55a07afd29c48a4ffb3505",
+  "worker_test_sha256": "62d840242ac9c1bbc79bbb266141a7be6f6a3abcc643d305ebf72ff50e2dc7f5",
+  "core_manifest_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+  "balanced_20_sweep_schedule": {
+    "status": "passed",
+    "windows": 168,
+    "horizons": 9,
+    "pairs": 1512,
+    "sweeps": 20,
+    "updates": 7560,
+    "visits_per_pair": 20,
+    "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+  },
+  "invalid_config_rejected": true,
+  "reviewed_branch_and_evaluation_hash_required": true,
+  "actual_initial_codes_sha256": "cdcd16ae3d307faa48f6078e72299541cd52becddea58d24977b1e28fd3be3a6",
+  "actual_two_anchor_codes_preserved": true,
+  "incorrect_initial_receipt_hash_rejected": true,
+  "scope": "CPU launch-gate test with synthetic review and real initialized codes; no GPU job or teacher result"
+}

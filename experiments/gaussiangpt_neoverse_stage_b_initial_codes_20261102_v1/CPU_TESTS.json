@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_sha256": "20bbb3c5ac272a7341c7fa3e8332f9ecd3700f6898982cf22aab64ecedc56d73",
+  "all_168_windows_ordered": true,
+  "missing_and_duplicate_windows_rejected": true,
+  "stage_b_model_witness_sha256": "7a472cbc49ae1239e1758dbd05d044b2fa5f4e5b1c08c794481b7bef2e69dc52",
+  "scope": "Synthetic chunk assembly; real two-window model already checked separately; no training"
+}

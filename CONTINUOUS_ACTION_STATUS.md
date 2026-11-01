@@ -18,7 +18,7 @@
 
 ## 后续模块和数据检查
 
-- [阶段 B 准备](experiments/gaussiangpt_neoverse_action_stage_b_prepare_20261102_v1/ENTRYPOINT_V2.md)：如果阶段 A 自由码仍不能恢复主要动态，从两窗口成功的 decoder 出发，联合训练全片段自由码和共享 decoder。训练与 GPU 预检尚未启动。
+- [阶段 B 准备](experiments/gaussiangpt_neoverse_action_stage_b_prepare_20261102_v1/ENTRYPOINT_V3.md)：如果阶段 A 自由码仍不能恢复主要动态，从两窗口成功的 decoder 出发，联合训练全片段自由码和共享 decoder。168 个窗口的连续初始码已在 CPU 上准备并检查；正式训练与 GPU 预检尚未启动。
 - [阶段 C 准备](experiments/gaussiangpt_neoverse_stage_c_training_prepare_20261102_v1/ENTRYPOINT_V2.md)：对同一经审查的教师比较冻结 memory、可训练后验时空编码器以及显式时间／变化 memory。组件与 CPU 功能检查已完成，正式教师、GPU 训练和评估尚未完成。
 - [运动／静止与后验评估准备](experiments/gaussiangpt_neoverse_stage_bc_evaluation_prepare_20261102_v1/DRIVER_V4_NOTES.md)：同初态、同相机比较两种未来，并检查因果前缀与教师相对误差；尚无真实模型验收结果。
 - [多视频数据与候选范围](experiments/gaussiangpt_neoverse_multisource_action_data_20261102_v1/CROSS_SOURCE_NOTES.md)：三段视频各 177 帧。原半径 4 在第二段训练视频的 12 个窗口有目标格点超出范围；依据训练数据检查半径 6 后，三段全部 504 个初态候选集合均低于现有 25,000 节点上限。GPU 显存和跨视频动作效果尚未验证，改变半径后不能沿用旧教师指标。第三段视频曾被历史实验观察，不是未接触过的最终测试集。

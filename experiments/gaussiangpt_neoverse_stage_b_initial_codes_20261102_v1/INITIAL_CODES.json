@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "shape": [
+    168,
+    9,
+    16
+  ],
+  "windows": 168,
+  "file": "INITIAL_CODES.pt",
+  "sha256": "cdcd16ae3d307faa48f6078e72299541cd52becddea58d24977b1e28fd3be3a6",
+  "source": {
+    "decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+    "posterior_digest": "e3c9025110c9d5d99e2735967ef9772e683c9df530d455b38497d368b9bf096c",
+    "decoder_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+    "posterior_checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "preparation_code_sha256": "20bbb3c5ac272a7341c7fa3e8332f9ecd3700f6898982cf22aab64ecedc56d73",
+    "stage_b_core_sha256": "61c6c3f6466ead585c5642b9f46973411abf5e45fa904ae96a63b13e189f82a3",
+    "anchors": [
+      35,
+      123
+    ],
+    "quantized": false
+  },
+  "training_performed": false,
+  "anchor_codes_preserved": true,
+  "decoder_and_qformer_unchanged": true,
+  "elapsed_seconds": 24.002272279001772,
+  "scope": "CPU initialization only; not trained free codes or an evaluated teacher"
+}
