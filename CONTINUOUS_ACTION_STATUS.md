@@ -14,7 +14,7 @@
 
 ## 正在训练：阶段 B
 
-[共享 decoder＋全窗口自由码](experiments/gaussiangpt_neoverse_action_stage_b_20261102_v1/README.md) 从原两窗口成功的模型出发，固定原 codec、初态编码和 context，训练共享 decoder 与 168 组自由码。真实 GPU 预检已通过；启动验收时已完成 25／7,560 次更新。训练完成后自动评估并独立重放第 5、10、20 轮；最终结果仍需逐窗审查。
+[共享 decoder＋全窗口自由码](experiments/gaussiangpt_neoverse_action_stage_b_20261102_v1/README.md) 从原两窗口成功的模型出发，固定原 codec、初态编码和 context，训练共享 decoder 与 168 组自由码。真实 GPU 预检已通过；启动验收时已完成 25／7,560 次更新。训练完成后自动评估并独立重放第 5、10、20 轮；最终结果仍需逐窗审查。[两窗口起始模型独立回归](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/EXECUTION.md) 的运动 MAE 为 0.02977625250，与旧结果 0.02977625270 一致；另有事件监听器将在第 5、10 轮产生后预览这两个窗口。
 
 ## 后续阶段
 

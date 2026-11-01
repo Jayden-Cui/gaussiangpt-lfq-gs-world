@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "03f42e5c0f08727655472cf50f90c2faaeecd92a1b96f7c574df1f16d90924e5",
+  "checkpoint_close_event_received": true,
+  "training_signalled": false,
+  "scope": "Disposable CPU file event; no GPU or training touched"
+}

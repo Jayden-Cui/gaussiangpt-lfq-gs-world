@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_sha256": "03f42e5c0f08727655472cf50f90c2faaeecd92a1b96f7c574df1f16d90924e5",
+  "rejects_changed_checkpoint_or_code_order": true,
+  "two_windows_nine_future_steps": true,
+  "unlabelled_pair_crop": true,
+  "scope": "CPU synthetic control-flow tests; no motion-quality claim"
+}
