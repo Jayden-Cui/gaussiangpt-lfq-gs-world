@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "sources": {
+    "posterior.py": "3f905a252e82c76b9548521dea74b28aeea38a257be895bc667ac804f5d4bb15",
+    "test_posterior.py": "f5d789fbf3d6c34c1861df60ca6bd6ec5524fc2f643e4b2e756509133aa72077",
+    "runtime.py": "c7d62d212d548fec98ec7a11f63f847e16db4b48b1d3a6ddee9a220a1ab8c83b",
+    "io_utils.py": "719d21df3feb177e95970213c950df100d2608abd1a2ba57325520a197bb4b2d",
+    "support_decoder.py": "b47b3fbff6275aebbfc9cfd88691b028e58a032838437e62df6814db5b844652",
+    "protocol.json": "fb90a13c879cea231af711fe78bce50182c4923c691479b517f91e2c44fb1031"
+  },
+  "initial_posterior_digest": "9040f02a8cb303c9f8b68a2c761633ebf19a1074dab99c3b5d214b9f8da5221c",
+  "teacher_tensor_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "elapsed_seconds": 1.6378635140135884
+}

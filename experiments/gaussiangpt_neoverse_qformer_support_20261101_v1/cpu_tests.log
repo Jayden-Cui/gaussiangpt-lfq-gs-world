@@ -1,0 +1,8 @@
+test_future_features_and_geometry_cannot_change_earlier_codes (test_posterior.PosteriorTests) ... ok
+test_initial_only_ignores_all_future_values (test_posterior.PosteriorTests) ... ok
+test_variable_length_batch_mask_gradients_and_no_quantization (test_posterior.PosteriorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.624s
+
+OK
