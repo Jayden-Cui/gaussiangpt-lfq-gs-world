@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "source_sha256": "2439c556fb09e58fb8de5ac8c2b7fbfa5401f0c65bd26de4b424043d47ff30fd",
+  "script_sha256": "3c4e96ea2d4e1de50083719698b524e4a411d897aaf15d622044f61bd08d97fc",
+  "anchors": {
+    "35": {
+      "frame": 44,
+      "target_feature_elements": 55232,
+      "out_of_range_elements": 1306,
+      "out_of_range_fraction": 0.023645712630359212,
+      "target_cells": 863,
+      "cells_with_any_out_of_range": 263,
+      "cells_with_any_out_of_range_fraction": 0.3047508690614137,
+      "results": {
+        "predicted_support": {
+          "motion_mae": 0.07887829095125198,
+          "color_proxy_iou": 0.3118405627198124,
+          "predicted_color_pixels": 725
+        },
+        "oracle_target_support": {
+          "motion_mae": 0.07664823532104492,
+          "color_proxy_iou": 0.6201501877346683,
+          "predicted_color_pixels": 1076
+        },
+        "actual_target": {
+          "motion_mae": 0.02561282366514206,
+          "color_proxy_iou": 0.8643339472068754,
+          "predicted_color_pixels": 1524
+        }
+      }
+    },
+    "123": {
+      "frame": 132,
+      "target_feature_elements": 59712,
+      "out_of_range_elements": 1309,
+      "out_of_range_fraction": 0.02192189174705252,
+      "target_cells": 933,
+      "cells_with_any_out_of_range": 324,
+      "cells_with_any_out_of_range_fraction": 0.34726688102893893,
+      "results": {
+        "predicted_support": {
+          "motion_mae": 0.09286140650510788,
+          "color_proxy_iou": 0.0,
+          "predicted_color_pixels": 0
+        },
+        "oracle_target_support": {
+          "motion_mae": 0.07607178390026093,
+          "color_proxy_iou": 0.043132050431320505,
+          "predicted_color_pixels": 65
+        },
+        "actual_target": {
+          "motion_mae": 0.023991134017705917,
+          "color_proxy_iou": 0.9041514041514042,
+          "predicted_color_pixels": 1612
+        }
+      }
+    }
+  },
+  "prediction_records": 1512,
+  "oracle_lower_motion_error_count": 1227,
+  "oracle_higher_motion_error_count": 285,
+  "oracle_equal_motion_error_count": 0,
+  "median_prediction_delta": -0.004535546526312828,
+  "unique_frame_equal": {
+    "predicted_support": 0.06253066556685277,
+    "oracle_support": 0.057931173431428645,
+    "actual_codec": 0.029463891278563283,
+    "oracle_relative_improvement": 0.07355578408975538
+  },
+  "interpretation": "Overlapping window predictions are not independent samples. Target support is an offline oracle; feature out-of-range does not prove equivalent rendering is impossible."
+}
