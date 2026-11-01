@@ -52,4 +52,6 @@
 
 在上述两窗口自由码教师上，[固定 decoder 的双未来 Q-Former 诊断](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/EXECUTION.md)已完成 600 次蒸馏并进入 594 次重建联合更新。蒸馏结束时 Q 运动误差 0.031389、教师 0.031369；静止参考误差分别为 0.007585 和 0.007583，两分支各 18／18 帧更接近对应参考。[独立 CPU 重算](experiments/gaussiangpt_neoverse_qformer_step600_cpu_replay_20261102_v1/RESULTS.md)验证了四组码及缓存前缀扰动检查；最终原始状态因果性、GS 冷重放和视觉审查尚待完成。该教师有单帧颜色代理偏差，此试验只检验两窗口提取，不是正式全片段 C 对照。
 
+该双未来诊断的[第 900 步中期评估](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/result/step_00900/EVALUATION.json)中，Q 与教师相对原视频的运动区域 MAE 分别为 0.031060 和 0.031369，静止参考加权 MAE 分别为 0.007091 和 0.007583；两分支各 18／18 帧更接近对应参考。训练和最终视觉、因果及独立重放检查仍在进行，不能从两窗口中期数据推断全片段或跨视频表现。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。
