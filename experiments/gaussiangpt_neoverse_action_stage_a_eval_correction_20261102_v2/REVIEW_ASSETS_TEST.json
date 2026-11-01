@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "script_sha256": "97c5666d4c4b4fcd2831b4c9d2d7eaca143a77e6d1d44f864bdbce8883e8aef8",
+  "test_sha256": "26e49f8e1a3e64f8fa5b97b4a46445b304455aa156cc3e66744e56f7bb39badd",
+  "source_prediction_crop_and_horizon_order": true,
+  "fixed_eight_window_coverage": true,
+  "no_automatic_scientific_verdict": true,
+  "scope": "Synthetic CPU image test; no stage-A results reviewed"
+}
