@@ -1,0 +1,27 @@
+{
+  "reviewed_utc": "2026-11-01T05:35:03.899675+00:00",
+  "source_protocol_sha256": "803b8d1e32a1bfd143f4df6f425e60d35a9657b3d07d2eee0c107417225a62ad",
+  "source_code_sha256": "8756a945c1dee76fb614432aa2d3e2de23cd1dedbe75c3e73325fdb129d89ac7",
+  "engineering_passed": true,
+  "visual_review_scope": {
+    "all_window_frames": 20,
+    "free_fixed_real_contact_sheets": 2,
+    "real_view_endpoint_panels": 4,
+    "adjacent_view_endpoint_panels": 2
+  },
+  "qualified_decoder_capacity_evidence": true,
+  "portable_action_semantics_demonstrated": false,
+  "qformer_used": false,
+  "lfq_used": false,
+  "ar_tested": false,
+  "main_limitations": [
+    "two known training windows, one seed",
+    "jointly optimized per-window continuous codes",
+    "extra predicted support",
+    "hand and edge artifacts",
+    "adjacent view uses imperfect teacher reference"
+  ],
+  "motion_mae_reduction_vs_zero_pct": 23.81430165028093,
+  "swap_motion_mae_increase_pct": 65.48853250175219,
+  "next_experiment_launched": false
+}

@@ -18,7 +18,7 @@
 
 [真实未来坐标＋自由特征对照](experiments/gaussiangpt_neoverse_future_support_20261101_v1/README.md) 的四组各600步已完成。换成真实未来坐标、仅从初态映射特征后，黄条竖直姿态与绿梁水平布局基本恢复，同模式运动误差下降36.5%–41.3%；仍有边缘和相邻视角缺陷。见[结果表](experiments/gaussiangpt_neoverse_future_support_20261101_v1/SUMMARY.md)、[审查记录](experiments/gaussiangpt_neoverse_future_support_20261101_v1/EXECUTION.md)、[44帧](experiments/gaussiangpt_neoverse_future_support_20261101_v1/s035/comparison_v0.png)和[132帧](experiments/gaussiangpt_neoverse_future_support_20261101_v1/s123/comparison_v0.png)。未来坐标是直接提供的参考信息，支撑数量和初始化同时变化；不能据此宣称模型已经预测未来几何。
 
-正在运行的[学习未来支撑的解码器测试](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/README.md) 从初态半径4邻域生成候选格点，新增占据头预测未来支撑，输出仍为64维特征。两个完整10帧窗口使用自由连续码 `[2,9,16]`，与固定零码分别训练；每臂600步状态监督加600步混合渲染监督，codec全冻结。推理不输入未来坐标或目标点数，目标只用于训练损失。此轮先验证 decoder 能力，未运行 Q-Former/LFQ，也未验证 AR；结果待验收。
+[学习未来支撑的解码器测试](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/README.md) 两臂各1200步已完成。仅从初态候选预测未来格点及64维特征，两个相邻10帧窗口的自由连续码形状为 [2,9,16]；codec冻结，推理不输入未来坐标或点数。18个未来状态平均运动MAE为0.029776，固定零码为0.039084（降低23.81%）；交换窗口码后为0.049276。黄条和绿梁主要运动过程能够重建，但仍有额外占据和手部伪影。详见[完整结果](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/SUMMARY.md)、[逐帧审查与视频](experiments/gaussiangpt_neoverse_learned_support_20261101_v1/VISUAL_REVIEW.md)。本轮只支持两个已知窗口的decoder能力与条件依赖，尚未运行Q-Former/LFQ/AR。
 
 ## 结果和关键帧
 

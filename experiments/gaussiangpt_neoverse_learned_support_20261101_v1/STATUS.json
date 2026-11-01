@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "steps_per_arm": 1200,
+  "independent_native_replay": "passed",
+  "action_success": "pending visual review",
+  "elapsed_seconds": 1066.691023788997
+}
