@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "metrics_sha256": "6cec241a2188eb99afde6716a15822964c195ff86769a67411a33419c62a6e61",
+  "test_sha256": "3934299bc359de8cfc6e6a075ef7ec9ba76c7fa0a38796d11d7c7a72b6a99779",
+  "source_clip": "buildingblock_tower_10_176",
+  "frames": [
+    26,
+    35
+  ],
+  "exact_target_zero_error": true,
+  "view1_mismatch_detected": true,
+  "missing_teacher_mask_not_fabricated": true,
+  "full_view_metric_distinguished_from_old_masked_metric": true,
+  "scope": "CPU metric plumbing with real source images; no model reconstruction or cross-video performance"
+}
