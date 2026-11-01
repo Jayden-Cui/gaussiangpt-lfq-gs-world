@@ -10,13 +10,13 @@
 
 [第 20 轮早期 CPU 汇总](experiments/gaussiangpt_neoverse_stage_a_final_early_20261102_v1/EXECUTION.md) 已计算最终码和潜在指标；它不替代渲染和动态验收。
 
-[第 5、10 轮完整渲染与重放](experiments/gaussiangpt_neoverse_stage_a_interim_render_20261102_v1/EXECUTION.md) 已完成。第 10 轮运动 MAE 为 0.061110，原 Q 为 0.062531，真实未来状态 codec 参考为 0.029464；关键末帧绿梁仍基本消失。第 20 轮还在评估。
+[第 5、10 轮完整渲染与重放](experiments/gaussiangpt_neoverse_stage_a_interim_render_20261102_v1/EXECUTION.md) 已完成。第 10 轮运动 MAE 为 0.061110，原 Q 为 0.062531，真实未来状态 codec 参考为 0.029464；关键末帧绿梁仍基本消失。第 20 轮原始评估和重放已完成：自由码 0.060828，原 Q 0.062531；正式的初态对照修正与动态审查尚在进行。
 
 [前 10 轮训练曲线](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/TRAIN_PREFIX_ANALYSIS.md) 中，组合图像损失从第 1 轮的 0.132495 降至第 10 轮的 0.130169；潜在状态损失基本持平。该组合值不是单独的图像 MAE，也不是固定模型评估。
 
 已完成的离线占据诊断覆盖 1512 个窗口预测：按 176 个物理未来帧等权，原预测支撑、使用真实目标格点选择预测特征、真实未来状态 codec 参考的运动 MAE 分别为 0.062531、0.057931、0.029464。真实目标格点只用于定位，不进入训练或实际预测。绿梁末帧的颜色区域代理 IoU 分别为 0、0.043132、0.904151；该代理不是物体追踪或动作成功率。[诊断记录与数据](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/EXECUTION.md)。
 
-原阶段 A 评估器发现重复初态对照误复用正确码输出；自由码优化及其他条件不受该分支影响。独立修正程序已安排在原任务结束后逐条修正对照并保留证据，最终画面仍须审查。[错误与修正说明](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/README.md)。
+原阶段 A 评估器发现重复初态对照误复用正确码输出；自由码优化及其他条件不受该分支影响。独立修正 v2 完成逐条处理后在汇总时报索引错误；错误记录已保留，经过额外主流程测试的 [v3](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v3/EXECUTION.md) 正在重新执行。最终画面仍须审查。[错误与修正说明](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/README.md)。
 
 [黄条与绿梁的诊断视频、首末帧](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/diagnostic_media/) 左侧为原视频，右侧后九帧使用真实未来格点，仅供定位。视频以 5 fps 慢放，源视频约 29.97 fps。
 

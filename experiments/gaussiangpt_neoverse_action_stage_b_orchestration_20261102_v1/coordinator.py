@@ -56,11 +56,14 @@ def verify_code(root, expected):
 
 
 def validate_config(config, draft):
-    """Allow only the reviewed hash and draft status to change after A."""
+    """Allow only the reviewed path/hash and draft status to change after A."""
     import copy
     candidate = copy.deepcopy(config)
     review_entry = candidate.get('stage_a_review', {})
     digest = review_entry.get('sha256')
+    review_path = review_entry.get('path')
+    if not isinstance(review_path, str) or not review_path.startswith('/'):
+        raise RuntimeError('Stage-A review path must be an absolute server path')
     if not isinstance(digest, str) or len(digest) != 64:
         raise RuntimeError('A real stage-A review hash is required')
     try:
@@ -70,6 +73,7 @@ def validate_config(config, draft):
     if candidate.get('status') != 'ready_after_stage_a_review':
         raise RuntimeError('Config is still a draft')
     review_entry['sha256'] = None
+    review_entry['path'] = draft['stage_a_review']['path']
     candidate['status'] = draft['status']
     if candidate != draft:
         raise RuntimeError('The predeclared stage-B budget or source changed')

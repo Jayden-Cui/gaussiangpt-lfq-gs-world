@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "phase": "waiting_for_corrected_results",
+  "error": "RuntimeError('Corrected evaluation failed')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/contact_supervisor.py\", line 46, in main\n    if read(ROOT/'STATUS.json')['status']!='complete':raise RuntimeError('Corrected evaluation failed')\nRuntimeError: Corrected evaluation failed\n",
+  "no_automatic_retry": true
+}

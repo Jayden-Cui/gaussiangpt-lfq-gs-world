@@ -25,8 +25,12 @@ def main():
     expect_error(lambda: coordinator.validate_config(draft, draft))
     ready = copy.deepcopy(draft)
     ready['stage_a_review']['sha256'] = 'a' * 64
+    ready['stage_a_review']['path'] = '/corrected-v3/review.json'
     ready['status'] = 'ready_after_stage_a_review'
     assert coordinator.validate_config(ready, draft) == 'a' * 64
+    changed = copy.deepcopy(ready)
+    changed['stage_a_review']['path'] = 'relative/review.json'
+    expect_error(lambda: coordinator.validate_config(changed, draft))
     for key, value in [('sweeps', 21), ('batch_size', 1)]:
         changed = copy.deepcopy(ready)
         changed[key] = value

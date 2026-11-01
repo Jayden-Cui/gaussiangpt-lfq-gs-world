@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "phase": "correcting_completed_results",
+  "error": "KeyError('[5, 10, 20]')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/correction_supervisor.py\", line 43, in main\n    correction.main()\n  File \"/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/correction.py\", line 177, in main\n    final=results[str(c['sweeps'])]\nKeyError: '[5, 10, 20]'\n",
+  "original_experiment_signalled": false,
+  "no_automatic_retry": true
+}

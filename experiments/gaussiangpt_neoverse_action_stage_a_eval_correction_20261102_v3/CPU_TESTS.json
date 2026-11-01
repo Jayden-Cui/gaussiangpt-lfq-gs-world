@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_sha256": "7719dc2e793f2e355366558da6bb33ad535c02dede508981e6847020c7958c9d",
+  "repaired_pairs": 1512,
+  "baseline_control_distinct_pairs": 1512,
+  "preserves_correct_predictions": true,
+  "missing_pairs_and_target_mismatch_rejected": true,
+  "native_baseline_panel_matches_saved_replayed_reference": true,
+  "packet_references_replace_only_eight_initial_endpoints": true,
+  "pidfd_exit_event_passed": true,
+  "no_signal_sent_to_running_experiment": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "7719dc2e793f2e355366558da6bb33ad535c02dede508981e6847020c7958c9d",
+  "all_three_sweeps_summarized": true,
+  "final_sweep": 20,
+  "scope": "Synthetic orchestration test; no real result changed"
+}
