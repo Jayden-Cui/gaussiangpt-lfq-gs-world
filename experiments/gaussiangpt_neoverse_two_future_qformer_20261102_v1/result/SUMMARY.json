@@ -1,0 +1,394 @@
+{
+  "status": "complete",
+  "updates": 1194,
+  "summaries": {
+    "0": {
+      "q": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.07612796624501546,
+          "motion_code_to_static_reference": 0.11141008966498905,
+          "static_code_to_static_reference": 0.1104598900096284,
+          "static_code_to_motion_reference": 0.0761381969269779,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.018215142423287034,
+          "static_prediction_closer_to_static_than_motion": false
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.07475490785307354,
+            "motion_code_to_static_reference": 0.12248232795132531,
+            "static_code_to_static_reference": 0.1219082987970776,
+            "static_code_to_motion_reference": 0.07500213508804639,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.014955977443605661,
+            "static_prediction_closer_to_static_than_motion": false
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.07750102463695738,
+            "motion_code_to_static_reference": 0.10033785137865278,
+            "static_code_to_static_reference": 0.0990114812221792,
+            "static_code_to_motion_reference": 0.0772742587659094,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.021474307402968407,
+            "static_prediction_closer_to_static_than_motion": false
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.09643399715423584,
+          "motion_code_to_static_reference": 0.1475648172199726,
+          "static_code_to_static_reference": 0.14200399443507195,
+          "static_code_to_motion_reference": 0.10286079905927181,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.02954560611397028,
+          "static_prediction_closer_to_static_than_motion": false
+        }
+      },
+      "teacher": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.029029707320862345,
+          "motion_code_to_static_reference": 0.15977866326769194,
+          "static_code_to_static_reference": 0.007582769884417455,
+          "static_code_to_motion_reference": 0.1631641404496299,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.15836952005823454,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.03010406427913242,
+            "motion_code_to_static_reference": 0.17129512793487972,
+            "static_code_to_static_reference": 0.007878375705331564,
+            "static_code_to_motion_reference": 0.17227213498618868,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.16934099959002602,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027955350362592273,
+            "motion_code_to_static_reference": 0.14826219860050413,
+            "static_code_to_static_reference": 0.0072871640635033446,
+            "static_code_to_motion_reference": 0.1540561459130711,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14739804052644306,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.022835922427475452,
+          "motion_code_to_static_reference": 0.20251695811748505,
+          "static_code_to_static_reference": 0.007284535560756922,
+          "static_code_to_motion_reference": 0.2075367197394371,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.20276030153036118,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "q_motion_source_motion_mae": 0.08109494443568918,
+      "teacher_motion_source_motion_mae": 0.031368663948443204,
+      "q_motion_h9_source_motion_mae": 0.09963241964578629,
+      "teacher_motion_h9_source_motion_mae": 0.027059596963226795,
+      "motion_overall_ratio": 2.585221499040409,
+      "motion_h9_ratio": 3.6819624394695842,
+      "static_reference_ratio": 14.567221700426751,
+      "q_static_closer_frames": 6,
+      "q_motion_closer_frames": 11,
+      "mean_q_motion_static_code_rms": 0.0415590040696164,
+      "preliminary_numeric_pass": false,
+      "visual_and_native_replay_required": true
+    },
+    "600": {
+      "q": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.02904570081995593,
+          "motion_code_to_static_reference": 0.15978359306852022,
+          "static_code_to_static_reference": 0.007584637276724809,
+          "static_code_to_motion_reference": 0.16316552170448834,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.15837676947315535,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.030098974083860714,
+            "motion_code_to_static_reference": 0.17129440274503496,
+            "static_code_to_static_reference": 0.007879073472900523,
+            "static_code_to_motion_reference": 0.17227152817779118,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.16934023880296284,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.02799242755605115,
+            "motion_code_to_static_reference": 0.1482727833920055,
+            "static_code_to_static_reference": 0.007290201080549095,
+            "static_code_to_motion_reference": 0.1540595152311855,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14741330014334786,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.022867840714752674,
+          "motion_code_to_static_reference": 0.2024855613708496,
+          "static_code_to_static_reference": 0.007284703082405031,
+          "static_code_to_motion_reference": 0.20753688365221024,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.20272956788539886,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "teacher": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.029029707320862345,
+          "motion_code_to_static_reference": 0.15977866326769194,
+          "static_code_to_static_reference": 0.007582769522236453,
+          "static_code_to_motion_reference": 0.16316414127747217,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.15836952005823454,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.030104064486092992,
+            "motion_code_to_static_reference": 0.17129512793487972,
+            "static_code_to_static_reference": 0.007878375498370992,
+            "static_code_to_motion_reference": 0.17227213498618868,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.16934099959002602,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027955350155631702,
+            "motion_code_to_static_reference": 0.14826219860050413,
+            "static_code_to_static_reference": 0.007287163546101915,
+            "static_code_to_motion_reference": 0.15405614756875569,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14739804052644306,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.022835922427475452,
+          "motion_code_to_static_reference": 0.20251695811748505,
+          "static_code_to_static_reference": 0.007284535560756922,
+          "static_code_to_motion_reference": 0.2075367197394371,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.20276030153036118,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "q_motion_source_motion_mae": 0.031389427474803396,
+      "teacher_motion_source_motion_mae": 0.031368663948443204,
+      "q_motion_h9_source_motion_mae": 0.02708897553384304,
+      "teacher_motion_h9_source_motion_mae": 0.027059596963226795,
+      "motion_overall_ratio": 1.0006619193726043,
+      "motion_h9_ratio": 1.0010856987506564,
+      "static_reference_ratio": 1.000246315608417,
+      "q_static_closer_frames": 18,
+      "q_motion_closer_frames": 18,
+      "mean_q_motion_static_code_rms": 0.22313778267966378,
+      "preliminary_numeric_pass": true,
+      "visual_and_native_replay_required": true
+    },
+    "900": {
+      "q": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.028530064038932323,
+          "motion_code_to_static_reference": 0.1594163899620374,
+          "static_code_to_static_reference": 0.0070908651945905555,
+          "static_code_to_motion_reference": 0.16316010016534063,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.15800047996971342,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.029402034357190132,
+            "motion_code_to_static_reference": 0.17129921664794287,
+            "static_code_to_static_reference": 0.007242882313827674,
+            "static_code_to_motion_reference": 0.17197953247361714,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.1689986354774899,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027658093720674515,
+            "motion_code_to_static_reference": 0.14753356327613196,
+            "static_code_to_static_reference": 0.006938848075353437,
+            "static_code_to_motion_reference": 0.15434066785706413,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14700232446193695,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.02194137219339609,
+          "motion_code_to_static_reference": 0.20368822664022446,
+          "static_code_to_static_reference": 0.004786597331985831,
+          "static_code_to_motion_reference": 0.20608798414468765,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.2023676410317421,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "teacher": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.029029707320862345,
+          "motion_code_to_static_reference": 0.15977866326769194,
+          "static_code_to_static_reference": 0.007582769651586811,
+          "static_code_to_motion_reference": 0.16316414127747217,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.15836952005823454,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.030104064486092992,
+            "motion_code_to_static_reference": 0.17129512793487972,
+            "static_code_to_static_reference": 0.007878375757071707,
+            "static_code_to_motion_reference": 0.17227213498618868,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.16934099959002602,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027955350155631702,
+            "motion_code_to_static_reference": 0.14826219860050413,
+            "static_code_to_static_reference": 0.007287163546101915,
+            "static_code_to_motion_reference": 0.15405614756875569,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14739804052644306,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.022835922427475452,
+          "motion_code_to_static_reference": 0.20251695811748505,
+          "static_code_to_static_reference": 0.007284535560756922,
+          "static_code_to_motion_reference": 0.2075367197394371,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.20276030153036118,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "q_motion_source_motion_mae": 0.03106012371265226,
+      "teacher_motion_source_motion_mae": 0.031368663948443204,
+      "q_motion_h9_source_motion_mae": 0.026684257201850414,
+      "teacher_motion_h9_source_motion_mae": 0.027059596963226795,
+      "motion_overall_ratio": 0.9901640619346092,
+      "motion_h9_ratio": 0.9861291444256743,
+      "static_reference_ratio": 0.9351286562036977,
+      "q_static_closer_frames": 18,
+      "q_motion_closer_frames": 18,
+      "mean_q_motion_static_code_rms": 0.22306158559189904,
+      "preliminary_numeric_pass": true,
+      "visual_and_native_replay_required": true
+    },
+    "1194": {
+      "q": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.02846444667213493,
+          "motion_code_to_static_reference": 0.15953616673747698,
+          "static_code_to_static_reference": 0.007125144733840393,
+          "static_code_to_motion_reference": 0.16311699855658743,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.1580802309844229,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.02930339839723375,
+            "motion_code_to_static_reference": 0.1713189168108834,
+            "static_code_to_static_reference": 0.007245143099377553,
+            "static_code_to_motion_reference": 0.17197800841596392,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.1690196974409951,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027625494947036106,
+            "motion_code_to_static_reference": 0.14775341666407055,
+            "static_code_to_static_reference": 0.007005146368303233,
+            "static_code_to_motion_reference": 0.15425598869721094,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.1471407645278507,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.021455442532896996,
+          "motion_code_to_static_reference": 0.20409749448299408,
+          "static_code_to_static_reference": 0.004787003039382398,
+          "static_code_to_motion_reference": 0.20608995109796524,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.2027854099869728,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "teacher": {
+        "overall": {
+          "motion_code_to_motion_reference": 0.02902970721738206,
+          "motion_code_to_static_reference": 0.15977866326769194,
+          "static_code_to_static_reference": 0.007582772755995393,
+          "static_code_to_motion_reference": 0.16316414458884132,
+          "reference_motion_vs_static": 0.164810035791662,
+          "prediction_motion_vs_static": 0.1583695233696037,
+          "static_prediction_closer_to_static_than_motion": true
+        },
+        "per_window": {
+          "35": {
+            "motion_code_to_motion_reference": 0.03010406427913242,
+            "motion_code_to_static_reference": 0.17129512793487972,
+            "static_code_to_static_reference": 0.00787838144848744,
+            "static_code_to_motion_reference": 0.17227214326461157,
+            "reference_motion_vs_static": 0.1745487070745892,
+            "prediction_motion_vs_static": 0.16934100621276432,
+            "static_prediction_closer_to_static_than_motion": true
+          },
+          "123": {
+            "motion_code_to_motion_reference": 0.027955350155631702,
+            "motion_code_to_static_reference": 0.14826219860050413,
+            "static_code_to_static_reference": 0.0072871640635033446,
+            "static_code_to_motion_reference": 0.1540561459130711,
+            "reference_motion_vs_static": 0.15507136450873482,
+            "prediction_motion_vs_static": 0.14739804052644306,
+            "static_prediction_closer_to_static_than_motion": true
+          }
+        },
+        "h9": {
+          "motion_code_to_motion_reference": 0.022835921496152878,
+          "motion_code_to_static_reference": 0.20251695811748505,
+          "static_code_to_static_reference": 0.007284535560756922,
+          "static_code_to_motion_reference": 0.2075367197394371,
+          "reference_motion_vs_static": 0.2074418142437935,
+          "prediction_motion_vs_static": 0.20276030153036118,
+          "static_prediction_closer_to_static_than_motion": true
+        }
+      },
+      "q_motion_source_motion_mae": 0.03101386481689082,
+      "teacher_motion_source_motion_mae": 0.031368663948443204,
+      "q_motion_h9_source_motion_mae": 0.026280450634658337,
+      "teacher_motion_h9_source_motion_mae": 0.027059596963226795,
+      "motion_overall_ratio": 0.9886893770121825,
+      "motion_h9_ratio": 0.9712062847932549,
+      "static_reference_ratio": 0.9396489863430008,
+      "q_static_closer_frames": 18,
+      "q_motion_closer_frames": 18,
+      "mean_q_motion_static_code_rms": 0.22316774643129772,
+      "preliminary_numeric_pass": true,
+      "visual_and_native_replay_required": true
+    }
+  },
+  "causality_sha256": "5ca7242317875b8f336475f836c9370b79cf93ce41b752508880f3fa60e99bdc",
+  "teacher_decoder_and_codec_frozen": true,
+  "model_scope": "Two known training windows; exploratory Q-Former only, not full-168 teacher or cross-video generalization",
+  "visual_review": "pending",
+  "native_replay": "pending",
+  "elapsed_seconds": 1463.5977040519938,
+  "peak_allocated_gib": 5.465683937072754,
+  "checkpoints": {
+    "600": "bbe9dc84a2d0fcbeecbd34f5e7d8a77d0cf8bfa4d1d3d7c9c65b4ad89e4fd5db",
+    "900": "e18f42d4af215498e8afa24fdf95883f1a7c4f5ece6f6660915316eb89825521",
+    "1194": "8e24d663f45c69c9065554a5348a534c546beb74dceaadc67a35326bd2c10fbe"
+  }
+}

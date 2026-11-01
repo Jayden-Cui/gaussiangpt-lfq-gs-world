@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 3,
+      "earlier_code_max_abs_error": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "earlier_code_max_abs_error": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "earlier_code_max_abs_error": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "earlier_code_max_abs_error": 0.0
+    }
+  ],
+  "tolerance": 2e-05,
+  "method": "Recompute memories after perturbing raw states strictly after each checked horizon",
+  "scope": "Two known training windows; encoder cached/frozen, no online prediction claim"
+}

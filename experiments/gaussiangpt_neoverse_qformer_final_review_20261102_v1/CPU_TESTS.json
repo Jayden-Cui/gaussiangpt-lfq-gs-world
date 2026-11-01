@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_manifest_sha256": "56fd99c6ad76a7944ddaaec8c946fabe1f26937e47c59e4b5814a93c6cdd38b7",
+  "review_output_sha256": "c6ab7d1bd878034fcfac60459855ed1da24faebe4860ce151b9d548733780ef6",
+  "video_manifest_sha256": "30d0d365f084092f536f534d3fc7242474e6ae0da41285161a914d35c4c9c766",
+  "final_export_sha256": "f4d28382f7a50dda90729726e2e393117b67b47a02b5016b1f45a546b62c7506",
+  "teacher_proxy_rows_reproduced": 36,
+  "repeat_run_same_36_rows_and_four_contact_sheet_hashes": true,
+  "repeat_video_hashes_identical": true,
+  "native_replay_and_causality_source_bindings_checked": true,
+  "scope": "CPU image/provenance reproducibility; not ground-truth object tracking or cross-video validation"
+}

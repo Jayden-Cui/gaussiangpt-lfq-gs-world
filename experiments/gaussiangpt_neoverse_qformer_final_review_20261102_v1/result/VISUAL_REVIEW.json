@@ -1,0 +1,35 @@
+{
+  "status": "reviewed",
+  "scope": "two training windows, nine future frames, motion/static branches",
+  "proxy_sha256": "c6ab7d1bd878034fcfac60459855ed1da24faebe4860ce151b9d548733780ef6",
+  "evaluation_sha256": "6a1b5a228e56bb16f4bbc832c1b9b242ec461d2bcc0ed1befc770ecd3fbbbde1",
+  "contact_sheets": [
+    {
+      "path": "result/s035_motion_contact.png",
+      "sha256": "75e68814034f5db9603a6559c63a7cc0a1b10282553174fc23699360ad6488e1"
+    },
+    {
+      "path": "result/s035_static_contact.png",
+      "sha256": "5fad259143b911c05cd7a771ab3fd2088afdf6aae1a98b9fe67acaf2f72328bd"
+    },
+    {
+      "path": "result/s123_motion_contact.png",
+      "sha256": "f227b2520ac44168d55c8f3cfef636c7fc2565431680fb733e414c27f121e43f"
+    },
+    {
+      "path": "result/s123_static_contact.png",
+      "sha256": "b7ea6d75ac5f9169ce3fafbb3e60062c5953f94c189590466339ba14692c8b33"
+    }
+  ],
+  "motion_visual_observations": {
+    "35": "yellow bar broadly rotates upwards; early h2/h3 blurred, shifted and partially fragmented, as in teacher",
+    "123": "green crossbar generally moves toward pillars; early hand and bar are blurred"
+  },
+  "static_visual_observations": "both main target objects remain near the shared initial state with small blur and artifacts",
+  "object_center_strict_assessment": "uncertain: target mask fragments alter scale, no independent physical object annotations",
+  "numeric_teacher_comparison_pass": true,
+  "causal_and_native_replay_pass": true,
+  "full_168_teacher_accepted": false,
+  "cross_video_generalization_established": false,
+  "no_quantization": true
+}

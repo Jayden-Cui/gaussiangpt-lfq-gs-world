@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "summary_sha256": "f1f97ee15236239b05741f5e5b069fae7e69621866f4cb4b2b565758174463c0",
+  "evaluation_sha256": "6a1b5a228e56bb16f4bbc832c1b9b242ec461d2bcc0ed1befc770ecd3fbbbde1",
+  "replay_sha256": "31fe68483d5894f64ebb0f12f888398cff1cd49be24de0ca046b2bd5a5f7ce98",
+  "preliminary_numeric_pass": true,
+  "visual_review": "pending",
+  "full_168_teacher_accepted": false,
+  "main_training_signalled": false
+}

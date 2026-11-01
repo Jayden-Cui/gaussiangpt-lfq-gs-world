@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "start": 35,
+      "input_sha256": "3c42103f0391ed977aadd485ae364bb9c22f8745558193b557a77acf6d2eebd2",
+      "output_sha256": "1637246aafa73e0d02514549f0ef2744abff184ff35b544d08248c852553b115",
+      "output": "s035_source_q_motion_5fps.mp4",
+      "layout": "source, Q motion; no text overlay",
+      "width": 896,
+      "height": 252,
+      "r_frame_rate": "5/1",
+      "nb_frames": "9"
+    },
+    {
+      "start": 123,
+      "input_sha256": "c4814e8499e3ee60def260b11fe7a2545bb0cb220e2d5600eb355c772eeb5b6c",
+      "output_sha256": "7617d55b74eef5ef174c1287a220b2837f5bfc790fa37b30d378173d1519a68f",
+      "output": "s123_source_q_motion_5fps.mp4",
+      "layout": "source, Q motion; no text overlay",
+      "width": 896,
+      "height": 252,
+      "r_frame_rate": "5/1",
+      "nb_frames": "9"
+    }
+  ],
+  "fps": 5,
+  "source_export_sha256": "f4d28382f7a50dda90729726e2e393117b67b47a02b5016b1f45a546b62c7506",
+  "generator_code_sha256": "4ad79813dc7d6d0de98eeab26dc5a088a9d4890ca06e6a2cad99feca787b82cc",
+  "derivation": "Crop first two unlabelled columns of the bound final Q render"
+}

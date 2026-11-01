@@ -56,4 +56,6 @@
 
 [颜色代理敏感性检查](experiments/gaussiangpt_neoverse_object_proxy_sensitivity_20261102_v1/RESULTS.md)发现，两窗口黄色条运动分支的部分源帧存在离散同色像素；h3 的原目标边界框对角线是最大连通区域的 1.53 倍，可能低估归一化中心误差。后续教师评审应保留原指标并核查遮挡与掩码碎片，不能把最大连通区域当作真实分割或仅依据数值阈值验收。
 
+[两窗口 Q-Former 最终结果与逐帧视频](experiments/gaussiangpt_neoverse_qformer_final_review_20261102_v1/RESULTS.md)已完成：1194 次更新后，运动区域 MAE 为 0.031014，自由码教师为 0.031369；运动／静止各 18／18 帧更接近对应参考，原始状态扰动的前缀因果检查和 36 包／72 视角独立重放通过。黄条早期仍有模糊、位置偏差，颜色尺度敏感；这只验证两个已训练窗口，尚不能替代全 168 窗口教师及正式 C／跨视频验证。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。
