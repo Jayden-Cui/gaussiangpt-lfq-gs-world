@@ -1,0 +1,17 @@
+{
+  "status": "reviewed",
+  "scope": "Two known windows, each future horizon h1-h9; train-video free-code inference",
+  "checkpoint_sha256": "dbc6dd6196d5b1af4bdad9c2540e66f47400ce84b3fdff9e7f1409ef2f38eb5f",
+  "warm_motion_mae": 0.02977625249574582,
+  "sweep05_motion_mae": 0.08662282013230854,
+  "ratio_sweep05_over_warm": 2.909124314575331,
+  "visual_observations": {
+    "35": "Yellow bar becomes thin or absent in some frames; later frames mainly contain a vertical streak and a distorted hand.",
+    "123": "The solid green crossbar is difficult to recognize throughout the future sequence, with pronounced hand/object blending."
+  },
+  "proxy_retained_frames": {"35": {"warm": 9, "sweep05": 7}, "123": {"warm": 9, "sweep05": 0}},
+  "independent_native_replay": "not performed for the preview",
+  "stage_b_full_evaluation": "not yet available at review time",
+  "decision": "continue predetermined B schedule and diagnose checkpoint/code interaction; no final teacher selection",
+  "reviewer": "execution agent reviewed each of 18 future frames"
+}

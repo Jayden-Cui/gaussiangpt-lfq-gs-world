@@ -1,0 +1,8 @@
+{
+  "status": "reviewed",
+  "scope": "2 known windows, all 9 future frames, 4 decoder/code combinations; agent visual review",
+  "columns": ["source", "warm decoder + warm codes", "warm decoder + sweep05 codes", "sweep05 decoder + warm codes", "sweep05 decoder + sweep05 codes"],
+  "yellow_bar": "Warm decoder with either code preserves a recognizable lift and rotation; sweep05 decoder with either code shows thinning, disappearance and/or a vertical streak, with distorted hand.",
+  "green_crossbar": "Warm decoder with either code retains a recognizable moving crossbar; sweep05 decoder with either code largely loses the solid bar and blends it with the hand.",
+  "limits": ["Mixed checkpoints and codes may be out of distribution", "Not full-window generalization or online prediction", "Independent native GS replay not performed"]
+}

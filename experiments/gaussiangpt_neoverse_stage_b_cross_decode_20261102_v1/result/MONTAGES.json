@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "start": 35,
+      "file": "s035_all_future.png",
+      "sha256": "adf16365fa2785d31e9fee999d014635665bea2d4ce8e379004dfa78c6dde411",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "498c61c7bd33f615612ee98aba6e27df59bff1d7dc087a79c5b1eafa3bbc7240"
+        },
+        {
+          "horizon": 2,
+          "sha256": "58dc0747b459d745fc25f423404e3f9705a9998876d21e2f5aef8316d1308617"
+        },
+        {
+          "horizon": 3,
+          "sha256": "93c0355a5492d54f00d4ea4809c30e65052df4e5c25d57baefcd1e71777b3bf7"
+        },
+        {
+          "horizon": 4,
+          "sha256": "d525ae12e318982bebd9688e042e20cf6830fb3833025208bda9e99937a37d9f"
+        },
+        {
+          "horizon": 5,
+          "sha256": "1274e2f6b3648b90e898fc4128fa133927bdf7c58c4d4eeee9d89cd90d978ceb"
+        },
+        {
+          "horizon": 6,
+          "sha256": "d28e50aa9cf39d5f3ee80b5ff1d22c4e8a0f1f663b0693eb8e708b2af7c46a67"
+        },
+        {
+          "horizon": 7,
+          "sha256": "7628dddbce648b31b1be69b24325196fde21c7822f8e9ddf30b42e50097cd699"
+        },
+        {
+          "horizon": 8,
+          "sha256": "87071d52bf34a8374668d86054b9d3dd9711d5fcd39acd75a89ea52f7c5af0b2"
+        },
+        {
+          "horizon": 9,
+          "sha256": "f6e5b76f3ddce92c203929cc63196ec82554d07240af6499696bdc50e0aa6ba8"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_all_future.png",
+      "sha256": "bee4ea32e35ebbf9899e0fd0227cb5a61dddfede049bae0a172c155ac049aa21",
+      "inputs": [
+        {
+          "horizon": 1,
+          "sha256": "87c85eff8bef8d001833e12a1c7185acd50d7c3254e43fc29941e36e8ebfd953"
+        },
+        {
+          "horizon": 2,
+          "sha256": "d54d60ebeffe44fa05e405c7f9ce802b1ab292d53b1f0e91228ff77016cd4dd4"
+        },
+        {
+          "horizon": 3,
+          "sha256": "b2286e5f3d1066ae0395f634666aa7feeeade8fc55840a30501729c22a82b0c0"
+        },
+        {
+          "horizon": 4,
+          "sha256": "f7a10e09c58fefec0136e3ab9e9eee914ec04cee228be3a1f0b9ecb3ec9d12a8"
+        },
+        {
+          "horizon": 5,
+          "sha256": "77cfdd0c0bdf5fdef3724a3c04c627ad625cfc97e6cf31cf6cdca7e6e42aab9a"
+        },
+        {
+          "horizon": 6,
+          "sha256": "36ab4c1f6524610a294614ffdd5dc04074f830201ea00f37c25e53e69e068dc5"
+        },
+        {
+          "horizon": 7,
+          "sha256": "1af2a6e8cae19a144a2c50204edabef596aff5d71cda8d6fffa7770a4cb12d42"
+        },
+        {
+          "horizon": 8,
+          "sha256": "12be1e153dbe11f6e638f9d9478588ee3a09c19d60ca9cbef578bbc3f412232b"
+        },
+        {
+          "horizon": 9,
+          "sha256": "26564bada70984409de4c9249c5a049c8ab7e5d655eebf7cc7c4947e657768f5"
+        }
+      ]
+    }
+  ],
+  "order": "source / warm-warm / warm-sweep05 / sweep05-warm / sweep05-sweep05"
+}

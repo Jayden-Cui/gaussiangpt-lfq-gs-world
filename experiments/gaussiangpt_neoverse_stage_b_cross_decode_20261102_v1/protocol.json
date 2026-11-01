@@ -1,0 +1,19 @@
+{
+  "schema": "stage_b_cross_decode_diagnostic_v1",
+  "question": "How do decoder and per-window free codes from the successful initialization and the fifth sweep behave in a two-by-two cross-decode?",
+  "hypothesis": "The observed two-window regression may involve decoder drift, code drift, or their interaction; the crossed pairs are diagnostic and may be outside the trained joint distribution.",
+  "windows": [35, 123],
+  "future_horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "factors": {"decoder": ["warm", "sweep05"], "free_codes": ["warm", "sweep05"]},
+  "conditions": ["warm_decoder_warm_codes", "warm_decoder_sweep05_codes", "sweep05_decoder_warm_codes", "sweep05_decoder_sweep05_codes"],
+  "source_checkpoint_sha256": "dbc6dd6196d5b1af4bdad9c2540e66f47400ce84b3fdff9e7f1409ef2f38eb5f",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "updates": 0,
+  "cuda_visible_device": 1,
+  "allocator_limit_gib": 12,
+  "minimum_free_gpu_gib": 32,
+  "deadline_seconds": 600,
+  "replay": "not independent native GS replay; only inference against two previous bound previews",
+  "limits": "Two known training-video windows and 18 future states only. Free codes used true future supervision. Mixed decoder/code versions may be out of distribution and do not uniquely identify causation. No claim of cross-source generalization or online prediction."
+}

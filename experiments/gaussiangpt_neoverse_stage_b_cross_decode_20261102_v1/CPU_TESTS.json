@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "d819eefa15f404e6ee73d13868fff03b19ec3f0a381f593cd7e557431dc28531",
+  "test_output": "PASS: four distinct conditions, 72 pairs, finite metrics and exact prior-preview controls",
+  "scope": "Synthetic matrix and prior-preview mismatch guards"
+}

@@ -29,3 +29,7 @@
 另已根据源画面变化冻结[四组窗口评估分层](experiments/gaussiangpt_neoverse_motion_groups_20261102_v1/EXECUTION.md)：每组 42 窗口。修正后的阶段 A 最终自由码，在最高变化组的运动 MAE 为 0.081317，最低变化组为 0.042979；两个已知关键窗口位于最高变化组。分组在 B 训练期间建立，包含手部和遮挡变化，不等同物体跟踪或动作成功率，待 B 完整评估后复用。
 
 [CPU 分组监听器](experiments/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/EXECUTION.md)已启动，等待 B 的三个完整评估与独立重放后自动生成分组统计；教师选择仍需动态审查，不会自动声称动作码已完成。
+
+阶段 B 第 5 轮[两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_sweep05_review_20261102_v1/EXECUTION.md)：18 帧运动 MAE 从起点 0.029776 升至 0.086623；黄条出现细弱、缺失与残影，绿梁难以辨认。该中途预览未覆盖全部窗口或执行独立重放；原 20 轮训练继续，已完成不更新模型的起点／第 5 轮 decoder 与自由码交叉诊断。
+
+[交叉诊断已完成](experiments/gaussiangpt_neoverse_stage_b_cross_decode_20261102_v1/EXECUTION.md)：起点 decoder＋第 5 轮码为 0.031984，第 5 轮 decoder＋起点码为 0.094129；两种原配分别为 0.029776 和 0.086623。图像和指标均表明，两个已知窗口的阶段性回归与 decoder 变化高度相关；交叉组合可能不在训练分布内，不代表全片段的最终结果。

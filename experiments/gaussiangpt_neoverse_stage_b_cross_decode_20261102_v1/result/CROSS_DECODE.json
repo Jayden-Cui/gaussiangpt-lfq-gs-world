@@ -1,0 +1,4444 @@
+{
+  "status": "complete",
+  "protocol_sha256": "f0b4df37d4311ddad75b63d1c490f64d27dc9eb65274ab1ed4fe10a6d688a096",
+  "checkpoint_sha256": "dbc6dd6196d5b1af4bdad9c2540e66f47400ce84b3fdff9e7f1409ef2f38eb5f",
+  "warm_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "sweep05_decoder_digest": "a7bdb892ebc5e9ce4901a47576af547067902c09cc75dd37c2a3b36506e1a872",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "warm_preview_sha256": "d47a088d2eb7730cec59cdd61ff98910e8d5f3c94e757e5f4e3cd1257494d220",
+  "sweep05_preview_sha256": "b54319e10c7c73abe66579e084f43cd75c4b3cc3bb8df43aa70c152438cb4676",
+  "preview_reproduction": {
+    "warm": {
+      "pairs": 18,
+      "metrics_per_pair": 2,
+      "max_abs_metric_difference": 0.0,
+      "tolerance": 5e-05
+    },
+    "sweep05": {
+      "pairs": 18,
+      "metrics_per_pair": 2,
+      "max_abs_metric_difference": 3.725290298461914e-09,
+      "tolerance": 5e-05
+    }
+  },
+  "summary": {
+    "warm_decoder_warm_codes": {
+      "mae": 0.019628720875415537,
+      "motion_mae": 0.02977625249574582,
+      "per_window_motion_mae": {
+        "35": 0.03003797349002626,
+        "123": 0.029514531501465373
+      }
+    },
+    "warm_decoder_sweep05_codes": {
+      "mae": 0.021072287836836442,
+      "motion_mae": 0.03198415506631136,
+      "per_window_motion_mae": {
+        "35": 0.03142467410200172,
+        "123": 0.032543636030621
+      }
+    },
+    "sweep05_decoder_warm_codes": {
+      "mae": 0.04828824640976058,
+      "motion_mae": 0.09412853130035931,
+      "per_window_motion_mae": {
+        "35": 0.09455608162615034,
+        "123": 0.09370098097456826
+      }
+    },
+    "sweep05_decoder_sweep05_codes": {
+      "mae": 0.049092303651074566,
+      "motion_mae": 0.08662282013230854,
+      "per_window_motion_mae": {
+        "35": 0.08932273089885712,
+        "123": 0.08392290936575995
+      }
+    }
+  },
+  "dynamic_anchors": {
+    "warm_decoder_warm_codes": {
+      "35": {
+        "name": "moving_yellow_bar",
+        "visible_target_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 0.8888888888888888,
+        "median_axis_error_degrees": 2.0830017068473126,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "frame": 36,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.03806226003938366,
+            "axis_error_degrees": 4.538796652922656,
+            "iou": 0.6867901972504483,
+            "target_centroid": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "prediction_centroid": [
+              274.6518691588785,
+              136.2328660436137
+            ]
+          },
+          {
+            "frame": 37,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.12685294491501659,
+            "axis_error_degrees": 26.83801640377517,
+            "iou": 0.40789473684210525,
+            "target_centroid": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "prediction_centroid": [
+              262.1677966101695,
+              122.24745762711865
+            ]
+          },
+          {
+            "frame": 38,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.0509848263278245,
+            "axis_error_degrees": 7.989432578829053,
+            "iou": 0.7177700348432056,
+            "target_centroid": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "prediction_centroid": [
+              262.3726362625139,
+              106.39377085650723
+            ]
+          },
+          {
+            "frame": 39,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.005759820057818321,
+            "axis_error_degrees": 1.640071238639301,
+            "iou": 0.7981340118744699,
+            "target_centroid": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "prediction_centroid": [
+              265.1857429718876,
+              97.63955823293173
+            ]
+          },
+          {
+            "frame": 40,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.015944074247015966,
+            "axis_error_degrees": 0.0871138346694309,
+            "iou": 0.8233110616184113,
+            "target_centroid": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "prediction_centroid": [
+              261.90220048899755,
+              84.84026079869601
+            ]
+          },
+          {
+            "frame": 41,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.006514001178079874,
+            "axis_error_degrees": 1.6016468767275995,
+            "iou": 0.8440748440748441,
+            "target_centroid": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "prediction_centroid": [
+              260.8318649045521,
+              77.45374449339207
+            ]
+          },
+          {
+            "frame": 42,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.01318961315609069,
+            "axis_error_degrees": 3.9746783590104684,
+            "iou": 0.8217054263565892,
+            "target_centroid": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "prediction_centroid": [
+              255.36279926335175,
+              76.13873542050338
+            ]
+          },
+          {
+            "frame": 43,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.011595250961157592,
+            "axis_error_degrees": 0.25922986686427407,
+            "iou": 0.7880108991825613,
+            "target_centroid": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "prediction_centroid": [
+              248.70776004402862,
+              77.09796367638965
+            ]
+          },
+          {
+            "frame": 44,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.011402018615048417,
+            "axis_error_degrees": 2.0830017068473126,
+            "iou": 0.8539772727272728,
+            "target_centroid": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "prediction_centroid": [
+              243.1982857142857,
+              76.06914285714285
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      },
+      "123": {
+        "name": "green_crossbar",
+        "visible_target_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 1.0,
+        "median_axis_error_degrees": 2.9587894903793597,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "frame": 124,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.05607228830052708,
+            "axis_error_degrees": 2.5680074300761078,
+            "iou": 0.7341092211280215,
+            "target_centroid": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "prediction_centroid": [
+              282.3150684931507,
+              45.70091324200913
+            ]
+          },
+          {
+            "frame": 125,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.07423921485223736,
+            "axis_error_degrees": 2.5290749556573644,
+            "iou": 0.6482558139534884,
+            "target_centroid": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "prediction_centroid": [
+              267.68980667838315,
+              35.394551845342704
+            ]
+          },
+          {
+            "frame": 126,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.04146817632277184,
+            "axis_error_degrees": 5.10564284820606,
+            "iou": 0.72337383845604,
+            "target_centroid": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "prediction_centroid": [
+              257.5344095157179,
+              33.62446898895497
+            ]
+          },
+          {
+            "frame": 127,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.020333580392687373,
+            "axis_error_degrees": 4.8945682502930765,
+            "iou": 0.8572418572418572,
+            "target_centroid": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "prediction_centroid": [
+              245.06364301389905,
+              27.578639356254573
+            ]
+          },
+          {
+            "frame": 128,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.04005620036770943,
+            "axis_error_degrees": 2.9038644015044213,
+            "iou": 0.7920731707317074,
+            "target_centroid": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "prediction_centroid": [
+              230.78909798831927,
+              29.73977936404932
+            ]
+          },
+          {
+            "frame": 129,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.025334133444254503,
+            "axis_error_degrees": 3.846591204859891,
+            "iou": 0.7887767969735183,
+            "target_centroid": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "prediction_centroid": [
+              223.23520923520923,
+              35.45670995670996
+            ]
+          },
+          {
+            "frame": 130,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.01933904470332219,
+            "axis_error_degrees": 2.9587894903793597,
+            "iou": 0.7645701096364685,
+            "target_centroid": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "prediction_centroid": [
+              213.80967141971482,
+              38.75077495350279
+            ]
+          },
+          {
+            "frame": 131,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.01957449603411677,
+            "axis_error_degrees": 5.754532220591187,
+            "iou": 0.8689873417721519,
+            "target_centroid": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "prediction_centroid": [
+              206.73465346534653,
+              42.89306930693069
+            ]
+          },
+          {
+            "frame": 132,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.02245533457767377,
+            "axis_error_degrees": 1.6658454020740692,
+            "iou": 0.8252314814814815,
+            "target_centroid": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "prediction_centroid": [
+              202.2568306010929,
+              46.29265330904675
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      }
+    },
+    "warm_decoder_sweep05_codes": {
+      "35": {
+        "name": "moving_yellow_bar",
+        "visible_target_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 0.8888888888888888,
+        "median_axis_error_degrees": 3.0912675457494743,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "frame": 36,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.0336337285384182,
+            "axis_error_degrees": 4.638772178170427,
+            "iou": 0.7142011834319527,
+            "target_centroid": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "prediction_centroid": [
+              274.53127299484913,
+              136.6475349521707
+            ]
+          },
+          {
+            "frame": 37,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.1183399662380288,
+            "axis_error_degrees": 35.15851421754432,
+            "iou": 0.4919236417033774,
+            "target_centroid": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "prediction_centroid": [
+              264.4238505747126,
+              121.3132183908046
+            ]
+          },
+          {
+            "frame": 38,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.05923834019916139,
+            "axis_error_degrees": 11.13500840594628,
+            "iou": 0.7180385288966725,
+            "target_centroid": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "prediction_centroid": [
+              261.62204724409446,
+              105.67379077615298
+            ]
+          },
+          {
+            "frame": 39,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.043531609313648696,
+            "axis_error_degrees": 3.0912675457494743,
+            "iou": 0.7182795698924731,
+            "target_centroid": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "prediction_centroid": [
+              261.71013354281223,
+              94.58994501178319
+            ]
+          },
+          {
+            "frame": 40,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.028104248337234964,
+            "axis_error_degrees": 0.10085817023531973,
+            "iou": 0.7470119521912351,
+            "target_centroid": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "prediction_centroid": [
+              260.4372325249643,
+              85.00570613409415
+            ]
+          },
+          {
+            "frame": 41,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.026138119484083594,
+            "axis_error_degrees": 3.0147206770874675,
+            "iou": 0.718978102189781,
+            "target_centroid": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "prediction_centroid": [
+              258.97904387688277,
+              77.83431565160446
+            ]
+          },
+          {
+            "frame": 42,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.011976009589142652,
+            "axis_error_degrees": 3.8072755988031872,
+            "iou": 0.8176470588235294,
+            "target_centroid": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "prediction_centroid": [
+              255.2830528846154,
+              76.44290865384616
+            ]
+          },
+          {
+            "frame": 43,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.015083099619041489,
+            "axis_error_degrees": 0.5253087565199479,
+            "iou": 0.7925561029009305,
+            "target_centroid": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "prediction_centroid": [
+              248.45610160132523,
+              77.2926559911651
+            ]
+          },
+          {
+            "frame": 44,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.026601911144920543,
+            "axis_error_degrees": 1.7977087683169373,
+            "iou": 0.7981601731601732,
+            "target_centroid": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "prediction_centroid": [
+              242.6878453038674,
+              77.46574585635359
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      },
+      "123": {
+        "name": "green_crossbar",
+        "visible_target_frames": 9,
+        "retention_fraction": 1.0,
+        "center_within_10pct_fraction": 1.0,
+        "median_axis_error_degrees": 3.5793110113236537,
+        "maximum_consecutive_missing_frames": 0,
+        "frames": [
+          {
+            "frame": 124,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.08355185631831981,
+            "axis_error_degrees": 16.693503956022823,
+            "iou": 0.48444863336475025,
+            "target_centroid": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "prediction_centroid": [
+              291.2198443579766,
+              47.09338521400778
+            ]
+          },
+          {
+            "frame": 125,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.08145245781516552,
+            "axis_error_degrees": 2.7965593301404965,
+            "iou": 0.6708033964728936,
+            "target_centroid": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "prediction_centroid": [
+              267.23319327731093,
+              36.11834733893557
+            ]
+          },
+          {
+            "frame": 126,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.07512521897015714,
+            "axis_error_degrees": 1.8188431174771438,
+            "iou": 0.5907928388746803,
+            "target_centroid": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "prediction_centroid": [
+              253.87001594896333,
+              33.30462519936204
+            ]
+          },
+          {
+            "frame": 127,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.03051938214338534,
+            "axis_error_degrees": 7.813429380797146,
+            "iou": 0.7269129287598944,
+            "target_centroid": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "prediction_centroid": [
+              246.05747126436782,
+              31.15095785440613
+            ]
+          },
+          {
+            "frame": 128,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.036887161215425956,
+            "axis_error_degrees": 4.387763276760893,
+            "iou": 0.7936221419975933,
+            "target_centroid": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "prediction_centroid": [
+              231.44535691724573,
+              31.363866077068856
+            ]
+          },
+          {
+            "frame": 129,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.025971344571630525,
+            "axis_error_degrees": 1.6197579103310034,
+            "iou": 0.8266003729024238,
+            "target_centroid": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "prediction_centroid": [
+              222.87432795698925,
+              35.350806451612904
+            ]
+          },
+          {
+            "frame": 130,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.025375700233937884,
+            "axis_error_degrees": 4.837989155715007,
+            "iou": 0.783510936623668,
+            "target_centroid": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "prediction_centroid": [
+              216.64092219020174,
+              40.06685878962536
+            ]
+          },
+          {
+            "frame": 131,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.007653317140478698,
+            "axis_error_degrees": 3.5793110113236537,
+            "iou": 0.8495145631067961,
+            "target_centroid": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "prediction_centroid": [
+              207.98695652173913,
+              43.504347826086956
+            ]
+          },
+          {
+            "frame": 132,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.04526015883652653,
+            "axis_error_degrees": 2.299827651055921,
+            "iou": 0.719533527696793,
+            "target_centroid": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "prediction_centroid": [
+              200.5360610263523,
+              45.77115117891817
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      }
+    },
+    "sweep05_decoder_warm_codes": {
+      "35": {
+        "name": "moving_yellow_bar",
+        "visible_target_frames": 9,
+        "retention_fraction": 0.7777777777777778,
+        "center_within_10pct_fraction": 0.2222222222222222,
+        "median_axis_error_degrees": 5.844900720228949,
+        "maximum_consecutive_missing_frames": 1,
+        "frames": [
+          {
+            "frame": 36,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.08942007821060356,
+            "axis_error_degrees": 5.583999067615139,
+            "iou": 0.4389517569982132,
+            "target_centroid": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "prediction_centroid": [
+              279.58086560364467,
+              138.53302961275625
+            ]
+          },
+          {
+            "frame": 37,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.18129671877673062,
+            "axis_error_degrees": 9.59113402806922,
+            "iou": 0.14275517487508924,
+            "target_centroid": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "prediction_centroid": [
+              284.7169811320755,
+              135.95094339622642
+            ]
+          },
+          {
+            "frame": 38,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 39,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.2691024707585802,
+            "axis_error_degrees": 48.14322228688632,
+            "iou": 0.0,
+            "target_centroid": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "prediction_centroid": [
+              241.0,
+              77.63636363636364
+            ]
+          },
+          {
+            "frame": 40,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 41,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.17478839916920202,
+            "axis_error_degrees": 32.47674894195407,
+            "iou": 0.0,
+            "target_centroid": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "prediction_centroid": [
+              246.38888888888889,
+              81.97222222222223
+            ]
+          },
+          {
+            "frame": 42,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.15415421643946145,
+            "axis_error_degrees": 4.941434528367083,
+            "iou": 0.14101904271744725,
+            "target_centroid": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "prediction_centroid": [
+              242.30214917825538,
+              75.0897597977244
+            ]
+          },
+          {
+            "frame": 43,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.23572740510666954,
+            "axis_error_degrees": 5.844900720228949,
+            "iou": 0.006397952655150352,
+            "target_centroid": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "prediction_centroid": [
+              232.61467889908258,
+              63.26605504587156
+            ]
+          },
+          {
+            "frame": 44,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.09064516852412123,
+            "axis_error_degrees": 0.43494572754953253,
+            "iou": 0.2521440823327616,
+            "target_centroid": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "prediction_centroid": [
+              236.6794682422452,
+              78.95568685376662
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      },
+      "123": {
+        "name": "green_crossbar",
+        "visible_target_frames": 9,
+        "retention_fraction": 0.1111111111111111,
+        "center_within_10pct_fraction": 0.0,
+        "median_axis_error_degrees": 4.737726007692572,
+        "maximum_consecutive_missing_frames": 8,
+        "frames": [
+          {
+            "frame": 124,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.4408223055824263,
+            "axis_error_degrees": 4.737726007692572,
+            "iou": 0.0,
+            "target_centroid": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "prediction_centroid": [
+              303.5,
+              68.73684210526316
+            ]
+          },
+          {
+            "frame": 125,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 126,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 127,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 128,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 129,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 130,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 131,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 132,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "prediction_centroid": null
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      }
+    },
+    "sweep05_decoder_sweep05_codes": {
+      "35": {
+        "name": "moving_yellow_bar",
+        "visible_target_frames": 9,
+        "retention_fraction": 0.7777777777777778,
+        "center_within_10pct_fraction": 0.1111111111111111,
+        "median_axis_error_degrees": 5.130151429220291,
+        "maximum_consecutive_missing_frames": 2,
+        "frames": [
+          {
+            "frame": 36,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.1470436876101396,
+            "axis_error_degrees": 5.130151429220291,
+            "iou": 0.3457667258732978,
+            "target_centroid": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "prediction_centroid": [
+              283.78367346938774,
+              141.53197278911566
+            ]
+          },
+          {
+            "frame": 37,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.07479168042849335,
+            "axis_error_degrees": 9.013491405091386,
+            "iou": 0.19333816075307747,
+            "target_centroid": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "prediction_centroid": [
+              276.4807692307692,
+              131.40384615384616
+            ]
+          },
+          {
+            "frame": 38,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 39,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 40,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.18614218858028084,
+            "axis_error_degrees": 26.078548100643424,
+            "iou": 0.028688524590163935,
+            "target_centroid": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "prediction_centroid": [
+              242.61371841155236,
+              79.69314079422382
+            ]
+          },
+          {
+            "frame": 41,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.23202381824133347,
+            "axis_error_degrees": 12.357062834390973,
+            "iou": 0.04942263279445727,
+            "target_centroid": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "prediction_centroid": [
+              240.8365878725591,
+              75.89105858170606
+            ]
+          },
+          {
+            "frame": 42,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.1344943803139917,
+            "axis_error_degrees": 0.6663899762930328,
+            "iou": 0.22321428571428573,
+            "target_centroid": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "prediction_centroid": [
+              244.47336377473363,
+              80.42161339421614
+            ]
+          },
+          {
+            "frame": 43,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.17072014065488272,
+            "axis_error_degrees": 3.7977429879434226,
+            "iou": 0.1733568592853992,
+            "target_centroid": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "prediction_centroid": [
+              239.26505016722408,
+              88.15133779264214
+            ]
+          },
+          {
+            "frame": 44,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": true,
+            "centroid_error_over_target_bbox_diagonal": 0.12410693144114601,
+            "axis_error_degrees": 0.4449018151297537,
+            "iou": 0.38687299893276417,
+            "target_centroid": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "prediction_centroid": [
+              238.04327808471456,
+              84.89226519337016
+            ]
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      },
+      "123": {
+        "name": "green_crossbar",
+        "visible_target_frames": 9,
+        "retention_fraction": 0.0,
+        "center_within_10pct_fraction": 0.0,
+        "median_axis_error_degrees": null,
+        "maximum_consecutive_missing_frames": 9,
+        "frames": [
+          {
+            "frame": 124,
+            "horizon": 1,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 125,
+            "horizon": 2,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 126,
+            "horizon": 3,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 127,
+            "horizon": 4,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 128,
+            "horizon": 5,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 129,
+            "horizon": 6,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 130,
+            "horizon": 7,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 131,
+            "horizon": 8,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "prediction_centroid": null
+          },
+          {
+            "frame": 132,
+            "horizon": 9,
+            "target_visible": true,
+            "prediction_visible": false,
+            "centroid_error_over_target_bbox_diagonal": null,
+            "axis_error_degrees": null,
+            "iou": 0.0,
+            "target_centroid": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "prediction_centroid": null
+          }
+        ],
+        "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+      }
+    }
+  },
+  "code_drift": {
+    "35": {
+      "code_rms_warm": 0.0938379094004631,
+      "code_rms_sweep05": 0.09772815555334091,
+      "code_difference_rms": 0.03143063560128212
+    },
+    "123": {
+      "code_rms_warm": 0.09740492701530457,
+      "code_rms_sweep05": 0.10018005967140198,
+      "code_difference_rms": 0.035105545073747635
+    }
+  },
+  "rows": [
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "metrics": {
+          "mae": 0.018511826172471046,
+          "roi_mae": 0.019719377160072327,
+          "motion_mae": 0.03680635616183281,
+          "psnr": 29.437227249145508,
+          "object_box_mae": 0.02077733725309372,
+          "teacher_view1_masked_mae": 0.020578911527991295
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1284,
+            "centroid_xy": [
+              274.6518691588785,
+              136.2328660436137
+            ],
+            "axis_degrees": 30.469380803672806,
+            "elongation": 8.976662372359902
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1538,
+            "centroid_xy": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "axis_degrees": 35.00817745659546,
+            "elongation": 3.592166513193986
+          },
+          "iou": 0.6867901972504483,
+          "centroid_error_px": 3.071980461272025,
+          "axis_error_degrees": 4.538796652922656,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02008907124400139,
+          "roi_mae": 0.02109243907034397,
+          "motion_mae": 0.038049474358558655,
+          "psnr": 27.587879180908203,
+          "object_box_mae": 0.023819267749786377,
+          "teacher_view1_masked_mae": 0.022057052701711655
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 590,
+            "centroid_xy": [
+              262.1677966101695,
+              122.24745762711865
+            ],
+            "axis_degrees": 25.06648734793353,
+            "elongation": 5.279669047748778
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1336,
+            "centroid_xy": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "axis_degrees": 51.9045037517087,
+            "elongation": 4.530100326326717
+          },
+          "iou": 0.40789473684210525,
+          "centroid_error_px": 11.04203698661981,
+          "axis_error_degrees": 26.83801640377517,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "metrics": {
+          "mae": 0.018724491819739342,
+          "roi_mae": 0.019883444532752037,
+          "motion_mae": 0.032937001436948776,
+          "psnr": 28.6838321685791,
+          "object_box_mae": 0.02159823477268219,
+          "teacher_view1_masked_mae": 0.0211272481828928
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 899,
+            "centroid_xy": [
+              262.3726362625139,
+              106.39377085650723
+            ],
+            "axis_degrees": 33.83333293341738,
+            "elongation": 8.528500647110183
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1073,
+            "centroid_xy": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "axis_degrees": 41.822765512246434,
+            "elongation": 6.82990909953993
+          },
+          "iou": 0.7177700348432056,
+          "centroid_error_px": 6.3731032909780625,
+          "axis_error_degrees": 7.989432578829053,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01863759756088257,
+          "roi_mae": 0.01981188915669918,
+          "motion_mae": 0.031469594687223434,
+          "psnr": 29.110836029052734,
+          "object_box_mae": 0.020181400701403618,
+          "teacher_view1_masked_mae": 0.021347500383853912
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 996,
+            "centroid_xy": [
+              265.1857429718876,
+              97.63955823293173
+            ],
+            "axis_degrees": 49.78329352552562,
+            "elongation": 10.81761297012768
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1124,
+            "centroid_xy": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "axis_degrees": 48.14322228688632,
+            "elongation": 9.167703848902933
+          },
+          "iou": 0.7981340118744699,
+          "centroid_error_px": 0.6826055069347724,
+          "axis_error_degrees": 1.640071238639301,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01701708510518074,
+          "roi_mae": 0.01820078305900097,
+          "motion_mae": 0.025717737153172493,
+          "psnr": 29.757164001464844,
+          "object_box_mae": 0.02014773339033127,
+          "teacher_view1_masked_mae": 0.019668681547045708
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1227,
+            "centroid_xy": [
+              261.90220048899755,
+              84.84026079869601
+            ],
+            "axis_degrees": 60.37330934910307,
+            "elongation": 8.49304843888095
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1229,
+            "centroid_xy": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "axis_degrees": 60.286195514433636,
+            "elongation": 10.513391925235513
+          },
+          "iou": 0.8233110616184113,
+          "centroid_error_px": 1.8700842678733969,
+          "axis_error_degrees": 0.0871138346694309,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "metrics": {
+          "mae": 0.017808781936764717,
+          "roi_mae": 0.01966804452240467,
+          "motion_mae": 0.0271962508559227,
+          "psnr": 29.078798294067383,
+          "object_box_mae": 0.02021610550582409,
+          "teacher_view1_masked_mae": 0.020086493343114853
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1362,
+            "centroid_xy": [
+              260.8318649045521,
+              77.45374449339207
+            ],
+            "axis_degrees": 71.87457897231037,
+            "elongation": 11.72874408769545
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1299,
+            "centroid_xy": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "axis_degrees": 70.27293209558277,
+            "elongation": 11.88250656434216
+          },
+          "iou": 0.8440748440748441,
+          "centroid_error_px": 0.5768110342043326,
+          "axis_error_degrees": 1.6016468767275995,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01734169013798237,
+          "roi_mae": 0.018599392846226692,
+          "motion_mae": 0.024816643446683884,
+          "psnr": 29.870887756347656,
+          "object_box_mae": 0.02034209854900837,
+          "teacher_view1_masked_mae": 0.019884862005710602
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1629,
+            "centroid_xy": [
+              255.36279926335175,
+              76.13873542050338
+            ],
+            "axis_degrees": 72.44938743056291,
+            "elongation": 8.134995859111818
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1426,
+            "centroid_xy": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "axis_degrees": 76.42406578957338,
+            "elongation": 11.455151415014596
+          },
+          "iou": 0.8217054263565892,
+          "centroid_error_px": 1.2040173606566489,
+          "axis_error_degrees": 3.9746783590104684,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "metrics": {
+          "mae": 0.018780451267957687,
+          "roi_mae": 0.02000923454761505,
+          "motion_mae": 0.02630850113928318,
+          "psnr": 28.85363006591797,
+          "object_box_mae": 0.02228540927171707,
+          "teacher_view1_masked_mae": 0.021403983235359192
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1817,
+            "centroid_xy": [
+              248.70776004402862,
+              77.09796367638965
+            ],
+            "axis_degrees": 81.59932042009358,
+            "elongation": 11.845797360793606
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1464,
+            "centroid_xy": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "axis_degrees": 81.3400905532293,
+            "elongation": 12.046145497064055
+          },
+          "iou": 0.7880108991825613,
+          "centroid_error_px": 1.057268182677133,
+          "axis_error_degrees": 0.25922986686427407,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "metrics": {
+          "mae": 0.019145026803016663,
+          "roi_mae": 0.02030128613114357,
+          "motion_mae": 0.027040202170610428,
+          "psnr": 28.851112365722656,
+          "object_box_mae": 0.024074217304587364,
+          "teacher_view1_masked_mae": 0.022067146375775337
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1750,
+            "centroid_xy": [
+              243.1982857142857,
+              76.06914285714285
+            ],
+            "axis_degrees": 84.874591425814,
+            "elongation": 10.56468516501329
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.8539772727272728,
+          "centroid_error_px": 1.024025695900326,
+          "axis_error_degrees": 2.0830017068473126,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "metrics": {
+          "mae": 0.018559856340289116,
+          "roi_mae": 0.019988734275102615,
+          "motion_mae": 0.03688672184944153,
+          "psnr": 29.55443572998047,
+          "object_box_mae": 0.020695246756076813,
+          "teacher_view1_masked_mae": 0.020755058154463768
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1359,
+            "centroid_xy": [
+              274.53127299484913,
+              136.6475349521707
+            ],
+            "axis_degrees": 30.369405278425035,
+            "elongation": 8.101864910555285
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1538,
+            "centroid_xy": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "axis_degrees": 35.00817745659546,
+            "elongation": 3.592166513193986
+          },
+          "iou": 0.7142011834319527,
+          "centroid_error_px": 2.7145565398071176,
+          "axis_error_degrees": 4.638772178170427,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "metrics": {
+          "mae": 0.021340390667319298,
+          "roi_mae": 0.022778699174523354,
+          "motion_mae": 0.04055351763963699,
+          "psnr": 27.24098014831543,
+          "object_box_mae": 0.024603011086583138,
+          "teacher_view1_masked_mae": 0.02245967462658882
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 696,
+            "centroid_xy": [
+              264.4238505747126,
+              121.3132183908046
+            ],
+            "axis_degrees": 16.74598953416438,
+            "elongation": 5.5023145942754805
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1336,
+            "centroid_xy": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "axis_degrees": 51.9045037517087,
+            "elongation": 4.530100326326717
+          },
+          "iou": 0.4919236417033774,
+          "centroid_error_px": 10.30101654377097,
+          "axis_error_degrees": 35.15851421754432,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "metrics": {
+          "mae": 0.019598815590143204,
+          "roi_mae": 0.02096995711326599,
+          "motion_mae": 0.03389383479952812,
+          "psnr": 28.553470611572266,
+          "object_box_mae": 0.022400371730327606,
+          "teacher_view1_masked_mae": 0.02181965298950672
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 889,
+            "centroid_xy": [
+              261.62204724409446,
+              105.67379077615298
+            ],
+            "axis_degrees": 30.687757106300154,
+            "elongation": 6.952112435521952
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1073,
+            "centroid_xy": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "axis_degrees": 41.822765512246434,
+            "elongation": 6.82990909953993
+          },
+          "iou": 0.7180385288966725,
+          "centroid_error_px": 7.404792524895174,
+          "axis_error_degrees": 11.13500840594628,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01988893188536167,
+          "roi_mae": 0.020620493218302727,
+          "motion_mae": 0.03287779539823532,
+          "psnr": 28.17695426940918,
+          "object_box_mae": 0.022774850949645042,
+          "teacher_view1_masked_mae": 0.022320151329040527
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1273,
+            "centroid_xy": [
+              261.71013354281223,
+              94.58994501178319
+            ],
+            "axis_degrees": 51.234489832635795,
+            "elongation": 10.18751676221988
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1124,
+            "centroid_xy": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "axis_degrees": 48.14322228688632,
+            "elongation": 9.167703848902933
+          },
+          "iou": 0.7182795698924731,
+          "centroid_error_px": 5.159000792549917,
+          "axis_error_degrees": 3.0912675457494743,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01863938383758068,
+          "roi_mae": 0.01926722563803196,
+          "motion_mae": 0.027396831661462784,
+          "psnr": 28.170547485351562,
+          "object_box_mae": 0.02303996868431568,
+          "teacher_view1_masked_mae": 0.021229496225714684
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1402,
+            "centroid_xy": [
+              260.4372325249643,
+              85.00570613409415
+            ],
+            "axis_degrees": 60.387053684668956,
+            "elongation": 7.248711152512581
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1229,
+            "centroid_xy": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "axis_degrees": 60.286195514433636,
+            "elongation": 10.513391925235513
+          },
+          "iou": 0.7470119521912351,
+          "centroid_error_px": 3.2963539846602643,
+          "axis_error_degrees": 0.10085817023531973,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020224563777446747,
+          "roi_mae": 0.021289946511387825,
+          "motion_mae": 0.029920047149062157,
+          "psnr": 27.192018508911133,
+          "object_box_mae": 0.024021124467253685,
+          "teacher_view1_masked_mae": 0.02229267917573452
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1527,
+            "centroid_xy": [
+              258.97904387688277,
+              77.83431565160446
+            ],
+            "axis_degrees": 73.28765277267024,
+            "elongation": 8.991189569067313
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1299,
+            "centroid_xy": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "axis_degrees": 70.27293209558277,
+            "elongation": 11.88250656434216
+          },
+          "iou": 0.718978102189781,
+          "centroid_error_px": 2.314515352331397,
+          "axis_error_degrees": 3.0147206770874675,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01768960990011692,
+          "roi_mae": 0.018958497792482376,
+          "motion_mae": 0.02520410157740116,
+          "psnr": 29.52570152282715,
+          "object_box_mae": 0.020953845232725143,
+          "teacher_view1_masked_mae": 0.01984873041510582
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1664,
+            "centroid_xy": [
+              255.2830528846154,
+              76.44290865384616
+            ],
+            "axis_degrees": 72.61679019077019,
+            "elongation": 7.918624183296208
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1426,
+            "centroid_xy": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "axis_degrees": 76.42406578957338,
+            "elongation": 11.455151415014596
+          },
+          "iou": 0.8176470588235294,
+          "centroid_error_px": 1.0932332348246097,
+          "axis_error_degrees": 3.8072755988031872,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01913212053477764,
+          "roi_mae": 0.020324192941188812,
+          "motion_mae": 0.026666762307286263,
+          "psnr": 28.727890014648438,
+          "object_box_mae": 0.02322617545723915,
+          "teacher_view1_masked_mae": 0.02141953818500042
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1811,
+            "centroid_xy": [
+              248.45610160132523,
+              77.2926559911651
+            ],
+            "axis_degrees": 81.86539930974925,
+            "elongation": 11.50614902892943
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1464,
+            "centroid_xy": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "axis_degrees": 81.3400905532293,
+            "elongation": 12.046145497064055
+          },
+          "iou": 0.7925561029009305,
+          "centroid_error_px": 1.3752941938714298,
+          "axis_error_degrees": 0.5253087565199479,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020729633048176765,
+          "roi_mae": 0.021499942988157272,
+          "motion_mae": 0.02942245453596115,
+          "psnr": 28.083984375,
+          "object_box_mae": 0.026364078745245934,
+          "teacher_view1_masked_mae": 0.023318037390708923
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1810,
+            "centroid_xy": [
+              242.6878453038674,
+              77.46574585635359
+            ],
+            "axis_degrees": 85.15988436434438,
+            "elongation": 11.715273873455653
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.7981601731601732,
+          "centroid_error_px": 2.389141913564594,
+          "axis_error_degrees": 1.7977087683169373,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020402032881975174,
+          "roi_mae": 0.021181099116802216,
+          "motion_mae": 0.03326437622308731,
+          "psnr": 28.903749465942383,
+          "object_box_mae": 0.020544512197375298,
+          "teacher_view1_masked_mae": 0.02689720317721367
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 876,
+            "centroid_xy": [
+              282.3150684931507,
+              45.70091324200913
+            ],
+            "axis_degrees": 14.63398223215134,
+            "elongation": 6.507271607176097
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1061,
+            "centroid_xy": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "axis_degrees": 12.065974802075232,
+            "elongation": 4.763376737846029
+          },
+          "iou": 0.7341092211280215,
+          "centroid_error_px": 3.737124420028518,
+          "axis_error_degrees": 2.5680074300761078,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02286899834871292,
+          "roi_mae": 0.023189770057797432,
+          "motion_mae": 0.03658560290932655,
+          "psnr": 27.713642120361328,
+          "object_box_mae": 0.022913208231329918,
+          "teacher_view1_masked_mae": 0.030241884291172028
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1138,
+            "centroid_xy": [
+              267.68980667838315,
+              35.394551845342704
+            ],
+            "axis_degrees": 17.33836475421475,
+            "elongation": 5.660929079815742
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1130,
+            "centroid_xy": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "axis_degrees": 14.809289798557387,
+            "elongation": 4.895718444893552
+          },
+          "iou": 0.6482558139534884,
+          "centroid_error_px": 5.184534251376152,
+          "axis_error_degrees": 2.5290749556573644,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "metrics": {
+          "mae": 0.021880783140659332,
+          "roi_mae": 0.021345622837543488,
+          "motion_mae": 0.03371913731098175,
+          "psnr": 28.03143310546875,
+          "object_box_mae": 0.02372537925839424,
+          "teacher_view1_masked_mae": 0.029700251296162605
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1177,
+            "centroid_xy": [
+              257.5344095157179,
+              33.62446898895497
+            ],
+            "axis_degrees": 18.496566579627824,
+            "elongation": 3.757304764379686
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1234,
+            "centroid_xy": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "axis_degrees": 13.390923731421765,
+            "elongation": 4.681902736606737
+          },
+          "iou": 0.72337383845604,
+          "centroid_error_px": 3.0052270910634475,
+          "axis_error_degrees": 5.10564284820606,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "metrics": {
+          "mae": 0.019640829414129257,
+          "roi_mae": 0.01852603815495968,
+          "motion_mae": 0.028166931122541428,
+          "psnr": 29.198095321655273,
+          "object_box_mae": 0.020383939146995544,
+          "teacher_view1_masked_mae": 0.029784396290779114
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1367,
+            "centroid_xy": [
+              245.06364301389905,
+              27.578639356254573
+            ],
+            "axis_degrees": 17.79012076366635,
+            "elongation": 4.130992104320738
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1313,
+            "centroid_xy": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "axis_degrees": 12.895552513373275,
+            "elongation": 4.850556871801659
+          },
+          "iou": 0.8572418572418572,
+          "centroid_error_px": 1.483236781410328,
+          "axis_error_degrees": 4.8945682502930765,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020474370568990707,
+          "roi_mae": 0.01874798908829689,
+          "motion_mae": 0.027311455458402634,
+          "psnr": 28.45893669128418,
+          "object_box_mae": 0.02359773777425289,
+          "teacher_view1_masked_mae": 0.03140825778245926
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1541,
+            "centroid_xy": [
+              230.78909798831927,
+              29.73977936404932
+            ],
+            "axis_degrees": 8.85513262461464,
+            "elongation": 3.705327972599458
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1398,
+            "centroid_xy": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "axis_degrees": 11.758997026119062,
+            "elongation": 4.82243392970778
+          },
+          "iou": 0.7920731707317074,
+          "centroid_error_px": 3.0819855924966073,
+          "axis_error_degrees": 2.9038644015044213,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "metrics": {
+          "mae": 0.01957540772855282,
+          "roi_mae": 0.01774173602461815,
+          "motion_mae": 0.025916703045368195,
+          "psnr": 29.483455657958984,
+          "object_box_mae": 0.02377549186348915,
+          "teacher_view1_masked_mae": 0.0309025589376688
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1386,
+            "centroid_xy": [
+              223.23520923520923,
+              35.45670995670996
+            ],
+            "axis_degrees": 5.882046207520517,
+            "elongation": 5.86085995743071
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1451,
+            "centroid_xy": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "axis_degrees": 9.728637412380408,
+            "elongation": 4.909912710523141
+          },
+          "iou": 0.7887767969735183,
+          "centroid_error_px": 1.9600827655444983,
+          "axis_error_degrees": 3.846591204859891,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02047816850244999,
+          "roi_mae": 0.018220042809844017,
+          "motion_mae": 0.027289997786283493,
+          "psnr": 28.74393081665039,
+          "object_box_mae": 0.026953423395752907,
+          "teacher_view1_masked_mae": 0.029969708994030952
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1613,
+            "centroid_xy": [
+              213.80967141971482,
+              38.75077495350279
+            ],
+            "axis_degrees": 10.288259205059916,
+            "elongation": 2.778909808133487
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1445,
+            "centroid_xy": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "axis_degrees": 7.329469714680556,
+            "elongation": 5.047859074714934
+          },
+          "iou": 0.7645701096364685,
+          "centroid_error_px": 1.4875987403427997,
+          "axis_error_degrees": 2.9587894903793597,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020556023344397545,
+          "roi_mae": 0.019020989537239075,
+          "motion_mae": 0.026037242263555527,
+          "psnr": 28.648693084716797,
+          "object_box_mae": 0.026338452473282814,
+          "teacher_view1_masked_mae": 0.030006274580955505
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1515,
+            "centroid_xy": [
+              206.73465346534653,
+              42.89306930693069
+            ],
+            "axis_degrees": 0.14013711417982222,
+            "elongation": 4.9328756094829735
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1438,
+            "centroid_xy": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "axis_degrees": 5.8946693347710095,
+            "elongation": 5.021351678637328
+          },
+          "iou": 0.8689873417721519,
+          "centroid_error_px": 1.4795263407847419,
+          "axis_error_degrees": 5.754532220591187,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_warm_codes",
+      "decoder": "warm",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "metrics": {
+          "mae": 0.021384339779615402,
+          "roi_mae": 0.020036201924085617,
+          "motion_mae": 0.027339337393641472,
+          "psnr": 28.66492462158203,
+          "object_box_mae": 0.027836930006742477,
+          "teacher_view1_masked_mae": 0.03185157850384712
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1647,
+            "centroid_xy": [
+              202.2568306010929,
+              46.29265330904675
+            ],
+            "axis_degrees": 0.6719420877724076,
+            "elongation": 3.7869059840866934
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.8252314814814815,
+          "centroid_error_px": 1.760274809047139,
+          "axis_error_degrees": 1.6658454020740692,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "metrics": {
+          "mae": 0.022856105118989944,
+          "roi_mae": 0.023754823952913284,
+          "motion_mae": 0.036719176918268204,
+          "psnr": 27.727746963500977,
+          "object_box_mae": 0.021714089438319206,
+          "teacher_view1_masked_mae": 0.028497036546468735
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 514,
+            "centroid_xy": [
+              291.2198443579766,
+              47.09338521400778
+            ],
+            "axis_degrees": 28.759478758098055,
+            "elongation": 3.9963882583799366
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1061,
+            "centroid_xy": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "axis_degrees": 12.065974802075232,
+            "elongation": 4.763376737846029
+          },
+          "iou": 0.48444863336475025,
+          "centroid_error_px": 5.5685917598439065,
+          "axis_error_degrees": 16.693503956022823,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "metrics": {
+          "mae": 0.022926826030015945,
+          "roi_mae": 0.023348452523350716,
+          "motion_mae": 0.035042740404605865,
+          "psnr": 27.77709197998047,
+          "object_box_mae": 0.02314305678009987,
+          "teacher_view1_masked_mae": 0.029569439589977264
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1428,
+            "centroid_xy": [
+              267.23319327731093,
+              36.11834733893557
+            ],
+            "axis_degrees": 12.01273046841689,
+            "elongation": 5.858206280107266
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1130,
+            "centroid_xy": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "axis_degrees": 14.809289798557387,
+            "elongation": 4.895718444893552
+          },
+          "iou": 0.6708033964728936,
+          "centroid_error_px": 5.6882748321357015,
+          "axis_error_degrees": 2.7965593301404965,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02415732853114605,
+          "roi_mae": 0.02355460450053215,
+          "motion_mae": 0.03785907104611397,
+          "psnr": 27.030107498168945,
+          "object_box_mae": 0.02637958899140358,
+          "teacher_view1_masked_mae": 0.03088487684726715
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1254,
+            "centroid_xy": [
+              253.87001594896333,
+              33.30462519936204
+            ],
+            "axis_degrees": 11.572080613944621,
+            "elongation": 3.405126864564772
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1234,
+            "centroid_xy": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "axis_degrees": 13.390923731421765,
+            "elongation": 4.681902736606737
+          },
+          "iou": 0.5907928388746803,
+          "centroid_error_px": 5.444375983981032,
+          "axis_error_degrees": 1.8188431174771438,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020217571407556534,
+          "roi_mae": 0.01870764046907425,
+          "motion_mae": 0.029069585725665092,
+          "psnr": 28.86992645263672,
+          "object_box_mae": 0.021062074229121208,
+          "teacher_view1_masked_mae": 0.030702630057930946
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1305,
+            "centroid_xy": [
+              246.05747126436782,
+              31.15095785440613
+            ],
+            "axis_degrees": 5.082123132576129,
+            "elongation": 4.606374535351826
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1313,
+            "centroid_xy": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "axis_degrees": 12.895552513373275,
+            "elongation": 4.850556871801659
+          },
+          "iou": 0.7269129287598944,
+          "centroid_error_px": 2.226241973463089,
+          "axis_error_degrees": 7.813429380797146,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "metrics": {
+          "mae": 0.020297395065426826,
+          "roi_mae": 0.018543638288974762,
+          "motion_mae": 0.02755163051187992,
+          "psnr": 28.904613494873047,
+          "object_box_mae": 0.022679075598716736,
+          "teacher_view1_masked_mae": 0.032388970255851746
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1583,
+            "centroid_xy": [
+              231.44535691724573,
+              31.363866077068856
+            ],
+            "axis_degrees": 7.3712337493581686,
+            "elongation": 5.082314175938462
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1398,
+            "centroid_xy": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "axis_degrees": 11.758997026119062,
+            "elongation": 4.82243392970778
+          },
+          "iou": 0.7936221419975933,
+          "centroid_error_px": 2.838154851694023,
+          "axis_error_degrees": 4.387763276760893,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "metrics": {
+          "mae": 0.021693473681807518,
+          "roi_mae": 0.020760204643011093,
+          "motion_mae": 0.030541859567165375,
+          "psnr": 28.61483383178711,
+          "object_box_mae": 0.023634204640984535,
+          "teacher_view1_masked_mae": 0.03394404053688049
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1488,
+            "centroid_xy": [
+              222.87432795698925,
+              35.350806451612904
+            ],
+            "axis_degrees": 8.108879502049405,
+            "elongation": 4.815232343800216
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1451,
+            "centroid_xy": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "axis_degrees": 9.728637412380408,
+            "elongation": 4.909912710523141
+          },
+          "iou": 0.8266003729024238,
+          "centroid_error_px": 2.00938330907922,
+          "axis_error_degrees": 1.6197579103310034,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02290244959294796,
+          "roi_mae": 0.02037019468843937,
+          "motion_mae": 0.03202521428465843,
+          "psnr": 27.431625366210938,
+          "object_box_mae": 0.031326960772275925,
+          "teacher_view1_masked_mae": 0.03506139665842056
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1735,
+            "centroid_xy": [
+              216.64092219020174,
+              40.06685878962536
+            ],
+            "axis_degrees": 12.167458870395564,
+            "elongation": 4.169544703359906
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1445,
+            "centroid_xy": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "axis_degrees": 7.329469714680556,
+            "elongation": 5.047859074714934
+          },
+          "iou": 0.783510936623668,
+          "centroid_error_px": 1.951950589205564,
+          "axis_error_degrees": 4.837989155715007,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "metrics": {
+          "mae": 0.0242022555321455,
+          "roi_mae": 0.023647425696253777,
+          "motion_mae": 0.03207588568329811,
+          "psnr": 27.465105056762695,
+          "object_box_mae": 0.031000692397356033,
+          "teacher_view1_masked_mae": 0.033405035734176636
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1610,
+            "centroid_xy": [
+              207.98695652173913,
+              43.504347826086956
+            ],
+            "axis_degrees": 2.315358323447356,
+            "elongation": 4.845439328792031
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1438,
+            "centroid_xy": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "axis_degrees": 5.8946693347710095,
+            "elongation": 5.021351678637328
+          },
+          "iou": 0.8495145631067961,
+          "centroid_error_px": 0.5784713069486959,
+          "axis_error_degrees": 3.5793110113236537,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "warm_decoder_sweep05_codes",
+      "decoder": "warm",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "metrics": {
+          "mae": 0.02424447052180767,
+          "roi_mae": 0.023020857945084572,
+          "motion_mae": 0.03200756013393402,
+          "psnr": 27.48073959350586,
+          "object_box_mae": 0.03131235018372536,
+          "teacher_view1_masked_mae": 0.03496166691184044
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1442,
+            "centroid_xy": [
+              200.5360610263523,
+              45.77115117891817
+            ],
+            "axis_degrees": 0.03795983879055598,
+            "elongation": 2.67693366233315
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.719533527696793,
+          "centroid_error_px": 3.547946131812357,
+          "axis_error_degrees": 2.299827651055921,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "metrics": {
+          "mae": 0.025464266538619995,
+          "roi_mae": 0.028147416189312935,
+          "motion_mae": 0.06891759485006332,
+          "psnr": 25.105249404907227,
+          "object_box_mae": 0.029651280492544174,
+          "teacher_view1_masked_mae": 0.025858063250780106
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 878,
+            "centroid_xy": [
+              279.58086560364467,
+              138.53302961275625
+            ],
+            "axis_degrees": 29.424178388980323,
+            "elongation": 8.643998493138147
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1538,
+            "centroid_xy": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "axis_degrees": 35.00817745659546,
+            "elongation": 3.592166513193986
+          },
+          "iou": 0.4389517569982132,
+          "centroid_error_px": 7.217036845004926,
+          "axis_error_degrees": 5.583999067615139,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "metrics": {
+          "mae": 0.03337514027953148,
+          "roi_mae": 0.038188062608242035,
+          "motion_mae": 0.08989867568016052,
+          "psnr": 22.16890525817871,
+          "object_box_mae": 0.036163367331027985,
+          "teacher_view1_masked_mae": 0.03352397307753563
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 265,
+            "centroid_xy": [
+              284.7169811320755,
+              135.95094339622642
+            ],
+            "axis_degrees": 42.31336972363948,
+            "elongation": 15.87283966891451
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1336,
+            "centroid_xy": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "axis_degrees": 51.9045037517087,
+            "elongation": 4.530100326326717
+          },
+          "iou": 0.14275517487508924,
+          "centroid_error_px": 15.78114781353011,
+          "axis_error_degrees": 9.59113402806922,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "metrics": {
+          "mae": 0.04132428765296936,
+          "roi_mae": 0.049086157232522964,
+          "motion_mae": 0.09875749051570892,
+          "psnr": 21.14392852783203,
+          "object_box_mae": 0.041814252734184265,
+          "teacher_view1_masked_mae": 0.0417303629219532
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1073,
+            "centroid_xy": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "axis_degrees": 41.822765512246434,
+            "elongation": 6.82990909953993
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "metrics": {
+          "mae": 0.043195344507694244,
+          "roi_mae": 0.050624147057533264,
+          "motion_mae": 0.09875784069299698,
+          "psnr": 20.686695098876953,
+          "object_box_mae": 0.04322686791419983,
+          "teacher_view1_masked_mae": 0.04495617374777794
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 11,
+            "centroid_xy": [
+              241.0,
+              77.63636363636364
+            ],
+            "axis_degrees": 0.0,
+            "elongation": 4.3999999999999995
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1124,
+            "centroid_xy": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "axis_degrees": 48.14322228688632,
+            "elongation": 9.167703848902933
+          },
+          "iou": 0.0,
+          "centroid_error_px": 31.89176512905474,
+          "axis_error_degrees": 48.14322228688632,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "metrics": {
+          "mae": 0.049846455454826355,
+          "roi_mae": 0.05999806150794029,
+          "motion_mae": 0.10590337961912155,
+          "psnr": 19.657699584960938,
+          "object_box_mae": 0.051581352949142456,
+          "teacher_view1_masked_mae": 0.05112643167376518
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1229,
+            "centroid_xy": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "axis_degrees": 60.286195514433636,
+            "elongation": 10.513391925235513
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "metrics": {
+          "mae": 0.04762093350291252,
+          "roi_mae": 0.0560288280248642,
+          "motion_mae": 0.09454326331615448,
+          "psnr": 20.053194046020508,
+          "object_box_mae": 0.05179306119680405,
+          "teacher_view1_masked_mae": 0.048584435135126114
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 36,
+            "centroid_xy": [
+              246.38888888888889,
+              81.97222222222223
+            ],
+            "axis_degrees": 37.796183153628704,
+            "elongation": 4.585924094055284
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1299,
+            "centroid_xy": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "axis_degrees": 70.27293209558277,
+            "elongation": 11.88250656434216
+          },
+          "iou": 0.0,
+          "centroid_error_px": 15.477411583985269,
+          "axis_error_degrees": 32.47674894195407,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "metrics": {
+          "mae": 0.04979613423347473,
+          "roi_mae": 0.05679088830947876,
+          "motion_mae": 0.09198351949453354,
+          "psnr": 19.824386596679688,
+          "object_box_mae": 0.056175053119659424,
+          "teacher_view1_masked_mae": 0.051684245467185974
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 791,
+            "centroid_xy": [
+              242.30214917825538,
+              75.0897597977244
+            ],
+            "axis_degrees": 71.4826312612063,
+            "elongation": 5.561473644150075
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1426,
+            "centroid_xy": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "axis_degrees": 76.42406578957338,
+            "elongation": 11.455151415014596
+          },
+          "iou": 0.14101904271744725,
+          "centroid_error_px": 14.072008831117683,
+          "axis_error_degrees": 4.941434528367083,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05416471138596535,
+          "roi_mae": 0.059887249022722244,
+          "motion_mae": 0.09918887913227081,
+          "psnr": 19.378021240234375,
+          "object_box_mae": 0.06555190682411194,
+          "teacher_view1_masked_mae": 0.05649053677916527
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 109,
+            "centroid_xy": [
+              232.61467889908258,
+              63.26605504587156
+            ],
+            "axis_degrees": 87.18499127345825,
+            "elongation": 5.109091108906348
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1464,
+            "centroid_xy": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "axis_degrees": 81.3400905532293,
+            "elongation": 12.046145497064055
+          },
+          "iou": 0.006397952655150352,
+          "centroid_error_px": 21.493893149807572,
+          "axis_error_degrees": 5.844900720228949,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "metrics": {
+          "mae": 0.057803209871053696,
+          "roi_mae": 0.06332692503929138,
+          "motion_mae": 0.10305409133434296,
+          "psnr": 19.008596420288086,
+          "object_box_mae": 0.07096844166517258,
+          "teacher_view1_masked_mae": 0.06221237778663635
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 677,
+            "centroid_xy": [
+              236.6794682422452,
+              78.95568685376662
+            ],
+            "axis_degrees": 86.52264740511178,
+            "elongation": 11.449008553318732
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.2521440823327616,
+          "centroid_error_px": 8.140925296807316,
+          "axis_error_degrees": 0.43494572754953253,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 1,
+      "frame": 36,
+      "metrics": {
+        "metrics": {
+          "mae": 0.025609930977225304,
+          "roi_mae": 0.027957862243056297,
+          "motion_mae": 0.06870948523283005,
+          "psnr": 24.851890563964844,
+          "object_box_mae": 0.029935525730252266,
+          "teacher_view1_masked_mae": 0.026285940781235695
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 735,
+            "centroid_xy": [
+              283.78367346938774,
+              141.53197278911566
+            ],
+            "axis_degrees": 29.87802602737517,
+            "elongation": 6.064814266599177
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1538,
+            "centroid_xy": [
+              272.36801040312093,
+              138.28738621586476
+            ],
+            "axis_degrees": 35.00817745659546,
+            "elongation": 3.592166513193986
+          },
+          "iou": 0.3457667258732978,
+          "centroid_error_px": 11.867801197940922,
+          "axis_error_degrees": 5.130151429220291,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 2,
+      "frame": 37,
+      "metrics": {
+        "metrics": {
+          "mae": 0.033283304423093796,
+          "roi_mae": 0.03809554874897003,
+          "motion_mae": 0.08498655259609222,
+          "psnr": 22.639144897460938,
+          "object_box_mae": 0.03642386943101883,
+          "teacher_view1_masked_mae": 0.033209238201379776
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 312,
+            "centroid_xy": [
+              276.4807692307692,
+              131.40384615384616
+            ],
+            "axis_degrees": 42.891012346617316,
+            "elongation": 20.025983075273093
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1336,
+            "centroid_xy": [
+              270.15269461077844,
+              129.874251497006
+            ],
+            "axis_degrees": 51.9045037517087,
+            "elongation": 4.530100326326717
+          },
+          "iou": 0.19333816075307747,
+          "centroid_error_px": 6.510313987082769,
+          "axis_error_degrees": 9.013491405091386,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 3,
+      "frame": 38,
+      "metrics": {
+        "metrics": {
+          "mae": 0.04042162746191025,
+          "roi_mae": 0.04747510701417923,
+          "motion_mae": 0.09276752918958664,
+          "psnr": 21.453598022460938,
+          "object_box_mae": 0.04130057618021965,
+          "teacher_view1_masked_mae": 0.040754999965429306
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1073,
+            "centroid_xy": [
+              266.3261882572227,
+              111.3923578751165
+            ],
+            "axis_degrees": 41.822765512246434,
+            "elongation": 6.82990909953993
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 4,
+      "frame": 39,
+      "metrics": {
+        "metrics": {
+          "mae": 0.04273833706974983,
+          "roi_mae": 0.0501028448343277,
+          "motion_mae": 0.09239371120929718,
+          "psnr": 21.10185432434082,
+          "object_box_mae": 0.04182572662830353,
+          "teacher_view1_masked_mae": 0.04356003925204277
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1124,
+            "centroid_xy": [
+              265.27846975088966,
+              98.31583629893238
+            ],
+            "axis_degrees": 48.14322228688632,
+            "elongation": 9.167703848902933
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 5,
+      "frame": 40,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05236000940203667,
+          "roi_mae": 0.061948031187057495,
+          "motion_mae": 0.10350555181503296,
+          "psnr": 19.553302764892578,
+          "object_box_mae": 0.0575430728495121,
+          "teacher_view1_masked_mae": 0.05370889604091644
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 277,
+            "centroid_xy": [
+              242.61371841155236,
+              79.69314079422382
+            ],
+            "axis_degrees": 86.36474361507706,
+            "elongation": 1.1827602955901628
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1229,
+            "centroid_xy": [
+              263.7233523189585,
+              85.26525630593979
+            ],
+            "axis_degrees": 60.286195514433636,
+            "elongation": 10.513391925235513
+          },
+          "iou": 0.028688524590163935,
+          "centroid_error_px": 21.832661655891105,
+          "axis_error_degrees": 26.078548100643424,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 6,
+      "frame": 41,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05229213088750839,
+          "roi_mae": 0.05853673070669174,
+          "motion_mae": 0.09492344409227371,
+          "psnr": 19.489063262939453,
+          "object_box_mae": 0.06243782490491867,
+          "teacher_view1_masked_mae": 0.05367825925350189
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 973,
+            "centroid_xy": [
+              240.8365878725591,
+              75.89105858170606
+            ],
+            "axis_degrees": 82.62999492997375,
+            "elongation": 9.580393619922843
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1299,
+            "centroid_xy": [
+              261.2933025404157,
+              77.79984603541186
+            ],
+            "axis_degrees": 70.27293209558277,
+            "elongation": 11.88250656434216
+          },
+          "iou": 0.04942263279445727,
+          "centroid_error_px": 20.545574816624725,
+          "axis_error_degrees": 12.357062834390973,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 7,
+      "frame": 42,
+      "metrics": {
+        "metrics": {
+          "mae": 0.049028877168893814,
+          "roi_mae": 0.055076587945222855,
+          "motion_mae": 0.08502102643251419,
+          "psnr": 19.9621639251709,
+          "object_box_mae": 0.05957921966910362,
+          "teacher_view1_masked_mae": 0.04951663315296173
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1314,
+            "centroid_xy": [
+              244.47336377473363,
+              80.42161339421614
+            ],
+            "axis_degrees": 77.09045576586641,
+            "elongation": 9.201320704766879
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1426,
+            "centroid_xy": [
+              256.25035063113603,
+              76.9523141654979
+            ],
+            "axis_degrees": 76.42406578957338,
+            "elongation": 11.455151415014596
+          },
+          "iou": 0.22321428571428573,
+          "centroid_error_px": 12.277355438133243,
+          "axis_error_degrees": 0.6663899762930328,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 8,
+      "frame": 43,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05198634788393974,
+          "roi_mae": 0.05588123947381973,
+          "motion_mae": 0.08983572572469711,
+          "psnr": 19.753393173217773,
+          "object_box_mae": 0.06262191385030746,
+          "teacher_view1_masked_mae": 0.05382794514298439
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1196,
+            "centroid_xy": [
+              239.26505016722408,
+              88.15133779264214
+            ],
+            "axis_degrees": 85.13783354117272,
+            "elongation": 14.225019367362137
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1464,
+            "centroid_xy": [
+              249.5662568306011,
+              76.48087431693989
+            ],
+            "axis_degrees": 81.3400905532293,
+            "elongation": 12.046145497064055
+          },
+          "iou": 0.1733568592853992,
+          "centroid_error_px": 15.566456772795263,
+          "axis_error_degrees": 3.7977429879434226,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 35,
+      "horizon": 9,
+      "frame": 44,
+      "metrics": {
+        "metrics": {
+          "mae": 0.053514908999204636,
+          "roi_mae": 0.05883770063519478,
+          "motion_mae": 0.09176155179738998,
+          "psnr": 19.712749481201172,
+          "object_box_mae": 0.06575332581996918,
+          "teacher_view1_masked_mae": 0.05571373179554939
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 1086,
+            "centroid_xy": [
+              238.04327808471456,
+              84.89226519337016
+            ],
+            "axis_degrees": 87.40249494779107,
+            "elongation": 14.152727436166503
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1513,
+            "centroid_xy": [
+              244.0528750826173,
+              75.50495703899537
+            ],
+            "axis_degrees": 86.95759313266132,
+            "elongation": 12.230680275387586
+          },
+          "iou": 0.38687299893276417,
+          "centroid_error_px": 11.146156757483414,
+          "axis_error_degrees": 0.4449018151297537,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "metrics": {
+          "mae": 0.03184061124920845,
+          "roi_mae": 0.03612915799021721,
+          "motion_mae": 0.07342959940433502,
+          "psnr": 23.981765747070312,
+          "object_box_mae": 0.033696163445711136,
+          "teacher_view1_masked_mae": 0.03627719357609749
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": true,
+            "pixels": 38,
+            "centroid_xy": [
+              303.5,
+              68.73684210526316
+            ],
+            "axis_degrees": 16.803700809767804,
+            "elongation": 1.5317105286513868
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1061,
+            "centroid_xy": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "axis_degrees": 12.065974802075232,
+            "elongation": 4.763376737846029
+          },
+          "iou": 0.0,
+          "centroid_error_px": 29.380070851680816,
+          "axis_error_degrees": 4.737726007692572,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "metrics": {
+          "mae": 0.03822963312268257,
+          "roi_mae": 0.04145418480038643,
+          "motion_mae": 0.08074408024549484,
+          "psnr": 22.646682739257812,
+          "object_box_mae": 0.03834426403045654,
+          "teacher_view1_masked_mae": 0.04321472346782684
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1130,
+            "centroid_xy": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "axis_degrees": 14.809289798557387,
+            "elongation": 4.895718444893552
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "metrics": {
+          "mae": 0.044961996376514435,
+          "roi_mae": 0.04715079814195633,
+          "motion_mae": 0.08884640038013458,
+          "psnr": 21.25833511352539,
+          "object_box_mae": 0.04448409378528595,
+          "teacher_view1_masked_mae": 0.05055776983499527
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1234,
+            "centroid_xy": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "axis_degrees": 13.390923731421765,
+            "elongation": 4.681902736606737
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "metrics": {
+          "mae": 0.049850910902023315,
+          "roi_mae": 0.05155903473496437,
+          "motion_mae": 0.09238399565219879,
+          "psnr": 20.899913787841797,
+          "object_box_mae": 0.04762052744626999,
+          "teacher_view1_masked_mae": 0.056567057967185974
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1313,
+            "centroid_xy": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "axis_degrees": 12.895552513373275,
+            "elongation": 4.850556871801659
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "metrics": {
+          "mae": 0.054588090628385544,
+          "roi_mae": 0.05793915316462517,
+          "motion_mae": 0.09972697496414185,
+          "psnr": 20.122486114501953,
+          "object_box_mae": 0.04609355702996254,
+          "teacher_view1_masked_mae": 0.06697231531143188
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1398,
+            "centroid_xy": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "axis_degrees": 11.758997026119062,
+            "elongation": 4.82243392970778
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05645378679037094,
+          "roi_mae": 0.05922103300690651,
+          "motion_mae": 0.09629205614328384,
+          "psnr": 20.48773193359375,
+          "object_box_mae": 0.05045213922858238,
+          "teacher_view1_masked_mae": 0.06494620442390442
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1451,
+            "centroid_xy": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "axis_degrees": 9.728637412380408,
+            "elongation": 4.909912710523141
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05942022427916527,
+          "roi_mae": 0.0628063753247261,
+          "motion_mae": 0.1009783074259758,
+          "psnr": 19.837726593017578,
+          "object_box_mae": 0.059819892048835754,
+          "teacher_view1_masked_mae": 0.0662136822938919
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1445,
+            "centroid_xy": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "axis_degrees": 7.329469714680556,
+            "elongation": 5.047859074714934
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "metrics": {
+          "mae": 0.06314597278833389,
+          "roi_mae": 0.06780333071947098,
+          "motion_mae": 0.10297788679599762,
+          "psnr": 19.522802352905273,
+          "object_box_mae": 0.0653567761182785,
+          "teacher_view1_masked_mae": 0.06957047432661057
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1438,
+            "centroid_xy": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "axis_degrees": 5.8946693347710095,
+            "elongation": 5.021351678637328
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_warm_codes",
+      "decoder": "sweep05",
+      "codes": "warm",
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "metrics": {
+          "mae": 0.06810672581195831,
+          "roi_mae": 0.07429318130016327,
+          "motion_mae": 0.107929527759552,
+          "psnr": 19.05247688293457,
+          "object_box_mae": 0.06970063596963882,
+          "teacher_view1_masked_mae": 0.07729028910398483
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 1,
+      "frame": 124,
+      "metrics": {
+        "metrics": {
+          "mae": 0.03036382421851158,
+          "roi_mae": 0.034536171704530716,
+          "motion_mae": 0.06970105320215225,
+          "psnr": 24.170677185058594,
+          "object_box_mae": 0.03199037164449692,
+          "teacher_view1_masked_mae": 0.03383858501911163
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1061,
+            "centroid_xy": [
+              286.0084825636192,
+              45.13100848256362
+            ],
+            "axis_degrees": 12.065974802075232,
+            "elongation": 4.763376737846029
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 2,
+      "frame": 125,
+      "metrics": {
+        "metrics": {
+          "mae": 0.03818118944764137,
+          "roi_mae": 0.0419265478849411,
+          "motion_mae": 0.07637708634138107,
+          "psnr": 23.006017684936523,
+          "object_box_mae": 0.03678213432431221,
+          "teacher_view1_masked_mae": 0.042576007544994354
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1130,
+            "centroid_xy": [
+              272.87433628318587,
+              35.38761061946903
+            ],
+            "axis_degrees": 14.809289798557387,
+            "elongation": 4.895718444893552
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 3,
+      "frame": 126,
+      "metrics": {
+        "metrics": {
+          "mae": 0.047447264194488525,
+          "roi_mae": 0.05082598328590393,
+          "motion_mae": 0.08113481849431992,
+          "psnr": 21.321561813354492,
+          "object_box_mae": 0.049020495265722275,
+          "teacher_view1_masked_mae": 0.050541941076517105
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1234,
+            "centroid_xy": [
+              258.74068071312803,
+              30.87196110210697
+            ],
+            "axis_degrees": 13.390923731421765,
+            "elongation": 4.681902736606737
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 4,
+      "frame": 127,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05174053832888603,
+          "roi_mae": 0.0542098730802536,
+          "motion_mae": 0.08085256814956665,
+          "psnr": 20.757009506225586,
+          "object_box_mae": 0.05791274458169937,
+          "teacher_view1_masked_mae": 0.05510939657688141
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1313,
+            "centroid_xy": [
+              245.4112718964204,
+              29.02056359482102
+            ],
+            "axis_degrees": 12.895552513373275,
+            "elongation": 4.850556871801659
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 5,
+      "frame": 128,
+      "metrics": {
+        "metrics": {
+          "mae": 0.05618446320295334,
+          "roi_mae": 0.05981586501002312,
+          "motion_mae": 0.08597449213266373,
+          "psnr": 20.40097999572754,
+          "object_box_mae": 0.05800376832485199,
+          "teacher_view1_masked_mae": 0.059554871171712875
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1398,
+            "centroid_xy": [
+              233.86766809728184,
+              29.88483547925608
+            ],
+            "axis_degrees": 11.758997026119062,
+            "elongation": 4.82243392970778
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 6,
+      "frame": 129,
+      "metrics": {
+        "metrics": {
+          "mae": 0.059432923793792725,
+          "roi_mae": 0.0607072189450264,
+          "motion_mae": 0.08355444669723511,
+          "psnr": 20.136123657226562,
+          "object_box_mae": 0.06781060993671417,
+          "teacher_view1_masked_mae": 0.062255144119262695
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1451,
+            "centroid_xy": [
+              223.85596140592693,
+              33.59751895244659
+            ],
+            "axis_degrees": 9.728637412380408,
+            "elongation": 4.909912710523141
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 7,
+      "frame": 130,
+      "metrics": {
+        "metrics": {
+          "mae": 0.06148497015237808,
+          "roi_mae": 0.06518103927373886,
+          "motion_mae": 0.088750459253788,
+          "psnr": 19.74386215209961,
+          "object_box_mae": 0.06905907392501831,
+          "teacher_view1_masked_mae": 0.06316755712032318
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1445,
+            "centroid_xy": [
+              215.2941176470588,
+              38.653979238754324
+            ],
+            "axis_degrees": 7.329469714680556,
+            "elongation": 5.047859074714934
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 8,
+      "frame": 131,
+      "metrics": {
+        "metrics": {
+          "mae": 0.06719022989273071,
+          "roi_mae": 0.0715935006737709,
+          "motion_mae": 0.09237615764141083,
+          "psnr": 19.032018661499023,
+          "object_box_mae": 0.0795803889632225,
+          "teacher_view1_masked_mae": 0.06847059726715088
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1438,
+            "centroid_xy": [
+              208.21210013908205,
+              42.971488178025034
+            ],
+            "axis_degrees": 5.8946693347710095,
+            "elongation": 5.021351678637328
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    },
+    {
+      "condition": "sweep05_decoder_sweep05_codes",
+      "decoder": "sweep05",
+      "codes": "sweep05",
+      "start": 123,
+      "horizon": 9,
+      "frame": 132,
+      "metrics": {
+        "metrics": {
+          "mae": 0.07040058821439743,
+          "roi_mae": 0.0754060298204422,
+          "motion_mae": 0.09658510237932205,
+          "psnr": 18.800073623657227,
+          "object_box_mae": 0.08104763180017471,
+          "teacher_view1_masked_mae": 0.07290563732385635
+        },
+        "object_proxy": {
+          "prediction": {
+            "valid": false,
+            "pixels": 0,
+            "centroid_xy": null,
+            "axis_degrees": null,
+            "elongation": null
+          },
+          "target": {
+            "valid": true,
+            "pixels": 1507,
+            "centroid_xy": [
+              203.8440610484406,
+              47.05374917053749
+            ],
+            "axis_degrees": 2.3377874898464768,
+            "elongation": 4.8483788041952325
+          },
+          "iou": 0.0,
+          "centroid_error_px": null,
+          "axis_error_degrees": null,
+          "interpretation": "Fixed color/ROI proxy, not a tracked object pose or automatic action-success label"
+        }
+      }
+    }
+  ],
+  "max_allocated_gib": 1.9313430786132812,
+  "elapsed_seconds": 22.038804334006272,
+  "optimizer_updates": 0,
+  "training_signalled": false,
+  "independent_native_replay": "not performed",
+  "manual_visual_review": "pending",
+  "scope": "Two known training-video windows and 18 future states only. Free codes used true future supervision. Mixed decoder/code versions may be out of distribution and do not uniquely identify causation. No claim of cross-source generalization or online prediction."
+}
