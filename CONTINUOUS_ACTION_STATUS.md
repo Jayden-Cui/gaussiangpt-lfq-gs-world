@@ -25,3 +25,5 @@
 仓库不含原始视频、GS 缓存、训练权重与服务器环境；代码中的绝对路径和哈希依赖原 134 服务器。
 
 补充：对[此前成功的两窗口自由码预测状态](experiments/gaussiangpt_neoverse_motion_state_decoder_swap_warm_20261102_v1/EXECUTION.md)逐帧交换 codec decoder，黄条和绿梁的粗运动在两种 decoder 下均可辨认，但 18 帧运动区域 MAE 从 0.029776 上升至 0.039747。该检查未进行优化器更新或独立 GS 冷重放，仅覆盖两个已知训练窗口，不能外推为全片段兼容或跨源泛化。
+
+另已根据源画面变化冻结[四组窗口评估分层](experiments/gaussiangpt_neoverse_motion_groups_20261102_v1/EXECUTION.md)：每组 42 窗口。修正后的阶段 A 最终自由码，在最高变化组的运动 MAE 为 0.081317，最低变化组为 0.042979；两个已知关键窗口位于最高变化组。分组在 B 训练期间建立，包含手部和遮挡变化，不等同物体跟踪或动作成功率，待 B 完整评估后复用。

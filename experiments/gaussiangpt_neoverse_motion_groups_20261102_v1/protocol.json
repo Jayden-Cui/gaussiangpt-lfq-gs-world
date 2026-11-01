@@ -1,0 +1,14 @@
+{
+  "schema": "target_frame_motion_groups_v1",
+  "source": "buildingblock_tower_17_176",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "frame_cache_sha256": "174cfd680a6d415e3d367a67449c1accc03c2957f500c7d067427a5835bd2c75",
+  "physical_frames": 177,
+  "window_starts": 168,
+  "future_horizons": 9,
+  "score": "Mean over h=1..9 and all pixels of clamp(mean_channel_abs(real[t+h]-real[t])/0.1,0,1)",
+  "groups": 4,
+  "sorting": "ascending score, then ascending start; 42 windows per quartile",
+  "use": "Post-hoc evaluation stratification only; labels depend on true images and are never supplied to the model",
+  "limits": "Global image change can include hand motion, occlusion or illumination and is not tracked object motion or action success. The grouping is defined while stage B is training, not before stage B was launched."
+}

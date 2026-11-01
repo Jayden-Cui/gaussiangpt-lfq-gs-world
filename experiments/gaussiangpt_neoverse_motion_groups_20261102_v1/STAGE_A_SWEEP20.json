@@ -1,0 +1,383 @@
+{
+  "status": "complete",
+  "groups_sha256": "b283b40fbda8a11095a769b82692da7c8ce5aaa6733fcb90a0b35895d8a9db57",
+  "evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438",
+  "evaluation_source": {
+    "schema": "full177_fixed_decoder_free_code_stage_a_v1",
+    "checkpoint_sha256": "dd66b0c02f84d1a152c60a9d974a7b92f3c12db4bc2f25b65416624cb2889c9a",
+    "decoder_digest": "fff183d1e4e948baaabc1f6ee19a1e14dfc2e2cac9c62e5a6a3dcd74cf26bea0",
+    "baseline_codes_sha256": "fe4d6bdc9a6fbdb5359adeaebb0b01628282db5cb621731c6b6a4e8dd8e7ca4b",
+    "baseline_evaluation_sha256": "a589f7ea5502324308ecf62274b17a377dd760a7e5a242bc4738a19163d11c9f",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "protocol_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+    "stage_a_config_sha256": "cd4068bc42dbeee1f2d570dea857a43fcd58eb481a1176a934987bdf2054189a",
+    "stage_a_code_sha256": "1bdca9aad668120f028f35e4abb351a664f8ab493d0266d1c9a6781b2ecc5f54",
+    "sampler": {
+      "status": "passed",
+      "full_windows": 168,
+      "future_pairs": 1512,
+      "shards": {
+        "0": {
+          "starts": 84,
+          "pairs": 756,
+          "updates": 3780,
+          "direct_rgb_visits_per_pair": 20,
+          "sha256": "abf9e6cf48a00a90a2f8e6e397ef605f7c9a4af67a9825981f3eefd03e84a689"
+        },
+        "1": {
+          "starts": 84,
+          "pairs": 756,
+          "updates": 3780,
+          "direct_rgb_visits_per_pair": 20,
+          "sha256": "08f3023659cffb3546229272fb6a4917e50639f7eac4cc37942dc4e49c900eaa"
+        }
+      }
+    },
+    "scope": "168 windows in the same TRAIN video; optimized per-window continuous codes; not deployable inference",
+    "sweep": 20,
+    "merged_codes_sha256": "2542d5a50b4e0da677eef100c862c1a6316ee2c7595005c9aae1c204b959c444",
+    "baseline_control_from_previous_frozen_result": true
+  },
+  "aggregation": "Within each group: each window-prediction equally; also average within each physical frame then average frames",
+  "h9_aggregation": "Window-prediction equal across the 42 windows in the group",
+  "controls": [
+    "actual_target",
+    "baseline_qformer",
+    "correct",
+    "initial_only",
+    "swapped_window_codes"
+  ],
+  "groups": {
+    "lowest": {
+      "actual_target": {
+        "mae": {
+          "window_prediction_equal": 0.014771846497539806,
+          "physical_frame_equal_within_group": 0.014908162140918354,
+          "h9_window_equal": 0.014957257169520571,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.03232195297817862,
+          "physical_frame_equal_within_group": 0.03281463780110159,
+          "h9_window_equal": 0.030355280575652916,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        }
+      },
+      "baseline_qformer": {
+        "mae": {
+          "window_prediction_equal": 0.01685056241879624,
+          "physical_frame_equal_within_group": 0.017553645803634107,
+          "h9_window_equal": 0.018405516986690816,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.041518201351796506,
+          "physical_frame_equal_within_group": 0.043899352227886546,
+          "h9_window_equal": 0.04440093803263846,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        }
+      },
+      "correct": {
+        "mae": {
+          "window_prediction_equal": 0.016704012095317165,
+          "physical_frame_equal_within_group": 0.017377053800966973,
+          "h9_window_equal": 0.018000994276787554,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.04077204947591459,
+          "physical_frame_equal_within_group": 0.04297949633428982,
+          "h9_window_equal": 0.04276498025726704,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        }
+      },
+      "initial_only": {
+        "mae": {
+          "window_prediction_equal": 0.017061882312335665,
+          "physical_frame_equal_within_group": 0.017802067009931935,
+          "h9_window_equal": 0.019264300797312034,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.041897817564113114,
+          "physical_frame_equal_within_group": 0.04467397486253108,
+          "h9_window_equal": 0.04643546807624045,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        }
+      },
+      "swapped_window_codes": {
+        "mae": {
+          "window_prediction_equal": 0.017059890210884745,
+          "physical_frame_equal_within_group": 0.018058050107727087,
+          "h9_window_equal": 0.01904390315480885,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.04176125350216078,
+          "physical_frame_equal_within_group": 0.044466595412079396,
+          "h9_window_equal": 0.04527660778590611,
+          "unique_physical_frames": 62,
+          "window_predictions": 378
+        }
+      }
+    },
+    "lower_middle": {
+      "actual_target": {
+        "mae": {
+          "window_prediction_equal": 0.01572184495519472,
+          "physical_frame_equal_within_group": 0.01605949757707327,
+          "h9_window_equal": 0.01602592585342271,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.02910998538530693,
+          "physical_frame_equal_within_group": 0.029703750983073117,
+          "h9_window_equal": 0.02661986897389094,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        }
+      },
+      "baseline_qformer": {
+        "mae": {
+          "window_prediction_equal": 0.02230812817880953,
+          "physical_frame_equal_within_group": 0.023556374630803296,
+          "h9_window_equal": 0.02729201724841481,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.05205160809099359,
+          "physical_frame_equal_within_group": 0.054065726150030774,
+          "h9_window_equal": 0.05661855017145475,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        }
+      },
+      "correct": {
+        "mae": {
+          "window_prediction_equal": 0.021947449666975195,
+          "physical_frame_equal_within_group": 0.023099028560502787,
+          "h9_window_equal": 0.02638443601539447,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.05039451183583686,
+          "physical_frame_equal_within_group": 0.052320315582755426,
+          "h9_window_equal": 0.0538238992116281,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        }
+      },
+      "initial_only": {
+        "mae": {
+          "window_prediction_equal": 0.02353940079501145,
+          "physical_frame_equal_within_group": 0.02510826275116689,
+          "h9_window_equal": 0.031153333816854728,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.05484861721871076,
+          "physical_frame_equal_within_group": 0.0588371498312907,
+          "h9_window_equal": 0.06504302374309018,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        }
+      },
+      "swapped_window_codes": {
+        "mae": {
+          "window_prediction_equal": 0.023182808241693588,
+          "physical_frame_equal_within_group": 0.024720997136432936,
+          "h9_window_equal": 0.0290554484707259,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.0525631900561392,
+          "physical_frame_equal_within_group": 0.05495983440316898,
+          "h9_window_equal": 0.057770379597232455,
+          "unique_physical_frames": 86,
+          "window_predictions": 378
+        }
+      }
+    },
+    "upper_middle": {
+      "actual_target": {
+        "mae": {
+          "window_prediction_equal": 0.01689742330373043,
+          "physical_frame_equal_within_group": 0.017078090355628066,
+          "h9_window_equal": 0.017181981088859693,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.028254703140605693,
+          "physical_frame_equal_within_group": 0.028466308880703364,
+          "h9_window_equal": 0.02460613948780866,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        }
+      },
+      "baseline_qformer": {
+        "mae": {
+          "window_prediction_equal": 0.03358672818208419,
+          "physical_frame_equal_within_group": 0.03377405854408818,
+          "h9_window_equal": 0.04243960156149808,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.07397885184991297,
+          "physical_frame_equal_within_group": 0.07289651095945103,
+          "h9_window_equal": 0.07664501631543749,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        }
+      },
+      "correct": {
+        "mae": {
+          "window_prediction_equal": 0.03290835308729025,
+          "physical_frame_equal_within_group": 0.0330176617146997,
+          "h9_window_equal": 0.04068073111453226,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.07169590761303586,
+          "physical_frame_equal_within_group": 0.07042613219398408,
+          "h9_window_equal": 0.07307141540305954,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        }
+      },
+      "initial_only": {
+        "mae": {
+          "window_prediction_equal": 0.036981507571581654,
+          "physical_frame_equal_within_group": 0.03761130055101014,
+          "h9_window_equal": 0.051209293926755585,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.0816006270143642,
+          "physical_frame_equal_within_group": 0.08283720161985018,
+          "h9_window_equal": 0.0952825334277891,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        }
+      },
+      "swapped_window_codes": {
+        "mae": {
+          "window_prediction_equal": 0.03505594034004148,
+          "physical_frame_equal_within_group": 0.03551043905612695,
+          "h9_window_equal": 0.044599068794576896,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.07604258502562525,
+          "physical_frame_equal_within_group": 0.07544258426719877,
+          "h9_window_equal": 0.08039815874681586,
+          "unique_physical_frames": 99,
+          "window_predictions": 378
+        }
+      }
+    },
+    "highest": {
+      "actual_target": {
+        "mae": {
+          "window_prediction_equal": 0.018768631725044792,
+          "physical_frame_equal_within_group": 0.01830231142859604,
+          "h9_window_equal": 0.017848447430878878,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.027543501632790717,
+          "physical_frame_equal_within_group": 0.027892432491291443,
+          "h9_window_equal": 0.02306828767593418,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        }
+      },
+      "baseline_qformer": {
+        "mae": {
+          "window_prediction_equal": 0.04670522384168137,
+          "physical_frame_equal_within_group": 0.04406877909429414,
+          "h9_window_equal": 0.05553766410975229,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.08583103122298048,
+          "physical_frame_equal_within_group": 0.08358182296662699,
+          "h9_window_equal": 0.0869147199250403,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        }
+      },
+      "correct": {
+        "mae": {
+          "window_prediction_equal": 0.045941375516276195,
+          "physical_frame_equal_within_group": 0.04332227805307346,
+          "h9_window_equal": 0.0542456740069957,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.08351615303880953,
+          "physical_frame_equal_within_group": 0.0813167325953954,
+          "h9_window_equal": 0.0838341164801802,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        }
+      },
+      "initial_only": {
+        "mae": {
+          "window_prediction_equal": 0.05209045022942875,
+          "physical_frame_equal_within_group": 0.048933130042483224,
+          "h9_window_equal": 0.06466090413076538,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.10061117639104841,
+          "physical_frame_equal_within_group": 0.09669820662429665,
+          "h9_window_equal": 0.10782308078237943,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        }
+      },
+      "swapped_window_codes": {
+        "mae": {
+          "window_prediction_equal": 0.04819390995713769,
+          "physical_frame_equal_within_group": 0.045589773386899846,
+          "h9_window_equal": 0.057804896274492854,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        },
+        "motion_mae": {
+          "window_prediction_equal": 0.08810545895347204,
+          "physical_frame_equal_within_group": 0.08601516744294507,
+          "h9_window_equal": 0.09102980100682803,
+          "unique_physical_frames": 74,
+          "window_predictions": 378
+        }
+      }
+    }
+  },
+  "scope": "Global image change can include hand motion, occlusion or illumination and is not tracked object motion or action success. The grouping is defined while stage B is training, not before stage B was launched.",
+  "action_success": "not determined; object and visual review required"
+}

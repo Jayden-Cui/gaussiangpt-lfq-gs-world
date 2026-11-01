@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "code_sha256": "c2d43ba4fcb02bcccde6391c3446317b65906b7ee9de39e5d1e48fe56dea682f",
+  "test_output": "PASS: partition, stable ties, full coverage, frame aggregation, provenance and nonfinite guards",
+  "scope": "Synthetic CPU guards only; no model evaluation"
+}
