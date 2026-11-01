@@ -51,3 +51,5 @@
 针对该小试的[三栏视频与逐帧审查素材](experiments/gaussiangpt_neoverse_two_future_visual_20261102_v2/result/MANIFEST.json)已生成并检查；使用 CPU 和进程退出事件，不影响训练。v1 来源哈希抄写错误在启动前发现并已留档，v2 改为读取原启动记录的完整哈希。[独立 GS 重放](experiments/gaussiangpt_neoverse_two_future_native_replay_20261102_v2/EXECUTION.md)的 36 份运动／静止 GS 包、72 视角全部通过；该一致性不证明动作语义正确。
 
 在上述两窗口自由码教师上，已启动[固定 decoder 的双未来 Q-Former 诊断](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/EXECUTION.md)：600 次蒸馏、594 次重建联合更新，每次包含两窗口的运动和静止四个条件。真实 GPU 预检通过；零步 Q 的运动误差 0.081095、教师为 0.031369，训练结果待出。该教师有单帧颜色代理偏差，此试验只检验两窗口提取，不是正式全片段 C 对照。
+
+[两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。

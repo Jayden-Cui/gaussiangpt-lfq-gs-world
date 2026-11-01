@@ -1,0 +1,10 @@
+{
+  "schema": "paired_frozen_prefix_memory_audit_v1",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "q_training_protocol_sha256": "7137c57b3f3cace964290309270d257f0c56f49a821c47f77258a8eae3f222c3",
+  "windows": [35, 123],
+  "horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "device": "cpu",
+  "statistics": "Align sparse states and prefix-memory tokens by integer world coordinates. Report occupancy set changes and per-coordinate mean key-feature differences; no row-index or physical-Gaussian-ID matching.",
+  "limits": "Two known training windows and an existing frozen encoder cache; differences do not prove the Q-Former learns or uses motion, nor establish temporal semantics, full-video reconstruction or cross-video transfer."
+}

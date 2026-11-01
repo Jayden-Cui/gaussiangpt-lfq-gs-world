@@ -1,0 +1,7 @@
+{
+  "pid": 774402,
+  "protocol_sha256": "4b1c0e5062cb342c43e5062ae75ba2e1b5cbab544b259652f513679d7ff26a5f",
+  "code_sha256": "d83edab7f81a9ca47b1ba4147146ccbb4b714204ad29ddff225f3a3cc2c7dad0",
+  "gpu_used": false,
+  "training_signalled": false
+}

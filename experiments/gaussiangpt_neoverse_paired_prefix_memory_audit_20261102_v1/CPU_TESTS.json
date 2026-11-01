@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "code_sha256": "d83edab7f81a9ca47b1ba4147146ccbb4b714204ad29ddff225f3a3cc2c7dad0",
+  "test_output": "PASS: world-coordinate alignment is order invariant, duplicate-token aware and finite",
+  "real_cache_and_q_protocol_hashes_verified": true,
+  "scope": "CPU alignment unit tests only; no model inference or training"
+}
