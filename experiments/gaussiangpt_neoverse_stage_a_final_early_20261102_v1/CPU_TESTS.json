@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_sha256": "b2a7c0580dc4ea5d6f02c3c76dfebdca689490a998662bdd60f86bcfe6401f80",
+  "prior_interim_sha256": "e5ef7cd25fa6946431337621362be4227efdf85e6b97e8f2e1bedd2008b703aa",
+  "sweep10_anchor_metrics_reproduced": true,
+  "full_code_shape": [
+    168,
+    9,
+    16
+  ],
+  "scope": "CPU test on existing 10-sweep checkpoints; not final render or action result"
+}

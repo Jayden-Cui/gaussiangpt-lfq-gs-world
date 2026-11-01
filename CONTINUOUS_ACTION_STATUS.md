@@ -8,6 +8,8 @@
 
 两分片均已保存第 10 轮检查点，即各至少完成 1890 次更新。[两个关键窗口的 CPU 中间检查](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/EXECUTION.md) 显示第 10 轮潜在特征误差与原 Q-Former 基本持平，占据 IoU 略低；[全部 168 个窗口的码均已变化](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/CODE_DRIFT.md)。这不包含图像渲染，不能据此判断动作是否恢复。
 
+[第 20 轮早期 CPU 汇总](experiments/gaussiangpt_neoverse_stage_a_final_early_20261102_v1/EXECUTION.md) 已完成真实第 10 轮的对照测试并在等待两个训练分片自然结束；它不替代渲染和动态验收。
+
 [前 10 轮训练曲线](experiments/gaussiangpt_neoverse_stage_a_interim_latent_20261102_v1/TRAIN_PREFIX_ANALYSIS.md) 中，组合图像损失从第 1 轮的 0.132495 降至第 10 轮的 0.130169；潜在状态损失基本持平。该组合值不是单独的图像 MAE，也不是固定模型评估。
 
 已完成的离线占据诊断覆盖 1512 个窗口预测：按 176 个物理未来帧等权，原预测支撑、使用真实目标格点选择预测特征、真实未来状态 codec 参考的运动 MAE 分别为 0.062531、0.057931、0.029464。真实目标格点只用于定位，不进入训练或实际预测。绿梁末帧的颜色区域代理 IoU 分别为 0、0.043132、0.904151；该代理不是物体追踪或动作成功率。[诊断记录与数据](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/EXECUTION.md)。
