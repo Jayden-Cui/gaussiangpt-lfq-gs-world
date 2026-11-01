@@ -34,4 +34,4 @@
 
 [交叉诊断已完成](experiments/gaussiangpt_neoverse_stage_b_cross_decode_20261102_v1/EXECUTION.md)：起点 decoder＋第 5 轮码为 0.031984，第 5 轮 decoder＋起点码为 0.094129；两种原配分别为 0.029776 和 0.086623。图像和指标均表明，两个已知窗口的阶段性回归与 decoder 变化高度相关；交叉组合可能不在训练分布内，不代表全片段的最终结果。
 
-已启动[全部 168 窗口的 h9 交叉诊断](experiments/gaussiangpt_neoverse_stage_b_cross_h9_20261102_v1/EXECUTION.md)，包括固定的四组变化强度统计与八个代表窗口静帧；这是一次无更新的推理检查，结果和视觉审查待完成。
+[全部 168 窗口的 h9 交叉诊断](experiments/gaussiangpt_neoverse_stage_b_cross_h9_20261102_v1/EXECUTION.md)已完成：同用第 5 轮码时，起点／第 5 轮 decoder 的运动 MAE 为 0.196871／0.084201；第 5 轮 decoder 在 166 窗口误差更低，但两个例外正是此前成功窗口 35 和 123。当前是全片段适配与锚点保留的权衡，不能直接冻结起点 decoder；这仍只是一条视频的 h9 离线诊断。

@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "result_sha256": "04e6ff093cdf03b90d0f496ed30844f7dadc53ffe46700e608ea28ab12fcf11d",
+  "source_groups_sha256": "b283b40fbda8a11095a769b82692da7c8ce5aaa6733fcb90a0b35895d8a9db57",
+  "paired_comparisons": {
+    "warm": {
+      "sweep05_decoder_lower_error": 166,
+      "warm_decoder_lower_error": 2,
+      "equal_error": 0,
+      "starts_where_warm_decoder_is_lower": [
+        35,
+        123
+      ],
+      "median_warm_minus_sweep05": 0.10181522183120251,
+      "scope": "Paired h9 results from highly overlapping windows in one training video; not independent statistical trials"
+    },
+    "sweep05": {
+      "sweep05_decoder_lower_error": 166,
+      "warm_decoder_lower_error": 2,
+      "equal_error": 0,
+      "starts_where_warm_decoder_is_lower": [
+        35,
+        123
+      ],
+      "median_warm_minus_sweep05": 0.11233429983258247,
+      "scope": "Paired h9 results from highly overlapping windows in one training video; not independent statistical trials"
+    }
+  }
+}

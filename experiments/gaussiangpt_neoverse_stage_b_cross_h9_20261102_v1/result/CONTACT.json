@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "starts": [
+    0,
+    35,
+    56,
+    84,
+    112,
+    123,
+    140,
+    167
+  ],
+  "panel": "source / warm decoder warm codes / warm decoder sweep05 codes / sweep05 decoder warm codes / sweep05 decoder sweep05 codes",
+  "inputs": [
+    {
+      "start": 0,
+      "sha256": "a7083b10371a4f8ec7e61029f56f19d8c9260cac84c2a878014182b06cb29fa4"
+    },
+    {
+      "start": 35,
+      "sha256": "f6e5b76f3ddce92c203929cc63196ec82554d07240af6499696bdc50e0aa6ba8"
+    },
+    {
+      "start": 56,
+      "sha256": "74e9dce37f03a5b082fe3684662ba025bcd059d4a1b54bb4a855b96e398352e1"
+    },
+    {
+      "start": 84,
+      "sha256": "a5ab0a7d9a6463636a3793404caec2f051928b022ecb872f30c4ad9cd69f93bb"
+    },
+    {
+      "start": 112,
+      "sha256": "3dffda054927df7de2dc7575e5c4bb2fa4788e0b1d82cf35196ba4c7a381b768"
+    },
+    {
+      "start": 123,
+      "sha256": "26564bada70984409de4c9249c5a049c8ab7e5d655eebf7cc7c4947e657768f5"
+    },
+    {
+      "start": 140,
+      "sha256": "92493ed6dab83692756cec8551049529956037e896b47ab28cf78e988dd68d6a"
+    },
+    {
+      "start": 167,
+      "sha256": "234a69a932e144b5e2414617515bd7404eea05f9f1449d52bdc7b7cb4c1f73ec"
+    }
+  ],
+  "sha256": "9858bd12a35e2764dcd52922ec35c8497823f53a9e058de9edffa3f3dccaf1d3"
+}

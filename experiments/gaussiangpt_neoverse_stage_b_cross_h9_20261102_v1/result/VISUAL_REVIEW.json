@@ -1,0 +1,10 @@
+{
+  "status": "reviewed",
+  "scope": "Eight preselected train-video windows, one h9 frame each, four decoder/code combinations",
+  "reviewed_starts": [0, 35, 56, 84, 112, 123, 140, 167],
+  "observations": {
+    "warm_decoder": "Preserves the two known anchors but shows substantial black regions, ghosting or incorrect geometry in multiple other sampled windows.",
+    "sweep05_decoder": "Recovers recognizable static block structures in several non-anchor samples, while the yellow and green moving pieces regress in the two known anchors and the green object is not clearly preserved in start 112."
+  },
+  "limitations": ["One horizon per window cannot demonstrate motion continuity", "Color and geometry are visually assessed without manual instance segmentation", "Not cross-video validation or independent native GS replay"]
+}
