@@ -1,0 +1,11 @@
+{
+  "status": "started",
+  "pid": 789200,
+  "started_utc": "2026-11-02T00:26:18+00:00",
+  "watch_started_sha256": "2e7eca871f9447b8aa9ae32061fd9b4aeac2801887cbf9b41119ae098b53521d",
+  "code_sha256": "9bc3407ee8d63d88d17eb20fabb58ca2b814d1d8567ac665c0ceffd5661277e5",
+  "axis_code_sha256": "f2b5ef152256a879d09eec9e7a1077942bda8081558a0fa4fcc246f68d08538c",
+  "gpu_used": false,
+  "training_signalled": false,
+  "manual_dynamic_review_required": true
+}

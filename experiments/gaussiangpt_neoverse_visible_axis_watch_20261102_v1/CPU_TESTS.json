@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "code_sha256": "9bc3407ee8d63d88d17eb20fabb58ca2b814d1d8567ac665c0ceffd5661277e5",
+  "watcher_sha256": "9bcf91162a3499dcd1958528efedc07d6530e5145263bff2ad75068b8d4d5cdb",
+  "test_sha256": "3f544a7a3633b3e8cc42e206831e0044fe764ce943948142227d92fdbafdbab3",
+  "expected_axis_manifest_sha256": "f2b5ef152256a879d09eec9e7a1077942bda8081558a0fa4fcc246f68d08538c",
+  "checks": [
+    "18 distinct frame bindings",
+    "full source hash",
+    "correct checkpoint",
+    "radius monotonicity",
+    "nonfinite rejection",
+    "automatic acceptance rejected"
+  ],
+  "scope": "CPU synthetic report validation; not B result"
+}
