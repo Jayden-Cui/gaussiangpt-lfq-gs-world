@@ -13,3 +13,5 @@
 134 服务器已启动训练，协调器 PID 为 `792965`，训练进程 PID 为 `792967`。真实 GPU 预检通过并恢复初值，初始两窗口运动 MAE 复现为 0.02977625250，与旧参考 0.02977625270 一致。[启动记录](LAUNCHED.json)、[GPU 预检](run/training/PREFLIGHT.json)、[初始预览](run/training/preview_00/PREVIEW.json)。
 
 为可能的后续扩展，已用历史 B checkpoint 完成[采样前缀与 Adam 状态 CPU 审计](../gaussiangpt_neoverse_anchor_replay_resume_audit_20261102_v1/RESULTS.md)；这不是对当前回放 checkpoint 的验收，后者仍须等实际结果产生后单独核对。
+
+[第 1 轮两窗口预览](run/training/preview_01/VISUAL_REVIEW.md)的运动 MAE 为 0.066167，高于 warm 起点 0.029776；黄条与绿梁仍有明显退化。此为预设中间节点，尚无五轮全片段评估及独立重放结果。

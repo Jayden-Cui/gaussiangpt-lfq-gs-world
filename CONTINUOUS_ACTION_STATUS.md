@@ -18,7 +18,7 @@
 
 为定位固定 decoder 下的码优化是否充分，[两窗口连续码补充优化](experiments/gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/RESULTS.md)已完成 360 次 B2 更新：黄条／绿梁窗口运动 MAE 从 0.071210／0.072769 降至 0.069382／0.070329，但黄条仍断裂、绿梁仍消失。该有限预算诊断不能替代全 168 窗口训练和验收。
 
-[关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/README.md)已启动：每轮仍完整遍历 1512 个窗口／跨度对，同时均衡增加两窗口回放，共计划 2115 次 B4 更新。真实 GPU 预检通过，warm 初始两窗口误差复现为 0.029776。第 5 轮将自动进行全窗口评估与 GS 独立重放；当前尚无该轮结果。
+[关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/README.md)已启动：每轮仍完整遍历 1512 个窗口／跨度对，同时均衡增加两窗口回放，共计划 2115 次 B4 更新。真实 GPU 预检通过，warm 初始两窗口误差复现为 0.029776；[第 1 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_01/VISUAL_REVIEW.md)为 0.066167，动作仍明显退化。第 5 轮将自动进行全窗口评估与 GS 独立重放；当前尚无该轮结果。
 
 ## 后续阶段
 
