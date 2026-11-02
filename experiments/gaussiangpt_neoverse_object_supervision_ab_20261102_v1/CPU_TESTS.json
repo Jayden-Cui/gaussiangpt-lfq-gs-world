@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "checks": [
+    "color_components_and_spatial_scope",
+    "source_target_union_and_frame_indexing",
+    "nonzero_object_gradient_only_inside_union",
+    "empty_mask_is_finite_zero",
+    "matched_two_sweep_continuation_preserves_parent_prefix",
+    "masks_not_added_to_decoder_inputs"
+  ],
+  "schedule": {
+    "updates": 846,
+    "cumulative_updates": 2961,
+    "sha256": "04dcebe46da2d48e62ef497c73498e8e5e91e531bb7864fd0ae2928afb20d17c",
+    "base_visits_per_pair": 2,
+    "replay_visits_per_anchor_pair": 20,
+    "full_schedule": {
+      "status": "passed",
+      "windows": 168,
+      "horizons": 9,
+      "base_pairs": 1512,
+      "sweeps": 7,
+      "updates": 2961,
+      "base_visits_per_pair": 7,
+      "replay_visits_per_anchor_pair": 70,
+      "total_visits_per_anchor_pair": 77,
+      "base_batches_per_sweep": 378,
+      "replay_batches_per_sweep": 45,
+      "sha256": "2cbd6e3db39b1683bff156c123efec2d1a2ff11eff4f5a9f9994bed0815df38e"
+    }
+  },
+  "code_sha256": "0a35e1a0e085ff4fd953138e2b4782ea7fc1376b61b748ff6c93a7da23cc8990"
+}

@@ -18,7 +18,11 @@
 
 为定位固定 decoder 下的码优化是否充分，[两窗口连续码补充优化](experiments/gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/RESULTS.md)已完成 360 次 B2 更新：黄条／绿梁窗口运动 MAE 从 0.071210／0.072769 降至 0.069382／0.070329，但黄条仍断裂、绿梁仍消失。该有限预算诊断不能替代全 168 窗口训练和验收。
 
-[关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/README.md)已启动：每轮仍完整遍历 1512 个窗口／跨度对，同时均衡增加两窗口回放，共计划 2115 次 B4 更新。真实 GPU 预检通过，warm 初始两窗口误差复现为 0.029776；[第 1 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_01/VISUAL_REVIEW.md)为 0.066167，动作仍明显退化。第 5 轮将自动进行全窗口评估与 GS 独立重放；当前尚无该轮结果。
+[关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/SUMMARY.json)已完成 2115 次 B4 更新、1512 项评估和 104 包／208 视角独立重放。全片段运动 MAE 为 0.074263，两关键窗口为 0.049926，黄条／绿梁分别为 0.048557／0.051294；绿梁在搬运中段仍缺失，尚不能选作全片段教师。相对同样五轮基础遍历的旧实验，本次增加了 225 次回放更新，不能作为严格等预算对照。重放一致性通过不代表动作恢复通过。
+
+[绿梁数据检查](experiments/gaussiangpt_neoverse_green_beam_data_audit_20261102_v2/RESULTS.md)核对了全部 177 帧源图像与训练缓存、状态哈希，以及绿梁附近的 GS 和窗口映射，未发现所查对齐错误。第五轮绿梁关键窗口每个未来步实际访问 55 次，真实未来状态 codec 可保留绿梁。现有手部加权区域平均仅覆盖该窗口 24.15% 的绿色像素，h6／h7 完全未覆盖；这是监督设计线索，尚不能单独认定根因。
+
+据此启动[物体区域监督 A/B 实验](experiments/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/README.md)：两组从同一第五轮 checkpoint 恢复 decoder、自由码和 Adam 状态，使用完全相同的第 6、7 轮采样，各追加 846 次 B4 更新。唯一训练目标差异为物体区域 RGB 损失权重 0 或 1。177 帧颜色掩码已目视检查，CPU 检查和两组真实 GPU 梯度／恢复预检通过；尚无本轮训练效果结论。训练后自动进行全窗口评估、GS 重放及物体代理报告，仍需逐帧动态审查。
 
 [第 3 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_03/VISUAL_REVIEW.md)的运动 MAE 已从第 1 轮的 0.066167 降至 0.051312，但仍高于初始的 0.029776；绿梁仍有明显缺失。预览尚不覆盖全片段或独立重放。
 

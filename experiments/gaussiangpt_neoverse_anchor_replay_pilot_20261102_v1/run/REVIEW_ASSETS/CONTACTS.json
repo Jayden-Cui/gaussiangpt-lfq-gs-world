@@ -1,0 +1,242 @@
+{
+  "status": "complete",
+  "sweep": 5,
+  "evaluation_sha256": "6857c6842c25d83250b43f5bda55dba5cf2b38a11bc08204985d9db030cdcd8d",
+  "native_replay_sha256": "c7580dc03a3326718ee39b1947e8e4d635a7c3feb0f2d78b90dbb71f533c2192",
+  "starts": [
+    0,
+    35,
+    56,
+    84,
+    112,
+    123,
+    140,
+    167
+  ],
+  "horizons": [
+    0,
+    3,
+    6,
+    9
+  ],
+  "rows": [
+    {
+      "start": 0,
+      "file": "s000_contact.png",
+      "sha256": "44ee94f033ff85e29cb47545bba195932be407df0e2b076de7d1776489e3250c",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s000/frame_00.png",
+          "sha256": "66041e8c258d483ea92b546cf51bfd7e1f4f095fe51c2277dc264fd7b0c7c8f6"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s000/frame_03.png",
+          "sha256": "fbc58e264891d44e52ff44c42090c190457914fd6c9758a1b40383c41c8e7a94"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s000/frame_06.png",
+          "sha256": "a061d12143c71cdb9e74be99062c06f4ff4bec3b4bc3c2ed8a4d5402b83f56c9"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s000/frame_09.png",
+          "sha256": "f0b550f2ce9bd5b59c0d439d10b7bc51e85cd4ad457cea1c18dec687ee656686"
+        }
+      ]
+    },
+    {
+      "start": 35,
+      "file": "s035_contact.png",
+      "sha256": "7ab71650adb1fd3cf1e3f007afa6caba90cc5003a7930a7832a09dd9df51b337",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s035/frame_00.png",
+          "sha256": "915557acd11766f7d113f666792db4c590cc954a4ae209ef38e0c5e32fff9fb1"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s035/frame_03.png",
+          "sha256": "93176067efeb4d494f64f8d2c98d64e548767eff932dbc99dcafa25b32aa41d0"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s035/frame_06.png",
+          "sha256": "5efea4d37141ca65dd9a8de9c34b42458a6029b3a32b0ce1d591a2aa3778c0fa"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s035/frame_09.png",
+          "sha256": "06d7626848c05c5706b7c66d63b66bb50f7223d4701a5d90820389ce83d6c367"
+        }
+      ]
+    },
+    {
+      "start": 56,
+      "file": "s056_contact.png",
+      "sha256": "74f263e9b36eb11f6dd024c2da807abfa43f745b983e8c7c78c90d72be34bbf6",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s056/frame_00.png",
+          "sha256": "bc24149b0d01a8034dea611932930cb16843fbe45e8885501db168a8e8f117a5"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s056/frame_03.png",
+          "sha256": "cd5481c168db9481e020e0ffe3f12f511d9d25aae21d384fab637d2fb0a42a6e"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s056/frame_06.png",
+          "sha256": "11830e591fc42c2bf340c8f05646ff3e07845d45651624cabf4de89927503b2f"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s056/frame_09.png",
+          "sha256": "94f6ba684feeb696b979563c77b4aa8c2d342b7881984d78606a3148dab4a109"
+        }
+      ]
+    },
+    {
+      "start": 84,
+      "file": "s084_contact.png",
+      "sha256": "f74e011304a514e3aa58837d97c0032aebf6c07bd6bc844a36d5e6101d73fdb5",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s084/frame_00.png",
+          "sha256": "31d428866be486ad7966b86c3d1c1e4ad9f0420061e9324f4d4e83d8d8131831"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s084/frame_03.png",
+          "sha256": "d8881c13ca9e9cb5ad4c23d8eaf3bc3ddfed974cb0f96777be66e873d9942430"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s084/frame_06.png",
+          "sha256": "fc2efce62378795a974da04ae20c3ef12f6a6512e6ae58f3369cc0b2fef1a275"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s084/frame_09.png",
+          "sha256": "85bc8315b45d3fcf2b8ec079573ffd307da4e8e7c9fec09557834240a7787c7e"
+        }
+      ]
+    },
+    {
+      "start": 112,
+      "file": "s112_contact.png",
+      "sha256": "aae157afb8e168dd076869ff17e92dc1e3c17756d275b6d5e850fcefec6b5ffb",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s112/frame_00.png",
+          "sha256": "be2ab60af3df9f6d1e819ec0f1d29ba7712efe8b75da9ab59927059221f7b389"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s112/frame_03.png",
+          "sha256": "8d192b3e750fb090dba309c3456ce4d1508031d8dd70860ec98cbecfdeafde6d"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s112/frame_06.png",
+          "sha256": "a8b541c55ef24430cf7a49c5532aefbddc9bff9722870959b394f3c59b0b94eb"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s112/frame_09.png",
+          "sha256": "12572ba16410ec9d1ac0c34e213c18ee89d851fe53a2e31ff69d607f9263aec0"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_contact.png",
+      "sha256": "a32ff4f6296e97481e012488849e82ed6abf1faf7f9bf7fcdf93a1254fb46392",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s123/frame_00.png",
+          "sha256": "e6668b34fb283881a5bc431b1df6bec6fba18d2f39020ea9e999cdc942023e4b"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s123/frame_03.png",
+          "sha256": "6b9f204dd8e66e5068a151253813b27668e131fd5a75d7fe63f29ecdeb775360"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s123/frame_06.png",
+          "sha256": "0d927ac9b0f74ba855ebb740ab8588326ba941a64e2f4b2ad106c1d7acc47899"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s123/frame_09.png",
+          "sha256": "abd64263142dba4215aa529bfc852178cd5e874a8587a43423142d7a078c02b3"
+        }
+      ]
+    },
+    {
+      "start": 140,
+      "file": "s140_contact.png",
+      "sha256": "87421138d8e9c22cf6786931f1c56f722f356a995e50d43f5f0c466e1d47ec0b",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s140/frame_00.png",
+          "sha256": "3b8c5cb2e6e80c9b086c8308e4b4f852effa423e5eb85d1402ab6c21d8b0de6e"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s140/frame_03.png",
+          "sha256": "1c511a7cf87086d604b485bc09f0928bc62601e7f03f8ff23c972ce5789efc08"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s140/frame_06.png",
+          "sha256": "532f6b73d62ef6a7cb46bd2681be4227e4f4aa77c9803dd5abcfd18d733ac07e"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s140/frame_09.png",
+          "sha256": "83e38b390f9e0a6fe6fdb9a523b91c594f006436bf8062c6b30c98aff4b3b588"
+        }
+      ]
+    },
+    {
+      "start": 167,
+      "file": "s167_contact.png",
+      "sha256": "7f29481e06e45b310ce7c2dedcc253dedef7bb3bb314e520afe2d5912e4a5756",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s167/frame_00.png",
+          "sha256": "45ab9aefd9713767a13ca95395ec7f825a716cccb94842e53e709b7237356320"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s167/frame_03.png",
+          "sha256": "a5fdc0ba21b7b0f683d9c24df554c8477847950d9a462e25918a4f208bdb7fe7"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s167/frame_06.png",
+          "sha256": "9dcb7f26dfadb1d53687890ea612fba9b56030d9d378b91f38649dc6732ef3d6"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/sweep_05/free_z/evaluation/snapshots/s167/frame_09.png",
+          "sha256": "53f780b7de5750367cbd280c7e1189ac34895613d0a01954bb056a87c452f745"
+        }
+      ]
+    }
+  ],
+  "labels_in_image": false,
+  "visual_verdict": "not yet reviewed"
+}

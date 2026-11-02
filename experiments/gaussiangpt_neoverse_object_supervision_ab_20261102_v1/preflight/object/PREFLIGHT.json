@@ -1,0 +1,195 @@
+{
+  "status": "passed",
+  "arm": "object",
+  "source": {
+    "schema": "object_supervision_matched_continuation_v1",
+    "arm": "object",
+    "object_weight": 1.0,
+    "parent_checkpoint_sha256": "3893e488174f5c44fc8b696526af71d6ba718ba073bbda936d1960644fbc2699",
+    "parent_decoder_digest": "01ad8d039efd57656300ab341219a716e708199b4d2ae40f0169c99fd42f2ae6",
+    "parent_optimizer_digest": "a018eb7b5b4f3aa3ada420241ea251dafecc0e2d0c4bdf2eef7a9a052ccbcc34",
+    "parent_code_digest": "4f55798f85adebf217bf35bc8df81b8c2eb5dacbf6d99c413651d39375d7d3bc",
+    "protocol_sha256": "a604e87bc11d7f9ba3ca4b73149a532c8f7de14fbca8a18edb5cb899d9cd215a",
+    "code_sha256": "0a35e1a0e085ff4fd953138e2b4782ea7fc1376b61b748ff6c93a7da23cc8990",
+    "sampler": {
+      "updates": 846,
+      "cumulative_updates": 2961,
+      "sha256": "04dcebe46da2d48e62ef497c73498e8e5e91e531bb7864fd0ae2928afb20d17c",
+      "base_visits_per_pair": 2,
+      "replay_visits_per_anchor_pair": 20,
+      "full_schedule": {
+        "status": "passed",
+        "windows": 168,
+        "horizons": 9,
+        "base_pairs": 1512,
+        "sweeps": 7,
+        "updates": 2961,
+        "base_visits_per_pair": 7,
+        "replay_visits_per_anchor_pair": 70,
+        "total_visits_per_anchor_pair": 77,
+        "base_batches_per_sweep": 378,
+        "replay_batches_per_sweep": 45,
+        "sha256": "2cbd6e3db39b1683bff156c123efec2d1a2ff11eff4f5a9f9994bed0815df38e"
+      }
+    },
+    "mask_receipt_sha256": "54a50ef575d1003bcd851a88e8368e398b2bbae6022201c4e0433e86ef0259d3",
+    "mask_review_sha256": "3ed3bd748733796c89d3a861b7a011d5986ae338761cc18085d1d4e791d0ac57",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "initial_context_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+    "restart_rng_seed": 20261102,
+    "quantized": false,
+    "training_parameter_signature": "15276fcce5844aa0b40362304535d2cd9b87ee8d39f4c471b8121bebd0f98a8a"
+  },
+  "probe": {
+    "windows": [
+      {
+        "start": 0,
+        "horizon": 9,
+        "loss": 0.29260921478271484,
+        "rgb_loss": 0.1445673555135727,
+        "latent_loss": 0.6135969161987305,
+        "occupancy_loss": 0.07419785112142563,
+        "feature_loss": 0.5393990874290466,
+        "predicted_nodes": 1075,
+        "gs_count": 58916,
+        "object_rgb_loss": 0.08668218553066254,
+        "object_weight": 1.0,
+        "object_regions": {
+          "per_color": [
+            0.04009866341948509,
+            0.13326570391654968
+          ],
+          "area": [
+            4511,
+            2137
+          ],
+          "present": [
+            true,
+            true
+          ]
+        },
+        "rgb_to_code_and_decoder_gradients": [
+          0.05240265280008316,
+          0.20377756655216217
+        ],
+        "object_to_code_and_decoder_gradients": [
+          0.11581461131572723,
+          0.3621211051940918
+        ]
+      },
+      {
+        "start": 35,
+        "horizon": 3,
+        "loss": 0.2413332462310791,
+        "rgb_loss": 0.11349859833717346,
+        "latent_loss": 0.7240790128707886,
+        "occupancy_loss": 0.07908561825752258,
+        "feature_loss": 0.6449933648109436,
+        "predicted_nodes": 1332,
+        "gs_count": 67592,
+        "object_rgb_loss": 0.055426739156246185,
+        "object_weight": 1.0,
+        "object_regions": {
+          "per_color": [
+            0.07193541526794434,
+            0.038918059319257736
+          ],
+          "area": [
+            5745,
+            411
+          ],
+          "present": [
+            true,
+            true
+          ]
+        },
+        "rgb_to_code_and_decoder_gradients": [
+          0.050478413701057434,
+          0.13676656782627106
+        ],
+        "object_to_code_and_decoder_gradients": [
+          0.025460582226514816,
+          0.15194976329803467
+        ]
+      },
+      {
+        "start": 123,
+        "horizon": 3,
+        "loss": 0.30068886280059814,
+        "rgb_loss": 0.13200601935386658,
+        "latent_loss": 0.7885931730270386,
+        "occupancy_loss": 0.11922338604927063,
+        "feature_loss": 0.6693698167800903,
+        "predicted_nodes": 1662,
+        "gs_count": 81848,
+        "object_rgb_loss": 0.08982351422309875,
+        "object_weight": 1.0,
+        "object_regions": {
+          "per_color": [
+            0.04818101227283478,
+            0.13146601617336273
+          ],
+          "area": [
+            4864,
+            3309
+          ],
+          "present": [
+            true,
+            true
+          ]
+        },
+        "rgb_to_code_and_decoder_gradients": [
+          0.02498600073158741,
+          0.12016677856445312
+        ],
+        "object_to_code_and_decoder_gradients": [
+          0.016633443534374237,
+          0.07726185023784637
+        ]
+      },
+      {
+        "start": 123,
+        "horizon": 6,
+        "loss": 0.28923141956329346,
+        "rgb_loss": 0.1271575391292572,
+        "latent_loss": 0.7885931730270386,
+        "occupancy_loss": 0.11922338604927063,
+        "feature_loss": 0.6693698167800903,
+        "predicted_nodes": 1823,
+        "gs_count": 95876,
+        "object_rgb_loss": 0.08321455121040344,
+        "object_weight": 1.0,
+        "object_regions": {
+          "per_color": [
+            0.033639729022979736,
+            0.13278937339782715
+          ],
+          "area": [
+            4815,
+            3678
+          ],
+          "present": [
+            true,
+            true
+          ]
+        },
+        "rgb_to_code_and_decoder_gradients": [
+          0.06568537652492523,
+          0.13569854199886322
+        ],
+        "object_to_code_and_decoder_gradients": [
+          0.0406121127307415,
+          0.10229192674160004
+        ]
+      }
+    ],
+    "preclip_gradient_norm": 0.516989529132843,
+    "clip_triggered": false
+  },
+  "control_parity": null,
+  "parent_anchor_motion_mae": 0.04992575343284342,
+  "restored_model_codes_adam": true,
+  "peak_allocated_gib": 5.093936443328857,
+  "elapsed_seconds": 20.972822517040186
+}

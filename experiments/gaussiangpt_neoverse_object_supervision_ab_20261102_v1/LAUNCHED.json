@@ -1,0 +1,7 @@
+{
+  "pid": 804344,
+  "code_sha256": "0a35e1a0e085ff4fd953138e2b4782ea7fc1376b61b748ff6c93a7da23cc8990",
+  "protocol_sha256": "a604e87bc11d7f9ba3ca4b73149a532c8f7de14fbca8a18edb5cb899d9cd215a",
+  "process_start_ticks": "57798880",
+  "result_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/run"
+}

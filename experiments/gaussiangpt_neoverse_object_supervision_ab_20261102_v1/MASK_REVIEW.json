@@ -1,0 +1,53 @@
+{
+  "status": "approved_for_training_proxy",
+  "mask_receipt_sha256": "54a50ef575d1003bcd851a88e8368e398b2bbae6022201c4e0433e86ef0259d3",
+  "reviewed_contacts": [
+    {
+      "file": "contact_000.png",
+      "sha256": "3b1629042f5d81df38cc3c3992ed9b9a35dc81ae2336afc28c77decd46f517e5"
+    },
+    {
+      "file": "contact_036.png",
+      "sha256": "eb92c0f9d28a84a1fc668154b394b35cb2e0ea1486b992dd31062b38fedafd30"
+    },
+    {
+      "file": "contact_072.png",
+      "sha256": "e12c429eadf85218c682fb8592322b37966b4c5e9dff631ff6dd552e3e841646"
+    },
+    {
+      "file": "contact_108.png",
+      "sha256": "cba95efa81d028bdcce11a5e9139e757f324baab045d4989dd31ca0e5e4e63fe"
+    },
+    {
+      "file": "contact_144.png",
+      "sha256": "2b34332dc8831d4eecc2eefa3abc4e45d541ce0c0b317a83e64d049e711704e5"
+    },
+    {
+      "file": "key_mask_review.png",
+      "sha256": "f2571c11e9b0becad70992e99383d970446c4178e3d9901e256dc274f3b5487a"
+    }
+  ],
+  "reviewed_physical_frame_range": [
+    0,
+    176
+  ],
+  "reviewed_key_frames": [
+    35,
+    38,
+    44,
+    123,
+    126,
+    129
+  ],
+  "observations": [
+    "已目视检查覆盖177帧的五张总览及关键动作放大图，选区基本对应可见黄色条与绿色横梁。",
+    "左侧绿色三角积木被空间范围排除，手和背景未成为主要选区。",
+    "绿梁被右手遮挡时允许为空或只保留可见片段，无遮挡后的绿色横梁重新被选中。"
+  ],
+  "limitations": [
+    "颜色与空间范围生成的是训练监督代理，不是人工实例分割真值。",
+    "黄色组包括两根可见黄条，不仅是正在移动的那根。",
+    "不补全不可见或被遮挡的物体；细小反光、阴影和边缘可能漏选。"
+  ],
+  "training_masks_enter_decoder": false
+}

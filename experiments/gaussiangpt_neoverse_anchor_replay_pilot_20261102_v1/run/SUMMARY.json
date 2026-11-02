@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "stage": "anchor_replay_pilot",
+  "sweep": 5,
+  "train_done_sha256": "a9f813523746e61ef49e7496cd64130bd5b1908dcec96eaed37dd666845a4052",
+  "evaluation_sha256": "6857c6842c25d83250b43f5bda55dba5cf2b38a11bc08204985d9db030cdcd8d",
+  "native_replay_sha256": "c7580dc03a3326718ee39b1947e8e4d635a7c3feb0f2d78b90dbb71f533c2192",
+  "baseline_evaluation_sha256": "2b3267c5b55cbbf945ba33d527900b1b5f256d491bdd8793348874ab99541468",
+  "pilot_motion_mae": 0.07426317208707785,
+  "baseline_motion_mae": 0.07521378919553624,
+  "pilot_anchor_motion_mae": 0.04992575301892228,
+  "baseline_anchor_motion_mae": 0.08662282013230854,
+  "original_two_window_anchor_motion_mae": 0.02977625270270639,
+  "pilot_dynamic_anchors": {
+    "35": {
+      "name": "moving_yellow_bar",
+      "visible_target_frames": 9,
+      "retention_fraction": 1.0,
+      "center_within_10pct_fraction": 1.0,
+      "median_axis_error_degrees": 7.468798941370963,
+      "maximum_consecutive_missing_frames": 0,
+      "frames": [
+        {
+          "frame": 36,
+          "horizon": 1,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.03330386069848998,
+          "axis_error_degrees": 6.071494067988226,
+          "iou": 0.620875824835033,
+          "target_centroid": [
+            272.36801040312093,
+            138.28738621586476
+          ],
+          "prediction_centroid": [
+            274.35309278350513,
+            136.47508591065292
+          ]
+        },
+        {
+          "frame": 37,
+          "horizon": 2,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.03191213661703199,
+          "axis_error_degrees": 16.195258793815967,
+          "iou": 0.2831016825164594,
+          "target_centroid": [
+            270.15269461077844,
+            129.874251497006
+          ],
+          "prediction_centroid": [
+            268.4593301435407,
+            127.67224880382776
+          ]
+        },
+        {
+          "frame": 38,
+          "horizon": 3,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.011170415997580738,
+          "axis_error_degrees": 1.4431371284340742,
+          "iou": 0.42870456663560114,
+          "target_centroid": [
+            266.3261882572227,
+            111.3923578751165
+          ],
+          "prediction_centroid": [
+            266.9760869565217,
+            110.15652173913044
+          ]
+        },
+        {
+          "frame": 39,
+          "horizon": 4,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.09359785545022851,
+          "axis_error_degrees": 5.047734216740572,
+          "iou": 0.4396355353075171,
+          "target_centroid": [
+            265.27846975088966,
+            98.31583629893238
+          ],
+          "prediction_centroid": [
+            258.12823834196894,
+            89.83549222797927
+          ]
+        },
+        {
+          "frame": 40,
+          "horizon": 5,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.04741137655129426,
+          "axis_error_degrees": 7.640042063526927,
+          "iou": 0.6530359355638166,
+          "target_centroid": [
+            263.7233523189585,
+            85.26525630593979
+          ],
+          "prediction_centroid": [
+            263.5608061153579,
+            79.70674079221682
+          ]
+        },
+        {
+          "frame": 41,
+          "horizon": 6,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.06748299125229634,
+          "axis_error_degrees": 7.468798941370963,
+          "iou": 0.5462268865567217,
+          "target_centroid": [
+            261.2933025404157,
+            77.79984603541186
+          ],
+          "prediction_centroid": [
+            256.8111420612813,
+            73.84791086350975
+          ]
+        },
+        {
+          "frame": 42,
+          "horizon": 7,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.032843256957315534,
+          "axis_error_degrees": 3.6665015661761657,
+          "iou": 0.7059151785714286,
+          "target_centroid": [
+            256.25035063113603,
+            76.9523141654979
+          ],
+          "prediction_centroid": [
+            253.44022072348253,
+            75.90741876149602
+          ]
+        },
+        {
+          "frame": 43,
+          "horizon": 8,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.05841498651802224,
+          "axis_error_degrees": 8.149658052269018,
+          "iou": 0.691162343900096,
+          "target_centroid": [
+            249.5662568306011,
+            76.48087431693989
+          ],
+          "prediction_centroid": [
+            245.59795819154107,
+            72.9280505590666
+          ]
+        },
+        {
+          "frame": 44,
+          "horizon": 9,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.051320329215285176,
+          "axis_error_degrees": 13.340077910013946,
+          "iou": 0.6255528255528255,
+          "target_centroid": [
+            244.0528750826173,
+            75.50495703899537
+          ],
+          "prediction_centroid": [
+            239.79888579387188,
+            77.27910863509749
+          ]
+        }
+      ],
+      "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+    },
+    "123": {
+      "name": "green_crossbar",
+      "visible_target_frames": 9,
+      "retention_fraction": 0.8888888888888888,
+      "center_within_10pct_fraction": 0.1111111111111111,
+      "median_axis_error_degrees": 3.126339776375886,
+      "maximum_consecutive_missing_frames": 1,
+      "frames": [
+        {
+          "frame": 124,
+          "horizon": 1,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.189451729833383,
+          "axis_error_degrees": 14.300338727540606,
+          "iou": 0.049315068493150684,
+          "target_centroid": [
+            286.0084825636192,
+            45.13100848256362
+          ],
+          "prediction_centroid": [
+            289.92045454545456,
+            57.13636363636363
+          ]
+        },
+        {
+          "frame": 125,
+          "horizon": 2,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.030453947536564174,
+          "axis_error_degrees": 1.4519548579576451,
+          "iou": 0.48584070796460177,
+          "target_centroid": [
+            272.87433628318587,
+            35.38761061946903
+          ],
+          "prediction_centroid": [
+            271.2112932604736,
+            34.06193078324226
+          ]
+        },
+        {
+          "frame": 126,
+          "horizon": 3,
+          "target_visible": true,
+          "prediction_visible": false,
+          "centroid_error_over_target_bbox_diagonal": null,
+          "axis_error_degrees": null,
+          "iou": 0.0,
+          "target_centroid": [
+            258.74068071312803,
+            30.87196110210697
+          ],
+          "prediction_centroid": null
+        },
+        {
+          "frame": 127,
+          "horizon": 4,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.25824874993883856,
+          "axis_error_degrees": 9.868882035521438,
+          "iou": 0.0,
+          "target_centroid": [
+            245.4112718964204,
+            29.02056359482102
+          ],
+          "prediction_centroid": [
+            245.64285714285714,
+            47.857142857142854
+          ]
+        },
+        {
+          "frame": 128,
+          "horizon": 5,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.1609062016966087,
+          "axis_error_degrees": 1.6731702184460175,
+          "iou": 0.07655172413793103,
+          "target_centroid": [
+            233.86766809728184,
+            29.88483547925608
+          ],
+          "prediction_centroid": [
+            234.66871165644173,
+            42.239263803680984
+          ]
+        },
+        {
+          "frame": 129,
+          "horizon": 6,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.1822649235943707,
+          "axis_error_degrees": 26.4989705281252,
+          "iou": 0.012219959266802444,
+          "target_centroid": [
+            223.85596140592693,
+            33.59751895244659
+          ],
+          "prediction_centroid": [
+            220.325,
+            47.25
+          ]
+        },
+        {
+          "frame": 130,
+          "horizon": 7,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.14637520593635275,
+          "axis_error_degrees": 0.7212075728126024,
+          "iou": 0.3370666666666667,
+          "target_centroid": [
+            215.2941176470588,
+            38.653979238754324
+          ],
+          "prediction_centroid": [
+            209.00376647834275,
+            47.9924670433145
+          ]
+        },
+        {
+          "frame": 131,
+          "horizon": 8,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.1891991028781945,
+          "axis_error_degrees": 4.169665620062318,
+          "iou": 0.3794815223386652,
+          "target_centroid": [
+            208.21210013908205,
+            42.971488178025034
+          ],
+          "prediction_centroid": [
+            195.63123236124176,
+            49.77046095954845
+          ]
+        },
+        {
+          "frame": 132,
+          "horizon": 9,
+          "target_visible": true,
+          "prediction_visible": true,
+          "centroid_error_over_target_bbox_diagonal": 0.10150233840175868,
+          "axis_error_degrees": 2.083013932689454,
+          "iou": 0.7072018890200709,
+          "target_centroid": [
+            203.8440610484406,
+            47.05374917053749
+          ],
+          "prediction_centroid": [
+            196.07292418772562,
+            48.762454873646206
+          ]
+        }
+      ],
+      "scope": "HSV/ROI proxy, not tracked 3D pose or action success"
+    }
+  },
+  "contacts_sha256": "0c53d18be754926f8260be75563bfed3ea933d1747fb69622b4b294a85129a95",
+  "axis_report_sha256": "ac4b5c94a6141cda46c1f2d85f9af3a2ba438cd29b47990dc2f964240a04436b",
+  "eight_window_report_sha256": "35d71a2c193db0a09a1a64e80f9bc29efe6c1127f847b6c2e59df0ba284ae117",
+  "comparison_caveat": "Same five full base passes and warm initialization; replay adds 225 B4 updates and changes batch ordering",
+  "manual_dynamic_review_required": true,
+  "action_codec_complete": false,
+  "scope": "One training video; not a validated posterior or cross-video generalization",
+  "elapsed_seconds": 4851.352751846076
+}

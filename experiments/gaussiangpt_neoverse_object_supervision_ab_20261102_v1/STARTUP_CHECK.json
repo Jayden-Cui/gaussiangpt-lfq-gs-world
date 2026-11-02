@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-02T03:34:36.516596+00:00",
+  "launch": {
+    "pid": 804344,
+    "code_sha256": "0a35e1a0e085ff4fd953138e2b4782ea7fc1376b61b748ff6c93a7da23cc8990",
+    "protocol_sha256": "a604e87bc11d7f9ba3ca4b73149a532c8f7de14fbca8a18edb5cb899d9cd215a",
+    "process_start_ticks": "57798880",
+    "result_root": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/run"
+  },
+  "arms": {
+    "control": {
+      "pid": 804347,
+      "start_ticks": "57798890",
+      "command": "/data/CJH/envs/gaussiangpt/bin/python -B /data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/trial_worker.py train --arm control --out /data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/run/control/training ",
+      "status": {
+        "status": "running",
+        "arm": "control",
+        "additional_updates": 1,
+        "planned_updates": 846,
+        "cumulative_step": 2116,
+        "sweep": 6,
+        "elapsed_seconds": 14.752038188045844
+      }
+    },
+    "object": {
+      "pid": 804348,
+      "start_ticks": "57798891",
+      "command": "/data/CJH/envs/gaussiangpt/bin/python -B /data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/trial_worker.py train --arm object --out /data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/run/object/training ",
+      "status": {
+        "status": "running",
+        "arm": "object",
+        "additional_updates": 1,
+        "planned_updates": 846,
+        "cumulative_step": 2116,
+        "sweep": 6,
+        "elapsed_seconds": 14.370752991992049
+      }
+    }
+  },
+  "status": "both_training_verified"
+}
