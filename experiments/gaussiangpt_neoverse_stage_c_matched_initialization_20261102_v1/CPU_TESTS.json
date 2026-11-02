@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "code_sha256": "c78dfa8f275f973f4fe0f29b09505d9f54118f1c8187b62bf8142fc558df7d49",
+  "base_driver_sha256": "8aa8d5e5d94e3742addb85783e6acf2e2b401400954450f44c7f2ab5248e6570",
+  "variants_manifest_sha256": "83590f1bf8b6b2c229154613def8dcd9e5a343234c5510483b77ff29ee145e3d",
+  "original_time_projection_max_abs_difference": 0.04353701323270798,
+  "original_time_projection_rms_difference": 0.014030195772647858,
+  "matched_time_projection_bitwise_equal": true,
+  "shared_q_and_encoder_identical": true,
+  "legacy_delta_and_other_parameters_unchanged": true,
+  "legacy_cpu_rng_state_unchanged": true,
+  "c0_c1_and_time_only_unchanged": {
+    "C0": true,
+    "C1": true,
+    "C2_time": true
+  },
+  "wrapper_binding_hook_passed": true,
+  "gpu_used": false,
+  "teacher_changed": false,
+  "training_performed": false,
+  "scope": "Real frozen base modules on CPU; simulated wrapper call; no reviewed teacher or GPU training"
+}

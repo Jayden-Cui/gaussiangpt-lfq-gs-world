@@ -64,4 +64,6 @@
 
 [搭积木来源组盘点](experiments/gaussiangpt_neoverse_group_split_inventory_20261102_v1/RESULTS.md)确认目录中有 60 个各 177 帧的视频片段，按文件名分属 22 组；60 个原文件摘要均已重算，当前已登记的 3 段与旧绑定一致。其他 57 段没有自动进入多源状态接口。新增分组扩展检查保留既有训练／评估角色，拒绝同组片段跨两侧；尚未新增多视频动作训练或建立全新独立测试集。
 
+[阶段 C 初始化对照修正](experiments/gaussiangpt_neoverse_stage_c_matched_initialization_20261102_v1/RESULTS.md)使“只加时间”和“时间＋变化”共享相同的时间投影初值；真实旧模型的 CPU 检查确认 Q／编码器、变化投影及随机数状态符合预期。该入口尚未绑定通过验收的全片段教师，也未开始正式训练。
+
 [两窗口冻结前缀 memory 输入审计](experiments/gaussiangpt_neoverse_paired_prefix_memory_audit_20261102_v1/RESULTS.md)确认：真实运动前缀和重复初态前缀在相邻帧即有世界格点和 64 维特征差异；远期前缀差异更大。这不证明 Q 已学会读取动作，也不能把网格变化直接解释为物体位移。

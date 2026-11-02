@@ -1,0 +1,11 @@
+{
+  "schema": "stage_c_matched_time_initialization_v1",
+  "initializer_policy": "match_time_only_shared_projection_v1",
+  "legacy_driver_sha256": "8aa8d5e5d94e3742addb85783e6acf2e2b401400954450f44c7f2ab5248e6570",
+  "legacy_driver_test_sha256": "fe2061483762a9a71691278abbc68948290009012a25ab64354a742a9f77db1f",
+  "posterior_variants_manifest_sha256": "83590f1bf8b6b2c229154613def8dcd9e5a343234c5510483b77ff29ee145e3d",
+  "scope": "C0/C1 and time-only unchanged; align shared time projection when C2 includes both time and change",
+  "teacher_selection_automatic": false,
+  "gpu_training_started": false,
+  "quantized": false
+}
