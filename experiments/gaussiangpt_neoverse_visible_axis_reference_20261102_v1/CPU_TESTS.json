@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "code_sha256": "f2b5ef152256a879d09eec9e7a1077942bda8081558a0fa4fcc246f68d08538c",
+  "axis_audit_sha256": "1cdf2beaccf9afa331f4282120b0eaa6d19b29142b3b047006369d3b923a7909",
+  "reference_sha256": "6f031ec5fc18e2f188e242979c17cf9f20e87b56e8a33a0234e0b542f7be8fdf",
+  "geometry_tests_sha256": "524e7b8905a1d3ea6cb00a44c6c8c1637685c5a0c459300e1bc39f3eab00862d",
+  "integration_tests_sha256": "926158518e741ea30c115974846fec573c76d891e8e115deaeb3a7e75d2722b6",
+  "actual_two_window_diagnostic_sha256": "044f9bdf2ebcf9f42b2f6aa05727ad747496ad3bd38542332ce555f3e5f7d503",
+  "geometry_checks": [
+    "distance_thresholds",
+    "empty_mask",
+    "invalid_points",
+    "changed_source_rejected"
+  ],
+  "integration_checks": [
+    "simulated_1512_pair_evaluation",
+    "stage_b_panel_mapping",
+    "full_coverage_required",
+    "source_pixel_binding",
+    "evaluation_hash_required"
+  ],
+  "integration_is_synthetic": true,
+  "actual_b_evaluation_tested": false,
+  "source_image_frames": 18,
+  "interpretation": "CPU engineering checks and 18 real source images; no stage-B result or teacher-acceptance claim"
+}

@@ -1,0 +1,794 @@
+{
+  "status": "complete",
+  "schema": "visible_source_axis_diagnostic_v1",
+  "reference_sha256": "6f031ec5fc18e2f188e242979c17cf9f20e87b56e8a33a0234e0b542f7be8fdf",
+  "analysis_code_sha256": "1cdf2beaccf9afa331f4282120b0eaa6d19b29142b3b047006369d3b923a7909",
+  "source_baseline_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "evaluation_sha256": null,
+  "evaluation_source": null,
+  "thresholds_px": [
+    2,
+    4,
+    8
+  ],
+  "sampled_points_per_axis": 100,
+  "summaries": {
+    "35": {
+      "source": {
+        "2": 0.9033333333333334,
+        "4": 0.9377777777777777,
+        "8": 0.9955555555555556
+      },
+      "two_window_free_motion": {
+        "2": 0.8744444444444445,
+        "4": 0.9288888888888889,
+        "8": 0.9833333333333333
+      },
+      "two_window_q_motion": {
+        "2": 0.88,
+        "4": 0.931111111111111,
+        "8": 0.9833333333333333
+      },
+      "two_window_q_static": {
+        "2": 0.1711111111111111,
+        "4": 0.20111111111111113,
+        "8": 0.27888888888888885
+      }
+    },
+    "123": {
+      "source": {
+        "2": 0.991111111111111,
+        "4": 0.9955555555555556,
+        "8": 1.0
+      },
+      "two_window_free_motion": {
+        "2": 0.9611111111111111,
+        "4": 0.9822222222222222,
+        "8": 1.0
+      },
+      "two_window_q_motion": {
+        "2": 0.9655555555555557,
+        "4": 0.9844444444444443,
+        "8": 1.0
+      },
+      "two_window_q_static": {
+        "2": 0.0811111111111111,
+        "4": 0.09333333333333334,
+        "8": 0.16333333333333333
+      }
+    }
+  },
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "object": "yellow",
+      "source_target_rgb_sha256": "08f0f62a0e6ee6574153d50d09a21aa202b2168a880244dadc78b8430efc6649",
+      "free_end_xy": [
+        248,
+        124
+      ],
+      "visible_interior_xy": [
+        282,
+        133
+      ],
+      "input_binding": {
+        "free_image_sha256": "63826d7dc474d5e9ba18f8d6fe849ca7c77b2d80df363629e6e6b0b4c0dbbb7d",
+        "q_image_sha256": "29f736be163e938e34fe58a7ef11494d343ae2cdbe17c5eb5704c8ce7a227ccf"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.98,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "object": "yellow",
+      "source_target_rgb_sha256": "99bb7409d95a81083e92d054226815cdbb0756f3b0672650f6ad760efa07d68d",
+      "free_end_xy": [
+        245,
+        112
+      ],
+      "visible_interior_xy": [
+        286,
+        130
+      ],
+      "input_binding": {
+        "free_image_sha256": "284ba80a4f24c2915c9219995b8465f02773c451c06be1dadb3e59feee0d88e2",
+        "q_image_sha256": "96702a9d619cba5e8c9c5b36dd75df8ee77c64b5deaf5710bef728208c1c1808"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.91,
+          "4": 0.98,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.89,
+          "4": 0.98,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.56,
+          "4": 0.69,
+          "8": 0.8
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "object": "yellow",
+      "source_target_rgb_sha256": "03c2012ecc348f59250cab2b801d45a308e81ec8f190a877c0671a9cc85fd30b",
+      "free_end_xy": [
+        253,
+        97
+      ],
+      "visible_interior_xy": [
+        292,
+        127
+      ],
+      "input_binding": {
+        "free_image_sha256": "5899369824c5e1ad346ecd8710aea32024cc4d21730784d5b613d7b2bc2a8ef6",
+        "q_image_sha256": "dd07ca97df27cb538e41a4e1bda401c8f2d5e68fa50e1207fdcf854d120e06af"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.81,
+          "4": 0.86,
+          "8": 0.96
+        },
+        "two_window_free_motion": {
+          "2": 0.65,
+          "4": 0.71,
+          "8": 0.85
+        },
+        "two_window_q_motion": {
+          "2": 0.68,
+          "4": 0.75,
+          "8": 0.85
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.31
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "object": "yellow",
+      "source_target_rgb_sha256": "60a4ce79b5f61c57bde7d2e53b729d8bc92d3b84fe9ee8e64f091185a48ae071",
+      "free_end_xy": [
+        247,
+        80
+      ],
+      "visible_interior_xy": [
+        285,
+        124
+      ],
+      "input_binding": {
+        "free_image_sha256": "f6e074481df6ed0fe52ecf7ffa26366b1c427f7ea5d5f755de3396e0b2d94cb4",
+        "q_image_sha256": "0ed37beced9093b61b7e336cb6bf7903803dec245e384c90e610c6f18dc76a14"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.91,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.97,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.95,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.11,
+          "8": 0.2
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "object": "yellow",
+      "source_target_rgb_sha256": "af40a97be839b5b3651d1cc1fc660149b62291435b4fbbd47e071bdaf8907c88",
+      "free_end_xy": [
+        248,
+        61
+      ],
+      "visible_interior_xy": [
+        279,
+        117
+      ],
+      "input_binding": {
+        "free_image_sha256": "a2d3d87274f656e5d44cd5cbbb27576460d491490bd246712253d7ac5bc708e4",
+        "q_image_sha256": "228b18f618306eefb19a6b230b394c7358e12c117fb99c248cfa495c1228cd6d"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.03
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "object": "yellow",
+      "source_target_rgb_sha256": "0887e621f54b055c5747fe6ca080646d87cab85df7dbfe4c265f61c91c32800c",
+      "free_end_xy": [
+        251,
+        51
+      ],
+      "visible_interior_xy": [
+        280,
+        115
+      ],
+      "input_binding": {
+        "free_image_sha256": "4d2369dec94a39d4348737c2d33c813fbedc1b4dc18ee908fb7a8ffe9d6a3ea9",
+        "q_image_sha256": "fe024b3789e7292b1d7358e45be4a7906b5abb950cdff1a9093c592cfb039717"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.77,
+          "4": 0.81,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.8,
+          "4": 0.83,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.8,
+          "4": 0.83,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "object": "yellow",
+      "source_target_rgb_sha256": "c2c768095f0cb2696370455ae1b6c5ecddf259b3de2ffa2856fdbe1db189336b",
+      "free_end_xy": [
+        246,
+        49
+      ],
+      "visible_interior_xy": [
+        266,
+        118
+      ],
+      "input_binding": {
+        "free_image_sha256": "aa9b621b6f2ebd37a70822a391576def1dde5c32e96f58cf828c2d9c179ce350",
+        "q_image_sha256": "f783c163f40b5140c3dcaa3919f7d106539d92acbf19649e636f1285f99afc65"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.99,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.81,
+          "4": 0.97,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.8,
+          "4": 0.95,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.07
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "object": "yellow",
+      "source_target_rgb_sha256": "7eddd9c453ab0b2837e7a4a6dda30415eb02916b736c575c0c430e3621db802e",
+      "free_end_xy": [
+        240,
+        48
+      ],
+      "visible_interior_xy": [
+        260,
+        118
+      ],
+      "input_binding": {
+        "free_image_sha256": "b30700107c4e656e8316f0feb6e77c50b66fa0877d44a5b42d21435ec188fbfa",
+        "q_image_sha256": "f8898433cd1b7cf436813ce9231f9d5d8499d4d55d3d7173d9b2da3bd83b7eec"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.82,
+          "4": 0.91,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.93,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.01,
+          "8": 0.07
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "object": "yellow",
+      "source_target_rgb_sha256": "26b0a505862218cf9bcc75558aa3107093a844bc632454df7abf87bf15205a47",
+      "free_end_xy": [
+        237,
+        45
+      ],
+      "visible_interior_xy": [
+        252,
+        117
+      ],
+      "input_binding": {
+        "free_image_sha256": "39d43484cfef69757531eec21b60cb94f85d2f26cc3e703a7ef9f17621a42f41",
+        "q_image_sha256": "e29e4146dd409be25cc3fc9e28987e2aa97138270c55bbe4d168415f2df48a36"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.83,
+          "4": 0.86,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.8,
+          "4": 0.87,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.8,
+          "4": 0.87,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.03
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "object": "green",
+      "source_target_rgb_sha256": "3f9f02c2dd5eaadc5879981397101385dc2a9baef0768a436ab1eea203b44625",
+      "free_end_xy": [
+        264,
+        39
+      ],
+      "visible_interior_xy": [
+        312,
+        52
+      ],
+      "input_binding": {
+        "free_image_sha256": "2d0ce911ff78eec11b5d1e510567a77b9f882073743e2120316912002002a6bf",
+        "q_image_sha256": "6a2101934c25920fdfee85e1547cbd229be20886a2b664699b200e625f2978ee"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.92,
+          "4": 0.96,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.86,
+          "4": 0.9,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.88,
+          "4": 0.92,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.73,
+          "4": 0.8,
+          "8": 0.88
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "object": "green",
+      "source_target_rgb_sha256": "1bfd91d2935c87ff5916e62e71c1b4191455a0f3fcb16e8d611728379cb9fad0",
+      "free_end_xy": [
+        249,
+        29
+      ],
+      "visible_interior_xy": [
+        295,
+        42
+      ],
+      "input_binding": {
+        "free_image_sha256": "d7dd87f334ae3545f87e751977a724256c0823db7557d2bdf1da1fe78a6dc80a",
+        "q_image_sha256": "5c3dacbfa77b06ee84eeab131cec52df53e3c6c75bb87b7ea0475b2fbf9906fb"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.04,
+          "8": 0.42
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "object": "green",
+      "source_target_rgb_sha256": "c7eb4e69cdd72a756f88173c7fa585f2d5555ace1ff3beff7efd24a066337b03",
+      "free_end_xy": [
+        236,
+        24
+      ],
+      "visible_interior_xy": [
+        282,
+        39
+      ],
+      "input_binding": {
+        "free_image_sha256": "bd10302fdc123cbce5c65e4cccd5130fe77b8f4292378682f77719c9664560ec",
+        "q_image_sha256": "35ed7fb3ccf0541eab584915a09b50666147bd1b1290f37ee39e1962d9dae617"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.96,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.92,
+          "4": 0.96,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.17
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "object": "green",
+      "source_target_rgb_sha256": "da0da68322f96cc578967d1bd2eacab99353a632f59054c7ccc4d74e73a70024",
+      "free_end_xy": [
+        220,
+        23
+      ],
+      "visible_interior_xy": [
+        270,
+        36
+      ],
+      "input_binding": {
+        "free_image_sha256": "ff1b5819af362fcacdcd107c8a7cc67c7c359f381375bc0d4642260628fc4529",
+        "q_image_sha256": "6e6064d1dd04edb3a2a6982ec2a0859521777fabb27fed18d9f09a5c685d74eb"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.97,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.99,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "object": "green",
+      "source_target_rgb_sha256": "b9e46b726ff175b18f68790f629e27faf7ea19455f383d2ee22bdd09d089a020",
+      "free_end_xy": [
+        208,
+        23
+      ],
+      "visible_interior_xy": [
+        256,
+        36
+      ],
+      "input_binding": {
+        "free_image_sha256": "7bb7b3844728282e9dfd2759838c253d2062ae2b6ce13f24d1d85515c4dfe028",
+        "q_image_sha256": "68ce237b12f3f25c02b885394aee44f9311a6e4053dfe236eed43645ff58daeb"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "object": "green",
+      "source_target_rgb_sha256": "fcd92b8138215bf78cfbb3f70cb280f9f4edd7b92a0e6c9724393223f457b14c",
+      "free_end_xy": [
+        196,
+        28
+      ],
+      "visible_interior_xy": [
+        244,
+        39
+      ],
+      "input_binding": {
+        "free_image_sha256": "2e8c2d29133db0b48b93414d7e3820ed2347344c3d9004a7480fa8415f6ec31f",
+        "q_image_sha256": "3dd031caa7c6533fb6543f148479984d2dfa86df8d6ad46ea15454a5724d121a"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "object": "green",
+      "source_target_rgb_sha256": "13747b088d97a88e4e148e4df61fab890811e035f1c74f5b27419812336ef7a8",
+      "free_end_xy": [
+        190,
+        33
+      ],
+      "visible_interior_xy": [
+        235,
+        42
+      ],
+      "input_binding": {
+        "free_image_sha256": "5b3940db7b33240b697d8e0845204a46125f9fe32911387cb6a216dbe1237d6c",
+        "q_image_sha256": "c37e3a8147b0063e13555380d797c33c3aff136f89a8ae07e080bbadd2f062ee"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "object": "green",
+      "source_target_rgb_sha256": "72c1c48291b24cfe706e7d9d6b4759e96e3326cf511ea514cc1195ca32683c39",
+      "free_end_xy": [
+        184,
+        38
+      ],
+      "visible_interior_xy": [
+        229,
+        46
+      ],
+      "input_binding": {
+        "free_image_sha256": "cd25fd266ce080553097160ffd5d223894d31039579d69aae5733de01bf5965e",
+        "q_image_sha256": "cda5dce37f3df447e9b493e73281df94aa2f727998f646ffe8ee82591ba9edfa"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.92,
+          "4": 0.96,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.94,
+          "4": 0.98,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "object": "green",
+      "source_target_rgb_sha256": "da4d78647548298c41baa8c86008bd35034fd588aa5a4f1c1c9b01689af2a879",
+      "free_end_xy": [
+        180,
+        42
+      ],
+      "visible_interior_xy": [
+        225,
+        47
+      ],
+      "input_binding": {
+        "free_image_sha256": "18c5dba0bcaff01c344eebad65a8192ddb50ef8ff947ccac7e20c9010430fc8c",
+        "q_image_sha256": "da6935d3a04cdebf6be2d8f95c41ff8b9bd3a8ae2c15d76b6128278d4c6c3010"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_free_motion": {
+          "2": 0.94,
+          "4": 0.98,
+          "8": 1.0
+        },
+        "two_window_q_motion": {
+          "2": 0.96,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "two_window_q_static": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        }
+      }
+    }
+  ],
+  "interpretation": "Fraction of source-axis points near a fixed HSV/ROI mask; diagnostic only",
+  "limitations": [
+    "Visual point estimates are approximate, not calibrated or independently human-labeled.",
+    "Only the visible part of two objects in two training windows is marked; occluded endpoints and full object centers are not inferred.",
+    "Projection is in one RGB view, not 3D motion or a physical-object trajectory.",
+    "Coverage uses the existing HSV/ROI prediction mask and can be fooled by background, reflections, occlusion or incorrect color.",
+    "Axis coverage cannot prove target identity, depth, pose, motion success, causal control or generalization.",
+    "The source points and predictions need direct visual review; no threshold or automatic teacher acceptance is defined."
+  ],
+  "manual_motion_review_required": true,
+  "no_acceptance_decision": true
+}

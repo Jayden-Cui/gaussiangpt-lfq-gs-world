@@ -1,0 +1,275 @@
+{
+  "schema": "visible_source_axis_reference_v1",
+  "image_size_wh": [
+    448,
+    252
+  ],
+  "view": 0,
+  "landmark_author": "Codex visual estimation from source images; no human annotator or formal calibration",
+  "axis_description": "Approximate visible free-end and interior points on the apparent long axis; y increases downwards; no occluded endpoint is inferred",
+  "baseline_object_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "color_core_sha256": "e9e2948dfb395b1f62568ec68a59f997772264056df58684f3fc38c0379b338d",
+  "color_config_sha256": "4600a2a7c4f32c4ad4803dd709089583270649034f5e443e836eab3dea8658fd",
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "object": "yellow",
+      "free_end_xy": [
+        248,
+        124
+      ],
+      "visible_interior_xy": [
+        282,
+        133
+      ],
+      "source_target_rgb_sha256": "08f0f62a0e6ee6574153d50d09a21aa202b2168a880244dadc78b8430efc6649"
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "object": "yellow",
+      "free_end_xy": [
+        245,
+        112
+      ],
+      "visible_interior_xy": [
+        286,
+        130
+      ],
+      "source_target_rgb_sha256": "99bb7409d95a81083e92d054226815cdbb0756f3b0672650f6ad760efa07d68d"
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "object": "yellow",
+      "free_end_xy": [
+        253,
+        97
+      ],
+      "visible_interior_xy": [
+        292,
+        127
+      ],
+      "source_target_rgb_sha256": "03c2012ecc348f59250cab2b801d45a308e81ec8f190a877c0671a9cc85fd30b"
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "object": "yellow",
+      "free_end_xy": [
+        247,
+        80
+      ],
+      "visible_interior_xy": [
+        285,
+        124
+      ],
+      "source_target_rgb_sha256": "60a4ce79b5f61c57bde7d2e53b729d8bc92d3b84fe9ee8e64f091185a48ae071"
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "object": "yellow",
+      "free_end_xy": [
+        248,
+        61
+      ],
+      "visible_interior_xy": [
+        279,
+        117
+      ],
+      "source_target_rgb_sha256": "af40a97be839b5b3651d1cc1fc660149b62291435b4fbbd47e071bdaf8907c88"
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "object": "yellow",
+      "free_end_xy": [
+        251,
+        51
+      ],
+      "visible_interior_xy": [
+        280,
+        115
+      ],
+      "source_target_rgb_sha256": "0887e621f54b055c5747fe6ca080646d87cab85df7dbfe4c265f61c91c32800c"
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "object": "yellow",
+      "free_end_xy": [
+        246,
+        49
+      ],
+      "visible_interior_xy": [
+        266,
+        118
+      ],
+      "source_target_rgb_sha256": "c2c768095f0cb2696370455ae1b6c5ecddf259b3de2ffa2856fdbe1db189336b"
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "object": "yellow",
+      "free_end_xy": [
+        240,
+        48
+      ],
+      "visible_interior_xy": [
+        260,
+        118
+      ],
+      "source_target_rgb_sha256": "7eddd9c453ab0b2837e7a4a6dda30415eb02916b736c575c0c430e3621db802e"
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "object": "yellow",
+      "free_end_xy": [
+        237,
+        45
+      ],
+      "visible_interior_xy": [
+        252,
+        117
+      ],
+      "source_target_rgb_sha256": "26b0a505862218cf9bcc75558aa3107093a844bc632454df7abf87bf15205a47"
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "object": "green",
+      "free_end_xy": [
+        264,
+        39
+      ],
+      "visible_interior_xy": [
+        312,
+        52
+      ],
+      "source_target_rgb_sha256": "3f9f02c2dd5eaadc5879981397101385dc2a9baef0768a436ab1eea203b44625"
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "object": "green",
+      "free_end_xy": [
+        249,
+        29
+      ],
+      "visible_interior_xy": [
+        295,
+        42
+      ],
+      "source_target_rgb_sha256": "1bfd91d2935c87ff5916e62e71c1b4191455a0f3fcb16e8d611728379cb9fad0"
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "object": "green",
+      "free_end_xy": [
+        236,
+        24
+      ],
+      "visible_interior_xy": [
+        282,
+        39
+      ],
+      "source_target_rgb_sha256": "c7eb4e69cdd72a756f88173c7fa585f2d5555ace1ff3beff7efd24a066337b03"
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "object": "green",
+      "free_end_xy": [
+        220,
+        23
+      ],
+      "visible_interior_xy": [
+        270,
+        36
+      ],
+      "source_target_rgb_sha256": "da0da68322f96cc578967d1bd2eacab99353a632f59054c7ccc4d74e73a70024"
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "object": "green",
+      "free_end_xy": [
+        208,
+        23
+      ],
+      "visible_interior_xy": [
+        256,
+        36
+      ],
+      "source_target_rgb_sha256": "b9e46b726ff175b18f68790f629e27faf7ea19455f383d2ee22bdd09d089a020"
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "object": "green",
+      "free_end_xy": [
+        196,
+        28
+      ],
+      "visible_interior_xy": [
+        244,
+        39
+      ],
+      "source_target_rgb_sha256": "fcd92b8138215bf78cfbb3f70cb280f9f4edd7b92a0e6c9724393223f457b14c"
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "object": "green",
+      "free_end_xy": [
+        190,
+        33
+      ],
+      "visible_interior_xy": [
+        235,
+        42
+      ],
+      "source_target_rgb_sha256": "13747b088d97a88e4e148e4df61fab890811e035f1c74f5b27419812336ef7a8"
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "object": "green",
+      "free_end_xy": [
+        184,
+        38
+      ],
+      "visible_interior_xy": [
+        229,
+        46
+      ],
+      "source_target_rgb_sha256": "72c1c48291b24cfe706e7d9d6b4759e96e3326cf511ea514cc1195ca32683c39"
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "object": "green",
+      "free_end_xy": [
+        180,
+        42
+      ],
+      "visible_interior_xy": [
+        225,
+        47
+      ],
+      "source_target_rgb_sha256": "da4d78647548298c41baa8c86008bd35034fd588aa5a4f1c1c9b01689af2a879"
+    }
+  ],
+  "limitations": [
+    "Visual point estimates are approximate, not calibrated or independently human-labeled.",
+    "Only the visible part of two objects in two training windows is marked; occluded endpoints and full object centers are not inferred.",
+    "Projection is in one RGB view, not 3D motion or a physical-object trajectory.",
+    "Coverage uses the existing HSV/ROI prediction mask and can be fooled by background, reflections, occlusion or incorrect color.",
+    "Axis coverage cannot prove target identity, depth, pose, motion success, causal control or generalization.",
+    "The source points and predictions need direct visual review; no threshold or automatic teacher acceptance is defined."
+  ]
+}
