@@ -1,0 +1,1411 @@
+{
+  "status": "complete",
+  "scope": "Existing TRAIN pool only; correlated frames and overlapping clips",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "initial_model_digest": "2dc414eaeb1fc03bfc3a77fe8d7cc607a23502ba48e6675bbc1816bcb304fb41",
+  "source_pins": {
+    "pool_complete": "8ffe7055cba065a49c233245b106631665dcd710b3ebee2fd08368ab543224df",
+    "pool_done": "920a7f7c030733b2ff6d1be62aafb243bf581ea0a9bcc53ba3fe775b3d0f694b",
+    "pool_index": "8577a94ad505c863503aae5c1424f3a8b330cae90b67b25f7c8edfde35196f99",
+    "historical_evaluation": "68a5b3da1c122c0339f3171e53698b8c54a55dbbc051bf4987bfd0d04b58b88a",
+    "historical_targets": "465d4a65070f7b5a00b379eb0f67105552f65f83c17e0063f4974a0e1e7ce16b"
+  },
+  "source_code_sha256": "4553cb353cd583d580dc4eadb9ee57c22a267df11148c139b64827835f4d2ac3",
+  "summary": {
+    "clips": 50,
+    "source_groups": 19,
+    "frames": 8850,
+    "clip_equal_codec_real_mae_mean": 0.08693519152963987,
+    "clip_equal_codec_real_mae_median": 0.08119856784025492,
+    "group_equal_codec_real_mae_mean": 0.08254079684840003,
+    "lowest_clip_mean": 0.016598779060956786,
+    "highest_clip_mean": 0.1448225575146702,
+    "clips_mean_mae_above_005": 49,
+    "codec_real_frames_above_005": 8615,
+    "groups": {
+      "buildingblock_tower_0": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.08006305494494807
+      },
+      "buildingblock_tower_1": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.08044354133518403
+      },
+      "buildingblock_tower_10": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.0731086368846186
+      },
+      "buildingblock_tower_11": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.08028082606398454
+      },
+      "buildingblock_tower_12": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.07931801127427715
+      },
+      "buildingblock_tower_13": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.07783746633068317
+      },
+      "buildingblock_tower_15": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.0827093141437587
+      },
+      "buildingblock_tower_16": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.07456056045441978
+      },
+      "buildingblock_tower_17": {
+        "clips": 1,
+        "codec_real_mae_mean": 0.016598779060956786
+      },
+      "buildingblock_tower_18": {
+        "clips": 4,
+        "codec_real_mae_mean": 0.06136590303421694
+      },
+      "buildingblock_tower_20": {
+        "clips": 4,
+        "codec_real_mae_mean": 0.12497431211341908
+      },
+      "buildingblock_tower_21": {
+        "clips": 4,
+        "codec_real_mae_mean": 0.12935819035911628
+      },
+      "buildingblock_tower_3": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.0826972501033219
+      },
+      "buildingblock_tower_4": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.08391534734917226
+      },
+      "buildingblock_tower_5": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.09266419154495394
+      },
+      "buildingblock_tower_6": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.10939830756288464
+      },
+      "buildingblock_tower_7": {
+        "clips": 2,
+        "codec_real_mae_mean": 0.0923083347747218
+      },
+      "buildingblock_tower_8": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.07845603721654797
+      },
+      "buildingblock_tower_9": {
+        "clips": 3,
+        "codec_real_mae_mean": 0.06821707556841512
+      }
+    }
+  },
+  "clips": [
+    {
+      "clip": "buildingblock_tower_0_0",
+      "source_group": "buildingblock_tower_0",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07474196020324352,
+        "psnr_mean_db": 18.00132918492549,
+        "mae_min": 0.06050339341163635,
+        "mae_max": 0.08909942954778671,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008276559107300251,
+        "psnr_mean_db": 36.517957611946066
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07397030605434698,
+        "psnr_mean_db": 18.081310918775657
+      }
+    },
+    {
+      "clip": "buildingblock_tower_0_176",
+      "source_group": "buildingblock_tower_0",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08296083427418423,
+        "psnr_mean_db": 17.246468274606823,
+        "mae_min": 0.07291235774755478,
+        "mae_max": 0.10976120829582214,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007846207405298443,
+        "psnr_mean_db": 36.944801977125266
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08165783755018213,
+        "psnr_mean_db": 17.337565228090448
+      }
+    },
+    {
+      "clip": "buildingblock_tower_0_352",
+      "source_group": "buildingblock_tower_0",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08248637035741645,
+        "psnr_mean_db": 16.85364233437231,
+        "mae_min": 0.07538402080535889,
+        "mae_max": 0.10293766111135483,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007035518591265894,
+        "psnr_mean_db": 37.39601010252527
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08186441238990612,
+        "psnr_mean_db": 16.924009457819878
+      }
+    },
+    {
+      "clip": "buildingblock_tower_10_0",
+      "source_group": "buildingblock_tower_10",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.06660587157485849,
+        "psnr_mean_db": 18.103339179087495,
+        "mae_min": 0.056514035910367966,
+        "mae_max": 0.08223369717597961,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007951728107754961,
+        "psnr_mean_db": 36.191933518749174
+      },
+      "codec_teacher": {
+        "mae_mean": 0.06683194706753148,
+        "psnr_mean_db": 18.146429643792622
+      }
+    },
+    {
+      "clip": "buildingblock_tower_10_176",
+      "source_group": "buildingblock_tower_10",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07961140219437873,
+        "psnr_mean_db": 16.90240989297123,
+        "mae_min": 0.06804875284433365,
+        "mae_max": 0.1017376258969307,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.0074036006557907765,
+        "psnr_mean_db": 36.88118817173155
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07941411822865911,
+        "psnr_mean_db": 16.921513611313987
+      }
+    },
+    {
+      "clip": "buildingblock_tower_11_0",
+      "source_group": "buildingblock_tower_11",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07407420907316908,
+        "psnr_mean_db": 17.366712408550715,
+        "mae_min": 0.06339278817176819,
+        "mae_max": 0.09296596795320511,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008015212139882946,
+        "psnr_mean_db": 36.07807743481997
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07377967490988263,
+        "psnr_mean_db": 17.444049501149667
+      }
+    },
+    {
+      "clip": "buildingblock_tower_11_176",
+      "source_group": "buildingblock_tower_11",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08648744305479998,
+        "psnr_mean_db": 16.838368604412185,
+        "mae_min": 0.07264448702335358,
+        "mae_max": 0.11531714349985123,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007579134301003595,
+        "psnr_mean_db": 36.47989268760897
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08598860500559295,
+        "psnr_mean_db": 16.907659503699698
+      }
+    },
+    {
+      "clip": "buildingblock_tower_12_0",
+      "source_group": "buildingblock_tower_12",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.0790917550103139,
+        "psnr_mean_db": 17.563083379282116,
+        "mae_min": 0.06367181986570358,
+        "mae_max": 0.09631437808275223,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.009183630547196852,
+        "psnr_mean_db": 35.7806725582834
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07767376800378163,
+        "psnr_mean_db": 17.667806345190705
+      }
+    },
+    {
+      "clip": "buildingblock_tower_12_176",
+      "source_group": "buildingblock_tower_12",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.0795442675382404,
+        "psnr_mean_db": 17.6701157133458,
+        "mae_min": 0.07122179865837097,
+        "mae_max": 0.08868923038244247,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.00857481788212465,
+        "psnr_mean_db": 36.48050571161475
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07845868069236561,
+        "psnr_mean_db": 17.733224987310205
+      }
+    },
+    {
+      "clip": "buildingblock_tower_13_0",
+      "source_group": "buildingblock_tower_13",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07744992570688496,
+        "psnr_mean_db": 18.14053868439238,
+        "mae_min": 0.06493277102708817,
+        "mae_max": 0.09180865436792374,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008550465785724631,
+        "psnr_mean_db": 36.33175443660068
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07567829651347661,
+        "psnr_mean_db": 18.252363722203143
+      }
+    },
+    {
+      "clip": "buildingblock_tower_13_176",
+      "source_group": "buildingblock_tower_13",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07822500695448137,
+        "psnr_mean_db": 18.52436316754185,
+        "mae_min": 0.06833969801664352,
+        "mae_max": 0.11112513393163681,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.0068557030063564495,
+        "psnr_mean_db": 37.845359177239196
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07696372253746636,
+        "psnr_mean_db": 18.618172273797505
+      }
+    },
+    {
+      "clip": "buildingblock_tower_15_0",
+      "source_group": "buildingblock_tower_15",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07680421970826758,
+        "psnr_mean_db": 17.47854731716005,
+        "mae_min": 0.06637085974216461,
+        "mae_max": 0.09400858730077744,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008452070332369057,
+        "psnr_mean_db": 35.56627842531366
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07804954540258073,
+        "psnr_mean_db": 17.49345401182013
+      }
+    },
+    {
+      "clip": "buildingblock_tower_15_176",
+      "source_group": "buildingblock_tower_15",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08861440857924983,
+        "psnr_mean_db": 17.17531848088496,
+        "mae_min": 0.06625603884458542,
+        "mae_max": 0.11004650592803955,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007413218263536692,
+        "psnr_mean_db": 36.089130142987784
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08867182014352185,
+        "psnr_mean_db": 17.233911045527055
+      }
+    },
+    {
+      "clip": "buildingblock_tower_16_0",
+      "source_group": "buildingblock_tower_16",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07423376064684431,
+        "psnr_mean_db": 17.996782184320654,
+        "mae_min": 0.058620091527700424,
+        "mae_max": 0.09611716866493225,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008042268749684264,
+        "psnr_mean_db": 35.959967640160166
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07486418941936925,
+        "psnr_mean_db": 18.03241595036566
+      }
+    },
+    {
+      "clip": "buildingblock_tower_16_176",
+      "source_group": "buildingblock_tower_16",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07488736026199524,
+        "psnr_mean_db": 17.98406287909901,
+        "mae_min": 0.05315626040101051,
+        "mae_max": 0.11802121996879578,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007977963827739833,
+        "psnr_mean_db": 36.12451997315143
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07532802238892027,
+        "psnr_mean_db": 18.0081337912608
+      }
+    },
+    {
+      "clip": "buildingblock_tower_17_176",
+      "source_group": "buildingblock_tower_17",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.016598779060956786,
+        "psnr_mean_db": 31.267100027052024,
+        "mae_min": 0.012444316409528255,
+        "mae_max": 0.02236734889447689,
+        "frames_mae_above_005": 0
+      },
+      "teacher_real": {
+        "mae_mean": 0.008661688681649791,
+        "psnr_mean_db": 35.63691704960193
+      },
+      "codec_teacher": {
+        "mae_mean": 0.018668082074425316,
+        "psnr_mean_db": 30.45235671566031
+      }
+    },
+    {
+      "clip": "buildingblock_tower_18_0",
+      "source_group": "buildingblock_tower_18",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07399252229659571,
+        "psnr_mean_db": 18.301543887725657,
+        "mae_min": 0.06146376579999924,
+        "mae_max": 0.10183591395616531,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007747620591462332,
+        "psnr_mean_db": 35.977703978112864
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07603131028386832,
+        "psnr_mean_db": 18.24640863494011
+      }
+    },
+    {
+      "clip": "buildingblock_tower_18_176",
+      "source_group": "buildingblock_tower_18",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.059729411166771655,
+        "psnr_mean_db": 18.885583726699743,
+        "mae_min": 0.05235101282596588,
+        "mae_max": 0.07277856767177582,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007814384936381364,
+        "psnr_mean_db": 35.92810198681503
+      },
+      "codec_teacher": {
+        "mae_mean": 0.06041330166455716,
+        "psnr_mean_db": 18.93505171867414
+      }
+    },
+    {
+      "clip": "buildingblock_tower_18_352",
+      "source_group": "buildingblock_tower_18",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.05273685587496407,
+        "psnr_mean_db": 19.847898903539626,
+        "mae_min": 0.04437580704689026,
+        "mae_max": 0.06718377023935318,
+        "frames_mae_above_005": 119
+      },
+      "teacher_real": {
+        "mae_mean": 0.007953959151492112,
+        "psnr_mean_db": 36.31745175722629
+      },
+      "codec_teacher": {
+        "mae_mean": 0.053651497041606634,
+        "psnr_mean_db": 19.863680607854985
+      }
+    },
+    {
+      "clip": "buildingblock_tower_18_528",
+      "source_group": "buildingblock_tower_18",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.05900482279853632,
+        "psnr_mean_db": 18.686487057788224,
+        "mae_min": 0.05595933273434639,
+        "mae_max": 0.07399500161409378,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007176236694120923,
+        "psnr_mean_db": 36.6051387894625
+      },
+      "codec_teacher": {
+        "mae_mean": 0.058452319248584704,
+        "psnr_mean_db": 18.778276745208913
+      }
+    },
+    {
+      "clip": "buildingblock_tower_1_0",
+      "source_group": "buildingblock_tower_1",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07892639598267226,
+        "psnr_mean_db": 17.798393745206845,
+        "mae_min": 0.06681205332279205,
+        "mae_max": 0.09418613463640213,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008263330033185792,
+        "psnr_mean_db": 36.669252686581366
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07803108618926194,
+        "psnr_mean_db": 17.87310878301071
+      }
+    },
+    {
+      "clip": "buildingblock_tower_1_176",
+      "source_group": "buildingblock_tower_1",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08196068668769578,
+        "psnr_mean_db": 17.30298736270538,
+        "mae_min": 0.0665557011961937,
+        "mae_max": 0.11501816660165787,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007602731460484408,
+        "psnr_mean_db": 37.03197220624504
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08101746435724409,
+        "psnr_mean_db": 17.366219089529608
+      }
+    },
+    {
+      "clip": "buildingblock_tower_20_0",
+      "source_group": "buildingblock_tower_20",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.13394941869428603,
+        "psnr_mean_db": 15.861789789576989,
+        "mae_min": 0.10730183869600296,
+        "mae_max": 0.1532454788684845,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.005770611471501784,
+        "psnr_mean_db": 38.38411421694998
+      },
+      "codec_teacher": {
+        "mae_mean": 0.13209886120705955,
+        "psnr_mean_db": 15.949898105556683
+      }
+    },
+    {
+      "clip": "buildingblock_tower_20_176",
+      "source_group": "buildingblock_tower_20",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.12807164732682502,
+        "psnr_mean_db": 16.35784793034785,
+        "mae_min": 0.1078667938709259,
+        "mae_max": 0.17331460118293762,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.004849005732580093,
+        "psnr_mean_db": 39.448999437235166
+      },
+      "codec_teacher": {
+        "mae_mean": 0.12607877966711076,
+        "psnr_mean_db": 16.45720839096328
+      }
+    },
+    {
+      "clip": "buildingblock_tower_20_352",
+      "source_group": "buildingblock_tower_20",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.1250219117365988,
+        "psnr_mean_db": 16.31639896543686,
+        "mae_min": 0.10124446451663971,
+        "mae_max": 0.14551131427288055,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.005900481121225209,
+        "psnr_mean_db": 38.205321144922976
+      },
+      "codec_teacher": {
+        "mae_mean": 0.12291559084492215,
+        "psnr_mean_db": 16.4003434962472
+      }
+    },
+    {
+      "clip": "buildingblock_tower_20_528",
+      "source_group": "buildingblock_tower_20",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.11285427069596651,
+        "psnr_mean_db": 17.019746893543306,
+        "mae_min": 0.08242236077785492,
+        "mae_max": 0.13867853581905365,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.005291013752168181,
+        "psnr_mean_db": 39.40080629769018
+      },
+      "codec_teacher": {
+        "mae_mean": 0.1106934278024792,
+        "psnr_mean_db": 17.134045369207524
+      }
+    },
+    {
+      "clip": "buildingblock_tower_21_0",
+      "source_group": "buildingblock_tower_21",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.12606201565029931,
+        "psnr_mean_db": 15.998943964640299,
+        "mae_min": 0.11101118475198746,
+        "mae_max": 0.14470688998699188,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.005396279285393529,
+        "psnr_mean_db": 38.375821517685715
+      },
+      "codec_teacher": {
+        "mae_mean": 0.12477797694967291,
+        "psnr_mean_db": 16.053891214273744
+      }
+    },
+    {
+      "clip": "buildingblock_tower_21_176",
+      "source_group": "buildingblock_tower_21",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.1448225575146702,
+        "psnr_mean_db": 15.44123594639665,
+        "mae_min": 0.13181577622890472,
+        "mae_max": 0.15539252758026123,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.005761562183625617,
+        "psnr_mean_db": 38.21748550328831
+      },
+      "codec_teacher": {
+        "mae_mean": 0.1432560536652635,
+        "psnr_mean_db": 15.515632753318313
+      }
+    },
+    {
+      "clip": "buildingblock_tower_21_352",
+      "source_group": "buildingblock_tower_21",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.13238885767210676,
+        "psnr_mean_db": 15.978144290083545,
+        "mae_min": 0.11686792969703674,
+        "mae_max": 0.14736008644104004,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.006223739332672062,
+        "psnr_mean_db": 38.04710273958195
+      },
+      "codec_teacher": {
+        "mae_mean": 0.13101848151724219,
+        "psnr_mean_db": 16.033522622059966
+      }
+    },
+    {
+      "clip": "buildingblock_tower_21_528",
+      "source_group": "buildingblock_tower_21",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.11415933059938883,
+        "psnr_mean_db": 17.013456490080234,
+        "mae_min": 0.10139309614896774,
+        "mae_max": 0.1417665034532547,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.0035562860045455775,
+        "psnr_mean_db": 41.76030593268615
+      },
+      "codec_teacher": {
+        "mae_mean": 0.11306157661864986,
+        "psnr_mean_db": 17.095526576715674
+      }
+    },
+    {
+      "clip": "buildingblock_tower_3_0",
+      "source_group": "buildingblock_tower_3",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08633718685915241,
+        "psnr_mean_db": 17.089725181881317,
+        "mae_min": 0.06543421745300293,
+        "mae_max": 0.10103744268417358,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008169361937391218,
+        "psnr_mean_db": 36.6632136759785
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08554534618295519,
+        "psnr_mean_db": 17.155784057358563
+      }
+    },
+    {
+      "clip": "buildingblock_tower_3_176",
+      "source_group": "buildingblock_tower_3",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08626666429352625,
+        "psnr_mean_db": 17.031250716602734,
+        "mae_min": 0.07021567970514297,
+        "mae_max": 0.12027133256196976,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.0077021017375975675,
+        "psnr_mean_db": 37.12934935833775
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08510383837303873,
+        "psnr_mean_db": 17.092592007696293
+      }
+    },
+    {
+      "clip": "buildingblock_tower_3_352",
+      "source_group": "buildingblock_tower_3",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07548789915728704,
+        "psnr_mean_db": 17.437241468052406,
+        "mae_min": 0.06797729432582855,
+        "mae_max": 0.1094542145729065,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007163513288701658,
+        "psnr_mean_db": 36.91978443813863
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07524210555573642,
+        "psnr_mean_db": 17.47988844187246
+      }
+    },
+    {
+      "clip": "buildingblock_tower_4_0",
+      "source_group": "buildingblock_tower_4",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08764296201831204,
+        "psnr_mean_db": 17.075839371330993,
+        "mae_min": 0.057703275233507156,
+        "mae_max": 0.1139899343252182,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008233358015406266,
+        "psnr_mean_db": 36.69076117822679
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08639689753789687,
+        "psnr_mean_db": 17.15413762216514
+      }
+    },
+    {
+      "clip": "buildingblock_tower_4_176",
+      "source_group": "buildingblock_tower_4",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08583263450928327,
+        "psnr_mean_db": 16.624824362286066,
+        "mae_min": 0.06875790655612946,
+        "mae_max": 0.12685012817382812,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007255943702523318,
+        "psnr_mean_db": 37.07792090292031
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08505113603873442,
+        "psnr_mean_db": 16.680252576278427
+      }
+    },
+    {
+      "clip": "buildingblock_tower_4_352",
+      "source_group": "buildingblock_tower_4",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07827044551992147,
+        "psnr_mean_db": 17.078377233386714,
+        "mae_min": 0.07575121521949768,
+        "mae_max": 0.07935220748186111,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.006048249241259307,
+        "psnr_mean_db": 38.54181395277465
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07768686246232125,
+        "psnr_mean_db": 17.1427776853917
+      }
+    },
+    {
+      "clip": "buildingblock_tower_5_0",
+      "source_group": "buildingblock_tower_5",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.09420102944145095,
+        "psnr_mean_db": 16.47184456539693,
+        "mae_min": 0.08438814431428909,
+        "mae_max": 0.10366600006818771,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007265780565702477,
+        "psnr_mean_db": 35.963478821145614
+      },
+      "codec_teacher": {
+        "mae_mean": 0.09553558762464145,
+        "psnr_mean_db": 16.39436900144243
+      }
+    },
+    {
+      "clip": "buildingblock_tower_5_176",
+      "source_group": "buildingblock_tower_5",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.09293394119052564,
+        "psnr_mean_db": 17.202514411365918,
+        "mae_min": 0.08213202655315399,
+        "mae_max": 0.10385381430387497,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008563735824878101,
+        "psnr_mean_db": 35.168620675297106
+      },
+      "codec_teacher": {
+        "mae_mean": 0.09332999271356453,
+        "psnr_mean_db": 17.202668809621347
+      }
+    },
+    {
+      "clip": "buildingblock_tower_5_352",
+      "source_group": "buildingblock_tower_5",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.09085760400288523,
+        "psnr_mean_db": 17.093547212201997,
+        "mae_min": 0.08427227288484573,
+        "mae_max": 0.11377722769975662,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.0064776055251727,
+        "psnr_mean_db": 36.78448938919326
+      },
+      "codec_teacher": {
+        "mae_mean": 0.09157866946721481,
+        "psnr_mean_db": 17.083025291141144
+      }
+    },
+    {
+      "clip": "buildingblock_tower_6_0",
+      "source_group": "buildingblock_tower_6",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.09576303255086564,
+        "psnr_mean_db": 16.642324544615665,
+        "mae_min": 0.0862952321767807,
+        "mae_max": 0.117196224629879,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.009076722297754329,
+        "psnr_mean_db": 34.581173934505486
+      },
+      "codec_teacher": {
+        "mae_mean": 0.09795670518598988,
+        "psnr_mean_db": 16.57262354382014
+      }
+    },
+    {
+      "clip": "buildingblock_tower_6_176",
+      "source_group": "buildingblock_tower_6",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.09371097798401352,
+        "psnr_mean_db": 16.80547189443125,
+        "mae_min": 0.08254684507846832,
+        "mae_max": 0.10864690691232681,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008155420953986671,
+        "psnr_mean_db": 35.580259333896095
+      },
+      "codec_teacher": {
+        "mae_mean": 0.09469203259480202,
+        "psnr_mean_db": 16.780116118953725
+      }
+    },
+    {
+      "clip": "buildingblock_tower_6_352",
+      "source_group": "buildingblock_tower_6",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.13872091215377474,
+        "psnr_mean_db": 14.795312267238812,
+        "mae_min": 0.10554041713476181,
+        "mae_max": 0.1492004245519638,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.00902230605630383,
+        "psnr_mean_db": 35.9889646196096
+      },
+      "codec_teacher": {
+        "mae_mean": 0.13534797298706183,
+        "psnr_mean_db": 14.991755798038117
+      }
+    },
+    {
+      "clip": "buildingblock_tower_7_0",
+      "source_group": "buildingblock_tower_7",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.10088883874948415,
+        "psnr_mean_db": 15.851210330165712,
+        "mae_min": 0.08716130256652832,
+        "mae_max": 0.13116762042045593,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.009157835332266355,
+        "psnr_mean_db": 35.03636848320395
+      },
+      "codec_teacher": {
+        "mae_mean": 0.10173140920824923,
+        "psnr_mean_db": 15.871483614215743
+      }
+    },
+    {
+      "clip": "buildingblock_tower_7_176",
+      "source_group": "buildingblock_tower_7",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08372783079995948,
+        "psnr_mean_db": 17.530738809014444,
+        "mae_min": 0.07464654743671417,
+        "mae_max": 0.10162386298179626,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007143424800202503,
+        "psnr_mean_db": 36.920918868759934
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08474040898562825,
+        "psnr_mean_db": 17.50919377601753
+      }
+    },
+    {
+      "clip": "buildingblock_tower_8_0",
+      "source_group": "buildingblock_tower_8",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.0797191351062834,
+        "psnr_mean_db": 17.20063605550992,
+        "mae_min": 0.06514004617929459,
+        "mae_max": 0.10664274543523788,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.008667542649127837,
+        "psnr_mean_db": 35.28964871336511
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08002806614852895,
+        "psnr_mean_db": 17.24738775673559
+      }
+    },
+    {
+      "clip": "buildingblock_tower_8_176",
+      "source_group": "buildingblock_tower_8",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.08043644899281405,
+        "psnr_mean_db": 16.97577708185056,
+        "mae_min": 0.05845241993665695,
+        "mae_max": 0.11261103302240372,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007329092266322192,
+        "psnr_mean_db": 36.53301454533291
+      },
+      "codec_teacher": {
+        "mae_mean": 0.08032154203471491,
+        "psnr_mean_db": 17.02036697042864
+      }
+    },
+    {
+      "clip": "buildingblock_tower_8_352",
+      "source_group": "buildingblock_tower_8",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07521252755054646,
+        "psnr_mean_db": 17.232286076087735,
+        "mae_min": 0.0708191767334938,
+        "mae_max": 0.11416426301002502,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.006325782050436499,
+        "psnr_mean_db": 37.414545565675205
+      },
+      "codec_teacher": {
+        "mae_mean": 0.07523269917668596,
+        "psnr_mean_db": 17.267359895221258
+      }
+    },
+    {
+      "clip": "buildingblock_tower_9_0",
+      "source_group": "buildingblock_tower_9",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.06505819982559667,
+        "psnr_mean_db": 17.90145791048384,
+        "mae_min": 0.057758480310440063,
+        "mae_max": 0.08088269084692001,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007823649488684147,
+        "psnr_mean_db": 36.212043589791335
+      },
+      "codec_teacher": {
+        "mae_mean": 0.06512907839848497,
+        "psnr_mean_db": 17.979876685277215
+      }
+    },
+    {
+      "clip": "buildingblock_tower_9_176",
+      "source_group": "buildingblock_tower_9",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.07196103434188891,
+        "psnr_mean_db": 18.007723134789764,
+        "mae_min": 0.054976850748062134,
+        "mae_max": 0.09925151616334915,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.007917414858705748,
+        "psnr_mean_db": 36.4904639033948
+      },
+      "codec_teacher": {
+        "mae_mean": 0.0717406520609465,
+        "psnr_mean_db": 18.034806095274156
+      }
+    },
+    {
+      "clip": "buildingblock_tower_9_352",
+      "source_group": "buildingblock_tower_9",
+      "frames": 177,
+      "codec_real": {
+        "mae_mean": 0.0676319925377598,
+        "psnr_mean_db": 17.865700209881627,
+        "mae_min": 0.06568031013011932,
+        "mae_max": 0.06949251145124435,
+        "frames_mae_above_005": 177
+      },
+      "teacher_real": {
+        "mae_mean": 0.006252224415035571,
+        "psnr_mean_db": 37.43511568489721
+      },
+      "codec_teacher": {
+        "mae_mean": 0.06749468806099757,
+        "psnr_mean_db": 17.877662400067862
+      }
+    }
+  ],
+  "bound_quality_sources": [
+    {
+      "clip": "buildingblock_tower_0_0",
+      "summary_sha256": "82375feffcbcf6fed484f0957c8c328b7281a32e2c9feaca534f721345a22975",
+      "quality_sha256": "a4acf512c3be92dc4ea45968650d5614c72f7713f37ee03026a4da34dd580e1d",
+      "inputs_sha256": "84bc26666bc08de19aee1a87dceda81aa1731cba75e135cb4749861bc7264cf5"
+    },
+    {
+      "clip": "buildingblock_tower_0_176",
+      "summary_sha256": "d8ce9b74790af3dc650d0df759527431c1965758213ba154924c59f939b41b14",
+      "quality_sha256": "f8c41832c2ca1566145b8691910e8bdc8432f69419423265be05b0cb46d532d0",
+      "inputs_sha256": "da8a43090b465d4c4e85567595c59c11fdcfbdac465d1dfb693704b413da5d0c"
+    },
+    {
+      "clip": "buildingblock_tower_0_352",
+      "summary_sha256": "755da82bf9af7dcf58a07f8d682df86bd7b7540718492a9ede12ab2a2ccc88e3",
+      "quality_sha256": "5b2b26b103f5fed4ba9161f76f36e3de45fdc76a964089a66871fc5c19e1217d",
+      "inputs_sha256": "68438c64e68eaeb8ba2d8461320288c46c9151cea8d5532c99ff40ebd25b1705"
+    },
+    {
+      "clip": "buildingblock_tower_10_0",
+      "summary_sha256": "9a6435181d9194aaa315592c12b3586a299778b75083e6dfaca3c802078f64cf",
+      "quality_sha256": "2f1d6f3b1fe2d7c74f05d875cd84e72d6d257df7f41d4f532876f1e0aab828a4",
+      "inputs_sha256": "e03fef147bc894e8d8f5e20a6ee7af9d7e6bd0ea3a18bfeadf79e076463527e2"
+    },
+    {
+      "clip": "buildingblock_tower_10_176",
+      "summary_sha256": "85ddbe1c465364c2bff82926e0682df8a19cca964435c0c51b9793e31fcfce53",
+      "quality_sha256": "ac3f2c86d1738f55b2442d53a93bf3725751743bcce7376237d47565849a3965",
+      "inputs_sha256": "42bfc056fd2bbe2ba7cf15a4ebc66cad5a8a9c2a97581a2733b07454c50a5a95"
+    },
+    {
+      "clip": "buildingblock_tower_11_0",
+      "summary_sha256": "404f4f237d20de6f3ac354ef277c12f664bf6b02d8b9d226d739ff239d9d3fd1",
+      "quality_sha256": "b082b157d98804c64473adff04a6bd0ba640695bd6a80a127fe0501a6e1d551b",
+      "inputs_sha256": "690cc0287ed2b52a150105f9e8066ba63665eab1a19bee86ebcf5f7aa186972a"
+    },
+    {
+      "clip": "buildingblock_tower_11_176",
+      "summary_sha256": "89bc5593d5d39afe35c82ed19d498546284925ddcb1317752ce3ce83e77bce13",
+      "quality_sha256": "def768b9bf5974c039d84f842d73101ea1ac073977779b569ca037e5ad3bafb4",
+      "inputs_sha256": "f4fc95f9b542234d1b33eb7e1277f2a31868ee482f8a3e6f15b16546c63051fc"
+    },
+    {
+      "clip": "buildingblock_tower_12_0",
+      "summary_sha256": "3df88394718b435fb04cc4366ede6fcda9ad0d0cd67043a59bd89dd1fc840e62",
+      "quality_sha256": "7f8800c80eccb4405506f7aba60bc54e3490420fb03b9031d6692cbffac33e92",
+      "inputs_sha256": "9373986cef934a63ba5b1fd20b4ccc144819ce9248089c2bcb9c6877726fd363"
+    },
+    {
+      "clip": "buildingblock_tower_12_176",
+      "summary_sha256": "8e050e8f23631e92a135adeab88fb6dff11d51bd9f7ca79cf7fdaaa64d51c633",
+      "quality_sha256": "10ac997f9490f06b18a222c277b713c573f5e21cd5975cd99ced4ca24d5cbe98",
+      "inputs_sha256": "653889c3b67895812816599c05de539b83017733575f53c3e44c5fc65b71d7cd"
+    },
+    {
+      "clip": "buildingblock_tower_13_0",
+      "summary_sha256": "5d6d1455715820e5eb040ebf3b50407a234116e55f46c259c1d38018a0bd40fa",
+      "quality_sha256": "0d38827326474169652b13c8059e159d1bea73ea777d36ea0a924bf5dceb3529",
+      "inputs_sha256": "8dd05a1b7cc804f9e1a7f1ed7c1dbd1ff01f073d22dee887bb0ef750f4d1eb26"
+    },
+    {
+      "clip": "buildingblock_tower_13_176",
+      "summary_sha256": "8eb3c0e8dcf51349cb356a99ca347081bd237dae0de8af4922c5da9100fe0f27",
+      "quality_sha256": "c71fd5186eeecb54630073d1a7700a8fca9f7308ecbfce87f7614e52f952cf14",
+      "inputs_sha256": "faf65d33894ba54f03a39e4318c33fee6b7b5e2a9a770a89a01de14984e0c447"
+    },
+    {
+      "clip": "buildingblock_tower_15_0",
+      "summary_sha256": "2d1b63e2458c60eb082f5810aba767a03d52db2e385d4a6726dd93664e81dbdf",
+      "quality_sha256": "891e505388699ecfc8b5eef4b92e3ad284c51cc696e389b074b4cd3262040744",
+      "inputs_sha256": "a4562d8960d2728071ac3dcec60d794f7de4212f4e0551370453bb8856228ff1"
+    },
+    {
+      "clip": "buildingblock_tower_15_176",
+      "summary_sha256": "872be1adff97ae968c13313feb20fb0cb275a48260aad3b956ad5d7236f5ee54",
+      "quality_sha256": "6fef551b56bce8ea209f414e81c22088468ffafc38b651b6a4757d0769af61d5",
+      "inputs_sha256": "467d508358d857611ea35f795693c21ac4c8ad5035992d4ea47df75703abb761"
+    },
+    {
+      "clip": "buildingblock_tower_16_0",
+      "summary_sha256": "5b6014b5930744ba1d283cfc62f550d6ed386bfe82ae85fdaef0f30d868fd288",
+      "quality_sha256": "57d1532542ec2ae7c84c4a6a97ccdc7d4cd8d79069b84546ad105fd7e7a20301",
+      "inputs_sha256": "6fe1eb14f8fd1afa5292b72e990cd205823551eb51dfade74deea6248916f9f8"
+    },
+    {
+      "clip": "buildingblock_tower_16_176",
+      "summary_sha256": "147096f27a52ff58121e82a0f78e60a5a447cd640e3bdf85eee08ff8b1aaecdf",
+      "quality_sha256": "e0e53f5d3bb09d37bbb6916a215e30c293a23435e34629825a75533fd08b218a",
+      "inputs_sha256": "67fef0636bc5d78fa5ae2c738473914595cdba0584824ca730edd24a07cd4015"
+    },
+    {
+      "clip": "buildingblock_tower_18_0",
+      "summary_sha256": "09d1dd6544e3720baa0bda536e7fae4746389dec34a9bc6fa0e8de24ac7c1605",
+      "quality_sha256": "8a6268a9322326068f8a67d8937a85170fbd7f1b3fb4632f5d9c519e7347ee14",
+      "inputs_sha256": "66980f78442317f86a19ad3a1e640110d56c7a25d8fe7c9696905241a456f391"
+    },
+    {
+      "clip": "buildingblock_tower_18_176",
+      "summary_sha256": "87a49683c2eda25562b54b3424d2a567d3508f8421f0ff3b83bda1acd26eee3b",
+      "quality_sha256": "c79e69234415e77d1ddde5c94c70be888d6db402b347e3e8c5e14c8c3e59b376",
+      "inputs_sha256": "0819ea64826071077c4c7b043c0f4e7c8f7320b060635d5c1b6c5f54d054ab6c"
+    },
+    {
+      "clip": "buildingblock_tower_18_352",
+      "summary_sha256": "f31db9fffbf31e948ca7e679ca9e815fb85006d2fa945f4744d3e4d70b2a86f2",
+      "quality_sha256": "5c311d46078b28d99d78bdf6de99d3696b3f5c02a0183b8864fde46fc69a3fd7",
+      "inputs_sha256": "b73d2ac0c67149855dae6c4513334b26e2a1b16f71ee0b7b34fcb6e36877363a"
+    },
+    {
+      "clip": "buildingblock_tower_18_528",
+      "summary_sha256": "7414894e396f7f9e6ba0fea76fe0d204fed97ce91599105bbab745d36d6b73bb",
+      "quality_sha256": "3cb9b79ee7b24471e75c2a6283d8063b457abaa5ec22e55ab64a88eb0c530ee2",
+      "inputs_sha256": "b9d676004456ef840d1551adca5d70b82b2bdd629f4b018e8f8f2e597e977aaa"
+    },
+    {
+      "clip": "buildingblock_tower_1_0",
+      "summary_sha256": "2b36c453fad6c0396abe5626bb7ee6494669225f3ab2bd05b169a3403fb0148f",
+      "quality_sha256": "76078a1310a3f8f9abf6e907e7d711921f5f46a6407e5686ec7fb9c8245463ef",
+      "inputs_sha256": "cd72bcec6fcd8bbe0afb766b9b0a5f42b36d4d263fe1582ff7d7634edff9a55f"
+    },
+    {
+      "clip": "buildingblock_tower_1_176",
+      "summary_sha256": "92aeaeee240586e5af544ad44fdc21c4e21a1522b1c1f8e356ef9f857b298918",
+      "quality_sha256": "4ee1352169ecbf600aee6ab43d20de92d1f298d62ade8072729f47cfde79222a",
+      "inputs_sha256": "c76fc85240e7af04342e9e67785e635dade9303f13e489304257b8d1d5b36ebf"
+    },
+    {
+      "clip": "buildingblock_tower_20_0",
+      "summary_sha256": "0a76271b0051e0cdcb551afd05b8ac599ddae6281eed4b13f70462cd27d67fd4",
+      "quality_sha256": "33104a60f1b324196cc4e39894c6ce14cf7c9034c0fe650ca53f4b5383b6da2f",
+      "inputs_sha256": "ed00a5d0cb5bbb45e8327a99d5140590b3951b03a1f7123f0627a1c4b6063490"
+    },
+    {
+      "clip": "buildingblock_tower_20_176",
+      "summary_sha256": "1e319841febbb545f84633c4a76a7d296f89a9b86c1f1b403b951cabb13272b3",
+      "quality_sha256": "4a945f0d42154ee97aed327423e66690ded436e5d6a5ae3782129e2236ddd942",
+      "inputs_sha256": "9a3adc4583c0bae5e039e2695eb50831c10aea739dc1b00d56baf8c7a8532108"
+    },
+    {
+      "clip": "buildingblock_tower_20_352",
+      "summary_sha256": "6a3c4c6eda2a90ed9af1232c3b39a9a9007d7d6c160875de3ec91bd65bb2a73d",
+      "quality_sha256": "0a6e00009bc659ce4b213abdb1ac9a4c87dc0f59d9d7e1faf53ceecf6fd31ad4",
+      "inputs_sha256": "35dc50c459038bf0d1d00e44e50b3e481cdcae5e415034cbb4e8c8b496aaecb7"
+    },
+    {
+      "clip": "buildingblock_tower_20_528",
+      "summary_sha256": "d72e98e78df3da556d75358ad795cb1c1d48bcd8b6c4f3087790ee8334f4d404",
+      "quality_sha256": "5d34c63a8bb2c43fa86d9cd538e02039180e530151eb7458a98acaf061866958",
+      "inputs_sha256": "294d09c5c324ee933026ad3cf9030cce8d8207138617968cb7de82f2e938ff9f"
+    },
+    {
+      "clip": "buildingblock_tower_21_0",
+      "summary_sha256": "f0fead999f1629cf4791dfa42a9f394251b2798a80e51479d2ad5b73e3a41579",
+      "quality_sha256": "458f79ef5e21a6d1b9fb56a8597e3d3e57cde84e11b39728c24b3f21a117e6be",
+      "inputs_sha256": "8cc7a58613b17415210253706ea85388b7d05d8892c14ef1b9ff619aec5e895d"
+    },
+    {
+      "clip": "buildingblock_tower_21_176",
+      "summary_sha256": "951b9c768e6d8e86f28cdf0dde60f5db09127dbfbc35718d7dea5818ada34aec",
+      "quality_sha256": "5f6d47156b3dbeb0ba3cfae0e43c03954cb55d83cfc418d999673ceeb7e70e1e",
+      "inputs_sha256": "4ee325caf1885c561329f15103d9e2664b619fc29fc82acbc52edccf6669cb58"
+    },
+    {
+      "clip": "buildingblock_tower_21_352",
+      "summary_sha256": "b268cc27c20ad4a99d3a4ea04242b45c844535384bb6b5ee09ed14fbc98f5d13",
+      "quality_sha256": "6a12421cd8a2629e5cef3421e6ea69f4ae7c37189f2bf3d8f8cb6dc6d3d70687",
+      "inputs_sha256": "83c4d63dbbfa933aebe638e4246caf52a93b444e32f30e987c165be0cbca4903"
+    },
+    {
+      "clip": "buildingblock_tower_21_528",
+      "summary_sha256": "079486931449aeb5a1c04559fb6b775db70f18a2d1c8c044454eefafc06419ff",
+      "quality_sha256": "b60089db7b7b8c3c1df6a7257d55210e46168db9eee729a9ed890ffd33e75e45",
+      "inputs_sha256": "cc1c04d1af3814e559a2e3759ed122eb6633ac766be96ba8356357bcf9d88794"
+    },
+    {
+      "clip": "buildingblock_tower_3_0",
+      "summary_sha256": "53c4cf2d4ce5edfce73ddfe3c8b98540d314ed7f71a124ed45a7998a5b2b2dc3",
+      "quality_sha256": "9c3f3a871fe47aec7fc102c1b748ff6b829648b957c983fe7edcd0223eddb49f",
+      "inputs_sha256": "d98cc62fa1bc925192f847aaf7dc3fd2c4d3b6c6a62bd03c9b5e98fba632692d"
+    },
+    {
+      "clip": "buildingblock_tower_3_176",
+      "summary_sha256": "96ea5d6e9c8531561a0cb9640d3984cdfe77a59b3d00883c1ec969dcc2350406",
+      "quality_sha256": "bd953bb2c03376cf85d72fa81580c8330e44db2bf97426528619ef07c679952f",
+      "inputs_sha256": "0dd31c0e25dc725f6d9ca1b8fc6ff6170c66ec6f258f5872d0ba3de7789ac97c"
+    },
+    {
+      "clip": "buildingblock_tower_3_352",
+      "summary_sha256": "679eb3ed7cdccc6c9166c7c7eb1f213f5573f65821847a739249aa33a2f6c1b2",
+      "quality_sha256": "f37ad97ee8798dce32eacfc4be4272b4e48b1cfb8658c5aa6bcae5373cb8fc24",
+      "inputs_sha256": "02856cf668436ed681dfe5958f82263eb51688874cdd61aa3ced4e8f7c81bb1e"
+    },
+    {
+      "clip": "buildingblock_tower_4_0",
+      "summary_sha256": "ddfad2bcd21b7ad60af1c4917045793a16b3b991faa1945cd6def7094571695d",
+      "quality_sha256": "b1d4757d9714885a1e5461804c3f8bce8f85ff1ea54412f1f30c49b46ad9aebc",
+      "inputs_sha256": "6679d452fd6e13629cc0d51d2842b513504cc4bb832437a0b9f12c9cdb0a37c5"
+    },
+    {
+      "clip": "buildingblock_tower_4_176",
+      "summary_sha256": "955cd513ff2f22f6c4d339ba575c8f8965566bff9f33653a3cc979d69b66ad34",
+      "quality_sha256": "20a652b92e6c066704cc058ee621c94753f029ad9a4d4ba6f6200642ffd015eb",
+      "inputs_sha256": "9ae8a90b65ecddf1511e20ee3e4e4e7b340d97cc635fda8d1a992b48454155b1"
+    },
+    {
+      "clip": "buildingblock_tower_4_352",
+      "summary_sha256": "b49b6efd1bd8199cf94a0a391380797b99c5b49975f08795fb0cee81470f1561",
+      "quality_sha256": "4fff14721f8a111ab233c3a2908c67627942507aefff8bd8feeb6118a6914342",
+      "inputs_sha256": "3877f6ff39ddc3f1ddf823b53a80483691d41d521356cb4ca295717a18dbb1c8"
+    },
+    {
+      "clip": "buildingblock_tower_5_0",
+      "summary_sha256": "998f801eec632af1ed5542d07b79984e0255d92266301090b44b8d1268e19fb2",
+      "quality_sha256": "f9deda1b561c5e77514521a7e77c03171070e409595acf4490853cb1f209ae4e",
+      "inputs_sha256": "75f3b5fb1ba93ca668ee757d685745b0d106ecbee4069978baf2a02941312afe"
+    },
+    {
+      "clip": "buildingblock_tower_5_176",
+      "summary_sha256": "3b64ed7c30c18ddb071229298f2f5f3fe6c22a1d584f1ce8842b7fef42fa8212",
+      "quality_sha256": "5411637c03bafc4447e4407486eace16139a2beadba7f6eb5669f39d02d58ed4",
+      "inputs_sha256": "7aaf75ba7cf7ee484631c1bc265ce0c2c920c035fd9f1846481d71b94b8206e1"
+    },
+    {
+      "clip": "buildingblock_tower_5_352",
+      "summary_sha256": "be4a11d93d12e3aeede9b81b109d8aced00a2d7d602b414c7ae21c52657416db",
+      "quality_sha256": "ff6357fcf6a4354188ba1d922175d72b4b9ad8993878dfdd7abbc04b125a4976",
+      "inputs_sha256": "13a8c93201bc3aecbf69a30d8e58bf6c6765d21f5de5959f9337f9a0d588ffc2"
+    },
+    {
+      "clip": "buildingblock_tower_6_0",
+      "summary_sha256": "ec6a72e947565ccdf2ebdc17228ca3301cf79d283881392059b10bb7ac88e653",
+      "quality_sha256": "1265e6d64d4c5eb15be5d6f87a4bf97304d3135926e3b0ec53182ab81b2ea0c7",
+      "inputs_sha256": "ef3b1a5ec6e769be022c59cc162ac6551942ee881b58cf7d8ebd04cd90b44834"
+    },
+    {
+      "clip": "buildingblock_tower_6_176",
+      "summary_sha256": "0680987607150e200c7b3f4aa3799d84a16fbe87a7f0ede7ec1ede98a322a9f5",
+      "quality_sha256": "1af99d0b51d409c8d52f9f9de279d18d75929d1acb3609629fe99f1fb5a8d477",
+      "inputs_sha256": "7be66aaab5d4f6e86d80714dd8778256033c0290eb3574c40d59ba02e174a9ca"
+    },
+    {
+      "clip": "buildingblock_tower_6_352",
+      "summary_sha256": "e0bfcb48eb753a57dfb74f696c4e912e9b241fab3f0b1a898cc51d73dc3152c0",
+      "quality_sha256": "f1fbb7f4b6e3bcbe994f4787c093284a1363ed4a5bc05504c5af9da3d1ba53a6",
+      "inputs_sha256": "a538203cb2cbd45e0eb7fefeac271489f5daa60da25875a19d650b56b0b94809"
+    },
+    {
+      "clip": "buildingblock_tower_7_0",
+      "summary_sha256": "99221f41af94f597255eca508b03451428a610f08e83da3b28309fe67b00e9cc",
+      "quality_sha256": "11f0b04e4c2c927f7e6dd6a570f80b8419f1466f0fd19dd4248d7ccd827c61f4",
+      "inputs_sha256": "8ff4343f443c0a68cdf77361d5114bd661096040d6237d12db7126c9ab4cb690"
+    },
+    {
+      "clip": "buildingblock_tower_7_176",
+      "summary_sha256": "7de44be7484993f11096e35f5ea9c6fa1c5d7c5ef6b13bef0ed58006d7608b46",
+      "quality_sha256": "2ba372499363010338e733421b053d46e987a895ecd471b840c6f52167e7d7e0",
+      "inputs_sha256": "d214efc80b7428e245d40f8cb54194f41fa363a0b8fb949e415ada7da7f3f065"
+    },
+    {
+      "clip": "buildingblock_tower_8_0",
+      "summary_sha256": "80b554ac6f7e121f6086a9ce7778e9a9f334a1b36c9c6415a2903bfed87c4bc4",
+      "quality_sha256": "3762cd86696cfddf29027d431d0aac566e4ec2c9d5d92f93ab0c564bc2f9491c",
+      "inputs_sha256": "02b5341e9f21b46ed291aa031dec1ffd1d02110f992f37d3722e633cf634670f"
+    },
+    {
+      "clip": "buildingblock_tower_8_176",
+      "summary_sha256": "bf9bd6217f95eef211571fef1a4da6151820c1640fb28ea8c239d632785e9544",
+      "quality_sha256": "63aa4ac91d5b0aa251f14375c4239c8b413b2180802d0188cbcf410682d21934",
+      "inputs_sha256": "ae4436ff5330ddbf8685dc3300b5e05951c46566bcfd964f40c9a5c8bc434fa7"
+    },
+    {
+      "clip": "buildingblock_tower_8_352",
+      "summary_sha256": "70d5cdadfc9a5f3e71b7fe2debba5631f0665d7a890f5d023cbf42af8ea4ea47",
+      "quality_sha256": "1df955ac484b6e4fb131c59833bbc2ace3b50b05370a1131a5ae198aadfbb40a",
+      "inputs_sha256": "d23da664f441e915a1c3799ed3493fe175d7b9ea1bd78ee8c64eb95160d32891"
+    },
+    {
+      "clip": "buildingblock_tower_9_0",
+      "summary_sha256": "2066b6a1d92607da1aa65a83a4a522986d9740b1f8228c13a52cf4d0875d03e9",
+      "quality_sha256": "59dd284d7305d1afdc80efe7b68d1501a0db8a54250284fee9dd5226fb7a8307",
+      "inputs_sha256": "58c5399ba674f3c968794830c21466bafd6920ffa4175f3fc2cb74463fe3a545"
+    },
+    {
+      "clip": "buildingblock_tower_9_176",
+      "summary_sha256": "077d99b63bbc7707bcd02a9b68dbacd0e80b5d882925d81b117df3d2275eebd1",
+      "quality_sha256": "cc42593a92987c2a2b075a5da5ca9f3d752b68eb49eaedbc31a6e5fa2d3db7ab",
+      "inputs_sha256": "a5e332ee332dd1b63fa5f587b3d57df1574584978bc63ad988e352e14ab60286"
+    },
+    {
+      "clip": "buildingblock_tower_9_352",
+      "summary_sha256": "a0efb7fa3e86ba052b3da9ca13034177ac25b57cb10602ed4d82d9cc8c6204e1",
+      "quality_sha256": "2cea0f8a7817afee22a6a79a09c8d6dd04948433951ddc475d08314c876541a5",
+      "inputs_sha256": "714a333f606ae9578f6434b5315d3cdcd050d055944397338513564d3922cb7d"
+    }
+  ],
+  "original_clip_metrics": "previously bound historical evaluation",
+  "threshold_005": "descriptive count only; not a motion acceptance threshold",
+  "states_and_images_reloaded": false,
+  "reconstruction_recomputed": false,
+  "gpu_used": false,
+  "training_performed": false,
+  "eval_video_metrics_selected": false,
+  "action_model_evaluated": false,
+  "elapsed_seconds": 2.005142752896063
+}

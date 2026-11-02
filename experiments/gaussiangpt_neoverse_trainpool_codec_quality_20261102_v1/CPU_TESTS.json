@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "code_sha256": "4553cb353cd583d580dc4eadb9ee57c22a267df11148c139b64827835f4d2ac3",
+  "test_sha256": "295a392f03266f8d80c960c7819db316f75aaf1d3429a1307a167b692e9aee66",
+  "checks": [
+    "177 unique frames and correct clips",
+    "historical training-only role",
+    "finite metrics and distinct clip/group weights"
+  ],
+  "scope": "synthetic CPU logic; actual source receipt checks still required"
+}
