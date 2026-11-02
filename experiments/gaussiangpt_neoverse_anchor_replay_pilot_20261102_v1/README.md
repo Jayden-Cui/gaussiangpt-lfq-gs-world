@@ -15,3 +15,5 @@
 为可能的后续扩展，已用历史 B checkpoint 完成[采样前缀与 Adam 状态 CPU 审计](../gaussiangpt_neoverse_anchor_replay_resume_audit_20261102_v1/RESULTS.md)；这不是对当前回放 checkpoint 的验收，后者仍须等实际结果产生后单独核对。
 
 [第 1 轮两窗口预览](run/training/preview_01/VISUAL_REVIEW.md)的运动 MAE 为 0.066167，高于 warm 起点 0.029776；黄条与绿梁仍有明显退化。此为预设中间节点，尚无五轮全片段评估及独立重放结果。
+
+[第 3 轮两窗口预览](run/training/preview_03/VISUAL_REVIEW.md)的运动 MAE 为 0.051312，低于第 1 轮但仍高于起点；绿梁 h3 仍大幅消失，不能作为动态通过结论。该中途预览不替代第 5 轮完整评估与原生 GS 重放。

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "files": {
+    "preview_03/PREVIEW.json": "1d356cf291a835c921e82849d7980330ed47975a35c4066fa6007adafa674f30",
+    "preview_03/s035_h01.png": "e318af920e0ff10319108d9ced6867e1f4bd0bc5d147c1a789a33f6a35159c6d",
+    "preview_03/s035_h03.png": "3210d4c3411a079e103976acbbfbc82ef4d4cb79c3df7aaf84f8ca3600f5d9e4",
+    "preview_03/s035_h06.png": "d48b4cdbaedc741864aa5b378491edffa4f139ef7f0a261fb00a44979636946d",
+    "preview_03/s035_h09.png": "a67f07818e844f4b84836011ae7202b93d0ddbcfb6b4613f7fdca0eab26fda87",
+    "preview_03/s123_h01.png": "fd4728288d30fab9068e1d638be40033750374a8daef714f5a646b5770ada893",
+    "preview_03/s123_h03.png": "22a58462a0730987465ef7bbdfe10119c996fd58f04d254c1b8bfb64711cb811",
+    "preview_03/s123_h06.png": "2dcd8d607f9afffc9a09dabdca5a76af758fe06f60e2316e31f205ca1d5f9195",
+    "preview_03/s123_h09.png": "69b788722d9b84e8bc4b6d6c756faba03f423a162180f303093f3ed4ebc5680a",
+    "sweep_03.json": "4434dd8374316ff2be8951ca41e8a158254653ebbee10bc62be932e3cfdf678d"
+  }
+}

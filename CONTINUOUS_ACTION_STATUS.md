@@ -20,6 +20,8 @@
 
 [关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/README.md)已启动：每轮仍完整遍历 1512 个窗口／跨度对，同时均衡增加两窗口回放，共计划 2115 次 B4 更新。真实 GPU 预检通过，warm 初始两窗口误差复现为 0.029776；[第 1 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_01/VISUAL_REVIEW.md)为 0.066167，动作仍明显退化。第 5 轮将自动进行全窗口评估与 GS 独立重放；当前尚无该轮结果。
 
+[第 3 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_03/VISUAL_REVIEW.md)的运动 MAE 已从第 1 轮的 0.066167 降至 0.051312，但仍高于初始的 0.029776；绿梁仍有明显缺失。预览尚不覆盖全片段或独立重放。
+
 [第 1 轮解码器／自由码交叉诊断](experiments/gaussiangpt_neoverse_anchor_replay_cross_20261102_v1/RESULTS.md)在两个已训练窗口上完成：起点 decoder＋第 1 轮码的运动 MAE 为 0.034965，第 1 轮 decoder＋起点码为 0.069132；两组原配分别为 0.029776 和 0.066167。画面显示后者绿梁大幅缺失，提示退化与 decoder 更新高度相关。交叉码可能处于训练分布外；这不是最终全片段评估，也不能单独认定原因。
 
 ## 后续阶段

@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "sweep": 3,
+  "sha256": "b06eaaf8bc69932d0ce0224c01be66f64f6dc927f9847db8d167e0ee08446c63",
+  "decoder_digest": "e4aeddf0b16a4ff12d08808b2537bbc7254f3f11e0c322a37e3ef19eb179af88",
+  "shape": [
+    168,
+    9,
+    16
+  ]
+}
