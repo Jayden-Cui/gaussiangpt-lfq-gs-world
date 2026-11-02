@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "B_summary_sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+  "groups_sha256": "b283b40fbda8a11095a769b82692da7c8ce5aaa6733fcb90a0b35895d8a9db57",
+  "grouped_reports": [
+    {
+      "sweep": 5,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP05.json",
+      "sha256": "ab0df8062cb74436f4077928423b869850d5cfe9a20aee04be371fb60867c10e"
+    },
+    {
+      "sweep": 10,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP10.json",
+      "sha256": "0a7c0fc41d6f63ad8eda228aac7dad9f2d0201cb700ca2975497a361e00a6cb0"
+    },
+    {
+      "sweep": 20,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP20.json",
+      "sha256": "85e9640e8fb46f16554678260a53d694fa8e5cd512358a0374506cbb3f0485c1"
+    }
+  ],
+  "gpu_used": false,
+  "training_signalled": false,
+  "manual_dynamic_review_required": true,
+  "action_codec_complete": false
+}

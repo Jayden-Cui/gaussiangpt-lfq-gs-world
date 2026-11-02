@@ -1,0 +1,134 @@
+{
+  "status": "complete",
+  "B_summary_sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+  "reports": [
+    {
+      "sweep": 5,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_05/AXIS_DIAGNOSTIC.json",
+      "sha256": "51599ea871a82bb17f2fb1b4fcbca0d3a1edc441b1f742826c580d89434653db",
+      "summaries": {
+        "35": {
+          "source": {
+            "2": 0.9033333333333334,
+            "4": 0.9377777777777777,
+            "8": 0.9955555555555556
+          },
+          "stage_b_free_motion": {
+            "2": 0.3533333333333333,
+            "4": 0.4033333333333334,
+            "8": 0.5344444444444444
+          },
+          "actual_state_codec": {
+            "2": 0.9355555555555556,
+            "4": 0.9611111111111111,
+            "8": 0.9988888888888889
+          }
+        },
+        "123": {
+          "source": {
+            "2": 0.991111111111111,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          },
+          "stage_b_free_motion": {
+            "2": 0.0,
+            "4": 0.0,
+            "8": 0.0
+          },
+          "actual_state_codec": {
+            "2": 0.9877777777777779,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          }
+        }
+      }
+    },
+    {
+      "sweep": 10,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_10/AXIS_DIAGNOSTIC.json",
+      "sha256": "e2397c1e160975338c13fdd6a4e500b04b58770e6270ceecd980af4ba97adaf0",
+      "summaries": {
+        "35": {
+          "source": {
+            "2": 0.9033333333333334,
+            "4": 0.9377777777777777,
+            "8": 0.9955555555555556
+          },
+          "stage_b_free_motion": {
+            "2": 0.43444444444444447,
+            "4": 0.4833333333333333,
+            "8": 0.6044444444444443
+          },
+          "actual_state_codec": {
+            "2": 0.9355555555555556,
+            "4": 0.9611111111111111,
+            "8": 0.9988888888888889
+          }
+        },
+        "123": {
+          "source": {
+            "2": 0.991111111111111,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          },
+          "stage_b_free_motion": {
+            "2": 0.0,
+            "4": 0.0,
+            "8": 0.0
+          },
+          "actual_state_codec": {
+            "2": 0.9877777777777779,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          }
+        }
+      }
+    },
+    {
+      "sweep": 20,
+      "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_20/AXIS_DIAGNOSTIC.json",
+      "sha256": "492adbb7144c03f4bf86b5fa42255f42e37d379f4aa11a880cedf00178ee19ef",
+      "summaries": {
+        "35": {
+          "source": {
+            "2": 0.9033333333333334,
+            "4": 0.9377777777777777,
+            "8": 0.9955555555555556
+          },
+          "stage_b_free_motion": {
+            "2": 0.44222222222222224,
+            "4": 0.5033333333333333,
+            "8": 0.6055555555555556
+          },
+          "actual_state_codec": {
+            "2": 0.9355555555555556,
+            "4": 0.9611111111111111,
+            "8": 0.9988888888888889
+          }
+        },
+        "123": {
+          "source": {
+            "2": 0.991111111111111,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          },
+          "stage_b_free_motion": {
+            "2": 0.0,
+            "4": 0.0,
+            "8": 0.0
+          },
+          "actual_state_codec": {
+            "2": 0.9877777777777779,
+            "4": 0.9955555555555556,
+            "8": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "gpu_used": false,
+  "training_signalled": false,
+  "manual_dynamic_review_required": true,
+  "action_codec_complete": false,
+  "scope": "Two approximate source-image axes only; not physical ground truth"
+}

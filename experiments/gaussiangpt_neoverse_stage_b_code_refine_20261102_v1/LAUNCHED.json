@@ -1,0 +1,13 @@
+{
+  "status": "preflight_passed",
+  "pid": 791623,
+  "launched_utc": "2026-11-02T00:42:44+00:00",
+  "gpu": 0,
+  "planned_updates": 360,
+  "training_scope": "two anchors only",
+  "model_code_sha256": "7fa80ccb24cfd584e5a5bfdcd336dfeb7dac89a17830ac94ee8be74a16effb8b",
+  "started_sha256": "43e5eae8310018efc1cbda2265627c21bfeb8fdd3dcef7d8a130f2c3aab2abdb",
+  "preflight_sha256": "ed0d0fc4045bd9b53ce3df2d36e5fdc93ee7d9c4791d0087fcb1cf06f3dc00da",
+  "process_exit_code": null,
+  "no_automatic_retry": true
+}

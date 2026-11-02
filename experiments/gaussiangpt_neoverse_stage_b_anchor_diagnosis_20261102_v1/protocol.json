@@ -1,0 +1,15 @@
+{
+  "schema": "stage_b_two_window_support_feature_diagnostic_v1",
+  "starts": [35, 123],
+  "horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "checkpoint_sha256": "e1613f6688dd2dda1ac6b6e8870da99ac96ecc586fe23ccb930a13303b320a69",
+  "evaluation_sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+  "decoder_digest": "83d4ef081a3e72ad80a24b5f48ca33aa5d0fba528bebd1d64b023c19de86cd29",
+  "original_codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "oracle_support_after_inference_only": true,
+  "ground_truth_target_features_used_in_oracle": false,
+  "training_performed": false,
+  "time_limit_seconds": 900,
+  "manual_visual_review_required": true
+}

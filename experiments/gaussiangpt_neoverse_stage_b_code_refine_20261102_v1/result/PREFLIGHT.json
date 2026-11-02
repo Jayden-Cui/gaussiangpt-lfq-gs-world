@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "discarded_updates": 1,
+  "rgb_to_each_code_gradient_verified": true,
+  "codes_and_optimizer_restored": true,
+  "decoder_and_codec_frozen": true,
+  "probe": {
+    "windows": [
+      {
+        "start": 35,
+        "horizon": 9,
+        "loss": 0.2558248043060303,
+        "motion_mae": 0.07211335003376007,
+        "latent_loss": 0.8097739815711975,
+        "occupancy_loss": 0.10328897088766098,
+        "feature_loss": 0.7064850330352783,
+        "gs_count": 91496,
+        "rgb_to_code_gradient_norm": 0.09131497889757156
+      },
+      {
+        "start": 123,
+        "horizon": 9,
+        "loss": 0.2975909411907196,
+        "motion_mae": 0.0821315124630928,
+        "latent_loss": 0.8688780069351196,
+        "occupancy_loss": 0.15937456488609314,
+        "feature_loss": 0.7095034718513489,
+        "gs_count": 103648,
+        "rgb_to_code_gradient_norm": 0.06795821338891983
+      }
+    ],
+    "preclip_gradient_norm": 0.055680882185697556
+  }
+}

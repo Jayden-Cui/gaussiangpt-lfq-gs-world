@@ -1,0 +1,7 @@
+{
+  "pid": 791623,
+  "schema": "fixed_b20_anchor_code_refinement_v1",
+  "gpu_visible": "0",
+  "planned_updates": 360,
+  "training_scope": "two anchor windows; not full-168 training"
+}

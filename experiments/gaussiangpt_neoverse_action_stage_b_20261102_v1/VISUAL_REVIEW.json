@@ -1,0 +1,39 @@
+{
+  "status": "reviewed",
+  "stage": "B",
+  "decision": "not_usable_as_teacher",
+  "reviewed_sweep": 20,
+  "summary_sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+  "evaluation_sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+  "replay_sha256": "a4300753846b600204d0bf3b3bcfbbf0534369aa95ef4e3b45570ce80960f2b3",
+  "contacts_sha256": "28b4ba70831a0532b8dbd14c827c8366aec4442e76978f1bf279e285d3007de2",
+  "reviewed_windows": [
+    0,
+    35,
+    56,
+    84,
+    112,
+    123,
+    140,
+    167
+  ],
+  "anchor_horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "evidence": [
+    "Yellow bar breaks and shifts during lifting",
+    "Green beam largely disappears during movement",
+    "Original two-window regression is approximately 2.42 times the original motion MAE"
+  ],
+  "color_proxy_is_not_ground_truth": true,
+  "causality_or_replay_does_not_prove_motion": true,
+  "followup": "fixed B20 decoder continuous-code refinement on two anchors, then revisit shared decoder if needed"
+}

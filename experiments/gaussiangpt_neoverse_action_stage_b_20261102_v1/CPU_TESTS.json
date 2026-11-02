@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "code_sha256": "b08206dabfffaa884f453960a1023d8d4c9c4b1f9c6b8e93c14c43bbf0c0fc81",
+  "verify_import_sha256": "1eb0a1e6a57b417a5657b49c53bf838c9d9687bf4826fe0f4e578b9d82d88c5a",
+  "verified_import_sha256": "3997620fb906e0b856b3a64bb4d8260bf7b6ed0426fabbc0802a86cea7916e76",
+  "remote_transfer_sha256": "5cbf696b462c749994b22905aa09f7456552e1a4dbdbb7f7527b0e0ddf08ee92",
+  "imported_files": 43,
+  "ffprobe": {
+    "width": 896,
+    "height": 252,
+    "frames": 10,
+    "fps": 5
+  },
+  "scope": "Imported result integrity and media format only; manual visual interpretation is separate"
+}

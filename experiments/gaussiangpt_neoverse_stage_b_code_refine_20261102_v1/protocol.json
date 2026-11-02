@@ -1,0 +1,14 @@
+{
+  "schema": "fixed_b20_anchor_code_refinement_v1",
+  "starts": [35, 123],
+  "sweeps": 40,
+  "sampler_seed": 477,
+  "logical_batch_size": 2,
+  "code_learning_rate": 0.003,
+  "checkpoint_updates": [90, 180, 360],
+  "max_seconds": 3600,
+  "optimizer_state": "fresh_adam",
+  "decoder_frozen": true,
+  "codec_frozen": true,
+  "quantized": false
+}

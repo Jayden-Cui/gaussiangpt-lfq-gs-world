@@ -1,0 +1,221 @@
+{
+  "schema": "stage_b_local_transfer_sha_v1",
+  "captured_utc": "2026-11-02T00:32:21+00:00",
+  "files": {
+    "REVIEW_ASSETS/CONTACTS.json": {
+      "sha256": "28b4ba70831a0532b8dbd14c827c8366aec4442e76978f1bf279e285d3007de2",
+      "bytes": 11409,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/CONTACTS.json"
+    },
+    "REVIEW_ASSETS/s000_contact.png": {
+      "sha256": "5c89b36d5ab5411eaafe8a5f33acbb798d5fe569e4568c91b5efa5dd70ce02c1",
+      "bytes": 618283,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s000_contact.png"
+    },
+    "REVIEW_ASSETS/s035_contact.png": {
+      "sha256": "282dbee5d617653047f4e7dd59842adeb12603e2fa0b07c11b5cb290714a5b5f",
+      "bytes": 786526,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s035_contact.png"
+    },
+    "REVIEW_ASSETS/s056_contact.png": {
+      "sha256": "7d6267a537af97506b13c7141ce9d81c920e1722d2419235c498d88648b259ec",
+      "bytes": 805898,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s056_contact.png"
+    },
+    "REVIEW_ASSETS/s084_contact.png": {
+      "sha256": "9ed5889fa9b4aca7ff04357163622e04e8995fb87fd343a99add2b14b10e38c6",
+      "bytes": 799635,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s084_contact.png"
+    },
+    "REVIEW_ASSETS/s112_contact.png": {
+      "sha256": "4c1c079b8a342c0bc6c679cbcf7b018b35f1e7fa0ff310302cf63dfb2217d07a",
+      "bytes": 706875,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s112_contact.png"
+    },
+    "REVIEW_ASSETS/s123_contact.png": {
+      "sha256": "2dc32646066c87d346e0d2ad538c7a9933e8fcb77a53f2f966e55b7c06bac78f",
+      "bytes": 787084,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s123_contact.png"
+    },
+    "REVIEW_ASSETS/s140_contact.png": {
+      "sha256": "a73bbcfcddc516a24d68b7c98c3548695c560406392b40d09be0c632bd65335e",
+      "bytes": 868772,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s140_contact.png"
+    },
+    "REVIEW_ASSETS/s167_contact.png": {
+      "sha256": "33b28a98287e7480addcbb39c96df1a8e3151c6a36761ad771dd35159c6be1c0",
+      "bytes": 861312,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/REVIEW_ASSETS/s167_contact.png"
+    },
+    "SUMMARY.json": {
+      "sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+      "bytes": 2832,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/SUMMARY.json"
+    },
+    "TRAIN_DONE.json": {
+      "sha256": "ec7d786c0c8ffef34c7eb37aa321cb8a1236860c388423ef4425b3315e6a94a9",
+      "bytes": 2110,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/TRAIN_DONE.json"
+    },
+    "WATCH_RESULT.json": {
+      "sha256": "a1d198141ec54803633d017931027215869518499ec0270a7452d7fa5d912f2a",
+      "bytes": 3885,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/WATCH_RESULT.json"
+    },
+    "axis/result_b_sweep_05/AXIS_DIAGNOSTIC.json": {
+      "sha256": "51599ea871a82bb17f2fb1b4fcbca0d3a1edc441b1f742826c580d89434653db",
+      "bytes": 18907,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_05/AXIS_DIAGNOSTIC.json"
+    },
+    "axis/result_b_sweep_05/s035_axis_review.png": {
+      "sha256": "f12ed229205907520ddce6bf3524db3391ae0c8c5a05ab65a0ad784eaf0d76a0",
+      "bytes": 382654,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_05/s035_axis_review.png"
+    },
+    "axis/result_b_sweep_05/s123_axis_review.png": {
+      "sha256": "a4dc3853f08ffa77aa90f3412e8a110c654cf4048f1d0fa61d4365515bc0e775",
+      "bytes": 380515,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_05/s123_axis_review.png"
+    },
+    "axis/result_b_sweep_10/AXIS_DIAGNOSTIC.json": {
+      "sha256": "e2397c1e160975338c13fdd6a4e500b04b58770e6270ceecd980af4ba97adaf0",
+      "bytes": 18909,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_10/AXIS_DIAGNOSTIC.json"
+    },
+    "axis/result_b_sweep_10/s035_axis_review.png": {
+      "sha256": "4e5a6efb9858f7abf488635f46522233336e2b348f7d86e327ac9b9619e2a450",
+      "bytes": 378445,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_10/s035_axis_review.png"
+    },
+    "axis/result_b_sweep_10/s123_axis_review.png": {
+      "sha256": "a313f67bd73580c911bb36b7ec68b83e3757faaee099494b24ca7db73f08efea",
+      "bytes": 377274,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_10/s123_axis_review.png"
+    },
+    "axis/result_b_sweep_20/AXIS_DIAGNOSTIC.json": {
+      "sha256": "492adbb7144c03f4bf86b5fa42255f42e37d379f4aa11a880cedf00178ee19ef",
+      "bytes": 18905,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_20/AXIS_DIAGNOSTIC.json"
+    },
+    "axis/result_b_sweep_20/s035_axis_review.png": {
+      "sha256": "3f02ead65e570631c8a94f736df711c69b320a261fb2d76080ddc0bab3b6a2bd",
+      "bytes": 378787,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_20/s035_axis_review.png"
+    },
+    "axis/result_b_sweep_20/s123_axis_review.png": {
+      "sha256": "f814b1cc14649afec31aeaf8a3c5136eecdfc3cdabe69685d583a16a07371229",
+      "bytes": 381523,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_visible_axis_watch_20261102_v1/result_b_sweep_20/s123_axis_review.png"
+    },
+    "groups/STAGE_B_SWEEP05.json": {
+      "sha256": "ab0df8062cb74436f4077928423b869850d5cfe9a20aee04be371fb60867c10e",
+      "bytes": 15709,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP05.json"
+    },
+    "groups/STAGE_B_SWEEP10.json": {
+      "sha256": "0a7c0fc41d6f63ad8eda228aac7dad9f2d0201cb700ca2975497a361e00a6cb0",
+      "bytes": 15721,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP10.json"
+    },
+    "groups/STAGE_B_SWEEP20.json": {
+      "sha256": "85e9640e8fb46f16554678260a53d694fa8e5cd512358a0374506cbb3f0485c1",
+      "bytes": 15725,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/STAGE_B_SWEEP20.json"
+    },
+    "groups/WATCH_RESULT.json": {
+      "sha256": "d735fc2c8b3977c5b2cca2f298503dcbaf8c49677a4b307fdae50ec04b2786d6",
+      "bytes": 1069,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/WATCH_RESULT.json"
+    },
+    "sweep_05/CAUSALITY.json": {
+      "sha256": "4191dca4ca9f152b0ab052520d4c5c208038ba54553a44cd9cbd6e2bf2d984a2",
+      "bytes": 223,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_05/free_z/CAUSALITY.json"
+    },
+    "sweep_05/EVALUATION.json": {
+      "sha256": "2b3267c5b55cbbf945ba33d527900b1b5f256d491bdd8793348874ab99541468",
+      "bytes": 4945243,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_05/free_z/evaluation/EVALUATION.json"
+    },
+    "sweep_05/PACKETS.json": {
+      "sha256": "168fdc40f3402cf97aded3b2fcd08ad73c06c1b0cd54ddf474467b868d5b6504",
+      "bytes": 51925,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_05/free_z/evaluation/PACKETS.json"
+    },
+    "sweep_05/REPLAY.json": {
+      "sha256": "3248534aa7a3ab6049403af329eabca7f3cae3418e8389a237d819a461066cc1",
+      "bytes": 33924,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_05/free_z/evaluation/REPLAY.json"
+    },
+    "sweep_05/STAGE_METRICS.json": {
+      "sha256": "8976ea1a71ce28181d4ebc139a47d0f6a4846a56481a846dbc00ca088dbd0b8e",
+      "bytes": 28830,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_05/free_z/STAGE_METRICS.json"
+    },
+    "sweep_10/CAUSALITY.json": {
+      "sha256": "4191dca4ca9f152b0ab052520d4c5c208038ba54553a44cd9cbd6e2bf2d984a2",
+      "bytes": 223,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_10/free_z/CAUSALITY.json"
+    },
+    "sweep_10/EVALUATION.json": {
+      "sha256": "3070f55ea91454c24e7e8f875f31ce1e416c8bd497da6abf76b76cbb3c628ff3",
+      "bytes": 4946510,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_10/free_z/evaluation/EVALUATION.json"
+    },
+    "sweep_10/PACKETS.json": {
+      "sha256": "84ec87ae5a3ae37115bb8813e0c5b716dffa0f7e3ede495ef881087a1640be36",
+      "bytes": 51919,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_10/free_z/evaluation/PACKETS.json"
+    },
+    "sweep_10/REPLAY.json": {
+      "sha256": "aaf7a99c42eaeef5514d10f690c08f3363891ec06a3975ef756d4969d14fd44d",
+      "bytes": 33925,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_10/free_z/evaluation/REPLAY.json"
+    },
+    "sweep_10/STAGE_METRICS.json": {
+      "sha256": "a17d158cae82936babdc37a9b3151d0bb78c04a02277928b2e2b3603747b4025",
+      "bytes": 29056,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_10/free_z/STAGE_METRICS.json"
+    },
+    "sweep_20/CAUSALITY.json": {
+      "sha256": "4191dca4ca9f152b0ab052520d4c5c208038ba54553a44cd9cbd6e2bf2d984a2",
+      "bytes": 223,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/CAUSALITY.json"
+    },
+    "sweep_20/EVALUATION.json": {
+      "sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+      "bytes": 4945765,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/EVALUATION.json"
+    },
+    "sweep_20/PACKETS.json": {
+      "sha256": "f84c576c418110ff09de9ce14a743ff5e9858929924d6a7e6af2672646163131",
+      "bytes": 51925,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/PACKETS.json"
+    },
+    "sweep_20/REPLAY.json": {
+      "sha256": "a4300753846b600204d0bf3b3bcfbbf0534369aa95ef4e3b45570ce80960f2b3",
+      "bytes": 33923,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/REPLAY.json"
+    },
+    "sweep_20/STAGE_METRICS.json": {
+      "sha256": "6862cbf1ed5aa3dab12f2a091b8cf817fc682ff0b6b9a890c755521b518b9dc8",
+      "bytes": 28854,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/STAGE_METRICS.json"
+    },
+    "videos/s035_source_vs_free_clean_5fps.mp4": {
+      "sha256": "e74fde1d1abf2149f01aac468a2e82f7a92c71c4bced32fe34c8894485e9ecbc",
+      "bytes": 113328,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/videos/s035_source_vs_free_clean_5fps.mp4"
+    },
+    "videos/s112_source_vs_free_clean_5fps.mp4": {
+      "sha256": "99decd9b363f7062c1a9d5214d00d2d12d8ef7d25259af2c5c87433bd5ab0eb5",
+      "bytes": 101638,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/videos/s112_source_vs_free_clean_5fps.mp4"
+    },
+    "videos/s123_source_vs_free_clean_5fps.mp4": {
+      "sha256": "60e35619be23cb4ddc6c0175e699d1e76f23cfa174c76f324942b03eb7813224",
+      "bytes": 119415,
+      "server_path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/videos/s123_source_vs_free_clean_5fps.mp4"
+    }
+  }
+}

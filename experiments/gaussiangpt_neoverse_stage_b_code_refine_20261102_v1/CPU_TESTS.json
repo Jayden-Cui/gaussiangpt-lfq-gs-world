@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "code_sha256": "7fa80ccb24cfd584e5a5bfdcd336dfeb7dac89a17830ac94ee8be74a16effb8b",
+  "worker_sha256": "0e7438b33a0a96ad898a86f2fc1b17c534f2dd126dc91f741cc6585486868ce0",
+  "test_sha256": "09ef9e6192b1c4132024ef97ea69d33919ca8cf5a7819e08849f6299e5ab54a8",
+  "protocol_sha256": "80e0ed2c38163a336aaf5bdd7b329d1e22aa02a5a5f80b67844c00313cc58314",
+  "checks": [
+    "deterministic 360 B2 updates",
+    "40 visits per window and horizon",
+    "fixed protocol",
+    "quantization forbidden"
+  ],
+  "scope": "CPU schedule/config tests only; actual GPU gradient preflight occurs before training"
+}

@@ -12,9 +12,11 @@
 
 [占据替换诊断](experiments/gaussiangpt_neoverse_action_stage_a_eval_correction_20261102_v2/EXECUTION.md) 仅用真实目标格点选择预测特征做离线定位；不能作为真实预测输入。[第 5／10 轮结果和八窗口观察](experiments/gaussiangpt_neoverse_stage_a_interim_render_20261102_v1/EXECUTION.md) 是中间检查。
 
-## 正在训练：阶段 B
+## 已完成训练与评估：阶段 B 尚未通过动作验收
 
-[共享 decoder＋全窗口自由码](experiments/gaussiangpt_neoverse_action_stage_b_20261102_v1/README.md) 从原两窗口成功的模型出发，固定原 codec、初态编码和 context，训练共享 decoder 与 168 组自由码。真实 GPU 预检已通过；启动验收时已完成 25／7,560 次更新。训练完成后自动评估并独立重放第 5、10、20 轮；最终结果仍需逐窗审查。[两窗口起始模型独立回归](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/EXECUTION.md) 的运动 MAE 为 0.02977625250，与旧结果 0.02977625270 一致；另有事件监听器将在第 5、10 轮产生后预览这两个窗口。
+[共享 decoder＋全窗口自由码](experiments/gaussiangpt_neoverse_action_stage_b_20261102_v1/RESULTS.md)完成 7560 次更新、三个检查点的 1512 项评估和独立 GS 重放。第 20 轮全段运动 MAE 为 0.057385，低于旧全片段 Q 的 0.062531；但原成功两窗口从 0.029776 退化至 0.071989，黄条断裂、绿梁移动时消失，因此尚不能作为动作教师。 [占据替换诊断](experiments/gaussiangpt_neoverse_stage_b_anchor_diagnosis_20261102_v1/RESULTS.md)改善部分帧，但未恢复全部动作。
+
+为定位固定 decoder 下的码优化是否充分，[两窗口连续码补充优化](experiments/gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/README.md)已通过真实 GPU 预检并启动，固定预算 360 次 B2 更新。该诊断不能替代全 168 窗口训练和验收。
 
 ## 后续阶段
 
@@ -30,7 +32,7 @@
 
 [CPU 分组监听器](experiments/gaussiangpt_neoverse_motion_groups_watch_20261102_v1/EXECUTION.md)已启动，等待 B 的三个完整评估与独立重放后自动生成分组统计；教师选择仍需动态审查，不会自动声称动作码已完成。
 
-阶段 B 第 5 轮[两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_sweep05_review_20261102_v1/EXECUTION.md)：18 帧运动 MAE 从起点 0.029776 升至 0.086623；黄条出现细弱、缺失与残影，绿梁难以辨认。该中途预览未覆盖全部窗口或执行独立重放；原 20 轮训练继续，已完成不更新模型的起点／第 5 轮 decoder 与自由码交叉诊断。
+阶段 B 第 5 轮[历史两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_sweep05_review_20261102_v1/EXECUTION.md)：18 帧运动 MAE 从起点 0.029776 升至 0.086623；黄条出现细弱、缺失与残影，绿梁难以辨认。该中途预览未覆盖全部窗口或执行独立重放；后续完整评估和重放已完成，见上方阶段 B 结果。
 
 [交叉诊断已完成](experiments/gaussiangpt_neoverse_stage_b_cross_decode_20261102_v1/EXECUTION.md)：起点 decoder＋第 5 轮码为 0.031984，第 5 轮 decoder＋起点码为 0.094129；两种原配分别为 0.029776 和 0.086623。图像和指标均表明，两个已知窗口的阶段性回归与 decoder 变化高度相关；交叉组合可能不在训练分布内，不代表全片段的最终结果。
 
@@ -40,7 +42,7 @@
 
 [历史两窗口 Q-Former 的同相机静止控制](experiments/gaussiangpt_neoverse_qformer_static_control_20261102_v1/RESULTS.md)已完成：重复 S0 码对静止参考的误差为 0.159765，对运动参考为 0.029009；18 帧均更接近运动参考，画面也显示物体继续运动。该旧 Q＋decoder 系统没有通过同初态静止控制，但不足以将原因单独归咎 Q 或 decoder。
 
-阶段 B 第 10 轮[两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/sweep_10/VISUAL_REVIEW.md)的运动 MAE 为 0.082714，较第 5 轮稍有改善，但仍高于起点 0.029776；黄条细弱且位置偏移，绿梁多帧消失。两个窗口的动态验收仍未通过，完整评估和第 20 轮尚未完成。
+阶段 B 第 10 轮[历史两窗口预览与逐帧审查](experiments/gaussiangpt_neoverse_stage_b_anchor_preview_20261102_v1/sweep_10/VISUAL_REVIEW.md)的运动 MAE 为 0.082714，较第 5 轮稍有改善，但仍高于起点 0.029776；黄条细弱且位置偏移，绿梁多帧消失。后续第 20 轮和完整评估结果见上方。
 
 为区分旧 decoder 是否能表达静止、以及旧 Q 是否能产生静止码，完成了[两窗口固定 decoder 静止自由码诊断 v3](experiments/gaussiangpt_neoverse_static_code_probe_20261102_v3/RESULTS.md)：只优化 540 次连续码，静止参考误差从 0.159765 降至 0.131698，但 15／18 帧仍更接近运动参考；逐帧画面中物体消失且出现黑色残影，没有得到可用静止码。这是单初始化、有限预算的两窗口结果，不能证明数学上不存在静止码。v1 在 GPU 申请前因 JSON 记录格式失败；v2 的 GPU 预检通过，但第 0 步评估读取配置错误，均在正式训练前退出并已保留。
 
@@ -50,17 +52,17 @@
 
 针对该小试的[三栏视频与逐帧审查素材](experiments/gaussiangpt_neoverse_two_future_visual_20261102_v2/result/MANIFEST.json)已生成并检查；使用 CPU 和进程退出事件，不影响训练。v1 来源哈希抄写错误在启动前发现并已留档，v2 改为读取原启动记录的完整哈希。[独立 GS 重放](experiments/gaussiangpt_neoverse_two_future_native_replay_20261102_v2/EXECUTION.md)的 36 份运动／静止 GS 包、72 视角全部通过；该一致性不证明动作语义正确。
 
-在上述两窗口自由码教师上，[固定 decoder 的双未来 Q-Former 诊断](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/EXECUTION.md)已完成 600 次蒸馏并进入 594 次重建联合更新。蒸馏结束时 Q 运动误差 0.031389、教师 0.031369；静止参考误差分别为 0.007585 和 0.007583，两分支各 18／18 帧更接近对应参考。[独立 CPU 重算](experiments/gaussiangpt_neoverse_qformer_step600_cpu_replay_20261102_v1/RESULTS.md)验证了四组码及缓存前缀扰动检查；最终原始状态因果性、GS 冷重放和视觉审查尚待完成。该教师有单帧颜色代理偏差，此试验只检验两窗口提取，不是正式全片段 C 对照。
+在上述两窗口自由码教师上，[固定 decoder 的双未来 Q-Former 诊断](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/EXECUTION.md)经历 600 次蒸馏和 594 次重建联合更新。蒸馏结束时 Q 运动误差 0.031389、教师 0.031369；静止参考误差分别为 0.007585 和 0.007583，两分支各 18／18 帧更接近对应参考。[独立 CPU 重算](experiments/gaussiangpt_neoverse_qformer_step600_cpu_replay_20261102_v1/RESULTS.md)验证了四组码及缓存前缀扰动检查；最终原始状态因果性、GS 冷重放和视觉审查也已完成，见下方最终结果。该教师有单帧颜色代理偏差，此试验只检验两窗口提取，不是正式全片段 C 对照。
 
-该双未来诊断的[第 900 步中期评估](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/result/step_00900/EVALUATION.json)中，Q 与教师相对原视频的运动区域 MAE 分别为 0.031060 和 0.031369，静止参考加权 MAE 分别为 0.007091 和 0.007583；两分支各 18／18 帧更接近对应参考。训练和最终视觉、因果及独立重放检查仍在进行，不能从两窗口中期数据推断全片段或跨视频表现。
+该双未来诊断的[第 900 步中期评估](experiments/gaussiangpt_neoverse_two_future_qformer_20261102_v1/result/step_00900/EVALUATION.json)中，Q 与教师相对原视频的运动区域 MAE 分别为 0.031060 和 0.031369，静止参考加权 MAE 分别为 0.007091 和 0.007583；两分支各 18／18 帧更接近对应参考。此为历史中期结果，不能从两窗口推断全片段或跨视频表现。
 
 [颜色代理敏感性检查](experiments/gaussiangpt_neoverse_object_proxy_sensitivity_20261102_v1/RESULTS.md)发现，两窗口黄色条运动分支的部分源帧存在离散同色像素；h3 的原目标边界框对角线是最大连通区域的 1.53 倍，可能低估归一化中心误差。后续教师评审应保留原指标并核查遮挡与掩码碎片，不能把最大连通区域当作真实分割或仅依据数值阈值验收。
 
 [两窗口 Q-Former 最终结果与逐帧视频](experiments/gaussiangpt_neoverse_qformer_final_review_20261102_v1/RESULTS.md)已完成：1194 次更新后，运动区域 MAE 为 0.031014，自由码教师为 0.031369；运动／静止各 18／18 帧更接近对应参考，原始状态扰动的前缀因果检查和 36 包／72 视角独立重放通过。黄条早期仍有模糊、位置偏差，颜色尺度敏感；这只验证两个已训练窗口，尚不能替代全 168 窗口教师及正式 C／跨视频验证。
 
-[八窗口物体代理补充检查](experiments/gaussiangpt_neoverse_eight_window_object_audit_20261102_v1/RESULTS.md)对历史 posterior 与阶段 A 使用相同的 72 张源画面。阶段 A 的窗口 112、123 在拾取／移动绿梁时分别只有 5／9、0／9 帧检出绿色代理，真实未来 GS 的 codec 参考均为 9／9；固定颜色掩码只是辅助证据。CPU 程序已等待阶段 B 的三轮完整评估和独立重放，再对相同窗口生成报告；教师仍需动态和视觉审查。
+[八窗口物体代理补充检查](experiments/gaussiangpt_neoverse_eight_window_object_audit_20261102_v1/RESULTS.md)对历史 posterior 与阶段 A 使用相同的 72 张源画面。阶段 A 的窗口 112、123 在拾取／移动绿梁时分别只有 5／9、0／9 帧检出绿色代理，真实未来 GS 的 codec 参考均为 9／9；固定颜色掩码只是辅助证据。阶段 B 的完整结果和视觉审查见上方。
 
-[跨源身份校验](experiments/gaussiangpt_neoverse_multisource_identity_guard_20261102_v1/RESULTS.md)已补上旧读取器未重新校验映射文件哈希的问题，并在 134 的三份真实映射上完成 CPU 预检。当前真实文件与既有绑定一致，未发现实际数据泄漏；评估视频此前已被观察，不能声称是全新独立测试集。新入口尚未用于正式跨源动作训练，也不改变正在进行的阶段 B。
+[跨源身份校验](experiments/gaussiangpt_neoverse_multisource_identity_guard_20261102_v1/RESULTS.md)已补上旧读取器未重新校验映射文件哈希的问题，并在 134 的三份真实映射上完成 CPU 预检。当前真实文件与既有绑定一致，未发现实际数据泄漏；评估视频此前已被观察，不能声称是全新独立测试集。新入口尚未用于正式跨源动作训练，也未改变阶段 B。
 
 [搭积木来源组盘点](experiments/gaussiangpt_neoverse_group_split_inventory_20261102_v1/RESULTS.md)确认目录中有 60 个各 177 帧的视频片段，按文件名分属 22 组；60 个原文件摘要均已重算，当前已登记的 3 段与旧绑定一致。其他 57 段没有自动进入多源状态接口。新增分组扩展检查保留既有训练／评估角色，拒绝同组片段跨两侧；尚未新增多视频动作训练或建立全新独立测试集。
 

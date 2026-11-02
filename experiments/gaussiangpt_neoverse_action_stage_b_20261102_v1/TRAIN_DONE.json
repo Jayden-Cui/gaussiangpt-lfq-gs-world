@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "updates": 7560,
+  "sweeps": 20,
+  "source": {
+    "schema": "stage_b_shared_decoder_source_v1",
+    "stage_a_review": {
+      "review_sha256": "2e5df85ac80d618ed40a655cb8cf2c1e0ee69588e8b0b28818ef4ae20e58201c",
+      "evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438"
+    },
+    "config_sha256": "0bae521d3ca0ce2a4cda06b6c6f64207bd46e91bf974b68a6b74155eea3f00fb",
+    "training_core_sha256": "9f980425ea5019e5733adcf7a40fdd3cbbb93290258abbe8b77561a0299fc07d",
+    "worker_sha256": "160552898782196582cb21969475669b7d632b013c55a07afd29c48a4ffb3505",
+    "sampler": {
+      "status": "passed",
+      "windows": 168,
+      "horizons": 9,
+      "pairs": 1512,
+      "sweeps": 20,
+      "updates": 7560,
+      "visits_per_pair": 20,
+      "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+    },
+    "initial_codes": {
+      "receipt_sha256": "1ae1ed07428d121dff437760dc68b44ce4ce18c068342d672cee1f6f1f9d4ded",
+      "codes_sha256": "cdcd16ae3d307faa48f6078e72299541cd52becddea58d24977b1e28fd3be3a6"
+    },
+    "warm_decoder_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+    "warm_posterior_checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+    "warm_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+    "frozen_initial_context_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "anchors": [
+      35,
+      123
+    ],
+    "quantized": false
+  },
+  "final_checkpoint_sha256": "e1613f6688dd2dda1ac6b6e8870da99ac96ecc586fe23ccb930a13303b320a69",
+  "decoder_digest": "83d4ef081a3e72ad80a24b5f48ca33aa5d0fba528bebd1d64b023c19de86cd29",
+  "code_shape": [
+    168,
+    9,
+    16
+  ],
+  "codec_and_initial_encoder_frozen": true,
+  "evaluation": "pending",
+  "elapsed_seconds": 15551.404547626036
+}

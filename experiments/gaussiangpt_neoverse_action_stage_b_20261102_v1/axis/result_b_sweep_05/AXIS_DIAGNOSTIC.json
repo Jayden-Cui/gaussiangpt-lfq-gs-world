@@ -1,0 +1,723 @@
+{
+  "status": "complete",
+  "schema": "visible_source_axis_diagnostic_v1",
+  "reference_sha256": "6f031ec5fc18e2f188e242979c17cf9f20e87b56e8a33a0234e0b542f7be8fdf",
+  "analysis_code_sha256": "1cdf2beaccf9afa331f4282120b0eaa6d19b29142b3b047006369d3b923a7909",
+  "source_baseline_audit_sha256": "1db42ea8feea32d2858edfeb251854e250ebbe738a9332d8e695f0d711f65431",
+  "evaluation_sha256": "2b3267c5b55cbbf945ba33d527900b1b5f256d491bdd8793348874ab99541468",
+  "evaluation_source": {
+    "schema": "stage_b_shared_decoder_evaluation_v1",
+    "decoder_digest": "a7bdb892ebc5e9ce4901a47576af547067902c09cc75dd37c2a3b36506e1a872",
+    "codes_sha256": "dbc6dd6196d5b1af4bdad9c2540e66f47400ce84b3fdff9e7f1409ef2f38eb5f",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "historical_evaluation_sha256": "a589f7ea5502324308ecf62274b17a377dd760a7e5a242bc4738a19163d11c9f",
+    "historical_checkpoint_sha256": "dd66b0c02f84d1a152c60a9d974a7b92f3c12db4bc2f25b65416624cb2889c9a",
+    "warm_posterior_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+    "training_source": {
+      "schema": "stage_b_shared_decoder_source_v1",
+      "stage_a_review": {
+        "review_sha256": "2e5df85ac80d618ed40a655cb8cf2c1e0ee69588e8b0b28818ef4ae20e58201c",
+        "evaluation_sha256": "099e9f9b964b8f384d0732d4bf68d1c3afd650200db3b4f145b1cd99e8545438"
+      },
+      "config_sha256": "0bae521d3ca0ce2a4cda06b6c6f64207bd46e91bf974b68a6b74155eea3f00fb",
+      "training_core_sha256": "9f980425ea5019e5733adcf7a40fdd3cbbb93290258abbe8b77561a0299fc07d",
+      "worker_sha256": "160552898782196582cb21969475669b7d632b013c55a07afd29c48a4ffb3505",
+      "sampler": {
+        "status": "passed",
+        "windows": 168,
+        "horizons": 9,
+        "pairs": 1512,
+        "sweeps": 20,
+        "updates": 7560,
+        "visits_per_pair": 20,
+        "sha256": "6d6caeccfd15df0f9b674e49e3bd2744abb1a43866849c60d3895effd4fa0930"
+      },
+      "initial_codes": {
+        "receipt_sha256": "1ae1ed07428d121dff437760dc68b44ce4ce18c068342d672cee1f6f1f9d4ded",
+        "codes_sha256": "cdcd16ae3d307faa48f6078e72299541cd52becddea58d24977b1e28fd3be3a6"
+      },
+      "warm_decoder_checkpoint_sha256": "52b1d88fdac992221010c56b194e75d3908c19751a4dc7e9f07d0ff7565c3419",
+      "warm_posterior_checkpoint_sha256": "7dad5d041df2f8e3f198b9a57847badf409239515ec983250c6f622d0358cde6",
+      "warm_decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+      "frozen_initial_context_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+      "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+      "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+      "anchors": [
+        35,
+        123
+      ],
+      "quantized": false
+    },
+    "sweep": 5,
+    "quantized": false,
+    "note": "Historical Q metrics use a different decoder; warm repeated-S0 Q is not an independently trained stage-B baseline"
+  },
+  "thresholds_px": [
+    2,
+    4,
+    8
+  ],
+  "sampled_points_per_axis": 100,
+  "summaries": {
+    "35": {
+      "source": {
+        "2": 0.9033333333333334,
+        "4": 0.9377777777777777,
+        "8": 0.9955555555555556
+      },
+      "stage_b_free_motion": {
+        "2": 0.3533333333333333,
+        "4": 0.4033333333333334,
+        "8": 0.5344444444444444
+      },
+      "actual_state_codec": {
+        "2": 0.9355555555555556,
+        "4": 0.9611111111111111,
+        "8": 0.9988888888888889
+      }
+    },
+    "123": {
+      "source": {
+        "2": 0.991111111111111,
+        "4": 0.9955555555555556,
+        "8": 1.0
+      },
+      "stage_b_free_motion": {
+        "2": 0.0,
+        "4": 0.0,
+        "8": 0.0
+      },
+      "actual_state_codec": {
+        "2": 0.9877777777777779,
+        "4": 0.9955555555555556,
+        "8": 1.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "object": "yellow",
+      "source_target_rgb_sha256": "08f0f62a0e6ee6574153d50d09a21aa202b2168a880244dadc78b8430efc6649",
+      "free_end_xy": [
+        248,
+        124
+      ],
+      "visible_interior_xy": [
+        282,
+        133
+      ],
+      "input_binding": {
+        "snapshot_sha256": "3f98a1ceca4b3582f4e4d4e3125d37a15fd3abe618d4c72aa17464edb62bf80f"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.6,
+          "4": 0.66,
+          "8": 0.83
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 2,
+      "object": "yellow",
+      "source_target_rgb_sha256": "99bb7409d95a81083e92d054226815cdbb0756f3b0672650f6ad760efa07d68d",
+      "free_end_xy": [
+        245,
+        112
+      ],
+      "visible_interior_xy": [
+        286,
+        130
+      ],
+      "input_binding": {
+        "snapshot_sha256": "0fc733111e0f5c51a3ed3ebc1f17e892b59417533fce8e6f19f5e150f589db0c"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.65,
+          "4": 0.74,
+          "8": 0.84
+        },
+        "actual_state_codec": {
+          "2": 0.98,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "object": "yellow",
+      "source_target_rgb_sha256": "03c2012ecc348f59250cab2b801d45a308e81ec8f190a877c0671a9cc85fd30b",
+      "free_end_xy": [
+        253,
+        97
+      ],
+      "visible_interior_xy": [
+        292,
+        127
+      ],
+      "input_binding": {
+        "snapshot_sha256": "02956fb15b64b56d6c51a0edf5a110b24f98efe8544daa783a1d3e93961d113f"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.81,
+          "4": 0.86,
+          "8": 0.96
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 0.85,
+          "4": 0.88,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 4,
+      "object": "yellow",
+      "source_target_rgb_sha256": "60a4ce79b5f61c57bde7d2e53b729d8bc92d3b84fe9ee8e64f091185a48ae071",
+      "free_end_xy": [
+        247,
+        80
+      ],
+      "visible_interior_xy": [
+        285,
+        124
+      ],
+      "input_binding": {
+        "snapshot_sha256": "ad86e6cd22c82a82a74ea46a405ed1254dae123f20125dab370aa7f95637dc07"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.91,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 5,
+      "object": "yellow",
+      "source_target_rgb_sha256": "af40a97be839b5b3651d1cc1fc660149b62291435b4fbbd47e071bdaf8907c88",
+      "free_end_xy": [
+        248,
+        61
+      ],
+      "visible_interior_xy": [
+        279,
+        117
+      ],
+      "input_binding": {
+        "snapshot_sha256": "61f136caf49fa188d3224d353a56d1cea76345af8a2ec079f2c12aaff461e5d7"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.01,
+          "8": 0.29
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 6,
+      "object": "yellow",
+      "source_target_rgb_sha256": "0887e621f54b055c5747fe6ca080646d87cab85df7dbfe4c265f61c91c32800c",
+      "free_end_xy": [
+        251,
+        51
+      ],
+      "visible_interior_xy": [
+        280,
+        115
+      ],
+      "input_binding": {
+        "snapshot_sha256": "f05c2d5075ca9b60067a499c94b4c89d5481b6ddc45ab154e5fb283b9aa72e65"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.77,
+          "4": 0.81,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.02,
+          "8": 0.19
+        },
+        "actual_state_codec": {
+          "2": 0.74,
+          "4": 0.77,
+          "8": 0.99
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "object": "yellow",
+      "source_target_rgb_sha256": "c2c768095f0cb2696370455ae1b6c5ecddf259b3de2ffa2856fdbe1db189336b",
+      "free_end_xy": [
+        246,
+        49
+      ],
+      "visible_interior_xy": [
+        266,
+        118
+      ],
+      "input_binding": {
+        "snapshot_sha256": "4cde9c338223bc0914566a5b21fcff348ae04202231e3ce63301dd2c03c5cfec"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.99,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.74,
+          "4": 0.77,
+          "8": 0.84
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 8,
+      "object": "yellow",
+      "source_target_rgb_sha256": "7eddd9c453ab0b2837e7a4a6dda30415eb02916b736c575c0c430e3621db802e",
+      "free_end_xy": [
+        240,
+        48
+      ],
+      "visible_interior_xy": [
+        260,
+        118
+      ],
+      "input_binding": {
+        "snapshot_sha256": "5acc66328c860054b5be28d79e4de3b1de629b29260b916fc9114fb63a8f6ca7"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.82,
+          "4": 0.91,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.45,
+          "4": 0.58,
+          "8": 0.82
+        },
+        "actual_state_codec": {
+          "2": 0.87,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 35,
+      "horizon": 9,
+      "object": "yellow",
+      "source_target_rgb_sha256": "26b0a505862218cf9bcc75558aa3107093a844bc632454df7abf87bf15205a47",
+      "free_end_xy": [
+        237,
+        45
+      ],
+      "visible_interior_xy": [
+        252,
+        117
+      ],
+      "input_binding": {
+        "snapshot_sha256": "0915e200856f63749f7e4c6fbfecf97cc1a371f5a633ce71162b8d724b3e9bae"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.83,
+          "4": 0.86,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.74,
+          "4": 0.85,
+          "8": 1.0
+        },
+        "actual_state_codec": {
+          "2": 0.98,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "object": "green",
+      "source_target_rgb_sha256": "3f9f02c2dd5eaadc5879981397101385dc2a9baef0768a436ab1eea203b44625",
+      "free_end_xy": [
+        264,
+        39
+      ],
+      "visible_interior_xy": [
+        312,
+        52
+      ],
+      "input_binding": {
+        "snapshot_sha256": "49db5bbce1fb1226decb3d4aa876c85345ce53afa9bbbe2a3f172953cefc7ca4"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 0.92,
+          "4": 0.96,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 0.92,
+          "4": 0.96,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 2,
+      "object": "green",
+      "source_target_rgb_sha256": "1bfd91d2935c87ff5916e62e71c1b4191455a0f3fcb16e8d611728379cb9fad0",
+      "free_end_xy": [
+        249,
+        29
+      ],
+      "visible_interior_xy": [
+        295,
+        42
+      ],
+      "input_binding": {
+        "snapshot_sha256": "6d7d13a4660e4ca3d09ecce222da94920d1cf84d814f1e19b7ae0b879042d275"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 0.98,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "object": "green",
+      "source_target_rgb_sha256": "c7eb4e69cdd72a756f88173c7fa585f2d5555ace1ff3beff7efd24a066337b03",
+      "free_end_xy": [
+        236,
+        24
+      ],
+      "visible_interior_xy": [
+        282,
+        39
+      ],
+      "input_binding": {
+        "snapshot_sha256": "2ad313308703d76f61bce5ccc42a5375418f0d9debb9fd9071570e6b98204296"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 4,
+      "object": "green",
+      "source_target_rgb_sha256": "da0da68322f96cc578967d1bd2eacab99353a632f59054c7ccc4d74e73a70024",
+      "free_end_xy": [
+        220,
+        23
+      ],
+      "visible_interior_xy": [
+        270,
+        36
+      ],
+      "input_binding": {
+        "snapshot_sha256": "4680a04624b8b2a60210d82789b7dcac0af483200465bbcf4edcb79417228025"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 0.99,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 5,
+      "object": "green",
+      "source_target_rgb_sha256": "b9e46b726ff175b18f68790f629e27faf7ea19455f383d2ee22bdd09d089a020",
+      "free_end_xy": [
+        208,
+        23
+      ],
+      "visible_interior_xy": [
+        256,
+        36
+      ],
+      "input_binding": {
+        "snapshot_sha256": "f0a64c25dce3c6e6f72bfff60caf50201e9d97307bb2cf0192949c6fa8b5ab72"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 6,
+      "object": "green",
+      "source_target_rgb_sha256": "fcd92b8138215bf78cfbb3f70cb280f9f4edd7b92a0e6c9724393223f457b14c",
+      "free_end_xy": [
+        196,
+        28
+      ],
+      "visible_interior_xy": [
+        244,
+        39
+      ],
+      "input_binding": {
+        "snapshot_sha256": "58f0a4e52750cf169b8ab22de5a5c846a1b826a66fa94ba5575892a2159a478a"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "object": "green",
+      "source_target_rgb_sha256": "13747b088d97a88e4e148e4df61fab890811e035f1c74f5b27419812336ef7a8",
+      "free_end_xy": [
+        190,
+        33
+      ],
+      "visible_interior_xy": [
+        235,
+        42
+      ],
+      "input_binding": {
+        "snapshot_sha256": "c1680587d8c206ba591f5929c33f84af04b26589161386889ee02ec0669d62e0"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 8,
+      "object": "green",
+      "source_target_rgb_sha256": "72c1c48291b24cfe706e7d9d6b4759e96e3326cf511ea514cc1195ca32683c39",
+      "free_end_xy": [
+        184,
+        38
+      ],
+      "visible_interior_xy": [
+        229,
+        46
+      ],
+      "input_binding": {
+        "snapshot_sha256": "d985f9a2c81bd17e746e5263baa79704adc9bd8511d9de2637ddeaebe474ec67"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    },
+    {
+      "start": 123,
+      "horizon": 9,
+      "object": "green",
+      "source_target_rgb_sha256": "da4d78647548298c41baa8c86008bd35034fd588aa5a4f1c1c9b01689af2a879",
+      "free_end_xy": [
+        180,
+        42
+      ],
+      "visible_interior_xy": [
+        225,
+        47
+      ],
+      "input_binding": {
+        "snapshot_sha256": "5e0405e531d1c9e9b910f7b7e6e8f353b8a2e79e7dff4cc7e2ccc412618202ca"
+      },
+      "axis_color_coverage_by_radius_px": {
+        "source": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        },
+        "stage_b_free_motion": {
+          "2": 0.0,
+          "4": 0.0,
+          "8": 0.0
+        },
+        "actual_state_codec": {
+          "2": 1.0,
+          "4": 1.0,
+          "8": 1.0
+        }
+      }
+    }
+  ],
+  "interpretation": "Fraction of source-axis points near a fixed HSV/ROI mask; diagnostic only",
+  "limitations": [
+    "Visual point estimates are approximate, not calibrated or independently human-labeled.",
+    "Only the visible part of two objects in two training windows is marked; occluded endpoints and full object centers are not inferred.",
+    "Projection is in one RGB view, not 3D motion or a physical-object trajectory.",
+    "Coverage uses the existing HSV/ROI prediction mask and can be fooled by background, reflections, occlusion or incorrect color.",
+    "Axis coverage cannot prove target identity, depth, pose, motion success, causal control or generalization.",
+    "The source points and predictions need direct visual review; no threshold or automatic teacher acceptance is defined."
+  ],
+  "manual_motion_review_required": true,
+  "no_acceptance_decision": true
+}

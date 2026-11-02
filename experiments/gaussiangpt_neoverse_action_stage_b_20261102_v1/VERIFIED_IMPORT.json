@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "transfer_manifest_sha256": "5cbf696b462c749994b22905aa09f7456552e1a4dbdbb7f7527b0e0ddf08ee92",
+  "summary_sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+  "training_sha256": "ec7d786c0c8ffef34c7eb37aa321cb8a1236860c388423ef4425b3315e6a94a9",
+  "imported_files": 43,
+  "checkpoints": [
+    {
+      "sweep": 5,
+      "evaluation_sha256": "2b3267c5b55cbbf945ba33d527900b1b5f256d491bdd8793348874ab99541468",
+      "replay_sha256": "3248534aa7a3ab6049403af329eabca7f3cae3418e8389a237d819a461066cc1",
+      "motion_mae": 0.07521378919553624,
+      "anchor_motion_mae": 0.08662282013230854,
+      "original_anchor_motion_mae": 0.02977625270270639,
+      "feature_prefix_error": 0.0,
+      "occupancy_prefix_error": 0.0
+    },
+    {
+      "sweep": 10,
+      "evaluation_sha256": "3070f55ea91454c24e7e8f875f31ce1e416c8bd497da6abf76b76cbb3c628ff3",
+      "replay_sha256": "aaf7a99c42eaeef5514d10f690c08f3363891ec06a3975ef756d4969d14fd44d",
+      "motion_mae": 0.0669478816699914,
+      "anchor_motion_mae": 0.08271373270286454,
+      "original_anchor_motion_mae": 0.02977625270270639,
+      "feature_prefix_error": 0.0,
+      "occupancy_prefix_error": 0.0
+    },
+    {
+      "sweep": 20,
+      "evaluation_sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+      "replay_sha256": "a4300753846b600204d0bf3b3bcfbbf0534369aa95ef4e3b45570ce80960f2b3",
+      "motion_mae": 0.05738465142759535,
+      "anchor_motion_mae": 0.0719892614417606,
+      "original_anchor_motion_mae": 0.02977625270270639,
+      "feature_prefix_error": 0.0,
+      "occupancy_prefix_error": 0.0
+    }
+  ],
+  "verified_contact_windows": [
+    0,
+    35,
+    56,
+    84,
+    112,
+    123,
+    140,
+    167
+  ],
+  "independent_replay_per_checkpoint": "104 GS packets, 208 views",
+  "interpretation": "Integrity and scope checks only; dynamic quality requires separate visual review"
+}

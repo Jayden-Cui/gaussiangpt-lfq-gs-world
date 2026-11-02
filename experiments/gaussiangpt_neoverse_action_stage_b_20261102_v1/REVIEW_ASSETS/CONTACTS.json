@@ -1,0 +1,242 @@
+{
+  "status": "complete",
+  "evaluation_sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+  "native_replay_sha256": "a4300753846b600204d0bf3b3bcfbbf0534369aa95ef4e3b45570ce80960f2b3",
+  "starts": [
+    0,
+    35,
+    56,
+    84,
+    112,
+    123,
+    140,
+    167
+  ],
+  "horizons": [
+    0,
+    3,
+    6,
+    9
+  ],
+  "rows": [
+    {
+      "start": 0,
+      "file": "s000_contact.png",
+      "sha256": "5c89b36d5ab5411eaafe8a5f33acbb798d5fe569e4568c91b5efa5dd70ce02c1",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s000/frame_00.png",
+          "sha256": "66041e8c258d483ea92b546cf51bfd7e1f4f095fe51c2277dc264fd7b0c7c8f6"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s000/frame_03.png",
+          "sha256": "56a4f2dd5022f15cdb1b0fb07b19ecc22c1092c2e7bdef855a52d470063334bb"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s000/frame_06.png",
+          "sha256": "f97bb96ffcece82daa3f25c66b4fd02c311d3e18ce5d879ab4ac62ae96195479"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s000/frame_09.png",
+          "sha256": "4d8a8d6ddcbe26352b7336b795852f7ce596080fdf795f98bb459f4adac03ecf"
+        }
+      ]
+    },
+    {
+      "start": 35,
+      "file": "s035_contact.png",
+      "sha256": "282dbee5d617653047f4e7dd59842adeb12603e2fa0b07c11b5cb290714a5b5f",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s035/frame_00.png",
+          "sha256": "915557acd11766f7d113f666792db4c590cc954a4ae209ef38e0c5e32fff9fb1"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s035/frame_03.png",
+          "sha256": "074f1aad55a806bad3a8c82d2e9d0c86e5ba389d14d84639c4669976b17bcfb2"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s035/frame_06.png",
+          "sha256": "5539cc415d475f0db427acdbecb6939b247fe7f2a4eda33515d7d0aad6130c5d"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s035/frame_09.png",
+          "sha256": "e714f901e3f58ad65e45e35b44d0d33146a94205a664716217a914764655fe74"
+        }
+      ]
+    },
+    {
+      "start": 56,
+      "file": "s056_contact.png",
+      "sha256": "7d6267a537af97506b13c7141ce9d81c920e1722d2419235c498d88648b259ec",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s056/frame_00.png",
+          "sha256": "bc24149b0d01a8034dea611932930cb16843fbe45e8885501db168a8e8f117a5"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s056/frame_03.png",
+          "sha256": "e5500b69b949bf15fff906001402dc1b6334d10aeb378a0a3e0e6e905b1d4d77"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s056/frame_06.png",
+          "sha256": "b60c47218b41c10f39108de3787f0b5c429e55ab5cfb03cc54b8d400d5053151"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s056/frame_09.png",
+          "sha256": "6e315f04628bd724fad412905da939dc1b8a54fc53d34757c81f576c9b82a13e"
+        }
+      ]
+    },
+    {
+      "start": 84,
+      "file": "s084_contact.png",
+      "sha256": "9ed5889fa9b4aca7ff04357163622e04e8995fb87fd343a99add2b14b10e38c6",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s084/frame_00.png",
+          "sha256": "31d428866be486ad7966b86c3d1c1e4ad9f0420061e9324f4d4e83d8d8131831"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s084/frame_03.png",
+          "sha256": "9521f7f41010b8691885f80c11beadec1e2d79473a9f72de80c032663bbd4675"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s084/frame_06.png",
+          "sha256": "c698c5099195601ca62d3d7cdbefd89a574f96c5c302fb8f0de3c8631265f5cd"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s084/frame_09.png",
+          "sha256": "e345d042ec099a038aefe638f94c787a4f694464f0f0d9daa56a961a30b0285e"
+        }
+      ]
+    },
+    {
+      "start": 112,
+      "file": "s112_contact.png",
+      "sha256": "4c1c079b8a342c0bc6c679cbcf7b018b35f1e7fa0ff310302cf63dfb2217d07a",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s112/frame_00.png",
+          "sha256": "be2ab60af3df9f6d1e819ec0f1d29ba7712efe8b75da9ab59927059221f7b389"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s112/frame_03.png",
+          "sha256": "9eeb0e9febadd2868adfc6700280ccb3d54be3542f54a3153419dcd763b5ada5"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s112/frame_06.png",
+          "sha256": "9c6058cb997fb1dbbd432f16844707a093a4f6e5ec2d2030b38adb8f3bfa1560"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s112/frame_09.png",
+          "sha256": "0cc1f652efd026865250d270081b9d008fcd21801ebc9807157a87566d1499d6"
+        }
+      ]
+    },
+    {
+      "start": 123,
+      "file": "s123_contact.png",
+      "sha256": "2dc32646066c87d346e0d2ad538c7a9933e8fcb77a53f2f966e55b7c06bac78f",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s123/frame_00.png",
+          "sha256": "e6668b34fb283881a5bc431b1df6bec6fba18d2f39020ea9e999cdc942023e4b"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s123/frame_03.png",
+          "sha256": "bd923945c30648100d50293c47182a19a4dc77c6513b6e261641053869c1257c"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s123/frame_06.png",
+          "sha256": "c72800b435498a65ab4ff3112f73b18bc2f248fe5938b89bd4e1623eda4b658e"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s123/frame_09.png",
+          "sha256": "56a27b87c5f006c00ae02d214a8cb0b90415740e9d098d1e2bd33e7ac49f5e21"
+        }
+      ]
+    },
+    {
+      "start": 140,
+      "file": "s140_contact.png",
+      "sha256": "a73bbcfcddc516a24d68b7c98c3548695c560406392b40d09be0c632bd65335e",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s140/frame_00.png",
+          "sha256": "3b8c5cb2e6e80c9b086c8308e4b4f852effa423e5eb85d1402ab6c21d8b0de6e"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s140/frame_03.png",
+          "sha256": "224c89f2b664ef267a5cf4082362f58769928e2aafab3c1688743193315d6843"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s140/frame_06.png",
+          "sha256": "b540f660c8af205ee6d3dde0d80318db0e28e642d4f22023b4c3a2c296f3b529"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s140/frame_09.png",
+          "sha256": "60e302996665ec31965379933c1b6e6039fe5e174b40bf1eed2662c5feed164c"
+        }
+      ]
+    },
+    {
+      "start": 167,
+      "file": "s167_contact.png",
+      "sha256": "33b28a98287e7480addcbb39c96df1a8e3151c6a36761ad771dd35159c6be1c0",
+      "frames": [
+        {
+          "horizon": 0,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s167/frame_00.png",
+          "sha256": "45ab9aefd9713767a13ca95395ec7f825a716cccb94842e53e709b7237356320"
+        },
+        {
+          "horizon": 3,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s167/frame_03.png",
+          "sha256": "e1fead7ffa530f334fd4a8bab9c7b342a8dc934b2673dd12068e4444f72a94c6"
+        },
+        {
+          "horizon": 6,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s167/frame_06.png",
+          "sha256": "80446b0e0ef1eef9e88e91f93e01cd085265c93b0df5fe9aace64021ef744883"
+        },
+        {
+          "horizon": 9,
+          "path": "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_action_stage_b_20261102_v1/training/sweep_20/free_z/evaluation/snapshots/s167/frame_09.png",
+          "sha256": "dc1d0cc1043fbb982c70cfe5cca3909db0f9c4aba95b52724bb90e6f47cd84ef"
+        }
+      ]
+    }
+  ],
+  "labels_in_image": false,
+  "interpretation": "Each cell: source left, free-code reconstruction right; h0 is codec initial state",
+  "visual_verdict": "not yet reviewed"
+}

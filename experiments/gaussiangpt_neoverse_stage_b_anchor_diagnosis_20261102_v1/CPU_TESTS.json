@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_sha256": "22685a7acd940ca829a91443e64c0b8c5ea4d7534c0bb74dbd0c74946bbaa0af",
+  "diagnose_sha256": "92fe085356cae27666b5bdb5b88df6a819e67a8c22b7bd6becba3eb36e02d5bd",
+  "test_sha256": "a38a8dce14d91e7f324ae17e19ab7df7ce7f568cd74412d705fb673d12003373",
+  "protocol_sha256": "b12e81094e719857d0723e63b0bd544c35396b6d66a66dc2580df861a17c8b35",
+  "checks": [
+    "selects predicted features at target indices",
+    "rejects empty, duplicated, negative and out-of-range indices"
+  ],
+  "scope": "Synthetic CPU index check only; real stage-B GPU diagnosis is pending"
+}
