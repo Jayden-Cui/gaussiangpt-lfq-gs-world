@@ -1,0 +1,19 @@
+{
+  "pid": 792965,
+  "sampler": {
+    "status": "passed",
+    "windows": 168,
+    "horizons": 9,
+    "base_pairs": 1512,
+    "sweeps": 5,
+    "updates": 2115,
+    "base_visits_per_pair": 5,
+    "replay_visits_per_anchor_pair": 50,
+    "total_visits_per_anchor_pair": 55,
+    "base_batches_per_sweep": 378,
+    "replay_batches_per_sweep": 45,
+    "sha256": "a5d87590675f49d373653e6a49b41bc73d446096dd5b2c7f1b269163f88e0481"
+  },
+  "quantized": false,
+  "scope": "Five full-base sweeps with anchor replay; not a trained posterior or teacher acceptance"
+}

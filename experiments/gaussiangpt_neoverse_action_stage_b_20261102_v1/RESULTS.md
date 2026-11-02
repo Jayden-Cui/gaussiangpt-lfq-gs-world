@@ -27,4 +27,4 @@
 - [拾取绿梁](videos/s112_source_vs_free_clean_5fps.mp4)
 - [移动绿梁](videos/s123_source_vs_free_clean_5fps.mp4)
 
-进一步的[目标占据与特征诊断](../gaussiangpt_neoverse_stage_b_anchor_diagnosis_20261102_v1/RESULTS.md)表明，替换真实目标占据能改善部分帧，但不能恢复全部运动；该 oracle 仅用于解码后分析，不用于训练和真实推断。当前不签发教师收据，不启动固定教师 Q-Former 训练；已另行开展[固定 B decoder、只优化两窗连续码](../gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/README.md)的有限预算定位实验。
+进一步的[目标占据与特征诊断](../gaussiangpt_neoverse_stage_b_anchor_diagnosis_20261102_v1/RESULTS.md)表明，替换真实目标占据能改善部分帧，但不能恢复全部运动；该 oracle 仅用于解码后分析，不用于训练和真实推断。当前不签发教师收据，不启动固定教师 Q-Former 训练；已完成[固定 B decoder、只优化两窗连续码](../gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/RESULTS.md)的有限预算定位，主要动作仍未恢复。

@@ -1,0 +1,15 @@
+{
+  "status": "preflight_passed",
+  "coordinator_pid": 792965,
+  "trainer_pid": 792967,
+  "launched_utc": "2026-11-02T01:01:16+00:00",
+  "gpu": 0,
+  "planned_updates": 2115,
+  "full_base_sweeps": 5,
+  "quantized": false,
+  "code_sha256": "b6a85d22f8a27a6c79869a0c8bff381cabb139464cf4b277dda8e49c7c8f1c5c",
+  "trainer_process_sha256": "a62f0c51322e8b2a91257cb76dbbdfde70f9c86170191ebe8c178452b20227ae",
+  "gpu_preflight_sha256": "37b67a8e13742b2839775014be48bab4dc53b5a6ae606dea339fbc6deed6afe2",
+  "coordinator_exit_code": null,
+  "no_automatic_retry": true
+}

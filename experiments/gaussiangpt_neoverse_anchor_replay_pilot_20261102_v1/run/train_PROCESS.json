@@ -1,0 +1,10 @@
+{
+  "pid": 792967,
+  "gpu": 0,
+  "command": [
+    "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/worker.py",
+    "--out",
+    "/data/CJH/AGS-V6Direct/outputs/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training"
+  ],
+  "timeout_seconds": 9060
+}

@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "updates": 360,
+  "source": {
+    "B_summary_sha256": "ba270f1d8f5dd53e451de7839704561ad2d1b3f535f9fcc47c1829f73be0adf2",
+    "B_evaluation_sha256": "09b76517d2db913c3aabecb405bd00cf1bcb4a1a54c42859063b99fcc62d58df",
+    "B_checkpoint_sha256": "e1613f6688dd2dda1ac6b6e8870da99ac96ecc586fe23ccb930a13303b320a69",
+    "B_native_replay_sha256": "a4300753846b600204d0bf3b3bcfbbf0534369aa95ef4e3b45570ce80960f2b3",
+    "diagnosis_sha256": "ca5d042e622a9dd32e0bc6b7b37d7bde6c2ad1fe75dbf28f8f8679d8f510d589",
+    "decoder_digest": "83d4ef081a3e72ad80a24b5f48ca33aa5d0fba528bebd1d64b023c19de86cd29",
+    "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+    "cache_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+    "code_sha256": "7fa80ccb24cfd584e5a5bfdcd336dfeb7dac89a17830ac94ee8be74a16effb8b",
+    "sampler": {
+      "status": "passed",
+      "windows": [
+        35,
+        123
+      ],
+      "sweeps": 40,
+      "updates": 360,
+      "per_window_horizon_visits": 40,
+      "sampler_sha256": "64ccb631398026f490cbdf8d8221265fe900436e8a0a747ab383bab6f845f585"
+    },
+    "quantized": false
+  },
+  "checkpoints": [
+    90,
+    180,
+    360
+  ],
+  "final_codes_sha256": "31b2c1cf07875aff87b3db7e2364cc0e35f1b652210fab329276417c4452e3b8",
+  "decoder_and_codec_frozen": true,
+  "training_scope": "two anchors only",
+  "manual_visual_review_required": true,
+  "full_action_codec_complete": false,
+  "elapsed_seconds": 334.06285418896005
+}

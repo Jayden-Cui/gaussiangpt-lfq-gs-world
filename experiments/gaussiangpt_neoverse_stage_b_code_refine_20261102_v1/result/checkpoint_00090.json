@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "step": 90,
+  "codes_sha256": "55b9c2e025e5a100be7cae913969b905a58b04a5eedd49fa94d9191d1baa085d",
+  "evaluation_sha256": "9425a6d415039e0b48779906aac2fe365faceb48039c9d4f6e4ccc041175f74f",
+  "per_window": {
+    "35": {
+      "motion_mae": 0.06975657327307595,
+      "b20_motion_mae": 0.07121000438928604,
+      "actual_target_motion_mae": 0.03273459275563558,
+      "object_proxy_iou": 0.21793767132149858,
+      "color_proxy_detected": 7
+    },
+    "123": {
+      "motion_mae": 0.07001335173845291,
+      "b20_motion_mae": 0.07276851849423514,
+      "actual_target_motion_mae": 0.027340113702747557,
+      "object_proxy_iou": 0.021451711759040364,
+      "color_proxy_detected": 2
+    }
+  }
+}

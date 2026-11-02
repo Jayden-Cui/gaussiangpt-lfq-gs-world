@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "code_sha256": "b6a85d22f8a27a6c79869a0c8bff381cabb139464cf4b277dda8e49c7c8f1c5c",
+  "test_sha256": "06c8aa956e2c05a832837a222e87141c163da515a181d07703e63824af3e6ef6",
+  "checks": [
+    "full 168 by 9 base pairs each sweep",
+    "balanced 10 extra visits for each anchor pair per sweep",
+    "original B base pair order",
+    "invalid replay and quantization rejection",
+    "review panel order and replay guard"
+  ],
+  "scope": "CPU schedule and synthetic review-assets tests only; real GPU preflight and training remain required"
+}

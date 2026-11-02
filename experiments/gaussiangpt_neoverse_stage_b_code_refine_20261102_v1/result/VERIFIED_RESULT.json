@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "transfer_sha256": "0b379c451d0458dccba61ca88388c67adfe8d4108911b85b68ff60f5275d6d57",
+  "done_sha256": "b38a003144864d9b7c0521f0666b11016f3fe78fc0b2afb0d3ea3a2086c01154",
+  "code_sha256": "7fa80ccb24cfd584e5a5bfdcd336dfeb7dac89a17830ac94ee8be74a16effb8b",
+  "imported_files": 51,
+  "checkpoints": [
+    {
+      "step": 90,
+      "codes_sha256": "55b9c2e025e5a100be7cae913969b905a58b04a5eedd49fa94d9191d1baa085d",
+      "evaluation_sha256": "9425a6d415039e0b48779906aac2fe365faceb48039c9d4f6e4ccc041175f74f",
+      "per_window": {
+        "35": {
+          "motion_mae": 0.06975657327307595,
+          "b20_motion_mae": 0.07121000438928604,
+          "actual_target_motion_mae": 0.03273459275563558,
+          "object_proxy_iou": 0.21793767132149858,
+          "color_proxy_detected": 7
+        },
+        "123": {
+          "motion_mae": 0.07001335173845291,
+          "b20_motion_mae": 0.07276851849423514,
+          "actual_target_motion_mae": 0.027340113702747557,
+          "object_proxy_iou": 0.021451711759040364,
+          "color_proxy_detected": 2
+        }
+      }
+    },
+    {
+      "step": 180,
+      "codes_sha256": "24b5b4c23877bfcef748d4be8064b6a177974b2399e6bf4c2654909b1ca48d0c",
+      "evaluation_sha256": "8b80e662d9e75b2696bec43f94ceba4f2aaa2fb1084c77916a2c9aa996ad1aed",
+      "per_window": {
+        "35": {
+          "motion_mae": 0.07004576673110326,
+          "b20_motion_mae": 0.07121000438928604,
+          "actual_target_motion_mae": 0.03273459275563558,
+          "object_proxy_iou": 0.19885134633307722,
+          "color_proxy_detected": 7
+        },
+        "123": {
+          "motion_mae": 0.0704473505417506,
+          "b20_motion_mae": 0.07276851849423514,
+          "actual_target_motion_mae": 0.027340113702747557,
+          "object_proxy_iou": 0.01769610345414327,
+          "color_proxy_detected": 1
+        }
+      }
+    },
+    {
+      "step": 360,
+      "codes_sha256": "31b2c1cf07875aff87b3db7e2364cc0e35f1b652210fab329276417c4452e3b8",
+      "evaluation_sha256": "3bc63f4bf336325005b392219e9efd89ecc574eb6b53ec49f20dadfa8967b1c6",
+      "per_window": {
+        "35": {
+          "motion_mae": 0.06938160997298029,
+          "b20_motion_mae": 0.07121000438928604,
+          "actual_target_motion_mae": 0.03273459275563558,
+          "object_proxy_iou": 0.21781719619390585,
+          "color_proxy_detected": 7
+        },
+        "123": {
+          "motion_mae": 0.07032876130607393,
+          "b20_motion_mae": 0.07276851849423514,
+          "actual_target_motion_mae": 0.027340113702747557,
+          "object_proxy_iou": 0.0,
+          "color_proxy_detected": 0
+        }
+      }
+    }
+  ],
+  "training_updates": 360,
+  "samples_per_horizon_per_window": 40,
+  "windows": [
+    35,
+    123
+  ],
+  "decoder_and_codec_frozen": true,
+  "scope": "Integrity and two-window coverage only; visual and action quality are separate"
+}

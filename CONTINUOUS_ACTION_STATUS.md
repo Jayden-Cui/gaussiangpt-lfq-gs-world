@@ -16,7 +16,9 @@
 
 [共享 decoder＋全窗口自由码](experiments/gaussiangpt_neoverse_action_stage_b_20261102_v1/RESULTS.md)完成 7560 次更新、三个检查点的 1512 项评估和独立 GS 重放。第 20 轮全段运动 MAE 为 0.057385，低于旧全片段 Q 的 0.062531；但原成功两窗口从 0.029776 退化至 0.071989，黄条断裂、绿梁移动时消失，因此尚不能作为动作教师。 [占据替换诊断](experiments/gaussiangpt_neoverse_stage_b_anchor_diagnosis_20261102_v1/RESULTS.md)改善部分帧，但未恢复全部动作。
 
-为定位固定 decoder 下的码优化是否充分，[两窗口连续码补充优化](experiments/gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/README.md)已通过真实 GPU 预检并启动，固定预算 360 次 B2 更新。该诊断不能替代全 168 窗口训练和验收。
+为定位固定 decoder 下的码优化是否充分，[两窗口连续码补充优化](experiments/gaussiangpt_neoverse_stage_b_code_refine_20261102_v1/RESULTS.md)已完成 360 次 B2 更新：黄条／绿梁窗口运动 MAE 从 0.071210／0.072769 降至 0.069382／0.070329，但黄条仍断裂、绿梁仍消失。该有限预算诊断不能替代全 168 窗口训练和验收。
+
+[关键窗口回放五轮对照](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/README.md)已启动：每轮仍完整遍历 1512 个窗口／跨度对，同时均衡增加两窗口回放，共计划 2115 次 B4 更新。真实 GPU 预检通过，warm 初始两窗口误差复现为 0.029776。第 5 轮将自动进行全窗口评估与 GS 独立重放；当前尚无该轮结果。
 
 ## 后续阶段
 
@@ -24,7 +26,7 @@
 - [同初态运动／静止评估](experiments/gaussiangpt_neoverse_stage_bc_evaluation_prepare_20261102_v1/DRIVER_V4_NOTES.md)：接口已准备，尚无真实模型验收结果。
 - [跨视频数据检查](experiments/gaussiangpt_neoverse_multisource_action_data_20261102_v1/CROSS_SOURCE_NOTES.md)：第二训练源的部分未来格点超出原半径 4；依据训练源选择半径 6 后三段候选节点数均低于 25,000，但完整跨视频训练的 GPU 显存和效果尚未验证。第三段曾被观察，不是从未接触过的最终测试集。[两训练源均衡调度与按物理帧聚合](experiments/gaussiangpt_neoverse_multisource_sampling_20261102_v1/EXECUTION.md) 已通过 CPU 和真实数据检查，尚未启动跨视频动作训练。 [第二训练源 GPU 单窗口检查](experiments/gaussiangpt_neoverse_multisource_gpu_probe_20261102_v1/EXECUTION.md) 已通过半径 6 与码梯度预检；[同帧真实状态 codec 参考](experiments/gaussiangpt_neoverse_multisource_codec_reference_20261102_v2/EXECUTION.md) 显示原 codec 已出现颜色错置。此为单窗口动作路径诊断，不是总体跨视频性能。[两训练视频各 177 帧的状态 codec 记录审计](experiments/gaussiangpt_neoverse_multisource_codec_train_audit_20261102_v1/EXECUTION.md) 显示平均图像 MAE 分别为 0.016599 和 0.079611；已有 [decoder-only 状态 codec 对照](experiments/gaussiangpt_neoverse_multisource_codec_reuse_audit_20261102_v1/EXECUTION.md)：第二视频 MAE 降至 0.024533，当前视频升至 0.017179；其编码器侧 155 个张量与原版完全相同。[相同阶段 A 预测状态的 decoder 交换检查](experiments/gaussiangpt_neoverse_motion_state_decoder_swap_20261102_v1/EXECUTION.md) 中，两窗口运动 MAE 从 0.081061 升至 0.087234，关键动作仍未恢复；该结论仅覆盖 18 个已有预测。当前阶段 B 不切换。
 
-仓库不含原始视频、GS 缓存、训练权重与服务器环境；代码中的绝对路径和哈希依赖原 134 服务器。
+仓库不含原始视频、GS 缓存、完整模型权重与服务器环境；部分诊断包含小尺寸连续码张量和导出画面。代码中的绝对路径和哈希依赖原 134 服务器。
 
 补充：对[此前成功的两窗口自由码预测状态](experiments/gaussiangpt_neoverse_motion_state_decoder_swap_warm_20261102_v1/EXECUTION.md)逐帧交换 codec decoder，黄条和绿梁的粗运动在两种 decoder 下均可辨认，但 18 帧运动区域 MAE 从 0.029776 上升至 0.039747。该检查未进行优化器更新或独立 GS 冷重放，仅覆盖两个已知训练窗口，不能外推为全片段兼容或跨源泛化。
 
