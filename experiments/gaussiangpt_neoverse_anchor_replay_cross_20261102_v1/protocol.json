@@ -1,0 +1,21 @@
+{
+  "schema": "anchor_replay_sweep01_cross_decode_v1",
+  "windows": [35, 123],
+  "horizons": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "conditions": ["warm_decoder_warm_codes", "warm_decoder_replay_codes", "replay_decoder_warm_codes", "replay_decoder_replay_codes"],
+  "pilot_code_sha256": "b6a85d22f8a27a6c79869a0c8bff381cabb139464cf4b277dda8e49c7c8f1c5c",
+  "old_cross_code_sha256": "d819eefa15f404e6ee73d13868fff03b19ec3f0a381f593cd7e557431dc28531",
+  "pilot_preflight_sha256": "37b67a8e13742b2839775014be48bab4dc53b5a6ae606dea339fbc6deed6afe2",
+  "warm_preview_sha256": "8169457f0d111fc7d4335b3c6d22789d056b7fcdb1e2b6ec8cef1867361c36b7",
+  "replay_preview_sha256": "606fb81a087244ae5f398aec9096bfe2a062d34bc61f4d34f040c5d3f858e799",
+  "checkpoint_metadata_sha256": "093a73c8d6ebb715a4413ed4cc7d3ca512084b3159fb89b54832a5d403f094b5",
+  "checkpoint_sha256": "160a18f685c39eb4ba0f05398d84f75e36dccb7b8321b8aee049e89fb3efd51a",
+  "codec_sha256": "a1c32dbcb29d23da9bc65cbf16cc49d40cdb36954952b8ac91580fd3eeeb2917",
+  "cache_manifest_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "optimizer_updates": 0,
+  "gpu": 1,
+  "allocator_limit_gib": 12,
+  "minimum_free_gpu_gib": 32,
+  "max_seconds": 600,
+  "manual_visual_review_required": true
+}

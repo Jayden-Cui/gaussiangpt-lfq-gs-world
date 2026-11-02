@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "code_sha256": "79d27ba7fdb9588984d4c63db2bcc056b7f1e19a63a8acf85bc58f544ee3de24",
+  "test_sha256": "d42f74566c446c2c0f9bbdc406c7e956b77b4583ffe20d100ee9ba1b14d824b4",
+  "checks": [
+    "fixed four-condition protocol",
+    "72 unique predictions and provenance",
+    "matched preview controls and corrupted metric rejection"
+  ],
+  "scope": "CPU synthetic checks only; source verification and real GPU inference still required"
+}
