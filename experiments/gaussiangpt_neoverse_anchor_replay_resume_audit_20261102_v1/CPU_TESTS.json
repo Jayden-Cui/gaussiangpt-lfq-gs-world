@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "code_sha256": "c69e02f20d67bfeb6208d451006abb22103ae0a7d578585c6f38b3bf1cc0c5c2",
+  "audit_sha256": "4c587eed6fd503517d5f14890c723e95702040a946b8dc0dd6cb1eb643be1442",
+  "test_sha256": "9b102ab7aea359086ed4ec4f81ca0770664c8af524d820459e332b613122360a",
+  "checks": [
+    "nested tensor comparison",
+    "Adam state restore",
+    "unselected parameter remains unchanged"
+  ],
+  "scope": "Synthetic CPU checks; actual historical checkpoint audit is pending"
+}

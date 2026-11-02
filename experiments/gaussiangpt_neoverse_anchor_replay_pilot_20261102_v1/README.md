@@ -11,3 +11,5 @@
 此为预先固定预算的单视频诊断：若两关键动作未保住，继续调整 decoder 或监督；若保住且全片段表现可用，再检查是否能在保持优化器与数据规则的前提下扩展训练。任何情况都不能以五轮结果声称完整动作编解码器或跨视频泛化已经完成。
 
 134 服务器已启动训练，协调器 PID 为 `792965`，训练进程 PID 为 `792967`。真实 GPU 预检通过并恢复初值，初始两窗口运动 MAE 复现为 0.02977625250，与旧参考 0.02977625270 一致。[启动记录](LAUNCHED.json)、[GPU 预检](run/training/PREFLIGHT.json)、[初始预览](run/training/preview_00/PREVIEW.json)。
+
+为可能的后续扩展，已用历史 B checkpoint 完成[采样前缀与 Adam 状态 CPU 审计](../gaussiangpt_neoverse_anchor_replay_resume_audit_20261102_v1/RESULTS.md)；这不是对当前回放 checkpoint 的验收，后者仍须等实际结果产生后单独核对。
