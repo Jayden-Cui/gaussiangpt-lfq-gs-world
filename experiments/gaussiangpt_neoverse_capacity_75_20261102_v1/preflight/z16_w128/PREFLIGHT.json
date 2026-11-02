@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "source": {
+    "arm": "z16_w128",
+    "config": {
+      "code_dim": 16,
+      "width": 128,
+      "gpu": 2
+    },
+    "code_sha256": "49d63a7eb8aadd24b6ea67a27ab237581505b7672adab0589ec8813a05a3faa0",
+    "protocol_sha256": "e4a6b92b8e0bbcc56fee185cfa0154a0f22746ab4ae670502868a030897635d5",
+    "asset_manifest_sha256": "3702a70b2f13dc9f214700f5f6601d873829bbc6ba4ee289933200c87fc14b5e",
+    "parent_checkpoint_sha256": "3893e488174f5c44fc8b696526af71d6ba718ba073bbda936d1960644fbc2699",
+    "initial_decoder_digest": "7d6d7dc349b7f0df58bb8634fab2a64d21a021af32a0bec9417cbb1ac4661bf5",
+    "initial_code_shape": [
+      168,
+      9,
+      16
+    ],
+    "optimizer": "fresh Adam for all four arms",
+    "seed": 20261102,
+    "state_width": 64,
+    "codec_frozen": true,
+    "initial_context_frozen": true,
+    "trainable_decoder_parameters": 728385,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "parity": [
+    {
+      "start": 0,
+      "features": 5.91278076171875e-05,
+      "logits": 9.5367431640625e-06
+    },
+    {
+      "start": 35,
+      "features": 0.0001316070556640625,
+      "logits": 1.2159347534179688e-05
+    },
+    {
+      "start": 123,
+      "features": 8.487701416015625e-05,
+      "logits": 1.33514404296875e-05
+    },
+    {
+      "start": 167,
+      "features": 7.724761962890625e-05,
+      "logits": 1.0728836059570312e-05
+    }
+  ],
+  "causality": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "max_abs": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "max_abs": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "max_abs": 0.0
+    }
+  ],
+  "initial_anchors": {
+    "motion_mae": 0.04988284595310688,
+    "rows": [
+      {
+        "start": 35,
+        "horizon": 1,
+        "mae": 0.02261076122522354,
+        "roi_mae": 0.024430297315120697,
+        "motion_mae": 0.049343887716531754,
+        "psnr": 27.629030227661133,
+        "object_box_mae": 0.02463587000966072
+      },
+      {
+        "start": 35,
+        "horizon": 2,
+        "mae": 0.025186344981193542,
+        "roi_mae": 0.02754358761012554,
+        "motion_mae": 0.056659456342458725,
+        "psnr": 24.703365325927734,
+        "object_box_mae": 0.02946612797677517
+      },
+      {
+        "start": 35,
+        "horizon": 3,
+        "mae": 0.02661227621138096,
+        "roi_mae": 0.0295412540435791,
+        "motion_mae": 0.05144686996936798,
+        "psnr": 24.98029327392578,
+        "object_box_mae": 0.02971445582807064
+      },
+      {
+        "start": 35,
+        "horizon": 4,
+        "mae": 0.029561854898929596,
+        "roi_mae": 0.032187268137931824,
+        "motion_mae": 0.05390879884362221,
+        "psnr": 24.589317321777344,
+        "object_box_mae": 0.03340571001172066
+      },
+      {
+        "start": 35,
+        "horizon": 5,
+        "mae": 0.027950717136263847,
+        "roi_mae": 0.031501296907663345,
+        "motion_mae": 0.04374728351831436,
+        "psnr": 25.575862884521484,
+        "object_box_mae": 0.030980415642261505
+      },
+      {
+        "start": 35,
+        "horizon": 6,
+        "mae": 0.028765251860022545,
+        "roi_mae": 0.031761035323143005,
+        "motion_mae": 0.04412681609392166,
+        "psnr": 24.62161636352539,
+        "object_box_mae": 0.034433819353580475
+      },
+      {
+        "start": 35,
+        "horizon": 7,
+        "mae": 0.027671728283166885,
+        "roi_mae": 0.030835237354040146,
+        "motion_mae": 0.0431695319712162,
+        "psnr": 25.23736000061035,
+        "object_box_mae": 0.03319570794701576
+      },
+      {
+        "start": 35,
+        "horizon": 8,
+        "mae": 0.027179701253771782,
+        "roi_mae": 0.03064470738172531,
+        "motion_mae": 0.04192987456917763,
+        "psnr": 25.684040069580078,
+        "object_box_mae": 0.03139985352754593
+      },
+      {
+        "start": 35,
+        "horizon": 9,
+        "mae": 0.031822118908166885,
+        "roi_mae": 0.03524698689579964,
+        "motion_mae": 0.051930446177721024,
+        "psnr": 24.432758331298828,
+        "object_box_mae": 0.03637184575200081
+      },
+      {
+        "start": 123,
+        "horizon": 1,
+        "mae": 0.025840459391474724,
+        "roi_mae": 0.028392035514116287,
+        "motion_mae": 0.05088968202471733,
+        "psnr": 25.811710357666016,
+        "object_box_mae": 0.027306480333209038
+      },
+      {
+        "start": 123,
+        "horizon": 2,
+        "mae": 0.030231544747948647,
+        "roi_mae": 0.03243524953722954,
+        "motion_mae": 0.05646476894617081,
+        "psnr": 24.706050872802734,
+        "object_box_mae": 0.028445588424801826
+      },
+      {
+        "start": 123,
+        "horizon": 3,
+        "mae": 0.03317873179912567,
+        "roi_mae": 0.03341284021735191,
+        "motion_mae": 0.05851943418383598,
+        "psnr": 23.648345947265625,
+        "object_box_mae": 0.03376174345612526
+      },
+      {
+        "start": 123,
+        "horizon": 4,
+        "mae": 0.035252731293439865,
+        "roi_mae": 0.03469289094209671,
+        "motion_mae": 0.052638716995716095,
+        "psnr": 23.294307708740234,
+        "object_box_mae": 0.03963051736354828
+      },
+      {
+        "start": 123,
+        "horizon": 5,
+        "mae": 0.03507888317108154,
+        "roi_mae": 0.03426370397210121,
+        "motion_mae": 0.048378922045230865,
+        "psnr": 24.05240821838379,
+        "object_box_mae": 0.03811171278357506
+      },
+      {
+        "start": 123,
+        "horizon": 6,
+        "mae": 0.03701012581586838,
+        "roi_mae": 0.03566630184650421,
+        "motion_mae": 0.04923093318939209,
+        "psnr": 23.379562377929688,
+        "object_box_mae": 0.046018924564123154
+      },
+      {
+        "start": 123,
+        "horizon": 7,
+        "mae": 0.035459984093904495,
+        "roi_mae": 0.03430997207760811,
+        "motion_mae": 0.04919915646314621,
+        "psnr": 23.62213897705078,
+        "object_box_mae": 0.046347785741090775
+      },
+      {
+        "start": 123,
+        "horizon": 8,
+        "mae": 0.03498386591672897,
+        "roi_mae": 0.0330975204706192,
+        "motion_mae": 0.04781389236450195,
+        "psnr": 23.772775650024414,
+        "object_box_mae": 0.044279515743255615
+      },
+      {
+        "start": 123,
+        "horizon": 9,
+        "mae": 0.03742796182632446,
+        "roi_mae": 0.03911522775888443,
+        "motion_mae": 0.048492755740880966,
+        "psnr": 23.57062339782715,
+        "object_box_mae": 0.04773155227303505
+      }
+    ]
+  },
+  "probe": {
+    "rows": [
+      {
+        "start": 129,
+        "horizon": 9,
+        "loss": 0.31770631670951843,
+        "rgb": 0.23119696974754333,
+        "latent": 0.8650933504104614,
+        "gs_count": 79104,
+        "rgb_code_grad": 0.11905652284622192,
+        "rgb_decoder_grad": 0.23785729706287384,
+        "channel_gradient_asymmetry": 0.0033188480883836746
+      },
+      {
+        "start": 35,
+        "horizon": 3,
+        "loss": 0.18572407960891724,
+        "rgb": 0.11331671476364136,
+        "latent": 0.7240736484527588,
+        "gs_count": 67572,
+        "rgb_code_grad": 0.04827350750565529,
+        "rgb_decoder_grad": 0.08203589171171188,
+        "channel_gradient_asymmetry": 0.0011811727890744805
+      },
+      {
+        "start": 123,
+        "horizon": 3,
+        "loss": 0.2104714810848236,
+        "rgb": 0.13161316514015198,
+        "latent": 0.7885830402374268,
+        "gs_count": 81836,
+        "rgb_code_grad": 0.02284097485244274,
+        "rgb_decoder_grad": 0.06208287179470062,
+        "channel_gradient_asymmetry": 0.0008731269626878202
+      },
+      {
+        "start": 123,
+        "horizon": 6,
+        "loss": 0.20623576641082764,
+        "rgb": 0.1273774653673172,
+        "latent": 0.7885830402374268,
+        "gs_count": 95944,
+        "rgb_code_grad": 0.06522789597511292,
+        "rgb_decoder_grad": 0.1069716364145279,
+        "channel_gradient_asymmetry": 0.00153996585868299
+      }
+    ],
+    "preclip_gradient_norm": 0.5279549360275269
+  },
+  "update_seconds": 7.048368923133239,
+  "peak_allocated_gib": 6.231732368469238,
+  "max_candidate_probe_start": 129,
+  "restored_weights_codes": true,
+  "optimizer_discarded": true,
+  "elapsed_seconds": 32.43690980295651
+}

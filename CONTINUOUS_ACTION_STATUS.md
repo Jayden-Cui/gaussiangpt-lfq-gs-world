@@ -24,6 +24,8 @@
 
 据此启动[物体区域监督 A/B 实验](experiments/gaussiangpt_neoverse_object_supervision_ab_20261102_v1/README.md)：两组从同一第五轮 checkpoint 恢复 decoder、自由码和 Adam 状态，使用完全相同的第 6、7 轮采样，各追加 846 次 B4 更新。唯一训练目标差异为物体区域 RGB 损失权重 0 或 1。177 帧颜色掩码已目视检查，CPU 检查和两组真实 GPU 梯度／恢复预检通过；尚无本轮训练效果结论。训练后自动进行全窗口评估、GS 重放及物体代理报告，仍需逐帧动态审查。
 
+新增 75 服务器的[动作码与 decoder 维度四组对照](experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/EXECUTION.md)：用户确认动作码 16→64、LDM 内部 64→128，状态 codec 输出维持 64。所有服务器侧内容置于 `/data/CJH/1`，GPU0–3 分别运行 `16/64`、`64/64`、`16/128`、`64/128`；四组均从第五轮相同模型和码出发，采用近似保持初始输出的扩维、共同重新初始化的 Adam、同一损失及同一 846 次 B4 采样。CPU 检查、独立环境复核和四组真实 GPU 预检通过；北京时间 12:20:59 已确认四个进程完成首步更新。该实验定位自由码／decoder 容量，尚无训练质量结论，也不是正式 Q-Former 或跨视频结果。
+
 [第 3 轮两窗口预览](experiments/gaussiangpt_neoverse_anchor_replay_pilot_20261102_v1/run/training/preview_03/VISUAL_REVIEW.md)的运动 MAE 已从第 1 轮的 0.066167 降至 0.051312，但仍高于初始的 0.029776；绿梁仍有明显缺失。预览尚不覆盖全片段或独立重放。
 
 [第 1 轮解码器／自由码交叉诊断](experiments/gaussiangpt_neoverse_anchor_replay_cross_20261102_v1/RESULTS.md)在两个已训练窗口上完成：起点 decoder＋第 1 轮码的运动 MAE 为 0.034965，第 1 轮 decoder＋起点码为 0.069132；两组原配分别为 0.029776 和 0.066167。画面显示后者绿梁大幅缺失，提示退化与 decoder 更新高度相关。交叉码可能处于训练分布外；这不是最终全片段评估，也不能单独认定原因。

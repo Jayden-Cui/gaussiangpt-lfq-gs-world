@@ -1,0 +1,45 @@
+{
+  "schema": "gs_capacity_ssh75_environment_v2",
+  "base": "isolated copy of ssh-134 /data/CJH/envs/gaussiangpt, Python 3.10.21, torch 2.8.0+cu129",
+  "destination": "/data/CJH/1/envs/gaussiangpt",
+  "deployment_root": "/data/CJH/1",
+  "packages": "Preserve source environment package versions and native extensions; record distributions and shared-library hashes before use",
+  "system_pkgs": [],
+  "pip_phases": [],
+  "env": {
+    "OMP_NUM_THREADS": "6",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "XDG_CACHE_HOME": "/data/CJH/1/cache",
+    "TORCH_HOME": "/data/CJH/1/cache/torch",
+    "TORCH_EXTENSIONS_DIR": "/data/CJH/1/cache/torch_extensions",
+    "CUDA_CACHE_PATH": "/data/CJH/1/cache/cuda",
+    "MPLCONFIGDIR": "/data/CJH/1/cache/matplotlib",
+    "TMPDIR": "/data/CJH/1/tmp"
+  },
+  "hardware": "4 x RTX 4090 24 GiB, existing driver 550.78; no driver or system changes",
+  "smoke": {
+    "import_names": [
+      "torch",
+      "MinkowskiEngine",
+      "gsplat"
+    ],
+    "gpu_tests": [
+      {
+        "cmd": "documented GPU environment witness, followed by real frozen-GS-codec rendering/backward preflight",
+        "expect": "finite CUDA matrix, sparse convolution, native GS rendering and backward"
+      }
+    ]
+  },
+  "failure_policy": "If source binaries or CUDA runtime are incompatible, preserve the failed witness and revise an isolated environment spec; do not change server driver or existing environments",
+  "validated": false,
+  "launcher": "/data/CJH/1/bin/python",
+  "private_runtime": {
+    "glibc": "2.35-0ubuntu3.14 from ssh-134",
+    "location": "/data/CJH/1/runtime_glibc",
+    "loader_sha256": "8d06f393f4a93bcf9b81145a259524d66a95522a646bf8d7e05b6ffdf2e63dcc",
+    "mode": "explicit process-local ELF loader; host glibc and NVIDIA driver unchanged"
+  },
+  "known_failure": "ENV_PROBE_01: copied MinkowskiEngine needs GLIBC_2.34; host has 2.31"
+}

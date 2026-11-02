@@ -1,0 +1,7 @@
+{
+  "pid": 2972311,
+  "start_ticks": "156845451",
+  "code_sha256": "49d63a7eb8aadd24b6ea67a27ab237581505b7672adab0589ec8813a05a3faa0",
+  "protocol_sha256": "e4a6b92b8e0bbcc56fee185cfa0154a0f22746ab4ae670502868a030897635d5",
+  "result_root": "/data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run"
+}

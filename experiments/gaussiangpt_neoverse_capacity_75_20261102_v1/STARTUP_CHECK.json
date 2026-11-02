@@ -1,0 +1,65 @@
+{
+  "status": "four_training_processes_verified",
+  "checked_at_utc": "2026-11-02T04:20:59.313601+00:00",
+  "coordinator": {
+    "pid": 2972311,
+    "start_ticks": "156845451",
+    "code_sha256": "49d63a7eb8aadd24b6ea67a27ab237581505b7672adab0589ec8813a05a3faa0",
+    "protocol_sha256": "e4a6b92b8e0bbcc56fee185cfa0154a0f22746ab4ae670502868a030897635d5",
+    "result_root": "/data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run"
+  },
+  "arms": {
+    "z16_w64": {
+      "pid": 2972442,
+      "start_ticks": "156845709",
+      "status": {
+        "status": "running",
+        "arm": "z16_w64",
+        "updates": 1,
+        "budget": 846,
+        "cumulative_historical_plus_new": 2116,
+        "elapsed_seconds": 19.725555634126067
+      },
+      "command": "/data/CJH/1/runtime_glibc/ld-linux-x86-64.so.2 --library-path /data/CJH/1/runtime_glibc:/data/CJH/1/envs/gaussiangpt/lib /data/CJH/1/envs/gaussiangpt/bin/python -B /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/worker.py train --arm z16_w64 --out /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run/z16_w64/training "
+    },
+    "z64_w64": {
+      "pid": 2972443,
+      "start_ticks": "156845709",
+      "status": {
+        "status": "running",
+        "arm": "z64_w64",
+        "updates": 1,
+        "budget": 846,
+        "cumulative_historical_plus_new": 2116,
+        "elapsed_seconds": 18.80779934488237
+      },
+      "command": "/data/CJH/1/runtime_glibc/ld-linux-x86-64.so.2 --library-path /data/CJH/1/runtime_glibc:/data/CJH/1/envs/gaussiangpt/lib /data/CJH/1/envs/gaussiangpt/bin/python -B /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/worker.py train --arm z64_w64 --out /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run/z64_w64/training "
+    },
+    "z16_w128": {
+      "pid": 2972444,
+      "start_ticks": "156845709",
+      "status": {
+        "status": "running",
+        "arm": "z16_w128",
+        "updates": 1,
+        "budget": 846,
+        "cumulative_historical_plus_new": 2116,
+        "elapsed_seconds": 19.48052359605208
+      },
+      "command": "/data/CJH/1/runtime_glibc/ld-linux-x86-64.so.2 --library-path /data/CJH/1/runtime_glibc:/data/CJH/1/envs/gaussiangpt/lib /data/CJH/1/envs/gaussiangpt/bin/python -B /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/worker.py train --arm z16_w128 --out /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run/z16_w128/training "
+    },
+    "z64_w128": {
+      "pid": 2972445,
+      "start_ticks": "156845710",
+      "status": {
+        "status": "running",
+        "arm": "z64_w128",
+        "updates": 1,
+        "budget": 846,
+        "cumulative_historical_plus_new": 2116,
+        "elapsed_seconds": 19.332306320080534
+      },
+      "command": "/data/CJH/1/runtime_glibc/ld-linux-x86-64.so.2 --library-path /data/CJH/1/runtime_glibc:/data/CJH/1/envs/gaussiangpt/lib /data/CJH/1/envs/gaussiangpt/bin/python -B /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/worker.py train --arm z64_w128 --out /data/CJH/1/experiments/gaussiangpt_neoverse_capacity_75_20261102_v1/run/z64_w128/training "
+    }
+  }
+}

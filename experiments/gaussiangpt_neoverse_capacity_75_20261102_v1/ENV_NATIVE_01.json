@@ -1,0 +1,27 @@
+{
+  "schema": "private_runtime_native_gpu_witness_v1",
+  "code_sha256": {
+    "env_witness.py": "297fc55b586d401110658b80cea7401bc6b1b8cd32adfce328badd5471139543",
+    "bindings.py": "f117d53fd1ecd16e16daca830ed971117350dca30a251d881ae0f3b8eac90da0",
+    "runtime_env.py": "6341cd6ed86eb93d14a5bcc53b05b451b856082f78bf26d1bb6676af3ff39d15"
+  },
+  "matrix_finite": true,
+  "status": "passed",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "torch": "2.8.0+cu129",
+  "cuda": "12.9",
+  "device": "NVIDIA GeForce RTX 4090",
+  "render_shape": [
+    2,
+    252,
+    448,
+    3
+  ],
+  "gs_count": 51364,
+  "loss": 0.01753251627087593,
+  "feature_gradient_norm": 4.055365934618749e-05,
+  "native_codec_frozen": true,
+  "elapsed_seconds": 13.652148788794875,
+  "max_allocated_gib": 2.4030566215515137,
+  "training_updates": 0
+}

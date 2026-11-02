@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "code_sha256": "49d63a7eb8aadd24b6ea67a27ab237581505b7672adab0589ec8813a05a3faa0",
+  "rows": [
+    {
+      "arm": "z16_w64",
+      "code_shape": [
+        168,
+        9,
+        16
+      ],
+      "hidden_width": 64,
+      "output_width": 64,
+      "max_errors": {
+        "features": 0.0,
+        "logits": 0.0
+      },
+      "causality_max": 0.0,
+      "extra_code_gradient": null,
+      "action_projection_rank": 16
+    },
+    {
+      "arm": "z64_w64",
+      "code_shape": [
+        168,
+        9,
+        64
+      ],
+      "hidden_width": 64,
+      "output_width": 64,
+      "max_errors": {
+        "features": 0.0,
+        "logits": 0.0
+      },
+      "causality_max": 0.0,
+      "extra_code_gradient": 5.430199146270752,
+      "action_projection_rank": 64
+    },
+    {
+      "arm": "z16_w128",
+      "code_shape": [
+        168,
+        9,
+        16
+      ],
+      "hidden_width": 128,
+      "output_width": 64,
+      "max_errors": {
+        "features": 1.33514404296875e-05,
+        "logits": 2.1457672119140625e-06
+      },
+      "causality_max": 0.0,
+      "extra_code_gradient": null,
+      "action_projection_rank": 16
+    },
+    {
+      "arm": "z64_w128",
+      "code_shape": [
+        168,
+        9,
+        64
+      ],
+      "hidden_width": 128,
+      "output_width": 64,
+      "max_errors": {
+        "features": 1.33514404296875e-05,
+        "logits": 2.1457672119140625e-06
+      },
+      "causality_max": 0.0,
+      "extra_code_gradient": 3.3479559421539307,
+      "action_projection_rank": 64
+    }
+  ],
+  "sampling_updates": 846,
+  "video_roundtrip_frames": 3,
+  "assets_fully_verified": true,
+  "scope": "CPU parity/gradient/causality uses 40 real candidate rows; GPU preflight must use full windows"
+}

@@ -1,0 +1,11 @@
+{
+  "matrix_finite": true,
+  "status": "passed",
+  "sparse_dtype": "torch.float64",
+  "sparse_shape": [
+    4,
+    4
+  ],
+  "sparse_grad_finite": true,
+  "device": "NVIDIA GeForce RTX 4090"
+}

@@ -1,0 +1,10 @@
+{
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "executable": "/data/CJH/1/envs/gaussiangpt/bin/python",
+  "torch": "2.8.0+cu129",
+  "cuda": "12.9",
+  "available": true,
+  "status": "failed",
+  "error": "ImportError(\"/lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by /data/CJH/1/envs/gaussiangpt/lib/python3.10/site-packages/MinkowskiEngineBackend/_C.cpython-310-x86_64-linux-gnu.so)\")",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\n  File \"/data/CJH/1/envs/gaussiangpt/lib/python3.10/site-packages/MinkowskiEngine/__init__.py\", line 53, in <module>\n    from MinkowskiEngineBackend._C import (\nImportError: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by /data/CJH/1/envs/gaussiangpt/lib/python3.10/site-packages/MinkowskiEngineBackend/_C.cpython-310-x86_64-linux-gnu.so)\n"
+}

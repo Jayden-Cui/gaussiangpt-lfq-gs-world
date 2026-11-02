@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "source": {
+    "arm": "z16_w64",
+    "config": {
+      "code_dim": 16,
+      "width": 64,
+      "gpu": 0
+    },
+    "code_sha256": "49d63a7eb8aadd24b6ea67a27ab237581505b7672adab0589ec8813a05a3faa0",
+    "protocol_sha256": "e4a6b92b8e0bbcc56fee185cfa0154a0f22746ab4ae670502868a030897635d5",
+    "asset_manifest_sha256": "3702a70b2f13dc9f214700f5f6601d873829bbc6ba4ee289933200c87fc14b5e",
+    "parent_checkpoint_sha256": "3893e488174f5c44fc8b696526af71d6ba718ba073bbda936d1960644fbc2699",
+    "initial_decoder_digest": "9d7b9e105b7c191e7a26e7034ded0a1d5e4aa95c31c60a80fe53f623b9fb0432",
+    "initial_code_shape": [
+      168,
+      9,
+      16
+    ],
+    "optimizer": "fresh Adam for all four arms",
+    "seed": 20261102,
+    "state_width": 64,
+    "codec_frozen": true,
+    "initial_context_frozen": true,
+    "trainable_decoder_parameters": 188097,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "parity": [
+    {
+      "start": 0,
+      "features": 0.0,
+      "logits": 0.0
+    },
+    {
+      "start": 35,
+      "features": 0.0,
+      "logits": 0.0
+    },
+    {
+      "start": 123,
+      "features": 0.0,
+      "logits": 0.0
+    },
+    {
+      "start": 167,
+      "features": 0.0,
+      "logits": 0.0
+    }
+  ],
+  "causality": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "max_abs": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "max_abs": 0.0
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "max_abs": 0.0
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "max_abs": 0.0
+    }
+  ],
+  "initial_anchors": {
+    "motion_mae": 0.049882850920160614,
+    "rows": [
+      {
+        "start": 35,
+        "horizon": 1,
+        "mae": 0.02261076122522354,
+        "roi_mae": 0.02443028800189495,
+        "motion_mae": 0.04934386536478996,
+        "psnr": 27.629030227661133,
+        "object_box_mae": 0.02463586814701557
+      },
+      {
+        "start": 35,
+        "horizon": 2,
+        "mae": 0.025186344981193542,
+        "roi_mae": 0.027543578296899796,
+        "motion_mae": 0.05665944144129753,
+        "psnr": 24.703365325927734,
+        "object_box_mae": 0.029466116800904274
+      },
+      {
+        "start": 35,
+        "horizon": 3,
+        "mae": 0.026612281799316406,
+        "roi_mae": 0.02954125963151455,
+        "motion_mae": 0.05144687741994858,
+        "psnr": 24.980295181274414,
+        "object_box_mae": 0.029714468866586685
+      },
+      {
+        "start": 35,
+        "horizon": 4,
+        "mae": 0.029561877250671387,
+        "roi_mae": 0.032187286764383316,
+        "motion_mae": 0.05390885844826698,
+        "psnr": 24.589317321777344,
+        "object_box_mae": 0.033405713737010956
+      },
+      {
+        "start": 35,
+        "horizon": 5,
+        "mae": 0.027950730174779892,
+        "roi_mae": 0.03150131180882454,
+        "motion_mae": 0.04374728351831436,
+        "psnr": 25.575862884521484,
+        "object_box_mae": 0.030980434268712997
+      },
+      {
+        "start": 35,
+        "horizon": 6,
+        "mae": 0.028765244409441948,
+        "roi_mae": 0.03176102787256241,
+        "motion_mae": 0.04412681236863136,
+        "psnr": 24.62161636352539,
+        "object_box_mae": 0.03443382307887077
+      },
+      {
+        "start": 35,
+        "horizon": 7,
+        "mae": 0.027671728283166885,
+        "roi_mae": 0.030835235491394997,
+        "motion_mae": 0.0431695319712162,
+        "psnr": 25.23736000061035,
+        "object_box_mae": 0.033195704221725464
+      },
+      {
+        "start": 35,
+        "horizon": 8,
+        "mae": 0.027179697528481483,
+        "roi_mae": 0.030644696205854416,
+        "motion_mae": 0.041929855942726135,
+        "psnr": 25.684040069580078,
+        "object_box_mae": 0.03139984980225563
+      },
+      {
+        "start": 35,
+        "horizon": 9,
+        "mae": 0.03182211145758629,
+        "roi_mae": 0.03524698317050934,
+        "motion_mae": 0.05193043500185013,
+        "psnr": 24.432769775390625,
+        "object_box_mae": 0.03637182340025902
+      },
+      {
+        "start": 123,
+        "horizon": 1,
+        "mae": 0.025840461254119873,
+        "roi_mae": 0.028392039239406586,
+        "motion_mae": 0.05088968947529793,
+        "psnr": 25.811708450317383,
+        "object_box_mae": 0.027306480333209038
+      },
+      {
+        "start": 123,
+        "horizon": 2,
+        "mae": 0.03023156151175499,
+        "roi_mae": 0.03243526443839073,
+        "motion_mae": 0.05646481364965439,
+        "psnr": 24.7060489654541,
+        "object_box_mae": 0.02844558283686638
+      },
+      {
+        "start": 123,
+        "horizon": 3,
+        "mae": 0.033178724348545074,
+        "roi_mae": 0.03341284021735191,
+        "motion_mae": 0.05851942300796509,
+        "psnr": 23.648345947265625,
+        "object_box_mae": 0.03376173600554466
+      },
+      {
+        "start": 123,
+        "horizon": 4,
+        "mae": 0.03525273874402046,
+        "roi_mae": 0.034692905843257904,
+        "motion_mae": 0.05263872817158699,
+        "psnr": 23.2943058013916,
+        "object_box_mae": 0.03963053971529007
+      },
+      {
+        "start": 123,
+        "horizon": 5,
+        "mae": 0.03507888317108154,
+        "roi_mae": 0.03426370024681091,
+        "motion_mae": 0.04837891086935997,
+        "psnr": 24.052406311035156,
+        "object_box_mae": 0.03811171278357506
+      },
+      {
+        "start": 123,
+        "horizon": 6,
+        "mae": 0.037010133266448975,
+        "roi_mae": 0.035666320472955704,
+        "motion_mae": 0.04923093691468239,
+        "psnr": 23.379562377929688,
+        "object_box_mae": 0.04601890221238136
+      },
+      {
+        "start": 123,
+        "horizon": 7,
+        "mae": 0.03546000272035599,
+        "roi_mae": 0.0343099907040596,
+        "motion_mae": 0.0491991862654686,
+        "psnr": 23.62213897705078,
+        "object_box_mae": 0.04634777829051018
+      },
+      {
+        "start": 123,
+        "horizon": 8,
+        "mae": 0.03498387709259987,
+        "roi_mae": 0.0330975204706192,
+        "motion_mae": 0.04781389608979225,
+        "psnr": 23.77277374267578,
+        "object_box_mae": 0.044279515743255615
+      },
+      {
+        "start": 123,
+        "horizon": 9,
+        "mae": 0.03742796182632446,
+        "roi_mae": 0.03911522775888443,
+        "motion_mae": 0.04849277064204216,
+        "psnr": 23.57062339782715,
+        "object_box_mae": 0.04773154482245445
+      }
+    ]
+  },
+  "probe": {
+    "rows": [
+      {
+        "start": 129,
+        "horizon": 9,
+        "loss": 0.31770631670951843,
+        "rgb": 0.23119698464870453,
+        "latent": 0.8650933504104614,
+        "gs_count": 79104,
+        "rgb_code_grad": 0.1190539002418518,
+        "rgb_decoder_grad": 0.23783859610557556
+      },
+      {
+        "start": 35,
+        "horizon": 3,
+        "loss": 0.18572410941123962,
+        "rgb": 0.11331674456596375,
+        "latent": 0.724073588848114,
+        "gs_count": 67572,
+        "rgb_code_grad": 0.0482737235724926,
+        "rgb_decoder_grad": 0.08203154802322388
+      },
+      {
+        "start": 123,
+        "horizon": 3,
+        "loss": 0.21047145128250122,
+        "rgb": 0.1316131353378296,
+        "latent": 0.7885830402374268,
+        "gs_count": 81836,
+        "rgb_code_grad": 0.022839821875095367,
+        "rgb_decoder_grad": 0.062079429626464844
+      },
+      {
+        "start": 123,
+        "horizon": 6,
+        "loss": 0.20623579621315002,
+        "rgb": 0.1273774951696396,
+        "latent": 0.7885830402374268,
+        "gs_count": 95944,
+        "rgb_code_grad": 0.06522688269615173,
+        "rgb_decoder_grad": 0.10696668177843094
+      }
+    ],
+    "preclip_gradient_norm": 0.5304024815559387
+  },
+  "update_seconds": 6.061457259114832,
+  "peak_allocated_gib": 5.063974857330322,
+  "max_candidate_probe_start": 129,
+  "restored_weights_codes": true,
+  "optimizer_discarded": true,
+  "elapsed_seconds": 30.009626521961764
+}
