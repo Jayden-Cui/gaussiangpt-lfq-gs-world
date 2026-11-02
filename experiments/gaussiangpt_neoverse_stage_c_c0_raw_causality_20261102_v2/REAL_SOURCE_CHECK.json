@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "windows": [
+    {
+      "start": 35,
+      "motion_memory_max_abs_error": 0.0,
+      "static_memory_max_abs_error": 0.0,
+      "motion_code_max_abs_error": 0.0,
+      "static_code_max_abs_error": 0.0
+    },
+    {
+      "start": 123,
+      "motion_memory_max_abs_error": 0.0,
+      "static_memory_max_abs_error": 0.0,
+      "motion_code_max_abs_error": 0.0,
+      "static_code_max_abs_error": 0.0
+    }
+  ],
+  "raw_future_perturbations": [
+    {
+      "start": 35,
+      "horizon": 1,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    },
+    {
+      "start": 35,
+      "horizon": 3,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    },
+    {
+      "start": 35,
+      "horizon": 7,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    },
+    {
+      "start": 123,
+      "horizon": 1,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    },
+    {
+      "start": 123,
+      "horizon": 3,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    },
+    {
+      "start": 123,
+      "horizon": 7,
+      "earlier_code_max_abs_error": 0.0,
+      "later_memory_mutation_detected": true
+    }
+  ],
+  "memory_tolerance": 5e-05,
+  "code_tolerance": 2e-05,
+  "scope": "Two real training windows and pretrained Q; no trained stage-C model",
+  "code_sha256": "8d75dd35cde76fbb4e4e2d59cd55c70fde058f4ab5255479f7fbc561a582c029",
+  "source_cache_sha256": "cb5c2b30f1b4fdac4db642046a46773cc0b96a4dabdab4917e0d3c79ff6eaa4a",
+  "frozen_initial_context_digest": "eb8ba98d9794415ea6a7f565270cca4d032fa3e6c4fe4c97d7f194c8e6ff0459",
+  "decoder_digest": "ffcadefe1fb9fc19c6e5257664c88198d3b087f25b913ab2b434c038ea5ab899",
+  "posterior_digest": "6531f34ca45161c6ea28326ab3a878c49d4c80cdc014e051569a4ac8f2e8abe9",
+  "elapsed_seconds": 2.987934068078175,
+  "optimizer_updates": 0,
+  "device": "cuda",
+  "peak_allocated_gib": 0.17409229278564453
+}

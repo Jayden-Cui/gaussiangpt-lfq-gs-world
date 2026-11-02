@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "code_sha256": "8d75dd35cde76fbb4e4e2d59cd55c70fde058f4ab5255479f7fbc561a582c029",
+  "test_sha256": "abc27355587affbed936d5d2054e29523cecc3afb052694ffcb3a2aaa010a92e",
+  "real_gpu_check_sha256": "11ea1e135bc62d86ee1d6ed0df635eeb31f063f771bfb5ab3cc33b93fd783f35",
+  "checks": [
+    "cached feature and coordinate corruption rejected",
+    "raw future leakage rejected",
+    "wrapper executes guard only for C0 and restores old evaluator",
+    "two real windows and six raw future perturbations on GPU"
+  ],
+  "scope": "synthetic CPU tests and untrained real-data GPU path check; formal stage-C model not trained or evaluated"
+}
